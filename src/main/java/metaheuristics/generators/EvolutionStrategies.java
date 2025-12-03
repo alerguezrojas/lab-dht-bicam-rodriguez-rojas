@@ -131,7 +131,7 @@ public class EvolutionStrategies extends Generator {
 		/*if(RandomSearch.listStateReference.size() == 0){
 			return this.listStateReference = new ArrayList<State>();
 		}*/
-		while((found.equals(false)) && (Strategy.getStrategy().mapGenerators.size() > count)){
+		while(!found && Strategy.getStrategy().mapGenerators.size() > count){
 			if(key.get(count).equals(GeneratorType.EvolutionStrategies.toString())){
 				GeneratorType keyGenerator = GeneratorType.valueOf(String.valueOf(key.get(count)));
 				EvolutionStrategies generator = (EvolutionStrategies) Strategy.getStrategy().mapGenerators.get(keyGenerator);

@@ -55,7 +55,7 @@ public class MultiGenerator extends Generator {
 		State stateREF = new State(Strategy.getStrategy().getProblem().getState());
 		listStateReference.add(stateREF);
 		for (int i = 0; i < listGenerators.length; i++) {
-			if ((listGenerators[i].getType().equals(GeneratorType.HillClimbing)) || (listGenerators[i].getType().equals(GeneratorType.RandomSearch)) || (listGenerators[i].getType().equals(GeneratorType.TabuSearch)) || (listGenerators[i].getType().equals(GeneratorType.SimulatedAnnealing) || (listGenerators[i].getType().equals(GeneratorType.LimitThreshold)))){
+			if (listGenerators[i].getType().equals(GeneratorType.HillClimbing) || listGenerators[i].getType().equals(GeneratorType.RandomSearch) || listGenerators[i].getType().equals(GeneratorType.TabuSearch) || listGenerators[i].getType().equals(GeneratorType.SimulatedAnnealing) || listGenerators[i].getType().equals(GeneratorType.LimitThreshold)){
 				listGenerators[i].setInitialReference(stateREF);
 			}
 		}
@@ -287,8 +287,8 @@ public class MultiGenerator extends Generator {
 		float numbAleatory = (float) (Math.random() * (double)(1));
 		boolean find = false;
 		int i = 0;
-		while ((find == false) && (i < listLimit.size())){
-			if((listLimit.get(i).getLimitLow() <= numbAleatory) && (numbAleatory <= listLimit.get(i).getLimitHigh())){
+		while (!find && i < listLimit.size()){
+			if(listLimit.get(i).getLimitLow() <= numbAleatory && numbAleatory <= listLimit.get(i).getLimitHigh()){
 				find = true;
 			}
 			else i++;

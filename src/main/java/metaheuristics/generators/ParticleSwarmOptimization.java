@@ -102,7 +102,7 @@ public class ParticleSwarmOptimization extends Generator {
 		if(RandomSearch.listStateReference.size() == 0){
 			return this.setListParticle(new ArrayList<Particle>());
 		}
-		while((found.equals(false)) && (Strategy.getStrategy().mapGenerators.size() > count)){
+		while(!found && Strategy.getStrategy().mapGenerators.size() > count){
 			//recorrer la lista de generadores, hasta que encuentre el PSO
 			if(key.get(count).equals(GeneratorType.ParticleSwarmOptimization.toString())){
 				//creo el generador PSO, y si su lista de particulas esta vacia entonces es la primera vez que lo estoy creando, y cada estado lo convierto en particulas

@@ -109,8 +109,8 @@ public class TabuSearch extends Generator {
 			if (TabuSolutions.listTabu.size() < TabuSolutions.maxelements) {
 				Boolean find = false;
 				int count = 0;
-				while ((TabuSolutions.listTabu.size() > count) && (find.equals(false))) {
-					if ((TabuSolutions.listTabu.get(count).Comparator(stateCandidate))==true) {
+				while (TabuSolutions.listTabu.size() > count && find.equals(false)) {
+					if (TabuSolutions.listTabu.get(count).Comparator(stateCandidate)) {
 						find = true;
 					}
 					count++;
@@ -123,7 +123,7 @@ public class TabuSearch extends Generator {
 				Boolean find = false;
 				int count = 0;
 				while (TabuSolutions.listTabu.size() > count && find.equals(false)) {
-					if ((TabuSolutions.listTabu.get(count).Comparator(stateCandidate))==true) {
+					if (TabuSolutions.listTabu.get(count).Comparator(stateCandidate)) {
 						find = true;
 					}
 					count++;

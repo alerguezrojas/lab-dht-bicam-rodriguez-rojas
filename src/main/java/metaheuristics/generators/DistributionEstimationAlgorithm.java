@@ -54,7 +54,7 @@ public class DistributionEstimationAlgorithm extends Generator {
 	
 	public DistributionEstimationAlgorithm() {
 		super();
-		this.referenceList = getListStateRef(); // llamada al método que devuelve la lista. 
+		this.referenceList = getListStateRef(); // llamada al mï¿½todo que devuelve la lista. 
 //		this.selectionType = SelectionType.Truncation;
 		//this.replaceType = ReplaceType.Generational;
 //		this.replaceType = ReplaceType.Smallest;
@@ -181,7 +181,7 @@ public class DistributionEstimationAlgorithm extends Generator {
 		/*if(RandomSearch.listStateReference.size() == 0){
 			return this.referenceList = new ArrayList<State>();
 		}*/
-		while((found.equals(false)) && (Strategy.getStrategy().mapGenerators.size() > count)){
+		while(!found && Strategy.getStrategy().mapGenerators.size() > count){
 			if(key.get(count).equals(GeneratorType.DistributionEstimationAlgorithm.toString())){
 				GeneratorType keyGenerator = GeneratorType.valueOf(String.valueOf(key.get(count)));
 				DistributionEstimationAlgorithm generator = (DistributionEstimationAlgorithm)Strategy.getStrategy().mapGenerators.get(keyGenerator);
