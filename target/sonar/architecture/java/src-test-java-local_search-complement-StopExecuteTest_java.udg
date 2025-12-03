@@ -1,0 +1,172 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764798321779*java2.Bö
+?
+:src/test/java/local_search/complement/StopExecuteTest.java2
+	
+type3
+	
+TEST4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+H
+Calerguezrojas_lab-dht-bicam-rodriguez-rojas:local_search.complement9
+-
+'local_search.complement.StopExecuteTest11
+
+class12
+
+access13
+
+	protected14
+
+simple-name15
+
+StopExecuteTest16
+C
+=local_search.complement.StopExecuteTest#testStopIterations()V18
+
+method19
+
+testStopIterations20
+ 
+org.junit.jupiter.api.Test22
+
+unknown23
+
+annotated by24
+
+
+uses25
+)
+#local_search.complement.StopExecute27
+
+is type28
+
+calls29
+&
+ org.junit.jupiter.api.Assertions31
+
+
+references32
+6
+0org.junit.jupiter.api.Assertions#assertFalse(Z)V34
+O
+Ilocal_search.complement.StopExecute#stopIterations(II)Ljava/lang/Boolean;36
+5
+/org.junit.jupiter.api.Assertions#assertTrue(Z)V38J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6jü
+
+21
+212223
+
+35
+353623
+
+37
+373823
+>
+108
+101112 *
+1 (:7B
+
+
+13
+14
+
+
+15
+16
+
+33
+333423
+
+30
+303123
+
+26
+262723
+B
+17<
+171819 *
+1	 	(210:7B
+
+
+13
+14
+
+
+15
+20rË
+
+172124*
+1	 	(
+
+
+172125*
+1	 	(
+
+
+172628*
+1 ( 
+
+172625*
+1	 (
+
+172629*
+1' (2
+
+173032*
+1	 (
+
+173329*
+1	 (
+
+172632*
+1 ( 
+
+173529*
+1! (/
+
+173032*
+1	 (
+
+173729*
+1	 (
+
+172632*
+1 (
+
+173529*
+1  (.
+
+173032*
+1	 (
+
+173729*
+1	 (
+
+172632*
+1 (
+
+173529*
+1  (.

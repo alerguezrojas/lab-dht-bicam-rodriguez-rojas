@@ -3,58 +3,126 @@ package metaheuristics.generators;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
 import org.mockito.MockedStatic;
+import org.mockito.MockitoAnnotations;
 
 import metaheurictics.strategy.Strategy;
+import problem.definition.Operator;
 import problem.definition.Problem;
-import problem.definition.Problem.ProblemType;
 import problem.definition.State;
-import problem_operators.MutationOperator;
+import local_search.complement.TabuSolutions;
 
-class TabuSearchTest {
+public class TabuSearchTest {
+
+    private TabuSearch tabuSearch;
+    
+    @Mock
+    private Strategy strategyMock;
+    
+    @Mock
+    private Problem problemMock;
+    
+    @Mock
+    private Operator operatorMock;
+    
+    @Mock
+    private State stateMock;
+    
+    @Mock
+    private State newStateMock;
+
+    private MockedStatic<Strategy> strategyStaticMock;
+    private AutoCloseable mocks;
+
+    @BeforeEach
+    public void setUp() throws Exception {
+        mocks = MockitoAnnotations.openMocks(this);
+        
+        // Reset Singleton
+        resetSingleton();
+        
+        // Clear Tabu list
+        TabuSolutions.listTabu.clear();
+        TabuSolutions.maxelements = 10;
+        
+        // Mock Strategy Singleton
+        strategyStaticMock = mockStatic(Strategy.class);
+        strategyStaticMock.when(Strategy::getStrategy).thenReturn(strategyMock);
+        
+        // Setup chain
+        when(strategyMock.getProblem()).thenReturn(problemMock);
+        when(problemMock.getOperator()).thenReturn(operatorMock);
+        when(problemMock.getTypeProblem()).thenReturn(Problem.ProblemType.Minimizar);
+        
+        tabuSearch = new TabuSearch();
+    }
+
+    @AfterEach
+    public void tearDown() throws Exception {
+        strategyStaticMock.close();
+        mocks.close();
+        resetSingleton();
+        TabuSolutions.listTabu.clear();
+    }
+
+    private void resetSingleton() throws Exception {
+        Field instance = Strategy.class.getDeclaredField("strategy");
+        instance.setAccessible(true);
+        instance.set(null, null);
+    }
 
     @Test
-    void testGenerate() throws Exception {
-        try (MockedStatic<Strategy> mockedStrategy = mockStatic(Strategy.class)) {
-            Strategy strategy = mock(Strategy.class);
-            Problem problem = mock(Problem.class);
-            MutationOperator operator = mock(MutationOperator.class);
-            
-            mockedStrategy.when(Strategy::getStrategy).thenReturn(strategy);
-            when(strategy.getProblem()).thenReturn(problem);
-            when(problem.getTypeProblem()).thenReturn(ProblemType.Maximizar);
-            when(problem.getOperator()).thenReturn(operator);
-            
-            TabuSearch tabuSearch = new TabuSearch();
-            
-            State refState = new State();
-            // Need to set evaluation for comparisons inside CandidateValue -> SearchCandidate
-            ArrayList<Double> eval = new ArrayList<>();
-            eval.add(10.0);
-            refState.setEvaluation(eval);
-            
-            tabuSearch.setInitialReference(refState);
-            
-            List<State> neighborhood = new ArrayList<>();
-            State neighbor = new State();
-            ArrayList<Double> evalN = new ArrayList<>();
-            evalN.add(20.0);
-            neighbor.setEvaluation(evalN);
-            neighborhood.add(neighbor);
-            
-            when(operator.generatedNewState(refState, 1)).thenReturn(neighborhood);
-            
-            // We need to ensure TabuSolutions doesn't crash or filter everything out.
-            // TabuSolutions uses Strategy.getStrategy().getTabuList() probably.
-            // I should check TabuSolutions.
-            
-            State result = tabuSearch.generate(1);
-            
-            assertNotNull(result);
-        }
+    public void testGenerate() throws Exception {
+        int operatorNumber = 1;
+        List<State> neighborhood = new ArrayList<>();
+        neighborhood.add(newStateMock);
+        
+        tabuSearch.setInitialReference(stateMock);
+        
+        when(operatorMock.generatedNewState(stateMock, operatorNumber)).thenReturn(neighborhood);
+        
+        State result = tabuSearch.generate(operatorNumber);
+        
+        assertNotNull(result);
+        assertEquals(newStateMock, result);
+        verify(operatorMock).generatedNewState(stateMock, operatorNumber);
+    }
+    
+    @Test
+    public void testSetAndGetReference() {
+        tabuSearch.setInitialReference(stateMock);
+        assertEquals(stateMock, tabuSearch.getReference());
+    }
+    
+    @Test
+    public void testGetType() {
+        assertEquals(GeneratorType.TabuSearch, tabuSearch.getType());
+    }
+    
+    @Test
+    public void testUpdateReference() throws Exception {
+        tabuSearch.setInitialReference(stateMock);
+        
+        ArrayList<Double> evalRef = new ArrayList<>();
+        evalRef.add(10.0);
+        when(stateMock.getEvaluation()).thenReturn(evalRef);
+        
+        ArrayList<Double> evalNew = new ArrayList<>();
+        evalNew.add(5.0);
+        when(newStateMock.getEvaluation()).thenReturn(evalNew);
+        
+        tabuSearch.updateReference(newStateMock, 1);
+        
+        assertEquals(newStateMock, tabuSearch.getReference());
+        assertEquals(1, TabuSolutions.listTabu.size());
+        assertEquals(newStateMock, TabuSolutions.listTabu.get(0));
     }
 }

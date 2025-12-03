@@ -3,74 +3,196 @@ package metaheuristics.generators;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.SortedMap;
 import java.util.TreeMap;
 
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
 import org.mockito.MockedStatic;
+import org.mockito.MockitoAnnotations;
 
+import metaheurictics.strategy.Strategy;
+import problem.definition.Codification;
+import problem.definition.Operator;
+import problem.definition.Problem;
+import problem.definition.State;
 import evolutionary_algorithms.complement.MutationType;
 import evolutionary_algorithms.complement.ReplaceType;
 import evolutionary_algorithms.complement.SelectionType;
-import metaheurictics.strategy.Strategy;
-import problem.definition.Problem;
-import problem.definition.Problem.ProblemType;
-import problem.definition.State;
 
-class EvolutionStrategiesTest {
+public class EvolutionStrategiesTest {
+
+    private EvolutionStrategies evolutionStrategies;
+    
+    @Mock
+    private Strategy strategyMock;
+    
+    @Mock
+    private Problem problemMock;
+    
+    @Mock
+    private Operator operatorMock;
+    
+    @Mock
+    private State stateMock;
+    
+    @Mock
+    private State newStateMock;
+
+    @Mock
+    private Codification codificationMock;
+
+    private MockedStatic<Strategy> strategyStaticMock;
+    private AutoCloseable mocks;
+
+    @BeforeEach
+    public void setUp() throws Exception {
+        mocks = MockitoAnnotations.openMocks(this);
+        
+        // Reset Singleton
+        resetSingleton();
+        
+        // Mock Strategy Singleton
+        strategyStaticMock = mockStatic(Strategy.class);
+        strategyStaticMock.when(Strategy::getStrategy).thenReturn(strategyMock);
+        
+        // Setup chain
+        when(strategyMock.getProblem()).thenReturn(problemMock);
+        when(problemMock.getOperator()).thenReturn(operatorMock);
+        when(problemMock.getState()).thenReturn(stateMock);
+        when(stateMock.getCopy()).thenReturn(newStateMock);
+        // Setup code list
+        ArrayList<Object> codeList = new ArrayList<>();
+        codeList.add(1);
+        codeList.add(2);
+        codeList.add(3);
+        codeList.add(4);
+        codeList.add(5);
+        
+        when(newStateMock.getCode()).thenReturn(codeList);
+        when(newStateMock.getEvaluation()).thenReturn(new ArrayList<>());
+        when(newStateMock.getCopy()).thenReturn(newStateMock);
+        
+        when(problemMock.getTypeProblem()).thenReturn(Problem.ProblemType.Minimizar);
+        when(problemMock.getCodification()).thenReturn(codificationMock);
+        when(codificationMock.getVariableCount()).thenReturn(5);
+        when(codificationMock.getAleatoryKey()).thenReturn(0);
+        when(codificationMock.getVariableAleatoryValue(anyInt())).thenReturn(99);
+        
+        // Setup Strategy fields
+        strategyMock.mapGenerators = new TreeMap<>();
+        when(strategyMock.getListKey()).thenReturn(new ArrayList<>());
+        
+        // Setup static fields
+        EvolutionStrategies.selectionType = SelectionType.TruncationSelection;
+        EvolutionStrategies.mutationType = MutationType.OnePointMutation;
+        EvolutionStrategies.replaceType = ReplaceType.GenerationalReplace;
+        EvolutionStrategies.truncation = 1;
+        EvolutionStrategies.PM = 0.1;
+        
+        // Setup RandomSearch static list
+        RandomSearch.listStateReference = new ArrayList<>();
+        
+        // Create instance
+        evolutionStrategies = new EvolutionStrategies();
+    }
+
+    @AfterEach
+    public void tearDown() throws Exception {
+        strategyStaticMock.close();
+        mocks.close();
+        resetSingleton();
+        RandomSearch.listStateReference.clear();
+    }
+
+    private void resetSingleton() throws Exception {
+        Field instance = Strategy.class.getDeclaredField("strategy");
+        instance.setAccessible(true);
+        instance.set(null, null);
+    }
 
     @Test
-    void testGenerate() throws Exception {
-        try (MockedStatic<Strategy> mockedStrategy = mockStatic(Strategy.class)) {
-            Strategy strategy = mock(Strategy.class);
-            Problem problem = mock(Problem.class);
-            State problemState = mock(State.class);
-            
-            mockedStrategy.when(Strategy::getStrategy).thenReturn(strategy);
-            when(strategy.getProblem()).thenReturn(problem);
-            when(problem.getState()).thenReturn(problemState);
-            when(problem.getTypeProblem()).thenReturn(ProblemType.Maximizar);
-            
-            State copyState = new State();
-            copyState.setCode(new ArrayList<>(Arrays.asList(1.0, 2.0)));
-            copyState.setEvaluation(new ArrayList<>(Arrays.asList(10.0)));
-            when(problemState.getCopy()).thenReturn(copyState);
-            
-            // Setup Strategy mapGenerators for getListStateRef
-            ArrayList<String> keys = new ArrayList<>();
-            keys.add(GeneratorType.EvolutionStrategies.toString());
-            when(strategy.getListKey()).thenReturn(keys);
-            
-            SortedMap<GeneratorType, Generator> mapGenerators = new TreeMap<>();
-            EvolutionStrategies existingES = mock(EvolutionStrategies.class);
-            when(existingES.getListStateReference()).thenReturn(new ArrayList<>());
-            mapGenerators.put(GeneratorType.EvolutionStrategies, existingES);
-            strategy.mapGenerators = mapGenerators;
-            
-            // Setup RandomSearch.listStateReference
-            State s1 = new State();
-            s1.setCode(new ArrayList<>(Arrays.asList(1.0, 2.0)));
-            s1.setEvaluation(new ArrayList<>(Arrays.asList(10.0)));
-            RandomSearch.listStateReference = new ArrayList<>();
-            RandomSearch.listStateReference.add(s1);
-            RandomSearch.listStateReference.add(s1);
-            
-            // Setup EvolutionStrategies static fields
-            EvolutionStrategies.selectionType = SelectionType.TruncationSelection;
-            EvolutionStrategies.mutationType = MutationType.OnePointMutation;
-            EvolutionStrategies.replaceType = ReplaceType.GenerationalReplace;
-            EvolutionStrategies.truncation = 2;
-            EvolutionStrategies.PM = 0.1;
-            
-            EvolutionStrategies es = new EvolutionStrategies();
-            
-            // Run generate
-            State result = es.generate(1);
-            
-            assertNotNull(result);
-        }
+    public void testGenerate() throws Exception {
+        int operatorNumber = 1;
+        
+        // Populate listStateReference
+        List<State> population = new ArrayList<>();
+        State s1 = mock(State.class);
+        when(s1.getCode()).thenReturn(new ArrayList<>());
+        ArrayList<Double> eval = new ArrayList<>();
+        eval.add(10.0);
+        when(s1.getEvaluation()).thenReturn(eval);
+        when(s1.getTypeGenerator()).thenReturn(GeneratorType.RandomSearch);
+        population.add(s1);
+        population.add(s1);
+        
+        Field listField = EvolutionStrategies.class.getDeclaredField("listStateReference");
+        listField.setAccessible(true);
+        listField.set(evolutionStrategies, population);
+        
+        State result = evolutionStrategies.generate(operatorNumber);
+        
+        assertNotNull(result);
+    }
+    
+    @Test
+    public void testGetType() {
+        assertEquals(GeneratorType.EvolutionStrategies, evolutionStrategies.getType());
+    }
+
+    @Test
+    public void testGetReference() throws Exception {
+        List<State> population = new ArrayList<>();
+        State s1 = mock(State.class);
+        ArrayList<Double> eval1 = new ArrayList<>();
+        eval1.add(10.0);
+        when(s1.getEvaluation()).thenReturn(eval1);
+        
+        State s2 = mock(State.class);
+        ArrayList<Double> eval2 = new ArrayList<>();
+        eval2.add(5.0);
+        when(s2.getEvaluation()).thenReturn(eval2);
+        
+        population.add(s1);
+        population.add(s2);
+        
+        Field listField = EvolutionStrategies.class.getDeclaredField("listStateReference");
+        listField.setAccessible(true);
+        listField.set(evolutionStrategies, population);
+        
+        // Minimization
+        when(problemMock.getTypeProblem()).thenReturn(Problem.ProblemType.Minimizar);
+        State ref = evolutionStrategies.getReference();
+        assertEquals(s2, ref);
+        
+        // Maximization
+        when(problemMock.getTypeProblem()).thenReturn(Problem.ProblemType.Maximizar);
+        ref = evolutionStrategies.getReference();
+        assertEquals(s1, ref);
+    }
+    
+    @Test
+    public void testUpdateReference() throws Exception {
+        List<State> population = new ArrayList<>();
+        State s1 = mock(State.class);
+        ArrayList<Double> eval1 = new ArrayList<>();
+        eval1.add(10.0);
+        when(s1.getEvaluation()).thenReturn(eval1);
+        population.add(s1);
+        
+        Field listField = EvolutionStrategies.class.getDeclaredField("listStateReference");
+        listField.setAccessible(true);
+        listField.set(evolutionStrategies, population);
+        
+        State candidate = mock(State.class);
+        ArrayList<Double> evalCandidate = new ArrayList<>();
+        evalCandidate.add(5.0);
+        when(candidate.getEvaluation()).thenReturn(evalCandidate);
+        
+        evolutionStrategies.updateReference(candidate, 1);
     }
 }
