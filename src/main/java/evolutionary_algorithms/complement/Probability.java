@@ -5,6 +5,13 @@ public class Probability {
     private Object value;
 	private float probability;
 	
+	public Probability() {}
+
+	public Probability(Probability other) {
+		this.key = other.key;
+		this.value = other.value;
+		this.probability = other.probability;
+	}
 	
 	public float getProbability() {
 		return probability;

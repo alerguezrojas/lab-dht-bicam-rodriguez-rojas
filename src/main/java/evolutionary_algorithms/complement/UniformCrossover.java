@@ -1,17 +1,19 @@
 package evolutionary_algorithms.complement;
 
 import metaheurictics.strategy.Strategy;
+import java.security.SecureRandom;
 
 import problem.definition.State;
 
 public class UniformCrossover extends Crossover {
 	
+	private static final SecureRandom secureRandom = new SecureRandom();
 	
 	public int[] mascara(int length){
 		int[] mascara = new int[length];
 		for (int i = 0; i < mascara.length; i++) {
-			int value = (int)(Math.random() * (int)(2));
-			mascara[0] = value;
+			int value = secureRandom.nextInt(2);
+			mascara[i] = value;
 		}
 		return mascara;
 	}	
@@ -28,8 +30,8 @@ public class UniformCrossover extends Crossover {
    			}
    			else{
    				if(mascara[k] == 0){
-   					value = father2.getCode().get(k);  
-   					state.getCode().set(k, value);
+   					value = father2.getCode().get(k);
+   	   				state.getCode().set(k, value);
    				}
    			}
 		}
