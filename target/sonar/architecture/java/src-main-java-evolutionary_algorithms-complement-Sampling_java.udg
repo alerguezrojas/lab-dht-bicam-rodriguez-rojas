@@ -1,0 +1,91 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764793885705*java2.B¸
+C
+>src/main/java/evolutionary_algorithms/complement/Sampling.java2
+	
+type3
+	
+MAIN4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+S
+Nalerguezrojas_lab-dht-bicam-rodriguez-rojas:evolutionary_algorithms.complement9
+1
++evolutionary_algorithms.complement.Sampling11
+
+class12
+
+access13
+
+public14
+
+simple-name15
+
+Sampling16
+]
+Wevolutionary_algorithms.complement.Sampling#sampling(Ljava/util/List;I)Ljava/util/List;18
+
+method19
+
+sampling20
+
+problem.definition.State22
+
+unknown23
+
+
+uses24J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6j˜
+>
+108
+101112 *
+1 (:7B
+
+
+13
+14
+
+
+15
+16
+B
+17<
+171819 *
+1	 	(210:7B
+
+
+13
+14
+
+
+15
+20
+
+21
+212223r6
+
+172124*
+1	 	(
+
+172124*
+1	- 	(2

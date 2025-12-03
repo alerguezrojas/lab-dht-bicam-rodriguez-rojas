@@ -1,0 +1,197 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764793881491*java2.Bâ
+7
+2src/main/java/factory_method/FactoryGenerator.java2
+	
+type3
+	
+MAIN4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+?
+:alerguezrojas_lab-dht-bicam-rodriguez-rojas:factory_method9
+%
+factory_method.FactoryGenerator11
+
+class12
+
+access13
+
+public14
+
+simple-name15
+
+FactoryGenerator16
+*
+$factory_interface.IFFactoryGenerator18
+
+unknown19
+
+
+implements20
+
+
+uses21
+/
+)factory_method.FactoryGenerator.generator23
+
+field24
+
+private25
+
+	generator26
+)
+#metaheuristics.generators.Generator28
+
+is type29
+…
+factory_method.FactoryGenerator#createGenerator(Lmetaheuristics/generators/GeneratorType;)Lmetaheuristics/generators/Generator;31
+
+method32
+
+createGenerator33
+
+returns34
+-
+'metaheuristics.generators.GeneratorType36
+
+	has param37
+
+
+references38
+"
+factory_method.FactoryLoader40
+T
+Nfactory_method.FactoryLoader#getInstance(Ljava/lang/String;)Ljava/lang/Object;42
+
+calls43J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6j¬
+
+17
+171819
+
+27
+272819
+
+39
+394019
+B
+30<
+303132 *
+1 (210:7B
+
+
+13
+14
+
+
+15
+33
+
+35
+353619
+
+41
+414219
+>
+108
+101112 *
+1 (:7B
+
+
+13
+14
+
+
+15
+16
+B
+22<
+222324 *
+1 (	210:7B
+
+
+13
+25
+
+
+15
+26ræ
+
+101720*
+1* (<
+
+101721*
+1* (<
+
+222729*
+1
+ (
+
+222721*
+1
+ (
+
+222721*
+1 (
+
+302734*
+1	 (
+
+303537*
+1# (0
+
+302721*
+1	 (
+
+303529*
+11 (>
+
+303521*
+1# (0
+
+302721*
+1 (
+
+302238*
+1 (
+
+302721*
+1 (
+
+303938*
+1 ((
+
+304143*
+1) (4
+
+303921*
+1 ((
+
+302721*
+1
+ (
+
+302238*
+1
+ (

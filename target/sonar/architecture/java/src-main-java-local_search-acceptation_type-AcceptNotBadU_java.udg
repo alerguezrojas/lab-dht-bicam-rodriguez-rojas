@@ -1,0 +1,282 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764793885893*java2.Bµ
+
+C
+>src/main/java/local_search/acceptation_type/AcceptNotBadU.java2
+	
+type3
+	
+MAIN4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+N
+Ialerguezrojas_lab-dht-bicam-rodriguez-rojas:local_search.acceptation_type9
+1
++local_search.acceptation_type.AcceptNotBadU11
+
+class12
+
+access13
+
+public14
+
+simple-name15
+
+AcceptNotBadU16
+7
+1local_search.acceptation_type.AcceptableCandidate18
+
+unknown19
+
+extends20
+
+
+uses21
+‹
+„local_search.acceptation_type.AcceptNotBadU#acceptCandidate(Lproblem/definition/State;Lproblem/definition/State;)Ljava/lang/Boolean;23
+
+method24
+
+acceptCandidate25
+
+problem.definition.State27
+
+	has param28
+
+is type29
+ 
+problem.definition.Problem31
+
+returns32
+&
+ metaheurictics.strategy.Strategy34
+
+
+references35
+O
+Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;37
+
+calls38
+V
+Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;40
+,
+&problem.definition.Problem$ProblemType42
+Y
+Sproblem.definition.Problem#getTypeProblem()Lproblem/definition/Problem$ProblemType;44
+6
+0problem.definition.Problem$ProblemType.Maximizar46
+C
+=problem.definition.State#getEvaluation()Ljava/util/ArrayList;48
+6
+0metaheurictics.strategy.Strategy#getThreshold()D50J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6jà
+
+30
+303119
+
+47
+474819
+B
+22<
+222324 *
+1 (210:7B
+
+
+13
+14
+
+
+15
+25
+
+26
+262719
+
+41
+414219
+
+45
+454619
+
+17
+171819
+
+49
+495019
+
+33
+333419
+
+36
+363719
+>
+108
+101112 *
+1 (:7B
+
+
+13
+14
+
+
+15
+16
+
+39
+394019
+
+43
+434419r¤	
+
+101720*
+1$ (7
+
+101721*
+1$ (7
+
+222628*
+1! (&
+
+222628*
+15 (:
+
+222629*
+1' (3
+
+222621*
+1! (&
+
+222629*
+1; (I
+
+222621*
+15 (:
+
+223029*
+1 (
+
+223021*
+1 (
+
+
+223032*
+1 (
+
+223335*
+1 (
+
+223638*
+1, (6
+
+223332*
+1 (
+
+223335*
+1 (
+
+223938*
+1 ()
+
+223321*
+1 (
+
+224132*
+1 (
+
+223035*
+1 (
+
+224338*
+1 (
+
+224121*
+1' (2
+
+224135*
+1' (2
+
+224121*
+13 (<
+
+224535*
+13 (<
+
+222635*
+1 ( 
+
+224738*
+1! (.
+
+222635*
+1: (H
+
+224738*
+1I (V
+
+223335*
+1 (
+
+224938*
+1( (4
+
+223332*
+1 (
+
+223335*
+1 (
+
+223938*
+1 (%
+
+223321*
+1 (
+
+222635*
+1 ($
+
+224738*
+1% (2
+
+222635*
+1> (L
+
+224738*
+1M (Z
+
+223335*
+1 (
+
+224938*
+1, (8
+
+223332*
+1 (
+
+223335*
+1 (
+
+223938*
+1 ()
+
+223321*
+1 (

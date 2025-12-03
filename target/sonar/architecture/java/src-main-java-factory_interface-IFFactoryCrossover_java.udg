@@ -1,0 +1,111 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764793887564*java2.Bê
+<
+7src/main/java/factory_interface/IFFactoryCrossover.java2
+	
+type3
+	
+MAIN4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+B
+=alerguezrojas_lab-dht-bicam-rodriguez-rojas:factory_interface9
+*
+$factory_interface.IFFactoryCrossover11
+
+	interface12
+
+access13
+
+public14
+
+simple-name15
+
+IFFactoryCrossover16
+
+–factory_interface.IFFactoryCrossover#createCrossover(Levolutionary_algorithms/complement/CrossoverType;)Levolutionary_algorithms/complement/Crossover;18
+
+method19
+
+createCrossover20
+2
+,evolutionary_algorithms.complement.Crossover22
+
+unknown23
+
+returns24
+6
+0evolutionary_algorithms.complement.CrossoverType26
+
+	has param27
+
+
+uses28
+
+is type29J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6j¬
+
+25
+252623
+B
+17<
+171819 *
+1 (210:7B
+
+
+13
+14
+
+
+15
+20
+>
+108
+101112 *
+1 ($:7B
+
+
+13
+14
+
+
+15
+16
+
+21
+212223r‡
+
+172124*
+1 (
+
+172527*
+1 ()
+
+172128*
+1 (
+
+172529*
+1* (7
+
+172528*
+1 ()

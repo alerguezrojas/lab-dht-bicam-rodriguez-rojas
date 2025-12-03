@@ -1,0 +1,471 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764793883474*java2.B‰
+?
+:src/main/java/local_search/acceptation_type/Dominance.java2
+	
+type3
+	
+MAIN4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+N
+Ialerguezrojas_lab-dht-bicam-rodriguez-rojas:local_search.acceptation_type9
+-
+'local_search.acceptation_type.Dominance11
+
+class12
+
+access13
+
+public14
+
+simple-name15
+
+	Dominance16
+h
+blocal_search.acceptation_type.Dominance#ListDominance(Lproblem/definition/State;Ljava/util/List;)Z18
+
+method19
+
+ListDominance20
+
+problem.definition.State22
+
+unknown23
+
+	has param24
+
+is type25
+
+
+uses26
+
+
+references27
+n
+hlocal_search.acceptation_type.Dominance#dominance(Lproblem/definition/State;Lproblem/definition/State;)Z29
+
+calls30
+
+returns31
+-
+'metaheuristics.generators.GeneratorType33
+)
+#metaheuristics.generators.Generator35
+\
+Vmetaheuristics.generators.Generator#getType()Lmetaheuristics/generators/GeneratorType;37
+&
+ metaheurictics.strategy.Strategy39
+V
+Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;41
+0
+*metaheurictics.strategy.Strategy.generator43
+P
+Jmetaheuristics.generators.GeneratorType.MultiobjectiveHillClimbingDistance45
+B
+<metaheuristics.generators.MultiobjectiveHillClimbingDistance47
+y
+smetaheuristics.generators.MultiobjectiveHillClimbingDistance#DistanceCalculateAdd(Ljava/util/List;)Ljava/util/List;49
+F
+@problem.definition.State#Comparator(Lproblem/definition/State;)Z51
+@
+:problem.definition.State#clone()Lproblem/definition/State;53
+
+	dominance54
+,
+&problem.definition.Problem$ProblemType56
+ 
+problem.definition.Problem58
+Y
+Sproblem.definition.Problem#getTypeProblem()Lproblem/definition/Problem$ProblemType;60
+O
+Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;62
+6
+0problem.definition.Problem$ProblemType.Maximizar64
+C
+=problem.definition.State#getEvaluation()Ljava/util/ArrayList;66J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6j°
+
+46
+464723
+>
+108
+101112 *
+1 (:7B
+
+
+13
+14
+
+
+15
+16
+
+57
+575823
+
+32
+323323
+
+36
+363723
+
+65
+656623
+
+21
+212223
+
+55
+555623
+
+63
+636423
+
+52
+525323
+
+38
+383923
+
+61
+616223
+
+34
+343523
+
+50
+505123
+B
+28<
+282919 *
+1_ _(210:7B
+
+
+13
+14
+
+
+15
+54
+
+42
+424323
+B
+17<
+171819 *
+1 (210:7B
+
+
+13
+14
+
+
+15
+20
+
+48
+484923
+
+40
+404123
+
+59
+596023
+
+44
+444523r™
+
+172124*
+1 ($
+
+172125*
+1% (.
+
+172126*
+1 ($
+
+172126*
+15 (:
+
+171027*
+1 (
+
+172830*
+1 (
+
+172131*
+1 ( 
+
+172131*
+1 (	
+
+173231*
+1	 (
+
+173427*
+1	 (
+
+173630*
+1* (1
+
+173831*
+1	 (
+
+173827*
+1	 (
+
+174030*
+1 (
+
+173826*
+1	 (
+
+173426*
+1  ()
+
+174227*
+1  ()
+
+173226*
+1; (H
+
+173226*
+1I (k
+
+174427*
+1I (k
+
+174627*
+1 ((
+
+174830*
+1) (=
+
+174626*
+1 ((
+
+171027*
+1 ("
+
+172830*
+1 ("
+
+172131*
+1# ('
+
+172125*
+1( ((
+
+172126*
+1( ((
+
+
+172131*
+1( ((
+
+172127*
+1) )(
+
+175030*
+1) )(!
+
+172131*
+1. .(
+
+172127*
+1. .(
+
+175230*
+1. .(
+
+173231*
+1/	 /(
+
+173427*
+1/	 /(
+
+173630*
+1/* /(1
+
+173831*
+1/	 /(
+
+173827*
+1/	 /(
+
+174030*
+1/ /(
+
+173826*
+1/	 /(
+
+173426*
+1/  /()
+
+174227*
+1/  /()
+
+173226*
+1/; /(H
+
+173226*
+1/I /(k
+
+174427*
+1/I /(k
+
+174627*
+10 0((
+
+174830*
+10) 0(=
+
+174626*
+10 0((
+
+282124*
+1_ _( 
+
+282124*
+1_- _(2
+
+282125*
+1_! _(*
+
+282126*
+1_ _( 
+
+282125*
+1_3 _(<
+
+282126*
+1_- _(2
+
+285531*
+1d d(
+
+285727*
+1d d(
+
+285930*
+1d* d(8
+
+285731*
+1d d(
+
+283827*
+1d d(
+
+286130*
+1d d('
+
+283831*
+1d d(
+
+283827*
+1d d(
+
+284030*
+1d d(
+
+283826*
+1d d(
+
+285526*
+1dB d(M
+
+285527*
+1dB d(M
+
+285526*
+1dN d(W
+
+286327*
+1dN d(W
+
+282127*
+1f f(!
+
+286530*
+1f" f(/
+
+282127*
+1g g(
+
+286530*
+1g g(
+
+282127*
+1g8 g(A
+
+286530*
+1gB g(O
+
+282127*
+1j j(
+
+286530*
+1j j(
+
+282127*
+1j9 j(B
+
+286530*
+1jC j(P
+
+282127*
+1q q(!
+
+286530*
+1q" q(/
+
+282127*
+1r r(
+
+286530*
+1r r(
+
+282127*
+1r8 r(A
+
+286530*
+1rB r(O
+
+282127*
+1u u(
+
+286530*
+1u u(
+
+282127*
+1u9 u(B
+
+286530*
+1uC u(P
+
+282127*
+1z3 z(<
+
+286530*
+1z= z(J

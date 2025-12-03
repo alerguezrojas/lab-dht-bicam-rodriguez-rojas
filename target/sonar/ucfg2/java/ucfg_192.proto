@@ -1,0 +1,89 @@
+
+hlocal_search.acceptation_type.AcceptMulticase#DominanceRank(Lproblem/definition/State;Ljava/util/List;)It
+jC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/acceptation_type/AcceptMulticase.java^ ^("5*Ã	
+4a a(ì
+ê
+a a(
+%2problem.definition.State"
+__arrayGet*4
+
+__unknown_file (
+
+listjava.util.List*"
+
+__unknown_file (
+""v
+t
+a a( $
+solutionproblem.definition.State"__id*<
+
+__unknown_file ( 
+
+%2problem.definition.Statedb
+b b(&-
+%3'local_search.acceptation_type.Dominance"'local_search.acceptation_type.Dominanceì
+ê
+b b((
+%4"1local_search.acceptation_type.Dominance#<init>()V*K
+
+__unknown_file (/
+-
+%3'local_search.acceptation_type.Dominanceñ
+ì
+b b()4
+	dominance'local_search.acceptation_type.Dominance"__id*K
+
+__unknown_file (/
+-
+%3'local_search.acceptation_type.Dominance©¶
+c c(3
+%5boolean"hlocal_search.acceptation_type.Dominance#dominance(Lproblem/definition/State;Lproblem/definition/State;)Z*R
+
+__unknown_file (6
+4
+	dominance'local_search.acceptation_type.Dominance*B
+
+__unknown_file (&
+$
+solutionproblem.definition.State*H
+
+__unknown_file (,
+*
+stateCandidateproblem.definition.State2?dominance(Lproblem/definition/State;Lproblem/definition/State;)i
+g
+c c(;
+%6boolean"	__compare*
+c4 c(6
+==*
+c c(3
+
+%5boolean*
+c7 c(;2*
+5*Ï
+5` `(mk
+` `(!	
+%0int"java.util.List#size()I*4
+
+__unknown_file (
+
+listjava.util.List2size()f
+d
+` `(!
+%1boolean"	__compare*
+` `(
+<*
+` `(
+""*
+` `(!
+	
+%0int*
+4
+1*!
+1h	 h("
+h h(
+"":6
+^ ^(0*
+stateCandidateproblem.definition.State:"
+^1 ^(A
+listjava.util.ListB1/
+-local_search.acceptation_type.AcceptMulticaseX

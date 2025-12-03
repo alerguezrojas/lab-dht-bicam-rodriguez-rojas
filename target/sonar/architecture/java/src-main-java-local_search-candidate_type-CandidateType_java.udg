@@ -1,0 +1,160 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764793888793*java2.Bå
+A
+<src/main/java/local_search/candidate_type/CandidateType.java2
+	
+type3
+	
+MAIN4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+L
+Galerguezrojas_lab-dht-bicam-rodriguez-rojas:local_search.candidate_type9
+/
+)local_search.candidate_type.CandidateType11
+
+
+enum12
+
+access13
+
+public14
+
+simple-name15
+
+CandidateType16
+d
+^local_search.candidate_type.CandidateType#values()[Llocal_search/candidate_type/CandidateType;18
+
+method19
+
+values20
+v
+plocal_search.candidate_type.CandidateType#valueOf(Ljava/lang/String;)Llocal_search/candidate_type/CandidateType;22
+
+valueOf23
+@
+:local_search.candidate_type.CandidateType.SmallerCandidate25
+
+field26
+
+SmallerCandidate27
+
+calls28
+@
+:local_search.candidate_type.CandidateType.GreaterCandidate30
+
+GreaterCandidate31
+?
+9local_search.candidate_type.CandidateType.RandomCandidate33
+
+RandomCandidate34
+E
+?local_search.candidate_type.CandidateType.NotDominatedCandidate36
+
+NotDominatedCandidate37J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6jê
+6
+290
+293026 *
+1	 	($210:7B
+
+
+15
+31
+6
+320
+323326 *
+1	& 	(5210:7B
+
+
+15
+34
+>
+108
+101112 *
+1 (:7B
+
+
+13
+14
+
+
+15
+16
+6
+210
+212219 *
+1 (210:7B
+
+
+15
+23
+6
+170
+171819 *
+1 (210:7B
+
+
+15
+20
+6
+240
+242526 *
+1	 	(210:7B
+
+
+15
+27
+6
+350
+353626 *
+1	7 	(L210:7B
+
+
+15
+37rÿ
+
+241028*
+1	 	(
+
+241028*
+1	 	(
+
+291028*
+1	 	($
+
+291028*
+1	 	($
+
+321028*
+1	& 	(5
+
+321028*
+1	& 	(5
+
+351028*
+1	7 	(L
+
+351028*
+1	7 	(L
