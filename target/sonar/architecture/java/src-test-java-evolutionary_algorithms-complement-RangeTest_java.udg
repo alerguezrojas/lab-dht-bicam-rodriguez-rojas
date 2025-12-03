@@ -1,0 +1,355 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764795292488*java2.BÅ
+D
+?src/test/java/evolutionary_algorithms/complement/RangeTest.java2
+	
+type3
+	
+TEST4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+S
+Nalerguezrojas_lab-dht-bicam-rodriguez-rojas:evolutionary_algorithms.complement9
+2
+,evolutionary_algorithms.complement.RangeTest11
+
+class12
+
+access13
+
+	protected14
+
+simple-name15
+
+	RangeTest16
+?
+9evolutionary_algorithms.complement.RangeTest#testRange()V18
+
+method19
+
+	testRange20
+ 
+org.junit.jupiter.api.Test22
+
+unknown23
+
+annotated by24
+
+
+uses25
+.
+(evolutionary_algorithms.complement.Range27
+
+is type28
+
+calls29
+
+
+references30
+9
+3evolutionary_algorithms.complement.Range#setMax(F)V32
+9
+3evolutionary_algorithms.complement.Range#setMin(F)V34
+&
+ org.junit.jupiter.api.Assertions36
+8
+2org.junit.jupiter.api.Assertions#assertEquals(FF)V38
+8
+2evolutionary_algorithms.complement.Range#getMax()F40
+8
+2evolutionary_algorithms.complement.Range#getMin()F42
+4
+.evolutionary_algorithms.complement.Probability44
+P
+Jevolutionary_algorithms.complement.Probability#setKey(Ljava/lang/Object;)V46
+R
+Levolutionary_algorithms.complement.Probability#setValue(Ljava/lang/Object;)V48
+G
+Aevolutionary_algorithms.complement.Probability#setProbability(F)V50
+i
+cevolutionary_algorithms.complement.Range#setData(Levolutionary_algorithms/complement/Probability;)V52
+
+returns53
+h
+bevolutionary_algorithms.complement.Range#getData()Levolutionary_algorithms/complement/Probability;55
+I
+Corg.junit.jupiter.api.Assertions#assertNotNull(Ljava/lang/Object;)V57
+Z
+Torg.junit.jupiter.api.Assertions#assertEquals(Ljava/lang/Object;Ljava/lang/Object;)V59
+O
+Ievolutionary_algorithms.complement.Probability#getKey()Ljava/lang/Object;61
+Q
+Kevolutionary_algorithms.complement.Probability#getValue()Ljava/lang/Object;63
+F
+@evolutionary_algorithms.complement.Probability#getProbability()F65
+F
+@org.junit.jupiter.api.Assertions#assertNull(Ljava/lang/Object;)V67J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6j”
+
+41
+414223
+
+39
+394023
+
+54
+545523
+
+56
+565723
+
+60
+606123
+
+66
+666723
+B
+17<
+171819 *
+1	 	(210:7B
+
+
+13
+14
+
+
+15
+20
+
+31
+313223
+
+21
+212223
+
+64
+646523
+
+51
+515223
+
+58
+585923
+
+37
+373823
+
+43
+434423
+>
+108
+101112 *
+1 (:7B
+
+
+13
+14
+
+
+15
+16
+
+35
+353623
+
+26
+262723
+
+33
+333423
+
+45
+454623
+
+49
+495023
+
+62
+626323
+
+47
+474823r²
+
+172124*
+1	 	(
+
+
+172125*
+1	 	(
+
+
+172628*
+1 (
+
+172625*
+1	 (
+
+172629*
+1 ( 
+
+172630*
+1	 (
+
+173129*
+1 (
+
+172630*
+1	 (
+
+173329*
+1 (
+
+173530*
+1	 (
+
+173729*
+1	 (
+
+172630*
+1 ("
+
+173929*
+1# ()
+
+173530*
+1	 (
+
+173729*
+1	 (
+
+172630*
+1 (!
+
+174129*
+1" ((
+
+174328*
+1 (
+
+174325*
+1	 (
+
+174329*
+1  (+
+
+174330*
+1	 (
+
+174529*
+1 (
+
+174330*
+1	 (
+
+174729*
+1 (
+
+174330*
+1	 (
+
+174929*
+1 (
+
+172630*
+1	 (
+
+175129*
+1 (
+
+174328*
+1 ("
+
+174325*
+1	 (
+
+174353*
+1% (*
+
+172630*
+1% (*
+
+175429*
+1+ (2
+
+173530*
+1	 (
+
+175629*
+1	 (
+
+173530*
+1	 (
+
+175829*
+1	 (
+
+174330*
+1 (*
+
+176029*
+1+ (1
+
+173530*
+1	 (
+
+175829*
+1	 (
+
+174330*
+1 ((
+
+176229*
+1) (1
+
+173530*
+1	 (
+
+173729*
+1	 (
+
+174330*
+1 ()
+
+176429*
+1* (8
+
+172630*
+1 	  (
+
+175129*
+1   (
+
+173530*
+1!	 !(
+
+176629*
+1!	 !(
+
+174353*
+1! !(
+
+172630*
+1! !(
+
+175429*
+1! !(!

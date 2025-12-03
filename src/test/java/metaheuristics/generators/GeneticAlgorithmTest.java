@@ -17,6 +17,7 @@ import evolutionary_algorithms.complement.MutationType;
 import evolutionary_algorithms.complement.ReplaceType;
 import evolutionary_algorithms.complement.SelectionType;
 import metaheurictics.strategy.Strategy;
+import problem.definition.Codification;
 import problem.definition.Problem;
 import problem.definition.Problem.ProblemType;
 import problem.definition.State;
@@ -29,11 +30,15 @@ class GeneticAlgorithmTest {
             Strategy strategy = mock(Strategy.class);
             Problem problem = mock(Problem.class);
             State problemState = mock(State.class);
+            Codification codification = mock(Codification.class);
             
             mockedStrategy.when(Strategy::getStrategy).thenReturn(strategy);
             when(strategy.getProblem()).thenReturn(problem);
             when(problem.getState()).thenReturn(problemState);
             when(problem.getTypeProblem()).thenReturn(ProblemType.Maximizar);
+            when(problem.getCodification()).thenReturn(codification);
+            when(codification.getAleatoryKey()).thenReturn(0);
+            when(codification.getVariableCount()).thenReturn(2);
             
             State copyState = new State();
             copyState.setCode(new ArrayList<>(Arrays.asList(1.0, 2.0)));

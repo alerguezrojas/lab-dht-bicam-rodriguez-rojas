@@ -1,0 +1,247 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764795291920*java2.B°
+
+9
+4src/test/java/factory_method/FactoryReplaceTest.java2
+	
+type3
+	
+TEST4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+?
+:alerguezrojas_lab-dht-bicam-rodriguez-rojas:factory_method9
+'
+!factory_method.FactoryReplaceTest11
+
+class12
+
+access13
+
+	protected14
+
+simple-name15
+
+FactoryReplaceTest16
+<
+6factory_method.FactoryReplaceTest#testCreateReplace()V18
+
+method19
+
+testCreateReplace20
+ 
+org.junit.jupiter.api.Test22
+
+unknown23
+
+annotated by24
+
+
+uses25
+#
+factory_method.FactoryReplace27
+
+is type28
+
+calls29
+0
+*evolutionary_algorithms.complement.Replace31
+
+returns32
+
+
+references33
+
+‰factory_method.FactoryReplace#createReplace(Levolutionary_algorithms/complement/ReplaceType;)Levolutionary_algorithms/complement/Replace;35
+4
+.evolutionary_algorithms.complement.ReplaceType37
+G
+Aevolutionary_algorithms.complement.ReplaceType.SteadyStateReplace39
+&
+ org.junit.jupiter.api.Assertions41
+I
+Corg.junit.jupiter.api.Assertions#assertNotNull(Ljava/lang/Object;)V43
+5
+/org.junit.jupiter.api.Assertions#assertTrue(Z)V45
+;
+5evolutionary_algorithms.complement.SteadyStateReplace47
+H
+Bevolutionary_algorithms.complement.ReplaceType.GenerationalReplace49
+<
+6evolutionary_algorithms.complement.GenerationalReplace51J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6jô
+>
+108
+101112 *
+1 (:7B
+
+
+13
+14
+
+
+15
+16
+B
+17<
+171819 *
+1 (210:7B
+
+
+13
+14
+
+
+15
+20
+
+26
+262723
+
+42
+424323
+
+46
+464723
+
+21
+212223
+
+44
+444523
+
+50
+505123
+
+30
+303123
+
+48
+484923
+
+34
+343523
+
+40
+404123
+
+36
+363723
+
+38
+383923rÅ
+
+172124*
+1 (
+
+
+172125*
+1 (
+
+
+172628*
+1 (
+
+172625*
+1	 (
+
+172629*
+1& (4
+
+173028*
+1 (
+
+173025*
+1	 (
+
+173032*
+1 (
+
+172633*
+1 (
+
+173429*
+1 (+
+
+173625*
+1, (7
+
+173625*
+18 (J
+
+173833*
+18 (J
+
+174033*
+1	 (
+
+174229*
+1	 (
+
+174033*
+1	 (
+
+174429*
+1	 (
+
+174625*
+1" (4
+
+173028*
+1 (
+
+173025*
+1	 (
+
+173032*
+1 (
+
+172633*
+1 (
+
+173429*
+1 (+
+
+173625*
+1, (7
+
+173625*
+18 (K
+
+174833*
+18 (K
+
+174033*
+1	 (
+
+174229*
+1	 (
+
+174033*
+1	 (
+
+174429*
+1	 (
+
+175025*
+1" (5
