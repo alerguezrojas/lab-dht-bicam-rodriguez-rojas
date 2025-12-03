@@ -20,7 +20,7 @@ public class GreaterCandidate extends SearchCandidate {
 		State stateGreater = null;
 		if(listNeighborhood.size() > 1){
 			double counter = 0;
-			double currentCount = listNeighborhood.get(0).getEvaluation().get(0);;
+			double currentCount = listNeighborhood.get(0).getEvaluation().get(0);
 			for (int i = 1; i < listNeighborhood.size(); i++) {
 				counter = listNeighborhood.get(i).getEvaluation().get(0);
 				if (counter > currentCount) {

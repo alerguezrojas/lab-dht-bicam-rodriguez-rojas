@@ -60,7 +60,7 @@ public class GeneticAlgorithm extends Generator {
 	
     public GeneticAlgorithm() {
 		super();
-		this.listState = getListStateRef(); // llamada al método que devuelve la lista. 
+		this.listState = getListStateRef(); // llamada al mï¿½todo que devuelve la lista. 
 //		this.selectionType = SelectionType.Truncation;
 //		this.crossoverType = CrossoverType.UniformCrossover;
 //		this.mutationType = MutationType.UniformMutation;
@@ -159,7 +159,7 @@ public class GeneticAlgorithm extends Generator {
 		/*if(RandomSearch.listStateReference.size() == 0){
 			return this.listState = new ArrayList<State>();
 		}*/
-		while((found.equals(false)) && (Strategy.getStrategy().mapGenerators.size() > count)){
+		while(!found && Strategy.getStrategy().mapGenerators.size() > count){
 			if(key.get(count).equals(GeneratorType.GeneticAlgorithm.toString())){
 				GeneratorType keyGenerator = GeneratorType.valueOf(String.valueOf(key.get(count)));
 				GeneticAlgorithm generator = (GeneticAlgorithm) Strategy.getStrategy().mapGenerators.get(keyGenerator);

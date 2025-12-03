@@ -22,15 +22,15 @@ public class AcceptNotBadT extends AcceptableCandidate{
 			double result = (stateCandidate.getEvaluation().get(0) - stateCurrent.getEvaluation().get(0)) / SimulatedAnnealing.tinitial;
 			double probaleatory = Math.random();
 			double exp = Math.exp(result);
-			if ((stateCandidate.getEvaluation().get(0) >= stateCurrent.getEvaluation().get(0))
-					|| (probaleatory < exp))
+			if (stateCandidate.getEvaluation().get(0) >= stateCurrent.getEvaluation().get(0)
+					|| probaleatory < exp)
  				accept = true;
 			else
 				accept = false;
 		} else {
 			double result_min = (stateCandidate.getEvaluation().get(0) - stateCurrent.getEvaluation().get(0)) / SimulatedAnnealing.tinitial;
-			if ((stateCandidate.getEvaluation().get(0) <= stateCurrent.getEvaluation().get(0))
-					|| (Math.random() < Math.exp(result_min)))
+			if (stateCandidate.getEvaluation().get(0) <= stateCurrent.getEvaluation().get(0)
+					|| Math.random() < Math.exp(result_min))
 				accept = true;
 			else
 				accept = false;

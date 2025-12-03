@@ -15,9 +15,9 @@ public class SteadyStateReplace extends Replace {
 		if (Strategy.getStrategy().getProblem().getTypeProblem().equals(ProblemType.Maximizar)) {
 			stateREP = MinValue(listState);
 			if(stateCandidate.getEvaluation().get(0) >= stateREP.getEvaluation().get(0)){
-				Boolean find = false;
+				boolean find = false;
 		        int count = 0;
-		        while ((find.equals(false)) && (listState.size() > count)){
+		        while (!find && listState.size() > count){
 		        	if(listState.get(count).equals(stateREP)){
 		        		listState.remove(count);
 						listState.add(count, stateCandidate);
@@ -31,9 +31,9 @@ public class SteadyStateReplace extends Replace {
 			if(Strategy.getStrategy().getProblem().getTypeProblem().equals(ProblemType.Minimizar)){
 				stateREP = MaxValue(listState);
 				if(stateCandidate.getEvaluation().get(0) <= stateREP.getEvaluation().get(0)){
-					Boolean find = false;
+					boolean find = false;
 			        int count = 0;
-			        while ((find.equals(false)) && (listState.size() > count)){
+			        while (!find && listState.size() > count){
 			        	if(listState.get(count).equals(stateREP)){
 			        		listState.remove(count);
 							listState.add(count, stateCandidate);

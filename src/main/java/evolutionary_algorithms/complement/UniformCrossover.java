@@ -1,6 +1,5 @@
 package evolutionary_algorithms.complement;
 
-import metaheurictics.strategy.Strategy;
 import java.security.SecureRandom;
 
 import problem.definition.State;

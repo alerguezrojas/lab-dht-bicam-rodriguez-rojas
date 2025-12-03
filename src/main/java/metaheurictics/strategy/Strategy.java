@@ -47,8 +47,8 @@ public class Strategy {
 	
 	public boolean saveListStates; //guardar lista de estados generados
 	public boolean saveListBestStates; // guardar lista con los mejores estados encontrados en cada iteracion
-	public boolean saveFreneParetoMonoObjetivo; //guardar lista de soluciones no dominadas de una ejecución
-	public boolean calculateTime; // calcular tiempo de ejecución de un algoritmo
+	public boolean saveFreneParetoMonoObjetivo; //guardar lista de soluciones no dominadas de una ejecuciï¿½n
+	public boolean calculateTime; // calcular tiempo de ejecuciï¿½n de un algoritmo
 	
 	//calculo del Tiempo inicial y final
 	long initialTime;
@@ -120,7 +120,7 @@ public class Strategy {
 		
 		float sumMax = 0; // suma acumulativa para almacenar la evaluacion de la mejor solucion encotrada y calcular el OfflinePerformance
 		int countOff = 0; // variable par contar los OfflinePerformance que se van salvando en el arreglo
-		//ciclio de ejecución del algoritmo
+		//ciclio de ejecuciï¿½n del algoritmo
 		while (!stopexecute.stopIterations(countCurrent, countmaxIterations)){
 			//si se detecta un cambio
 			if(countCurrent == countChange){
@@ -142,7 +142,7 @@ public class Strategy {
 						MultiGenerator.activeGenerator.countBetterGender = 0;
 					}
 					updateWeight();//actualizar el peso de los generadores si se reinician cuando ocurre un cambio
-					//generar el estado candidato de la iteración
+					//generar el estado candidato de la iteraciï¿½n
 					stateCandidate = multiGenerator.generate(operatornumber);
 					problem.Evaluate(stateCandidate);
 					stateCandidate.setEvaluation(stateCandidate.getEvaluation());
@@ -165,10 +165,10 @@ public class Strategy {
 				//actualizar el mejor estado encontrado solo tiene sentido para algoritmos monoobjetivos
 				
 				//actualizar el mejor estado encontrado solo tiene sentido para algoritmos monoobjetivos
-				if ((getProblem().getTypeProblem().equals(ProblemType.Maximizar)) && bestState.getEvaluation().get(bestState.getEvaluation().size() - 1) < stateCandidate.getEvaluation().get(bestState.getEvaluation().size() - 1)) {
+				if (getProblem().getTypeProblem().equals(ProblemType.Maximizar) && bestState.getEvaluation().get(bestState.getEvaluation().size() - 1) < stateCandidate.getEvaluation().get(bestState.getEvaluation().size() - 1)) {
 					bestState = stateCandidate;
 				}
-				if ((problem.getTypeProblem().equals(ProblemType.Minimizar)) && bestState.getEvaluation().get(bestState.getEvaluation().size() - 1) > stateCandidate.getEvaluation().get(bestState.getEvaluation().size() - 1)) {
+				if (problem.getTypeProblem().equals(ProblemType.Minimizar) && bestState.getEvaluation().get(bestState.getEvaluation().size() - 1) > stateCandidate.getEvaluation().get(bestState.getEvaluation().size() - 1)) {
 					bestState = stateCandidate;
 				}
 				//					System.out.println("Evaluacion: "+ bestState.getEvaluation());
@@ -212,10 +212,10 @@ public class Strategy {
 				}
 				countCurrent = UpdateParameter.updateParameter(countCurrent);
 				//actualizar el mejor estado encontrado solo tiene sentido para algoritmos monoobjetivos
-				if ((getProblem().getTypeProblem().equals(ProblemType.Maximizar)) && bestState.getEvaluation().get(bestState.getEvaluation().size() - 1) < stateCandidate.getEvaluation().get(bestState.getEvaluation().size() - 1)) {
+				if (getProblem().getTypeProblem().equals(ProblemType.Maximizar) && bestState.getEvaluation().get(bestState.getEvaluation().size() - 1) < stateCandidate.getEvaluation().get(bestState.getEvaluation().size() - 1)) {
 					bestState = stateCandidate;
 				}
-				if ((problem.getTypeProblem().equals(ProblemType.Minimizar)) && bestState.getEvaluation().get(bestState.getEvaluation().size() - 1) > stateCandidate.getEvaluation().get(bestState.getEvaluation().size() - 1)) {
+				if (problem.getTypeProblem().equals(ProblemType.Minimizar) && bestState.getEvaluation().get(bestState.getEvaluation().size() - 1) > stateCandidate.getEvaluation().get(bestState.getEvaluation().size() - 1)) {
 					bestState = stateCandidate;
 				}
 				//					System.out.println("Evaluacion: "+ bestState.getEvaluation());

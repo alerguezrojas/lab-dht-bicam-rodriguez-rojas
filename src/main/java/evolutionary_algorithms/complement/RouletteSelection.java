@@ -55,8 +55,8 @@ public class RouletteSelection extends FatherSelection {
 			float numbAleatory = secureRandom.nextFloat();
 			boolean find = false;
 			int i = 0;
-			while ((find == false) && (i < listLimit.size())){
-				if((listLimit.get(i).getLimitLow() <= numbAleatory) && (numbAleatory <= listLimit.get(i).getLimitHigh())){
+			while (!find && i < listLimit.size()){
+				if(listLimit.get(i).getLimitLow() <= numbAleatory && numbAleatory <= listLimit.get(i).getLimitHigh()){
 					find = true;
 					fatherList.add(listState.get(i));
 				}

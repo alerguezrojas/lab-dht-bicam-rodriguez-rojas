@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.55.0" timestamp="2025-12-03T16:26:33.094">
+<file name="C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generators\DistributionEstimationAlgorithm.java">
+<violation beginline="184" endline="184" begincolumn="10" endcolumn="28" rule="UselessParentheses" ruleset="Code Style" package="metaheuristics.generators" class="DistributionEstimationAlgorithm" method="getListStateRef" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="184" endline="184" begincolumn="35" endcolumn="85" rule="UselessParentheses" ruleset="Code Style" package="metaheuristics.generators" class="DistributionEstimationAlgorithm" method="getListStateRef" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+<file name="C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generators\EvolutionStrategies.java">
+<violation beginline="134" endline="134" begincolumn="10" endcolumn="28" rule="UselessParentheses" ruleset="Code Style" package="metaheuristics.generators" class="EvolutionStrategies" method="getListStateRef" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="134" endline="134" begincolumn="35" endcolumn="85" rule="UselessParentheses" ruleset="Code Style" package="metaheuristics.generators" class="EvolutionStrategies" method="getListStateRef" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+<file name="C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generators\MultiGenerator.java">
+<violation beginline="58" endline="58" begincolumn="9" endcolumn="70" rule="UselessParentheses" ruleset="Code Style" package="metaheuristics.generators" class="MultiGenerator" method="initializeGenerators" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="58" endline="58" begincolumn="77" endcolumn="138" rule="UselessParentheses" ruleset="Code Style" package="metaheuristics.generators" class="MultiGenerator" method="initializeGenerators" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="58" endline="58" begincolumn="145" endcolumn="204" rule="UselessParentheses" ruleset="Code Style" package="metaheuristics.generators" class="MultiGenerator" method="initializeGenerators" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="58" endline="58" begincolumn="211" endcolumn="348" rule="UselessParentheses" ruleset="Code Style" package="metaheuristics.generators" class="MultiGenerator" method="initializeGenerators" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="58" endline="58" begincolumn="284" endcolumn="347" rule="UselessParentheses" ruleset="Code Style" package="metaheuristics.generators" class="MultiGenerator" method="initializeGenerators" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="290" endline="290" begincolumn="11" endcolumn="23" rule="UselessParentheses" ruleset="Code Style" package="metaheuristics.generators" class="MultiGenerator" method="roulette" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="290" endline="290" begincolumn="30" endcolumn="49" rule="UselessParentheses" ruleset="Code Style" package="metaheuristics.generators" class="MultiGenerator" method="roulette" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="291" endline="291" begincolumn="8" endcolumn="53" rule="UselessParentheses" ruleset="Code Style" package="metaheuristics.generators" class="MultiGenerator" method="roulette" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="291" endline="291" begincolumn="60" endcolumn="106" rule="UselessParentheses" ruleset="Code Style" package="metaheuristics.generators" class="MultiGenerator" method="roulette" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+<file name="C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generators\MultiobjectiveHillClimbingDistance.java">
+<violation beginline="62" endline="62" begincolumn="25" endcolumn="37" rule="PrimitiveWrapperInstantiation" ruleset="Best Practices" package="metaheuristics.generators" class="MultiobjectiveHillClimbingDistance" method="updateReference" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#primitivewrapperinstantiation" priority="3">
+Do not use `new Double(...)`, prefer `Double.valueOf(...)`
+</violation>
+</file>
+<file name="C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generators\MultiobjectiveTabuSearch.java">
+<violation beginline="88" endline="88" begincolumn="13" endcolumn="49" rule="UselessParentheses" ruleset="Code Style" package="metaheuristics.generators" class="MultiobjectiveTabuSearch" method="updateReference" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="88" endline="88" begincolumn="56" endcolumn="73" rule="UselessParentheses" ruleset="Code Style" package="metaheuristics.generators" class="MultiobjectiveTabuSearch" method="updateReference" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+<file name="C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generators\Particle.java">
+<violation beginline="81" endline="81" begincolumn="83" endcolumn="101" rule="UselessParentheses" ruleset="Code Style" package="metaheuristics.generators" class="Particle" method="UpdateVelocity" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+<file name="C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generators\ParticleSwarmOptimization.java">
+<violation beginline="105" endline="105" begincolumn="10" endcolumn="28" rule="UselessParentheses" ruleset="Code Style" package="metaheuristics.generators" class="ParticleSwarmOptimization" method="getListStateRef" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="105" endline="105" begincolumn="35" endcolumn="85" rule="UselessParentheses" ruleset="Code Style" package="metaheuristics.generators" class="ParticleSwarmOptimization" method="getListStateRef" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+<file name="C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generators\TabuSearch.java">
+<violation beginline="112" endline="112" begincolumn="13" endcolumn="49" rule="UselessParentheses" ruleset="Code Style" package="metaheuristics.generators" class="TabuSearch" method="updateReference" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="112" endline="112" begincolumn="56" endcolumn="73" rule="UselessParentheses" ruleset="Code Style" package="metaheuristics.generators" class="TabuSearch" method="updateReference" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="113" endline="113" begincolumn="11" endcolumn="70" rule="UselessParentheses" ruleset="Code Style" package="metaheuristics.generators" class="TabuSearch" method="updateReference" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="126" endline="126" begincolumn="11" endcolumn="70" rule="UselessParentheses" ruleset="Code Style" package="metaheuristics.generators" class="TabuSearch" method="updateReference" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+<file name="C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\problem\extension\MetricasMultiobjetivo.java">
+<violation beginline="67" endline="67" begincolumn="21" endcolumn="83" rule="UselessParentheses" ruleset="Code Style" package="problem.extension" class="MetricasMultiobjetivo" method="Dispersion" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="85" endline="85" begincolumn="31" endcolumn="42" rule="UselessParentheses" ruleset="Code Style" package="problem.extension" class="MetricasMultiobjetivo" method="Dispersion" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+<suppressedviolation filename="C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generators\MultiobjectiveTabuSearch.java" suppressiontype="annotation" msg="Avoid unused local variables such as 'problem'." usermsg=""></suppressedviolation>
+</pmd>
