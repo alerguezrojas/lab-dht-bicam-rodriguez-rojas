@@ -3,5 +3,5 @@ projectKey=alerguezrojas_lab-dht-bicam-rodriguez-rojas
 serverUrl=https://sonarcloud.io
 serverVersion=8.0.0.77041
 dashboardUrl=https://sonarcloud.io/dashboard?id=alerguezrojas_lab-dht-bicam-rodriguez-rojas
-ceTaskId=AZrmLYFmySckthhXXH1d
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZrmLYFmySckthhXXH1d
+ceTaskId=AZrmUyESwgQ10XUAPF-5
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZrmUyESwgQ10XUAPF-5

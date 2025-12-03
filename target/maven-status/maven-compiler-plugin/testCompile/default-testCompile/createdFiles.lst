@@ -18,6 +18,7 @@ evolutionary_algorithms\complement\TruncationSelectionTest.class
 metaheuristics\generators\GeneratorTypeTest.class
 metaheuristics\generators\SimulatedAnnealingTest.class
 factory_method\FactorySamplingTest.class
+metaheuristics\generators\ParticleSwarmOptimizationTest.class
 evolutionary_algorithms\complement\OnePointMutationTest.class
 metaheuristics\generators\MultiobjectiveTabuSearchTest.class
 metaheuristics\generators\EvolutionStrategiesTest.class
@@ -33,6 +34,7 @@ metaheurictics\strategy\StrategyTest.class
 evolutionary_algorithms\complement\OnePointCrossoverTest.class
 factory_method\FactoryMutationTest.class
 local_search\acceptation_type\AcceptNotBadTTest.class
+metaheuristics\generators\LimitThresholdTest.class
 local_search\complement\StrategyTypeTest.class
 evolutionary_algorithms\complement\UnivariateTest.class
 local_search\candidate_type\NotDominatedCandidateTest.class
@@ -41,11 +43,13 @@ local_search\acceptation_type\DominanceTest.class
 evolutionary_algorithms\complement\TowPointsMutationTest.class
 metaheuristics\generators\TabuSearchTest.class
 local_search\candidate_type\RandomCandidateTest.class
+metaheuristics\generators\DistributionEstimationAlgorithmTest.class
 evolutionary_algorithms\complement\ProbabilisticSamplingTest.class
 local_search\acceptation_type\AcceptNotDominatedTabuTest.class
 evolutionary_algorithms\complement\OnePointCrossoverTest$1.class
 factory_method\FactoryAcceptCandidateTest.class
 factory_method\FactoryGeneratorTest.class
+metaheuristics\generators\HillClimbingRestartTest.class
 local_search\acceptation_type\AcceptAnyoneTest.class
 factory_method\FactoryFatherSelectionTest.class
 problem\definition\StateTest.class
