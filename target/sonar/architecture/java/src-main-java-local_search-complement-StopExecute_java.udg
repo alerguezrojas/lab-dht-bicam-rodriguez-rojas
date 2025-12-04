@@ -1,75 +1,0 @@
-
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811817329*java2.BÝ
-;
-6src/main/java/local_search/complement/StopExecute.java2
-	
-type3
-	
-MAIN4
-
-
-module-key5
-0
-+alerguezrojas_lab-dht-bicam-rodriguez-rojas6
-
-package8
-H
-Calerguezrojas_lab-dht-bicam-rodriguez-rojas:local_search.complement9
-)
-#local_search.complement.StopExecute11
-
-class12
-
-access13
-
-public14
-
-simple-name15
-
-StopExecute16
-O
-Ilocal_search.complement.StopExecute#stopIterations(II)Ljava/lang/Boolean;18
-
-method19
-
-stopIterations20J#
-!
-1
-12
-
-3
-4
-
-5
-6Z
-
-7
-7982
-
-
-5
-6j„
-B
-17<
-171819 *
-1 (210:7B
-
-
-13
-14
-
-
-15
-20
->
-108
-101112 *
-1 (:7B
-
-
-13
-14
-
-
-15
-16

@@ -1,97 +1,0 @@
-
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811814118*java2.BÖ
-J
-Esrc/main/java/evolutionary_algorithms/complement/FatherSelection.java2
-	
-type3
-	
-MAIN4
-
-
-module-key5
-0
-+alerguezrojas_lab-dht-bicam-rodriguez-rojas6
-
-package8
-S
-Nalerguezrojas_lab-dht-bicam-rodriguez-rojas:evolutionary_algorithms.complement9
-8
-2evolutionary_algorithms.complement.FatherSelection11
-
-class12
-
-access13
-
-public14
-
-simple-name15
-
-FatherSelection16
-e
-_evolutionary_algorithms.complement.FatherSelection#selection(Ljava/util/List;I)Ljava/util/List;18
-
-method19
-
-	selection20
-
-problem.definition.State22
-
-unknown23
-
-
-uses24J#
-!
-1
-12
-
-3
-4
-
-5
-6Z
-
-7
-7982
-
-
-5
-6j˜
-B
-17<
-171819 *
-1
- 
-(210:7B
-
-
-13
-14
-
-
-15
-20
->
-108
-101112 *
-1 (&:7B
-
-
-13
-14
-
-
-15
-16
-
-21
-212223r6
-
-172124*
-1
- 
-(
-
-172124*
-1
-- 
-(2

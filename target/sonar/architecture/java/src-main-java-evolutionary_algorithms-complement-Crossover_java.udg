@@ -1,115 +1,0 @@
-
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811812862*java2.Bù
-D
-?src/main/java/evolutionary_algorithms/complement/Crossover.java2
-	
-type3
-	
-MAIN4
-
-
-module-key5
-0
-+alerguezrojas_lab-dht-bicam-rodriguez-rojas6
-
-package8
-S
-Nalerguezrojas_lab-dht-bicam-rodriguez-rojas:evolutionary_algorithms.complement9
-2
-,evolutionary_algorithms.complement.Crossover11
-
-class12
-
-access13
-
-public14
-
-simple-name15
-
-	Crossover16
-é
-áevolutionary_algorithms.complement.Crossover#crossover(Lproblem/definition/State;Lproblem/definition/State;D)Lproblem/definition/State;18
-
-method19
-
-	crossover20
-
-problem.definition.State22
-
-unknown23
-
-returns24
-
-	has param25
-
-
-uses26
-
-is type27J#
-!
-1
-12
-
-3
-4
-
-5
-6Z
-
-7
-7982
-
-
-5
-6jò
-B
-17<
-171819 *
-1 (210:7B
-
-
-13
-14
-
-
-15
-20
->
-108
-101112 *
-1 ( :7B
-
-
-13
-14
-
-
-15
-16
-
-21
-212223rÿ
-
-172124*
-1 (
-
-172125*
-1" ('
-
-172125*
-11 (6
-
-172126*
-1 (
-
-172127*
-1( (/
-
-172126*
-1" ('
-
-172127*
-17 (>
-
-172126*
-11 (6

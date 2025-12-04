@@ -1,1803 +1,0 @@
-
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811808756*java2.B˝4
-T
-Osrc/main/java/metaheuristics/generators/MultiobjectiveHillClimbingDistance.java2
-	
-type3
-	
-MAIN4
-
-
-module-key5
-0
-+alerguezrojas_lab-dht-bicam-rodriguez-rojas6
-
-package8
-J
-Ealerguezrojas_lab-dht-bicam-rodriguez-rojas:metaheuristics.generators9
-B
-<metaheuristics.generators.MultiobjectiveHillClimbingDistance11
-
-class12
-
-access13
-
-public14
-
-simple-name15
-(
-"MultiobjectiveHillClimbingDistance16
-)
-#metaheuristics.generators.Generator18
-
-unknown19
-
-extends20
-
-
-uses21
-Q
-Kmetaheuristics.generators.MultiobjectiveHillClimbingDistance.candidatevalue23
-
-field24
-
-	protected25
-
-candidatevalue26
-0
-*local_search.candidate_type.CandidateValue28
-
-is type29
-R
-Lmetaheuristics.generators.MultiobjectiveHillClimbingDistance.typeAcceptation31
-
-typeAcceptation32
-.
-(local_search.acceptation_type.AcceptType34
-K
-Emetaheuristics.generators.MultiobjectiveHillClimbingDistance.strategy36
-
-strategy37
-*
-$local_search.complement.StrategyType39
-P
-Jmetaheuristics.generators.MultiobjectiveHillClimbingDistance.typeCandidate41
-
-typeCandidate42
-/
-)local_search.candidate_type.CandidateType44
-S
-Mmetaheuristics.generators.MultiobjectiveHillClimbingDistance.stateReferenceHC46
-
-stateReferenceHC47
-
-problem.definition.State49
-T
-Nmetaheuristics.generators.MultiobjectiveHillClimbingDistance.ifacceptCandidate51
-
-ifacceptCandidate52
-0
-*factory_interface.IFFactoryAcceptCandidate54
-P
-Jmetaheuristics.generators.MultiobjectiveHillClimbingDistance.Generatortype56
-
-Generatortype57
--
-'metaheuristics.generators.GeneratorType59
-U
-Ometaheuristics.generators.MultiobjectiveHillClimbingDistance.listStateReference61
-
-listStateReference62
-I
-Cmetaheuristics.generators.MultiobjectiveHillClimbingDistance.weight64
-
-weight65
-L
-Fmetaheuristics.generators.MultiobjectiveHillClimbingDistance.listTrace67
-
-	listTrace68
-O
-Imetaheuristics.generators.MultiobjectiveHillClimbingDistance.visitedState70
-
-private71
-
-visitedState72
-P
-Jmetaheuristics.generators.MultiobjectiveHillClimbingDistance.sizeNeighbors74
-
-sizeNeighbors75
-S
-Mmetaheuristics.generators.MultiobjectiveHillClimbingDistance.distanceSolution77
-
-distanceSolution78
-L
-Fmetaheuristics.generators.MultiobjectiveHillClimbingDistance#<init>()V80
-
-method81
-
-calls82
-
-
-references83
-A
-;local_search.acceptation_type.AcceptType.AcceptNotDominated85
-1
-+local_search.complement.StrategyType.NORMAL87
-E
-?local_search.candidate_type.CandidateType.NotDominatedCandidate89
-P
-Jmetaheuristics.generators.GeneratorType.MultiobjectiveHillClimbingDistance91
-z
-tmetaheuristics.generators.MultiobjectiveHillClimbingDistance#generate(Ljava/lang/Integer;)Lproblem/definition/State;93
-
-generate94
-
-returns95
-!
-problem.definition.Operator97
-r
-lproblem.definition.Operator#generatedNewState(Lproblem/definition/State;Ljava/lang/Integer;)Ljava/util/List;99
-!
-problem.definition.Problem101
-L
-Eproblem.definition.Problem#getOperator()Lproblem/definition/Operator;103
-'
- metaheuristics.strategy.Strategy105
-P
-Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;107
-W
-Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;109
-Î
-„local_search.candidate_type.CandidateValue#stateCandidate(Lproblem/definition/State;Llocal_search/candidate_type/CandidateType;Llocal_search/complement/StrategyType;Ljava/lang/Integer;Ljava/util/List;)Lproblem/definition/State;111
-É
-|metaheuristics.generators.MultiobjectiveHillClimbingDistance#updateReference(Lproblem/definition/State;Ljava/lang/Integer;)V113
-
-updateReference114
-
-	has param115
-:
-3metaheuristics.strategy.Strategy.listRefPoblacFinal117
-A
-:problem.definition.State#clone()Lproblem/definition/State;119
-,
-%factory_method.FactoryAcceptCandidate121
-8
-1local_search.acceptation_type.AcceptableCandidate123
-ß
-üfactory_interface.IFFactoryAcceptCandidate#createAcceptCandidate(Llocal_search/acceptation_type/AcceptType;)Llocal_search/acceptation_type/AcceptableCandidate;125
-í
-älocal_search.acceptation_type.AcceptableCandidate#acceptCandidate(Lproblem/definition/State;Lproblem/definition/State;)Ljava/lang/Boolean;127
-h
-ametaheuristics.generators.MultiobjectiveHillClimbingDistance#Contain(Lproblem/definition/State;)Z129
-ï
-çmetaheuristics.generators.MultiobjectiveHillClimbingDistance#SolutionMoreDistance(Ljava/util/List;Ljava/util/List;)Lproblem/definition/State;131
-[
-Tproblem.definition.Operator#generateRandomState(Ljava/lang/Integer;)Ljava/util/List;133
-G
-@problem.definition.Problem#Evaluate(Lproblem/definition/State;)V135
-f
-_metaheuristics.generators.MultiobjectiveHillClimbingDistance#getReferenceList()Ljava/util/List;137
-
-SolutionMoreDistance138
-
-getReferenceList139
-l
-emetaheuristics.generators.MultiobjectiveHillClimbingDistance#getReference()Lproblem/definition/State;141
-
-getReference142
-l
-emetaheuristics.generators.MultiobjectiveHillClimbingDistance#setStateRef(Lproblem/definition/State;)V144
-
-setStateRef145
-t
-mmetaheuristics.generators.MultiobjectiveHillClimbingDistance#setInitialReference(Lproblem/definition/State;)V147
-
-setInitialReference148
-
-xmetaheuristics.generators.MultiobjectiveHillClimbingDistance#getGeneratorType()Lmetaheuristics/generators/GeneratorType;150
-
-getGeneratorType151
-Ä
-ymetaheuristics.generators.MultiobjectiveHillClimbingDistance#setGeneratorType(Lmetaheuristics/generators/GeneratorType;)V153
-
-setGeneratorType154
-v
-ometaheuristics.generators.MultiobjectiveHillClimbingDistance#getType()Lmetaheuristics/generators/GeneratorType;156
-
-getType157
-`
-Ymetaheuristics.generators.MultiobjectiveHillClimbingDistance#getSonList()Ljava/util/List;159
-
-
-getSonList160
-z
-smetaheuristics.generators.MultiobjectiveHillClimbingDistance#DistanceCalculateAdd(Ljava/util/List;)Ljava/util/List;162
-
-DistanceCalculateAdd163
-E
->problem.definition.State#Distance(Lproblem/definition/State;)D165
-
-Contain166
-G
-@problem.definition.State#Comparator(Lproblem/definition/State;)Z168
-o
-hmetaheuristics.generators.MultiobjectiveHillClimbingDistance#awardUpdateREF(Lproblem/definition/State;)Z170
-
-awardUpdateREF171
-P
-Imetaheuristics.generators.MultiobjectiveHillClimbingDistance#getWeight()F173
-
-	getWeight174
-Q
-Jmetaheuristics.generators.MultiobjectiveHillClimbingDistance#setWeight(F)V176
-
-	setWeight177
-`
-Ymetaheuristics.generators.MultiobjectiveHillClimbingDistance#getListCountBetterGender()[I179
-
-getListCountBetterGender180
-Z
-Smetaheuristics.generators.MultiobjectiveHillClimbingDistance#getListCountGender()[I182
-
-getListCountGender183
-P
-Imetaheuristics.generators.MultiobjectiveHillClimbingDistance#getTrace()[F185
-
-getTrace186J#
-!
-1
-12
-
-3
-4
-
-5
-6Z
-
-7
-7982
-
-
-5
-6jÙ
-B
-60<
-606124 *
-1 (210:7B
-
-
-13
-25
-
-
-15
-62
-H
-169A
-16917081 *
-1Ÿ Ÿ(210:7B
-
-
-13
-14
-
-15
-171
-B
-55<
-555624 *
-1 (210:7B
-
-
-13
-25
-
-
-15
-57
-H
-128A
-12812981 *
-1Œ Œ(	210:7B
-
-
-13
-71
-
-15
-166
-B
-63<
-636424 *
-1 (210:7B
-
-
-13
-25
-
-
-15
-65
-H
-158A
-15815981 *
-1ß ß(210:7B
-
-
-13
-14
-
-15
-160
-B
-40<
-404124 *
-1 (210:7B
-
-
-13
-25
-
-
-15
-42
-H
-152A
-15215381 *
-1û û(210:7B
-
-
-13
-14
-
-15
-154
-
-38
-383919
-F
-130?
-13013181 *
-1t t(	210:7B
-
-
-13
-71
-
-15
-138
-
-124
-12412519
-H
-136A
-13613781 *
-1Ü Ü(210:7B
-
-
-13
-14
-
-15
-139
-H
-140A
-14014181 *
-1å å(210:7B
-
-
-13
-14
-
-15
-142
-
-17
-171819
-B
-79<
-798081 *
-1% %(210:7B
-
-
-13
-14
-
-
-15
-16
-H
-184A
-18418581 *
-1ˆ ˆ(210:7B
-
-
-13
-14
-
-15
-186
-
-88
-888919
-B
-92<
-929381 *
-10 0(210:7B
-
-
-13
-14
-
-
-15
-94
-
-58
-585919
-
-106
-10610719
-
-86
-868719
-
-102
-10210319
-
-134
-13413519
-B
-69<
-697024 *
-1 (	210:7B
-
-
-13
-71
-
-
-15
-72
-H
-181A
-18118281 *
-1 (210:7B
-
-
-13
-14
-
-15
-183
-B
-22<
-222324 *
-1 (210:7B
-
-
-13
-25
-
-
-15
-26
-B
-73<
-737424 *
-1   (210:7B
-
-
-13
-14
-
-
-15
-75
-
-90
-909119
->
-108
-101112 *
-1 (0:7B
-
-
-13
-14
-
-
-15
-16
-
-164
-16416519
-B
-35<
-353624 *
-1 (210:7B
-
-
-13
-25
-
-
-15
-37
-H
-146A
-14614781 *
-1ï ï(210:7B
-
-
-13
-14
-
-15
-148
-H
-178A
-17817981 *
-1Í Í(210:7B
-
-
-13
-14
-
-15
-180
-
-108
-10810919
-
-27
-272819
-B
-45<
-454624 *
-1 (210:7B
-
-
-13
-25
-
-
-15
-47
-
-122
-12212319
-H
-155A
-15515681 *
-1¢ ¢(210:7B
-
-
-13
-14
-
-15
-157
-
-33
-333419
-H
-149A
-14915081 *
-1ö ö(210:7B
-
-
-13
-14
-
-15
-151
-B
-30<
-303124 *
-1 (210:7B
-
-
-13
-25
-
-
-15
-32
-
-43
-434419
-
-84
-848519
-H
-161A
-16116281 *
-1≠ ≠(210:7B
-
-
-13
-14
-
-15
-163
-B
-76<
-767724 *
-1" "(210:7B
-
-
-13
-14
-
-
-15
-78
-
-53
-535419
-
-120
-12012119
-
-126
-12612719
-
-100
-10010119
-
-104
-10410519
-
-132
-13213319
-H
-172A
-17217381 *
-1‡ ‡(210:7B
-
-
-13
-14
-
-15
-174
-
-48
-484919
-
-118
-11811919
-
-110
-11011119
-B
-50<
-505124 *
-1 (210:7B
-
-
-13
-25
-
-
-15
-52
-B
-66<
-666724 *
-1 (210:7B
-
-
-13
-25
-
-
-15
-68
-
-167
-16716819
-
-98
-989919
-F
-112?
-11211381 *
-18 8(210:7B
-
-
-13
-14
-
-15
-114
-H
-143A
-14314481 *
-1ë ë(210:7B
-
-
-13
-14
-
-15
-145
-H
-175A
-17517681 *
-1Â Â(210:7B
-
-
-13
-14
-
-15
-177
-
-116
-11611719
-
-96
-969719r¥M
-
-101720*
-19 (B
-
-101721*
-19 (B
-
-222729*
-1 (
-
-222721*
-1 (
-
-222721*
-1 ()
-
-303329*
-1 (
-
-303321*
-1 (
-
-303321*
-1 (&
-
-353829*
-1 (
-
-353821*
-1 (
-
-353821*
-1 (!
-
-404329*
-1 (
-
-404321*
-1 (
-
-404321*
-1 ('
-
-454829*
-1 (
-
-454821*
-1 (
-
-454821*
-1 ("
-
-505329*
-1 ($
-
-505321*
-1 ($
-
-505321*
-1% (6
-
-555829*
-1 (
-
-555821*
-1 (
-
-555821*
-1 ('
-
-604821*
-1 (
-
-604821*
-1; (@
-
-694821*
-1 (
-
-694821*
-13 (8
-
-791082*
-1%	 %(+
-
-791783*
-1& &(
-
-791782*
-1& &(
-
-791782*
-1& &(
-
-791021*
-1' '(
-
-791083*
-1' '(
-
-793321*
-1' '(
-
-793083*
-1' '(
-
-793321*
-1' '($
-
-793321*
-1'% '(7
-
-798483*
-1'% '(7
-
-791021*
-1( ((
-
-791083*
-1( ((
-
-793821*
-1( ((
-
-793583*
-1( ((
-
-793821*
-1( ((
-
-793821*
-1(  ((&
-
-798683*
-1(  ((&
-
-791021*
-1) )(
-
-791083*
-1) )(
-
-794321*
-1) )(
-
-794083*
-1) )(
-
-794321*
-1) )(%
-
-794321*
-1)& )(;
-
-798883*
-1)& )(;
-
-791021*
-1* *(
-
-791083*
-1* *(
-
-792721*
-1* *(
-
-792283*
-1* *(
-
-792782*
-1* *(+
-
-791021*
-1+ +(
-
-791083*
-1+ +(
-
-795821*
-1+ +(
-
-795583*
-1+ +(
-
-795821*
-1+ +(%
-
-795821*
-1+& +(H
-
-799083*
-1+& +(H
-
-791021*
-1, ,(
-
-791083*
-1, ,(
-
-796383*
-1, ,(
-
-796683*
-1- -(
-
-796683*
-1- -(
-
-796383*
-1- -(
-
-924895*
-11	 1(
-
-924821*
-11	 1(
-
-924821*
-12 2(
-
-924821*
-12, 2(1
-
-929683*
-13 3(
-
-929882*
-13D 3(U
-
-929695*
-13 3(
-
-9210083*
-13 3(
-
-9210282*
-136 3(A
-
-9210095*
-13 3(
-
-9210483*
-13 3(
-
-9210682*
-13) 3(3
-
-9210495*
-13 3(
-
-9210483*
-13 3(
-
-9210882*
-13 3(&
-
-9210421*
-13 3(
-
-924821*
-13V 3(f
-
-924583*
-13V 3(f
-
-924829*
-14	 4(
-
-924821*
-14 4(
-
-924895*
-14 4((
-
-922783*
-14 4((
-
-9211082*
-14) 4(7
-
-922283*
-14 4((
-
-922721*
-14 4((
-
-922283*
-14 4((
-
-924821*
-148 4(H
-
-924583*
-148 4(H
-
-924321*
-14J 4(W
-
-924083*
-14J 4(W
-
-923821*
-14Y 4(a
-
-923583*
-14Y 4(a
-
-11248115*
-19 9(#
-
-1124829*
-19$ 9(2
-
-1124821*
-19 9(#
-
-11210495*
-1< <(
-
-11210483*
-1< <(
-
-11210882*
-1< <(
-
-11210421*
-1< <(
-
-11211683*
-1< <(/
-
-11210495*
-1= =(
-
-11210483*
-1= =(
-
-11210882*
-1= =(
-
-11210421*
-1= =(
-
-11211683*
-1= =(-
-
-1124895*
-1=2 =(B
-
-1124883*
-1=2 =(B
-
-11211882*
-1=C =(H
-
-1124583*
-1=2 =(B
-
-1124821*
-1=2 =(B
-
-1124583*
-1=2 =(B
-
-1127683*
-1> >(
-
-1127683*
-1> >(
-
-1125321*
-1@ @(
-
-1125083*
-1@ @(
-
-11212082*
-1@ @(1
-
-11212229*
-1A A( 
-
-11212221*
-1A A(
-
-11212295*
-1A# A(4
-
-1125383*
-1A# A(4
-
-11212482*
-1A5 A(J
-
-1125083*
-1A# A(4
-
-1125321*
-1A# A(4
-
-1125083*
-1A# A(4
-
-1123321*
-1AK A(Z
-
-1123083*
-1AK A(Z
-
-1124829*
-1B	 B(
-
-1124821*
-1B B(
-
-1124895*
-1B B(
-
-11210495*
-1B B(
-
-11210483*
-1B B(
-
-11210882*
-1B B()
-
-11210421*
-1B B(
-
-11211683*
-1B, B(>
-
-11210495*
-1BC B(K
-
-11210483*
-1BC B(K
-
-11210882*
-1BL B(W
-
-11210421*
-1BC B(K
-
-11211683*
-1BZ B(l
-
-1124821*
-1C C(
-
-1124821*
-1C, C(1
-
-1129683*
-1D D(
-
-1129882*
-1DD D(U
-
-1129695*
-1D D(
-
-11210083*
-1D D(
-
-11210282*
-1D6 D(A
-
-11210095*
-1D D(
-
-11210483*
-1D D(
-
-11210682*
-1D) D(3
-
-11210495*
-1D D(
-
-11210483*
-1D D(
-
-11210882*
-1D D(&
-
-11210421*
-1D D(
-
-1124821*
-1DV D(f
-
-1124583*
-1DV D(f
-
-1127383*
-1Dh D(u
-
-11212283*
-1I I(
-
-11212682*
-1I I(.
-
-1124895*
-1I: I(H
-
-1124883*
-1I: I(H
-
-11211882*
-1II I(N
-
-1124821*
-1K K(
-
-1124583*
-1K K(
-
-1124895*
-1K K(&
-
-1124883*
-1K K(&
-
-11211882*
-1K' K(,
-
-1126983*
-1L L(
-
-1124821*
-1L" L('
-
-1124895*
-1M M(
-
-1124883*
-1M M(
-
-11211882*
-1M  M(%
-
-1124583*
-1M M(
-
-1124821*
-1M M(
-
-1124583*
-1M M(
-
-1121083*
-1U
- U(
-
-11212882*
-1U
- U(
-
-1124895*
-1U U(
-
-1124821*
-1V V(
-
-1124583*
-1V V(
-
-1124895*
-1V V(.
-
-1121083*
-1V V(.
-
-11213082*
-1V V(.
-
-11210495*
-1V/ V(7
-
-11210483*
-1V/ V(7
-
-11210882*
-1V8 V(C
-
-11210421*
-1V/ V(7
-
-11211683*
-1VF V(X
-
-1127683*
-1VZ V(j
-
-1126983*
-1W W(
-
-1126983*
-1W W(
-
-1124821*
-1W W((
-
-1124583*
-1W W((
-
-1124895*
-1Y Y(!
-
-1124883*
-1Y Y(!
-
-11211882*
-1Y" Y('
-
-1124583*
-1Y Y(!
-
-1124821*
-1Y Y(!
-
-1124583*
-1Y Y(!
-
-1127383*
-1_+ _(8
-
-1124895*
-1` `(
-
-1129683*
-1` `(
-
-11213282*
-1`I `(\
-
-1129695*
-1` `(
-
-11210083*
-1` `(
-
-11210282*
-1`; `(F
-
-11210095*
-1` `(
-
-11210483*
-1` `(
-
-11210682*
-1`. `(8
-
-11210495*
-1` `(
-
-11210483*
-1` `(
-
-11210882*
-1`  `(+
-
-11210421*
-1` `(
-
-1121083*
-1a
- a(
-
-11212882*
-1a
- a(
-
-11210083*
-1b b(
-
-11213482*
-1b+ b(3
-
-11210095*
-1b b(
-
-11210483*
-1b b(
-
-11210682*
-1b b((
-
-11210495*
-1b b(
-
-11210483*
-1b b(
-
-11210882*
-1b b(
-
-11210421*
-1b b(
-
-1126983*
-1c c(
-
-1126983*
-1c c(
-
-11212283*
-1f f(
-
-11212682*
-1f f()
-
-1124895*
-1f5 f(C
-
-1124883*
-1f5 f(C
-
-11211882*
-1fD f(I
-
-1124821*
-1j j(
-
-1124583*
-1j j(
-
-1124895*
-1j j('
-
-1124883*
-1j j('
-
-11211882*
-1j( j(-
-
-1126983*
-1k k(
-
-1124821*
-1k# k((
-
-1124895*
-1l l("
-
-1124883*
-1l l("
-
-11211882*
-1l# l((
-
-1124583*
-1l l("
-
-1124821*
-1l l("
-
-1124583*
-1l l("
-
-1121083*
-1q q(
-
-11213682*
-1q q(
-
-1304895*
-1t
- t(
-
-1304821*
-1t
- t(
-
-1304821*
-1t* t(/
-
-1304829*
-1x x(
-
-1304821*
-1x x(
-
-1304895*
-1x x(
-
-1304821*
-1x) x(.
-
-1364821*
-1á á(
-
-1366083*
-1à à(
-
-1366083*
-1à à(
-
-1364895*
-1à à(*
-
-1364883*
-1à à(*
-
-13611882*
-1à+ à(0
-
-1364583*
-1à à(*
-
-1364821*
-1à à(*
-
-1364583*
-1à à(*
-
-1366083*
-1â
- â(
-
-1404895*
-1ç	 ç(
-
-1404821*
-1ç	 ç(
-
-1404821*
-1é
- é(
-
-1404583*
-1é
- é(
-
-14348115*
-1ë ë(
-
-1434829*
-1ë  ë((
-
-1434821*
-1ë ë(
-
-1431021*
-1í í(
-
-1431083*
-1í í(
-
-1434821*
-1í í(
-
-1434583*
-1í í(
-
-14648115*
-1ñ" ñ('
-
-1464829*
-1ñ( ñ(7
-
-1464821*
-1ñ" ñ('
-
-1461021*
-1ó ó(
-
-1461083*
-1ó ó(
-
-1464821*
-1ó ó(
-
-1464583*
-1ó ó(
-
-1495895*
-1ö	 ö(
-
-1495821*
-1ö	 ö(
-
-1495821*
-1õ
- õ(
-
-1495583*
-1õ
- õ(
-
-15258115*
-1û û(,
-
-1525829*
-1û- û(:
-
-1525821*
-1û û(,
-
-1521021*
-1ü ü(
-
-1521083*
-1ü ü(
-
-1525821*
-1ü ü(
-
-1525583*
-1ü ü(
-
-1555895*
-1£	 £(
-
-1555821*
-1£	 £(
-
-1551021*
-1§
- §(
-
-1551083*
-1§
- §(
-
-1555821*
-1§ §(
-
-1555583*
-1§ §(
-
-1584821*
-1® ®(
-
-1614821*
-1≠7 ≠(<
-
-1614829*
-1Æ Æ(
-
-1614821*
-1Æ Æ(
-
-1614895*
-1Æ Æ(
-
-1614821*
-1Æ, Æ(1
-
-1614829*
-1±	 ±(
-
-1614821*
-1± ±(
-
-1614895*
-1± ±( 
-
-1614829*
-1¥
- ¥(
-
-1614821*
-1¥ ¥(	
-
-1614883*
-1µ µ(
-
-16116482*
-1µ µ(
-
-1617683*
-1∂ ∂(!
-
-1617683*
-1∂ ∂(!
-
-1617683*
-1º º(
-
-1614829*
-1¡ ¡(
-
-1614821*
-1¡ ¡(
-
-
-1614883*
-1¬ ¬(
-
-16116482*
-1¬ ¬(&
-
-1617683*
-1∆ ∆(
-
-1617683*
-1» »(
-
-12848115*
-1Œ Œ(
-
-1284829*
-1Œ  Œ(%
-
-1284821*
-1Œ Œ(
-
-1284821*
-1– –(
-
-1286983*
-1– –(+
-
-1286983*
-1– –(+
-
-1284829*
-1—
- —(
-
-1284821*
-1— —(	
-
-1284821*
-1— —(
-
-1284895*
-1— —( 
-
-1284883*
-1“ “(
-
-12816782*
-1“ “(
-
-16948115*
-1⁄  ⁄(%
-
-1694829*
-1⁄& ⁄(4
-
-1694821*
-1⁄  ⁄(%
-
-1726383*
-1‚
- ‚(
-
-1751021*
-1Á Á(
-
-1751083*
-1Á Á(
-
-1756383*
-1Á Á(

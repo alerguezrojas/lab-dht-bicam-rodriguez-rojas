@@ -1,75 +1,0 @@
-
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811814183*java2.BÊ
-4
-/src/main/java/factory_method/FactoryLoader.java2
-	
-type3
-	
-MAIN4
-
-
-module-key5
-0
-+alerguezrojas_lab-dht-bicam-rodriguez-rojas6
-
-package8
-?
-:alerguezrojas_lab-dht-bicam-rodriguez-rojas:factory_method9
-"
-factory_method.FactoryLoader11
-
-class12
-
-access13
-
-public14
-
-simple-name15
-
-FactoryLoader16
-T
-Nfactory_method.FactoryLoader#getInstance(Ljava/lang/String;)Ljava/lang/Object;18
-
-method19
-
-getInstance20J#
-!
-1
-12
-
-3
-4
-
-5
-6Z
-
-7
-7982
-
-
-5
-6j„
->
-108
-101112 *
-1 (:7B
-
-
-13
-14
-
-
-15
-16
-B
-17<
-171819 *
-1 (210:7B
-
-
-13
-14
-
-
-15
-20

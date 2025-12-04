@@ -1,1380 +1,0 @@
-
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811817551*java2.B‚.
-K
-Fsrc/main/java/local_search/complement/MultiCaseSimulatedAnnealing.java2
-	
-type3
-	
-MAIN4
-
-
-module-key5
-0
-+alerguezrojas_lab-dht-bicam-rodriguez-rojas6
-
-package8
-H
-Calerguezrojas_lab-dht-bicam-rodriguez-rojas:local_search.complement9
-9
-3local_search.complement.MultiCaseSimulatedAnnealing11
-
-class12
-
-access13
-
-public14
-
-simple-name15
-!
-MultiCaseSimulatedAnnealing16
-)
-#metaheuristics.generators.Generator18
-
-unknown19
-
-extends20
-
-
-uses21
-H
-Blocal_search.complement.MultiCaseSimulatedAnnealing.candidatevalue23
-
-field24
-
-private25
-
-candidatevalue26
-0
-*local_search.candidate_type.CandidateValue28
-
-is type29
-I
-Clocal_search.complement.MultiCaseSimulatedAnnealing.typeAcceptation31
-
-typeAcceptation32
-.
-(local_search.acceptation_type.AcceptType34
-B
-<local_search.complement.MultiCaseSimulatedAnnealing.strategy36
-
-strategy37
-*
-$local_search.complement.StrategyType39
-G
-Alocal_search.complement.MultiCaseSimulatedAnnealing.typeCandidate41
-
-typeCandidate42
-/
-)local_search.candidate_type.CandidateType44
-J
-Dlocal_search.complement.MultiCaseSimulatedAnnealing.stateReferenceSA46
-
-stateReferenceSA47
-
-problem.definition.State49
-K
-Elocal_search.complement.MultiCaseSimulatedAnnealing.ifacceptCandidate51
-
-ifacceptCandidate52
-0
-*factory_interface.IFFactoryAcceptCandidate54
-?
-9local_search.complement.MultiCaseSimulatedAnnealing.alpha56
-
-alpha57
-B
-<local_search.complement.MultiCaseSimulatedAnnealing.tinitial59
-
-tinitial60
-@
-:local_search.complement.MultiCaseSimulatedAnnealing.tfinal62
-
-tfinal63
-J
-Dlocal_search.complement.MultiCaseSimulatedAnnealing.countIterationsT65
-
-countIterationsT66
-C
-=local_search.complement.MultiCaseSimulatedAnnealing.countRept68
-
-	countRept69
-G
-Alocal_search.complement.MultiCaseSimulatedAnnealing.typeGenerator71
-
-typeGenerator72
--
-'metaheuristics.generators.GeneratorType74
-L
-Flocal_search.complement.MultiCaseSimulatedAnnealing.listStateReference76
-
-listStateReference77
-@
-:local_search.complement.MultiCaseSimulatedAnnealing.weight79
-
-weight80
-C
-=local_search.complement.MultiCaseSimulatedAnnealing.listTrace82
-
-	listTrace83
-G
-Alocal_search.complement.MultiCaseSimulatedAnnealing#simpleTest()I85
-
-method86
-
-
-simpleTest87
-9
-3local_search.acceptation_type.AcceptType.AcceptBest89
-
-
-references90
-u
-olocal_search.complement.MultiCaseSimulatedAnnealing#getTypeGenerator()Lmetaheuristics/generators/GeneratorType;92
-
-getTypeGenerator93
-
-returns94
-v
-plocal_search.complement.MultiCaseSimulatedAnnealing#setTypeGenerator(Lmetaheuristics/generators/GeneratorType;)V96
-
-setTypeGenerator97
-
-	has param98
-D
-=local_search.complement.MultiCaseSimulatedAnnealing#<init>()V100
-
-calls101
-?
-8local_search.acceptation_type.AcceptType.AcceptMulticase103
-2
-+local_search.complement.StrategyType.NORMAL105
-@
-9local_search.candidate_type.CandidateType.RandomCandidate107
-J
-Cmetaheuristics.generators.GeneratorType.MultiCaseSimulatedAnnealing109
-r
-klocal_search.complement.MultiCaseSimulatedAnnealing#generate(Ljava/lang/Integer;)Lproblem/definition/State;111
-
-generate112
-!
-problem.definition.Problem114
-'
- metaheuristics.strategy.Strategy116
-P
-Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;118
-W
-Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;120
-"
-problem.definition.Operator122
-s
-lproblem.definition.Operator#generatedNewState(Lproblem/definition/State;Ljava/lang/Integer;)Ljava/util/List;124
-L
-Eproblem.definition.Problem#getOperator()Lproblem/definition/Operator;126
-Î
-„local_search.candidate_type.CandidateValue#stateCandidate(Lproblem/definition/State;Llocal_search/candidate_type/CandidateType;Llocal_search/complement/StrategyType;Ljava/lang/Integer;Ljava/util/List;)Lproblem/definition/State;128
-c
-\local_search.complement.MultiCaseSimulatedAnnealing#getReference()Lproblem/definition/State;130
-
-getReference131
-c
-\local_search.complement.MultiCaseSimulatedAnnealing#setStateRef(Lproblem/definition/State;)V133
-
-setStateRef134
-k
-dlocal_search.complement.MultiCaseSimulatedAnnealing#setInitialReference(Lproblem/definition/State;)V136
-
-setInitialReference137
-z
-slocal_search.complement.MultiCaseSimulatedAnnealing#updateReference(Lproblem/definition/State;Ljava/lang/Integer;)V139
-
-updateReference140
-,
-%factory_method.FactoryAcceptCandidate142
-8
-1local_search.acceptation_type.AcceptableCandidate144
-ß
-üfactory_interface.IFFactoryAcceptCandidate#createAcceptCandidate(Llocal_search/acceptation_type/AcceptType;)Llocal_search/acceptation_type/AcceptableCandidate;146
-í
-älocal_search.acceptation_type.AcceptableCandidate#acceptCandidate(Lproblem/definition/State;Lproblem/definition/State;)Ljava/lang/Boolean;148
-A
-:problem.definition.State#clone()Lproblem/definition/State;150
-]
-Vlocal_search.complement.MultiCaseSimulatedAnnealing#getReferenceList()Ljava/util/List;152
-m
-flocal_search.complement.MultiCaseSimulatedAnnealing#getType()Lmetaheuristics/generators/GeneratorType;154
-
-getType155
-
-getReferenceList156
-W
-Plocal_search.complement.MultiCaseSimulatedAnnealing#getSonList()Ljava/util/List;158
-
-
-getSonList159
-f
-_local_search.complement.MultiCaseSimulatedAnnealing#awardUpdateREF(Lproblem/definition/State;)Z161
-
-awardUpdateREF162
-G
-@local_search.complement.MultiCaseSimulatedAnnealing#getWeight()F164
-
-	getWeight165
-H
-Alocal_search.complement.MultiCaseSimulatedAnnealing#setWeight(F)V167
-
-	setWeight168
-W
-Plocal_search.complement.MultiCaseSimulatedAnnealing#getListCountBetterGender()[I170
-
-getListCountBetterGender171
-@
-9metaheuristics.generators.Generator.listCountBetterGender173
-Q
-Jlocal_search.complement.MultiCaseSimulatedAnnealing#getListCountGender()[I175
-
-getListCountGender176
-G
-@local_search.complement.MultiCaseSimulatedAnnealing#getTrace()[F178
-
-getTrace179J#
-!
-1
-12
-
-3
-4
-
-5
-6Z
-
-7
-7982
-
-
-5
-6jõ
-F
-151?
-15115286 *
-1v v(210:7B
-
-
-13
-14
-
-15
-156
->
-108
-101112 *
-1 ():7B
-
-
-13
-14
-
-
-15
-16
-B
-22<
-222324 *
-1 (	210:7B
-
-
-13
-25
-
-
-15
-26
-F
-153?
-15315486 *
-1q q(210:7B
-
-
-13
-14
-
-15
-155
-
-38
-383919
-
-145
-14514619
-B
-50<
-505124 *
-1 (210:7B
-
-
-13
-25
-
-
-15
-52
-
-108
-10810919
-
-17
-171819
-F
-129?
-12913086 *
-1H H(210:7B
-
-
-13
-14
-
-15
-131
-C
-99=
-9910086 *
-14 4(210:7B
-
-
-13
-14
-
-
-15
-16
-H
-166A
-16616786 *
-1é é(210:7B
-
-
-13
-14
-
-15
-168
-F
-132?
-13213386 *
-1M M(210:7B
-
-
-13
-14
-
-15
-134
-F
-135?
-13513686 *
-1Q Q(210:7B
-
-
-13
-14
-
-15
-137
-
-88
-888919
-B
-30<
-303124 *
-1 (	210:7B
-
-
-13
-25
-
-
-15
-32
-H
-163A
-16316486 *
-1â â(210:7B
-
-
-13
-14
-
-15
-165
-
-73
-737419
-
-117
-11711819
-
-104
-10410519
-H
-160A
-16016186 *
-1Ç Ç(210:7B
-
-
-13
-14
-
-15
-162
-
-125
-12512619
-F
-138?
-13813986 *
-1V V(210:7B
-
-
-13
-14
-
-15
-140
-H
-174A
-17417586 *
-1õ õ(210:7B
-
-
-13
-14
-
-15
-176
-B
-75<
-757624 *
-1# #(210:7B
-
-
-13
-25
-
-
-15
-77
-F
-157?
-15715886 *
-1| |(210:7B
-
-
-13
-14
-
-15
-159
-B
-78<
-787924 *
-1$ $(210:7B
-
-
-13
-25
-
-
-15
-80
-
-119
-11912019
-
-27
-272819
-
-143
-14314419
-B
-95<
-959686 *
-10 0(210:7B
-
-
-13
-14
-
-
-15
-97
-
-172
-17217319
-
-33
-333419
-
-43
-434419
-H
-169A
-16917086 *
-1ì ì(210:7B
-
-
-13
-14
-
-15
-171
-
-53
-535419
-B
-35<
-353624 *
-1 (	210:7B
-
-
-13
-25
-
-
-15
-37
-B
-70<
-707124 *
-1" "(210:7B
-
-
-13
-25
-
-
-15
-72
-B
-84<
-848586 *
-1' '(210:7B
-
-
-13
-14
-
-
-15
-87
-
-106
-10610719
-B
-91<
-919286 *
-1, ,(210:7B
-
-
-13
-14
-
-
-15
-93
-F
-110?
-11011186 *
-1? ?(210:7B
-
-
-13
-14
-
-15
-112
-
-141
-14114219
-
-147
-14714819
-
-113
-11311419
-
-115
-11511619
-B
-67<
-676824 *
-1! !(210:7B
-
-
-13
-25
-
-
-15
-69
-B
-40<
-404124 *
-1 (	210:7B
-
-
-13
-25
-
-
-15
-42
-B
-58<
-585924 *
-1 (210:7B
-
-
-13
-14
-
-
-15
-60
-
-48
-484919
-B
-81<
-818224 *
-1% %(	210:7B
-
-
-13
-25
-
-
-15
-83
-
-149
-14915019
-B
-61<
-616224 *
-1 (210:7B
-
-
-13
-14
-
-
-15
-63
-
-127
-12712819
-
-102
-10210319
-H
-177A
-17717886 *
-1† †(210:7B
-
-
-13
-14
-
-15
-179
-
-123
-12312419
-B
-45<
-454624 *
-1 (	210:7B
-
-
-13
-25
-
-
-15
-47
-B
-55<
-555624 *
-1 (210:7B
-
-
-13
-14
-
-
-15
-57
-B
-64<
-646524 *
-1   (210:7B
-
-
-13
-14
-
-
-15
-66
-
-121
-12112219r€-
-
-101720*
-12 (;
-
-101721*
-12 (;
-
-222729*
-1
- (
-
-222721*
-1
- (
-
-222721*
-1 ('
-
-303329*
-1
- (
-
-303321*
-1
- (
-
-303321*
-1 ($
-
-353829*
-1
- (
-
-353821*
-1
- (
-
-353821*
-1 (
-
-404329*
-1
- (
-
-404321*
-1
- (
-
-404321*
-1 (%
-
-454829*
-1
- (
-
-454821*
-1
- (
-
-454821*
-1 ( 
-
-505329*
-1 (%
-
-505321*
-1 (%
-
-505321*
-1& (7
-
-707329*
-1" "(
-
-707321*
-1" "(
-
-707321*
-1" "((
-
-754821*
-1# #(
-
-754821*
-1#< #(A
-
-843329*
-1( ((
-
-843321*
-1(	 ((
-
-843321*
-1( (("
-
-843321*
-1(# ((-
-
-848890*
-1(# ((-
-
-917394*
-1, ,(
-
-917321*
-1, ,(
-
-917321*
-1-
- -(
-
-917090*
-1-
- -(
-
-957398*
-10 0(,
-
-957329*
-10- 0(:
-
-957321*
-10 0(,
-
-951021*
-11 1(
-
-951090*
-11 1(
-
-957321*
-11 1(
-
-957090*
-11 1(
-
-9910101*
-14	 4($
-
-991790*
-15 5(
-
-9917101*
-15 5(
-
-9917101*
-15 5(
-
-991021*
-16 6(
-
-
-991090*
-16 6(
-
-
-993321*
-16 6(
-
-993090*
-16 6(
-
-993321*
-16 6('
-
-993321*
-16( 6(7
-
-9910290*
-16( 6(7
-
-991021*
-17 7(
-
-991090*
-17 7(
-
-993821*
-17 7(
-
-993590*
-17 7(
-
-993821*
-17 7(
-
-993821*
-17  7(&
-
-9910490*
-17  7(&
-
-991021*
-18 8(
-
-991090*
-18 8(
-
-994321*
-18 8(
-
-994090*
-18 8(
-
-994321*
-18 8(%
-
-994321*
-18& 8(5
-
-9910690*
-18& 8(5
-
-991021*
-19 9(
-
-991090*
-19 9(
-
-992721*
-19 9(
-
-992290*
-19 9(
-
-9927101*
-19 9(+
-
-991021*
-1: :(
-
-991090*
-1: :(
-
-997321*
-1: :(
-
-997090*
-1: :(
-
-997321*
-1: :(%
-
-997321*
-1:& :(A
-
-9910890*
-1:& :(A
-
-991021*
-1; ;(
-
-991090*
-1; ;(
-
-997890*
-1; ;(
-
-998190*
-1< <(
-
-998190*
-1< <(
-
-997890*
-1< <(
-
-1104894*
-1@	 @(
-
-1104821*
-1@	 @(
-
-1104821*
-1A A(
-
-1104821*
-1A, A(1
-
-11011329*
-1B B(
-
-11011321*
-1B B(
-
-
-11011394*
-1B B(
-
-11011590*
-1B B(
-
-110117101*
-1B, B(6
-
-11011594*
-1B B(
-
-11011590*
-1B B(
-
-110119101*
-1B B()
-
-11011521*
-1B B(
-
-11012190*
-1C C(
-
-110123101*
-1C( C(9
-
-11012194*
-1C C(
-
-11011390*
-1C C(
-
-110125101*
-1C C(%
-
-1104821*
-1C: C(J
-
-1104590*
-1C: C(J
-
-1104829*
-1D D(
-
-1104821*
-1D D(
-
-1104894*
-1D D(+
-
-1102790*
-1D D(+
-
-110127101*
-1D, D(:
-
-1102290*
-1D D(+
-
-1102721*
-1D D(+
-
-1102290*
-1D D(+
-
-1104821*
-1D; D(K
-
-1104590*
-1D; D(K
-
-1104321*
-1DM D(Z
-
-1104090*
-1DM D(Z
-
-1103821*
-1D\ D(d
-
-1103590*
-1D\ D(d
-
-1294894*
-1I	 I(
-
-1294821*
-1I	 I(
-
-1294821*
-1J
- J(
-
-1294590*
-1J
- J(
-
-1324898*
-1M M(
-
-1324829*
-1M  M((
-
-1324821*
-1M M(
-
-1321021*
-1N N(
-
-1321090*
-1N N(
-
-1324821*
-1N N(
-
-1324590*
-1N N(
-
-1354898*
-1R" R('
-
-1354829*
-1R( R(7
-
-1354821*
-1R" R('
-
-1351021*
-1S S(
-
-1351090*
-1S S(
-
-1354821*
-1S S(
-
-1354590*
-1S S(
-
-1384898*
-1W W(#
-
-1384829*
-1W$ W(2
-
-1384821*
-1W W(#
-
-1386790*
-1X X(
-
-1386490*
-1X X(
-
-1385321*
-1Y Y(
-
-1385090*
-1Y Y(
-
-138141101*
-1Y Y(1
-
-13814329*
-1Z Z( 
-
-13814321*
-1Z Z(
-
-13814394*
-1Z# Z(4
-
-1385390*
-1Z# Z(4
-
-138145101*
-1Z5 Z(J
-
-1385090*
-1Z# Z(4
-
-1385321*
-1Z# Z(4
-
-1385090*
-1Z# Z(4
-
-1383321*
-1ZK Z(Z
-
-1383090*
-1ZK Z(Z
-
-13814390*
-1[ [(
-
-138147101*
-1[ [(-
-
-1384821*
-1[. [(>
-
-1384590*
-1[. [(>
-
-1384821*
-1] ](
-
-1384590*
-1] ](
-
-1384894*
-1] ](&
-
-1384890*
-1] ](&
-
-138149101*
-1]' ](,
-
-1386490*
-1^$ ^(4
-
-1385890*
-1_ _(
-
-1385890*
-1_ _(
-
-1385590*
-1_ _(
-
-1385890*
-1j! j()
-
-1386490*
-1k k(
-
-1386490*
-1k k('
-
-1386790*
-1k* k(3
-
-1386490*
-1l( l(8
-
-1381090*
-1n n(
-
-138151101*
-1n n(
-
-1537394*
-1r	 r(
-
-1537321*
-1r	 r(
-
-1531021*
-1s
- s(
-
-1531090*
-1s
- s(
-
-1537321*
-1s s(
-
-1537090*
-1s s(
-
-1514821*
-1w w(
-
-1517590*
-1x x(
-
-1517590*
-1x x(
-
-1514894*
-1x x(*
-
-1514890*
-1x x(*
-
-151149101*
-1x+ x(0
-
-1514590*
-1x x(*
-
-1514821*
-1x x(*
-
-1514590*
-1x x(*
-
-1517590*
-1y
- y(
-
-1574821*
-1} }(
-
-1604898*
-1É  É(%
-
-1604829*
-1É& É(4
-
-1604821*
-1É  É(%
-
-1631021*
-1ã
- ã(
-
-1631090*
-1ã
- ã(
-
-1637890*
-1ã ã(
-
-1661021*
-1ê ê(
-
-1661090*
-1ê ê(
-
-1667890*
-1ê ê(
-
-16917290*
-1ï ï(
-
-16917290*
-1ñ ñ(
-
-16917290*
-1ò
- ò(
-
-1778190*
-1¢ ¢(&
-
-1778190*
-1¢ ¢(&
-
-1778190*
-1£ £( 
-
-1778190*
-1£ £( 
-
-1778190*
-1§ §(
-
-1778190*
-1§ §(

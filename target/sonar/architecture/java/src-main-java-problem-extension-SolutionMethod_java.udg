@@ -1,98 +1,0 @@
-
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811821689*java2.B´
-8
-3src/main/java/problem/extension/SolutionMethod.java2
-	
-type3
-	
-MAIN4
-
-
-module-key5
-0
-+alerguezrojas_lab-dht-bicam-rodriguez-rojas6
-
-package8
-B
-=alerguezrojas_lab-dht-bicam-rodriguez-rojas:problem.extension9
-&
- problem.extension.SolutionMethod11
-
-class12
-
-access13
-
-public14
-
-simple-name15
-
-SolutionMethod16
-S
-Mproblem.extension.SolutionMethod#evaluationState(Lproblem/definition/State;)V18
-
-method19
-
-evaluationState20
-
-problem.definition.State22
-
-unknown23
-
-	has param24
-
-is type25
-
-
-uses26J#
-!
-1
-12
-
-3
-4
-
-5
-6Z
-
-7
-7982
-
-
-5
-6j˜
-B
-17<
-171819 *
-1 (210:7B
-
-
-13
-14
-
-
-15
-20
->
-108
-101112 *
-1 (%:7B
-
-
-13
-14
-
-
-15
-16
-
-21
-212223rQ
-
-172124*
-1' (,
-
-172125*
-1- (2
-
-172126*
-1' (,

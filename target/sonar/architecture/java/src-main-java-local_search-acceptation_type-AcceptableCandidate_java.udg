@@ -1,107 +1,0 @@
-
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811818369*java2.B¦
-I
-Dsrc/main/java/local_search/acceptation_type/AcceptableCandidate.java2
-	
-type3
-	
-MAIN4
-
-
-module-key5
-0
-+alerguezrojas_lab-dht-bicam-rodriguez-rojas6
-
-package8
-N
-Ialerguezrojas_lab-dht-bicam-rodriguez-rojas:local_search.acceptation_type9
-7
-1local_search.acceptation_type.AcceptableCandidate11
-
-class12
-
-access13
-
-public14
-
-simple-name15
-
-AcceptableCandidate16
-‘
-Šlocal_search.acceptation_type.AcceptableCandidate#acceptCandidate(Lproblem/definition/State;Lproblem/definition/State;)Ljava/lang/Boolean;18
-
-method19
-
-acceptCandidate20
-
-problem.definition.State22
-
-unknown23
-
-	has param24
-
-is type25
-
-
-uses26J#
-!
-1
-12
-
-3
-4
-
-5
-6Z
-
-7
-7982
-
-
-5
-6j˜
->
-108
-101112 *
-1 (*:7B
-
-
-13
-14
-
-
-15
-16
-B
-17<
-171819 *
-1	 	(210:7B
-
-
-13
-14
-
-
-15
-20
-
-21
-212223r¢
-
-172124*
-1	* 	(/
-
-172124*
-1	> 	(C
-
-172125*
-1	0 	(<
-
-172126*
-1	* 	(/
-
-172125*
-1	D 	(R
-
-172126*
-1	> 	(C
