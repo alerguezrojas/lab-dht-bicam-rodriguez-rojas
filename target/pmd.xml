@@ -1,4 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.55.0" timestamp="2025-12-03T22:25:56.311">
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.55.0" timestamp="2025-12-04T01:22:15.346">
+<file name="C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\local_search\MultiCaseSimulatedAnnealing.java">
+<violation beginline="40" endline="40" begincolumn="20" endcolumn="20" rule="UnusedLocalVariable" ruleset="Best Practices" package="local_search" class="MultiCaseSimulatedAnnealing" method="simpleTest" variable="a" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'a'.
+</violation>
+</file>
+<file name="C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\local_search\acceptation_type\AcceptMulticase.java">
+<violation beginline="4" endline="4" begincolumn="1" endcolumn="35" rule="UnnecessaryImport" ruleset="Code Style" package="local_search.acceptation_type" class="AcceptMulticase" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'metaheuristics.generators.*'
+</violation>
+</file>
+<file name="C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\local_search\complement\MultiCaseSimulatedAnnealing.java">
+<violation beginline="15" endline="15" begincolumn="1" endcolumn="44" rule="UnnecessaryImport" ruleset="Code Style" package="local_search.complement" class="MultiCaseSimulatedAnnealing" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unnecessary import from the current package 'local_search.complement.StrategyType'
+</violation>
+<violation beginline="40" endline="40" begincolumn="20" endcolumn="20" rule="UnusedLocalVariable" ruleset="Best Practices" package="local_search.complement" class="MultiCaseSimulatedAnnealing" method="simpleTest" variable="a" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'a'.
+</violation>
+</file>
+<file name="C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generators\MultiCaseSimulatedAnnealing.java">
+<violation beginline="38" endline="38" begincolumn="20" endcolumn="20" rule="UnusedLocalVariable" ruleset="Best Practices" package="metaheuristics.generators" class="MultiCaseSimulatedAnnealing" method="simpleTest" variable="a" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'a'.
+</violation>
+</file>
 <suppressedviolation filename="C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generators\MultiobjectiveTabuSearch.java" suppressiontype="annotation" msg="Avoid unused local variables such as 'problem'." usermsg=""></suppressedviolation>
 </pmd>

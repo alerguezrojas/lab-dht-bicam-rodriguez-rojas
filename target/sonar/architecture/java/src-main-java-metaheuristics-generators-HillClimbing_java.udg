@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800784115*java2.B˙+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811379655*java2.B˙+
 >
 9src/main/java/metaheuristics/generators/HillClimbing.java2
 	
@@ -136,11 +136,11 @@ references86
 Y
 Sproblem.definition.Problem#getTypeProblem()Lproblem/definition/Problem$ProblemType;97
 &
- metaheurictics.strategy.Strategy99
+ metaheuristics.strategy.Strategy99
 P
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;101
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;101
 W
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;103
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;103
 7
 0problem.definition.Problem$ProblemType.Maximizar105
 A
@@ -369,13 +369,10 @@ B
 
 15
 81
-
-102
-10210319
 H
 177A
 17717884 *
-1ô ô(210:7B
+1ó ó(210:7B
 
 
 13
@@ -412,6 +409,9 @@ F
 
 58
 585919
+
+100
+10010119
 F
 135?
 13513684 *
@@ -441,12 +441,6 @@ B
 
 15
 65
-
-98
-989919
-
-100
-10010119
 
 119
 11912019
@@ -520,6 +514,9 @@ B
 
 15
 57
+
+102
+10210319
 
 27
 272819
@@ -635,7 +632,7 @@ F
 H
 168A
 16816984 *
-1á á(210:7B
+1Ü Ü(210:7B
 
 
 13
@@ -664,12 +661,15 @@ F
 94
 949519
 
+98
+989919
+
 48
 484919
 H
 174A
 17417584 *
-1ì ì(210:7B
+1ë ë(210:7B
 
 
 13
@@ -701,7 +701,7 @@ B
 H
 171A
 17117284 *
-1ç ç(210:7B
+1ã ã(210:7B
 
 
 13
@@ -714,7 +714,7 @@ H
 11011119
 
 115
-11511619rÙ,
+11511619r®.
 
 101720*
 1# (,
@@ -1317,35 +1317,55 @@ H
 1624821*
 1|  |(%
 
+1651021*
+1É
+ É(
+
+1651086*
+1É
+ É(
+
+1656386*
+1É É(
+
+1681021*
+1à à(
+
+1681086*
+1à à(
+
+1686386*
+1à à(
+
 1711021*
-1ê
- ê(
+1é
+ é(
 
 1711086*
-1ê
- ê(
+1é
+ é(
 
 1717286*
-1ê ê($
+1é é($
 
 1741021*
-1ñ
- ñ(
+1î
+ î(
 
 1741086*
-1ñ
- ñ(
+1î
+ î(
 
 1747686*
-1ñ ñ(
+1î î(
 
 1771021*
-1ú
- ú(
+1ö
+ ö(
 
 1771086*
-1ú
- ú(
+1ö
+ ö(
 
 1777986*
-1ú ú(
+1ö ö(

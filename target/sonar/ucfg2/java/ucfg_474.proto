@@ -1,18 +1,9 @@
 
-^metaheurictics.strategy.Strategy#getUpdateparameter()Llocal_search/complement/UpdateParameter;i
-]C:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheurictics/strategy/Strategy.javaÁ Á(*"1*ì
+?metaheuristics.generators.LimitThreshold#getListCountGender()[Iq
+eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/LimitThreshold.javaš š( "1*%
 1
-Â	 Â(›
-˜
+œ	 œ("
 
-Â	 Â(-
-%0'local_search.complement.UpdateParameter"__id*U
-
-__unknown_file (9*7"
- metaheurictics.strategy.Strategy"
-updateparameter"=
-
-Â Â(/
--
-%0'local_search.complement.UpdateParameterB$"
- metaheurictics.strategy.StrategyH
+œ œ(
+""B,*
+(metaheuristics.generators.LimitThresholdH

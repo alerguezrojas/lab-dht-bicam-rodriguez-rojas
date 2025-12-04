@@ -1,7 +1,7 @@
 package evolutionary_algorithms.complement;
 
 
-import metaheurictics.strategy.Strategy;
+import metaheuristics.strategy.Strategy;
 import problem.definition.State;
 public class TowPointsMutation extends Mutation {
 

@@ -1,9 +1,15 @@
 
-Kmetaheuristics.generators.Particle#getReference()Lproblem/definition/State;k
-_C:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/Particle.java¨ ¨("1*%
-1
-ª	 ª("
-
-ª ª(
-""B&$
-"metaheuristics.generators.ParticleH
+dlocal_search.MultiCaseSimulatedAnnealing#getTypeGenerator()Lmetaheuristics/generators/GeneratorType;o
+eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/MultiCaseSimulatedAnnealing.java, ,()"1*ì
+1-	 -(Ÿ
+œ
+-	 -(-
+%0'metaheuristics.generators.GeneratorType"__id*[
+
+__unknown_file (?*=*
+(local_search.MultiCaseSimulatedAnnealing"
+typeGenerator";
+- -(/
+-
+%0'metaheuristics.generators.GeneratorTypeB,*
+(local_search.MultiCaseSimulatedAnnealingH

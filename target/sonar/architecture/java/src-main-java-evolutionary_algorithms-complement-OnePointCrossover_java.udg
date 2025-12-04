@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800784527*java2.Bý
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811380919*java2.Bý
 L
 Gsrc/main/java/evolutionary_algorithms/complement/OnePointCrossover.java2
 	
@@ -74,11 +74,11 @@ references36
 S
 Mproblem.definition.Problem#getCodification()Lproblem/definition/Codification;47
 &
- metaheurictics.strategy.Strategy49
+ metaheuristics.strategy.Strategy49
 O
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;51
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;51
 V
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;53
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;53
 =
 7problem.definition.State#getCode()Ljava/util/ArrayList;55
 >
@@ -108,6 +108,12 @@ Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy
 
 44
 444519
+
+48
+484919
+
+52
+525319
 B
 27<
 272829 *
@@ -120,6 +126,9 @@ B
 
 15
 30
+
+50
+505119
 >
 108
 101112 *
@@ -154,20 +163,11 @@ B
 40
 404119
 
-48
-484919
-
-50
-505119
-
 42
 424319
 
 37
 373819
-
-52
-525319
 
 56
 565719rõ	

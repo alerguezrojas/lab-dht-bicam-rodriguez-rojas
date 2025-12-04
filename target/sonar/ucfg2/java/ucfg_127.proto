@@ -1,59 +1,18 @@
 
-çfactory_method.FactorySampling#createSampling(Levolutionary_algorithms/complement/SamplingType;)Levolutionary_algorithms/complement/Sampling;e
-[C:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/factory_method/FactorySampling.java ("1*à
-1 (:Ω∫
-= (T
-%0java.lang.String"+java.lang.Enum#toString()Ljava/lang/String;*]
-
-__unknown_file (A
-?
-typesampling/evolutionary_algorithms.complement.SamplingType2
-toString()ä
+Rmetaheuristics.generators.MultiGenerator#getListGeneratedPP()Ljava/util/ArrayList;q
+eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiGenerator.javaã! ã(3"1*¬
+1
+å å(+ä
 á
- (T
-%1java.lang.String"__concat*3
- (:'%
-#evolutionary_algorithms.complement.*$
-= (T
-
-%0java.lang.Stringg
-e
- (U
-	classNamejava.lang.String"__id*4
-
-__unknown_file (
-
-%1java.lang.String
-Ì
- (<
-%2java.lang.Object"Nfactory_method.FactoryLoader#getInstance(Ljava/lang/String;)Ljava/lang/Object;*<
-
-__unknown_file ( "
-factory_method.FactoryLoader*;
-
-__unknown_file (
-
-	classNamejava.lang.Stringx
-v
- (<. 
-factory_method.FactorySampling"
 
-sampling"__id*4
+å å(+
+%0java.util.List"__id*]
 
-__unknown_file (
-
-%2java.lang.Objectî
-ë
-	 (1
-%3+evolutionary_algorithms.complement.Sampling"__id*L
-
-__unknown_file (0*. 
-factory_method.FactorySampling"
+__unknown_file (A*?*
+(metaheuristics.generators.MultiGenerator"
+listGeneratedPP"$
 
-sampling"?
- (3
-1
-%3+evolutionary_algorithms.complement.Sampling:K
-  (9?
-typesampling/evolutionary_algorithms.complement.SamplingTypeB" 
-factory_method.FactorySamplingH
+å å(,
+
+%0java.util.ListB,"*
+(metaheuristics.generators.MultiGenerator

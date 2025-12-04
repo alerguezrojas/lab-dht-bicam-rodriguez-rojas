@@ -6,7 +6,7 @@ import java.util.List;
 
 import factory_method.FactoryGenerator;
 
-import metaheurictics.strategy.Strategy;
+import metaheuristics.strategy.Strategy;
 
 import problem.definition.Problem.ProblemType;
 import problem.definition.State;

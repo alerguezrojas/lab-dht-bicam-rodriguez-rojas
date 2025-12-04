@@ -1,18 +1,15 @@
 
-[metaheuristics.generators.MultiGenerator#getType()Lmetaheuristics/generators/GeneratorType;q
-eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiGenerator.javaƒ ƒ("1*Ú
-1
-≈	 ≈(°
-û
-
-≈	 ≈(-
-%0'metaheuristics.generators.GeneratorType"__id*[
+Ymetaheuristics.generators.RandomSearch#getType()Lmetaheuristics/generators/GeneratorType;m
+cC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/RandomSearch.javaW W("1*Í
+1X	 X(ù
+ö
+X	 X(-
+%0'metaheuristics.generators.GeneratorType"__id*Y
 
-__unknown_file (?*=*
-(metaheuristics.generators.MultiGenerator"
-Generatortype"=
-
-≈ ≈(/
+__unknown_file (=*;(
+&metaheuristics.generators.RandomSearch"
+typeGenerator";
+X X(/
 -
-%0'metaheuristics.generators.GeneratorTypeB,*
-(metaheuristics.generators.MultiGeneratorH
+%0'metaheuristics.generators.GeneratorTypeB*(
+&metaheuristics.generators.RandomSearchH

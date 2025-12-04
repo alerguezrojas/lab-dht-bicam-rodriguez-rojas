@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800779486*java2.B®>
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811375160*java2.B®>
 @
 ;src/main/java/metaheuristics/generators/MultiGenerator.java2
 	
@@ -112,11 +112,11 @@ F
 E
 ?problem.definition.Problem#getState()Lproblem/definition/State;78
 &
- metaheurictics.strategy.Strategy80
+ metaheuristics.strategy.Strategy80
 O
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;82
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;82
 V
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;84
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;84
 \
 Vmetaheuristics.generators.Generator#getType()Lmetaheuristics/generators/GeneratorType;86
 :
@@ -134,7 +134,7 @@ Tmetaheuristics.generators.Generator#setInitialReference(Lproblem/definition/Sta
 N
 Gmetaheuristics.generators.MultiGenerator#createInstanceGeneratorsBPP()V100
 2
-+metaheurictics.strategy.Strategy.listStates102
++metaheuristics.strategy.Strategy.listStates102
 Y
 Rmetaheuristics.generators.MultiGenerator#getListGeneratedPP()Ljava/util/ArrayList;104
 &
@@ -188,7 +188,7 @@ g
 
 generate146
 1
-*metaheurictics.strategy.Strategy.generator148
+*metaheuristics.strategy.Strategy.generator148
 _
 Xmetaheuristics.generators.MultiGenerator#roulette()Lmetaheuristics/generators/Generator;150
 6
@@ -241,7 +241,7 @@ Sproblem.definition.Problem#getTypeProblem()Lproblem/definition/Problem$ProblemT
 D
 =problem.definition.State#getEvaluation()Ljava/util/ArrayList;190
 P
-Imetaheurictics.strategy.Strategy#getBestState()Lproblem/definition/State;192
+Imetaheuristics.strategy.Strategy#getBestState()Lproblem/definition/State;192
 <
 5metaheuristics.generators.Generator.countBetterGender194
 <
@@ -277,7 +277,7 @@ Tmetaheuristics.generators.MultiGenerator#awardUpdateREF(Lproblem/definition/Sta
 7
 0metaheuristics.generators.Generator#getTrace()[F222
 :
-3metaheurictics.strategy.Strategy#getCountCurrent()I224
+3metaheuristics.strategy.Strategy#getCountCurrent()I224
 
 updateAwardImp225
 =
@@ -384,9 +384,6 @@ H
 70
 707119
 
-101
-10110219
-
 219
 21922019
 H
@@ -426,11 +423,17 @@ H
 15
 161
 
+191
+19119219
+
 151
 15115219
 
 193
 19319419
+
+101
+10110219
 H
 229A
 22923051 *
@@ -488,9 +491,6 @@ D
 
 120
 12012119
-
-83
-838419
 H
 241A
 24124251 *
@@ -505,6 +505,9 @@ H
 
 95
 959619
+
+147
+14714819
 H
 215A
 21521651 *
@@ -589,6 +592,9 @@ B
 
 27
 272819
+
+81
+818219
 
 189
 18919019
@@ -632,12 +638,6 @@ B
 
 35
 353619
-
-79
-798019
-
-81
-818219
 
 124
 12412519
@@ -653,9 +653,6 @@ B
 
 15
 45
-
-147
-14714819
 
 56
 565719
@@ -724,6 +721,12 @@ H
 
 211
 21121219
+
+223
+22322419
+
+83
+838419
 
 97
 979819
@@ -796,14 +799,11 @@ B
 75
 757619
 
+79
+798019
+
 85
 858619
-
-223
-22322419
-
-191
-19119219
 
 41
 414219

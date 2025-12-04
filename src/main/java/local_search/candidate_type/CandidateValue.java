@@ -12,7 +12,7 @@ import problem.definition.State;
 
 import local_search.complement.StrategyType;
 import local_search.complement.TabuSolutions;
-import metaheurictics.strategy.Strategy;
+import metaheuristics.strategy.Strategy;
 
 //import ceis.grial.problem.Problem;
 import factory_interface.IFFactoryCandidate;

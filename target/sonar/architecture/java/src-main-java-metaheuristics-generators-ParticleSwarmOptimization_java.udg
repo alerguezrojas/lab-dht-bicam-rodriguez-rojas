@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800785772*java2.Bƒ=
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811384070*java2.Bƒ=
 K
 Fsrc/main/java/metaheuristics/generators/ParticleSwarmOptimization.java2
 	
@@ -182,11 +182,11 @@ Lmetaheuristics.generators.Particle#getStatePBest()Lproblem/definition/State;1
 Z
 Sproblem.definition.Problem#getTypeProblem()Lproblem/definition/Problem$ProblemType;131
 '
- metaheurictics.strategy.Strategy133
+ metaheuristics.strategy.Strategy133
 P
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;135
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;135
 W
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;137
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;137
 7
 0problem.definition.Problem$ProblemType.Maximizar139
 D
@@ -198,13 +198,13 @@ c
 
 getListStateRef145
 I
-Bmetaheurictics.strategy.Strategy#getListKey()Ljava/util/ArrayList;147
+Bmetaheuristics.strategy.Strategy#getListKey()Ljava/util/ArrayList;147
 -
 &metaheuristics.generators.RandomSearch149
 @
 9metaheuristics.generators.RandomSearch.listStateReference151
 5
-.metaheurictics.strategy.Strategy.mapGenerators153
+.metaheuristics.strategy.Strategy.mapGenerators153
 s
 lmetaheuristics.generators.GeneratorType#valueOf(Ljava/lang/String;)Lmetaheuristics/generators/GeneratorType;155
 \
@@ -426,9 +426,6 @@ I
 
 15
 220
-
-136
-13613719
 I
 230B
 230231102 *
@@ -491,6 +488,9 @@ B
 41
 414219
 
+134
+13413519
+
 140
 14014119
 G
@@ -507,15 +507,6 @@ G
 
 126
 12612719
-
-146
-14614719
-
-132
-13213319
-
-134
-13413519
 I
 105B
 105106102 *
@@ -614,6 +605,9 @@ G
 
 15
 118
+
+146
+14614719
 I
 114B
 114115102 *
@@ -670,6 +664,9 @@ B
 
 15
 60
+
+136
+13613719
 I
 205B
 205206102 *
@@ -783,6 +780,9 @@ B
 
 15
 75
+
+152
+15215319
 B
 22<
 222324 *
@@ -848,6 +848,9 @@ B
 
 128
 12812919
+
+132
+13213319
 I
 221B
 221222102 *
@@ -914,9 +917,6 @@ I
 
 15
 192
-
-152
-15215319
 I
 215B
 215216102 *

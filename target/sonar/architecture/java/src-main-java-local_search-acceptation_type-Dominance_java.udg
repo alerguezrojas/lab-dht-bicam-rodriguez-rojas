@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800780474*java2.B‰
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811377826*java2.B‰
 ?
 :src/main/java/local_search/acceptation_type/Dominance.java2
 	
@@ -60,11 +60,11 @@ hlocal_search.acceptation_type.Dominance#dominance(Lproblem/definition/State;Lpr
 \
 Vmetaheuristics.generators.Generator#getType()Lmetaheuristics/generators/GeneratorType;37
 &
- metaheurictics.strategy.Strategy39
+ metaheuristics.strategy.Strategy39
 V
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;41
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;41
 0
-*metaheurictics.strategy.Strategy.generator43
+*metaheuristics.strategy.Strategy.generator43
 P
 Jmetaheuristics.generators.GeneratorType.MultiobjectiveHillClimbingDistance45
 B
@@ -84,7 +84,7 @@ F
 Y
 Sproblem.definition.Problem#getTypeProblem()Lproblem/definition/Problem$ProblemType;60
 O
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;62
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;62
 6
 0problem.definition.Problem$ProblemType.Maximizar64
 C
@@ -108,6 +108,9 @@ C
 
 46
 464723
+
+42
+424323
 >
 108
 101112 *
@@ -121,6 +124,12 @@ C
 15
 16
 
+38
+383923
+
+40
+404123
+
 57
 575823
 
@@ -129,6 +138,9 @@ C
 
 36
 363723
+
+61
+616223
 
 65
 656623
@@ -144,12 +156,6 @@ C
 
 52
 525323
-
-38
-383923
-
-61
-616223
 
 34
 343523
@@ -168,9 +174,6 @@ B
 
 15
 54
-
-42
-424323
 B
 17<
 171819 *
@@ -186,9 +189,6 @@ B
 
 48
 484923
-
-40
-404123
 
 59
 596023

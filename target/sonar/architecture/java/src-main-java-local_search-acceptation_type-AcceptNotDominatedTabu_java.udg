@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800780852*java2.Bæ	
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811379866*java2.Bæ	
 L
 Gsrc/main/java/local_search/acceptation_type/AcceptNotDominatedTabu.java2
 	
@@ -49,18 +49,18 @@ Ialerguezrojas_lab-dht-bicam-rodriguez-rojas:local_search.acceptation_type9
 
 is type29
 &
- metaheurictics.strategy.Strategy31
+ metaheuristics.strategy.Strategy31
 
 returns32
 
 
 references33
 V
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;35
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;35
 
 calls36
 9
-3metaheurictics.strategy.Strategy.listRefPoblacFinal38
+3metaheuristics.strategy.Strategy.listRefPoblacFinal38
 -
 'local_search.acceptation_type.Dominance40
 @
@@ -90,12 +90,6 @@ blocal_search.acceptation_type.Dominance#ListDominance(Lproblem/definition/State
 41
 414219
 
-37
-373819
-
-30
-303119
-
 39
 394019
 >
@@ -110,6 +104,12 @@ blocal_search.acceptation_type.Dominance#ListDominance(Lproblem/definition/State
 
 15
 16
+
+30
+303119
+
+34
+343519
 
 43
 434419
@@ -126,8 +126,8 @@ B
 15
 25
 
-34
-343519
+37
+373819
 
 26
 262719r“

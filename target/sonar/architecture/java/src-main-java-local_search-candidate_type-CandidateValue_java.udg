@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800780356*java2.BÊ
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811376976*java2.BÊ
 B
 =src/main/java/local_search/candidate_type/CandidateValue.java2
 	
@@ -102,13 +102,13 @@ references54
 `
 Zlocal_search.complement.TabuSolutions#filterNeighborhood(Ljava/util/List;)Ljava/util/List;71
 &
- metaheurictics.strategy.Strategy73
+ metaheuristics.strategy.Strategy73
 V
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;75
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;75
  
 problem.definition.Problem77
 O
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;79
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;79
 !
 problem.definition.Operator81
 r
@@ -180,6 +180,9 @@ B
 
 15
 29
+
+74
+747524
 >
 108
 101112 *
@@ -238,9 +241,6 @@ B
 15
 16
 
-74
-747524
-
 86
 868724
 B
@@ -256,8 +256,14 @@ B
 15
 34
 
+72
+727324
+
 76
 767724
+
+78
+787924
 B
 42<
 424319 *
@@ -300,12 +306,6 @@ B
 
 15
 65
-
-72
-727324
-
-78
-787924
 
 84
 848524

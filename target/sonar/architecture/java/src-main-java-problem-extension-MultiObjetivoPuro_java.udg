@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800783995*java2.B×
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811379433*java2.B×
 ;
 6src/main/java/problem/extension/MultiObjetivoPuro.java2
 	
@@ -60,11 +60,11 @@ C
 
 returns36
 &
- metaheurictics.strategy.Strategy38
+ metaheuristics.strategy.Strategy38
 O
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;40
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;40
 V
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;42
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;42
 )
 #problem.definition.ObjetiveFunction44
 ,
@@ -105,6 +105,15 @@ D
 30
 303119
 
+37
+373819
+
+41
+414219
+
+39
+394019
+
 17
 171819
 
@@ -137,12 +146,6 @@ B
 
 33
 333419
-
-37
-373819
-
-39
-394019
 >
 108
 101112 *
@@ -155,9 +158,6 @@ B
 
 15
 16
-
-41
-414219
 
 47
 474819rÎ

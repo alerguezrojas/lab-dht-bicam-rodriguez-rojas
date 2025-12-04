@@ -1,78 +1,18 @@
 
-„factory_method.FactorySolutionMethod#createdSolutionMethod(Lproblem/extension/TypeSolutionMethod;)Lproblem/extension/SolutionMethod;k
-aC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/factory_method/FactorySolutionMethod.java (,"startingBlock*²
-startingBlock, (G¡
+[metaheuristics.generators.MultiGenerator#getType()Lmetaheuristics/generators/GeneratorType;q
+eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiGenerator.javaÄ Ä("1*ò
+1
+Å	 Å(¡
 ž
- (
-
-%4"
-__annotate*2
+
+Å	 Å(-
+%0'metaheuristics.generators.GeneratorType"__id*[
 
-__unknown_file (
-java.lang.Override*L
-
-__unknown_file (0
-.
-method$problem.extension.TypeSolutionMethodn
-l
-@ (F.
-method$problem.extension.TypeSolutionMethod"__annotation*"
-
-__unknown_file (
-
-%4*
-1*è
-1 ()¬©
-, (=
-%0java.lang.String"+java.lang.Enum#toString()Ljava/lang/String;*L
-
-__unknown_file (0
-.
-method$problem.extension.TypeSolutionMethod2
-toString()x
-v
- (=
-%1java.lang.String"__concat*"
- ()
-problem.extension.*$
-, (=
-
-%0java.lang.Stringg
-e
- (>
-	classNamejava.lang.String"__id*4
-
-__unknown_file (
-
-%1java.lang.Stringð
-í
-$ (H
-%2java.lang.Object"Nfactory_method.FactoryLoader#getInstance(Ljava/lang/String;)Ljava/lang/Object;*<
-
-__unknown_file ( "
-factory_method.FactoryLoader*;
-
-__unknown_file (
-
-	classNamejava.lang.String…
-‚
- (H:&
-$factory_method.FactorySolutionMethod"
-solutionMethod"__id*4
-
-__unknown_file (
-
-%2java.lang.Object•
-’
-	 (&
-%3 problem.extension.SolutionMethod"__id*X
-
-__unknown_file (<*:&
-$factory_method.FactorySolutionMethod"
-solutionMethod"4
- ((
-&
-%3 problem.extension.SolutionMethod::
-- (F.
-method$problem.extension.TypeSolutionMethodB(&
-$factory_method.FactorySolutionMethodH
+__unknown_file (?*=*
+(metaheuristics.generators.MultiGenerator"
+Generatortype"=
+
+Å Å(/
+-
+%0'metaheuristics.generators.GeneratorTypeB,*
+(metaheuristics.generators.MultiGeneratorH

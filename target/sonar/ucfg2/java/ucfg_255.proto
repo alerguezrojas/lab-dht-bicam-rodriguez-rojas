@@ -1,7 +1,15 @@
 
-7metaheuristics.generators.LimitRoulette#getLimitHigh()Fn
-dC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/LimitRoulette.java ("1*!
-1	 ("
- (
-""B+)
-'metaheuristics.generators.LimitRouletteHX
+bmetaheuristics.generators.HillClimbing#getGeneratorType()Lmetaheuristics/generators/GeneratorType;m
+cC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/HillClimbing.javad d(&"1*Í
+1e	 e(ù
+ö
+e	 e(-
+%0'metaheuristics.generators.GeneratorType"__id*Y
+
+__unknown_file (=*;(
+&metaheuristics.generators.HillClimbing"
+Generatortype";
+e e(/
+-
+%0'metaheuristics.generators.GeneratorTypeB*(
+&metaheuristics.generators.HillClimbingH

@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800782603*java2.BÀ-
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811372174*java2.BÀ-
 D
 ?src/main/java/metaheuristics/generators/SimulatedAnnealing.java2
 	
@@ -174,11 +174,11 @@ lproblem.definition.Operator#generatedNewState(Lproblem/definition/State;Ljava/l
 L
 Eproblem.definition.Problem#getOperator()Lproblem/definition/Operator;127
 '
- metaheurictics.strategy.Strategy129
+ metaheuristics.strategy.Strategy129
 P
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;131
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;131
 W
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;133
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;133
 ë
 ãlocal_search.candidate_type.CandidateValue#stateCandidate(Lproblem/definition/State;Llocal_search/candidate_type/CandidateType;Llocal_search/complement/StrategyType;Ljava/lang/Integer;Ljava/util/List;)Lproblem/definition/State;135
 \
@@ -363,9 +363,6 @@ B
 
 15
 99
-
-132
-13213319
 F
 156?
 15615798 *
@@ -428,6 +425,9 @@ B
 15
 86
 
+130
+13013119
+
 111
 11111219
 B
@@ -442,12 +442,6 @@ B
 
 15
 57
-
-128
-12812919
-
-130
-13013119
 
 126
 12612719
@@ -537,6 +531,9 @@ B
 
 15
 89
+
+132
+13213319
 
 27
 272819
@@ -655,6 +652,9 @@ F
 
 124
 12412519
+
+128
+12812919
 
 48
 484919

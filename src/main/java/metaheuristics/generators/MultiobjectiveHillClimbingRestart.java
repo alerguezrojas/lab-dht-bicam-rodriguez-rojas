@@ -15,7 +15,7 @@ import local_search.acceptation_type.AcceptableCandidate;
 import local_search.candidate_type.CandidateType;
 import local_search.candidate_type.CandidateValue;
 import local_search.complement.StrategyType;
-import metaheurictics.strategy.Strategy;
+import metaheuristics.strategy.Strategy;
 
 
 
@@ -58,7 +58,7 @@ public class MultiobjectiveHillClimbingRestart extends Generator{
 
 	@Override
 	public void updateReference(State stateCandidate, Integer countIterationsCurrent) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
-		//Agregando la primera solución a la lista de soluciones no dominadas
+		//Agregando la primera soluciï¿½n a la lista de soluciones no dominadas
 
 		if(Strategy.getStrategy().listRefPoblacFinal.size() == 0){
 			Strategy.getStrategy().listRefPoblacFinal.add(stateReferenceHC.clone());
@@ -171,14 +171,12 @@ public class MultiobjectiveHillClimbingRestart extends Generator{
 
 	@Override
 	public float getWeight() {
-		// TODO Auto-generated method stub
-		return 0;
+		return weight;
 	}
 
 	@Override
 	public void setWeight(float weight) {
-		// TODO Auto-generated method stub
-
+		this.weight = weight;
 	}
 
 	@Override

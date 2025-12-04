@@ -1,5 +1,6 @@
 package local_search.acceptation_type;
 
+import local_search.complement.MultiCaseSimulatedAnnealing;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
@@ -12,10 +13,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.MockedStatic;
 
-import metaheurictics.strategy.Strategy;
+import metaheuristics.strategy.Strategy;
 import metaheuristics.generators.Generator;
 import metaheuristics.generators.GeneratorType;
-import metaheuristics.generators.MultiCaseSimulatedAnnealing;
 import problem.definition.Problem;
 import problem.definition.Problem.ProblemType;
 import problem.definition.State;

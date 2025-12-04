@@ -1,7 +1,8 @@
 package local_search.acceptation_type;
 
+import local_search.complement.MultiCaseSimulatedAnnealing;
 import metaheuristics.generators.*;
-import metaheurictics.strategy.*;
+import metaheuristics.strategy.*;
 
 import java.util.List;
 import java.util.Random;
@@ -23,10 +24,10 @@ public class AcceptMulticase extends AcceptableCandidate {
 		double pAccept = 0;
 		Random rdm = new Random();
 		Dominance dominance= new Dominance();
-		//Verificando si la solución candidata domina a la solución actual
-		//Si la solución candidata domina a la solución actual
+		//Verificando si la soluciï¿½n candidata domina a la soluciï¿½n actual
+		//Si la soluciï¿½n candidata domina a la soluciï¿½n actual
 		if(dominance.dominance(stateCandidate, stateCurrent) == true){
-			//Se asigna como solución actual la solución candidata con probabilidad 1
+			//Se asigna como soluciï¿½n actual la soluciï¿½n candidata con probabilidad 1
 			pAccept = 1; 
 		}
 		else if(dominance.dominance(stateCandidate, stateCurrent)== false){	
@@ -40,7 +41,7 @@ public class AcceptMulticase extends AcceptableCandidate {
 				pAccept = 1;
 			}
 			else if(DominanceRank(stateCandidate, list) == DominanceRank(stateCurrent, list)){
-				//Calculando la probabilidad de aceptación
+				//Calculando la probabilidad de aceptaciï¿½n
 				List<Double> evaluations = stateCurrent.getEvaluation();
 				double total = 0;
 				for (int i = 0; i < evaluations.size()-1; i++) {
@@ -57,7 +58,7 @@ public class AcceptMulticase extends AcceptableCandidate {
 				pAccept = Math.exp(-(value+1)/T);
 			}
 			else{
-				//Calculando la probabilidad de aceptación
+				//Calculando la probabilidad de aceptaciï¿½n
 				List<Double> evaluations = stateCurrent.getEvaluation();
 				double total = 0;
 				for (int i = 0; i < evaluations.size()-1; i++) {
@@ -70,17 +71,17 @@ public class AcceptMulticase extends AcceptableCandidate {
 				pAccept = Math.exp(-(1-total)/T);
 			}
 		}
-		//Generar un número aleatorio
+		//Generar un nï¿½mero aleatorio
 		if((rdm.nextFloat()) < pAccept){
 			stateCurrent = stateCandidate.clone();
-			//Verificando que la solución candidata domina a alguna de las soluciones
+			//Verificando que la soluciï¿½n candidata domina a alguna de las soluciones
 			accept = dominance.ListDominance(stateCandidate, list);
 		}
 		return accept;
 	}
 
 
-	private int DominanceCounter(State stateCandidate, List<State> list) { //chequea el número de soluciones de Pareto que son dominados por la nueva solución
+	private int DominanceCounter(State stateCandidate, List<State> list) { //chequea el nï¿½mero de soluciones de Pareto que son dominados por la nueva soluciï¿½n
 		int counter = 0;
 		for (int i = 0; i < list.size(); i++) {
 			State solution = list.get(i);
@@ -91,7 +92,7 @@ public class AcceptMulticase extends AcceptableCandidate {
 		return counter;
 	}
 
-	private int DominanceRank(State stateCandidate, List<State> list) { //calculando el número de soluciones en el conjunto de Pareto que dominan a la solución
+	private int DominanceRank(State stateCandidate, List<State> list) { //calculando el nï¿½mero de soluciones en el conjunto de Pareto que dominan a la soluciï¿½n
 		int rank = 0;
 		for (int i = 0; i < list.size(); i++) {
 			State solution = list.get(i);

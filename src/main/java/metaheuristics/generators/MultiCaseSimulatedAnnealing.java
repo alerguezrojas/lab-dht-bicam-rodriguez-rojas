@@ -11,7 +11,7 @@ import local_search.acceptation_type.AcceptableCandidate;
 import local_search.candidate_type.CandidateType;
 import local_search.candidate_type.CandidateValue;
 import local_search.complement.StrategyType;
-import metaheurictics.strategy.Strategy;
+import metaheuristics.strategy.Strategy;
 import problem.definition.Problem;
 import problem.definition.State;
 
@@ -34,6 +34,11 @@ public class MultiCaseSimulatedAnnealing extends Generator {
     private float weight;
 	private List<Float> listTrace = new ArrayList<Float>();
 
+    public int simpleTest() {
+        AcceptType a = AcceptType.AcceptBest;
+        return 1;
+    }
+
     public GeneratorType getTypeGenerator() {
 		return typeGenerator;
 	}
@@ -44,6 +49,7 @@ public class MultiCaseSimulatedAnnealing extends Generator {
 
 	public MultiCaseSimulatedAnnealing(){
     	super();
+        System.out.println("MultiCaseSimulatedAnnealing constructor called");
     	this.typeAcceptation = AcceptType.AcceptMulticase;
 		this.strategy = StrategyType.NORMAL;
 		this.typeCandidate = CandidateType.RandomCandidate;
@@ -129,32 +135,34 @@ public class MultiCaseSimulatedAnnealing extends Generator {
 
 	@Override
 	public float getWeight() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.weight;
 	}
 
 	@Override
 	public void setWeight(float weight) {
-		// TODO Auto-generated method stub
-		
+		this.weight = weight;
 	}
 
 	@Override
 	public int[] getListCountBetterGender() {
-		// TODO Auto-generated method stub
-		return null;
+		if (listCountBetterGender == null) {
+			listCountBetterGender = new int[0];
+		}
+		return listCountBetterGender;
 	}
 
 	@Override
 	public int[] getListCountGender() {
-		// TODO Auto-generated method stub
-		return null;
+		return new int[0];
 	}
 
 	@Override
 	public float[] getTrace() {
-		// TODO Auto-generated method stub
-		return null;
+		float[] trace = new float[listTrace.size()];
+		for (int i = 0; i < listTrace.size(); i++) {
+			trace[i] = listTrace.get(i);
+		}
+		return trace;
 	}
 	
 }

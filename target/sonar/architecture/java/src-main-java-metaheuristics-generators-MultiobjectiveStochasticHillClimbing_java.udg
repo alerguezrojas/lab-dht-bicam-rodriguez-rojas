@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800781293*java2.Bµ,
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811381885*java2.Bµ,
 V
 Qsrc/main/java/metaheuristics/generators/MultiobjectiveStochasticHillClimbing.java2
 	
@@ -128,11 +128,11 @@ lproblem.definition.Operator#generatedNewState(Lproblem/definition/State;Ljava/l
 K
 Eproblem.definition.Problem#getOperator()Lproblem/definition/Operator;93
 &
- metaheurictics.strategy.Strategy95
+ metaheuristics.strategy.Strategy95
 O
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;97
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;97
 V
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;99
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;99
 Î
 „local_search.candidate_type.CandidateValue#stateCandidate(Lproblem/definition/State;Llocal_search/candidate_type/CandidateType;Llocal_search/complement/StrategyType;Ljava/lang/Integer;Ljava/util/List;)Lproblem/definition/State;101
 Ö
@@ -223,11 +223,11 @@ Umetaheuristics.generators.MultiobjectiveStochasticHillClimbing#getListCountGend
 
 
 5
-6j∞
-H
-155A
-15515671 *
-1Å Å(210:7B
+6jÆ
+F
+155?
+15515671 *
+1 (210:7B
 
 
 13
@@ -244,7 +244,7 @@ H
 F
 149?
 14915071 *
-1u u(210:7B
+1s s(210:7B
 
 
 13
@@ -308,9 +308,6 @@ F
 
 78
 787919
-
-98
-989919
 B
 30<
 303124 *
@@ -350,6 +347,9 @@ B
 58
 585919
 
+96
+969719
+
 76
 767719
 F
@@ -364,18 +364,12 @@ F
 15
 124
 
-94
-949519
-
-96
-969719
-
 92
 929319
 F
 152?
 15215371 *
-1{ {(210:7B
+1y y(210:7B
 
 
 13
@@ -406,6 +400,9 @@ B
 
 15
 52
+
+98
+989919
 B
 22<
 222324 *
@@ -526,6 +523,9 @@ F
 
 90
 909119
+
+94
+949519
 F
 119?
 11912071 *
@@ -609,7 +609,7 @@ B
 F
 146?
 14614771 *
-1o o(210:7B
+1n n(210:7B
 
 
 13
@@ -619,7 +619,7 @@ F
 148
 
 86
-868719rÏ%
+868719r‹&
 
 101720*
 1; (D
@@ -1155,3 +1155,16 @@ F
 
 1404821*
 1d  d(%
+
+1436373*
+1k
+ k(
+
+1461021*
+1p p(
+
+1461073*
+1p p(
+
+1466373*
+1p p(

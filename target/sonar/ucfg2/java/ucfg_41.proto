@@ -1,15 +1,9 @@
 
-Ometaheuristics.generators.RandomSearch#getReference()Lproblem/definition/State;m
-cC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/RandomSearch.javaB B("1*Ï
-1C	 C(‘
-Ž
-C	 C(
-%0problem.definition.State"__id*\
-
-__unknown_file (@*>(
-&metaheuristics.generators.RandomSearch"
-stateReferenceRS",
-C C( 
-
-%0problem.definition.StateB*(
-&metaheuristics.generators.RandomSearchH
+Imetaheuristics.generators.MultiobjectiveHillClimbingDistance#getTrace()[F…
+yC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiobjectiveHillClimbingDistance.java÷ ÷("1*%
+1
+ù	 ù("
+
+ù ù(
+""B@>
+<metaheuristics.generators.MultiobjectiveHillClimbingDistanceH

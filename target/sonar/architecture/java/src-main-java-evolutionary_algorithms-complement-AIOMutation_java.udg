@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800781526*java2.BÙ
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811382712*java2.BÙ
 F
 Asrc/main/java/evolutionary_algorithms/complement/AIOMutation.java2
 	
@@ -71,11 +71,11 @@ references37
 S
 Mproblem.definition.Problem#getCodification()Lproblem/definition/Codification;44
 &
- metaheurictics.strategy.Strategy46
+ metaheuristics.strategy.Strategy46
 O
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;48
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;48
 V
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;50
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;50
 a
 [evolutionary_algorithms.complement.AIOMutation#sortedPathValue(Lproblem/definition/State;)V52
  
@@ -161,6 +161,15 @@ B
 41
 414219
 
+45
+454619
+
+49
+495019
+
+47
+474819
+
 38
 383919
 B
@@ -185,12 +194,6 @@ B
 35
 353619
 
-45
-454619
-
-47
-474819
-
 17
 171819
 
@@ -202,9 +205,6 @@ B
 
 53
 535419
-
-49
-495019
 B
 51<
 515228 *

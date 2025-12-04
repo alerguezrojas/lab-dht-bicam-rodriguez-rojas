@@ -1,9 +1,16 @@
 
-Bmetaheuristics.generators.MultiGenerator#clone()Ljava/lang/Object;q
-eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiGenerator.javaì ì("1*K
-1
-í	 í(":
+=problem.definition.Problem#getFunction()Ljava/util/ArrayList;a
+WC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/problem/definition/Problem.java$ (/"1*¯
+1	 (w
+u
+	 (
+%0java.util.ArrayList"__id*H
+
+__unknown_file (,**
+problem.definition.Problem"
 
-í í(,*
-(metaheuristics.generators.MultiGeneratorB,*
-(metaheuristics.generators.MultiGeneratorH
+function"'
+ (
+
+%0java.util.ArrayListB
+problem.definition.ProblemH

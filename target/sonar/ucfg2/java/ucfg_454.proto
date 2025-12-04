@@ -1,36 +1,79 @@
 
-Tmetaheuristics.generators.LimitThreshold#awardUpdateREF(Lproblem/definition/State;)Zq
-eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/LimitThreshold.java‚ ‚("startingBlock*°
-startingBlock
-‚ ‚(4Ÿ
-œ
-
- (
-
-%0"
-__annotate*2
+>problem.definition.State#Distance(Lproblem/definition/State;)D_
+UC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/problem/definition/State.javaP P("5*â
+4S	 S(­ª
+S	 S(
+%3java.util.ArrayList"7problem.definition.State#getCode()Ljava/util/ArrayList;*?
 
-__unknown_file (
-java.lang.Override*H
+__unknown_file (#
+!
+stateproblem.definition.State2	getCode()Ž
+‹
+S	 S(
+%4java.lang.Object"
+__arrayGet*7
 
-__unknown_file (,
-*
-stateCandidateproblem.definition.Statel
-j
-
-‚% ‚(3*
-stateCandidateproblem.definition.State"__annotation*"
+__unknown_file (
+
+%3java.util.ArrayList*"
 
-__unknown_file (
-
-%0*
-1*%
-1
-„	 „("
-
-„ „(
-"":8
-
-‚ ‚(3*
-stateCandidateproblem.definition.StateB,*
-(metaheuristics.generators.LimitThresholdHX
+__unknown_file (
+""¦£
+S' S(5
+%5java.util.ArrayList"7problem.definition.State#getCode()Ljava/util/ArrayList;*8
+
+__unknown_file (
+problem.definition.State2	getCode()Ž
+‹
+S' S(<
+%6java.lang.Object"
+__arrayGet*7
+
+__unknown_file (
+
+%5java.util.ArrayList*"
+
+__unknown_file (
+""ÒÏ
+S	 S(=
+%7boolean",java.lang.Object#equals(Ljava/lang/Object;)Z*4
+
+__unknown_file (
+
+%4java.lang.Object*4
+
+__unknown_file (
+
+%6java.lang.Object2equals(Ljava/lang/Object;)*
+5*¤
+5R R(­ª
+R R(%
+%0java.util.ArrayList"7problem.definition.State#getCode()Ljava/util/ArrayList;*?
+
+__unknown_file (#
+!
+stateproblem.definition.State2	getCode()us
+R R(,	
+%1int"java.util.ArrayList#size()I*7
+
+__unknown_file (
+
+%0java.util.ArrayList2size()f
+d
+R R(,
+%2boolean"	__compare*
+R R(
+<*
+R R(
+""*
+R R(,
+	
+%1int*
+4
+1*!
+1W W("
+W W(
+"":-
+P P(#!
+stateproblem.definition.StateB
+problem.definition.StateHX

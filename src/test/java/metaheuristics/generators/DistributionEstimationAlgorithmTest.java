@@ -25,7 +25,7 @@ import evolutionary_algorithms.complement.Sampling;
 import factory_method.FactoryFatherSelection;
 import factory_method.FactoryReplace;
 import factory_method.FactorySampling;
-import metaheurictics.strategy.Strategy;
+import metaheuristics.strategy.Strategy;
 import problem.definition.Problem;
 import problem.definition.State;
 
@@ -182,5 +182,83 @@ public class DistributionEstimationAlgorithmTest {
     @Test
     public void testGetType() {
         assertEquals(GeneratorType.DistributionEstimationAlgorithm, dea.getType());
+    }
+
+    @Test
+    public void testMaxValue() {
+        List<State> list = new ArrayList<>();
+        
+        State s1 = mock(State.class);
+        ArrayList<Double> e1 = new ArrayList<>();
+        e1.add(10.0);
+        when(s1.getEvaluation()).thenReturn(e1);
+        
+        State s2 = mock(State.class);
+        ArrayList<Double> e2 = new ArrayList<>();
+        e2.add(20.0);
+        when(s2.getEvaluation()).thenReturn(e2);
+        
+        State s3 = mock(State.class);
+        ArrayList<Double> e3 = new ArrayList<>();
+        e3.add(5.0);
+        when(s3.getEvaluation()).thenReturn(e3);
+        
+        list.add(s1);
+        list.add(s2);
+        list.add(s3);
+        
+        State max = dea.MaxValue(list);
+        assertNotNull(max);
+        assertEquals(20.0, max.getEvaluation().get(0));
+    }
+
+    @Test
+    public void testGetListStateRef_Empty() {
+        RandomSearch.listStateReference = new ArrayList<>();
+        List<State> result = dea.getListStateRef();
+        assertNotNull(result);
+        // Depending on logic, might be empty or not
+    }
+
+    @Test
+    public void testAwardUpdateREF() {
+        List<State> list = new ArrayList<>();
+        list.add(stateMock);
+        dea.setListReference(list);
+        
+        assertTrue(dea.awardUpdateREF(stateMock));
+        
+        State other = mock(State.class);
+        assertFalse(dea.awardUpdateREF(other));
+    }
+
+    @Test
+    public void testGettersAndSetters() {
+        dea.setWeight(10.0f);
+        assertEquals(10.0f, dea.getWeight());
+
+        dea.setGeneratorType(GeneratorType.GeneticAlgorithm);
+        assertEquals(GeneratorType.GeneticAlgorithm, dea.getGeneratorType());
+
+        dea.setDistributionType(evolutionary_algorithms.complement.DistributionType.Univariate);
+        assertEquals(evolutionary_algorithms.complement.DistributionType.Univariate, dea.getDistributionType());
+        
+        assertNotNull(dea.getListCountBetterGender());
+        assertNotNull(dea.getListCountGender());
+        assertNotNull(dea.getTrace());
+        assertNotNull(dea.getSonList());
+        
+        dea.setInitialReference(stateMock);
+        // No getter for initial reference specifically, but used in getReference logic
+    }
+    
+    @Test
+    public void testGetListReference() {
+        List<State> list = new ArrayList<>();
+        list.add(stateMock);
+        dea.setListReference(list);
+        
+        List<State> result = dea.getListReference();
+        assertEquals(list, result);
     }
 }

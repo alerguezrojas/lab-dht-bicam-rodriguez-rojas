@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800787723*java2.B‚
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811389406*java2.B‚
 M
 Hsrc/test/java/local_search/candidate_type/NotDominatedCandidateTest.java2
 	
@@ -45,7 +45,7 @@ Jlocal_search.candidate_type.NotDominatedCandidateTest.strategyMockedStatic18
 
 uses26
 &
- metaheurictics.strategy.Strategy28
+ metaheuristics.strategy.Strategy28
 H
 Blocal_search.candidate_type.NotDominatedCandidateTest.strategyMock30
 
@@ -90,7 +90,7 @@ lorg.mockito.MockedStatic#when(Lorg/mockito/MockedStatic$Verification;)Lorg/mock
 X
 Rorg.mockito.Mockito#when(Ljava/lang/Object;)Lorg/mockito/stubbing/OngoingStubbing;62
 O
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;64
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;64
 G
 Alocal_search.candidate_type.NotDominatedCandidateTest#tearDown()V66
 
@@ -241,8 +241,14 @@ B
 53
 535424
 
+27
+272824
+
 35
 353624
+
+63
+636424
 
 89
 899024
@@ -285,12 +291,6 @@ B
 
 95
 959624
-
-27
-272824
-
-63
-636424
 
 70
 707124

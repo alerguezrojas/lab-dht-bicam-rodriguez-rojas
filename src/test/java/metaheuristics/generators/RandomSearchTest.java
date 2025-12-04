@@ -14,7 +14,7 @@ import org.mockito.Mock;
 import org.mockito.MockedStatic;
 import org.mockito.MockitoAnnotations;
 
-import metaheurictics.strategy.Strategy;
+import metaheuristics.strategy.Strategy;
 import problem.definition.Operator;
 import problem.definition.Problem;
 import problem.definition.State;
@@ -113,5 +113,48 @@ public class RandomSearchTest {
         when(newStateMock.getEvaluation()).thenReturn(evalNew);
         
         randomSearch.updateReference(newStateMock, 1);
+    }
+
+    @Test
+    public void testGenerate_WithCountRef() throws Exception {
+        int operatorNumber = 1;
+        List<State> neighborhood = new ArrayList<>();
+        neighborhood.add(newStateMock);
+        
+        when(operatorMock.generateRandomState(operatorNumber)).thenReturn(neighborhood);
+        
+        // Set static countRef to non-zero
+        GeneticAlgorithm.countRef = 1;
+        
+        State result = randomSearch.generate(operatorNumber);
+        
+        assertNotNull(result);
+        assertFalse(RandomSearch.listStateReference.isEmpty());
+        
+        // Reset
+        GeneticAlgorithm.countRef = 0;
+    }
+
+    @Test
+    public void testGetReferenceList() {
+        randomSearch.setInitialReference(stateMock);
+        List<State> list = randomSearch.getReferenceList();
+        assertNotNull(list);
+        assertTrue(list.contains(stateMock));
+    }
+
+    @Test
+    public void testGetSetters() {
+        randomSearch.setWeight(10.0f);
+        assertEquals(10.0f, randomSearch.getWeight());
+        
+        randomSearch.setTypeGenerator(GeneratorType.GeneticAlgorithm);
+        assertEquals(GeneratorType.GeneticAlgorithm, randomSearch.getTypeGenerator());
+        
+        assertNotNull(randomSearch.getListCountBetterGender());
+        assertNotNull(randomSearch.getListCountGender());
+        assertNotNull(randomSearch.getTrace());
+        assertNull(randomSearch.getSonList());
+        assertFalse(randomSearch.awardUpdateREF(stateMock));
     }
 }

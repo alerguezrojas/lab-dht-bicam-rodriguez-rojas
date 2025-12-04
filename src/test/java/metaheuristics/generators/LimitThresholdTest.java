@@ -22,7 +22,7 @@ import org.mockito.MockitoAnnotations;
 import factory_method.FactoryAcceptCandidate;
 import local_search.acceptation_type.AcceptableCandidate;
 import local_search.candidate_type.CandidateValue;
-import metaheurictics.strategy.Strategy;
+import metaheuristics.strategy.Strategy;
 import problem.definition.Operator;
 import problem.definition.Problem;
 import problem.definition.State;
@@ -139,5 +139,48 @@ public class LimitThresholdTest {
     @Test
     public void testGetType() {
         assertEquals(GeneratorType.LimitThreshold, lt.getType());
+    }
+
+    @Test
+    public void testGetSetTypeGenerator() {
+        GeneratorType type = GeneratorType.LimitThreshold;
+        lt.setTypeGenerator(type);
+        assertEquals(type, lt.getTypeGenerator());
+    }
+
+    @Test
+    public void testGetSetStateRef() {
+        lt.setStateRef(stateMock);
+        assertEquals(stateMock, lt.getReference());
+        
+        State newState = mock(State.class);
+        lt.setInitialReference(newState);
+        assertEquals(newState, lt.getReference());
+    }
+
+    @Test
+    public void testGetSetWeight() {
+        float weight = 10.5f;
+        lt.setWeight(weight);
+        assertEquals(weight, lt.getWeight());
+    }
+
+    @Test
+    public void testGetLists() {
+        assertNotNull(lt.getListCountBetterGender());
+        assertNotNull(lt.getListCountGender());
+        assertNotNull(lt.getTrace());
+        assertNull(lt.getReferenceList());
+        assertNull(lt.getSonList());
+    }
+
+    @Test
+    public void testAwardUpdateREF() {
+        assertFalse(lt.awardUpdateREF(stateMock));
+    }
+    
+    @Test
+    public void testSetTypeCandidate() {
+        lt.setTypeCandidate(local_search.candidate_type.CandidateType.GreaterCandidate);
     }
 }

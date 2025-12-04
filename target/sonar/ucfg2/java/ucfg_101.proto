@@ -1,9 +1,57 @@
 
-5metaheuristics.generators.MultiGenerator#getTrace()[Fq
-eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiGenerator.javaﬁ ﬁ("1*%
-1
-‡	 ‡("
-
-‡ ‡(
-""B,*
-(metaheuristics.generators.MultiGeneratorH
+èfactory_method.FactoryCandidate#createSearchCandidate(Llocal_search/candidate_type/CandidateType;)Llocal_search/candidate_type/SearchCandidate;f
+\C:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/factory_method/FactoryCandidate.java (-"1*ç
+1 (3∏µ
+6 (N
+%0java.lang.String"+java.lang.Enum#toString()Ljava/lang/String;*X
+
+__unknown_file (<
+:
+typeCandidate)local_search.candidate_type.CandidateType2
+toString()É
+Ä
+ (N
+%1java.lang.String"__concat*,
+ (3 
+local_search.candidate_type.*$
+6 (N
+
+%0java.lang.Stringg
+e
+ (O
+	classNamejava.lang.String"__id*4
+
+__unknown_file (
+
+%1java.lang.String
+Ì
+& (J
+%2java.lang.Object"Nfactory_method.FactoryLoader#getInstance(Ljava/lang/String;)Ljava/lang/Object;*<
+
+__unknown_file ( "
+factory_method.FactoryLoader*;
+
+__unknown_file (
+
+	classNamejava.lang.StringÄ
+~
+ (J6!
+factory_method.FactoryCandidate"
+searchcandidate"__id*4
+
+__unknown_file (
+
+%2java.lang.Objectú
+ô
+	 (1
+%3+local_search.candidate_type.SearchCandidate"__id*T
+
+__unknown_file (8*6!
+factory_method.FactoryCandidate"
+searchcandidate"?
+ (3
+1
+%3+local_search.candidate_type.SearchCandidate:F
+. (I:
+typeCandidate)local_search.candidate_type.CandidateTypeB#!
+factory_method.FactoryCandidateH

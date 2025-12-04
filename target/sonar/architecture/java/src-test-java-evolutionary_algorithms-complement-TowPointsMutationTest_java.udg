@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800787290*java2.B“
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811387466*java2.B“
 P
 Ksrc/test/java/evolutionary_algorithms/complement/TowPointsMutationTest.java2
 	
@@ -45,7 +45,7 @@ Mevolutionary_algorithms.complement.TowPointsMutationTest.strategyMockedStatic
 
 uses26
 &
- metaheurictics.strategy.Strategy28
+ metaheuristics.strategy.Strategy28
 K
 Eevolutionary_algorithms.complement.TowPointsMutationTest.strategyMock30
 
@@ -96,7 +96,7 @@ lorg.mockito.MockedStatic#when(Lorg/mockito/MockedStatic$Verification;)Lorg/mock
 X
 Rorg.mockito.Mockito#when(Ljava/lang/Object;)Lorg/mockito/stubbing/OngoingStubbing;67
 O
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;69
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;69
 S
 Mproblem.definition.Problem#getCodification()Lproblem/definition/Codification;71
 J
@@ -243,8 +243,14 @@ B
 70
 707124
 
+27
+272824
+
 35
 353624
+
+68
+686924
 
 60
 606124
@@ -284,12 +290,6 @@ B
 
 102
 10210324
-
-27
-272824
-
-68
-686924
 
 77
 777824

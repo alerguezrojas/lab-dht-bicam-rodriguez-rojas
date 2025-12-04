@@ -5,7 +5,7 @@ import factory_method.FactoryGenerator;
 
 import java.lang.reflect.InvocationTargetException;
 
-import metaheurictics.strategy.Strategy;
+import metaheuristics.strategy.Strategy;
 import metaheuristics.generators.DistributionEstimationAlgorithm;
 import metaheuristics.generators.EvolutionStrategies;
 import metaheuristics.generators.GeneratorType;

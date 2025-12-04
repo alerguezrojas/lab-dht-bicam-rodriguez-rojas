@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800786245*java2.B°
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811384969*java2.B°
 K
 Fsrc/main/java/evolutionary_algorithms/complement/OnePointMutation.java2
 	
@@ -72,11 +72,11 @@ references36
 S
 Mproblem.definition.Problem#getCodification()Lproblem/definition/Codification;45
 &
- metaheurictics.strategy.Strategy47
+ metaheuristics.strategy.Strategy47
 O
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;49
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;49
 V
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;51
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;51
 S
 Mproblem.definition.Codification#getVariableAleatoryValue(I)Ljava/lang/Object;53
 =
@@ -106,6 +106,15 @@ Mproblem.definition.Codification#getVariableAleatoryValue(I)Ljava/lang/Object;
 
 42
 424319
+
+46
+464719
+
+50
+505119
+
+48
+484919
 >
 108
 101112 *
@@ -157,17 +166,8 @@ B
 52
 525319
 
-46
-464719
-
-48
-484919
-
 17
-171819
-
-50
-505119r±
+171819r±
 
 101720*
 1' (/

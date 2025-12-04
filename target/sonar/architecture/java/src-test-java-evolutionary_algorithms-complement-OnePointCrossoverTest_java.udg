@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800787524*java2.BÊ
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811388399*java2.BÊ
 P
 Ksrc/test/java/evolutionary_algorithms/complement/OnePointCrossoverTest.java2
 	
@@ -43,7 +43,7 @@ Aevolutionary_algorithms.complement.OnePointCrossoverTest#setUp()V18
 
 uses25
 &
- metaheurictics.strategy.Strategy27
+ metaheuristics.strategy.Strategy27
 
 is type28
 
@@ -52,7 +52,7 @@ Aevolutionary_algorithms.complement.OnePointCrossoverTest#setUp()V18
 
 references30
 V
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;32
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;32
 
 calls33
  
@@ -87,7 +87,7 @@ Nevolutionary_algorithms.complement.OnePointCrossoverTest$1#getVariableCount()I
 T
 Nproblem.definition.Problem#setCodification(Lproblem/definition/Codification;)V57
 P
-Jmetaheurictics.strategy.Strategy#setProblem(Lproblem/definition/Problem;)V59
+Jmetaheuristics.strategy.Strategy#setProblem(Lproblem/definition/Problem;)V59
 O
 Ievolutionary_algorithms.complement.OnePointCrossoverTest#testCrossover()V61
 
@@ -168,6 +168,9 @@ B
 73
 737423
 
+31
+313223
+
 79
 798023
 B
@@ -188,9 +191,6 @@ B
 
 75
 757623
-
-31
-313223
 B
 47<
 474819 *
@@ -204,8 +204,8 @@ B
 15
 49
 
-58
-585923
+26
+262723
 
 34
 343523
@@ -248,9 +248,6 @@ B
 
 36
 363723
-
-26
-262723
 B
 60<
 606119 *
@@ -268,7 +265,10 @@ B
 717223
 
 67
-676823r—
+676823
+
+58
+585923r—
 
 172124*
 1 (

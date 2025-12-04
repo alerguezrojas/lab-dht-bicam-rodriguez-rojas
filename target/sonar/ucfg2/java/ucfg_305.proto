@@ -1,30 +1,18 @@
 
-ametaheuristics.generators.MultiCaseSimulatedAnnealing#awardUpdateREF(Lproblem/definition/State;)Z|
-rC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiCaseSimulatedAnnealing.java| |("startingBlock*™
-startingBlock| |(4ù
-ö
-{ {(
-
-%0"
-__annotate*2
+lmetaheuristics.generators.DistributionEstimationAlgorithm#getType()Lmetaheuristics/generators/GeneratorType;Ç
+vC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/DistributionEstimationAlgorithm.java† †("1*É
+1
+°	 °(≤
+Ø
+
+°	 °(-
+%0'metaheuristics.generators.GeneratorType"__id*l
 
-__unknown_file (
-java.lang.Override*H
-
-__unknown_file (,
-*
-stateCandidateproblem.definition.Statej
-h
-|% |(3*
-stateCandidateproblem.definition.State"__annotation*"
-
-__unknown_file (
-
-%0*
-1*!
-1~	 ~("
-~ ~(
-"":6
-| |(3*
-stateCandidateproblem.definition.StateB97
-5metaheuristics.generators.MultiCaseSimulatedAnnealingHX
+__unknown_file (P*N;
+9metaheuristics.generators.DistributionEstimationAlgorithm"
+generatorType"=
+
+° °(/
+-
+%0'metaheuristics.generators.GeneratorTypeB=;
+9metaheuristics.generators.DistributionEstimationAlgorithmH

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: local_search.acceptation_type.DominanceTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s -- in local_search.acceptation_type.DominanceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s -- in local_search.acceptation_type.DominanceTest

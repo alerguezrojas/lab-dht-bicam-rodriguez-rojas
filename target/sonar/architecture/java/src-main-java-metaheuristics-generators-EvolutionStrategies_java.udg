@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800784897*java2.B³:
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811382245*java2.B³:
 E
 @src/main/java/metaheuristics/generators/EvolutionStrategies.java2
 	
@@ -166,11 +166,11 @@ _evolutionary_algorithms.complement.FatherSelection#selection(Ljava/util/List;I)
 F
 ?problem.definition.Problem#getState()Lproblem/definition/State;121
 '
- metaheurictics.strategy.Strategy123
+ metaheuristics.strategy.Strategy123
 P
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;125
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;125
 W
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;127
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;127
 ?
 8problem.definition.State#setCode(Ljava/util/ArrayList;)V129
 >
@@ -234,9 +234,9 @@ nevolutionary_algorithms.complement.Replace#replace(Lproblem/definition/State;Lj
 
 getListStateRef182
 I
-Bmetaheurictics.strategy.Strategy#getListKey()Ljava/util/ArrayList;184
+Bmetaheuristics.strategy.Strategy#getListKey()Ljava/util/ArrayList;184
 5
-.metaheurictics.strategy.Strategy.mapGenerators186
+.metaheuristics.strategy.Strategy.mapGenerators186
 s
 lmetaheuristics.generators.GeneratorType#valueOf(Ljava/lang/String;)Lmetaheuristics/generators/GeneratorType;188
 \
@@ -399,9 +399,6 @@ B
 
 112
 11211319
-
-126
-12612719
 H
 196A
 19619797 *
@@ -434,6 +431,9 @@ B
 
 51
 515219
+
+124
+12412519
 
 134
 13413519
@@ -486,15 +486,6 @@ H
 15
 216
 
-183
-18318419
-
-122
-12212319
-
-124
-12412519
-
 176
 17617719
 
@@ -541,6 +532,9 @@ H
 
 69
 697019
+
+183
+18318419
 H
 189A
 18919097 *
@@ -617,6 +611,9 @@ H
 
 187
 18718819
+
+126
+12612719
 B
 43<
 434424 *
@@ -724,6 +721,9 @@ B
 
 157
 15715819
+
+185
+18518619
 B
 77<
 777824 *
@@ -777,6 +777,9 @@ H
 118
 11811919
 
+122
+12212319
+
 148
 14814919
 
@@ -828,9 +831,6 @@ F
 
 15
 154
-
-185
-18518619
 B
 74<
 747524 *

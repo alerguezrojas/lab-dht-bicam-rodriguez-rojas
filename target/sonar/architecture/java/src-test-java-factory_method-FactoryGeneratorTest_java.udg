@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800787334*java2.Bæ
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811387572*java2.Bæ
 ;
 6src/test/java/factory_method/FactoryGeneratorTest.java2
 	
@@ -45,7 +45,7 @@ module-key5
 
 uses26
 &
- metaheurictics.strategy.Strategy28
+ metaheuristics.strategy.Strategy28
 6
 0factory_method.FactoryGeneratorTest.strategyMock30
 
@@ -72,7 +72,7 @@ C
 
 calls45
 4
-.metaheurictics.strategy.Strategy.mapGenerators47
+.metaheuristics.strategy.Strategy.mapGenerators47
 Q
 Korg.mockito.Mockito#mockStatic(Ljava/lang/Class;)Lorg/mockito/MockedStatic;49
 *
@@ -86,7 +86,7 @@ lorg.mockito.MockedStatic#when(Lorg/mockito/MockedStatic$Verification;)Lorg/mock
 X
 Rorg.mockito.Mockito#when(Ljava/lang/Object;)Lorg/mockito/stubbing/OngoingStubbing;59
 H
-Bmetaheurictics.strategy.Strategy#getListKey()Ljava/util/ArrayList;61
+Bmetaheuristics.strategy.Strategy#getListKey()Ljava/util/ArrayList;61
 5
 /factory_method.FactoryGeneratorTest#tearDown()V63
 
@@ -141,6 +141,9 @@ Corg.junit.jupiter.api.Assertions#assertNotNull(Ljava/lang/Object;)V89
 
 5
 6jÄ
+
+60
+606124
 
 36
 363724
@@ -202,6 +205,9 @@ B
 15
 21
 
+46
+464724
+
 54
 545524
 
@@ -210,6 +216,9 @@ B
 
 80
 808124
+
+27
+272824
 
 82
 828324
@@ -231,9 +240,6 @@ B
 
 15
 73
-
-60
-606124
 B
 62<
 626334 *
@@ -261,12 +267,6 @@ B
 
 65
 656624
-
-46
-464724
-
-27
-272824
 
 67
 676824

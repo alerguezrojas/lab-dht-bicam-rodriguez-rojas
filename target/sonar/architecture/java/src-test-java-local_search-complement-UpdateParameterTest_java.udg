@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800787196*java2.B‘
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811389312*java2.B‘
 C
 >src/test/java/local_search/complement/UpdateParameterTest.java2
 	
@@ -45,7 +45,7 @@ F
 
 uses26
 &
- metaheurictics.strategy.Strategy28
+ metaheuristics.strategy.Strategy28
 K
 Elocal_search.complement.UpdateParameterTest.factoryLoaderMockedStatic30
 
@@ -382,6 +382,9 @@ B
 103
 10310424
 
+27
+272824
+
 60
 606124
 
@@ -402,9 +405,6 @@ B
 
 124
 12412524
-
-27
-272824
 
 32
 323324

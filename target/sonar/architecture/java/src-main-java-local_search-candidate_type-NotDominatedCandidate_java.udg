@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800782000*java2.B¸	
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811383366*java2.B¸	
 I
 Dsrc/main/java/local_search/candidate_type/NotDominatedCandidate.java2
 	
@@ -58,11 +58,11 @@ references33
 F
 @problem.definition.Problem#Evaluate(Lproblem/definition/State;)V35
 &
- metaheurictics.strategy.Strategy37
+ metaheuristics.strategy.Strategy37
 O
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;39
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;39
 V
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;41
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;41
 -
 'local_search.acceptation_type.Dominance43
 n
@@ -99,12 +99,6 @@ hlocal_search.acceptation_type.Dominance#dominance(Lproblem/definition/State;Lpr
 17
 171819
 
-36
-363719
-
-38
-383919
-
 34
 343519
 
@@ -116,6 +110,12 @@ hlocal_search.acceptation_type.Dominance#dominance(Lproblem/definition/State;Lpr
 
 31
 313219
+
+36
+363719
+
+40
+404119
 B
 22<
 222324 *
@@ -129,8 +129,8 @@ B
 15
 25
 
-40
-404119
+38
+383919
 
 26
 262719r‚

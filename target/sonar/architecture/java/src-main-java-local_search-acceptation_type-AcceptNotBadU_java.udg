@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800783145*java2.Bµ
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811377119*java2.Bµ
 
 C
 >src/main/java/local_search/acceptation_type/AcceptNotBadU.java2
@@ -54,16 +54,16 @@ Ialerguezrojas_lab-dht-bicam-rodriguez-rojas:local_search.acceptation_type9
 
 returns32
 &
- metaheurictics.strategy.Strategy34
+ metaheuristics.strategy.Strategy34
 
 
 references35
 O
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;37
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;37
 
 calls38
 V
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;40
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;40
 ,
 &problem.definition.Problem$ProblemType42
 Y
@@ -73,7 +73,7 @@ Sproblem.definition.Problem#getTypeProblem()Lproblem/definition/Problem$ProblemT
 C
 =problem.definition.State#getEvaluation()Ljava/util/ArrayList;48
 6
-0metaheurictics.strategy.Strategy#getThreshold()D50J#
+0metaheuristics.strategy.Strategy#getThreshold()D50J#
 !
 1
 12
@@ -93,6 +93,15 @@ C
 
 30
 303119
+
+33
+333419
+
+39
+394019
+
+36
+363719
 
 47
 474819
@@ -123,12 +132,6 @@ B
 
 49
 495019
-
-33
-333419
-
-36
-363719
 >
 108
 101112 *
@@ -141,9 +144,6 @@ B
 
 15
 16
-
-39
-394019
 
 43
 434419r¤	

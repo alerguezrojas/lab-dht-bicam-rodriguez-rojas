@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800786630*java2.BÊ
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811386848*java2.BÊ
 O
 Jsrc/test/java/evolutionary_algorithms/complement/OnePointMutationTest.java2
 	
@@ -43,7 +43,7 @@ F
 
 uses25
 &
- metaheurictics.strategy.Strategy27
+ metaheuristics.strategy.Strategy27
 
 is type28
 
@@ -52,7 +52,7 @@ F
 
 references30
 V
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;32
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;32
 
 calls33
  
@@ -87,7 +87,7 @@ Mevolutionary_algorithms.complement.OnePointMutationTest$1#getVariableCount()I
 T
 Nproblem.definition.Problem#setCodification(Lproblem/definition/Codification;)V57
 P
-Jmetaheurictics.strategy.Strategy#setProblem(Lproblem/definition/Problem;)V59
+Jmetaheuristics.strategy.Strategy#setProblem(Lproblem/definition/Problem;)V59
 T
 Nevolutionary_algorithms.complement.OnePointMutationTest#testMutationHappens()V61
 
@@ -133,8 +133,11 @@ Tevolutionary_algorithms.complement.OnePointMutationTest#testMutationDoesNotHapp
 75
 757623
 
-58
-585923
+26
+262723
+
+31
+313223
 
 34
 343523
@@ -176,9 +179,6 @@ B
 
 36
 363723
-
-26
-262723
 
 73
 737423
@@ -233,9 +233,6 @@ B
 
 15
 52
-
-31
-313223
 B
 40<
 404119 *
@@ -263,6 +260,9 @@ B
 
 15
 20
+
+58
+585923
 B
 60<
 606119 *

@@ -1,7 +1,20 @@
 
-Kmetaheuristics.generators.LimitThreshold#getReferenceList()Ljava/util/List;o
-eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/LimitThreshold.javas s($"1*!
-1t	 t("
-t t(
-""B,*
-(metaheuristics.generators.LimitThresholdH
+:problem.definition.State#clone()Lproblem/definition/State;_
+UC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/problem/definition/State.java@ @("1*Ï
+1A A(FD
+A A(
+%0problem.definition.State"problem.definition.StateÉ
+Æ
+A	 A(
+%1"<problem.definition.State#<init>(Lproblem/definition/State;)V*<
+
+__unknown_file ( 
+
+%0problem.definition.State*8
+
+__unknown_file (
+problem.definition.State",
+A A( 
+
+%0problem.definition.StateB
+problem.definition.StateH

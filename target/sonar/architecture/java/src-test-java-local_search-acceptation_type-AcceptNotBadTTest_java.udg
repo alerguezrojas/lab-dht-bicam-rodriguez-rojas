@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800787172*java2.B¡
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811389259*java2.B¡
 G
 Bsrc/test/java/local_search/acceptation_type/AcceptNotBadTTest.java2
 	
@@ -45,7 +45,7 @@ Dlocal_search.acceptation_type.AcceptNotBadTTest.strategyMockedStatic18
 
 uses26
 &
- metaheurictics.strategy.Strategy28
+ metaheuristics.strategy.Strategy28
 B
 <local_search.acceptation_type.AcceptNotBadTTest.strategyMock30
 
@@ -90,7 +90,7 @@ lorg.mockito.MockedStatic#when(Lorg/mockito/MockedStatic$Verification;)Lorg/mock
 X
 Rorg.mockito.Mockito#when(Ljava/lang/Object;)Lorg/mockito/stubbing/OngoingStubbing;62
 O
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;64
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;64
 A
 ;local_search.acceptation_type.AcceptNotBadTTest#tearDown()V66
 
@@ -268,8 +268,14 @@ F
 53
 535424
 
+27
+272824
+
 35
 353624
+
+63
+636424
 
 91
 919224
@@ -312,12 +318,6 @@ B
 
 68
 686924
-
-27
-272824
-
-63
-636424
 
 70
 707124

@@ -1,62 +1,18 @@
 
-Ometaheuristics.generators.MultiobjectiveHillClimbingDistance#%field_initializer
-__unknown_file ("1*–
-1 (¹¶
-ƒ
-yC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiobjectiveHillClimbingDistance.java0 (@
-%0java.util.ArrayList"java.util.ArrayList×
-Ô
-ƒ
-yC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiobjectiveHillClimbingDistance.java, (B
-%1"java.util.ArrayList#<init>()V*'
- (
-
-%0java.util.ArrayList
-
-ƒ
-yC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiobjectiveHillClimbingDistance.java (CV>
-<metaheuristics.generators.MultiobjectiveHillClimbingDistance"
-listStateReference"__id*'
- (
-
-%0java.util.ArrayList¹¶
-ƒ
-yC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiobjectiveHillClimbingDistance.java' (7
-%2java.util.ArrayList"java.util.ArrayList×
-Ô
-ƒ
-yC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiobjectiveHillClimbingDistance.java# (9
-%3"java.util.ArrayList#<init>()V*'
- (
-
-%2java.util.ArrayList‡
-„
-ƒ
-yC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiobjectiveHillClimbingDistance.java (:M>
-<metaheuristics.generators.MultiobjectiveHillClimbingDistance"
-	listTrace"__id*'
- (
-
-%2java.util.ArrayList¹¶
-ƒ
-yC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiobjectiveHillClimbingDistance.java( (8
-%4java.util.ArrayList"java.util.ArrayList×
-Ô
-ƒ
-yC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiobjectiveHillClimbingDistance.java$ (:
-%5"java.util.ArrayList#<init>()V*'
- (
-
-%4java.util.ArrayListŠ
-‡
-ƒ
-yC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiobjectiveHillClimbingDistance.java (;P>
-<metaheuristics.generators.MultiobjectiveHillClimbingDistance"
-visitedState"__id*'
- (
-
-%4java.util.ArrayList"š
-‚
-yC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiobjectiveHillClimbingDistance.java ý(
-implicit returnB@>
-<metaheuristics.generators.MultiobjectiveHillClimbingDistance
+fmetaheuristics.generators.GeneticAlgorithm#getGeneratorType()Lmetaheuristics/generators/GeneratorType;s
+gC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/GeneticAlgorithm.java» »(&"1*ô
+1
+¼	 ¼(£
+ 
+
+¼	 ¼(-
+%0'metaheuristics.generators.GeneratorType"__id*]
+
+__unknown_file (A*?,
+*metaheuristics.generators.GeneticAlgorithm"
+generatorType"=
+
+¼ ¼(/
+-
+%0'metaheuristics.generators.GeneratorTypeB.,
+*metaheuristics.generators.GeneticAlgorithmH

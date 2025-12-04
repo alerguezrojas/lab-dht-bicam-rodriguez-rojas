@@ -15,7 +15,7 @@ import org.mockito.Mock;
 import org.mockito.MockedStatic;
 import org.mockito.MockitoAnnotations;
 
-import metaheurictics.strategy.Strategy;
+import metaheuristics.strategy.Strategy;
 import problem.definition.Codification;
 import problem.definition.Operator;
 import problem.definition.Problem;
@@ -191,5 +191,94 @@ public class GeneticAlgorithmTest {
         
         // Verify listState changed or not
         // With GenerationalReplace, it might replace the whole population or part of it.
+    }
+
+    @Test
+    public void testGetListStateRef_FromRandomSearch() {
+        // Setup RandomSearch list
+        List<State> rsList = new ArrayList<>();
+        rsList.add(mock(State.class));
+        RandomSearch.listStateReference = rsList;
+        
+        // Setup Strategy to have GeneticAlgorithm key
+        ArrayList<String> keys = new ArrayList<>();
+        keys.add("GeneticAlgorithm");
+        when(strategyMock.getListKey()).thenReturn(keys);
+        
+        GeneticAlgorithm otherGA = mock(GeneticAlgorithm.class);
+        when(otherGA.getListState()).thenReturn(new ArrayList<>()); // Empty
+        
+        strategyMock.mapGenerators.put(GeneratorType.GeneticAlgorithm, otherGA);
+        
+        // Clear current list
+        geneticAlgorithm.setListState(new ArrayList<>());
+        
+        List<State> result = geneticAlgorithm.getListStateRef();
+        
+        assertEquals(1, result.size());
+    }
+
+    @Test
+    public void testGetListStateRef_FromOtherGenerator() {
+        // Setup Strategy to have GeneticAlgorithm key
+        ArrayList<String> keys = new ArrayList<>();
+        keys.add("GeneticAlgorithm");
+        when(strategyMock.getListKey()).thenReturn(keys);
+        
+        GeneticAlgorithm otherGA = mock(GeneticAlgorithm.class);
+        List<State> otherList = new ArrayList<>();
+        otherList.add(mock(State.class));
+        when(otherGA.getListState()).thenReturn(otherList); // Not empty
+        
+        strategyMock.mapGenerators.put(GeneratorType.GeneticAlgorithm, otherGA);
+        
+        List<State> result = geneticAlgorithm.getListStateRef();
+        
+        assertEquals(1, result.size());
+        assertEquals(otherList, result);
+    }
+
+    @Test
+    public void testGetSetters() {
+        geneticAlgorithm.setWeight(10.0f);
+        assertEquals(10.0f, geneticAlgorithm.getWeight());
+        
+        State s = mock(State.class);
+        geneticAlgorithm.setStateRef(s);
+        
+        geneticAlgorithm.setInitialReference(s);
+        
+        geneticAlgorithm.setGeneratorType(GeneratorType.EvolutionStrategies);
+        assertEquals(GeneratorType.EvolutionStrategies, geneticAlgorithm.getGeneratorType());
+        
+        assertNotNull(geneticAlgorithm.getListCountBetterGender());
+        assertNotNull(geneticAlgorithm.getListCountGender());
+        assertNotNull(geneticAlgorithm.getTrace());
+        assertNull(geneticAlgorithm.getSonList());
+        assertFalse(geneticAlgorithm.awardUpdateREF(s));
+        
+        assertEquals(GeneratorType.EvolutionStrategies, geneticAlgorithm.getType()); // getType returns this.generatorType
+    }
+    
+    @Test
+    public void testGetReferenceList() {
+        List<State> list = new ArrayList<>();
+        State s1 = mock(State.class);
+        list.add(s1);
+        geneticAlgorithm.setListState(list);
+        
+        List<State> refList = geneticAlgorithm.getReferenceList();
+        assertEquals(1, refList.size());
+        assertEquals(s1, refList.get(0));
+    }
+    
+    @Test
+    public void testGetListState() {
+        List<State> list = new ArrayList<>();
+        State s1 = mock(State.class);
+        list.add(s1);
+        geneticAlgorithm.setListState(list);
+        
+        assertEquals(list, geneticAlgorithm.getListState());
     }
 }

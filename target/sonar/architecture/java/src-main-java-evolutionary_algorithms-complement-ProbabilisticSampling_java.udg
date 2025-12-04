@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800784613*java2.Bù
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811381048*java2.Bù
 P
 Ksrc/main/java/evolutionary_algorithms/complement/ProbabilisticSampling.java2
 	
@@ -68,11 +68,11 @@ Uevolutionary_algorithms.complement.ProbabilisticSampling#listState(I)Ljava/util
 4
 .problem.definition.Problem#getPossibleValue()I43
 &
- metaheurictics.strategy.Strategy45
+ metaheuristics.strategy.Strategy45
 O
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;47
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;47
 V
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;49
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;49
 %
 problem.definition.Codification51
 9
@@ -88,7 +88,7 @@ Mproblem.definition.Problem#getCodification()Lproblem/definition/Codification;
 ,
 &problem.definition.State#setNumber(I)V61
 9
-3metaheurictics.strategy.Strategy#getCountCurrent()I63
+3metaheuristics.strategy.Strategy#getCountCurrent()I63
 [
 Uproblem.definition.State#setTypeGenerator(Lmetaheuristics/generators/GeneratorType;)V65
 -
@@ -133,17 +133,26 @@ B
 15
 30
 
+62
+626319
+
 40
 404119
+
+44
+444519
+
+48
+484919
 
 60
 606119
 
+46
+464719
+
 66
 666719
-
-62
-626319
 
 31
 313219
@@ -165,12 +174,6 @@ B
 
 15
 16
-
-44
-444519
-
-46
-464719
 
 52
 525319
@@ -204,9 +207,6 @@ B
 
 15
 26
-
-48
-484919
 
 58
 585919rÛ

@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800782043*java2.B¼
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811383543*java2.B¼
 
 L
 Gsrc/main/java/evolutionary_algorithms/complement/TowPointsMutation.java2
@@ -65,11 +65,11 @@ references33
 S
 Mproblem.definition.Problem#getCodification()Lproblem/definition/Codification;40
 &
- metaheurictics.strategy.Strategy42
+ metaheuristics.strategy.Strategy42
 O
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;44
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;44
 V
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;46
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;46
 S
 Mproblem.definition.Codification#getVariableAleatoryValue(I)Ljava/lang/Object;48
 =
@@ -100,6 +100,15 @@ Mproblem.definition.Codification#getVariableAleatoryValue(I)Ljava/lang/Object;
 37
 373819
 
+41
+414219
+
+45
+454619
+
+43
+434419
+
 34
 343519
 
@@ -111,12 +120,6 @@ Mproblem.definition.Codification#getVariableAleatoryValue(I)Ljava/lang/Object;
 
 47
 474819
-
-41
-414219
-
-43
-434419
 
 17
 171819
@@ -143,10 +146,7 @@ B
 
 
 15
-25
-
-45
-454619r¹
+25r¹
 
 101720*
 1( (0

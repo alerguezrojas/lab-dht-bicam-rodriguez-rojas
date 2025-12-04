@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800787450*java2.BÏ
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811387945*java2.BÏ
 P
 Ksrc/test/java/local_search/acceptation_type/AcceptNotDominatedTabuTest.java2
 	
@@ -45,7 +45,7 @@ Mlocal_search.acceptation_type.AcceptNotDominatedTabuTest.strategyMockedStatic
 
 uses26
 &
- metaheurictics.strategy.Strategy28
+ metaheuristics.strategy.Strategy28
 K
 Elocal_search.acceptation_type.AcceptNotDominatedTabuTest.strategyMock30
 
@@ -102,11 +102,11 @@ lorg.mockito.MockedStatic#when(Lorg/mockito/MockedStatic$Verification;)Lorg/mock
 X
 Rorg.mockito.Mockito#when(Ljava/lang/Object;)Lorg/mockito/stubbing/OngoingStubbing;72
 O
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;74
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;74
 9
-3metaheurictics.strategy.Strategy.listRefPoblacFinal76
+3metaheuristics.strategy.Strategy.listRefPoblacFinal76
 0
-*metaheurictics.strategy.Strategy.generator78
+*metaheuristics.strategy.Strategy.generator78
 -
 'metaheuristics.generators.GeneratorType80
 \
@@ -286,11 +286,20 @@ B
 67
 676824
 
+77
+777824
+
 63
 636424
 
+27
+272824
+
 35
 353624
+
+73
+737424
 
 79
 798024
@@ -340,29 +349,17 @@ B
 15
 50
 
-75
-757624
-
 88
 888924
 
 119
 11912024
 
-27
-272824
-
-73
-737424
-
 90
 909124
 
 111
 11111224
-
-77
-777824
 B
 85<
 858649 *
@@ -378,6 +375,9 @@ B
 
 71
 717224
+
+75
+757624
 
 92
 929324rª&

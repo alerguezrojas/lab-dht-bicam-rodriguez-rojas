@@ -1,7 +1,15 @@
 
-Cmetaheuristics.generators.RandomSearch#getSonList()Ljava/util/List;m
-cC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/RandomSearch.javaj j("1*!
-1l	 l("
-l l(
-""B*(
-&metaheuristics.generators.RandomSearchH
+Vmetaheuristics.generators.HillClimbingRestart#getReference()Lproblem/definition/State;t
+jC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/HillClimbingRestart.javai i("1*Ö
+1j	 j(˜
+•
+j	 j(
+%0problem.definition.State"__id*c
+
+__unknown_file (G*E/
+-metaheuristics.generators.HillClimbingRestart"
+stateReferenceHC",
+j j( 
+
+%0problem.definition.StateB1/
+-metaheuristics.generators.HillClimbingRestartH

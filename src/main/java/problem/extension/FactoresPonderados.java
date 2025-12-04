@@ -2,7 +2,7 @@ package problem.extension;
 
 import java.util.ArrayList;
 
-import metaheurictics.strategy.Strategy;
+import metaheuristics.strategy.Strategy;
 
 import problem.definition.State;
 import problem.definition.Problem.ProblemType;

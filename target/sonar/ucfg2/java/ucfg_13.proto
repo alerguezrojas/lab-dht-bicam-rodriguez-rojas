@@ -1,18 +1,7 @@
 
-`metaheuristics.generators.HillClimbingRestart#getType()Lmetaheuristics/generators/GeneratorType;t
-jC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/HillClimbingRestart.java ("1*÷
-1
-€	 €(¦
-£
-
-€	 €(-
-%0'metaheuristics.generators.GeneratorType"__id*`
-
-__unknown_file (D*B/
--metaheuristics.generators.HillClimbingRestart"
-Generatortype"=
-
-€ €(/
--
-%0'metaheuristics.generators.GeneratorTypeB1/
--metaheuristics.generators.HillClimbingRestartH
+Imetaheuristics.generators.SimulatedAnnealing#getSonList()Ljava/util/List;s
+iC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/SimulatedAnnealing.javaz z("1*!
+1|	 |("
+| |(
+""B0.
+,metaheuristics.generators.SimulatedAnnealingH

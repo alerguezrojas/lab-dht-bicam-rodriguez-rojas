@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800786912*java2.Bµ
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811387909*java2.Bµ
 Q
 Lsrc/test/java/evolutionary_algorithms/complement/SteadyStateReplaceTest.java2
 	
@@ -45,7 +45,7 @@ Nevolutionary_algorithms.complement.SteadyStateReplaceTest.strategyMockedStatic
 
 uses26
 &
- metaheurictics.strategy.Strategy28
+ metaheuristics.strategy.Strategy28
 L
 Fevolutionary_algorithms.complement.SteadyStateReplaceTest.strategyMock30
 
@@ -90,7 +90,7 @@ lorg.mockito.MockedStatic#when(Lorg/mockito/MockedStatic$Verification;)Lorg/mock
 X
 Rorg.mockito.Mockito#when(Ljava/lang/Object;)Lorg/mockito/stubbing/OngoingStubbing;62
 O
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;64
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;64
 K
 Eevolutionary_algorithms.complement.SteadyStateReplaceTest#tearDown()V66
 
@@ -261,8 +261,14 @@ D
 53
 535424
 
+27
+272824
+
 35
 353624
+
+63
+636424
 
 87
 878824
@@ -333,12 +339,6 @@ B
 
 112
 11211324
-
-27
-272824
-
-63
-636424
 
 70
 707124

@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800781429*java2.B‡-
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811382550*java2.B‡-
 <
 7src/main/java/metaheuristics/generators/TabuSearch.java2
 	
@@ -141,11 +141,11 @@ ametaheuristics.generators.TabuSearch#setTypeGenerator(Lmetaheuristics/generator
  
 problem.definition.Problem99
 '
- metaheurictics.strategy.Strategy101
+ metaheuristics.strategy.Strategy101
 P
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;103
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;103
 W
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;105
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;105
 -
 &problem.definition.Problem$ProblemType107
 Z
@@ -358,12 +358,12 @@ B
 
 15
 68
-
-104
-10410519
 
 58
 585919
+
+102
+10210319
 
 106
 10610719
@@ -379,12 +379,6 @@ B
 
 15
 65
-
-100
-10010119
-
-102
-10210319
 
 125
 12512619
@@ -497,6 +491,9 @@ B
 
 96
 969719
+
+104
+10410519
 H
 157A
 15715883 *
@@ -666,6 +663,9 @@ B
 
 98
 989919
+
+100
+10010119
 F
 132?
 13213383 *

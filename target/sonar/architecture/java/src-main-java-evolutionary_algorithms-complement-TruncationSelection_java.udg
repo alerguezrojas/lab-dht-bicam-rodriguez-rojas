@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800781670*java2.B¡
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811382897*java2.B¡
 N
 Isrc/main/java/evolutionary_algorithms/complement/TruncationSelection.java2
 	
@@ -70,11 +70,11 @@ cevolutionary_algorithms.complement.TruncationSelection#selection(Ljava/util/Lis
 Y
 Sproblem.definition.Problem#getTypeProblem()Lproblem/definition/Problem$ProblemType;45
 &
- metaheurictics.strategy.Strategy47
+ metaheuristics.strategy.Strategy47
 O
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;49
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;49
 V
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;51
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;51
 6
 0problem.definition.Problem$ProblemType.Maximizar53
 6
@@ -138,8 +138,17 @@ B
 42
 424319
 
+46
+464719
+
+50
+505119
+
 30
 303119
+
+48
+484919
 
 17
 171819
@@ -165,17 +174,8 @@ B
 15
 25
 
-46
-464719
-
-48
-484919
-
 44
-444519
-
-50
-505119r‘
+444519r‘
 
 101720*
 1* (9

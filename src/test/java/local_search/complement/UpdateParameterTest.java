@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.MockedStatic;
 
 import factory_method.FactoryLoader;
-import metaheurictics.strategy.Strategy;
+import metaheuristics.strategy.Strategy;
 import metaheuristics.generators.DistributionEstimationAlgorithm;
 import metaheuristics.generators.EvolutionStrategies;
 import metaheuristics.generators.Generator;

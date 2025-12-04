@@ -1,9 +1,9 @@
 
-/metaheurictics.strategy.Strategy#getCountMax()Ii
-]C:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheurictics/strategy/Strategy.javaµ µ("1*%
+5metaheuristics.generators.LimitThreshold#getWeight()Fq
+eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/LimitThreshold.java‡ ‡("1*%
 1
-¶	 ¶("
+‰	 ‰("
 
-¶ ¶(
-""B$"
- metaheurictics.strategy.StrategyHX
+‰ ‰(
+""B,*
+(metaheuristics.generators.LimitThresholdHX

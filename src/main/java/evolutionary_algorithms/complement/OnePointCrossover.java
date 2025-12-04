@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.security.SecureRandom;
 
-import metaheurictics.strategy.Strategy;
+import metaheuristics.strategy.Strategy;
 
 import problem.definition.State;
 

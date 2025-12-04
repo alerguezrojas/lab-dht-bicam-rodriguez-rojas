@@ -1,139 +1,15 @@
 
-`metaheuristics.generators.LimitThreshold#generate(Ljava/lang/Integer;)Lproblem/definition/State;o
-eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/LimitThreshold.javaK K("startingBlock*û
-startingBlockK K(.ó
-î
-J J(
-
-%10"
-__annotate*2
+Tproblem.definition.State#getTypeGenerator()Lmetaheuristics/generators/GeneratorType;_
+UC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/problem/definition/State.java( ((&"1*‹
+1)	 )(è
+å
+)	 )(-
+%0'metaheuristics.generators.GeneratorType"__id*K
 
-__unknown_file (
-java.lang.Override*A
-
-__unknown_file (%
-#
-operatornumberjava.lang.Integerd
-b
-K K(-#
-operatornumberjava.lang.Integer"__annotation*#
-
-__unknown_file (
-
-%10*
-1*û
-1L L(%…
-∆
-L L(3&
-%0 metaheurictics.strategy.Strategy"Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;*@
-
-__unknown_file ($""
- metaheurictics.strategy.StrategyŒÀ
-L L(@ 
-%1problem.definition.Problem"Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;*D
-
-__unknown_file ((
-&
-%0 metaheurictics.strategy.Strategy2getProblem()∆√
-L L(N!
-%2problem.definition.Operator"Eproblem.definition.Problem#getOperator()Lproblem/definition/Operator;*>
-
-__unknown_file ("
- 
-%1problem.definition.Problem2getOperator()ì
-ê
-La L(q
-%3problem.definition.State"__id*^
-
-__unknown_file (B*@*
-(metaheuristics.generators.LimitThreshold"
-stateReferenceLTñì
-	L L(Ç
-%4java.util.List"lproblem.definition.Operator#generatedNewState(Lproblem/definition/State;Ljava/lang/Integer;)Ljava/util/List;*?
-
-__unknown_file (#
-!
-%2problem.definition.Operator*<
-
-__unknown_file ( 
-
-%3problem.definition.State*A
-
-__unknown_file (%
-#
-operatornumberjava.lang.Integer2@generatedNewState(Lproblem/definition/State;Ljava/lang/Integer;)g
-e
-	L L(É
-neighborhoodjava.util.List"__id*2
-
-__unknown_file (
-
-%4java.util.List£
-†
-M M(*0
-%5*local_search.candidate_type.CandidateValue"__id*\
-
-__unknown_file (@*>*
-(metaheuristics.generators.LimitThreshold"
-candidatevalueì
-ê
-M: M(J
-%6problem.definition.State"__id*^
-
-__unknown_file (B*@*
-(metaheuristics.generators.LimitThreshold"
-stateReferenceLT°
-û
-ML M(Y/
-%7)local_search.candidate_type.CandidateType"__id*[
-
-__unknown_file (?*=*
-(metaheuristics.generators.LimitThreshold"
-typeCandidateó
-î
-M[ M(c*
-%8$local_search.complement.StrategyType"__id*V
-
-__unknown_file (:*8*
-(metaheuristics.generators.LimitThreshold"
-
-strategy›⁄
-	M M(Ç
-%9problem.definition.State"„local_search.candidate_type.CandidateValue#stateCandidate(Lproblem/definition/State;Llocal_search/candidate_type/CandidateType;Llocal_search/complement/StrategyType;Ljava/lang/Integer;Ljava/util/List;)Lproblem/definition/State;*N
-
-__unknown_file (2
-0
-%5*local_search.candidate_type.CandidateValue*<
-
-__unknown_file ( 
-
-%6problem.definition.State*M
-
-__unknown_file (1
-/
-%7)local_search.candidate_type.CandidateType*H
-
-__unknown_file (,
-*
-%8$local_search.complement.StrategyType*A
-
-__unknown_file (%
-#
-operatornumberjava.lang.Integer*<
-
-__unknown_file ( 
-
-neighborhoodjava.util.List2ûstateCandidate(Lproblem/definition/State;Llocal_search/candidate_type/CandidateType;Llocal_search/complement/StrategyType;Ljava/lang/Integer;Ljava/util/List;)}
-{
-	M M(É*
-statecandidateproblem.definition.State"__id*<
-
-__unknown_file ( 
-
-%9problem.definition.State"8
-N N(,
-*
-statecandidateproblem.definition.State:/
-K K(-#
-operatornumberjava.lang.IntegerB,*
-(metaheuristics.generators.LimitThresholdH
+__unknown_file (/*-
+problem.definition.State"
+typeGenerator";
+) )(/
+-
+%0'metaheuristics.generators.GeneratorTypeB
+problem.definition.StateH

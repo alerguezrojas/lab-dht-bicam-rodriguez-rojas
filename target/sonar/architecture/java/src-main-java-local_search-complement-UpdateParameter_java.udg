@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800781363*java2.BÂ
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811382401*java2.BÂ
 ?
 :src/main/java/local_search/complement/UpdateParameter.java2
 	
@@ -62,15 +62,15 @@ references35
 
 calls38
 &
- metaheurictics.strategy.Strategy40
+ metaheuristics.strategy.Strategy40
 
 returns41
 V
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;43
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;43
 )
 #metaheuristics.generators.Generator45
 0
-*metaheurictics.strategy.Strategy.generator47
+*metaheuristics.strategy.Strategy.generator47
 ‹
 „factory_interface.IFFactoryGenerator#createGenerator(Lmetaheuristics/generators/GeneratorType;)Lmetaheuristics/generators/Generator;49
 -
@@ -121,6 +121,9 @@ Ametaheuristics.generators.GeneratorType.ParticleSwarmOptimization71J#
 31
 313224
 
+46
+464724
+
 54
 545524
 B
@@ -151,6 +154,12 @@ B
 15
 16
 
+39
+394024
+
+42
+424324
+
 50
 505124
 
@@ -159,9 +168,6 @@ B
 
 68
 686924
-
-39
-394024
 
 44
 444524
@@ -184,9 +190,6 @@ B
 15
 21
 
-46
-464724
-
 33
 333424
 
@@ -201,9 +204,6 @@ B
 
 56
 565724
-
-42
-424324
 
 52
 525324rÁ

@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800787091*java2.B¥
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811388301*java2.B¥
 >
 9src/test/java/metaheuristics/generators/ParticleTest.java2
 	
@@ -47,7 +47,7 @@ Cmetaheuristics.generators.ParticleTest#testUpdateVelocityAndCode()V18
 
 is type28
 &
- metaheurictics.strategy.Strategy30
+ metaheuristics.strategy.Strategy30
 
 returns31
 
@@ -76,13 +76,13 @@ lorg.mockito.MockedStatic#when(Lorg/mockito/MockedStatic$Verification;)Lorg/mock
 X
 Rorg.mockito.Mockito#when(Ljava/lang/Object;)Lorg/mockito/stubbing/OngoingStubbing;53
 O
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;55
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;55
 E
 ?problem.definition.Problem#getState()Lproblem/definition/State;57
 =
 7problem.definition.State#getCode()Ljava/util/ArrayList;59
 5
-/metaheurictics.strategy.Strategy#getCountMax()I61
+/metaheuristics.strategy.Strategy#getCountMax()I61
 9
 3metaheuristics.generators.ParticleSwarmOptimization63
 >
@@ -172,6 +172,9 @@ Mmetaheuristics.generators.Particle#getStateActual()Lproblem/definition/State;
 76
 767723
 
+60
+606123
+
 84
 848523
 
@@ -214,8 +217,14 @@ B
 44
 444523
 
+29
+293023
+
 40
 404123
+
+54
+545523
 >
 108
 101112 *
@@ -247,12 +256,6 @@ B
 26
 262723
 
-29
-293023
-
-54
-545523
-
 94
 949523
 
@@ -264,9 +267,6 @@ B
 
 96
 969723
-
-60
-606123
 
 62
 626323

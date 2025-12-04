@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import config.tspDynamic.TSPState;
 
 
-import metaheurictics.strategy.Strategy;
+import metaheuristics.strategy.Strategy;
 
 import problem.definition.State;
 

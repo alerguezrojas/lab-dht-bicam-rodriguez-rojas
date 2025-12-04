@@ -14,7 +14,7 @@ import org.mockito.Mock;
 import org.mockito.MockedStatic;
 import org.mockito.MockitoAnnotations;
 
-import metaheurictics.strategy.Strategy;
+import metaheuristics.strategy.Strategy;
 import problem.definition.Operator;
 import problem.definition.Problem;
 import problem.definition.State;
@@ -120,5 +120,59 @@ public class SimulatedAnnealingTest {
         when(newStateMock.getEvaluation()).thenReturn(evalNew);
         
         simulatedAnnealing.updateReference(newStateMock, 1);
+    }
+
+    @Test
+    public void testUpdateReference_TemperatureUpdate() throws Exception {
+        simulatedAnnealing.setInitialReference(stateMock);
+        
+        ArrayList<Double> evalRef = new ArrayList<>();
+        evalRef.add(10.0);
+        when(stateMock.getEvaluation()).thenReturn(evalRef);
+        
+        ArrayList<Double> evalNew = new ArrayList<>();
+        evalNew.add(5.0);
+        when(newStateMock.getEvaluation()).thenReturn(evalNew);
+        
+        // Trigger update with countIterationsCurrent = countIterationsT (10)
+        simulatedAnnealing.updateReference(newStateMock, 10);
+        
+        // Check if tinitial changed. 
+        // Initial was 100.0, alpha 0.9. New should be 90.0.
+        assertEquals(90.0, SimulatedAnnealing.tinitial, 0.001);
+        // countIterationsT was 10, countRept = 10. New countIterationsT should be 20.
+        assertEquals(20, SimulatedAnnealing.countIterationsT);
+    }
+
+    @Test
+    public void testGetReferenceList() {
+        simulatedAnnealing.setInitialReference(stateMock);
+        List<State> list = simulatedAnnealing.getReferenceList();
+        assertNotNull(list);
+        assertTrue(list.contains(stateMock));
+    }
+
+    @Test
+    public void testSetStateRef() {
+        simulatedAnnealing.setStateRef(stateMock);
+        assertEquals(stateMock, simulatedAnnealing.getReference());
+    }
+
+    @Test
+    public void testSetGeneratorType() {
+        simulatedAnnealing.setTypeGenerator(GeneratorType.GeneticAlgorithm);
+        assertEquals(GeneratorType.GeneticAlgorithm, simulatedAnnealing.getTypeGenerator());
+    }
+
+    @Test
+    public void testGettersAndSetters() {
+        simulatedAnnealing.setWeight(10.0f);
+        assertEquals(10.0f, simulatedAnnealing.getWeight());
+        
+        assertNotNull(simulatedAnnealing.getListCountBetterGender());
+        assertNotNull(simulatedAnnealing.getListCountGender());
+        assertNotNull(simulatedAnnealing.getTrace());
+        assertNull(simulatedAnnealing.getSonList());
+        assertFalse(simulatedAnnealing.awardUpdateREF(stateMock));
     }
 }

@@ -15,7 +15,7 @@ import factory_interface.IFFactoryCandidate;
 import factory_method.FactoryCandidate;
 import local_search.complement.StrategyType;
 import local_search.complement.TabuSolutions;
-import metaheurictics.strategy.Strategy;
+import metaheuristics.strategy.Strategy;
 import problem.definition.Problem;
 import problem.definition.State;
 

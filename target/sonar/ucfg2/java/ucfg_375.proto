@@ -1,18 +1,15 @@
 
-\metaheuristics.generators.DistributionEstimationAlgorithm#getListReference()Ljava/util/List;‚
-vC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/DistributionEstimationAlgorithm.javaÑ Ñ($"1*Ñ
-1
-Ò	 Ò(™
-–
-
-Ò	 Ò(
-%0java.util.List"__id*l
+flocal_search.complement.MultiCaseSimulatedAnnealing#getType()Lmetaheuristics/generators/GeneratorType;z
+pC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/complement/MultiCaseSimulatedAnnealing.javar r("1*÷
+1s	 s(ª
+§
+s	 s(-
+%0'metaheuristics.generators.GeneratorType"__id*f
 
-__unknown_file (P*N;
-9metaheuristics.generators.DistributionEstimationAlgorithm"
-referenceList"$
-
-Ò Ò(
-
-%0java.util.ListB=;
-9metaheuristics.generators.DistributionEstimationAlgorithmH
+__unknown_file (J*H5
+3local_search.complement.MultiCaseSimulatedAnnealing"
+typeGenerator";
+s s(/
+-
+%0'metaheuristics.generators.GeneratorTypeB75
+3local_search.complement.MultiCaseSimulatedAnnealingH

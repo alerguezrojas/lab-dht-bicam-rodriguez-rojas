@@ -23,7 +23,7 @@ import org.mockito.MockitoAnnotations;
 import factory_method.FactoryAcceptCandidate;
 import local_search.acceptation_type.AcceptableCandidate;
 import local_search.candidate_type.CandidateValue;
-import metaheurictics.strategy.Strategy;
+import metaheuristics.strategy.Strategy;
 import problem.definition.Operator;
 import problem.definition.Problem;
 import problem.definition.State;
@@ -180,5 +180,33 @@ public class HillClimbingRestartTest {
     public void testGetType() {
         // HillClimbingRestart sets type to HillClimbing in constructor
         assertEquals(GeneratorType.HillClimbing, hcr.getType());
+    }
+
+    @Test
+    public void testGettersAndSetters() {
+        hcr.setWeight(10.0f);
+        assertEquals(10.0f, hcr.getWeight());
+        
+        hcr.setGeneratorType(GeneratorType.GeneticAlgorithm);
+        assertEquals(GeneratorType.GeneticAlgorithm, hcr.getGeneratorType());
+        
+        hcr.setTypeCandidate(local_search.candidate_type.CandidateType.GreaterCandidate);
+        
+        assertNotNull(hcr.getListCountBetterGender());
+        assertNotNull(hcr.getListCountGender());
+        assertNotNull(hcr.getTrace());
+        assertNull(hcr.getSonList());
+        assertFalse(hcr.awardUpdateREF(stateMock));
+        
+        hcr.setStateRef(stateMock);
+        assertEquals(stateMock, hcr.getReference());
+    }
+
+    @Test
+    public void testGetReferenceList() {
+        hcr.setInitialReference(stateMock);
+        List<State> list = hcr.getReferenceList();
+        assertNotNull(list);
+        assertTrue(list.contains(stateMock));
     }
 }

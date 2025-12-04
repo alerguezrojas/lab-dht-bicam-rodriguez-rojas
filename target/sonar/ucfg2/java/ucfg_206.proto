@@ -1,92 +1,15 @@
 
-`metaheuristics.generators.MultiobjectiveHillClimbingRestart#Contain(Lproblem/definition/State;)ZÑ
-xC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiobjectiveHillClimbingRestart.javaö ö("5*∞
-3
-ù ù(ûõ
-
-ù ù(&
-%3problem.definition.State"+java.util.Iterator#next()Ljava/lang/Object;*8
+^metaheuristics.generators.MultiCaseSimulatedAnnealing#getReference()Lproblem/definition/State;|
+rC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiCaseSimulatedAnnealing.javaH H("1*ﬁ
+1I	 I(†
+ù
+I	 I(
+%0problem.definition.State"__id*k
 
-__unknown_file (
-
-iterjava.util.Iterator2next()w
-u
-
-ù ù('#
-elementproblem.definition.State"__id*<
-
-__unknown_file ( 
+__unknown_file (O*M7
+5metaheuristics.generators.MultiCaseSimulatedAnnealing"
+stateReferenceSA",
+I I( 
 
-%3problem.definition.Stateåâ
-
-û û(
-%4boolean"@problem.definition.State#Comparator(Lproblem/definition/State;)Z*A
-
-__unknown_file (%
-#
-elementproblem.definition.State*?
-
-__unknown_file (#
-!
-stateproblem.definition.State2&Comparator(Lproblem/definition/State;)q
-o
-
-û û(%
-%5boolean"	__compare*
-
-û û(!
-==*
-
-û û(
-
-%4boolean*
-
-û! û(%2*
-4*õ
-4
-ú7 ú(;Å
-
-ú7 ú(E
-%2boolean"java.util.Iterator#hasNext()Z*8
-
-__unknown_file (
-
-iterjava.util.Iterator2	hasNext()*
-3
-1*∂
-5
-õ õ(ö
-ó
-
-ú ú(*
-%0java.util.List"__id*m
-
-__unknown_file (Q*O=
-;metaheuristics.generators.MultiobjectiveHillClimbingRestart"
-visitedStateòï
-
-ú ú(5
-%1java.util.Iterator"-java.util.List#iterator()Ljava/util/Iterator;*2
-
-__unknown_file (
-
-%0java.util.List2
-iterator()h
-f
-
-ú ú(5
-iterjava.util.Iterator"__id*6
-
-__unknown_file (
-
-%1java.util.Iterator*
-4*%
-1
-¢	 ¢("
-
-¢ ¢(
-"":/
-
-ö ö($!
-stateproblem.definition.StateB?=
-;metaheuristics.generators.MultiobjectiveHillClimbingRestartX
+%0problem.definition.StateB97
+5metaheuristics.generators.MultiCaseSimulatedAnnealingH

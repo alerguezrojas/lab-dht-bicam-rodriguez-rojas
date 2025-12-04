@@ -14,10 +14,11 @@ import org.mockito.Mock;
 import org.mockito.MockedStatic;
 import org.mockito.MockitoAnnotations;
 
-import metaheurictics.strategy.Strategy;
+import metaheuristics.strategy.Strategy;
 import problem.definition.Operator;
 import problem.definition.Problem;
 import problem.definition.State;
+import local_search.candidate_type.CandidateType;
 
 public class HillClimbingTest {
 
@@ -119,5 +120,49 @@ public class HillClimbingTest {
         
         // Verify reference updated (since 5 < 10 and we are minimizing)
         assertEquals(newStateMock, hillClimbing.getReference());
+    }
+
+    @Test
+    public void testConstructorMaximizar() throws Exception {
+        when(problemMock.getTypeProblem()).thenReturn(Problem.ProblemType.Maximizar);
+        HillClimbing hc = new HillClimbing();
+        assertNotNull(hc);
+    }
+
+    @Test
+    public void testGetReferenceList() {
+        hillClimbing.setInitialReference(stateMock);
+        List<State> list = hillClimbing.getReferenceList();
+        assertNotNull(list);
+        assertTrue(list.contains(stateMock));
+    }
+
+    @Test
+    public void testSetStateRef() {
+        hillClimbing.setStateRef(stateMock);
+        assertEquals(stateMock, hillClimbing.getReference());
+    }
+
+    @Test
+    public void testSetGeneratorType() {
+        hillClimbing.setGeneratorType(GeneratorType.GeneticAlgorithm);
+        assertEquals(GeneratorType.GeneticAlgorithm, hillClimbing.getGeneratorType());
+    }
+
+    @Test
+    public void testSetTypeCandidate() {
+        hillClimbing.setTypeCandidate(local_search.candidate_type.CandidateType.GreaterCandidate);
+    }
+
+    @Test
+    public void testGettersAndSetters() {
+        hillClimbing.setWeight(10.0f);
+        assertEquals(10.0f, hillClimbing.getWeight());
+        
+        assertNotNull(hillClimbing.getListCountBetterGender());
+        assertNotNull(hillClimbing.getListCountGender());
+        assertNotNull(hillClimbing.getTrace());
+        assertNull(hillClimbing.getSonList());
+        assertFalse(hillClimbing.awardUpdateREF(stateMock));
     }
 }

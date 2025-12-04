@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800784443*java2.B½A
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811380719*java2.B½A
 Q
 Lsrc/main/java/metaheuristics/generators/DistributionEstimationAlgorithm.java2
 	
@@ -186,11 +186,11 @@ c
 D
 =problem.definition.Problem#getFunction()Ljava/util/ArrayList;139
 '
- metaheurictics.strategy.Strategy141
+ metaheuristics.strategy.Strategy141
 P
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;143
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;143
 W
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;145
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;145
 E
 >problem.definition.State#setEvaluation(Ljava/util/ArrayList;)V147
 i
@@ -232,9 +232,9 @@ nevolutionary_algorithms.complement.Replace#replace(Lproblem/definition/State;Lj
 
 getListStateRef178
 I
-Bmetaheurictics.strategy.Strategy#getListKey()Ljava/util/ArrayList;180
+Bmetaheuristics.strategy.Strategy#getListKey()Ljava/util/ArrayList;180
 5
-.metaheurictics.strategy.Strategy.mapGenerators182
+.metaheuristics.strategy.Strategy.mapGenerators182
 s
 lmetaheuristics.generators.GeneratorType#valueOf(Ljava/lang/String;)Lmetaheuristics/generators/GeneratorType;184
 c
@@ -323,7 +323,7 @@ Fmetaheuristics.generators.DistributionEstimationAlgorithm#getTrace()[F235
 I
 234B
 234235102 *
-1™ ™(210:7B
+1— —(210:7B
 
 
 13
@@ -346,7 +346,7 @@ I
 I
 222B
 222223102 *
-1… …(210:7B
+1ƒ ƒ(210:7B
 
 
 13
@@ -427,9 +427,6 @@ G
 187
 18718819
 
-144
-14414519
-
 206
 20620719
 
@@ -504,6 +501,9 @@ I
 
 117
 11711819
+
+142
+14214319
 I
 163B
 163164102 *
@@ -541,9 +541,6 @@ B
 
 151
 15115219
-
-179
-17918019
 B
 41<
 414224 *
@@ -556,12 +553,6 @@ B
 
 15
 43
-
-140
-14014119
-
-142
-14214319
 B
 66<
 666724 *
@@ -625,10 +616,13 @@ B
 
 132
 13213319
+
+179
+17918019
 I
 228B
 228229102 *
-1 (210:7B
+1‹ ‹(210:7B
 
 
 13
@@ -639,7 +633,7 @@ I
 I
 219B
 219220102 *
-1ÿ ÿ(210:7B
+1þ þ(210:7B
 
 
 13
@@ -650,7 +644,7 @@ I
 I
 225B
 225226102 *
-1‰ ‰(210:7B
+1‡ ‡(210:7B
 
 
 13
@@ -675,6 +669,9 @@ I
 
 183
 18318419
+
+144
+14414519
 
 155
 15515619
@@ -773,7 +770,7 @@ B
 I
 231B
 231232102 *
-1“ “(210:7B
+1‘ ‘(210:7B
 
 
 13
@@ -793,6 +790,9 @@ B
 
 15
 96
+
+181
+18118219
 
 126
 12612719
@@ -845,6 +845,9 @@ B
 
 136
 13613719
+
+140
+14014119
 B
 82<
 828324 *
@@ -915,9 +918,6 @@ B
 
 146
 14614719
-
-181
-18118219
 I
 148B
 148149102 *
@@ -939,7 +939,7 @@ I
 14
 
 15
-212rîO
+212r¦Q
 
 101720*
 16 (?
@@ -1928,71 +1928,91 @@ I
 
 21330104*
 1ò" ò(/
+
+2161021*
+1û
+ û(
+
+21610104*
+1û
+ û(
+
+21682104*
+1û û(
+
+2191021*
+1€ €(
+
+21910104*
+1€ €(
+
+21982104*
+1€ €(
 
 22254116*
-1…	 …(
+1ƒ	 ƒ(
 
 2225421*
-1…	 …(
+1ƒ	 ƒ(
 
 2225421*
-1†
- †(
+1„
+ „(
 
 22251104*
-1†
- †(
+1„
+ „(
 
 22554166*
-1‰" ‰(2
+1‡" ‡(2
 
 2255429*
-1‰3 ‰(C
+1‡3 ‡(C
 
 2255421*
-1‰" ‰(2
+1‡" ‡(2
 
 2251021*
-1Š Š(
+1ˆ ˆ(
 
 22510104*
-1Š Š(
+1ˆ ˆ(
 
 2255421*
-1Š Š(
+1ˆ ˆ(
 
 22551104*
-1Š Š(
+1ˆ ˆ(
 
 2281021*
-1
- (
+1Ž
+ Ž(
 
 22810104*
-1
- (
+1Ž
+ Ž(
 
 22891104*
-1 ($
+1Ž Ž($
 
 2311021*
-1–
- –(
+1”
+ ”(
 
 23110104*
-1–
- –(
+1”
+ ”(
 
 23194104*
-1– –(
+1” ”(
 
 2341021*
-1œ
- œ(
+1š
+ š(
 
 23410104*
-1œ
- œ(
+1š
+ š(
 
 23497104*
-1œ œ(
+1š š(

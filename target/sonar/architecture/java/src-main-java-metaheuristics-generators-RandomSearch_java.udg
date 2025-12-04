@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800779118*java2.BÇ+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811374587*java2.BÇ+
 >
 9src/main/java/metaheuristics/generators/RandomSearch.java2
 	
@@ -144,11 +144,11 @@ Tproblem.definition.Operator#generateRandomState(Ljava/lang/Integer;)Ljava/util/
 L
 Eproblem.definition.Problem#getOperator()Lproblem/definition/Operator;105
 '
- metaheurictics.strategy.Strategy107
+ metaheuristics.strategy.Strategy107
 P
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;109
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;109
 W
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;111
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;111
 ë
 ãlocal_search.candidate_type.CandidateValue#stateCandidate(Lproblem/definition/State;Llocal_search/candidate_type/CandidateType;Llocal_search/complement/StrategyType;Ljava/lang/Integer;Ljava/util/List;)Lproblem/definition/State;113
 1
@@ -339,9 +339,6 @@ B
 
 15
 32
-
-110
-11011119
 F
 137?
 13713883 *
@@ -396,6 +393,9 @@ B
 
 58
 585919
+
+108
+10810919
 
 88
 888919
@@ -422,12 +422,6 @@ B
 
 15
 96
-
-106
-10610719
-
-108
-10810919
 
 104
 10410519
@@ -486,6 +480,9 @@ H
 
 118
 11811919
+
+110
+11011119
 
 27
 272819
@@ -594,6 +591,9 @@ B
 
 102
 10210319
+
+106
+10610719
 B
 66<
 666724 *

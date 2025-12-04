@@ -1,15 +1,15 @@
 
-6local_search.candidate_type.SmallerCandidate#<init>()V
-__unknown_file ("startingBlock*Å
-startingBlockq
-iC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/candidate_type/SmallerCandidate.java (Ò
-Ó
-q
-iC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/candidate_type/SmallerCandidate.java (
-%0"5local_search.candidate_type.SearchCandidate#<init>()V*<
- (0.
-,local_search.candidate_type.SmallerCandidate"à
-q
-iC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/candidate_type/SmallerCandidate.java (
-implicit returnB0.
-,local_search.candidate_type.SmallerCandidate
+Sproblem.definition.Problem#getTypeProblem()Lproblem/definition/Problem$ProblemType;a
+WC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/problem/definition/Problem.java. .(""1*⁄
+1/	 /(é
+ã
+/	 /(,
+%0&problem.definition.Problem$ProblemType"__id*K
+
+__unknown_file (/*-
+problem.definition.Problem"
+typeProblem":
+/ /(.
+,
+%0&problem.definition.Problem$ProblemTypeB
+problem.definition.ProblemH

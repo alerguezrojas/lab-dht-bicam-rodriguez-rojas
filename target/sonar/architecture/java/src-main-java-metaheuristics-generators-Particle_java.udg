@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800783025*java2.Bí%
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811376702*java2.Bí%
 :
 5src/main/java/metaheuristics/generators/Particle.java2
 	
@@ -119,11 +119,11 @@ Ymetaheuristics.generators.Particle#UpdateCode(Ljava/util/ArrayList;)Ljava/util/
 >
 8metaheuristics.generators.ParticleSwarmOptimization.wmin81
 &
- metaheurictics.strategy.Strategy83
+ metaheuristics.strategy.Strategy83
 5
-/metaheurictics.strategy.Strategy#getCountMax()I85
+/metaheuristics.strategy.Strategy#getCountMax()I85
 V
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;87
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;87
 M
 Gmetaheuristics.generators.ParticleSwarmOptimization.countCurrentIterPSO89
 C
@@ -139,7 +139,7 @@ F
 F
 ?problem.definition.Problem#getState()Lproblem/definition/State;101
 P
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;103
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;103
 H
 Ametaheuristics.generators.ParticleSwarmOptimization.countParticle105
 O
@@ -339,6 +339,9 @@ H
 15
 151
 
+84
+848519
+
 17
 171819
 B
@@ -364,9 +367,6 @@ H
 
 15
 131
-
-86
-868719
 B
 63<
 636441 *
@@ -390,6 +390,9 @@ H
 
 15
 145
+
+102
+10210319
 
 122
 12212319
@@ -432,12 +435,6 @@ H
 
 15
 154
-
-82
-828319
-
-102
-10210319
 B
 47<
 474841 *
@@ -453,9 +450,6 @@ B
 
 80
 808119
-
-84
-848519
 B
 66<
 666741 *
@@ -512,6 +506,9 @@ B
 
 78
 787919
+
+86
+868719
 
 120
 12012119
@@ -594,6 +591,9 @@ H
 
 15
 134
+
+82
+828319
 
 98
 989919

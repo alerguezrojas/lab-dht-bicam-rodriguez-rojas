@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800785071*java2.BÔ+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811383462*java2.BÔ+
 @
 ;src/main/java/metaheuristics/generators/LimitThreshold.java2
 	
@@ -136,11 +136,11 @@ emetaheuristics.generators.LimitThreshold#setTypeGenerator(Lmetaheuristics/gener
  
 problem.definition.Problem96
 &
- metaheurictics.strategy.Strategy98
+ metaheuristics.strategy.Strategy98
 P
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;100
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;100
 W
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;102
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;102
 -
 &problem.definition.Problem$ProblemType104
 Z
@@ -362,9 +362,6 @@ F
 15
 139
 
-101
-10110219
-
 113
 11311419
 H
@@ -404,6 +401,9 @@ B
 
 15
 81
+
+99
+9910019
 B
 40<
 404124 *
@@ -422,12 +422,6 @@ B
 
 103
 10310419
-
-97
-979819
-
-99
-9910019
 B
 30<
 303124 *
@@ -514,6 +508,9 @@ F
 
 15
 145
+
+101
+10110219
 B
 72<
 727324 *
@@ -626,6 +623,9 @@ F
 
 95
 959619
+
+97
+979819
 F
 126?
 12612780 *

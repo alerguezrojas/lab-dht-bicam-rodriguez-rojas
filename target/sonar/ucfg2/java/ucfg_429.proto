@@ -1,15 +1,9 @@
 
-7problem.definition.State#getCode()Ljava/util/ArrayList;_
-UC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/problem/definition/State.java   (!"1*©
-1!	 !(q
-o
-!	 !(
-%0java.util.ArrayList"__id*B
-
-__unknown_file (&*$
-problem.definition.State"
-code"'
-! !(
-
-%0java.util.ArrayListB
-problem.definition.StateH
+1metaheuristics.generators.TabuSearch#getTrace()[Fm
+aC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/TabuSearch.java¾ ¾("1*%
+1
+À	 À("
+
+À À(
+""B(&
+$metaheuristics.generators.TabuSearchH

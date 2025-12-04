@@ -1,162 +1,9 @@
 
-çmetaheuristics.generators.MultiobjectiveHillClimbingDistance#SolutionMoreDistance(Ljava/util/List;Ljava/util/List;)Lproblem/definition/State;É
-yC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiobjectiveHillClimbingDistance.javat t(#"8*Í
-2
-Å
- Å(ß
-§
-
-Å
- Å(
-%10problem.definition.State"
-__arrayGet*E
-
-__unknown_file ()
-'
-	solutionsproblem.definition.State[]*"
-
-__unknown_file (
-"""/
-
-Å Å(!
-
-%10problem.definition.State*Å
-3
-Ä Ä(h
-f
-
-Ä Ä(
-%9boolean"	__compare*
-
-Ä	 Ä(
-!=*
-
-Ä Ä(
-""*
-
-Ä Ä(2*
-2
-1*w
-5|
- |(c
-a
-| |(
-maxjava.lang.Double"__id*6
-
-__unknown_file (
-
-distjava.lang.Double*
-7*õ
-6z z(ì
-ê
-z z(
-%7java.lang.Double"
-__arrayGet*<
-
-__unknown_file ( 
-
-distancejava.lang.Double[]*"
-
-__unknown_file (
-""b
-`
-z z(
-distjava.lang.Double"__id*4
-
-__unknown_file (
-
-%7java.lang.Doubleâ
-Ü
-{ {(
-%8boolean"	__compare*
-{ {(
->*&
-{ {(
-
-
-distjava.lang.Double*%
-{ {(
-
-maxjava.lang.Double*
-5
-7*x
-7y y(a
-_
-y y(%
-%6boolean"	__compare*
-y y(
-<*
-y y(
-""*
-y y(%
-""*
-3
-6*∆	
-8u u(M
-K
-u u(
-maxjava.lang.Double"__id* 
-
-__unknown_file (2yw
-w: w(Q	
-%0int"java.util.List#size()I*@
-
-__unknown_file ($
-"
-distanceSolutionjava.util.List2size():8
-w/ w(R
-%1java.lang.Double[]"java.lang.Double[]ˇ¸
-w w(S
-%2java.lang.Double[]">java.util.List#toArray([Ljava/lang/Object;)[Ljava/lang/Object;*@
-
-__unknown_file ($
-"
-distanceSolutionjava.util.List*6
-
-__unknown_file (
-
-%1java.lang.Double[]2toArray([Ljava/lang/Object;)j
-h
-w w(T
-distancejava.lang.Double[]"__id*6
-
-__unknown_file (
-
-%2java.lang.Double[]nl
-x. x(:	
-%3int"java.util.List#size()I*5
-
-__unknown_file (
-
-statejava.util.List2size()JH
-x$ x(; 
-%4problem.definition.State[]"problem.definition.State[]ÑÅ
-x x(< 
-%5problem.definition.State[]">java.util.List#toArray([Ljava/lang/Object;)[Ljava/lang/Object;*5
-
-__unknown_file (
-
-statejava.util.List*>
-
-__unknown_file ("
- 
-%4problem.definition.State[]2toArray([Ljava/lang/Object;){
-y
-x x(='
-	solutionsproblem.definition.State[]"__id*>
-
-__unknown_file ("
- 
-%5problem.definition.State[]*
-7*%
+Gmetaheuristics.generators.GeneticAlgorithm#getSonList()Ljava/util/List;s
+gC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/GeneticAlgorithm.java” ”("1*%
 1
-É
- É("
+’	 ’("
 
-É É(
-"":#
-t$ t(6
-statejava.util.List:.
-t7 t(T"
-distanceSolutionjava.util.ListB@>
-<metaheuristics.generators.MultiobjectiveHillClimbingDistance
+’ ’(
+""B.,
+*metaheuristics.generators.GeneticAlgorithmH

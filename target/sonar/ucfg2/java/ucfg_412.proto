@@ -1,18 +1,15 @@
 
-imetaheuristics.generators.EvolutionStrategies#getTypeGenerator()Lmetaheuristics/generators/GeneratorType;v
-jC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/EvolutionStrategies.java¦ ¦(&"1*÷
-1
-§	 §(¦
-£
-
-§	 §(-
-%0'metaheuristics.generators.GeneratorType"__id*`
+`metaheuristics.generators.TabuSearch#getTypeGenerator()Lmetaheuristics/generators/GeneratorType;k
+aC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/TabuSearch.java, ,()"1*è
+1-	 -(›
+˜
+-	 -(-
+%0'metaheuristics.generators.GeneratorType"__id*W
 
-__unknown_file (D*B/
--metaheuristics.generators.EvolutionStrategies"
-generatorType"=
-
-§ §(/
+__unknown_file (;*9&
+$metaheuristics.generators.TabuSearch"
+typeGenerator";
+- -(/
 -
-%0'metaheuristics.generators.GeneratorTypeB1/
--metaheuristics.generators.EvolutionStrategiesH
+%0'metaheuristics.generators.GeneratorTypeB(&
+$metaheuristics.generators.TabuSearchH

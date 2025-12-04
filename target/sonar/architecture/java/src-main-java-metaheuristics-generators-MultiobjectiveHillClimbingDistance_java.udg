@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800782777*java2.Bý4
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811373083*java2.Bý4
 T
 Osrc/main/java/metaheuristics/generators/MultiobjectiveHillClimbingDistance.java2
 	
@@ -142,11 +142,11 @@ lproblem.definition.Operator#generatedNewState(Lproblem/definition/State;Ljava/l
 L
 Eproblem.definition.Problem#getOperator()Lproblem/definition/Operator;103
 '
- metaheurictics.strategy.Strategy105
+ metaheuristics.strategy.Strategy105
 P
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;107
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;107
 W
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;109
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;109
 ë
 ãlocal_search.candidate_type.CandidateValue#stateCandidate(Lproblem/definition/State;Llocal_search/candidate_type/CandidateType;Llocal_search/complement/StrategyType;Ljava/lang/Integer;Ljava/util/List;)Lproblem/definition/State;111
 ƒ
@@ -156,7 +156,7 @@ Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy
 
 	has param115
 :
-3metaheurictics.strategy.Strategy.listRefPoblacFinal117
+3metaheuristics.strategy.Strategy.listRefPoblacFinal117
 A
 :problem.definition.State#clone()Lproblem/definition/State;119
 ,
@@ -409,7 +409,7 @@ B
 H
 184A
 18418581 *
-1ø ø(210:7B
+1ö ö(210:7B
 
 
 13
@@ -432,24 +432,15 @@ B
 
 15
 94
-
-108
-10810919
 
 58
 585919
-
-86
-868719
-
-116
-11611719
-
-104
-10410519
 
 106
 10610719
+
+86
+868719
 
 102
 10210319
@@ -471,7 +462,7 @@ B
 H
 181A
 18118281 *
-1ò ò(210:7B
+1ð ð(210:7B
 
 
 13
@@ -547,7 +538,7 @@ H
 H
 178A
 17817981 *
-1ì ì(210:7B
+1ê ê(210:7B
 
 
 13
@@ -555,6 +546,9 @@ H
 
 15
 180
+
+108
+10810919
 
 27
 272819
@@ -652,6 +646,9 @@ B
 100
 10010119
 
+104
+10410519
+
 132
 13213319
 H
@@ -729,7 +726,7 @@ H
 H
 175A
 17517681 *
-1æ æ(210:7B
+1å å(210:7B
 
 
 13
@@ -737,9 +734,12 @@ H
 
 15
 177
+
+116
+11611719
 
 96
-969719r¼L
+969719r´M
 
 101720*
 19 (B
@@ -1788,3 +1788,16 @@ H
 
 1694821*
 1Ú  Ú(%
+
+1726383*
+1â
+ â(
+
+1751021*
+1ç ç(
+
+1751083*
+1ç ç(
+
+1756383*
+1ç ç(

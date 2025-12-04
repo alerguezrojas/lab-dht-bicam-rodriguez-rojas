@@ -1,10 +1,15 @@
 
-3metaheuristics.generators.HillClimbing#getWeight()Fo
-cC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/HillClimbing.java‚ ‚("1*%
-1
-„	 „(
-"
-
-„ „(
-""B*(
-&metaheuristics.generators.HillClimbingHX
+gmetaheuristics.generators.MultiobjectiveStochasticHillClimbing#getReference()Lproblem/definition/State;…
+{C:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiobjectiveStochasticHillClimbing.javaC C("1*ç
+1D	 D(©
+¦
+D	 D(
+%0problem.definition.State"__id*t
+
+__unknown_file (X*V@
+>metaheuristics.generators.MultiobjectiveStochasticHillClimbing"
+stateReferenceHC",
+D D( 
+
+%0problem.definition.StateBB@
+>metaheuristics.generators.MultiobjectiveStochasticHillClimbingH

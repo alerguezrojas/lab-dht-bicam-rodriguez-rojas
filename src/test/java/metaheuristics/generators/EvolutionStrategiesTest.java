@@ -15,7 +15,7 @@ import org.mockito.Mock;
 import org.mockito.MockedStatic;
 import org.mockito.MockitoAnnotations;
 
-import metaheurictics.strategy.Strategy;
+import metaheuristics.strategy.Strategy;
 import problem.definition.Codification;
 import problem.definition.Operator;
 import problem.definition.Problem;
@@ -194,5 +194,92 @@ public class EvolutionStrategiesTest {
         when(candidate.getEvaluation()).thenReturn(evalCandidate);
         
         evolutionStrategies.updateReference(candidate, 1);
+    }
+
+    @Test
+    public void testGetListStateRef_FromRandomSearch() {
+        // Setup RandomSearch list
+        List<State> rsList = new ArrayList<>();
+        rsList.add(mock(State.class));
+        RandomSearch.listStateReference = rsList;
+        
+        // Setup Strategy to have EvolutionStrategies key
+        ArrayList<String> keys = new ArrayList<>();
+        keys.add("EvolutionStrategies");
+        when(strategyMock.getListKey()).thenReturn(keys);
+        
+        EvolutionStrategies otherES = mock(EvolutionStrategies.class);
+        when(otherES.getListStateReference()).thenReturn(new ArrayList<>()); // Empty
+        
+        strategyMock.mapGenerators.put(GeneratorType.EvolutionStrategies, otherES);
+        
+        // Clear current list
+        evolutionStrategies.setListStateReference(new ArrayList<>());
+        
+        List<State> result = evolutionStrategies.getListStateRef();
+        
+        assertEquals(1, result.size());
+    }
+
+    @Test
+    public void testGetListStateRef_FromOtherGenerator() {
+        // Setup Strategy to have EvolutionStrategies key
+        ArrayList<String> keys = new ArrayList<>();
+        keys.add("EvolutionStrategies");
+        when(strategyMock.getListKey()).thenReturn(keys);
+        
+        EvolutionStrategies otherES = mock(EvolutionStrategies.class);
+        List<State> otherList = new ArrayList<>();
+        otherList.add(mock(State.class));
+        when(otherES.getListStateReference()).thenReturn(otherList); // Not empty
+        
+        strategyMock.mapGenerators.put(GeneratorType.EvolutionStrategies, otherES);
+        
+        List<State> result = evolutionStrategies.getListStateRef();
+        
+        assertEquals(1, result.size());
+        assertEquals(otherList, result);
+    }
+
+    @Test
+    public void testGetSetters() {
+        evolutionStrategies.setWeight(10.0f);
+        assertEquals(10.0f, evolutionStrategies.getWeight());
+        
+        State s = mock(State.class);
+        evolutionStrategies.setStateRef(s);
+        
+        evolutionStrategies.setInitialReference(s);
+        
+        evolutionStrategies.setTypeGenerator(GeneratorType.GeneticAlgorithm);
+        assertEquals(GeneratorType.GeneticAlgorithm, evolutionStrategies.getTypeGenerator());
+        
+        assertNotNull(evolutionStrategies.getListCountBetterGender());
+        assertNotNull(evolutionStrategies.getListCountGender());
+        assertNotNull(evolutionStrategies.getTrace());
+        assertNull(evolutionStrategies.getSonList());
+        assertFalse(evolutionStrategies.awardUpdateREF(s));
+    }
+    
+    @Test
+    public void testGetReferenceList() {
+        List<State> list = new ArrayList<>();
+        State s1 = mock(State.class);
+        list.add(s1);
+        evolutionStrategies.setListStateReference(list);
+        
+        List<State> refList = evolutionStrategies.getReferenceList();
+        assertEquals(1, refList.size());
+        assertEquals(s1, refList.get(0));
+    }
+
+    @Test
+    public void testGetListStateReference() {
+        List<State> list = new ArrayList<>();
+        State s1 = mock(State.class);
+        list.add(s1);
+        evolutionStrategies.setListStateReference(list);
+        
+        assertEquals(list, evolutionStrategies.getListStateReference());
     }
 }

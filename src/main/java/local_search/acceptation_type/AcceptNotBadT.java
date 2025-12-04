@@ -6,7 +6,7 @@ package local_search.acceptation_type;
 
 import java.lang.reflect.InvocationTargetException;
 
-import metaheurictics.strategy.Strategy;
+import metaheuristics.strategy.Strategy;
 import metaheuristics.generators.SimulatedAnnealing;
 import problem.definition.Problem;
 import problem.definition.State;

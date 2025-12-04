@@ -5,7 +5,8 @@ C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\problem\extension\Soluti
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\evolutionary_algorithms\complement\CrossoverType.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generators\GeneratorType.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\evolutionary_algorithms\complement\SamplingType.java
-C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheurictics\strategy\Strategy.java
+C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generators\SimpleTestClass.java
+C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\local_search\TestDummy.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\evolutionary_algorithms\complement\OnePointMutation.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\evolutionary_algorithms\complement\Distribution.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\evolutionary_algorithms\complement\UniformCrossover.java
@@ -19,6 +20,7 @@ C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\evolutionary_algorithms\
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\factory_method\FactorySolutionMethod.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\local_search\acceptation_type\AcceptNotDominated.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generators\RandomSearch.java
+C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\strategy\Strategy.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\factory_method\FactoryCrossover.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\local_search\acceptation_type\AcceptableCandidate.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\evolutionary_algorithms\complement\TowPointsMutation.java
@@ -62,6 +64,7 @@ C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generator
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\evolutionary_algorithms\complement\Univariate.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\factory_interface\IFFSampling.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generators\MultiobjectiveHillClimbingDistance.java
+C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generators\MyTestClass.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generators\MultiobjectiveTabuSearch.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\local_search\acceptation_type\AcceptBest.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\local_search\acceptation_type\AcceptNotBadT.java
@@ -75,6 +78,7 @@ C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\evolutionary_algorithms\
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\local_search\candidate_type\CandidateValue.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\factory_method\FactoryLoader.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\local_search\complement\StopExecute.java
+C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\local_search\MultiCaseSimulatedAnnealing.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\local_search\candidate_type\SearchCandidate.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generators\HillClimbingRestart.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\factory_method\FactoryGenerator.java
@@ -83,6 +87,7 @@ C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generator
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\evolutionary_algorithms\complement\SelectionType.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generators\InstanceEE.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\factory_method\FactoryFatherSelection.java
+C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\local_search\complement\MultiCaseSimulatedAnnealing.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generators\MultiobjectiveHillClimbingRestart.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\local_search\candidate_type\GreaterCandidate.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\local_search\complement\UpdateParameter.java

@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800786938*java2.Bè
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811387972*java2.Bä
 I
 Dsrc/test/java/local_search/acceptation_type/AcceptMulticaseTest.java2
 	
@@ -45,7 +45,7 @@ Flocal_search.acceptation_type.AcceptMulticaseTest.strategyMockedStatic18
 
 uses26
 &
- metaheurictics.strategy.Strategy28
+ metaheuristics.strategy.Strategy28
 D
 >local_search.acceptation_type.AcceptMulticaseTest.strategyMock30
 
@@ -102,9 +102,9 @@ lorg.mockito.MockedStatic#when(Lorg/mockito/MockedStatic$Verification;)Lorg/mock
 X
 Rorg.mockito.Mockito#when(Ljava/lang/Object;)Lorg/mockito/stubbing/OngoingStubbing;72
 O
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;74
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;74
 0
-*metaheurictics.strategy.Strategy.generator76
+*metaheuristics.strategy.Strategy.generator76
 -
 'metaheuristics.generators.GeneratorType78
 \
@@ -112,7 +112,7 @@ Vmetaheuristics.generators.Generator#getType()Lmetaheuristics/generators/Generat
 >
 8metaheuristics.generators.GeneratorType.GeneticAlgorithm82
 9
-3metaheurictics.strategy.Strategy.listRefPoblacFinal84
+3metaheuristics.strategy.Strategy.listRefPoblacFinal84
 C
 =local_search.acceptation_type.AcceptMulticaseTest#tearDown()V86
 
@@ -135,10 +135,10 @@ Z
 Sproblem.definition.Problem#getTypeProblem()Lproblem/definition/Problem$ProblemType;102
 7
 0problem.definition.Problem$ProblemType.Maximizar104
-<
-5metaheuristics.generators.MultiCaseSimulatedAnnealing106
-E
->metaheuristics.generators.MultiCaseSimulatedAnnealing.tinitial108
+:
+3local_search.complement.MultiCaseSimulatedAnnealing106
+C
+<local_search.complement.MultiCaseSimulatedAnnealing.tinitial108
 D
 =problem.definition.State#getEvaluation()Ljava/util/ArrayList;110
 A
@@ -186,6 +186,9 @@ B
 
 51
 515224
+
+105
+10510624
 B
 17<
 171819 *
@@ -207,9 +210,6 @@ B
 
 103
 10310424
-
-105
-10510624
 
 40
 404124
@@ -258,6 +258,9 @@ B
 
 15
 50
+
+75
+757624
 B
 94<
 949549 *
@@ -274,8 +277,14 @@ B
 63
 636424
 
+27
+272824
+
 35
 353624
+
+73
+737424
 
 77
 777824
@@ -288,6 +297,9 @@ B
 
 65
 656624
+
+107
+10710824
 
 69
 697024
@@ -297,9 +309,6 @@ B
 
 99
 9910024
-
-107
-10710824
 B
 32<
 323319 *
@@ -328,17 +337,8 @@ B
 22
 222324
 
-83
-838424
-
 88
 888924
-
-27
-272824
-
-73
-737424
 
 119
 11912024
@@ -359,9 +359,6 @@ F
 
 115
 11511624
-
-75
-757624
 B
 42<
 424319 *
@@ -389,6 +386,9 @@ B
 
 71
 717224
+
+83
+838424
 
 81
 818224

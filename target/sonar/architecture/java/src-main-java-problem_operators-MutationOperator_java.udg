@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800786022*java2.B¸
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811384500*java2.B¸
 :
 5src/main/java/problem_operators/MutationOperator.java2
 	
@@ -64,11 +64,11 @@ references32
 S
 Mproblem.definition.Problem#getCodification()Lproblem/definition/Codification;40
 &
- metaheurictics.strategy.Strategy42
+ metaheuristics.strategy.Strategy42
 O
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;44
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;44
 V
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;46
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;46
 S
 Mproblem.definition.Codification#getVariableAleatoryValue(I)Ljava/lang/Object;48
 :
@@ -116,6 +116,12 @@ B
 
 37
 373819
+
+41
+414219
+
+45
+454619
 B
 22<
 222324 *
@@ -129,6 +135,9 @@ B
 15
 25
 
+43
+434419
+
 33
 333419
 
@@ -140,12 +149,6 @@ B
 
 47
 474819
-
-41
-414219
-
-43
-434419
 
 49
 495019
@@ -161,9 +164,6 @@ B
 
 15
 16
-
-45
-454619
 
 17
 171819r¸

@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800786594*java2.B¯
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811386737*java2.B¯
 N
 Isrc/test/java/metaheuristics/generators/MultiobjectiveTabuSearchTest.java2
 	
@@ -47,7 +47,7 @@ Fmetaheuristics.generators.MultiobjectiveTabuSearchTest#testGenerate()V18
 
 is type28
 &
- metaheurictics.strategy.Strategy30
+ metaheuristics.strategy.Strategy30
 
 returns31
 
@@ -76,7 +76,7 @@ lorg.mockito.MockedStatic#when(Lorg/mockito/MockedStatic$Verification;)Lorg/mock
 X
 Rorg.mockito.Mockito#when(Ljava/lang/Object;)Lorg/mockito/stubbing/OngoingStubbing;53
 O
-Imetaheurictics.strategy.Strategy#getProblem()Lproblem/definition/Problem;55
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;55
 !
 problem.definition.Operator57
 K
@@ -108,7 +108,7 @@ Mmetaheuristics.generators.MultiobjectiveTabuSearchTest#testUpdateReference()V
 
 testUpdateReference84
 9
-3metaheurictics.strategy.Strategy.listRefPoblacFinal86
+3metaheuristics.strategy.Strategy.listRefPoblacFinal86
 ,
 &problem.definition.Problem$ProblemType88
 Y
@@ -209,8 +209,14 @@ B
 44
 444523
 
+29
+293023
+
 40
 404123
+
+54
+545523
 
 46
 464723
@@ -236,15 +242,6 @@ B
 26
 262723
 
-85
-858623
-
-29
-293023
-
-54
-545523
-
 74
 747523
 
@@ -262,6 +259,9 @@ B
 
 72
 727323
+
+85
+858623
 
 56
 565723rû!

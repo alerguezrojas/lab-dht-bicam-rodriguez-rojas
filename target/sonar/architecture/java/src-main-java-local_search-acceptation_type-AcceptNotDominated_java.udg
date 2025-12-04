@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764800781913*java2.Bž
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764811383048*java2.Bž
 
 H
 Csrc/main/java/local_search/acceptation_type/AcceptNotDominated.java2
@@ -54,16 +54,16 @@ Ialerguezrojas_lab-dht-bicam-rodriguez-rojas:local_search.acceptation_type9
 
 calls32
 &
- metaheurictics.strategy.Strategy34
+ metaheuristics.strategy.Strategy34
 
 returns35
 
 
 references36
 V
-Pmetaheurictics.strategy.Strategy#getStrategy()Lmetaheurictics/strategy/Strategy;38
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;38
 9
-3metaheurictics.strategy.Strategy.listRefPoblacFinal40
+3metaheuristics.strategy.Strategy.listRefPoblacFinal40
 @
 :problem.definition.State#clone()Lproblem/definition/State;42
 n
@@ -92,12 +92,6 @@ blocal_search.acceptation_type.Dominance#ListDominance(Lproblem/definition/State
 
 41
 414219
-
-39
-394019
-
-33
-333419
 >
 108
 101112 *
@@ -131,11 +125,17 @@ B
 30
 303119
 
-45
-454619
+33
+333419
 
 37
 373819
+
+45
+454619
+
+39
+394019
 
 26
 262719rû
