@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.55.0" timestamp="2025-12-05T19:41:19.111">
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.55.0" timestamp="2025-12-05T19:49:04.523">
 <file name="C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\local_search\MultiCaseSimulatedAnnealing.java">
 <violation beginline="40" endline="40" begincolumn="20" endcolumn="20" rule="UnusedLocalVariable" ruleset="Best Practices" package="local_search" class="MultiCaseSimulatedAnnealing" method="simpleTest" variable="a" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
 Avoid unused local variables such as 'a'.

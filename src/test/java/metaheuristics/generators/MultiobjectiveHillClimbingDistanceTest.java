@@ -3,6 +3,7 @@ package metaheuristics.generators;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyInt;
+import static org.mockito.ArgumentMatchers.anyList;
 import static org.mockito.Mockito.*;
 
 import java.lang.reflect.Field;
@@ -160,4 +161,109 @@ public class MultiobjectiveHillClimbingDistanceTest {
             verify(candidateState, atLeastOnce()).clone();
         }
     }
+
+    @Test
+    void testUpdateReference_RejectCandidate_FindInNeighborhood() throws Exception {
+        State candidateState = mock(State.class);
+        when(candidateState.clone()).thenReturn(candidateState);
+        when(stateMock.clone()).thenReturn(stateMock);
+        
+        // Pre-populate listRefPoblacFinal
+        listRefPoblacFinal.add(stateMock);
+        MultiobjectiveHillClimbingDistance.distanceSolution.add(10.0);
+        
+        // Mock neighborhood
+        State neighborState = mock(State.class);
+        when(neighborState.clone()).thenReturn(neighborState);
+        // Ensure neighbor is NOT contained (Contain returns false)
+        // Contain uses Comparator. We need to mock Comparator on visitedState elements.
+        // visitedState is initially empty or populated? 
+        // In updateReference: visitedState = new ArrayList<State>(); if accept is true.
+        // But here accept is false.
+        // visitedState is an instance field.
+        
+        List<State> neighborhood = new ArrayList<>();
+        neighborhood.add(neighborState);
+        when(operatorMock.generatedNewState(any(State.class), anyInt())).thenReturn(neighborhood);
+        
+        // Mock FactoryAcceptCandidate to return false
+        try (MockedConstruction<FactoryAcceptCandidate> factoryMock = mockConstruction(FactoryAcceptCandidate.class,
+                (mock, context) -> {
+                    AcceptableCandidate acceptableCandidateMock = mock(AcceptableCandidate.class);
+                    when(mock.createAcceptCandidate(any(AcceptType.class))).thenReturn(acceptableCandidateMock);
+                    when(acceptableCandidateMock.acceptCandidate(any(State.class), any(State.class))).thenReturn(false);
+                })) {
+            
+            generator.updateReference(candidateState, 1);
+            
+            // Verify SolutionMoreDistance logic was executed
+            // It should pick the solution with max distance from listRefPoblacFinal
+            // We only have one state in listRefPoblacFinal with distance 10.0
+            // So stateReferenceHC should become that state (stateMock)
+            // But wait, SolutionMoreDistance returns a state from listRefPoblacFinal.
+            // stateReferenceHC = SolutionMoreDistance(...)
+            
+            // We can verify that stateReferenceHC is set to stateMock (which is in listRefPoblacFinal)
+            assertEquals(stateMock, generator.getReference());
+        }
+    }
+
+    @Test
+    void testDistanceCalculateAdd() {
+        State s1 = mock(State.class);
+        State s2 = mock(State.class);
+        State s3 = mock(State.class); // The new one
+        
+        List<State> solutions = new ArrayList<>();
+        solutions.add(s1);
+        solutions.add(s2);
+        solutions.add(s3);
+        
+        // Setup existing distances
+        MultiobjectiveHillClimbingDistance.distanceSolution = new ArrayList<>();
+        MultiobjectiveHillClimbingDistance.distanceSolution.add(10.0);
+        MultiobjectiveHillClimbingDistance.distanceSolution.add(20.0);
+        
+        // Mock distances
+        // s1 <-> s3
+        when(s1.Distance(s3)).thenReturn(5.0);
+        // s2 <-> s3
+        when(s2.Distance(s3)).thenReturn(5.0);
+        // s3 <-> s1
+        when(s3.Distance(s1)).thenReturn(5.0);
+        // s3 <-> s2
+        when(s3.Distance(s2)).thenReturn(5.0);
+        
+        List<Double> result = MultiobjectiveHillClimbingDistance.DistanceCalculateAdd(solutions);
+        
+        assertEquals(3, result.size());
+        // s1 new distance: 10 + 5 = 15
+        assertEquals(15.0, result.get(0));
+        // s2 new distance: 20 + 5 = 25
+        assertEquals(25.0, result.get(1));
+        // s3 distance: dist(s3, s1) + dist(s3, s2) = 5 + 5 = 10
+        assertEquals(10.0, result.get(2));
+    }
+    
+    @Test
+    void testGettersSetters() {
+        generator.setInitialReference(stateMock);
+        assertEquals(stateMock, generator.getReference());
+        
+        generator.setGeneratorType(GeneratorType.HillClimbing);
+        assertEquals(GeneratorType.HillClimbing, generator.getGeneratorType());
+        
+        assertNotNull(generator.getReferenceList());
+        
+        assertNull(generator.getSonList());
+        assertNull(generator.getListCountBetterGender());
+        assertNull(generator.getListCountGender());
+        assertNull(generator.getTrace());
+        
+        generator.setWeight(100.0f);
+        assertEquals(100.0f, generator.getWeight());
+        
+        assertFalse(generator.awardUpdateREF(stateMock));
+    }
 }
+
