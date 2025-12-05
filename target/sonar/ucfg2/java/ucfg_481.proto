@@ -1,9 +1,9 @@
 
 klocal_search.acceptation_type.AcceptMulticase#DominanceCounter(Lproblem/definition/State;Ljava/util/List;)It
-jC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/acceptation_type/AcceptMulticase.javaT T("5*Ã	
-4W W(ì
+jC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/acceptation_type/AcceptMulticase.javaU U("5*Ã	
+4X X(ì
 ê
-W W(
+X X(
 %2problem.definition.State"
 __arrayGet*4
 
@@ -14,29 +14,29 @@ __arrayGet*4
 __unknown_file (
 ""v
 t
-W W( $
+X X( $
 solutionproblem.definition.State"__id*<
 
 __unknown_file ( 
 
 %2problem.definition.Statedb
-X X(&-
+Y Y(&-
 %3'local_search.acceptation_type.Dominance"'local_search.acceptation_type.Dominanceì
 ê
-X X((
+Y Y((
 %4"1local_search.acceptation_type.Dominance#<init>()V*K
 
 __unknown_file (/
 -
 %3'local_search.acceptation_type.Dominanceñ
 ì
-X X()4
+Y Y()4
 	dominance'local_search.acceptation_type.Dominance"__id*K
 
 __unknown_file (/
 -
 %3'local_search.acceptation_type.Dominance©¶
-Y Y(3
+Z Z(3
 %5boolean"hlocal_search.acceptation_type.Dominance#dominance(Lproblem/definition/State;Lproblem/definition/State;)Z*R
 
 __unknown_file (6
@@ -51,39 +51,39 @@ t
 $
 solutionproblem.definition.State2?dominance(Lproblem/definition/State;Lproblem/definition/State;)i
 g
-Y Y(;
+Z Z(;
 %6boolean"	__compare*
-Y4 Y(6
+Z4 Z(6
 ==*
-Y Y(3
+Z Z(3
 
 %5boolean*
-Y7 Y(;2*
+Z7 Z(;2*
 5*Ï
-5V V(mk
-V V(!	
+5W W(mk
+W W(!	
 %0int"java.util.List#size()I*4
 
 __unknown_file (
 
 listjava.util.List2size()f
 d
-V V(!
+W W(!
 %1boolean"	__compare*
-V V(
+W W(
 <*
-V V(
+W W(
 ""*
-V V(!
+W W(!
 	
 %0int*
 4
 1*!
-1\	 \("
-\ \(
+1]	 ]("
+] ](
 "":6
-T T(3*
+U U(3*
 stateCandidateproblem.definition.State:"
-T4 T(D
+U4 U(D
 listjava.util.ListB1/
 -local_search.acceptation_type.AcceptMulticaseX

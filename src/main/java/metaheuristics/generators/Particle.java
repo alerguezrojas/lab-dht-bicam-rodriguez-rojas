@@ -78,7 +78,7 @@ public class Particle extends Generator {
     	double rand2 = secureRandom.nextDouble();
     	double inertia, cognitive, social;
     	int learning = ParticleSwarmOptimization.learning1 + ParticleSwarmOptimization.learning2; // ratios de aprendizaje cognitivo y social
-    	ParticleSwarmOptimization.constriction = 2 / Math.abs(2 - learning - Math.sqrt(learning * learning - 4 * learning));   // Factor de costriccion
+    	ParticleSwarmOptimization.constriction = 2 / Math.abs(2 - learning - Math.sqrt((double)learning * learning - 4 * learning));   // Factor de costriccion
     	ArrayList<Object> actualVelocity = new ArrayList<Object>();
     	if(velocity.isEmpty()){
     		for (int i = 0; i < Strategy.getStrategy().getProblem().getState().getCode().size(); i++){
@@ -91,8 +91,8 @@ public class Particle extends Generator {
     		int swarm = ParticleSwarmOptimization.countParticle / ParticleSwarmOptimization.countParticleBySwarm; 
            	inertia = w * (Double)velocity.get(i);  
            	if(ParticleSwarmOptimization.binary){
-           		cognitive = (Double)(ParticleSwarmOptimization.learning1 * rand1 * ((Integer)this.statePBest.getCode().get(i) - (Integer)stateActual.getCode().get(i)));
-           		social = (Double)(ParticleSwarmOptimization.learning2 * rand2 * (((Integer)((State) ParticleSwarmOptimization.lBest[swarm]).getCode().get(i)) - (Integer)stateActual.getCode().get(i)));
+           		cognitive = (Double)(ParticleSwarmOptimization.learning1 * rand1 * ((double)(Integer)this.statePBest.getCode().get(i) - (Integer)stateActual.getCode().get(i)));
+           		social = (Double)(ParticleSwarmOptimization.learning2 * rand2 * (((double)(Integer)((State) ParticleSwarmOptimization.lBest[swarm]).getCode().get(i)) - (Integer)stateActual.getCode().get(i)));
            	}
            	else{
            		cognitive = (Double)(ParticleSwarmOptimization.learning1 * rand1 * ((Double)this.statePBest.getCode().get(i) - (Double)stateActual.getCode().get(i)));

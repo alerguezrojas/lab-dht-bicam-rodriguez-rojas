@@ -11,6 +11,8 @@ import problem.definition.State;
 
 public class AcceptMulticase extends AcceptableCandidate {
 
+	private static final Random rdm = new Random();
+
 	@Override
 	public Boolean acceptCandidate(State stateCurrent, State stateCandidate) {
 		// TODO Auto-generated method stub
@@ -22,7 +24,6 @@ public class AcceptMulticase extends AcceptableCandidate {
 		}
 		Double T = MultiCaseSimulatedAnnealing.tinitial;
 		double pAccept = 0;
-		Random rdm = new Random();
 		Dominance dominance= new Dominance();
 		//Verificando si la soluci�n candidata domina a la soluci�n actual
 		//Si la soluci�n candidata domina a la soluci�n actual
@@ -54,7 +55,7 @@ public class AcceptMulticase extends AcceptableCandidate {
 				pAccept = Math.exp(-(1-total)/T);
 			}
 			else if (DominanceRank(stateCandidate, list) > DominanceRank(stateCurrent, list) && DominanceRank(stateCurrent, list)!= 0){
-				float value = DominanceRank(stateCandidate, list)/DominanceRank(stateCurrent, list);
+				float value = (float) DominanceRank(stateCandidate, list)/DominanceRank(stateCurrent, list);
 				pAccept = Math.exp(-(value+1)/T);
 			}
 			else{
