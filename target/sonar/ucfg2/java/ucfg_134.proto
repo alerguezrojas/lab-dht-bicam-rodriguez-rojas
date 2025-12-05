@@ -1,9 +1,128 @@
 
-Qmetaheuristics.generators.MultiGenerator#getReference()Lproblem/definition/State;q
-eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiGenerator.java² ²("1*%
-1
-´	 ´("
+`metaheuristics.generators.MultiGenerator#generate(Ljava/lang/Integer;)Lproblem/definition/State;q
+eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiGenerator.java¤ ¤("startingBlock*¢
+startingBlock
+¤ ¤(.˜
+•
 
-´ ´(
-""B,*
+£ £(
+
+%8"
+__annotate*2
+
+__unknown_file (
+java.lang.Override*A
+
+__unknown_file (%
+#
+operatornumberjava.lang.Integere
+c
+
+¤ ¤(-#
+operatornumberjava.lang.Integer"__annotation*"
+
+__unknown_file (
+
+%8*
+1*µ
+1
+ª ª(
+Ë
+È
+
+ª ª(&
+%0 metaheuristics.strategy.Strategy"Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;*@
+
+__unknown_file ($""
+ metaheuristics.strategy.Strategyêç
+
+ª% ª(/)
+%1#metaheuristics.generators.Generator"Xmetaheuristics.generators.MultiGenerator#roulette()Lmetaheuristics/generators/Generator;*H
+
+__unknown_file (,*
+(metaheuristics.generators.MultiGenerator2
+roulette()•
+’
+
+ª ª(/5
+&
+%0 metaheuristics.strategy.Strategy"
+	generator"__id*G
+
+__unknown_file (+
+)
+%1#metaheuristics.generators.GeneratorË
+È
+
+« «(*&
+%2 metaheuristics.strategy.Strategy"Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;*@
+
+__unknown_file ($""
+ metaheuristics.strategy.Strategy•
+’
+
+« «(4)
+%3#metaheuristics.generators.Generator"__id*S
+
+__unknown_file (7*5
+&
+%2 metaheuristics.strategy.Strategy"
+	generatorŸ
+œ
+
+« «(4?*
+(metaheuristics.generators.MultiGenerator"
+activeGenerator"__id*G
+
+__unknown_file (+
+)
+%3#metaheuristics.generators.GeneratorŸ
+œ
+
+¬ ¬()
+%4#metaheuristics.generators.Generator"__id*]
+
+__unknown_file (A*?*
+(metaheuristics.generators.MultiGenerator"
+activeGeneratorË
+È
+
+­ ­(&&
+%5 metaheuristics.strategy.Strategy"Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;*@
+
+__unknown_file ($""
+ metaheuristics.strategy.Strategy•
+’
+
+­ ­(0)
+%6#metaheuristics.generators.Generator"__id*S
+
+__unknown_file (7*5
+&
+%5 metaheuristics.strategy.Strategy"
+	generator–“
+
+­ ­(<
+%7problem.definition.State"[metaheuristics.generators.Generator#generate(Ljava/lang/Integer;)Lproblem/definition/State;*G
+
+__unknown_file (+
+)
+%6#metaheuristics.generators.Generator* 
+
+__unknown_file (22generate(Ljava/lang/Integer;)u
+s
+
+­ ­(=!
+stateproblem.definition.State"__id*<
+
+__unknown_file ( 
+
+%7problem.definition.State"1
+
+® ®(#
+!
+stateproblem.definition.State:1
+
+¤ ¤(-#
+operatornumberjava.lang.IntegerB,*
 (metaheuristics.generators.MultiGeneratorH

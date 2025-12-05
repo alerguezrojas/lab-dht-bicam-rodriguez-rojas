@@ -1,18 +1,18 @@
 
-Vmetaheuristics.generators.ParticleSwarmOptimization#getReferenceList()Ljava/util/List;|
-pC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/ParticleSwarmOptimization.java÷ ÷($"1*Ð
+fmetaheuristics.generators.ParticleSwarmOptimization#getType()Lmetaheuristics/generators/GeneratorType;|
+pC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/ParticleSwarmOptimization.java– –("1*ý
 1
-ù	 ù(˜
-•
+˜	 ˜(¬
+©
 
-ù	 ù( 
-%0java.util.List"__id*k
+˜	 ˜(-
+%0'metaheuristics.generators.GeneratorType"__id*f
 
-__unknown_file (O*M5
-3metaheuristics.generators.ParticleSwarmOptimization"
-listStateReference"$
+__unknown_file (J*H5
+3metaheuristics.generators.ParticleSwarmOptimization"
+generatorType"=
 
-ù ù(!
-
-%0java.util.ListB75
+˜ ˜(/
+-
+%0'metaheuristics.generators.GeneratorTypeB75
 3metaheuristics.generators.ParticleSwarmOptimizationH

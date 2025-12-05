@@ -1,18 +1,60 @@
 
-Imetaheuristics.strategy.Strategy#getBestState()Lproblem/definition/State;i
-]C:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/strategy/Strategy.java´ ´("1*»
+}metaheuristics.strategy.Strategy#newGenerator(Lmetaheuristics/generators/GeneratorType;)Lmetaheuristics/generators/Generator;i
+]C:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/strategy/Strategy.java• •("1*ù	
 1
-¨	 ¨(Ü
-É
+¶ ¶(-VT
 
-¨	 ¨(
-%0problem.definition.State"__id*O
+¶ ¶(+%
+%0factory_method.FactoryGenerator"factory_method.FactoryGeneratorÖ
+Ç
+
+¶ ¶(-
+%1")factory_method.FactoryGenerator#<init>()V*C
 
-__unknown_file (3*1"
- metaheuristics.strategy.Strategy"
-	bestState".
+__unknown_file ('
+%
+%0factory_method.FactoryGeneratorñ
+ì
 
-¨ ¨( 
-
-%0problem.definition.StateB$"
+¶ ¶(-:"
+ metaheuristics.strategy.Strategy"
+ifFactoryGenerator"__id*C
+
+__unknown_file ('
+%
+%0factory_method.FactoryGeneratorõ
+ò
+
+ß ß(**
+%2$factory_interface.IFFactoryGenerator"__id*X
+
+__unknown_file (<*:"
+ metaheuristics.strategy.Strategy"
+ifFactoryGeneratorüú
+
+ß ß(I)
+%3#metaheuristics.generators.Generator"Ñfactory_interface.IFFactoryGenerator#createGenerator(Lmetaheuristics/generators/GeneratorType;)Lmetaheuristics/generators/Generator;*H
+
+__unknown_file (,
+*
+%2$factory_interface.IFFactoryGenerator*V
+
+__unknown_file (:
+8
+Generatortype'metaheuristics.generators.GeneratorType2:createGenerator(Lmetaheuristics/generators/GeneratorType;)ê
+ç
+
+ß ß(J0
+	generator#metaheuristics.generators.Generator"__id*G
+
+__unknown_file (+
+)
+%3#metaheuristics.generators.Generator"@
+
+® ®(2
+0
+	generator#metaheuristics.generators.Generator:F
+
+• •(:8
+Generatortype'metaheuristics.generators.GeneratorTypeB$"
  metaheuristics.strategy.StrategyH

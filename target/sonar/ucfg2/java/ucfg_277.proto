@@ -1,15 +1,162 @@
 
-Qlocal_search.MultiCaseSimulatedAnnealing#getReference()Lproblem/definition/State;o
-eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/MultiCaseSimulatedAnnealing.javaN N("1*—
-1O	 O(ì
+`local_search.MultiCaseSimulatedAnnealing#generate(Ljava/lang/Integer;)Lproblem/definition/State;o
+eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/MultiCaseSimulatedAnnealing.javaE E("startingBlock*û
+startingBlockE E(.ó
+î
+D D(
+
+%12"
+__annotate*2
+
+__unknown_file (
+java.lang.Override*A
+
+__unknown_file (%
+#
+operatornumberjava.lang.Integerd
+b
+E E(-#
+operatornumberjava.lang.Integer"__annotation*#
+
+__unknown_file (
+
+%12*
+1*∑
+1F F(3<:
+F! F(1
+%0java.util.ArrayList"java.util.ArrayListj
+h
+F F(3
+%1"java.util.ArrayList#<init>()V*7
+
+__unknown_file (
+
+%0java.util.ArrayListk
+i
+F F(4
+neighborhoodjava.util.List"__id*7
+
+__unknown_file (
+
+%0java.util.ArrayList…
+∆
+G G(*&
+%2 metaheuristics.strategy.Strategy"Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;*@
+
+__unknown_file ($""
+ metaheuristics.strategy.StrategyŒÀ
+G G(7 
+%3problem.definition.Problem"Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;*D
+
+__unknown_file ((
+&
+%2 metaheuristics.strategy.Strategy2getProblem()y
+w
+G G(8%
+problemproblem.definition.Problem"__id*>
+
+__unknown_file ("
+ 
+%3problem.definition.ProblemÀ»
+H H(&!
+%4problem.definition.Operator"Eproblem.definition.Problem#getOperator()Lproblem/definition/Operator;*C
+
+__unknown_file ('
+%
+problemproblem.definition.Problem2getOperator()ì
 ê
-O	 O(
-%0problem.definition.State"__id*^
+H9 H(I
+%5problem.definition.State"__id*^
 
 __unknown_file (B*@*
 (local_search.MultiCaseSimulatedAnnealing"
-stateReferenceSA",
-O O( 
+stateReferenceSAïí
+H H(Z
+%6java.util.List"lproblem.definition.Operator#generatedNewState(Lproblem/definition/State;Ljava/lang/Integer;)Ljava/util/List;*?
+
+__unknown_file (#
+!
+%4problem.definition.Operator*<
+
+__unknown_file ( 
 
-%0problem.definition.StateB,*
+%5problem.definition.State*A
+
+__unknown_file (%
+#
+operatornumberjava.lang.Integer2@generatedNewState(Lproblem/definition/State;Ljava/lang/Integer;)f
+d
+H H(Z
+neighborhoodjava.util.List"__id*2
+
+__unknown_file (
+
+%6java.util.List£
+†
+I I(*0
+%7*local_search.candidate_type.CandidateValue"__id*\
+
+__unknown_file (@*>*
+(local_search.MultiCaseSimulatedAnnealing"
+candidatevalueì
+ê
+I: I(J
+%8problem.definition.State"__id*^
+
+__unknown_file (B*@*
+(local_search.MultiCaseSimulatedAnnealing"
+stateReferenceSA°
+û
+IL I(Y/
+%9)local_search.candidate_type.CandidateType"__id*[
+
+__unknown_file (?*=*
+(local_search.MultiCaseSimulatedAnnealing"
+typeCandidateò
+ï
+I[ I(c+
+%10$local_search.complement.StrategyType"__id*V
+
+__unknown_file (:*8*
+(local_search.MultiCaseSimulatedAnnealing"
+
+strategyﬂ‹
+	I I(Ç
+%11problem.definition.State"„local_search.candidate_type.CandidateValue#stateCandidate(Lproblem/definition/State;Llocal_search/candidate_type/CandidateType;Llocal_search/complement/StrategyType;Ljava/lang/Integer;Ljava/util/List;)Lproblem/definition/State;*N
+
+__unknown_file (2
+0
+%7*local_search.candidate_type.CandidateValue*<
+
+__unknown_file ( 
+
+%8problem.definition.State*M
+
+__unknown_file (1
+/
+%9)local_search.candidate_type.CandidateType*I
+
+__unknown_file (-
++
+%10$local_search.complement.StrategyType*A
+
+__unknown_file (%
+#
+operatornumberjava.lang.Integer*<
+
+__unknown_file ( 
+
+neighborhoodjava.util.List2ûstateCandidate(Lproblem/definition/State;Llocal_search/candidate_type/CandidateType;Llocal_search/complement/StrategyType;Ljava/lang/Integer;Ljava/util/List;)~
+|
+	I I(É*
+statecandidateproblem.definition.State"__id*=
+
+__unknown_file (!
+
+%11problem.definition.State"8
+J J(,
+*
+statecandidateproblem.definition.State:/
+E E(-#
+operatornumberjava.lang.IntegerB,*
 (local_search.MultiCaseSimulatedAnnealingH

@@ -1,45 +1,15 @@
 
-;local_search.MultiCaseSimulatedAnnealing#%field_initializer
-__unknown_file ("1*∏
-
-1 (§°
-o
-eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/MultiCaseSimulatedAnnealing.java#1 #(A
-%0java.util.ArrayList"java.util.ArrayList¬
-ø
-o
-eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/MultiCaseSimulatedAnnealing.java#- #(C
-%1"java.util.ArrayList#<init>()V*'
- (
-
-%0java.util.ArrayListÁ
-‰
-o
-eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/MultiCaseSimulatedAnnealing.java# #(DB*
-(local_search.MultiCaseSimulatedAnnealing"
-listStateReference"__id*'
- (
-
-%0java.util.ArrayList§°
-o
-eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/MultiCaseSimulatedAnnealing.java%% %(5
-%2java.util.ArrayList"java.util.ArrayList¬
-ø
-o
-eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/MultiCaseSimulatedAnnealing.java%! %(7
-%3"java.util.ArrayList#<init>()V*'
- (
-
-%2java.util.ArrayListﬁ
-€
-o
-eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/MultiCaseSimulatedAnnealing.java% %(89*
-(local_search.MultiCaseSimulatedAnnealing"
-	listTrace"__id*'
- (
-
-%2java.util.ArrayList"Ö
-n
-eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/MultiCaseSimulatedAnnealing.java ∞(
-implicit returnB,*
-(local_search.MultiCaseSimulatedAnnealing
+>local_search.acceptation_type.AcceptNotDominatedTabu#<init>()V
+__unknown_file ("startingBlock*ß
+startingBlocky
+qC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/acceptation_type/AcceptNotDominatedTabu.java	 	(á
+Ñ
+y
+qC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/acceptation_type/AcceptNotDominatedTabu.java	 	(
+%0";local_search.acceptation_type.AcceptableCandidate#<init>()V*D
+ (86
+4local_search.acceptation_type.AcceptNotDominatedTabu"ê
+y
+qC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/acceptation_type/AcceptNotDominatedTabu.java	 	(
+implicit returnB86
+4local_search.acceptation_type.AcceptNotDominatedTabu

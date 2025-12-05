@@ -1,9 +1,36 @@
 
-5local_search.MultiCaseSimulatedAnnealing#getWeight()Fq
-eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/MultiCaseSimulatedAnnealing.java‘ ‘("1*%
-1
-’	 ’("
+Tlocal_search.MultiCaseSimulatedAnnealing#awardUpdateREF(Lproblem/definition/State;)Zq
+eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/MultiCaseSimulatedAnnealing.javaŠ Š("startingBlock*°
+startingBlock
+Š Š(4Ÿ
+œ
 
-’ ’(
-""B,*
+‰ ‰(
+
+%0"
+__annotate*2
+
+__unknown_file (
+java.lang.Override*H
+
+__unknown_file (,
+*
+stateCandidateproblem.definition.Statel
+j
+
+Š% Š(3*
+stateCandidateproblem.definition.State"__annotation*"
+
+__unknown_file (
+
+%0*
+1*%
+1
+Œ	 Œ("
+
+Œ Œ(
+"":8
+
+Š Š(3*
+stateCandidateproblem.definition.StateB,*
 (local_search.MultiCaseSimulatedAnnealingHX

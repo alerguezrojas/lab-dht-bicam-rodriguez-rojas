@@ -1,7 +1,15 @@
 
-Cmetaheuristics.generators.HillClimbing#getSonList()Ljava/util/List;m
-cC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/HillClimbing.javar r("1*!
-1t	 t("
-t t(
-""B*(
+Ymetaheuristics.generators.HillClimbing#getType()Lmetaheuristics/generators/GeneratorType;m
+cC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/HillClimbing.javam m("1*Í
+1n	 n(ù
+ö
+n	 n(-
+%0'metaheuristics.generators.GeneratorType"__id*Y
+
+__unknown_file (=*;(
+&metaheuristics.generators.HillClimbing"
+Generatortype";
+n n(/
+-
+%0'metaheuristics.generators.GeneratorTypeB*(
 &metaheuristics.generators.HillClimbingH

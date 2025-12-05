@@ -1,15 +1,110 @@
 
-7local_search.acceptation_type.AcceptMulticase#<init>()V
-__unknown_file ("startingBlock*‹
-startingBlockr
-jC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/acceptation_type/AcceptMulticase.java (ù
-ö
-r
-jC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/acceptation_type/AcceptMulticase.java (
-%0";local_search.acceptation_type.AcceptableCandidate#<init>()V*=
- (1/
--local_search.acceptation_type.AcceptMulticase"‰
-r
-jC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/acceptation_type/AcceptMulticase.java (
-implicit returnB1/
--local_search.acceptation_type.AcceptMulticase
+hlocal_search.acceptation_type.AcceptMulticase#DominanceRank(Lproblem/definition/State;Ljava/util/List;)Iv
+jC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/acceptation_type/AcceptMulticase.java… …("5*â	
+4
+ˆ ˆ(•
+’
+
+ˆ ˆ(
+%2problem.definition.State"
+__arrayGet*4
+
+__unknown_file (
+
+listjava.util.List*"
+
+__unknown_file (
+""x
+v
+
+ˆ ˆ( $
+solutionproblem.definition.State"__id*<
+
+__unknown_file ( 
+
+%2problem.definition.Statefd
+
+‰ ‰(&-
+%3'local_search.acceptation_type.Dominance"'local_search.acceptation_type.Dominance•
+’
+
+‰ ‰((
+%4"1local_search.acceptation_type.Dominance#<init>()V*K
+
+__unknown_file (/
+-
+%3'local_search.acceptation_type.Dominance˜
+•
+
+‰ ‰()4
+	dominance'local_search.acceptation_type.Dominance"__id*K
+
+__unknown_file (/
+-
+%3'local_search.acceptation_type.Dominance«¨
+
+Š Š(3
+%5boolean"hlocal_search.acceptation_type.Dominance#dominance(Lproblem/definition/State;Lproblem/definition/State;)Z*R
+
+__unknown_file (6
+4
+	dominance'local_search.acceptation_type.Dominance*B
+
+__unknown_file (&
+$
+solutionproblem.definition.State*H
+
+__unknown_file (,
+*
+stateCandidateproblem.definition.State2?dominance(Lproblem/definition/State;Lproblem/definition/State;)q
+o
+
+Š Š(;
+%6boolean"	__compare*
+
+Š4 Š(6
+==*
+
+Š Š(3
+
+%5boolean*
+
+Š7 Š(;2*
+5*ø
+5
+‡ ‡(om
+
+‡ ‡(!	
+%0int"java.util.List#size()I*4
+
+__unknown_file (
+
+listjava.util.List2size()n
+l
+
+‡ ‡(!
+%1boolean"	__compare*
+
+‡ ‡(
+<*
+
+‡ ‡(
+""*
+
+‡ ‡(!
+	
+%0int*
+4
+1*%
+1
+	 ("
+
+ (
+"":8
+
+… …(0*
+stateCandidateproblem.definition.State:$
+
+…1 …(A
+listjava.util.ListB1/
+-local_search.acceptation_type.AcceptMulticaseX

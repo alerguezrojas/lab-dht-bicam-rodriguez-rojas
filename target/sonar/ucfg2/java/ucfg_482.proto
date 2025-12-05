@@ -1,9 +1,9 @@
 
-hlocal_search.acceptation_type.AcceptMulticase#DominanceRank(Lproblem/definition/State;Ljava/util/List;)It
-jC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/acceptation_type/AcceptMulticase.java` `("5*Ã	
-4c c(ì
+klocal_search.acceptation_type.AcceptMulticase#DominanceCounter(Lproblem/definition/State;Ljava/util/List;)It
+jC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/acceptation_type/AcceptMulticase.javaq q("5*Ã	
+4t t(ì
 ê
-c c(
+t t(
 %2problem.definition.State"
 __arrayGet*4
 
@@ -14,76 +14,76 @@ __arrayGet*4
 __unknown_file (
 ""v
 t
-c c( $
+t t( $
 solutionproblem.definition.State"__id*<
 
 __unknown_file ( 
 
 %2problem.definition.Statedb
-d d(&-
+u u(&-
 %3'local_search.acceptation_type.Dominance"'local_search.acceptation_type.Dominanceì
 ê
-d d((
+u u((
 %4"1local_search.acceptation_type.Dominance#<init>()V*K
 
 __unknown_file (/
 -
 %3'local_search.acceptation_type.Dominanceñ
 ì
-d d()4
+u u()4
 	dominance'local_search.acceptation_type.Dominance"__id*K
 
 __unknown_file (/
 -
 %3'local_search.acceptation_type.Dominance©¶
-e e(3
+v v(3
 %5boolean"hlocal_search.acceptation_type.Dominance#dominance(Lproblem/definition/State;Lproblem/definition/State;)Z*R
 
 __unknown_file (6
 4
-	dominance'local_search.acceptation_type.Dominance*B
-
-__unknown_file (&
-$
-solutionproblem.definition.State*H
+	dominance'local_search.acceptation_type.Dominance*H
 
 __unknown_file (,
 *
-stateCandidateproblem.definition.State2?dominance(Lproblem/definition/State;Lproblem/definition/State;)i
+stateCandidateproblem.definition.State*B
+
+__unknown_file (&
+$
+solutionproblem.definition.State2?dominance(Lproblem/definition/State;Lproblem/definition/State;)i
 g
-e e(;
+v v(;
 %6boolean"	__compare*
-e4 e(6
+v4 v(6
 ==*
-e e(3
+v v(3
 
 %5boolean*
-e7 e(;2*
+v7 v(;2*
 5*Ï
-5b b(mk
-b b(!	
+5s s(mk
+s s(!	
 %0int"java.util.List#size()I*4
 
 __unknown_file (
 
 listjava.util.List2size()f
 d
-b b(!
+s s(!
 %1boolean"	__compare*
-b b(
+s s(
 <*
-b b(
+s s(
 ""*
-b b(!
+s s(!
 	
 %0int*
 4
 1*!
-1j	 j("
-j j(
+1y	 y("
+y y(
 "":6
-` `(0*
+q q(3*
 stateCandidateproblem.definition.State:"
-`1 `(A
+q4 q(D
 listjava.util.ListB1/
 -local_search.acceptation_type.AcceptMulticaseX

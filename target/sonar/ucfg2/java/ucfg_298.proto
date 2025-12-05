@@ -1,15 +1,81 @@
 
-5local_search.candidate_type.RandomCandidate#<init>()V
-__unknown_file ("startingBlock*ý
-startingBlockp
-hC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/candidate_type/RandomCandidate.java (ï
-ì
-p
-hC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/candidate_type/RandomCandidate.java (
-%0"5local_search.candidate_type.SearchCandidate#<init>()V*;
- (/-
-+local_search.candidate_type.RandomCandidate"‡
-p
-hC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/candidate_type/RandomCandidate.java (
-implicit returnB/-
-+local_search.candidate_type.RandomCandidate
+clocal_search.candidate_type.RandomCandidate#stateSearch(Ljava/util/List;)Lproblem/definition/State;r
+hC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/candidate_type/RandomCandidate.java ("startingBlock*š
+startingBlock (7•
+’
+ (
+
+%5"
+__annotate*2
+
+__unknown_file (
+java.lang.Override*@
+
+__unknown_file ($
+"
+listNeighborhoodjava.util.Listb
+`
+& (6"
+listNeighborhoodjava.util.List"__annotation*"
+
+__unknown_file (
+
+%5*
+1*›
+1 (d
+b
+ (
+%0double"java.lang.Math#random()D*.
+
+__unknown_file ("
+java.lang.Mathyw
++ (B	
+%1int"java.util.List#size()I*@
+
+__unknown_file ($
+"
+listNeighborhoodjava.util.List2size()b
+`
++ (F	
+%2int"__calculate*
+C (D
+-*
++ (B
+	
+%1int*
+E (F2o
+m
+ (G
+%3double"__calculate*
+  (!
+**
+ (
+
+%0double*
+" (G
+	
+%2intŸ
+œ
+ (1
+%4problem.definition.State"
+__arrayGet*@
+
+__unknown_file ($
+"
+listNeighborhoodjava.util.List*"
+
+__unknown_file (
+""{
+y
+ (2)
+stateAleatoryproblem.definition.State"__id*<
+
+__unknown_file ( 
+
+%4problem.definition.State"7
+ (+
+)
+stateAleatoryproblem.definition.State:.
+ (6"
+listNeighborhoodjava.util.ListB/-
++local_search.candidate_type.RandomCandidateH

@@ -1,15 +1,13 @@
 
-qmetaheuristics.generators.MultiCaseSimulatedAnnealing#getTypeGenerator()Lmetaheuristics/generators/GeneratorType;|
-rC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiCaseSimulatedAnnealing.java* *()"1*ù
-1+	 +(¬
-©
-+	 +(-
-%0'metaheuristics.generators.GeneratorType"__id*h
+Cmetaheuristics.generators.MultiCaseSimulatedAnnealing#simpleTest()I|
+rC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiCaseSimulatedAnnealing.java% %("1*‰
+1& &(!f
+d
+& &(,.
+%0(local_search.acceptation_type.AcceptType"__id*"
 
-__unknown_file (L*J7
-5metaheuristics.generators.MultiCaseSimulatedAnnealing"
-typeGenerator";
-+ +(/
--
-%0'metaheuristics.generators.GeneratorTypeB97
-5metaheuristics.generators.MultiCaseSimulatedAnnealingH
+__unknown_file (
+"""
+' '(
+""B97
+5metaheuristics.generators.MultiCaseSimulatedAnnealingHX
