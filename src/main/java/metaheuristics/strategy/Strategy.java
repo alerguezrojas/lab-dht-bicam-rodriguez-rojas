@@ -38,6 +38,7 @@ public class Strategy {
 	private int countMax;
 	public Generator generator;
 	public double threshold;
+	private State initialState;
 
 	public ArrayList<State> listStates; //lista de todos los estados generados en cada iteracion
 	public ArrayList<State> listBest; //lista de la mejor solucion en cada iteracion
@@ -81,7 +82,7 @@ public class Strategy {
 		this.countMax = countmaxIterations; // max cantidad de iteraciones
 		//generar estado inicial de la estrategia
 		Generator randomInitial = new RandomSearch();
-		State initialState = randomInitial.generate(operatornumber);
+		initialState = randomInitial.generate(operatornumber);
 		problem.Evaluate(initialState); //evaluar ese estado
 		initialState.setTypeGenerator(generatorType);
 		getProblem().setState(initialState);

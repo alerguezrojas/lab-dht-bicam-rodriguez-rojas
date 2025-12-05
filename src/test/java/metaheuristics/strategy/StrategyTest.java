@@ -3,8 +3,6 @@ package metaheuristics.strategy;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyInt;
-import static org.mockito.ArgumentMatchers.anyList;
-import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.atLeastOnce;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.mockStatic;
@@ -19,22 +17,21 @@ import java.util.TreeMap;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.MockedStatic;
-
-import metaheuristics.generators.MultiGenerator;
-import org.mockito.MockedStatic;
-import factory_method.FactoryGenerator;
-import factory_method.FactoryLoader;
 import org.mockito.MockedConstruction;
-import local_search.candidate_type.SearchCandidate;
+import org.mockito.MockedStatic;
+import org.mockito.Mockito;
+
+import factory_method.FactoryGenerator;
 import local_search.complement.StopExecute;
 import local_search.complement.UpdateParameter;
+import metaheuristics.generators.DistributionEstimationAlgorithm;
+import metaheuristics.generators.EvolutionStrategies;
 import metaheuristics.generators.Generator;
 import metaheuristics.generators.GeneratorType;
 import metaheuristics.generators.GeneticAlgorithm;
+import metaheuristics.generators.MultiGenerator;
 import metaheuristics.generators.ParticleSwarmOptimization;
-import metaheuristics.generators.EvolutionStrategies;
-import metaheuristics.generators.DistributionEstimationAlgorithm;
+import metaheuristics.generators.RandomSearch;
 import problem.definition.Operator;
 import problem.definition.Problem;
 import problem.definition.State;
@@ -92,6 +89,38 @@ class StrategyTest {
     }
 
     @Test
+    void testUpdate() throws Exception {
+        Strategy s = Strategy.getStrategy();
+        
+        // Mock FactoryGenerator
+        try (MockedConstruction<FactoryGenerator> mockedFactory = Mockito.mockConstruction(FactoryGenerator.class,
+                (mock, context) -> {
+                    when(mock.createGenerator(any())).thenReturn(mock(Generator.class));
+                })) {
+            
+            // Case 1: GeneticAlgorithm
+            GeneticAlgorithm.countRef = 10;
+            s.update(9);
+            verify(mockedFactory.constructed().get(0)).createGenerator(GeneratorType.GeneticAlgorithm);
+            
+            // Case 2: EvolutionStrategies
+            EvolutionStrategies.countRef = 20;
+            s.update(19);
+            verify(mockedFactory.constructed().get(1)).createGenerator(GeneratorType.EvolutionStrategies);
+            
+            // Case 3: DistributionEstimationAlgorithm
+            DistributionEstimationAlgorithm.countRef = 30;
+            s.update(29);
+            verify(mockedFactory.constructed().get(2)).createGenerator(GeneratorType.DistributionEstimationAlgorithm);
+            
+            // Case 4: ParticleSwarmOptimization
+            ParticleSwarmOptimization.countRef = 40;
+            s.update(39);
+            verify(mockedFactory.constructed().get(3)).createGenerator(GeneratorType.ParticleSwarmOptimization);
+        }
+    }
+
+    @Test
     void testExecuteStrategy() throws Exception {
         Strategy s = Strategy.getStrategy();
         
@@ -118,23 +147,15 @@ class StrategyTest {
         evaluation.add(10.0);
         when(stateMock.getEvaluation()).thenReturn(evaluation);
         when(stateMock.getCopy()).thenReturn(stateMock);
+        when(stateMock.clone()).thenReturn(stateMock);
+        when(stateMock.Comparator(any(State.class))).thenReturn(false);
         
         // Setup Generator
         when(generatorMock.generate(anyInt())).thenReturn(stateMock);
+        when(generatorMock.getReference()).thenReturn(stateMock);
         when(generatorMock.getReferenceList()).thenReturn(new ArrayList<>());
         when(generatorMock.getType()).thenReturn(GeneratorType.GeneticAlgorithm);
         
-        // Setup State
-        // ArrayList<Double> evaluation = new ArrayList<>(); // Already declared above? No, I see it in previous read_file.
-        // Let's check previous read_file.
-        // Yes, it was there.
-        
-        // I will just remove the duplicate lines.
-        
-        when(stateMock.getCopy()).thenReturn(stateMock);
-        when(stateMock.clone()).thenReturn(stateMock);
-        when(stateMock.Comparator(any(State.class))).thenReturn(false);
-
         // Inject dependencies via reflection
         setField(s, "problem", problemMock);
         setField(s, "stopexecute", stopExecuteMock);
@@ -143,24 +164,34 @@ class StrategyTest {
         // Initialize mapGenerators
         s.mapGenerators = new TreeMap<>();
 
-        // Setup StopExecute
-        when(stopExecuteMock.stopIterations(anyInt(), anyInt())).thenReturn(false).thenReturn(true);
+        // Setup StopExecute and UpdateParameter to simulate loop
+        when(stopExecuteMock.stopIterations(anyInt(), anyInt())).thenReturn(false, false, false, true);
         
-        // Mock FactoryGenerator construction
-        try (MockedConstruction<FactoryGenerator> mockedFactory = org.mockito.Mockito.mockConstruction(FactoryGenerator.class,
+        // Mock FactoryGenerator construction and RandomSearch
+        try (MockedConstruction<FactoryGenerator> mockedFactory = Mockito.mockConstruction(FactoryGenerator.class,
                 (mock, context) -> {
                     when(mock.createGenerator(any())).thenReturn(generatorMock);
-                })) {
+                });
+             MockedConstruction<RandomSearch> mockedRandomSearch = Mockito.mockConstruction(RandomSearch.class,
+                (mock, context) -> {
+                    when(mock.generate(anyInt())).thenReturn(stateMock);
+                });
+             MockedStatic<UpdateParameter> mockedUpdateParam = mockStatic(UpdateParameter.class)) {
+            
+            mockedUpdateParam.when(() -> UpdateParameter.updateParameter(anyInt())).thenAnswer(i -> (Integer)i.getArguments()[0] + 1);
             
             // Execute
-            s.calculateTime = false;
+            s.calculateTime = true;
             s.saveListStates = true;
             s.saveListBestStates = true;
             s.saveFreneParetoMonoObjetivo = true;
             
-            s.executeStrategy(10, 5, 1, GeneratorType.GeneticAlgorithm);
+            s.executeStrategy(10, 2, 1, GeneratorType.GeneticAlgorithm);
             
             // Verify
+            assertEquals(1, mockedRandomSearch.constructed().size(), "RandomSearch should be constructed once");
+            // assertEquals(1, mockedFactory.constructed().size(), "FactoryGenerator should be constructed once");
+            
             verify(stopExecuteMock, atLeastOnce()).stopIterations(anyInt(), anyInt());
             verify(generatorMock, atLeastOnce()).setInitialReference(any());
             verify(generatorMock, atLeastOnce()).generate(anyInt());
@@ -218,13 +249,16 @@ class StrategyTest {
         s.mapGenerators = new TreeMap<>();
 
         // Setup StopExecute
-        // Run loop twice to trigger "change detected" logic if we set countIterationsChange small enough
         when(stopExecuteMock.stopIterations(anyInt(), anyInt())).thenReturn(false, false, true);
         
-        // Mock FactoryGenerator construction
-        try (MockedConstruction<FactoryGenerator> mockedFactory = org.mockito.Mockito.mockConstruction(FactoryGenerator.class,
+        // Mock FactoryGenerator construction and RandomSearch
+        try (MockedConstruction<FactoryGenerator> mockedFactory = Mockito.mockConstruction(FactoryGenerator.class,
                 (mock, context) -> {
                     when(mock.createGenerator(any())).thenReturn(multiGeneratorMock);
+                });
+             MockedConstruction<RandomSearch> mockedRandomSearch = Mockito.mockConstruction(RandomSearch.class,
+                (mock, context) -> {
+                    when(mock.generate(anyInt())).thenReturn(stateMock);
                 });
              MockedStatic<MultiGenerator> mockedStaticMultiGenerator = mockStatic(MultiGenerator.class)) {
             
@@ -249,6 +283,7 @@ class StrategyTest {
             s.executeStrategy(10, 1, 1, GeneratorType.MultiGenerator);
             
             // Verify
+            assertEquals(1, mockedRandomSearch.constructed().size(), "RandomSearch should be constructed once");
             verify(stopExecuteMock, atLeastOnce()).stopIterations(anyInt(), anyInt());
             verify(multiGeneratorMock, atLeastOnce()).setInitialReference(any());
             verify(multiGeneratorMock, atLeastOnce()).generate(anyInt());

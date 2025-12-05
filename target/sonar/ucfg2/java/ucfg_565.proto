@@ -1,18 +1,18 @@
 
 Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;g
-]C:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/strategy/Strategy.javaE E(#"3*€
-2G G(VT
-G G(&
+]C:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/strategy/Strategy.javaF F(#"3*€
+2H H(VT
+H H(&
 %2 metaheuristics.strategy.Strategy" metaheuristics.strategy.Strategy…
 ‚
-G G(
+H H(
 %3"*metaheuristics.strategy.Strategy#<init>()V*D
 
 __unknown_file ((
 &
 %2 metaheuristics.strategy.Strategy‹
 ˆ
-G G(0"
+H H(0"
  metaheuristics.strategy.Strategy"
 
 strategy"__id*D
@@ -21,9 +21,9 @@ Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy
 &
 %2 metaheuristics.strategy.Strategy*
 1*«
-3F F(‹
+3G G(‹
 ˆ
-F F(&
+G G(&
 %0 metaheuristics.strategy.Strategy"__id*N
 
 __unknown_file (2*0"
@@ -31,27 +31,27 @@ Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy
 
 strategy…
 ‚
-F F(
+G G(
 %1boolean"	__compare*
-F F(
+G G(
 ==*4
-F F((
+G G((
 &
 %0 metaheuristics.strategy.Strategy*
-F F(
+G G(
 ""*
 2
 1*Ñ
-1I	 I(‹
+1J	 J(‹
 ˆ
-I	 I(&
+J	 J(&
 %4 metaheuristics.strategy.Strategy"__id*N
 
 __unknown_file (2*0"
  metaheuristics.strategy.Strategy"
 
 strategy"4
-I I((
+J J((
 &
 %4 metaheuristics.strategy.StrategyB$""
  metaheuristics.strategy.StrategyH
