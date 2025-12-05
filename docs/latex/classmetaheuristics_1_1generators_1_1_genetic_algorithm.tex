@@ -1,0 +1,505 @@
+\doxysection{Referencia de la clase metaheuristics.\+generators.\+Genetic\+Algorithm}
+\hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm}{}\label{classmetaheuristics_1_1generators_1_1_genetic_algorithm}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+
+
+Diagrama de herencia de metaheuristics.\+generators.\+Genetic\+Algorithm
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmetaheuristics_1_1generators_1_1_genetic_algorithm__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboración de metaheuristics.\+generators.\+Genetic\+Algorithm\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_genetic_algorithm__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a2d0bf12c8bedefdebb47612a503a6e6b}{Genetic\+Algorithm}} ()
+\item 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_afa69278cc4f87d309326773aeab7b6da}{generate}} (Integer operatornumber)  throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception 
+\item 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a7bff79adbecc5510d4294dbc617eb8b4}{get\+Reference}} ()
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a27f40e887e3304027c08bf705f99c4a0}{set\+State\+Ref}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} state\+Ref)
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_af30dbd658c8be56deb62ebc45c2ef894}{set\+Initial\+Reference}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} state\+Initial\+Ref)
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_af007f7a227b465ed513b5b07f8c54b6b}{update\+Reference}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} state\+Candidate, Integer count\+Iterations\+Current)  throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception 
+\item 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_af808ab394faa3451363c64047b0b3319}{get\+List\+State}} ()
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a4e72574da9810ab5815c94c3499b8671}{set\+List\+State}} (List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a48f94ad3fa5a3a89331f9a7b49400886}{list\+State}})
+\item 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a02c8f9088f27ab03a6a6ec65348750b5}{get\+List\+State\+Ref}} ()
+\item 
+\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a1d25e15228ac6416a75c73c21c0ea036}{get\+Generator\+Type}} ()
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a0aa86194072af7818974867b703e06a4}{set\+Generator\+Type}} (\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aa5911146e16570dbe2c6792922f64c4a}{generator\+Type}})
+\item 
+\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a773b3a5d6e96968a738a0e5232317cf8}{get\+Type}} ()
+\item 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a1e7b57b017ec0fc5e4a77efac27020eb}{get\+Reference\+List}} ()
+\item 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_ae834128268192dd5fa3af2533601b4e8}{get\+Son\+List}} ()
+\item 
+boolean \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aad3ab352411fa0a6d2ac878b4e422348}{award\+Update\+REF}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} state\+Candidate)
+\item 
+float \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a56efbafbfd2c341a047e2110e652b561}{get\+Weight}} ()
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_ab7d68ca3a4c1510c1ef697857c525233}{set\+Weight}} (float \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a4d164cdf156c6ce65f593fb42af2dc82}{weight}})
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a12d345be0bac7bc8b1098589604ad6f8}{get\+List\+Count\+Better\+Gender}} ()
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aafdeff3304b265033eb1b43c0e1d333a}{get\+List\+Count\+Gender}} ()
+\item 
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aafb70e875527d683740485f89bbcc51e}{get\+Trace}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{enumevolutionary__algorithms_1_1complement_1_1_mutation_type}{Mutation\+Type}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aedae90ea5f95f6be370f046bb8b31748}{mutation\+Type}}
+\item 
+static \mbox{\hyperlink{enumevolutionary__algorithms_1_1complement_1_1_crossover_type}{Crossover\+Type}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a45784a2535a3bf9e0682505c5bfb9570}{crossover\+Type}}
+\item 
+static \mbox{\hyperlink{enumevolutionary__algorithms_1_1complement_1_1_replace_type}{Replace\+Type}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aa966781c8b8190eadab80a5553d0e529}{replace\+Type}}
+\item 
+static \mbox{\hyperlink{enumevolutionary__algorithms_1_1complement_1_1_selection_type}{Selection\+Type}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aceb4611e17990b54d011f94359d54e10}{selection\+Type}}
+\item 
+static double \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a98016337527c5a6f3b3e5d61aa80b1de}{PC}}
+\item 
+static double \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_ae8946c1f257de16c07a73c77ad8224a5}{PM}}
+\item 
+static int \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a0f9e6dbafe6cc5c7ade5ba106d1e1626}{count\+Ref}} = 0
+\item 
+static int \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a364caf6433c5b6a4db40aae1919d0c32}{truncation}}
+\item 
+static int \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a161f060b98c41e9071c3b9cff53d2980}{count\+Gender}} = 0
+\item 
+static int \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a57d0cd9075a5169aee2edb912f2b5eac}{count\+Better\+Gender}} = 0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a6aead58a018010568e7f453f97021b8d}{state\+Reference\+GA}}
+\item 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a48f94ad3fa5a3a89331f9a7b49400886}{list\+State}} = new Array\+List$<$\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}$>$()
+\item 
+\mbox{\hyperlink{interfacefactory__interface_1_1_i_f_factory_father_selection}{IFFactory\+Father\+Selection}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_ae4eb9fe7eb65161cf1b41ca978451a32}{iffatherselection}}
+\item 
+\mbox{\hyperlink{interfacefactory__interface_1_1_i_f_factory_crossover}{IFFactory\+Crossover}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_acf49e3525fe7ef722a96b3c82990bfe3}{iffactorycrossover}}
+\item 
+\mbox{\hyperlink{interfacefactory__interface_1_1_i_f_factory_mutation}{IFFactory\+Mutation}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a73cf0d217617644f072c286df7a5a097}{iffactorymutation}}
+\item 
+\mbox{\hyperlink{interfacefactory__interface_1_1_i_f_factory_replace}{IFFactory\+Replace}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aa7b956e32f2aedea280263be61bc5efb}{iffreplace}}
+\item 
+\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aa5911146e16570dbe2c6792922f64c4a}{generator\+Type}}
+\item 
+float \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a4d164cdf156c6ce65f593fb42af2dc82}{weight}}
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a09ddf8e09c4688520b26bb71fc413791}{list\+Count\+Better\+Gender}} = new int\mbox{[}10\mbox{]}
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a217c5558f699a1b27479e7277366861b}{list\+Count\+Gender}} = new int\mbox{[}10\mbox{]}
+\item 
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aca22b6729d609b6b9d2bf258994558ba}{list\+Trace}} = new float\mbox{[}1200000\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Otros miembros heredados}
+\doxysubsection*{Atributos públicos heredados de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{metaheuristics.\+generators.\+Generator}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a3c0145210385b6257c8fc20cac1f830a}{count\+Gender}}
+\item 
+int \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a43815f3944c514ba3156b0e68482befa}{count\+Better\+Gender}}
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a535a5753046bdda55fb6fee44c4b1f88}{list\+Count\+Better\+Gender}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_doc-constructors}
+\doxysubsection{Documentación de constructores y destructores}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a2d0bf12c8bedefdebb47612a503a6e6b}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!GeneticAlgorithm@{GeneticAlgorithm}}
+\index{GeneticAlgorithm@{GeneticAlgorithm}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{GeneticAlgorithm()}{GeneticAlgorithm()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a2d0bf12c8bedefdebb47612a503a6e6b} 
+metaheuristics.\+generators.\+Genetic\+Algorithm.\+Genetic\+Algorithm (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a2d0bf12c8bedefdebb47612a503a6e6b_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a2d0bf12c8bedefdebb47612a503a6e6b_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_doc-func-members}
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aad3ab352411fa0a6d2ac878b4e422348}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!awardUpdateREF@{awardUpdateREF}}
+\index{awardUpdateREF@{awardUpdateREF}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{awardUpdateREF()}{awardUpdateREF()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aad3ab352411fa0a6d2ac878b4e422348} 
+boolean metaheuristics.\+generators.\+Genetic\+Algorithm.\+award\+Update\+REF (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+Candidate}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a3513d3953ecc97683f38bcb662b74b9b}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_afa69278cc4f87d309326773aeab7b6da}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!generate@{generate}}
+\index{generate@{generate}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_afa69278cc4f87d309326773aeab7b6da} 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} metaheuristics.\+generators.\+Genetic\+Algorithm.\+generate (\begin{DoxyParamCaption}\item[{Integer}]{operatornumber}{}\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a06f6f7622b9ce32590eadbdf6bf962b5}{metaheuristics.\+generators.\+Generator}}.
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_genetic_algorithm_afa69278cc4f87d309326773aeab7b6da_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a1d25e15228ac6416a75c73c21c0ea036}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!getGeneratorType@{getGeneratorType}}
+\index{getGeneratorType@{getGeneratorType}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{getGeneratorType()}{getGeneratorType()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a1d25e15228ac6416a75c73c21c0ea036} 
+\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} metaheuristics.\+generators.\+Genetic\+Algorithm.\+get\+Generator\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a12d345be0bac7bc8b1098589604ad6f8}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!getListCountBetterGender@{getListCountBetterGender}}
+\index{getListCountBetterGender@{getListCountBetterGender}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{getListCountBetterGender()}{getListCountBetterGender()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a12d345be0bac7bc8b1098589604ad6f8} 
+int\mbox{[}$\,$\mbox{]} metaheuristics.\+generators.\+Genetic\+Algorithm.\+get\+List\+Count\+Better\+Gender (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_ac5bace71f51c16b611ede3ed53263473}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aafdeff3304b265033eb1b43c0e1d333a}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!getListCountGender@{getListCountGender}}
+\index{getListCountGender@{getListCountGender}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{getListCountGender()}{getListCountGender()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aafdeff3304b265033eb1b43c0e1d333a} 
+int\mbox{[}$\,$\mbox{]} metaheuristics.\+generators.\+Genetic\+Algorithm.\+get\+List\+Count\+Gender (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_ac5d6d45ee8017fb87d80aa952edfc34e}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_af808ab394faa3451363c64047b0b3319}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!getListState@{getListState}}
+\index{getListState@{getListState}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{getListState()}{getListState()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_af808ab394faa3451363c64047b0b3319} 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ metaheuristics.\+generators.\+Genetic\+Algorithm.\+get\+List\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_genetic_algorithm_af808ab394faa3451363c64047b0b3319_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a02c8f9088f27ab03a6a6ec65348750b5}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!getListStateRef@{getListStateRef}}
+\index{getListStateRef@{getListStateRef}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{getListStateRef()}{getListStateRef()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a02c8f9088f27ab03a6a6ec65348750b5} 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ metaheuristics.\+generators.\+Genetic\+Algorithm.\+get\+List\+State\+Ref (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a02c8f9088f27ab03a6a6ec65348750b5_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a02c8f9088f27ab03a6a6ec65348750b5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a7bff79adbecc5510d4294dbc617eb8b4}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!getReference@{getReference}}
+\index{getReference@{getReference}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{getReference()}{getReference()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a7bff79adbecc5510d4294dbc617eb8b4} 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} metaheuristics.\+generators.\+Genetic\+Algorithm.\+get\+Reference (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_aa56dd45a45776f6023b9f74179cc6384}{metaheuristics.\+generators.\+Generator}}.
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a7bff79adbecc5510d4294dbc617eb8b4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a1e7b57b017ec0fc5e4a77efac27020eb}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!getReferenceList@{getReferenceList}}
+\index{getReferenceList@{getReferenceList}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{getReferenceList()}{getReferenceList()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a1e7b57b017ec0fc5e4a77efac27020eb} 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ metaheuristics.\+generators.\+Genetic\+Algorithm.\+get\+Reference\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_ae168237b306de55fe4d6dfda75c7cd13}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_ae834128268192dd5fa3af2533601b4e8}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!getSonList@{getSonList}}
+\index{getSonList@{getSonList}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{getSonList()}{getSonList()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_ae834128268192dd5fa3af2533601b4e8} 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ metaheuristics.\+generators.\+Genetic\+Algorithm.\+get\+Son\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_aee09d724c1b3040e7a7ad0b64e341c96}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aafb70e875527d683740485f89bbcc51e}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!getTrace@{getTrace}}
+\index{getTrace@{getTrace}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{getTrace()}{getTrace()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aafb70e875527d683740485f89bbcc51e} 
+float\mbox{[}$\,$\mbox{]} metaheuristics.\+generators.\+Genetic\+Algorithm.\+get\+Trace (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a75d7f30dd2cb3f92475db8525ac7c6e7}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a773b3a5d6e96968a738a0e5232317cf8}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!getType@{getType}}
+\index{getType@{getType}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a773b3a5d6e96968a738a0e5232317cf8} 
+\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} metaheuristics.\+generators.\+Genetic\+Algorithm.\+get\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a5a123306b43c42d28cd1d6e17f8067a5}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a56efbafbfd2c341a047e2110e652b561}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!getWeight@{getWeight}}
+\index{getWeight@{getWeight}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{getWeight()}{getWeight()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a56efbafbfd2c341a047e2110e652b561} 
+float metaheuristics.\+generators.\+Genetic\+Algorithm.\+get\+Weight (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a64f2b824081c7af593bf9aa8eabf2c9e}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a0aa86194072af7818974867b703e06a4}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!setGeneratorType@{setGeneratorType}}
+\index{setGeneratorType@{setGeneratorType}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{setGeneratorType()}{setGeneratorType()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a0aa86194072af7818974867b703e06a4} 
+void metaheuristics.\+generators.\+Genetic\+Algorithm.\+set\+Generator\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}}}]{generator\+Type}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_af30dbd658c8be56deb62ebc45c2ef894}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!setInitialReference@{setInitialReference}}
+\index{setInitialReference@{setInitialReference}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{setInitialReference()}{setInitialReference()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_af30dbd658c8be56deb62ebc45c2ef894} 
+void metaheuristics.\+generators.\+Genetic\+Algorithm.\+set\+Initial\+Reference (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+Initial\+Ref}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_aa9f7c4c983705f843b8fcc81e4aa8ba4}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a4e72574da9810ab5815c94c3499b8671}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!setListState@{setListState}}
+\index{setListState@{setListState}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{setListState()}{setListState()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a4e72574da9810ab5815c94c3499b8671} 
+void metaheuristics.\+generators.\+Genetic\+Algorithm.\+set\+List\+State (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$}]{list\+State}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a27f40e887e3304027c08bf705f99c4a0}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!setStateRef@{setStateRef}}
+\index{setStateRef@{setStateRef}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{setStateRef()}{setStateRef()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a27f40e887e3304027c08bf705f99c4a0} 
+void metaheuristics.\+generators.\+Genetic\+Algorithm.\+set\+State\+Ref (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+Ref}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_ab7d68ca3a4c1510c1ef697857c525233}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!setWeight@{setWeight}}
+\index{setWeight@{setWeight}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{setWeight()}{setWeight()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_ab7d68ca3a4c1510c1ef697857c525233} 
+void metaheuristics.\+generators.\+Genetic\+Algorithm.\+set\+Weight (\begin{DoxyParamCaption}\item[{float}]{weight}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a8b3c66b57b4c739666989fbce667eb40}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_af007f7a227b465ed513b5b07f8c54b6b}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!updateReference@{updateReference}}
+\index{updateReference@{updateReference}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{updateReference()}{updateReference()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_af007f7a227b465ed513b5b07f8c54b6b} 
+void metaheuristics.\+generators.\+Genetic\+Algorithm.\+update\+Reference (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+Candidate}{, }\item[{Integer}]{count\+Iterations\+Current}{}\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_aa1c5878953f2111221b21cb9b1e6cc9f}{metaheuristics.\+generators.\+Generator}}.
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_genetic_algorithm_af007f7a227b465ed513b5b07f8c54b6b_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_doc-variable-members}
+\doxysubsection{Documentación de datos miembro}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a57d0cd9075a5169aee2edb912f2b5eac}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!countBetterGender@{countBetterGender}}
+\index{countBetterGender@{countBetterGender}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{countBetterGender}{countBetterGender}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a57d0cd9075a5169aee2edb912f2b5eac} 
+int metaheuristics.\+generators.\+Genetic\+Algorithm.\+count\+Better\+Gender = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a161f060b98c41e9071c3b9cff53d2980}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!countGender@{countGender}}
+\index{countGender@{countGender}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{countGender}{countGender}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a161f060b98c41e9071c3b9cff53d2980} 
+int metaheuristics.\+generators.\+Genetic\+Algorithm.\+count\+Gender = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a0f9e6dbafe6cc5c7ade5ba106d1e1626}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!countRef@{countRef}}
+\index{countRef@{countRef}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{countRef}{countRef}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a0f9e6dbafe6cc5c7ade5ba106d1e1626} 
+int metaheuristics.\+generators.\+Genetic\+Algorithm.\+count\+Ref = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a45784a2535a3bf9e0682505c5bfb9570}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!crossoverType@{crossoverType}}
+\index{crossoverType@{crossoverType}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{crossoverType}{crossoverType}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a45784a2535a3bf9e0682505c5bfb9570} 
+\mbox{\hyperlink{enumevolutionary__algorithms_1_1complement_1_1_crossover_type}{Crossover\+Type}} metaheuristics.\+generators.\+Genetic\+Algorithm.\+crossover\+Type\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aa5911146e16570dbe2c6792922f64c4a}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!generatorType@{generatorType}}
+\index{generatorType@{generatorType}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{generatorType}{generatorType}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aa5911146e16570dbe2c6792922f64c4a} 
+\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} metaheuristics.\+generators.\+Genetic\+Algorithm.\+generator\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_acf49e3525fe7ef722a96b3c82990bfe3}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!iffactorycrossover@{iffactorycrossover}}
+\index{iffactorycrossover@{iffactorycrossover}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{iffactorycrossover}{iffactorycrossover}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_acf49e3525fe7ef722a96b3c82990bfe3} 
+\mbox{\hyperlink{interfacefactory__interface_1_1_i_f_factory_crossover}{IFFactory\+Crossover}} metaheuristics.\+generators.\+Genetic\+Algorithm.\+iffactorycrossover\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a73cf0d217617644f072c286df7a5a097}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!iffactorymutation@{iffactorymutation}}
+\index{iffactorymutation@{iffactorymutation}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{iffactorymutation}{iffactorymutation}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a73cf0d217617644f072c286df7a5a097} 
+\mbox{\hyperlink{interfacefactory__interface_1_1_i_f_factory_mutation}{IFFactory\+Mutation}} metaheuristics.\+generators.\+Genetic\+Algorithm.\+iffactorymutation\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_ae4eb9fe7eb65161cf1b41ca978451a32}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!iffatherselection@{iffatherselection}}
+\index{iffatherselection@{iffatherselection}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{iffatherselection}{iffatherselection}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_ae4eb9fe7eb65161cf1b41ca978451a32} 
+\mbox{\hyperlink{interfacefactory__interface_1_1_i_f_factory_father_selection}{IFFactory\+Father\+Selection}} metaheuristics.\+generators.\+Genetic\+Algorithm.\+iffatherselection\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aa7b956e32f2aedea280263be61bc5efb}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!iffreplace@{iffreplace}}
+\index{iffreplace@{iffreplace}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{iffreplace}{iffreplace}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aa7b956e32f2aedea280263be61bc5efb} 
+\mbox{\hyperlink{interfacefactory__interface_1_1_i_f_factory_replace}{IFFactory\+Replace}} metaheuristics.\+generators.\+Genetic\+Algorithm.\+iffreplace\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a09ddf8e09c4688520b26bb71fc413791}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!listCountBetterGender@{listCountBetterGender}}
+\index{listCountBetterGender@{listCountBetterGender}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{listCountBetterGender}{listCountBetterGender}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a09ddf8e09c4688520b26bb71fc413791} 
+int \mbox{[}$\,$\mbox{]} metaheuristics.\+generators.\+Genetic\+Algorithm.\+list\+Count\+Better\+Gender = new int\mbox{[}10\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a217c5558f699a1b27479e7277366861b}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!listCountGender@{listCountGender}}
+\index{listCountGender@{listCountGender}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{listCountGender}{listCountGender}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a217c5558f699a1b27479e7277366861b} 
+int \mbox{[}$\,$\mbox{]} metaheuristics.\+generators.\+Genetic\+Algorithm.\+list\+Count\+Gender = new int\mbox{[}10\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a48f94ad3fa5a3a89331f9a7b49400886}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!listState@{listState}}
+\index{listState@{listState}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{listState}{listState}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a48f94ad3fa5a3a89331f9a7b49400886} 
+List$<$\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}$>$ metaheuristics.\+generators.\+Genetic\+Algorithm.\+list\+State = new Array\+List$<$\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aca22b6729d609b6b9d2bf258994558ba}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!listTrace@{listTrace}}
+\index{listTrace@{listTrace}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{listTrace}{listTrace}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aca22b6729d609b6b9d2bf258994558ba} 
+float \mbox{[}$\,$\mbox{]} metaheuristics.\+generators.\+Genetic\+Algorithm.\+list\+Trace = new float\mbox{[}1200000\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aedae90ea5f95f6be370f046bb8b31748}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!mutationType@{mutationType}}
+\index{mutationType@{mutationType}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{mutationType}{mutationType}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aedae90ea5f95f6be370f046bb8b31748} 
+\mbox{\hyperlink{enumevolutionary__algorithms_1_1complement_1_1_mutation_type}{Mutation\+Type}} metaheuristics.\+generators.\+Genetic\+Algorithm.\+mutation\+Type\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a98016337527c5a6f3b3e5d61aa80b1de}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!PC@{PC}}
+\index{PC@{PC}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{PC}{PC}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a98016337527c5a6f3b3e5d61aa80b1de} 
+double metaheuristics.\+generators.\+Genetic\+Algorithm.\+PC\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_ae8946c1f257de16c07a73c77ad8224a5}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!PM@{PM}}
+\index{PM@{PM}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{PM}{PM}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_ae8946c1f257de16c07a73c77ad8224a5} 
+double metaheuristics.\+generators.\+Genetic\+Algorithm.\+PM\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aa966781c8b8190eadab80a5553d0e529}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!replaceType@{replaceType}}
+\index{replaceType@{replaceType}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{replaceType}{replaceType}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aa966781c8b8190eadab80a5553d0e529} 
+\mbox{\hyperlink{enumevolutionary__algorithms_1_1complement_1_1_replace_type}{Replace\+Type}} metaheuristics.\+generators.\+Genetic\+Algorithm.\+replace\+Type\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aceb4611e17990b54d011f94359d54e10}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!selectionType@{selectionType}}
+\index{selectionType@{selectionType}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{selectionType}{selectionType}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_aceb4611e17990b54d011f94359d54e10} 
+\mbox{\hyperlink{enumevolutionary__algorithms_1_1complement_1_1_selection_type}{Selection\+Type}} metaheuristics.\+generators.\+Genetic\+Algorithm.\+selection\+Type\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a6aead58a018010568e7f453f97021b8d}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!stateReferenceGA@{stateReferenceGA}}
+\index{stateReferenceGA@{stateReferenceGA}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{stateReferenceGA}{stateReferenceGA}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a6aead58a018010568e7f453f97021b8d} 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} metaheuristics.\+generators.\+Genetic\+Algorithm.\+state\+Reference\+GA\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a364caf6433c5b6a4db40aae1919d0c32}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!truncation@{truncation}}
+\index{truncation@{truncation}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{truncation}{truncation}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a364caf6433c5b6a4db40aae1919d0c32} 
+int metaheuristics.\+generators.\+Genetic\+Algorithm.\+truncation\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a4d164cdf156c6ce65f593fb42af2dc82}\index{metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}!weight@{weight}}
+\index{weight@{weight}!metaheuristics.generators.GeneticAlgorithm@{metaheuristics.generators.GeneticAlgorithm}}
+\doxysubsubsection{\texorpdfstring{weight}{weight}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_genetic_algorithm_a4d164cdf156c6ce65f593fb42af2dc82} 
+float metaheuristics.\+generators.\+Genetic\+Algorithm.\+weight\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/metaheuristics/generators/\mbox{\hyperlink{_genetic_algorithm_8java}{Genetic\+Algorithm.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,626 @@
+\doxysection{Referencia de la clase metaheuristics.\+generators.\+Multi\+Generator}
+\hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator}{}\label{classmetaheuristics_1_1generators_1_1_multi_generator}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+
+
+Diagrama de herencia de metaheuristics.\+generators.\+Multi\+Generator
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmetaheuristics_1_1generators_1_1_multi_generator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboración de metaheuristics.\+generators.\+Multi\+Generator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmetaheuristics_1_1generators_1_1_multi_generator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_ab6c56d1cbb08a212d5adfd2d5e5664f9}{set\+Generatortype}} (\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} generatortype)
+\item 
+\mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_afce4bffeb9ed07ce3da9aef9af2f3c00}{Multi\+Generator}} ()
+\item 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_a2309ca3d3de82961bbc61d3fb6c893fc}{generate}} (Integer operatornumber)  throws Illegal\+Argument\+Exception, Security\+Exception,    Class\+Not\+Found\+Exception, Instantiation\+Exception,    Illegal\+Access\+Exception, Invocation\+Target\+Exception,    No\+Such\+Method\+Exception 
+\item 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_a7364417b4356561cfb7656fb9818cc5d}{get\+Reference}} ()
+\item 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_a7e6b4c2a4a6ef326d191a2da93f97d67}{get\+Reference\+List}} ()
+\item 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_aa68b7cbbd70430924ebf582279ceeb8a}{get\+Son\+List}} ()
+\item 
+\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_a3c29946186ba7afb379169ed3636004f}{get\+Type}} ()
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_abfbc81c6f1a46e6a23e1a7f3f550e9f6}{set\+Initial\+Reference}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} state\+Initial\+Ref)
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_a4064a096c203ec6b538929af5bd8d0d7}{update\+Reference}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} state\+Candidate, Integer count\+Iterations\+Current)  throws Illegal\+Argument\+Exception,    Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception,    Illegal\+Access\+Exception, Invocation\+Target\+Exception,    No\+Such\+Method\+Exception 
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_a06c51732247b401b0369fe6133d35793}{update\+Weight}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} state\+Candidate)
+\item 
+boolean \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_afef1d16b774c4e86135d2fc38d0dbed7}{search\+State}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} state\+Candidate)
+\item 
+float \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_a625ff0e6cad7bfefeaeb4ec8a28a71d3}{get\+Weight}} ()
+\item 
+\mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{Generator}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_a2c2b5c6dc19e52e87a1a0b2151fa9768}{roulette}} ()
+\item 
+boolean \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_a71676324d28a05ab7745967c6edf2218}{award\+Update\+REF}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} state\+Candidate)
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_ab3417c34a00f079f67eed485ceeb8f1f}{update\+Award\+SC}} ()
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_a9bca4abee16ba939d1aca80ac395a130}{update\+Award\+Imp}} ()
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_abb314d2dd0d9a0d283574add841ba6b8}{set\+Weight}} (float weight)
+\item 
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_aa4acb9d61c196f56a0bde7d0a624f3fb}{get\+Trace}} ()
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_a72bc1f2921d0ed9193933d964ba217b9}{tournament}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} state\+Candidate, Integer count\+Iterations\+Current)  throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception 
+\item 
+Object \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_a80edefbfc3233000dca1ad30cb95f8fc}{clone}} ()
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_ae534f33ba876de6d56d22f3889b8b666}{get\+List\+Count\+Better\+Gender}} ()
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_af7574c27e8798f241a9f683721a8a6b5}{get\+List\+Count\+Gender}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Métodos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_adecd56fa947c1c392c1739d1bf18b6fd}{destroy\+Multi\+Generator}} ()
+\item 
+static void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_a2a25df332708a340f5115fe7ea253053}{initialize\+List\+Generator}} ()  throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception 
+\item 
+static void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_ada4833a51b39d1372e2c050448bbab6c}{initialize\+Generators}} ()  throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception 
+\item 
+static void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_a21767d34c374a65dd29196459273ff34}{create\+Instance\+Generators\+BPP}} ()
+\item 
+static \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{Generator}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_ab331905baebb433340e05d19e174340b}{get\+List\+Generators}} ()
+\item 
+static void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_ada47e6ed9cecafd1895b88ca0b2bd827}{set\+List\+Generators}} (\mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{Generator}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_a818b282d2b179e572c762faa6fe0c988}{list\+Generators}})
+\item 
+static \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{Generator}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_abd14738b7100c980010e1385f622a038}{get\+Active\+Generator}} ()
+\item 
+static void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_ae3af87d1077fa62c7aea5f0c318afe5d}{set\+Active\+Generator}} (\mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{Generator}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_ae77321419a2cb94552858f37113ad351}{active\+Generator}})
+\item 
+static void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_a9322b6d25b0f36d5e0f7acc5ff05b26f}{set\+List\+Generated\+PP}} (List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_a65b99d327cd92bebf04d0dcea28c8a0f}{list\+Generated\+PP}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_a65b99d327cd92bebf04d0dcea28c8a0f}{list\+Generated\+PP}} = new Array\+List$<$\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}$>$ ()
+\item 
+static \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{Generator}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_ae77321419a2cb94552858f37113ad351}{active\+Generator}}
+\item 
+static List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_a0dea22ee5bdd49b26c7e8350ca35d1b7}{list\+State\+Reference}} = new Array\+List$<$\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}$>$()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Métodos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static Array\+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_a4beb2b351ab1dbc9c482118d79e48234}{get\+List\+Generated\+PP}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_a7a7a810680cce131f24cd40157a173f5}{Generatortype}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos estáticos privados}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{Generator}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_multi_generator_a818b282d2b179e572c762faa6fe0c988}{list\+Generators}} = new \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{Generator}}\mbox{[}Generator\+Type.\+values().length\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Otros miembros heredados}
+\doxysubsection*{Atributos públicos heredados de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{metaheuristics.\+generators.\+Generator}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a3c0145210385b6257c8fc20cac1f830a}{count\+Gender}}
+\item 
+int \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a43815f3944c514ba3156b0e68482befa}{count\+Better\+Gender}}
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a535a5753046bdda55fb6fee44c4b1f88}{list\+Count\+Better\+Gender}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_doc-constructors}
+\doxysubsection{Documentación de constructores y destructores}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_afce4bffeb9ed07ce3da9aef9af2f3c00}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!MultiGenerator@{MultiGenerator}}
+\index{MultiGenerator@{MultiGenerator}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{MultiGenerator()}{MultiGenerator()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_afce4bffeb9ed07ce3da9aef9af2f3c00} 
+metaheuristics.\+generators.\+Multi\+Generator.\+Multi\+Generator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_multi_generator_afce4bffeb9ed07ce3da9aef9af2f3c00_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_doc-func-members}
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_a71676324d28a05ab7745967c6edf2218}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!awardUpdateREF@{awardUpdateREF}}
+\index{awardUpdateREF@{awardUpdateREF}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{awardUpdateREF()}{awardUpdateREF()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_a71676324d28a05ab7745967c6edf2218} 
+boolean metaheuristics.\+generators.\+Multi\+Generator.\+award\+Update\+REF (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+Candidate}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a3513d3953ecc97683f38bcb662b74b9b}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_a80edefbfc3233000dca1ad30cb95f8fc}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!clone@{clone}}
+\index{clone@{clone}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_a80edefbfc3233000dca1ad30cb95f8fc} 
+Object metaheuristics.\+generators.\+Multi\+Generator.\+clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_multi_generator_a80edefbfc3233000dca1ad30cb95f8fc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_a21767d34c374a65dd29196459273ff34}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!createInstanceGeneratorsBPP@{createInstanceGeneratorsBPP}}
+\index{createInstanceGeneratorsBPP@{createInstanceGeneratorsBPP}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{createInstanceGeneratorsBPP()}{createInstanceGeneratorsBPP()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_a21767d34c374a65dd29196459273ff34} 
+void metaheuristics.\+generators.\+Multi\+Generator.\+create\+Instance\+Generators\+BPP (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_multi_generator_a21767d34c374a65dd29196459273ff34_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_multi_generator_a21767d34c374a65dd29196459273ff34_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_adecd56fa947c1c392c1739d1bf18b6fd}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!destroyMultiGenerator@{destroyMultiGenerator}}
+\index{destroyMultiGenerator@{destroyMultiGenerator}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{destroyMultiGenerator()}{destroyMultiGenerator()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_adecd56fa947c1c392c1739d1bf18b6fd} 
+void metaheuristics.\+generators.\+Multi\+Generator.\+destroy\+Multi\+Generator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_a2309ca3d3de82961bbc61d3fb6c893fc}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!generate@{generate}}
+\index{generate@{generate}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_a2309ca3d3de82961bbc61d3fb6c893fc} 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} metaheuristics.\+generators.\+Multi\+Generator.\+generate (\begin{DoxyParamCaption}\item[{Integer}]{operatornumber}{}\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception, Security\+Exception,    Class\+Not\+Found\+Exception, Instantiation\+Exception,    Illegal\+Access\+Exception, Invocation\+Target\+Exception,    No\+Such\+Method\+Exception}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a06f6f7622b9ce32590eadbdf6bf962b5}{metaheuristics.\+generators.\+Generator}}.
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_multi_generator_a2309ca3d3de82961bbc61d3fb6c893fc_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_multi_generator_a2309ca3d3de82961bbc61d3fb6c893fc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_abd14738b7100c980010e1385f622a038}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!getActiveGenerator@{getActiveGenerator}}
+\index{getActiveGenerator@{getActiveGenerator}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{getActiveGenerator()}{getActiveGenerator()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_abd14738b7100c980010e1385f622a038} 
+\mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{Generator}} metaheuristics.\+generators.\+Multi\+Generator.\+get\+Active\+Generator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_ae534f33ba876de6d56d22f3889b8b666}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!getListCountBetterGender@{getListCountBetterGender}}
+\index{getListCountBetterGender@{getListCountBetterGender}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{getListCountBetterGender()}{getListCountBetterGender()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_ae534f33ba876de6d56d22f3889b8b666} 
+int\mbox{[}$\,$\mbox{]} metaheuristics.\+generators.\+Multi\+Generator.\+get\+List\+Count\+Better\+Gender (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_ac5bace71f51c16b611ede3ed53263473}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_af7574c27e8798f241a9f683721a8a6b5}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!getListCountGender@{getListCountGender}}
+\index{getListCountGender@{getListCountGender}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{getListCountGender()}{getListCountGender()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_af7574c27e8798f241a9f683721a8a6b5} 
+int\mbox{[}$\,$\mbox{]} metaheuristics.\+generators.\+Multi\+Generator.\+get\+List\+Count\+Gender (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_ac5d6d45ee8017fb87d80aa952edfc34e}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_a4beb2b351ab1dbc9c482118d79e48234}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!getListGeneratedPP@{getListGeneratedPP}}
+\index{getListGeneratedPP@{getListGeneratedPP}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{getListGeneratedPP()}{getListGeneratedPP()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_a4beb2b351ab1dbc9c482118d79e48234} 
+Array\+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ metaheuristics.\+generators.\+Multi\+Generator.\+get\+List\+Generated\+PP (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_ab331905baebb433340e05d19e174340b}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!getListGenerators@{getListGenerators}}
+\index{getListGenerators@{getListGenerators}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{getListGenerators()}{getListGenerators()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_ab331905baebb433340e05d19e174340b} 
+\mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{Generator}}\mbox{[}$\,$\mbox{]} metaheuristics.\+generators.\+Multi\+Generator.\+get\+List\+Generators (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_multi_generator_ab331905baebb433340e05d19e174340b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_a7364417b4356561cfb7656fb9818cc5d}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!getReference@{getReference}}
+\index{getReference@{getReference}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{getReference()}{getReference()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_a7364417b4356561cfb7656fb9818cc5d} 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} metaheuristics.\+generators.\+Multi\+Generator.\+get\+Reference (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_aa56dd45a45776f6023b9f74179cc6384}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_a7e6b4c2a4a6ef326d191a2da93f97d67}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!getReferenceList@{getReferenceList}}
+\index{getReferenceList@{getReferenceList}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{getReferenceList()}{getReferenceList()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_a7e6b4c2a4a6ef326d191a2da93f97d67} 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ metaheuristics.\+generators.\+Multi\+Generator.\+get\+Reference\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_ae168237b306de55fe4d6dfda75c7cd13}{metaheuristics.\+generators.\+Generator}}.
+
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_multi_generator_a7e6b4c2a4a6ef326d191a2da93f97d67_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_aa68b7cbbd70430924ebf582279ceeb8a}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!getSonList@{getSonList}}
+\index{getSonList@{getSonList}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{getSonList()}{getSonList()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_aa68b7cbbd70430924ebf582279ceeb8a} 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ metaheuristics.\+generators.\+Multi\+Generator.\+get\+Son\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_aee09d724c1b3040e7a7ad0b64e341c96}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_aa4acb9d61c196f56a0bde7d0a624f3fb}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!getTrace@{getTrace}}
+\index{getTrace@{getTrace}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{getTrace()}{getTrace()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_aa4acb9d61c196f56a0bde7d0a624f3fb} 
+float\mbox{[}$\,$\mbox{]} metaheuristics.\+generators.\+Multi\+Generator.\+get\+Trace (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a75d7f30dd2cb3f92475db8525ac7c6e7}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_a3c29946186ba7afb379169ed3636004f}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!getType@{getType}}
+\index{getType@{getType}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_a3c29946186ba7afb379169ed3636004f} 
+\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} metaheuristics.\+generators.\+Multi\+Generator.\+get\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a5a123306b43c42d28cd1d6e17f8067a5}{metaheuristics.\+generators.\+Generator}}.
+
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_multi_generator_a3c29946186ba7afb379169ed3636004f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_a625ff0e6cad7bfefeaeb4ec8a28a71d3}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!getWeight@{getWeight}}
+\index{getWeight@{getWeight}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{getWeight()}{getWeight()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_a625ff0e6cad7bfefeaeb4ec8a28a71d3} 
+float metaheuristics.\+generators.\+Multi\+Generator.\+get\+Weight (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a64f2b824081c7af593bf9aa8eabf2c9e}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_ada4833a51b39d1372e2c050448bbab6c}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!initializeGenerators@{initializeGenerators}}
+\index{initializeGenerators@{initializeGenerators}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{initializeGenerators()}{initializeGenerators()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_ada4833a51b39d1372e2c050448bbab6c} 
+void metaheuristics.\+generators.\+Multi\+Generator.\+initialize\+Generators (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_multi_generator_ada4833a51b39d1372e2c050448bbab6c_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_multi_generator_ada4833a51b39d1372e2c050448bbab6c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_a2a25df332708a340f5115fe7ea253053}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!initializeListGenerator@{initializeListGenerator}}
+\index{initializeListGenerator@{initializeListGenerator}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{initializeListGenerator()}{initializeListGenerator()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_a2a25df332708a340f5115fe7ea253053} 
+void metaheuristics.\+generators.\+Multi\+Generator.\+initialize\+List\+Generator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_multi_generator_a2a25df332708a340f5115fe7ea253053_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_a2c2b5c6dc19e52e87a1a0b2151fa9768}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!roulette@{roulette}}
+\index{roulette@{roulette}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{roulette()}{roulette()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_a2c2b5c6dc19e52e87a1a0b2151fa9768} 
+\mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{Generator}} metaheuristics.\+generators.\+Multi\+Generator.\+roulette (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_multi_generator_a2c2b5c6dc19e52e87a1a0b2151fa9768_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_multi_generator_a2c2b5c6dc19e52e87a1a0b2151fa9768_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_afef1d16b774c4e86135d2fc38d0dbed7}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!searchState@{searchState}}
+\index{searchState@{searchState}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{searchState()}{searchState()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_afef1d16b774c4e86135d2fc38d0dbed7} 
+boolean metaheuristics.\+generators.\+Multi\+Generator.\+search\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+Candidate}{}\end{DoxyParamCaption})}
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_multi_generator_afef1d16b774c4e86135d2fc38d0dbed7_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_multi_generator_afef1d16b774c4e86135d2fc38d0dbed7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_ae3af87d1077fa62c7aea5f0c318afe5d}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!setActiveGenerator@{setActiveGenerator}}
+\index{setActiveGenerator@{setActiveGenerator}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{setActiveGenerator()}{setActiveGenerator()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_ae3af87d1077fa62c7aea5f0c318afe5d} 
+void metaheuristics.\+generators.\+Multi\+Generator.\+set\+Active\+Generator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{Generator}}}]{active\+Generator}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_ab6c56d1cbb08a212d5adfd2d5e5664f9}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!setGeneratortype@{setGeneratortype}}
+\index{setGeneratortype@{setGeneratortype}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{setGeneratortype()}{setGeneratortype()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_ab6c56d1cbb08a212d5adfd2d5e5664f9} 
+void metaheuristics.\+generators.\+Multi\+Generator.\+set\+Generatortype (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}}}]{generatortype}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_abfbc81c6f1a46e6a23e1a7f3f550e9f6}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!setInitialReference@{setInitialReference}}
+\index{setInitialReference@{setInitialReference}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{setInitialReference()}{setInitialReference()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_abfbc81c6f1a46e6a23e1a7f3f550e9f6} 
+void metaheuristics.\+generators.\+Multi\+Generator.\+set\+Initial\+Reference (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+Initial\+Ref}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_aa9f7c4c983705f843b8fcc81e4aa8ba4}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_a9322b6d25b0f36d5e0f7acc5ff05b26f}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!setListGeneratedPP@{setListGeneratedPP}}
+\index{setListGeneratedPP@{setListGeneratedPP}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{setListGeneratedPP()}{setListGeneratedPP()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_a9322b6d25b0f36d5e0f7acc5ff05b26f} 
+void metaheuristics.\+generators.\+Multi\+Generator.\+set\+List\+Generated\+PP (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$}]{list\+Generated\+PP}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_ada47e6ed9cecafd1895b88ca0b2bd827}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!setListGenerators@{setListGenerators}}
+\index{setListGenerators@{setListGenerators}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{setListGenerators()}{setListGenerators()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_ada47e6ed9cecafd1895b88ca0b2bd827} 
+void metaheuristics.\+generators.\+Multi\+Generator.\+set\+List\+Generators (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{Generator}}\mbox{[}$\,$\mbox{]}}]{list\+Generators}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_abb314d2dd0d9a0d283574add841ba6b8}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!setWeight@{setWeight}}
+\index{setWeight@{setWeight}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{setWeight()}{setWeight()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_abb314d2dd0d9a0d283574add841ba6b8} 
+void metaheuristics.\+generators.\+Multi\+Generator.\+set\+Weight (\begin{DoxyParamCaption}\item[{float}]{weight}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a8b3c66b57b4c739666989fbce667eb40}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_a72bc1f2921d0ed9193933d964ba217b9}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!tournament@{tournament}}
+\index{tournament@{tournament}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{tournament()}{tournament()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_a72bc1f2921d0ed9193933d964ba217b9} 
+void metaheuristics.\+generators.\+Multi\+Generator.\+tournament (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+Candidate}{, }\item[{Integer}]{count\+Iterations\+Current}{}\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception}
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_multi_generator_a72bc1f2921d0ed9193933d964ba217b9_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_multi_generator_a72bc1f2921d0ed9193933d964ba217b9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_a9bca4abee16ba939d1aca80ac395a130}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!updateAwardImp@{updateAwardImp}}
+\index{updateAwardImp@{updateAwardImp}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{updateAwardImp()}{updateAwardImp()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_a9bca4abee16ba939d1aca80ac395a130} 
+void metaheuristics.\+generators.\+Multi\+Generator.\+update\+Award\+Imp (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_multi_generator_a9bca4abee16ba939d1aca80ac395a130_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_multi_generator_a9bca4abee16ba939d1aca80ac395a130_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_ab3417c34a00f079f67eed485ceeb8f1f}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!updateAwardSC@{updateAwardSC}}
+\index{updateAwardSC@{updateAwardSC}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{updateAwardSC()}{updateAwardSC()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_ab3417c34a00f079f67eed485ceeb8f1f} 
+void metaheuristics.\+generators.\+Multi\+Generator.\+update\+Award\+SC (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_multi_generator_ab3417c34a00f079f67eed485ceeb8f1f_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_multi_generator_ab3417c34a00f079f67eed485ceeb8f1f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_a4064a096c203ec6b538929af5bd8d0d7}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!updateReference@{updateReference}}
+\index{updateReference@{updateReference}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{updateReference()}{updateReference()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_a4064a096c203ec6b538929af5bd8d0d7} 
+void metaheuristics.\+generators.\+Multi\+Generator.\+update\+Reference (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+Candidate}{, }\item[{Integer}]{count\+Iterations\+Current}{}\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception,    Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception,    Illegal\+Access\+Exception, Invocation\+Target\+Exception,    No\+Such\+Method\+Exception}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_aa1c5878953f2111221b21cb9b1e6cc9f}{metaheuristics.\+generators.\+Generator}}.
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_multi_generator_a4064a096c203ec6b538929af5bd8d0d7_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_multi_generator_a4064a096c203ec6b538929af5bd8d0d7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_a06c51732247b401b0369fe6133d35793}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!updateWeight@{updateWeight}}
+\index{updateWeight@{updateWeight}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{updateWeight()}{updateWeight()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_a06c51732247b401b0369fe6133d35793} 
+void metaheuristics.\+generators.\+Multi\+Generator.\+update\+Weight (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+Candidate}{}\end{DoxyParamCaption})}
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_multi_generator_a06c51732247b401b0369fe6133d35793_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_multi_generator_a06c51732247b401b0369fe6133d35793_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_doc-variable-members}
+\doxysubsection{Documentación de datos miembro}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_ae77321419a2cb94552858f37113ad351}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!activeGenerator@{activeGenerator}}
+\index{activeGenerator@{activeGenerator}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{activeGenerator}{activeGenerator}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_ae77321419a2cb94552858f37113ad351} 
+\mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{Generator}} metaheuristics.\+generators.\+Multi\+Generator.\+active\+Generator\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_a7a7a810680cce131f24cd40157a173f5}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!Generatortype@{Generatortype}}
+\index{Generatortype@{Generatortype}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{Generatortype}{Generatortype}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_a7a7a810680cce131f24cd40157a173f5} 
+\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} metaheuristics.\+generators.\+Multi\+Generator.\+Generatortype\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_a65b99d327cd92bebf04d0dcea28c8a0f}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!listGeneratedPP@{listGeneratedPP}}
+\index{listGeneratedPP@{listGeneratedPP}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{listGeneratedPP}{listGeneratedPP}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_a65b99d327cd92bebf04d0dcea28c8a0f} 
+List$<$\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}$>$ metaheuristics.\+generators.\+Multi\+Generator.\+list\+Generated\+PP = new Array\+List$<$\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}$>$ ()\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_a818b282d2b179e572c762faa6fe0c988}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!listGenerators@{listGenerators}}
+\index{listGenerators@{listGenerators}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{listGenerators}{listGenerators}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_a818b282d2b179e572c762faa6fe0c988} 
+\mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{Generator}} \mbox{[}$\,$\mbox{]} metaheuristics.\+generators.\+Multi\+Generator.\+list\+Generators = new \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{Generator}}\mbox{[}Generator\+Type.\+values().length\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_multi_generator_a0dea22ee5bdd49b26c7e8350ca35d1b7}\index{metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}!listStateReference@{listStateReference}}
+\index{listStateReference@{listStateReference}!metaheuristics.generators.MultiGenerator@{metaheuristics.generators.MultiGenerator}}
+\doxysubsubsection{\texorpdfstring{listStateReference}{listStateReference}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_multi_generator_a0dea22ee5bdd49b26c7e8350ca35d1b7} 
+List$<$\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}$>$ metaheuristics.\+generators.\+Multi\+Generator.\+list\+State\+Reference = new Array\+List$<$\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}$>$()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/metaheuristics/generators/\mbox{\hyperlink{_multi_generator_8java}{Multi\+Generator.\+java}}\end{DoxyCompactItemize}

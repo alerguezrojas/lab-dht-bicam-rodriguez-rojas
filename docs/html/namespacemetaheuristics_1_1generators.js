@@ -1,0 +1,28 @@
+var namespacemetaheuristics_1_1generators =
+[
+    [ "DistributionEstimationAlgorithm", "classmetaheuristics_1_1generators_1_1_distribution_estimation_algorithm.html", "classmetaheuristics_1_1generators_1_1_distribution_estimation_algorithm" ],
+    [ "EvolutionStrategies", "classmetaheuristics_1_1generators_1_1_evolution_strategies.html", "classmetaheuristics_1_1generators_1_1_evolution_strategies" ],
+    [ "Generator", "classmetaheuristics_1_1generators_1_1_generator.html", "classmetaheuristics_1_1generators_1_1_generator" ],
+    [ "GeneratorType", "enummetaheuristics_1_1generators_1_1_generator_type.html", "enummetaheuristics_1_1generators_1_1_generator_type" ],
+    [ "GeneticAlgorithm", "classmetaheuristics_1_1generators_1_1_genetic_algorithm.html", "classmetaheuristics_1_1generators_1_1_genetic_algorithm" ],
+    [ "HillClimbing", "classmetaheuristics_1_1generators_1_1_hill_climbing.html", "classmetaheuristics_1_1generators_1_1_hill_climbing" ],
+    [ "HillClimbingRestart", "classmetaheuristics_1_1generators_1_1_hill_climbing_restart.html", "classmetaheuristics_1_1generators_1_1_hill_climbing_restart" ],
+    [ "InstanceDE", "classmetaheuristics_1_1generators_1_1_instance_d_e.html", "classmetaheuristics_1_1generators_1_1_instance_d_e" ],
+    [ "InstanceEE", "classmetaheuristics_1_1generators_1_1_instance_e_e.html", "classmetaheuristics_1_1generators_1_1_instance_e_e" ],
+    [ "InstanceGA", "classmetaheuristics_1_1generators_1_1_instance_g_a.html", "classmetaheuristics_1_1generators_1_1_instance_g_a" ],
+    [ "LimitRoulette", "classmetaheuristics_1_1generators_1_1_limit_roulette.html", "classmetaheuristics_1_1generators_1_1_limit_roulette" ],
+    [ "LimitThreshold", "classmetaheuristics_1_1generators_1_1_limit_threshold.html", "classmetaheuristics_1_1generators_1_1_limit_threshold" ],
+    [ "MultiCaseSimulatedAnnealing", "classmetaheuristics_1_1generators_1_1_multi_case_simulated_annealing.html", "classmetaheuristics_1_1generators_1_1_multi_case_simulated_annealing" ],
+    [ "MultiGenerator", "classmetaheuristics_1_1generators_1_1_multi_generator.html", "classmetaheuristics_1_1generators_1_1_multi_generator" ],
+    [ "MultiobjectiveHillClimbingDistance", "classmetaheuristics_1_1generators_1_1_multiobjective_hill_climbing_distance.html", "classmetaheuristics_1_1generators_1_1_multiobjective_hill_climbing_distance" ],
+    [ "MultiobjectiveHillClimbingRestart", "classmetaheuristics_1_1generators_1_1_multiobjective_hill_climbing_restart.html", "classmetaheuristics_1_1generators_1_1_multiobjective_hill_climbing_restart" ],
+    [ "MultiobjectiveStochasticHillClimbing", "classmetaheuristics_1_1generators_1_1_multiobjective_stochastic_hill_climbing.html", "classmetaheuristics_1_1generators_1_1_multiobjective_stochastic_hill_climbing" ],
+    [ "MultiobjectiveTabuSearch", "classmetaheuristics_1_1generators_1_1_multiobjective_tabu_search.html", "classmetaheuristics_1_1generators_1_1_multiobjective_tabu_search" ],
+    [ "MyTestClass", "classmetaheuristics_1_1generators_1_1_my_test_class.html", "classmetaheuristics_1_1generators_1_1_my_test_class" ],
+    [ "Particle", "classmetaheuristics_1_1generators_1_1_particle.html", "classmetaheuristics_1_1generators_1_1_particle" ],
+    [ "ParticleSwarmOptimization", "classmetaheuristics_1_1generators_1_1_particle_swarm_optimization.html", "classmetaheuristics_1_1generators_1_1_particle_swarm_optimization" ],
+    [ "RandomSearch", "classmetaheuristics_1_1generators_1_1_random_search.html", "classmetaheuristics_1_1generators_1_1_random_search" ],
+    [ "SimpleTestClass", "classmetaheuristics_1_1generators_1_1_simple_test_class.html", "classmetaheuristics_1_1generators_1_1_simple_test_class" ],
+    [ "SimulatedAnnealing", "classmetaheuristics_1_1generators_1_1_simulated_annealing.html", "classmetaheuristics_1_1generators_1_1_simulated_annealing" ],
+    [ "TabuSearch", "classmetaheuristics_1_1generators_1_1_tabu_search.html", "classmetaheuristics_1_1generators_1_1_tabu_search" ]
+];

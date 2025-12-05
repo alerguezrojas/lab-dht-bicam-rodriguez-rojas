@@ -1,0 +1,23 @@
+<map id="metaheuristics.generators.MultiGenerator.getType" name="metaheuristics.generators.MultiGenerator.getType">
+<area shape="rect" id="Node000001" title=" " alt="" coords="985,97,1160,140"/>
+<area shape="rect" id="Node000002" href="$classmetaheuristics_1_1generators_1_1_multi_generator.html#ada4833a51b39d1372e2c050448bbab6c" title=" " alt="" coords="222,5,443,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="983,95,936,84,809,61,680,47,558,37,443,32,444,27,558,32,681,41,810,55,937,79,984,90"/>
+<area shape="rect" id="Node000004" href="$classmetaheuristics_1_1generators_1_1_multi_generator.html#a72bc1f2921d0ed9193933d964ba217b9" title=" " alt="" coords="498,80,673,123"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="969,108,937,105,798,101,674,102,674,96,798,96,937,100,969,103"/>
+<area shape="rect" id="Node000006" href="$classmetaheuristics_1_1generators_1_1_multi_generator.html#a9bca4abee16ba939d1aca80ac395a130" title=" " alt="" coords="728,139,937,181"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="970,139,938,145,937,139,969,134"/>
+<area shape="rect" id="Node000008" href="$classmetaheuristics_1_1generators_1_1_multi_generator.html#ab3417c34a00f079f67eed485ceeb8f1f" title=" " alt="" coords="730,229,935,272"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="1020,150,874,231,872,227,1018,145"/>
+<area shape="rect" id="Node000003" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,47,174,89"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="207,51,175,56,174,51,206,46"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="626,67,611,61,586,59,562,61,548,65,542,71,544,79,539,80,537,70,545,61,561,55,586,53,612,56,628,62"/>
+<area shape="rect" id="Node000005" href="$classmetaheuristics_1_1generators_1_1_multi_generator.html#a4064a096c203ec6b538929af5bd8d0d7" title=" " alt="" coords="228,80,437,123"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="482,104,437,104,437,99,482,99"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="212,87,174,82,175,77,212,82"/>
+<area shape="poly" id="edge8_Node000006_Node000006" title=" " alt="" coords="871,126,857,120,832,117,810,119,796,124,790,130,792,138,787,139,785,129,793,120,809,114,833,112,858,114,873,121"/>
+<area shape="rect" id="Node000007" href="$classmetaheuristics_1_1generators_1_1_multi_generator.html#a06c51732247b401b0369fe6133d35793" title=" " alt="" coords="491,147,680,189"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="713,167,681,168,681,162,713,161"/>
+<area shape="poly" id="edge10_Node000007_Node000005" title=" " alt="" coords="486,145,415,126,417,121,488,140"/>
+<area shape="poly" id="edge13_Node000008_Node000007" title=" " alt="" coords="751,226,651,192,653,187,753,221"/>
+<area shape="poly" id="edge12_Node000008_Node000008" title=" " alt="" coords="871,216,857,210,832,208,810,210,796,215,790,221,792,228,787,229,785,219,793,210,809,205,833,203,858,205,873,211"/>
+</map>

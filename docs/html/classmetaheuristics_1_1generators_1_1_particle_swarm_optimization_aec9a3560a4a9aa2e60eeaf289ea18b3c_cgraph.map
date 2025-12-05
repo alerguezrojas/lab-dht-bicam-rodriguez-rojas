@@ -1,0 +1,13 @@
+<map id="metaheuristics.generators.ParticleSwarmOptimization.gBestInicial" name="metaheuristics.generators.ParticleSwarmOptimization.gBestInicial">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,97,223,156"/>
+<area shape="rect" id="Node000002" href="$classproblem_1_1definition_1_1_state.html#a226ea6fab8e7060cf131edfdb245a6fa" title=" " alt="" coords="279,5,460,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,94,270,58,287,51,288,56,272,62,183,99"/>
+<area shape="rect" id="Node000003" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a67b5a933a8ccd493360fa06e0a448bb4" title=" " alt="" coords="289,72,450,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="223,110,274,103,274,108,224,115"/>
+<area shape="rect" id="Node000004" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#aeb1c308c04db42c2977e51ffc779862d" title=" " alt="" coords="289,139,450,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="224,138,274,145,274,150,223,144"/>
+<area shape="rect" id="Node000006" href="$classproblem_1_1definition_1_1_problem.html#ad6f38df755179e22ffe487ba4a5c8021" title=" " alt="" coords="271,205,468,248"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="183,154,272,191,288,197,287,202,270,196,181,159"/>
+<area shape="rect" id="Node000005" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a4f635be1df3d594c3e8f2d111cc5c995" title=" " alt="" coords="516,139,676,181"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="450,157,500,157,500,163,450,163"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="metaheuristics.generators.Particle.UpdateVelocity" name="metaheuristics.generators.Particle.UpdateVelocity">
+<area shape="rect" id="Node000001" title="Actualiza el vector de velocidad de la partícula." alt="" coords="5,5,181,48"/>
+<area shape="rect" id="Node000002" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#aeb1c308c04db42c2977e51ffc779862d" title=" " alt="" coords="229,5,389,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,24,213,24,213,29,181,29"/>
+<area shape="rect" id="Node000003" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a4f635be1df3d594c3e8f2d111cc5c995" title=" " alt="" coords="437,5,597,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="389,24,421,24,421,29,389,29"/>
+</map>

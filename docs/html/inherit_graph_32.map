@@ -1,0 +1,11 @@
+<map id="Gráfico de jerarquía de clases" name="Gráfico de jerarquía de clases">
+<area shape="rect" id="Node000000" href="$classlocal__search_1_1candidate__type_1_1_search_candidate.html" title=" " alt="" coords="5,105,163,148"/>
+<area shape="rect" id="Node000001" href="$classlocal__search_1_1candidate__type_1_1_greater_candidate.html" title=" " alt="" coords="231,5,390,48"/>
+<area shape="poly" id="edge31_Node000000_Node000001" title=" " alt="" coords="135,95,210,58,239,46,241,51,212,62,137,100"/>
+<area shape="rect" id="Node000002" href="$classlocal__search_1_1candidate__type_1_1_not_dominated_candidate.html" title=" " alt="" coords="211,72,411,115"/>
+<area shape="poly" id="edge32_Node000000_Node000002" title=" " alt="" coords="178,110,210,105,211,111,178,116"/>
+<area shape="rect" id="Node000003" href="$classlocal__search_1_1candidate__type_1_1_random_candidate.html" title=" " alt="" coords="228,139,394,181"/>
+<area shape="poly" id="edge33_Node000000_Node000003" title=" " alt="" coords="178,138,228,145,227,150,178,143"/>
+<area shape="rect" id="Node000004" href="$classlocal__search_1_1candidate__type_1_1_smaller_candidate.html" title=" " alt="" coords="231,205,391,248"/>
+<area shape="poly" id="edge34_Node000000_Node000004" title=" " alt="" coords="137,154,212,191,241,202,239,207,210,196,135,158"/>
+</map>

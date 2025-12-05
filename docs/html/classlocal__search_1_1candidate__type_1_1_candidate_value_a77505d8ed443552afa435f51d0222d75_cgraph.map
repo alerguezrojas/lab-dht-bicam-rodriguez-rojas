@@ -1,0 +1,18 @@
+<map id="local_search.candidate_type.CandidateValue.stateCandidate" name="local_search.candidate_type.CandidateValue.stateCandidate">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,172,246,215"/>
+<area shape="poly" id="edge7_Node000001_Node000001" title=" " alt="" coords="72,172,69,162,79,153,97,147,126,145,156,148,175,154,173,159,155,153,125,151,98,153,81,157,75,163,77,171"/>
+<area shape="rect" id="Node000002" href="$classproblem_1_1definition_1_1_operator.html#a5b6625843e73d938f9235985bf966b34" title=" " alt="" coords="294,5,532,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,170,208,114,249,84,292,58,305,52,307,57,295,62,252,88,212,118,150,174"/>
+<area shape="rect" id="Node000003" href="$classproblem_1_1definition_1_1_problem.html#a4cd649edb8862f21af171491cb9b9386" title=" " alt="" coords="314,72,512,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,169,293,124,315,117,316,122,295,129,179,174"/>
+<area shape="rect" id="Node000004" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a67b5a933a8ccd493360fa06e0a448bb4" title=" " alt="" coords="333,139,493,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="246,177,317,168,318,174,247,182"/>
+<area shape="rect" id="Node000005" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#aeb1c308c04db42c2977e51ffc779862d" title=" " alt="" coords="333,205,493,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="247,205,318,213,317,218,246,210"/>
+<area shape="rect" id="Node000007" href="$classlocal__search_1_1candidate__type_1_1_candidate_value.html#ab02441a95d5abedea3a2c82bf9c5d457" title=" " alt="" coords="304,272,522,331"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="181,213,295,258,312,264,310,269,293,262,179,218"/>
+<area shape="rect" id="Node000008" href="$classlocal__search_1_1candidate__type_1_1_search_candidate.html#a0f10adc1526fb08f54427c50734f8abf" title=" " alt="" coords="297,355,528,397"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="147,213,209,276,250,311,295,340,306,346,303,351,292,345,247,315,205,280,143,217"/>
+<area shape="rect" id="Node000006" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a4f635be1df3d594c3e8f2d111cc5c995" title=" " alt="" coords="580,205,740,248"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="494,224,564,224,564,229,494,229"/>
+</map>

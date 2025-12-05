@@ -1,0 +1,65 @@
+<map id="problem.definition.Problem.getTypeProblem" name="problem.definition.Problem.getTypeProblem">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1145,679,1342,721"/>
+<area shape="rect" id="Node000002" href="$classlocal__search_1_1acceptation__type_1_1_dominance.html#a0dafd58be8365a22956f59417841a2d8" title=" " alt="" coords="868,180,1058,223"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1239,663,1233,576,1225,520,1213,461,1194,400,1169,340,1136,285,1095,237,1078,224,1058,215,1060,210,1080,219,1098,233,1141,282,1174,338,1199,398,1218,459,1230,519,1238,575,1245,663"/>
+<area shape="rect" id="Node000010" href="$classproblem_1_1extension_1_1_factores_ponderados.html#a935d426d08fbf69af9ea5fe2196692bc" title=" " alt="" coords="871,247,1055,289"/>
+<area shape="poly" id="edge14_Node000001_Node000010" title=" " alt="" coords="1237,664,1227,588,1204,490,1185,439,1161,389,1132,343,1095,303,1076,290,1055,281,1057,276,1079,286,1098,299,1136,340,1166,387,1190,437,1209,489,1232,587,1242,663"/>
+<area shape="rect" id="Node000011" href="$classproblem_1_1extension_1_1_multi_objetivo_puro.html#aaac35db96f3f750b6f5349243c39d122" title=" " alt="" coords="859,313,1067,356"/>
+<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="1234,664,1220,600,1194,520,1176,479,1154,439,1127,402,1095,370,1066,353,1069,348,1098,366,1131,399,1158,436,1181,477,1199,518,1225,599,1239,663"/>
+<area shape="rect" id="Node000012" href="$classmetaheuristics_1_1generators_1_1_particle_swarm_optimization.html#aec9a3560a4a9aa2e60eeaf289ea18b3c" title=" " alt="" coords="854,380,1072,439"/>
+<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="1228,665,1209,617,1181,560,1143,502,1120,476,1095,453,1070,437,1073,433,1098,449,1124,472,1147,499,1185,557,1214,614,1233,663"/>
+<area shape="rect" id="Node000015" href="$classmetaheuristics_1_1generators_1_1_distribution_estimation_algorithm.html#a8087863b6c6a820fdf5c9b6aa3bc151c" title=" " alt="" coords="850,463,1076,521"/>
+<area shape="poly" id="edge20_Node000001_Node000015" title=" " alt="" coords="1218,667,1167,600,1133,565,1095,536,1075,524,1077,520,1098,531,1137,561,1171,596,1222,664"/>
+<area shape="rect" id="Node000016" href="$classmetaheuristics_1_1generators_1_1_evolution_strategies.html#a9afcff28506375af6f405467990e7b36" title=" " alt="" coords="855,545,1071,588"/>
+<area shape="poly" id="edge21_Node000001_Node000016" title=" " alt="" coords="1203,671,1154,635,1096,602,1066,591,1068,586,1098,598,1156,631,1206,667"/>
+<area shape="rect" id="Node000017" href="$classmetaheuristics_1_1generators_1_1_genetic_algorithm.html#a7bff79adbecc5510d4294dbc617eb8b4" title=" " alt="" coords="861,612,1065,655"/>
+<area shape="poly" id="edge22_Node000001_Node000017" title=" " alt="" coords="1135,677,1055,658,1056,653,1136,672"/>
+<area shape="rect" id="Node000018" href="$classmetaheuristics_1_1generators_1_1_hill_climbing.html#af34d8991af9ef04c0d8355040e5f2611" title=" " alt="" coords="875,679,1051,721"/>
+<area shape="poly" id="edge23_Node000001_Node000018" title=" " alt="" coords="1129,703,1051,703,1051,697,1129,697"/>
+<area shape="rect" id="Node000019" href="$classmetaheuristics_1_1generators_1_1_hill_climbing_restart.html#aa506be31a40c309915296132624ee47e" title=" " alt="" coords="859,745,1067,804"/>
+<area shape="poly" id="edge24_Node000001_Node000019" title=" " alt="" coords="1146,728,1068,749,1067,744,1145,723"/>
+<area shape="rect" id="Node000020" href="$classmetaheuristics_1_1generators_1_1_particle_swarm_optimization.html#a2b35916a7fef7ecc1ae9c6f4c571a6d1" title=" " alt="" coords="829,828,1097,871"/>
+<area shape="poly" id="edge25_Node000001_Node000020" title=" " alt="" coords="1212,734,1161,778,1098,818,1070,830,1068,825,1095,814,1158,774,1208,730"/>
+<area shape="rect" id="Node000021" href="$classevolutionary__algorithms_1_1complement_1_1_steady_state_replace.html#a1283c4f4d8b9bbe5ae5dc4916934c8a9" title=" " alt="" coords="844,895,1082,937"/>
+<area shape="poly" id="edge27_Node000001_Node000021" title=" " alt="" coords="1226,736,1204,772,1175,812,1140,852,1098,885,1076,896,1074,892,1095,880,1136,848,1171,809,1200,769,1221,733"/>
+<area shape="rect" id="Node000022" href="$classmetaheuristics_1_1generators_1_1_multi_generator.html#afef1d16b774c4e86135d2fc38d0dbed7" title=" " alt="" coords="873,961,1053,1004"/>
+<area shape="poly" id="edge28_Node000001_Node000022" title=" " alt="" coords="1233,737,1215,786,1187,844,1148,902,1125,929,1098,951,1077,964,1055,973,1053,968,1075,959,1095,947,1121,925,1144,899,1182,841,1210,784,1228,735"/>
+<area shape="rect" id="Node000026" href="$classevolutionary__algorithms_1_1complement_1_1_truncation_selection.html#ab59a8422f18ba171cb70b680c84eaac1" title=" " alt="" coords="844,1028,1082,1071"/>
+<area shape="poly" id="edge32_Node000001_Node000026" title=" " alt="" coords="1238,737,1223,799,1197,875,1178,914,1156,952,1130,987,1098,1018,1081,1030,1078,1025,1095,1014,1126,984,1152,949,1174,912,1192,873,1218,797,1233,736"/>
+<area shape="rect" id="Node000027" href="$classmetaheuristics_1_1generators_1_1_particle.html#a8a8a33dd0ab1d3352d36b239d5c11beb" title=" " alt="" coords="875,1095,1051,1137"/>
+<area shape="poly" id="edge33_Node000001_Node000027" title=" " alt="" coords="1242,737,1231,810,1207,904,1188,953,1164,1001,1135,1046,1098,1085,1077,1099,1052,1109,1050,1104,1074,1095,1095,1081,1130,1043,1160,999,1183,951,1202,903,1225,809,1236,736"/>
+<area shape="rect" id="Node000028" href="$classmetaheuristics_1_1generators_1_1_particle_swarm_optimization.html#abc5a8dcdf9ff7418f4084002e383b860" title=" " alt="" coords="542,1116,765,1175"/>
+<area shape="poly" id="edge35_Node000001_Node000028" title=" " alt="" coords="1246,737,1242,825,1235,881,1223,940,1205,1000,1179,1057,1144,1109,1098,1151,1058,1175,1013,1191,967,1199,920,1202,873,1200,827,1195,746,1178,747,1173,828,1190,873,1195,920,1197,966,1194,1012,1186,1055,1170,1095,1147,1140,1105,1174,1055,1200,998,1218,939,1230,880,1237,825,1241,737"/>
+<area shape="poly" id="edge4_Node000002_Node000002" title=" " alt="" coords="1009,167,992,161,963,159,936,161,920,165,913,171,916,179,910,180,908,170,917,161,935,155,963,153,993,156,1011,162"/>
+<area shape="rect" id="Node000003" href="$classlocal__search_1_1acceptation__type_1_1_accept_multicase.html#a526e452510b7eebe59af4dde0c59b337" title="Determina si se acepta una solución candidata." alt="" coords="222,247,478,289"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="852,216,479,257,478,251,852,211"/>
+<area shape="rect" id="Node000004" href="$classlocal__search_1_1acceptation__type_1_1_accept_not_dominated.html#a05fe7b0385dfafe7701f6a4e9b2b80d2" title=" " alt="" coords="237,5,462,64"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="931,171,866,112,825,84,780,62,700,40,617,28,536,24,463,26,463,21,536,19,617,23,701,35,782,58,827,80,869,108,934,167"/>
+<area shape="rect" id="Node000005" href="$classlocal__search_1_1acceptation__type_1_1_accept_multicase.html#a84e9105150068bb1901051ed5d986d81" title="Cuenta cuántas soluciones en la lista son dominadas por el candidato." alt="" coords="542,272,766,331"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="855,230,830,237,782,256,735,274,733,269,780,251,828,232,853,225"/>
+<area shape="rect" id="Node000006" href="$classlocal__search_1_1acceptation__type_1_1_accept_multicase.html#af114888741d64b50c3559106fd01d711" title="Calcula el rango de dominancia del candidato." alt="" coords="526,355,781,397"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="855,222,831,237,820,249,813,262,808,289,803,317,795,331,783,345,766,356,763,352,780,341,791,328,798,315,803,288,808,260,815,246,828,233,852,217"/>
+<area shape="rect" id="Node000007" href="$classlocal__search_1_1acceptation__type_1_1_dominance.html#aff9166b5654b3ed44eed2cee4de7d2b2" title=" " alt="" coords="546,72,761,115"/>
+<area shape="poly" id="edge9_Node000002_Node000007" title=" " alt="" coords="899,176,780,129,743,118,745,113,782,124,901,171"/>
+<area shape="rect" id="Node000009" href="$classlocal__search_1_1candidate__type_1_1_not_dominated_candidate.html#a8f08ece6519709427b4917712b805159" title=" " alt="" coords="537,139,770,197"/>
+<area shape="poly" id="edge13_Node000002_Node000009" title=" " alt="" coords="852,192,770,183,771,178,853,187"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="526,290,478,285,479,279,526,285"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="547,352,525,345,457,319,396,292,398,287,459,314,527,340,549,347"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="540,123,527,129,496,150,455,181,377,248,374,244,452,177,493,145,525,124,538,118"/>
+<area shape="poly" id="edge11_Node000007_Node000004" title=" " alt="" coords="531,72,463,59,464,54,532,67"/>
+<area shape="rect" id="Node000008" href="$classlocal__search_1_1acceptation__type_1_1_accept_not_dominated_tabu.html#a3182ac113bddb89bb3ea7af704b38835" title=" " alt="" coords="223,88,476,147"/>
+<area shape="poly" id="edge12_Node000007_Node000008" title=" " alt="" coords="532,106,477,110,477,105,531,100"/>
+<area shape="rect" id="Node000013" href="$classmetaheuristics_1_1generators_1_1_particle_swarm_optimization.html#a58823d3000e36d540bd20800e0636a88" title="Constructor por defecto." alt="" coords="540,620,767,679"/>
+<area shape="poly" id="edge17_Node000012_Node000013" title=" " alt="" coords="842,446,831,453,781,492,738,537,702,583,676,621,671,618,698,580,734,534,778,488,828,448,839,442"/>
+<area shape="rect" id="Node000014" href="$classmetaheuristics_1_1generators_1_1_particle_swarm_optimization.html#a4a9da4ad8253a7521056fbb306a495a3" title=" " alt="" coords="239,620,461,679"/>
+<area shape="poly" id="edge18_Node000013_Node000014" title=" " alt="" coords="525,661,462,661,462,655,525,656"/>
+<area shape="poly" id="edge19_Node000014_Node000013" title=" " alt="" coords="477,638,540,638,540,643,477,643"/>
+<area shape="poly" id="edge26_Node000020_Node000013" title=" " alt="" coords="839,824,828,818,781,787,739,750,676,681,680,677,743,746,785,783,831,814,842,819"/>
+<area shape="rect" id="Node000023" href="$classmetaheuristics_1_1generators_1_1_multi_generator.html#a06c51732247b401b0369fe6133d35793" title=" " alt="" coords="559,961,748,1004"/>
+<area shape="poly" id="edge29_Node000022_Node000023" title=" " alt="" coords="858,985,749,985,749,980,858,980"/>
+<area shape="rect" id="Node000024" href="$classmetaheuristics_1_1generators_1_1_multi_generator.html#a4064a096c203ec6b538929af5bd8d0d7" title=" " alt="" coords="245,961,454,1004"/>
+<area shape="poly" id="edge30_Node000023_Node000024" title=" " alt="" coords="543,985,455,985,455,980,543,980"/>
+<area shape="rect" id="Node000025" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,961,174,1004"/>
+<area shape="poly" id="edge31_Node000024_Node000025" title=" " alt="" coords="230,985,174,985,174,980,230,980"/>
+<area shape="poly" id="edge34_Node000027_Node000028" title=" " alt="" coords="860,1128,765,1137,765,1132,860,1123"/>
+</map>

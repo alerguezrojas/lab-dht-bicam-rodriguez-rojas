@@ -10,14 +10,39 @@ import metaheuristics.strategy.Strategy;
 import problem.definition.Problem.ProblemType;
 import problem.definition.State;
 
+/**
+ * @class Particle
+ * @brief Representa una partícula en el algoritmo de Optimización por Enjambre de Partículas (PSO).
+ * 
+ * Cada partícula mantiene su estado actual, su mejor estado histórico (pBest) y su velocidad actual.
+ * Extiende de la clase Generator para integrarse en el framework de metaheurísticas.
+ */
 public class Particle extends Generator {
 
+	/**
+	 * @brief Generador de números aleatorios seguro.
+	 */
 	private static final SecureRandom secureRandom = new SecureRandom();
+	
+	/**
+	 * @brief Mejor estado alcanzado por esta partícula (pBest).
+	 */
 	private State statePBest;
+	
+	/**
+	 * @brief Estado actual de la partícula.
+	 */
 	private State stateActual;
+	
+	/**
+	 * @brief Vector de velocidad actual de la partícula.
+	 */
 	private ArrayList<Object> velocity;
 	
-	
+	/**
+	 * @brief Constructor por defecto.
+	 * Inicializa el estado actual, pBest y velocidad vacíos.
+	 */
 	public Particle() {
 		super();
 		this.stateActual = new State();
@@ -25,6 +50,13 @@ public class Particle extends Generator {
 		this.velocity = new ArrayList<Object>();
 	}
 	
+	/**
+	 * @brief Constructor parametrizado.
+	 * 
+	 * @param statePBest Mejor estado histórico inicial.
+	 * @param stateActual Estado actual inicial.
+	 * @param velocity Velocidad inicial.
+	 */
 	public Particle(State statePBest, State stateActual, ArrayList<Object> velocity) {
 		super();
 		this.statePBest = new State(statePBest);
@@ -56,6 +88,21 @@ public class Particle extends Generator {
 		this.stateActual = new State(stateActual);
 	}
 
+	/**
+	 * @brief Genera un nuevo estado para la partícula.
+	 * 
+	 * Actualiza la velocidad y la posición (código) de la partícula basándose en las ecuaciones de PSO.
+	 * 
+	 * @param operatornumber Identificador del operador (no utilizado en esta implementación específica).
+	 * @return null (El estado se actualiza internamente en stateActual).
+	 * @throws IllegalArgumentException Si ocurre un error en la generación.
+	 * @throws SecurityException Si hay restricciones de seguridad.
+	 * @throws ClassNotFoundException Si no se encuentra una clase necesaria.
+	 * @throws InstantiationException Si falla la instanciación.
+	 * @throws IllegalAccessException Si hay acceso ilegal.
+	 * @throws InvocationTargetException Si falla la invocación de un método.
+	 * @throws NoSuchMethodException Si no se encuentra un método.
+	 */
 	@Override
 	public State generate(Integer operatornumber)
 			throws IllegalArgumentException, SecurityException,
@@ -71,7 +118,14 @@ public class Particle extends Generator {
 		return null;
 	}
 	
-	
+	/**
+	 * @brief Actualiza el vector de velocidad de la partícula.
+	 * 
+	 * Calcula la nueva velocidad basándose en la inercia, el componente cognitivo (pBest)
+	 * y el componente social (lBest). Aplica un factor de constricción para controlar la convergencia.
+	 * 
+	 * @return ArrayList<Object> Nueva velocidad calculada.
+	 */
 	private ArrayList<Object> UpdateVelocity(){ // actualizar velocidad
     	double w = ParticleSwarmOptimization.wmax - ((ParticleSwarmOptimization.wmax - ParticleSwarmOptimization.wmin) / Strategy.getStrategy().getCountMax()) * ParticleSwarmOptimization.countCurrentIterPSO;  //CALCULO DE LA INERCIA
     	double rand1 = secureRandom.nextDouble();

@@ -1,0 +1,182 @@
+\doxysection{Referencia de la clase local\+\_\+search.\+acceptation\+\_\+type.\+Accept\+Multicase}
+\hypertarget{classlocal__search_1_1acceptation__type_1_1_accept_multicase}{}\label{classlocal__search_1_1acceptation__type_1_1_accept_multicase}\index{local\_search.acceptation\_type.AcceptMulticase@{local\_search.acceptation\_type.AcceptMulticase}}
+
+
+Implementa la lógica de aceptación de candidatos para el algoritmo de Recocido Simulado Multicaso.  
+
+
+
+
+Diagrama de herencia de local\+\_\+search.\+acceptation\+\_\+type.\+Accept\+Multicase
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classlocal__search_1_1acceptation__type_1_1_accept_multicase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboración de local\+\_\+search.\+acceptation\+\_\+type.\+Accept\+Multicase\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classlocal__search_1_1acceptation__type_1_1_accept_multicase__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+Boolean \mbox{\hyperlink{classlocal__search_1_1acceptation__type_1_1_accept_multicase_a526e452510b7eebe59af4dde0c59b337}{accept\+Candidate}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} state\+Current, \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} state\+Candidate)
+\begin{DoxyCompactList}\small\item\em Determina si se acepta una solución candidata. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classlocal__search_1_1acceptation__type_1_1_accept_multicase_a84e9105150068bb1901051ed5d986d81}{Dominance\+Counter}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} state\+Candidate, List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ list)
+\begin{DoxyCompactList}\small\item\em Cuenta cuántas soluciones en la lista son dominadas por el candidato. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classlocal__search_1_1acceptation__type_1_1_accept_multicase_af114888741d64b50c3559106fd01d711}{Dominance\+Rank}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} state\+Candidate, List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ list)
+\begin{DoxyCompactList}\small\item\em Calcula el rango de dominancia del candidato. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos estáticos privados}
+\begin{DoxyCompactItemize}
+\item 
+static final Random \mbox{\hyperlink{classlocal__search_1_1acceptation__type_1_1_accept_multicase_a541b6063ecb8aec10a55d95a941c0775}{rdm}} = new Random()
+\begin{DoxyCompactList}\small\item\em Generador de números aleatorios compartido. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Implementa la lógica de aceptación de candidatos para el algoritmo de Recocido Simulado Multicaso. 
+
+Esta clase extiende de \doxylink{classlocal__search_1_1acceptation__type_1_1_acceptable_candidate}{Acceptable\+Candidate} y define las reglas para aceptar o rechazar una solución candidata basándose en criterios de dominancia y probabilidad. 
+
+\label{doc-func-members}
+\Hypertarget{classlocal__search_1_1acceptation__type_1_1_accept_multicase_doc-func-members}
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{classlocal__search_1_1acceptation__type_1_1_accept_multicase_a526e452510b7eebe59af4dde0c59b337}\index{local\_search.acceptation\_type.AcceptMulticase@{local\_search.acceptation\_type.AcceptMulticase}!acceptCandidate@{acceptCandidate}}
+\index{acceptCandidate@{acceptCandidate}!local\_search.acceptation\_type.AcceptMulticase@{local\_search.acceptation\_type.AcceptMulticase}}
+\doxysubsubsection{\texorpdfstring{acceptCandidate()}{acceptCandidate()}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1acceptation__type_1_1_accept_multicase_a526e452510b7eebe59af4dde0c59b337} 
+Boolean local\+\_\+search.\+acceptation\+\_\+type.\+Accept\+Multicase.\+accept\+Candidate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+Current}{, }\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+Candidate}{}\end{DoxyParamCaption})}
+
+
+
+Determina si se acepta una solución candidata. 
+
+Evalúa la solución candidata frente a la solución actual utilizando criterios de dominancia y una función de probabilidad basada en la temperatura actual del recocido simulado.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em state\+Current} & Estado actual de la solución. \\
+\hline
+{\em state\+Candidate} & Estado candidato a ser evaluado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true si el candidato es aceptado, false en caso contrario. 
+\end{DoxyReturn}
+
+
+Reimplementado de \mbox{\hyperlink{classlocal__search_1_1acceptation__type_1_1_acceptable_candidate_aa9e62e1d2d213c3828d2491b506d0592}{local\+\_\+search.\+acceptation\+\_\+type.\+Acceptable\+Candidate}}.
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlocal__search_1_1acceptation__type_1_1_accept_multicase_a526e452510b7eebe59af4dde0c59b337_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classlocal__search_1_1acceptation__type_1_1_accept_multicase_a84e9105150068bb1901051ed5d986d81}\index{local\_search.acceptation\_type.AcceptMulticase@{local\_search.acceptation\_type.AcceptMulticase}!DominanceCounter@{DominanceCounter}}
+\index{DominanceCounter@{DominanceCounter}!local\_search.acceptation\_type.AcceptMulticase@{local\_search.acceptation\_type.AcceptMulticase}}
+\doxysubsubsection{\texorpdfstring{DominanceCounter()}{DominanceCounter()}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1acceptation__type_1_1_accept_multicase_a84e9105150068bb1901051ed5d986d81} 
+int local\+\_\+search.\+acceptation\+\_\+type.\+Accept\+Multicase.\+Dominance\+Counter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+Candidate}{, }\item[{List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$}]{list}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Cuenta cuántas soluciones en la lista son dominadas por el candidato. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em state\+Candidate} & Estado candidato a evaluar. \\
+\hline
+{\em list} & Lista de soluciones de referencia (ej. frente de Pareto actual). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Número de soluciones en la lista que son dominadas por el candidato. 
+\end{DoxyReturn}
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlocal__search_1_1acceptation__type_1_1_accept_multicase_a84e9105150068bb1901051ed5d986d81_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlocal__search_1_1acceptation__type_1_1_accept_multicase_a84e9105150068bb1901051ed5d986d81_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classlocal__search_1_1acceptation__type_1_1_accept_multicase_af114888741d64b50c3559106fd01d711}\index{local\_search.acceptation\_type.AcceptMulticase@{local\_search.acceptation\_type.AcceptMulticase}!DominanceRank@{DominanceRank}}
+\index{DominanceRank@{DominanceRank}!local\_search.acceptation\_type.AcceptMulticase@{local\_search.acceptation\_type.AcceptMulticase}}
+\doxysubsubsection{\texorpdfstring{DominanceRank()}{DominanceRank()}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1acceptation__type_1_1_accept_multicase_af114888741d64b50c3559106fd01d711} 
+int local\+\_\+search.\+acceptation\+\_\+type.\+Accept\+Multicase.\+Dominance\+Rank (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+Candidate}{, }\item[{List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$}]{list}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Calcula el rango de dominancia del candidato. 
+
+Cuenta cuántas soluciones en la lista dominan al candidato.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em state\+Candidate} & Estado candidato a evaluar. \\
+\hline
+{\em list} & Lista de soluciones de referencia. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Número de soluciones en la lista que dominan al candidato. 
+\end{DoxyReturn}
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlocal__search_1_1acceptation__type_1_1_accept_multicase_af114888741d64b50c3559106fd01d711_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlocal__search_1_1acceptation__type_1_1_accept_multicase_af114888741d64b50c3559106fd01d711_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{classlocal__search_1_1acceptation__type_1_1_accept_multicase_doc-variable-members}
+\doxysubsection{Documentación de datos miembro}
+\Hypertarget{classlocal__search_1_1acceptation__type_1_1_accept_multicase_a541b6063ecb8aec10a55d95a941c0775}\index{local\_search.acceptation\_type.AcceptMulticase@{local\_search.acceptation\_type.AcceptMulticase}!rdm@{rdm}}
+\index{rdm@{rdm}!local\_search.acceptation\_type.AcceptMulticase@{local\_search.acceptation\_type.AcceptMulticase}}
+\doxysubsubsection{\texorpdfstring{rdm}{rdm}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1acceptation__type_1_1_accept_multicase_a541b6063ecb8aec10a55d95a941c0775} 
+final Random local\+\_\+search.\+acceptation\+\_\+type.\+Accept\+Multicase.\+rdm = new Random()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Generador de números aleatorios compartido. 
+
+Se utiliza una instancia estática para mejorar la eficiencia y la calidad de la aleatoriedad. 
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/local\+\_\+search/acceptation\+\_\+type/\mbox{\hyperlink{_accept_multicase_8java}{Accept\+Multicase.\+java}}\end{DoxyCompactItemize}

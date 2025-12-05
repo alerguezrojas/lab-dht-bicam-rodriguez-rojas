@@ -1,0 +1,928 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BiCIAM: Referencia de la clase problem.definition.Problem</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">BiCIAM<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Biblioteca de Algoritmos Metaheurísticos</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classproblem_1_1definition_1_1_problem.html','','classproblem_1_1definition_1_1_problem-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referencia de la clase problem.definition.Problem</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Diagrama de colaboración de problem.definition.Problem:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproblem_1_1definition_1_1_problem__coll__graph.png" border="0" usemap="#aproblem_8definition_8_problem_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="aproblem_8definition_8_problem_coll__map" id="aproblem_8definition_8_problem_coll__map">
+<area shape="rect" title=" " alt="" coords="521,859,686,1163"/>
+<area shape="rect" href="classproblem_1_1definition_1_1_state.html" title=" " alt="" coords="46,376,194,787"/>
+<area shape="poly" title=" " alt="" coords="196,769,208,785,241,818,277,848,355,900,434,942,506,973,504,978,432,946,352,904,274,852,237,822,204,788,191,773"/>
+<area shape="rect" title=" " alt="" coords="5,120,74,189"/>
+<area shape="poly" title=" " alt="" coords="51,203,84,376,79,377,46,204"/>
+<area shape="rect" href="enummetaheuristics_1_1generators_1_1_generator_type.html" title=" " alt="" coords="98,5,304,304"/>
+<area shape="poly" title=" " alt="" coords="175,304,165,360,159,359,170,303"/>
+<area shape="rect" href="enumproblem_1_1definition_1_1_problem_1_1_problem_type.html" title=" " alt="" coords="218,528,387,635"/>
+<area shape="poly" title=" " alt="" coords="324,633,357,707,401,785,454,855,512,918,508,922,450,858,396,788,352,710,319,636"/>
+<area shape="rect" href="classproblem_1_1definition_1_1_codification.html" title=" " alt="" coords="411,515,596,648"/>
+<area shape="poly" title=" " alt="" coords="522,647,567,841,562,843,516,649"/>
+<area shape="rect" href="classproblem_1_1definition_1_1_operator.html" title=" " alt="" coords="620,536,787,627"/>
+<area shape="poly" title=" " alt="" coords="697,627,649,835,647,843,642,842,644,834,691,626"/>
+<area shape="rect" href="enumproblem_1_1extension_1_1_type_solution_method.html" title=" " alt="" coords="811,528,1007,635"/>
+<area shape="poly" title=" " alt="" coords="888,636,850,709,802,788,752,854,699,915,695,911,748,850,797,785,845,707,883,633"/>
+<area shape="rect" href="interfacefactory__interface_1_1_i_f_factory_solution_method.html" title=" " alt="" coords="1030,539,1198,624"/>
+<area shape="poly" title=" " alt="" coords="1106,625,1075,706,1051,749,1020,788,985,822,946,853,863,906,779,948,703,979,701,975,777,943,860,901,943,849,981,818,1016,785,1046,746,1070,703,1101,623"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Clases</h2></td></tr>
+<tr class="memitem:ProblemType" id="r_ProblemType"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumproblem_1_1definition_1_1_problem_1_1_problem_type.html">ProblemType</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:a88bf7becf2c7c7beef8a24afe1397d6a" id="r_a88bf7becf2c7c7beef8a24afe1397d6a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88bf7becf2c7c7beef8a24afe1397d6a">Problem</a> ()</td></tr>
+<tr class="memitem:a1427b83a226c7a174deee23925af14e4" id="r_a1427b83a226c7a174deee23925af14e4"><td class="memItemLeft" align="right" valign="top">ArrayList&lt; <a class="el" href="classproblem_1_1definition_1_1_objetive_function.html">ObjetiveFunction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1427b83a226c7a174deee23925af14e4">getFunction</a> ()</td></tr>
+<tr class="memitem:af7a73fa0767acd800875f32e97386d21" id="r_af7a73fa0767acd800875f32e97386d21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7a73fa0767acd800875f32e97386d21">setFunction</a> (ArrayList&lt; <a class="el" href="classproblem_1_1definition_1_1_objetive_function.html">ObjetiveFunction</a> &gt; <a class="el" href="#a43216e475bc790f615d6c6096f55009d">function</a>)</td></tr>
+<tr class="memitem:ad685c1f6c1edba96aa5082d1fdf8bb35" id="r_ad685c1f6c1edba96aa5082d1fdf8bb35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classproblem_1_1definition_1_1_state.html">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad685c1f6c1edba96aa5082d1fdf8bb35">getState</a> ()</td></tr>
+<tr class="memitem:afa1cbf017b0c64122fb2db7e4e7df2a2" id="r_afa1cbf017b0c64122fb2db7e4e7df2a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa1cbf017b0c64122fb2db7e4e7df2a2">setState</a> (<a class="el" href="classproblem_1_1definition_1_1_state.html">State</a> <a class="el" href="#a9d5bdbaaa3ab7261904ca45852f46249">state</a>)</td></tr>
+<tr class="memitem:ad6f38df755179e22ffe487ba4a5c8021" id="r_ad6f38df755179e22ffe487ba4a5c8021"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enumproblem_1_1definition_1_1_problem_1_1_problem_type.html">ProblemType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6f38df755179e22ffe487ba4a5c8021">getTypeProblem</a> ()</td></tr>
+<tr class="memitem:a8c0af80ee55954ced5ad7a7e81c84c6a" id="r_a8c0af80ee55954ced5ad7a7e81c84c6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c0af80ee55954ced5ad7a7e81c84c6a">setTypeProblem</a> (<a class="el" href="enumproblem_1_1definition_1_1_problem_1_1_problem_type.html">ProblemType</a> <a class="el" href="#a3d230269c9b6bccd54fea12149a3c7b8">typeProblem</a>)</td></tr>
+<tr class="memitem:a7da2aa6b2a6f00f6f3993e6fdc43e34b" id="r_a7da2aa6b2a6f00f6f3993e6fdc43e34b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classproblem_1_1definition_1_1_codification.html">Codification</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7da2aa6b2a6f00f6f3993e6fdc43e34b">getCodification</a> ()</td></tr>
+<tr class="memitem:a33a672579a66c2add5476e0fe446b4eb" id="r_a33a672579a66c2add5476e0fe446b4eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33a672579a66c2add5476e0fe446b4eb">setCodification</a> (<a class="el" href="classproblem_1_1definition_1_1_codification.html">Codification</a> <a class="el" href="#a0ecc87130634f9aae2610a541347be19">codification</a>)</td></tr>
+<tr class="memitem:a4cd649edb8862f21af171491cb9b9386" id="r_a4cd649edb8862f21af171491cb9b9386"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classproblem_1_1definition_1_1_operator.html">Operator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4cd649edb8862f21af171491cb9b9386">getOperator</a> ()</td></tr>
+<tr class="memitem:a2b4cde1a61f7587d1e90d3c6d0b804fe" id="r_a2b4cde1a61f7587d1e90d3c6d0b804fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b4cde1a61f7587d1e90d3c6d0b804fe">setOperator</a> (<a class="el" href="classproblem_1_1definition_1_1_operator.html">Operator</a> <a class="el" href="#aa8dda2409e952ae76989f705664c20a1">operator</a>)</td></tr>
+<tr class="memitem:a9a98e419b1fbf5368f68c3894ef733c6" id="r_a9a98e419b1fbf5368f68c3894ef733c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a98e419b1fbf5368f68c3894ef733c6">getPossibleValue</a> ()</td></tr>
+<tr class="memitem:a110ea946c11ac38487f2f94d7407ee4b" id="r_a110ea946c11ac38487f2f94d7407ee4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a110ea946c11ac38487f2f94d7407ee4b">setPossibleValue</a> (int <a class="el" href="#acbe93a56dc15db61619b505d17e34127">possibleValue</a>)</td></tr>
+<tr class="memitem:a74d56127a8524b4a20f6ab831744f164" id="r_a74d56127a8524b4a20f6ab831744f164"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74d56127a8524b4a20f6ab831744f164">Evaluate</a> (<a class="el" href="classproblem_1_1definition_1_1_state.html">State</a> <a class="el" href="#a9d5bdbaaa3ab7261904ca45852f46249">state</a>)  throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException </td></tr>
+<tr class="memitem:a6731d9f81ab05739dce8ddb4800e1d80" id="r_a6731d9f81ab05739dce8ddb4800e1d80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enumproblem_1_1extension_1_1_type_solution_method.html">TypeSolutionMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6731d9f81ab05739dce8ddb4800e1d80">getTypeSolutionMethod</a> ()</td></tr>
+<tr class="memitem:a31c200ce7f4bb23052bff995ec12d521" id="r_a31c200ce7f4bb23052bff995ec12d521"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31c200ce7f4bb23052bff995ec12d521">setTypeSolutionMethod</a> (<a class="el" href="enumproblem_1_1extension_1_1_type_solution_method.html">TypeSolutionMethod</a> <a class="el" href="#a331828d9233c7997c58a844b8536e869">typeSolutionMethod</a>)</td></tr>
+<tr class="memitem:a333591de57cbc861ffe762d93b7616e7" id="r_a333591de57cbc861ffe762d93b7616e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacefactory__interface_1_1_i_f_factory_solution_method.html">IFFactorySolutionMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a333591de57cbc861ffe762d93b7616e7">getFactorySolutionMethod</a> ()</td></tr>
+<tr class="memitem:a33e0dea915fd0bbded79b7be8478dd79" id="r_a33e0dea915fd0bbded79b7be8478dd79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33e0dea915fd0bbded79b7be8478dd79">setFactorySolutionMethod</a> (<a class="el" href="interfacefactory__interface_1_1_i_f_factory_solution_method.html">IFFactorySolutionMethod</a> <a class="el" href="#a29bde4c1722b923cb95c7157dd49ee55">factorySolutionMethod</a>)</td></tr>
+<tr class="memitem:a443db14206d399250f49e78175ca829e" id="r_a443db14206d399250f49e78175ca829e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classproblem_1_1extension_1_1_solution_method.html">SolutionMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a443db14206d399250f49e78175ca829e">newSolutionMethod</a> (<a class="el" href="enumproblem_1_1extension_1_1_type_solution_method.html">TypeSolutionMethod</a> <a class="el" href="#a331828d9233c7997c58a844b8536e869">typeSolutionMethod</a>)  throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:a43216e475bc790f615d6c6096f55009d" id="r_a43216e475bc790f615d6c6096f55009d"><td class="memItemLeft" align="right" valign="top">ArrayList&lt; <a class="el" href="classproblem_1_1definition_1_1_objetive_function.html">ObjetiveFunction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43216e475bc790f615d6c6096f55009d">function</a></td></tr>
+<tr class="memitem:a9d5bdbaaa3ab7261904ca45852f46249" id="r_a9d5bdbaaa3ab7261904ca45852f46249"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classproblem_1_1definition_1_1_state.html">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d5bdbaaa3ab7261904ca45852f46249">state</a></td></tr>
+<tr class="memitem:a3d230269c9b6bccd54fea12149a3c7b8" id="r_a3d230269c9b6bccd54fea12149a3c7b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enumproblem_1_1definition_1_1_problem_1_1_problem_type.html">ProblemType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d230269c9b6bccd54fea12149a3c7b8">typeProblem</a></td></tr>
+<tr class="memitem:a0ecc87130634f9aae2610a541347be19" id="r_a0ecc87130634f9aae2610a541347be19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classproblem_1_1definition_1_1_codification.html">Codification</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ecc87130634f9aae2610a541347be19">codification</a></td></tr>
+<tr class="memitem:aa8dda2409e952ae76989f705664c20a1" id="r_aa8dda2409e952ae76989f705664c20a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classproblem_1_1definition_1_1_operator.html">Operator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dda2409e952ae76989f705664c20a1">operator</a></td></tr>
+<tr class="memitem:acbe93a56dc15db61619b505d17e34127" id="r_acbe93a56dc15db61619b505d17e34127"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbe93a56dc15db61619b505d17e34127">possibleValue</a></td></tr>
+<tr class="memitem:a331828d9233c7997c58a844b8536e869" id="r_a331828d9233c7997c58a844b8536e869"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enumproblem_1_1extension_1_1_type_solution_method.html">TypeSolutionMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a331828d9233c7997c58a844b8536e869">typeSolutionMethod</a></td></tr>
+<tr class="memitem:a29bde4c1722b923cb95c7157dd49ee55" id="r_a29bde4c1722b923cb95c7157dd49ee55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacefactory__interface_1_1_i_f_factory_solution_method.html">IFFactorySolutionMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29bde4c1722b923cb95c7157dd49ee55">factorySolutionMethod</a></td></tr>
+</table>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Documentación de constructores y destructores</h2>
+<a id="a88bf7becf2c7c7beef8a24afe1397d6a" name="a88bf7becf2c7c7beef8a24afe1397d6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88bf7becf2c7c7beef8a24afe1397d6a">&#9670;&#160;</a></span>Problem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">problem.definition.Problem.Problem </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentación de funciones miembro</h2>
+<a id="a74d56127a8524b4a20f6ab831744f164" name="a74d56127a8524b4a20f6ab831744f164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74d56127a8524b4a20f6ab831744f164">&#9670;&#160;</a></span>Evaluate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void problem.definition.Problem.Evaluate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classproblem_1_1definition_1_1_state.html">State</a></td>          <td class="paramname"><span class="paramname"><em>state</em></span></td><td>)</td>
+          <td> throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproblem_1_1definition_1_1_problem_a74d56127a8524b4a20f6ab831744f164_cgraph.png" border="0" usemap="#aclassproblem_1_1definition_1_1_problem_a74d56127a8524b4a20f6ab831744f164_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassproblem_1_1definition_1_1_problem_a74d56127a8524b4a20f6ab831744f164_cgraph" id="aclassproblem_1_1definition_1_1_problem_a74d56127a8524b4a20f6ab831744f164_cgraph">
+<area shape="rect" title=" " alt="" coords="5,39,185,81"/>
+<area shape="rect" href="classproblem_1_1extension_1_1_solution_method.html#ae31d6d6000b9043bdee5e2d79fd2a628" title=" " alt="" coords="245,5,424,48"/>
+<area shape="poly" title=" " alt="" coords="185,45,230,39,230,44,186,50"/>
+<area shape="rect" href="classproblem_1_1definition_1_1_problem.html#a443db14206d399250f49e78175ca829e" title=" " alt="" coords="233,72,436,115"/>
+<area shape="poly" title=" " alt="" coords="186,70,217,74,217,80,185,75"/>
+</map>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproblem_1_1definition_1_1_problem_a74d56127a8524b4a20f6ab831744f164_icgraph.png" border="0" usemap="#aclassproblem_1_1definition_1_1_problem_a74d56127a8524b4a20f6ab831744f164_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassproblem_1_1definition_1_1_problem_a74d56127a8524b4a20f6ab831744f164_icgraph" id="aclassproblem_1_1definition_1_1_problem_a74d56127a8524b4a20f6ab831744f164_icgraph">
+<area shape="rect" title=" " alt="" coords="826,147,1006,189"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a21767d34c374a65dd29196459273ff34" title=" " alt="" coords="491,5,778,48"/>
+<area shape="poly" title=" " alt="" coords="881,138,834,98,777,62,749,51,751,46,780,58,837,94,884,134"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_hill_climbing_restart.html#a03effb92915e2642b7d87763987a43ae" title=" " alt="" coords="540,72,729,115"/>
+<area shape="poly" title=" " alt="" coords="830,144,778,129,729,117,730,112,779,124,832,139"/>
+<area shape="rect" href="classlocal__search_1_1candidate__type_1_1_not_dominated_candidate.html#a8f08ece6519709427b4917712b805159" title=" " alt="" coords="518,139,751,197"/>
+<area shape="poly" title=" " alt="" coords="811,171,752,171,752,165,811,165"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multiobjective_hill_climbing_distance.html#a35ed16f3af3c7fdcbff8165d9674cc9a" title=" " alt="" coords="502,221,768,280"/>
+<area shape="poly" title=" " alt="" coords="829,197,779,212,741,223,739,218,778,207,828,192"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multiobjective_hill_climbing_restart.html#ab3716a950049b1d77c4374efd355aa14" title=" " alt="" coords="506,304,763,363"/>
+<area shape="poly" title=" " alt="" coords="888,203,841,250,811,274,780,294,756,306,753,301,777,290,808,270,837,246,885,199"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#ada4833a51b39d1372e2c050448bbab6c" title=" " alt="" coords="222,5,443,48"/>
+<area shape="poly" title=" " alt="" coords="475,29,443,29,443,24,475,24"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,5,174,48"/>
+<area shape="poly" title=" " alt="" coords="206,29,174,29,174,24,206,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7da2aa6b2a6f00f6f3993e6fdc43e34b" name="a7da2aa6b2a6f00f6f3993e6fdc43e34b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7da2aa6b2a6f00f6f3993e6fdc43e34b">&#9670;&#160;</a></span>getCodification()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classproblem_1_1definition_1_1_codification.html">Codification</a> problem.definition.Problem.getCodification </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproblem_1_1definition_1_1_problem_a7da2aa6b2a6f00f6f3993e6fdc43e34b_icgraph.png" border="0" usemap="#aclassproblem_1_1definition_1_1_problem_a7da2aa6b2a6f00f6f3993e6fdc43e34b_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassproblem_1_1definition_1_1_problem_a7da2aa6b2a6f00f6f3993e6fdc43e34b_icgraph" id="aclassproblem_1_1definition_1_1_problem_a7da2aa6b2a6f00f6f3993e6fdc43e34b_icgraph">
+<area shape="rect" title=" " alt="" coords="291,172,488,215"/>
+<area shape="rect" href="classevolutionary__algorithms_1_1complement_1_1_one_point_crossover.html#a6d644b471de305b6508b2b647edc76d1" title=" " alt="" coords="5,5,243,48"/>
+<area shape="poly" title=" " alt="" coords="358,162,307,111,275,85,241,62,217,51,219,46,244,58,279,80,311,107,362,158"/>
+<area shape="rect" href="classproblem__operators_1_1_mutation_operator.html#a43be2feec4090f04b60fe76712673747" title=" " alt="" coords="29,72,219,115"/>
+<area shape="poly" title=" " alt="" coords="330,167,242,129,208,118,209,113,244,124,332,162"/>
+<area shape="rect" href="classevolutionary__algorithms_1_1complement_1_1_a_i_o_mutation.html#a182dacf4bb3046d61563d6bd5f31e156" title=" " alt="" coords="5,139,243,181"/>
+<area shape="poly" title=" " alt="" coords="275,182,243,178,244,172,276,176"/>
+<area shape="rect" href="classevolutionary__algorithms_1_1complement_1_1_one_point_mutation.html#a58178e28b21fd4559c38db00003e1bb0" title=" " alt="" coords="5,205,243,248"/>
+<area shape="poly" title=" " alt="" coords="276,210,244,214,243,209,275,205"/>
+<area shape="rect" href="classevolutionary__algorithms_1_1complement_1_1_tow_points_mutation.html#aba8bc136aacf5eafcd9e73d032218e16" title=" " alt="" coords="5,272,243,315"/>
+<area shape="poly" title=" " alt="" coords="332,224,244,262,209,274,208,269,242,258,330,219"/>
+<area shape="rect" href="classevolutionary__algorithms_1_1complement_1_1_probabilistic_sampling.html#a985f07b42905655bfaffb59b10f3471e" title=" " alt="" coords="5,339,243,381"/>
+<area shape="poly" title=" " alt="" coords="362,228,311,280,279,306,244,329,219,341,217,336,241,324,275,302,307,276,358,225"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a333591de57cbc861ffe762d93b7616e7" name="a333591de57cbc861ffe762d93b7616e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a333591de57cbc861ffe762d93b7616e7">&#9670;&#160;</a></span>getFactorySolutionMethod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacefactory__interface_1_1_i_f_factory_solution_method.html">IFFactorySolutionMethod</a> problem.definition.Problem.getFactorySolutionMethod </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1427b83a226c7a174deee23925af14e4" name="a1427b83a226c7a174deee23925af14e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1427b83a226c7a174deee23925af14e4">&#9670;&#160;</a></span>getFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ArrayList&lt; <a class="el" href="classproblem_1_1definition_1_1_objetive_function.html">ObjetiveFunction</a> &gt; problem.definition.Problem.getFunction </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproblem_1_1definition_1_1_problem_a1427b83a226c7a174deee23925af14e4_icgraph.png" border="0" usemap="#aclassproblem_1_1definition_1_1_problem_a1427b83a226c7a174deee23925af14e4_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassproblem_1_1definition_1_1_problem_a1427b83a226c7a174deee23925af14e4_icgraph" id="aclassproblem_1_1definition_1_1_problem_a1427b83a226c7a174deee23925af14e4_icgraph">
+<area shape="rect" title=" " alt="" coords="956,105,1153,148"/>
+<area shape="rect" href="classproblem_1_1extension_1_1_factores_ponderados.html#a935d426d08fbf69af9ea5fe2196692bc" title=" " alt="" coords="686,5,871,48"/>
+<area shape="poly" title=" " alt="" coords="996,101,907,62,870,51,872,46,909,58,998,96"/>
+<area shape="rect" href="classproblem_1_1extension_1_1_multi_objetivo_puro.html#aaac35db96f3f750b6f5349243c39d122" title=" " alt="" coords="675,72,882,115"/>
+<area shape="poly" title=" " alt="" coords="940,116,882,109,883,103,940,110"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_distribution_estimation_algorithm.html#a5d496021c3310be8abbc218d4bc63baa" title=" " alt="" coords="649,139,908,181"/>
+<area shape="poly" title=" " alt="" coords="941,143,908,147,908,142,940,138"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#ac8d90db40a6927532d05e8f9ca77b51c" title=" " alt="" coords="683,205,874,248"/>
+<area shape="poly" title=" " alt="" coords="998,158,909,196,873,207,871,202,907,191,996,153"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a0d23d307adedc20a3d9cb6c1bf65bb7f" title=" " alt="" coords="222,205,382,248"/>
+<area shape="poly" title=" " alt="" coords="668,226,601,225,430,225,383,226,383,221,430,220,601,220,668,221"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#af3a9d3d541f13137a2a97719b0045cb3" title=" " alt="" coords="430,235,601,277"/>
+<area shape="poly" title=" " alt="" coords="668,242,602,249,602,244,667,236"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,205,174,248"/>
+<area shape="poly" title=" " alt="" coords="206,229,174,229,174,224,206,224"/>
+<area shape="poly" title=" " alt="" coords="414,245,382,240,383,235,415,239"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4cd649edb8862f21af171491cb9b9386" name="a4cd649edb8862f21af171491cb9b9386"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cd649edb8862f21af171491cb9b9386">&#9670;&#160;</a></span>getOperator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classproblem_1_1definition_1_1_operator.html">Operator</a> problem.definition.Problem.getOperator </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproblem_1_1definition_1_1_problem_a4cd649edb8862f21af171491cb9b9386_icgraph.png" border="0" usemap="#aclassproblem_1_1definition_1_1_problem_a4cd649edb8862f21af171491cb9b9386_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassproblem_1_1definition_1_1_problem_a4cd649edb8862f21af171491cb9b9386_icgraph" id="aclassproblem_1_1definition_1_1_problem_a4cd649edb8862f21af171491cb9b9386_icgraph">
+<area shape="rect" title=" " alt="" coords="341,505,538,548"/>
+<area shape="rect" href="classlocal__search_1_1complement_1_1_multi_case_simulated_annealing.html#ad38a3b53a34688fb1d24d7f98bc0381d" title=" " alt="" coords="24,5,274,48"/>
+<area shape="poly" title=" " alt="" coords="435,490,430,402,422,347,409,287,391,225,366,165,333,110,291,62,273,49,276,44,294,58,337,107,371,163,396,223,415,285,427,346,435,402,441,490"/>
+<area shape="rect" href="classlocal__search_1_1_multi_case_simulated_annealing.html#a77a086fe56ba566bafb39929b2313049" title=" " alt="" coords="41,72,257,115"/>
+<area shape="poly" title=" " alt="" coords="433,490,424,414,400,316,382,265,358,215,328,169,291,129,256,108,259,104,294,125,332,165,363,212,387,262,405,314,429,413,439,489"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_hill_climbing.html#abcb16309481537b632ff4ece07534f97" title=" " alt="" coords="61,139,237,181"/>
+<area shape="poly" title=" " alt="" coords="430,490,417,426,391,346,373,304,350,264,323,227,291,195,265,180,236,170,238,165,268,175,294,191,327,224,355,261,377,302,396,344,422,424,435,489"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_hill_climbing_restart.html#a03effb92915e2642b7d87763987a43ae" title=" " alt="" coords="55,205,243,248"/>
+<area shape="poly" title=" " alt="" coords="426,491,409,439,381,377,342,314,318,286,291,262,268,249,243,239,245,234,271,244,294,258,322,283,346,311,386,374,414,437,431,489"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_limit_threshold.html#af2ac27e167ad69093379e30a9dcf1955" title=" " alt="" coords="61,272,237,315"/>
+<area shape="poly" title=" " alt="" coords="420,493,399,454,371,409,334,366,291,329,265,315,236,306,238,301,267,310,294,324,338,362,375,406,404,451,425,491"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_case_simulated_annealing.html#a79d89f831f827fff6db6e9757c88f9a0" title=" " alt="" coords="24,339,274,381"/>
+<area shape="poly" title=" " alt="" coords="409,495,358,443,326,417,291,396,266,384,268,380,294,391,329,413,361,439,413,492"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multiobjective_hill_climbing_distance.html#a10e8509749f9e10954b1ca7174e00103" title=" " alt="" coords="10,405,288,448"/>
+<area shape="poly" title=" " alt="" coords="382,501,292,463,254,451,256,446,294,457,384,496"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multiobjective_hill_climbing_restart.html#aab0d9cf35c21f476056c9167679b565f" title=" " alt="" coords="15,472,283,515"/>
+<area shape="poly" title=" " alt="" coords="325,516,283,511,284,506,325,511"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multiobjective_stochastic_hill_climbing.html#a4bdaba8339058a9132146ca79d88d19d" title=" " alt="" coords="5,539,293,581"/>
+<area shape="poly" title=" " alt="" coords="325,542,294,546,293,541,325,537"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multiobjective_tabu_search.html#a719352455b19c8fc2244a4d7387db236" title=" " alt="" coords="37,605,261,648"/>
+<area shape="poly" title=" " alt="" coords="384,558,294,596,256,607,254,602,292,591,382,553"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_random_search.html#ad7023836b94dd23bffd78ab7b9915551" title=" " alt="" coords="61,672,237,715"/>
+<area shape="poly" title=" " alt="" coords="413,562,361,614,329,640,294,662,238,683,236,678,291,658,326,636,358,610,409,558"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_simulated_annealing.html#a42465a5f9da3ff282afbd8cae9603274" title=" " alt="" coords="54,739,244,781"/>
+<area shape="poly" title=" " alt="" coords="425,563,404,602,375,647,338,692,294,729,271,741,246,750,244,745,269,737,291,724,334,688,371,644,399,599,420,560"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_tabu_search.html#a960394b27d55ada10842a94184aa39b4" title=" " alt="" coords="61,805,237,848"/>
+<area shape="poly" title=" " alt="" coords="431,564,414,616,386,679,346,742,322,771,294,795,267,811,238,821,236,816,265,806,291,791,318,767,342,739,381,677,409,614,426,562"/>
+<area shape="rect" href="classlocal__search_1_1candidate__type_1_1_candidate_value.html#a77505d8ed443552afa435f51d0222d75" title=" " alt="" coords="29,896,269,939"/>
+<area shape="poly" title=" " alt="" coords="434,564,419,627,392,706,373,748,351,789,325,827,294,862,267,883,237,898,234,893,264,878,291,858,321,824,347,786,369,746,387,704,414,626,429,563"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multiobjective_hill_climbing_distance.html#a35ed16f3af3c7fdcbff8165d9674cc9a" title=" " alt="" coords="16,963,282,1021"/>
+<area shape="poly" title=" " alt="" coords="439,564,430,644,407,748,389,804,364,858,333,908,295,953,280,964,276,960,291,949,329,905,359,855,384,802,402,747,425,643,434,563"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multiobjective_hill_climbing_restart.html#ab3716a950049b1d77c4374efd355aa14" title=" " alt="" coords="20,1045,278,1104"/>
+<area shape="poly" title=" " alt="" coords="441,564,437,658,430,718,418,784,399,852,374,918,339,980,295,1035,279,1048,276,1044,291,1031,335,977,369,916,394,850,413,783,425,718,432,657,436,563"/>
+<area shape="poly" title=" " alt="" coords="197,883,179,877,149,875,121,877,104,881,98,887,100,895,95,896,92,886,102,877,120,871,149,869,180,872,199,878"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9a98e419b1fbf5368f68c3894ef733c6" name="a9a98e419b1fbf5368f68c3894ef733c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a98e419b1fbf5368f68c3894ef733c6">&#9670;&#160;</a></span>getPossibleValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int problem.definition.Problem.getPossibleValue </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproblem_1_1definition_1_1_problem_a9a98e419b1fbf5368f68c3894ef733c6_icgraph.png" border="0" usemap="#aclassproblem_1_1definition_1_1_problem_a9a98e419b1fbf5368f68c3894ef733c6_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassproblem_1_1definition_1_1_problem_a9a98e419b1fbf5368f68c3894ef733c6_icgraph" id="aclassproblem_1_1definition_1_1_problem_a9a98e419b1fbf5368f68c3894ef733c6_icgraph">
+<area shape="rect" title=" " alt="" coords="291,5,488,48"/>
+<area shape="rect" href="classevolutionary__algorithms_1_1complement_1_1_probabilistic_sampling.html#a985f07b42905655bfaffb59b10f3471e" title=" " alt="" coords="5,5,243,48"/>
+<area shape="poly" title=" " alt="" coords="275,29,243,29,243,24,275,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad685c1f6c1edba96aa5082d1fdf8bb35" name="ad685c1f6c1edba96aa5082d1fdf8bb35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad685c1f6c1edba96aa5082d1fdf8bb35">&#9670;&#160;</a></span>getState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classproblem_1_1definition_1_1_state.html">State</a> problem.definition.Problem.getState </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproblem_1_1definition_1_1_problem_ad685c1f6c1edba96aa5082d1fdf8bb35_icgraph.png" border="0" usemap="#aclassproblem_1_1definition_1_1_problem_ad685c1f6c1edba96aa5082d1fdf8bb35_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassproblem_1_1definition_1_1_problem_ad685c1f6c1edba96aa5082d1fdf8bb35_icgraph" id="aclassproblem_1_1definition_1_1_problem_ad685c1f6c1edba96aa5082d1fdf8bb35_icgraph">
+<area shape="rect" title=" " alt="" coords="491,72,688,115"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_evolution_strategies.html#a5a222a42cc69a782b603004f2ca501d0" title=" " alt="" coords="238,5,426,48"/>
+<area shape="poly" title=" " alt="" coords="489,70,417,51,418,46,491,65"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_genetic_algorithm.html#afa69278cc4f87d309326773aeab7b6da" title=" " alt="" coords="245,72,420,115"/>
+<area shape="poly" title=" " alt="" coords="476,96,420,96,420,91,476,91"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#ada4833a51b39d1372e2c050448bbab6c" title=" " alt="" coords="222,139,443,181"/>
+<area shape="poly" title=" " alt="" coords="491,122,418,141,417,135,489,117"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,139,174,181"/>
+<area shape="poly" title=" " alt="" coords="206,163,174,163,174,157,206,157"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad6f38df755179e22ffe487ba4a5c8021" name="ad6f38df755179e22ffe487ba4a5c8021"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6f38df755179e22ffe487ba4a5c8021">&#9670;&#160;</a></span>getTypeProblem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enumproblem_1_1definition_1_1_problem_1_1_problem_type.html">ProblemType</a> problem.definition.Problem.getTypeProblem </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproblem_1_1definition_1_1_problem_ad6f38df755179e22ffe487ba4a5c8021_icgraph.png" border="0" usemap="#aclassproblem_1_1definition_1_1_problem_ad6f38df755179e22ffe487ba4a5c8021_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassproblem_1_1definition_1_1_problem_ad6f38df755179e22ffe487ba4a5c8021_icgraph" id="aclassproblem_1_1definition_1_1_problem_ad6f38df755179e22ffe487ba4a5c8021_icgraph">
+<area shape="rect" title=" " alt="" coords="1145,679,1342,721"/>
+<area shape="rect" href="classlocal__search_1_1acceptation__type_1_1_dominance.html#a0dafd58be8365a22956f59417841a2d8" title=" " alt="" coords="868,180,1058,223"/>
+<area shape="poly" title=" " alt="" coords="1239,663,1233,576,1225,520,1213,461,1194,400,1169,340,1136,285,1095,237,1078,224,1058,215,1060,210,1080,219,1098,233,1141,282,1174,338,1199,398,1218,459,1230,519,1238,575,1245,663"/>
+<area shape="rect" href="classproblem_1_1extension_1_1_factores_ponderados.html#a935d426d08fbf69af9ea5fe2196692bc" title=" " alt="" coords="871,247,1055,289"/>
+<area shape="poly" title=" " alt="" coords="1237,664,1227,588,1204,490,1185,439,1161,389,1132,343,1095,303,1076,290,1055,281,1057,276,1079,286,1098,299,1136,340,1166,387,1190,437,1209,489,1232,587,1242,663"/>
+<area shape="rect" href="classproblem_1_1extension_1_1_multi_objetivo_puro.html#aaac35db96f3f750b6f5349243c39d122" title=" " alt="" coords="859,313,1067,356"/>
+<area shape="poly" title=" " alt="" coords="1234,664,1220,600,1194,520,1176,479,1154,439,1127,402,1095,370,1066,353,1069,348,1098,366,1131,399,1158,436,1181,477,1199,518,1225,599,1239,663"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_particle_swarm_optimization.html#aec9a3560a4a9aa2e60eeaf289ea18b3c" title=" " alt="" coords="854,380,1072,439"/>
+<area shape="poly" title=" " alt="" coords="1228,665,1209,617,1181,560,1143,502,1120,476,1095,453,1070,437,1073,433,1098,449,1124,472,1147,499,1185,557,1214,614,1233,663"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_distribution_estimation_algorithm.html#a8087863b6c6a820fdf5c9b6aa3bc151c" title=" " alt="" coords="850,463,1076,521"/>
+<area shape="poly" title=" " alt="" coords="1218,667,1167,600,1133,565,1095,536,1075,524,1077,520,1098,531,1137,561,1171,596,1222,664"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_evolution_strategies.html#a9afcff28506375af6f405467990e7b36" title=" " alt="" coords="855,545,1071,588"/>
+<area shape="poly" title=" " alt="" coords="1203,671,1154,635,1096,602,1066,591,1068,586,1098,598,1156,631,1206,667"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_genetic_algorithm.html#a7bff79adbecc5510d4294dbc617eb8b4" title=" " alt="" coords="861,612,1065,655"/>
+<area shape="poly" title=" " alt="" coords="1135,677,1055,658,1056,653,1136,672"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_hill_climbing.html#af34d8991af9ef04c0d8355040e5f2611" title=" " alt="" coords="875,679,1051,721"/>
+<area shape="poly" title=" " alt="" coords="1129,703,1051,703,1051,697,1129,697"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_hill_climbing_restart.html#aa506be31a40c309915296132624ee47e" title=" " alt="" coords="859,745,1067,804"/>
+<area shape="poly" title=" " alt="" coords="1146,728,1068,749,1067,744,1145,723"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_particle_swarm_optimization.html#a2b35916a7fef7ecc1ae9c6f4c571a6d1" title=" " alt="" coords="829,828,1097,871"/>
+<area shape="poly" title=" " alt="" coords="1212,734,1161,778,1098,818,1070,830,1068,825,1095,814,1158,774,1208,730"/>
+<area shape="rect" href="classevolutionary__algorithms_1_1complement_1_1_steady_state_replace.html#a1283c4f4d8b9bbe5ae5dc4916934c8a9" title=" " alt="" coords="844,895,1082,937"/>
+<area shape="poly" title=" " alt="" coords="1226,736,1204,772,1175,812,1140,852,1098,885,1076,896,1074,892,1095,880,1136,848,1171,809,1200,769,1221,733"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#afef1d16b774c4e86135d2fc38d0dbed7" title=" " alt="" coords="873,961,1053,1004"/>
+<area shape="poly" title=" " alt="" coords="1233,737,1215,786,1187,844,1148,902,1125,929,1098,951,1077,964,1055,973,1053,968,1075,959,1095,947,1121,925,1144,899,1182,841,1210,784,1228,735"/>
+<area shape="rect" href="classevolutionary__algorithms_1_1complement_1_1_truncation_selection.html#ab59a8422f18ba171cb70b680c84eaac1" title=" " alt="" coords="844,1028,1082,1071"/>
+<area shape="poly" title=" " alt="" coords="1238,737,1223,799,1197,875,1178,914,1156,952,1130,987,1098,1018,1081,1030,1078,1025,1095,1014,1126,984,1152,949,1174,912,1192,873,1218,797,1233,736"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_particle.html#a8a8a33dd0ab1d3352d36b239d5c11beb" title=" " alt="" coords="875,1095,1051,1137"/>
+<area shape="poly" title=" " alt="" coords="1242,737,1231,810,1207,904,1188,953,1164,1001,1135,1046,1098,1085,1077,1099,1052,1109,1050,1104,1074,1095,1095,1081,1130,1043,1160,999,1183,951,1202,903,1225,809,1236,736"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_particle_swarm_optimization.html#abc5a8dcdf9ff7418f4084002e383b860" title=" " alt="" coords="542,1116,765,1175"/>
+<area shape="poly" title=" " alt="" coords="1246,737,1242,825,1235,881,1223,940,1205,1000,1179,1057,1144,1109,1098,1151,1058,1175,1013,1191,967,1199,920,1202,873,1200,827,1195,746,1178,747,1173,828,1190,873,1195,920,1197,966,1194,1012,1186,1055,1170,1095,1147,1140,1105,1174,1055,1200,998,1218,939,1230,880,1237,825,1241,737"/>
+<area shape="poly" title=" " alt="" coords="1009,167,992,161,963,159,936,161,920,165,913,171,916,179,910,180,908,170,917,161,935,155,963,153,993,156,1011,162"/>
+<area shape="rect" href="classlocal__search_1_1acceptation__type_1_1_accept_multicase.html#a526e452510b7eebe59af4dde0c59b337" title="Determina si se acepta una solución candidata." alt="" coords="222,247,478,289"/>
+<area shape="poly" title=" " alt="" coords="852,216,479,257,478,251,852,211"/>
+<area shape="rect" href="classlocal__search_1_1acceptation__type_1_1_accept_not_dominated.html#a05fe7b0385dfafe7701f6a4e9b2b80d2" title=" " alt="" coords="237,5,462,64"/>
+<area shape="poly" title=" " alt="" coords="931,171,866,112,825,84,780,62,700,40,617,28,536,24,463,26,463,21,536,19,617,23,701,35,782,58,827,80,869,108,934,167"/>
+<area shape="rect" href="classlocal__search_1_1acceptation__type_1_1_accept_multicase.html#a84e9105150068bb1901051ed5d986d81" title="Cuenta cuántas soluciones en la lista son dominadas por el candidato." alt="" coords="542,272,766,331"/>
+<area shape="poly" title=" " alt="" coords="855,230,830,237,782,256,735,274,733,269,780,251,828,232,853,225"/>
+<area shape="rect" href="classlocal__search_1_1acceptation__type_1_1_accept_multicase.html#af114888741d64b50c3559106fd01d711" title="Calcula el rango de dominancia del candidato." alt="" coords="526,355,781,397"/>
+<area shape="poly" title=" " alt="" coords="855,222,831,237,820,249,813,262,808,289,803,317,795,331,783,345,766,356,763,352,780,341,791,328,798,315,803,288,808,260,815,246,828,233,852,217"/>
+<area shape="rect" href="classlocal__search_1_1acceptation__type_1_1_dominance.html#aff9166b5654b3ed44eed2cee4de7d2b2" title=" " alt="" coords="546,72,761,115"/>
+<area shape="poly" title=" " alt="" coords="899,176,780,129,743,118,745,113,782,124,901,171"/>
+<area shape="rect" href="classlocal__search_1_1candidate__type_1_1_not_dominated_candidate.html#a8f08ece6519709427b4917712b805159" title=" " alt="" coords="537,139,770,197"/>
+<area shape="poly" title=" " alt="" coords="852,192,770,183,771,178,853,187"/>
+<area shape="poly" title=" " alt="" coords="526,290,478,285,479,279,526,285"/>
+<area shape="poly" title=" " alt="" coords="547,352,525,345,457,319,396,292,398,287,459,314,527,340,549,347"/>
+<area shape="poly" title=" " alt="" coords="540,123,527,129,496,150,455,181,377,248,374,244,452,177,493,145,525,124,538,118"/>
+<area shape="poly" title=" " alt="" coords="531,72,463,59,464,54,532,67"/>
+<area shape="rect" href="classlocal__search_1_1acceptation__type_1_1_accept_not_dominated_tabu.html#a3182ac113bddb89bb3ea7af704b38835" title=" " alt="" coords="223,88,476,147"/>
+<area shape="poly" title=" " alt="" coords="532,106,477,110,477,105,531,100"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_particle_swarm_optimization.html#a58823d3000e36d540bd20800e0636a88" title="Constructor por defecto." alt="" coords="540,620,767,679"/>
+<area shape="poly" title=" " alt="" coords="842,446,831,453,781,492,738,537,702,583,676,621,671,618,698,580,734,534,778,488,828,448,839,442"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_particle_swarm_optimization.html#a4a9da4ad8253a7521056fbb306a495a3" title=" " alt="" coords="239,620,461,679"/>
+<area shape="poly" title=" " alt="" coords="525,661,462,661,462,655,525,656"/>
+<area shape="poly" title=" " alt="" coords="477,638,540,638,540,643,477,643"/>
+<area shape="poly" title=" " alt="" coords="839,824,828,818,781,787,739,750,676,681,680,677,743,746,785,783,831,814,842,819"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a06c51732247b401b0369fe6133d35793" title=" " alt="" coords="559,961,748,1004"/>
+<area shape="poly" title=" " alt="" coords="858,985,749,985,749,980,858,980"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a4064a096c203ec6b538929af5bd8d0d7" title=" " alt="" coords="245,961,454,1004"/>
+<area shape="poly" title=" " alt="" coords="543,985,455,985,455,980,543,980"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,961,174,1004"/>
+<area shape="poly" title=" " alt="" coords="230,985,174,985,174,980,230,980"/>
+<area shape="poly" title=" " alt="" coords="860,1128,765,1137,765,1132,860,1123"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6731d9f81ab05739dce8ddb4800e1d80" name="a6731d9f81ab05739dce8ddb4800e1d80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6731d9f81ab05739dce8ddb4800e1d80">&#9670;&#160;</a></span>getTypeSolutionMethod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enumproblem_1_1extension_1_1_type_solution_method.html">TypeSolutionMethod</a> problem.definition.Problem.getTypeSolutionMethod </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a443db14206d399250f49e78175ca829e" name="a443db14206d399250f49e78175ca829e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a443db14206d399250f49e78175ca829e">&#9670;&#160;</a></span>newSolutionMethod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classproblem_1_1extension_1_1_solution_method.html">SolutionMethod</a> problem.definition.Problem.newSolutionMethod </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enumproblem_1_1extension_1_1_type_solution_method.html">TypeSolutionMethod</a></td>          <td class="paramname"><span class="paramname"><em>typeSolutionMethod</em></span></td><td>)</td>
+          <td> throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproblem_1_1definition_1_1_problem_a443db14206d399250f49e78175ca829e_icgraph.png" border="0" usemap="#aclassproblem_1_1definition_1_1_problem_a443db14206d399250f49e78175ca829e_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassproblem_1_1definition_1_1_problem_a443db14206d399250f49e78175ca829e_icgraph" id="aclassproblem_1_1definition_1_1_problem_a443db14206d399250f49e78175ca829e_icgraph">
+<area shape="rect" title=" " alt="" coords="1054,147,1257,189"/>
+<area shape="rect" href="classproblem_1_1definition_1_1_problem.html#a74d56127a8524b4a20f6ab831744f164" title=" " alt="" coords="826,147,1006,189"/>
+<area shape="poly" title=" " alt="" coords="1038,171,1006,171,1006,165,1038,165"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a21767d34c374a65dd29196459273ff34" title=" " alt="" coords="491,5,778,48"/>
+<area shape="poly" title=" " alt="" coords="881,138,834,98,777,62,749,51,751,46,780,58,837,94,884,134"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_hill_climbing_restart.html#a03effb92915e2642b7d87763987a43ae" title=" " alt="" coords="540,72,729,115"/>
+<area shape="poly" title=" " alt="" coords="830,144,778,129,729,117,730,112,779,124,832,139"/>
+<area shape="rect" href="classlocal__search_1_1candidate__type_1_1_not_dominated_candidate.html#a8f08ece6519709427b4917712b805159" title=" " alt="" coords="518,139,751,197"/>
+<area shape="poly" title=" " alt="" coords="811,171,752,171,752,165,811,165"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multiobjective_hill_climbing_distance.html#a35ed16f3af3c7fdcbff8165d9674cc9a" title=" " alt="" coords="502,221,768,280"/>
+<area shape="poly" title=" " alt="" coords="829,197,779,212,741,223,739,218,778,207,828,192"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multiobjective_hill_climbing_restart.html#ab3716a950049b1d77c4374efd355aa14" title=" " alt="" coords="506,304,763,363"/>
+<area shape="poly" title=" " alt="" coords="888,203,841,250,811,274,780,294,756,306,753,301,777,290,808,270,837,246,885,199"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#ada4833a51b39d1372e2c050448bbab6c" title=" " alt="" coords="222,5,443,48"/>
+<area shape="poly" title=" " alt="" coords="475,29,443,29,443,24,475,24"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,5,174,48"/>
+<area shape="poly" title=" " alt="" coords="206,29,174,29,174,24,206,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a33a672579a66c2add5476e0fe446b4eb" name="a33a672579a66c2add5476e0fe446b4eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33a672579a66c2add5476e0fe446b4eb">&#9670;&#160;</a></span>setCodification()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void problem.definition.Problem.setCodification </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classproblem_1_1definition_1_1_codification.html">Codification</a></td>          <td class="paramname"><span class="paramname"><em>codification</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a33e0dea915fd0bbded79b7be8478dd79" name="a33e0dea915fd0bbded79b7be8478dd79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33e0dea915fd0bbded79b7be8478dd79">&#9670;&#160;</a></span>setFactorySolutionMethod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void problem.definition.Problem.setFactorySolutionMethod </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacefactory__interface_1_1_i_f_factory_solution_method.html">IFFactorySolutionMethod</a></td>          <td class="paramname"><span class="paramname"><em>factorySolutionMethod</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7a73fa0767acd800875f32e97386d21" name="af7a73fa0767acd800875f32e97386d21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7a73fa0767acd800875f32e97386d21">&#9670;&#160;</a></span>setFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void problem.definition.Problem.setFunction </td>
+          <td>(</td>
+          <td class="paramtype">ArrayList&lt; <a class="el" href="classproblem_1_1definition_1_1_objetive_function.html">ObjetiveFunction</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>function</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2b4cde1a61f7587d1e90d3c6d0b804fe" name="a2b4cde1a61f7587d1e90d3c6d0b804fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b4cde1a61f7587d1e90d3c6d0b804fe">&#9670;&#160;</a></span>setOperator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void problem.definition.Problem.setOperator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classproblem_1_1definition_1_1_operator.html">Operator</a></td>          <td class="paramname"><span class="paramname"><em>operator</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a110ea946c11ac38487f2f94d7407ee4b" name="a110ea946c11ac38487f2f94d7407ee4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a110ea946c11ac38487f2f94d7407ee4b">&#9670;&#160;</a></span>setPossibleValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void problem.definition.Problem.setPossibleValue </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>possibleValue</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa1cbf017b0c64122fb2db7e4e7df2a2" name="afa1cbf017b0c64122fb2db7e4e7df2a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa1cbf017b0c64122fb2db7e4e7df2a2">&#9670;&#160;</a></span>setState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void problem.definition.Problem.setState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classproblem_1_1definition_1_1_state.html">State</a></td>          <td class="paramname"><span class="paramname"><em>state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproblem_1_1definition_1_1_problem_afa1cbf017b0c64122fb2db7e4e7df2a2_icgraph.png" border="0" usemap="#aclassproblem_1_1definition_1_1_problem_afa1cbf017b0c64122fb2db7e4e7df2a2_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassproblem_1_1definition_1_1_problem_afa1cbf017b0c64122fb2db7e4e7df2a2_icgraph" id="aclassproblem_1_1definition_1_1_problem_afa1cbf017b0c64122fb2db7e4e7df2a2_icgraph">
+<area shape="rect" title=" " alt="" coords="222,5,419,48"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,5,174,48"/>
+<area shape="poly" title=" " alt="" coords="206,29,174,29,174,24,206,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8c0af80ee55954ced5ad7a7e81c84c6a" name="a8c0af80ee55954ced5ad7a7e81c84c6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c0af80ee55954ced5ad7a7e81c84c6a">&#9670;&#160;</a></span>setTypeProblem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void problem.definition.Problem.setTypeProblem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enumproblem_1_1definition_1_1_problem_1_1_problem_type.html">ProblemType</a></td>          <td class="paramname"><span class="paramname"><em>typeProblem</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a31c200ce7f4bb23052bff995ec12d521" name="a31c200ce7f4bb23052bff995ec12d521"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31c200ce7f4bb23052bff995ec12d521">&#9670;&#160;</a></span>setTypeSolutionMethod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void problem.definition.Problem.setTypeSolutionMethod </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enumproblem_1_1extension_1_1_type_solution_method.html">TypeSolutionMethod</a></td>          <td class="paramname"><span class="paramname"><em>typeSolutionMethod</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Documentación de datos miembro</h2>
+<a id="a0ecc87130634f9aae2610a541347be19" name="a0ecc87130634f9aae2610a541347be19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ecc87130634f9aae2610a541347be19">&#9670;&#160;</a></span>codification</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classproblem_1_1definition_1_1_codification.html">Codification</a> problem.definition.Problem.codification</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a29bde4c1722b923cb95c7157dd49ee55" name="a29bde4c1722b923cb95c7157dd49ee55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29bde4c1722b923cb95c7157dd49ee55">&#9670;&#160;</a></span>factorySolutionMethod</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacefactory__interface_1_1_i_f_factory_solution_method.html">IFFactorySolutionMethod</a> problem.definition.Problem.factorySolutionMethod</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43216e475bc790f615d6c6096f55009d" name="a43216e475bc790f615d6c6096f55009d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43216e475bc790f615d6c6096f55009d">&#9670;&#160;</a></span>function</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ArrayList&lt;<a class="el" href="classproblem_1_1definition_1_1_objetive_function.html">ObjetiveFunction</a>&gt; problem.definition.Problem.function</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa8dda2409e952ae76989f705664c20a1" name="aa8dda2409e952ae76989f705664c20a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8dda2409e952ae76989f705664c20a1">&#9670;&#160;</a></span>operator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classproblem_1_1definition_1_1_operator.html">Operator</a> problem.definition.Problem.operator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acbe93a56dc15db61619b505d17e34127" name="acbe93a56dc15db61619b505d17e34127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbe93a56dc15db61619b505d17e34127">&#9670;&#160;</a></span>possibleValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int problem.definition.Problem.possibleValue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d5bdbaaa3ab7261904ca45852f46249" name="a9d5bdbaaa3ab7261904ca45852f46249"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d5bdbaaa3ab7261904ca45852f46249">&#9670;&#160;</a></span>state</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classproblem_1_1definition_1_1_state.html">State</a> problem.definition.Problem.state</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d230269c9b6bccd54fea12149a3c7b8" name="a3d230269c9b6bccd54fea12149a3c7b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d230269c9b6bccd54fea12149a3c7b8">&#9670;&#160;</a></span>typeProblem</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enumproblem_1_1definition_1_1_problem_1_1_problem_type.html">ProblemType</a> problem.definition.Problem.typeProblem</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a331828d9233c7997c58a844b8536e869" name="a331828d9233c7997c58a844b8536e869"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a331828d9233c7997c58a844b8536e869">&#9670;&#160;</a></span>typeSolutionMethod</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enumproblem_1_1extension_1_1_type_solution_method.html">TypeSolutionMethod</a> problem.definition.Problem.typeSolutionMethod</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>La documentación de esta clase está generada del siguiente archivo:<ul>
+<li>src/main/java/problem/definition/<a class="el" href="_problem_8java.html">Problem.java</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>problem</b></li><li class="navelem"><a href="namespaceproblem_1_1definition.html">definition</a></li><li class="navelem"><a href="classproblem_1_1definition_1_1_problem.html">Problem</a></li>
+    <li class="footer">Generado el <span class="timestamp"></span> para BiCIAM por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

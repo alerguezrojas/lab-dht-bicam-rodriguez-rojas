@@ -1,0 +1,30 @@
+<map id="metaheuristics.generators.SimulatedAnnealing" name="metaheuristics.generators.SimulatedAnnealing">
+<area shape="rect" id="Node000001" title=" " alt="" coords="842,859,1007,1392"/>
+<area shape="rect" id="Node000002" href="$classmetaheuristics_1_1generators_1_1_generator.html" title=" " alt="" coords="5,389,188,773"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,784,220,833,293,893,374,944,459,988,546,1024,631,1054,711,1077,844,1108,842,1113,710,1082,630,1059,544,1029,457,993,371,949,290,897,216,837,175,787"/>
+<area shape="rect" id="Node000003" href="$classlocal__search_1_1candidate__type_1_1_candidate_value.html" title=" " alt="" coords="494,485,650,677"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="618,676,659,754,705,833,769,925,834,1011,830,1014,765,928,701,836,654,756,614,678"/>
+<area shape="rect" id="Node000004" href="$enumlocal__search_1_1complement_1_1_strategy_type.html" title=" " alt="" coords="88,101,250,208"/>
+<area shape="poly" id="edge9_Node000001_Node000004" title=" " alt="" coords="181,207,209,320,256,471,289,552,327,634,372,713,424,785,469,835,518,881,571,924,626,963,734,1029,828,1078,826,1083,731,1034,623,967,568,928,515,885,465,838,420,788,368,715,322,636,284,555,251,473,203,322,176,208"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="199,206,229,254,264,302,317,360,373,414,482,508,478,512,369,418,313,363,260,306,224,257,194,209"/>
+<area shape="rect" id="Node000005" href="$interfacefactory__interface_1_1_i_f_factory_candidate.html" title=" " alt="" coords="445,112,613,197"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="530,197,529,269,532,352,550,469,545,469,527,352,523,269,524,197"/>
+<area shape="rect" id="Node000006" href="$enumlocal__search_1_1candidate__type_1_1_candidate_type.html" title=" " alt="" coords="824,80,991,229"/>
+<area shape="poly" id="edge10_Node000001_Node000006" title=" " alt="" coords="878,230,854,300,835,376,820,491,815,581,821,671,835,786,845,841,839,842,830,787,816,672,810,581,814,490,830,376,849,299,873,228"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="876,231,848,271,813,306,793,316,775,319,757,321,739,330,704,361,674,396,624,472,620,469,670,393,701,357,736,326,756,316,774,313,791,311,810,302,844,268,871,228"/>
+<area shape="rect" id="Node000007" href="$classlocal__search_1_1complement_1_1_tabu_solutions.html" title=" " alt="" coords="637,101,800,208"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="687,209,655,266,627,329,605,399,590,469,585,468,600,398,622,327,650,263,682,207"/>
+<area shape="rect" id="Node000008" href="$classlocal__search_1_1candidate__type_1_1_search_candidate.html" title=" " alt="" coords="274,112,421,197"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="361,196,385,270,419,351,454,412,492,470,487,473,449,415,414,353,380,271,356,198"/>
+<area shape="rect" id="Node000009" href="$enumlocal__search_1_1acceptation__type_1_1_accept_type.html" title=" " alt="" coords="940,464,1117,699"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1009,699,982,843,976,842,1004,698"/>
+<area shape="rect" id="Node000010" href="$classproblem_1_1definition_1_1_state.html" title=" " alt="" coords="1142,376,1289,787"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="1144,761,1131,788,1076,889,1018,985,1014,982,1071,886,1126,785,1139,759"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="1141,120,1210,189"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="1183,204,1199,376,1194,377,1177,205"/>
+<area shape="rect" id="Node000012" href="$enummetaheuristics_1_1generators_1_1_generator_type.html" title=" " alt="" coords="1233,5,1440,304"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="1344,304,1344,435,1339,574,1327,699,1317,750,1303,788,1278,834,1247,877,1212,917,1174,955,1096,1020,1023,1071,1020,1066,1093,1015,1171,951,1208,914,1242,874,1273,831,1298,786,1311,748,1322,699,1334,574,1339,435,1339,304"/>
+<area shape="poly" id="edge13_Node000010_Node000012" title=" " alt="" coords="1236,298,1224,329,1216,360,1211,359,1219,327,1231,296"/>
+<area shape="rect" id="Node000013" href="$interfacefactory__interface_1_1_i_f_factory_accept_candidate.html" title=" " alt="" coords="1456,539,1624,624"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="1528,625,1494,705,1469,748,1439,788,1391,837,1339,883,1228,965,1119,1031,1024,1082,1021,1077,1116,1027,1226,960,1336,879,1388,833,1435,785,1465,745,1489,702,1524,623"/>
+</map>

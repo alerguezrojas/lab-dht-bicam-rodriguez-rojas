@@ -1,0 +1,409 @@
+\doxysection{Referencia de la clase local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing}
+\hypertarget{classlocal__search_1_1_multi_case_simulated_annealing}{}\label{classlocal__search_1_1_multi_case_simulated_annealing}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+
+
+Diagrama de herencia de local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classlocal__search_1_1_multi_case_simulated_annealing__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboración de local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlocal__search_1_1_multi_case_simulated_annealing__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_a0ec56267036dedff5cf5ad56e472d126}{simple\+Test}} ()
+\item 
+\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_af5dc5a24ef82a07c0c94022351c9be8a}{get\+Type\+Generator}} ()
+\item 
+void \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_a1e7676e7bcc47d1a578aa32e7587adfd}{set\+Type\+Generator}} (\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_aa3399fc9d7008e42fc61d9dbbb5473db}{type\+Generator}})
+\item 
+\mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_a81c99cd2abe01b3a7a3555f8bf528d25}{Multi\+Case\+Simulated\+Annealing}} ()
+\item 
+void \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_a743dae809c67d7b46b4abeacda49f4e9}{set\+Factory\+Accept\+Candidate}} (\mbox{\hyperlink{interfacefactory__interface_1_1_i_f_factory_accept_candidate}{IFFactory\+Accept\+Candidate}} \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_aca6cc634e481d1aad63dbf3ca0d5661a}{ifaccept\+Candidate}})
+\item 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_a77a086fe56ba566bafb39929b2313049}{generate}} (Integer operatornumber)  throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception 
+\item 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_a0e3166796e0f6a38c496ece0fe05e5e3}{get\+Reference}} ()
+\item 
+void \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_af40715494ad657d5fe9d8519f1a98b29}{set\+State\+Ref}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} state\+Ref)
+\item 
+void \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_a3b4d1bd009460f9fba7ac70dbe996c14}{set\+Initial\+Reference}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} state\+Initial\+Ref)
+\item 
+void \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_a7b84e7aef7c17e16672ae06e28c74740}{update\+Reference}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} state\+Candidate, Integer count\+Iterations\+Current)  throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception 
+\item 
+\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_affa08601368e2ce28bcb630a63ffe158}{get\+Type}} ()
+\item 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_a7a9278860841aa0944c9243087abe3ff}{get\+Reference\+List}} ()
+\item 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_a6db51cbb863a45252bcf2a3f7925b4b3}{get\+Son\+List}} ()
+\item 
+boolean \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_ab770b3c86733354cfbe5a22cb642473f}{award\+Update\+REF}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} state\+Candidate)
+\item 
+float \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_aef0378863c1ee4e445bb2f48be4632a6}{get\+Weight}} ()
+\item 
+void \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_a7355cd5fd3da15da411f55adc3c001cf}{set\+Weight}} (float \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_a91487e9a96213507959555092df9cadd}{weight}})
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_ad826d993881ad46e2abc561ca53fb226}{get\+List\+Count\+Better\+Gender}} ()
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_a2209ffcef6cbbd3d31187ec8d5927308}{get\+List\+Count\+Gender}} ()
+\item 
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_a6fad5de4a3ce086bab213dacaf9cbb02}{get\+Trace}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static Double \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_a67d7646893657a509708bb65b04e70f8}{alpha}}
+\item 
+static Double \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_abbc5cf1a88ca71417f276e77dc35b567}{tinitial}}
+\item 
+static Double \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_a74f5011115baec247df247fdb0f25cc3}{tfinal}}
+\item 
+static int \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_a1431e101b839f55018ed444f0c701fa3}{count\+IterationsT}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlocal__search_1_1candidate__type_1_1_candidate_value}{Candidate\+Value}} \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_a176eed6ccbae56b75432d70f7ad83c36}{candidatevalue}}
+\item 
+\mbox{\hyperlink{enumlocal__search_1_1acceptation__type_1_1_accept_type}{Accept\+Type}} \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_a37e0ef3f5f14e9745d28292da8075b7d}{type\+Acceptation}}
+\item 
+\mbox{\hyperlink{enumlocal__search_1_1complement_1_1_strategy_type}{Strategy\+Type}} \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_a5eada1538e0eefac7f884da6aac887cd}{strategy}}
+\item 
+\mbox{\hyperlink{enumlocal__search_1_1candidate__type_1_1_candidate_type}{Candidate\+Type}} \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_a3cb5d5cf77399031276bb58d997c25c5}{type\+Candidate}}
+\item 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_a49286012443e8ba6fc453bb83f6d43bc}{state\+Reference\+SA}}
+\item 
+\mbox{\hyperlink{interfacefactory__interface_1_1_i_f_factory_accept_candidate}{IFFactory\+Accept\+Candidate}} \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_aca6cc634e481d1aad63dbf3ca0d5661a}{ifaccept\+Candidate}}
+\item 
+int \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_a37a04a66bdebbb418b06400e84c07fd4}{count\+Rept}}
+\item 
+\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_aa3399fc9d7008e42fc61d9dbbb5473db}{type\+Generator}}
+\item 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_a2757da2487415846f8e619e2b65d3ae0}{list\+State\+Reference}} = new Array\+List$<$\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}$>$()
+\item 
+float \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_a91487e9a96213507959555092df9cadd}{weight}}
+\item 
+List$<$ Float $>$ \mbox{\hyperlink{classlocal__search_1_1_multi_case_simulated_annealing_a547988c6dc12a71667615b13d6606540}{list\+Trace}} = new Array\+List$<$Float$>$()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Otros miembros heredados}
+\doxysubsection*{Atributos públicos heredados de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{metaheuristics.\+generators.\+Generator}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a3c0145210385b6257c8fc20cac1f830a}{count\+Gender}}
+\item 
+int \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a43815f3944c514ba3156b0e68482befa}{count\+Better\+Gender}}
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a535a5753046bdda55fb6fee44c4b1f88}{list\+Count\+Better\+Gender}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_doc-constructors}
+\doxysubsection{Documentación de constructores y destructores}
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_a81c99cd2abe01b3a7a3555f8bf528d25}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!MultiCaseSimulatedAnnealing@{MultiCaseSimulatedAnnealing}}
+\index{MultiCaseSimulatedAnnealing@{MultiCaseSimulatedAnnealing}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{MultiCaseSimulatedAnnealing()}{MultiCaseSimulatedAnnealing()}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_a81c99cd2abe01b3a7a3555f8bf528d25} 
+local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+Multi\+Case\+Simulated\+Annealing (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_doc-func-members}
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_ab770b3c86733354cfbe5a22cb642473f}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!awardUpdateREF@{awardUpdateREF}}
+\index{awardUpdateREF@{awardUpdateREF}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{awardUpdateREF()}{awardUpdateREF()}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_ab770b3c86733354cfbe5a22cb642473f} 
+boolean local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+award\+Update\+REF (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+Candidate}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a3513d3953ecc97683f38bcb662b74b9b}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_a77a086fe56ba566bafb39929b2313049}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!generate@{generate}}
+\index{generate@{generate}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_a77a086fe56ba566bafb39929b2313049} 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+generate (\begin{DoxyParamCaption}\item[{Integer}]{operatornumber}{}\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a06f6f7622b9ce32590eadbdf6bf962b5}{metaheuristics.\+generators.\+Generator}}.
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlocal__search_1_1_multi_case_simulated_annealing_a77a086fe56ba566bafb39929b2313049_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_ad826d993881ad46e2abc561ca53fb226}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!getListCountBetterGender@{getListCountBetterGender}}
+\index{getListCountBetterGender@{getListCountBetterGender}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{getListCountBetterGender()}{getListCountBetterGender()}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_ad826d993881ad46e2abc561ca53fb226} 
+int\mbox{[}$\,$\mbox{]} local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+get\+List\+Count\+Better\+Gender (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_ac5bace71f51c16b611ede3ed53263473}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_a2209ffcef6cbbd3d31187ec8d5927308}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!getListCountGender@{getListCountGender}}
+\index{getListCountGender@{getListCountGender}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{getListCountGender()}{getListCountGender()}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_a2209ffcef6cbbd3d31187ec8d5927308} 
+int\mbox{[}$\,$\mbox{]} local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+get\+List\+Count\+Gender (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_ac5d6d45ee8017fb87d80aa952edfc34e}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_a0e3166796e0f6a38c496ece0fe05e5e3}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!getReference@{getReference}}
+\index{getReference@{getReference}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{getReference()}{getReference()}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_a0e3166796e0f6a38c496ece0fe05e5e3} 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+get\+Reference (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_aa56dd45a45776f6023b9f74179cc6384}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_a7a9278860841aa0944c9243087abe3ff}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!getReferenceList@{getReferenceList}}
+\index{getReferenceList@{getReferenceList}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{getReferenceList()}{getReferenceList()}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_a7a9278860841aa0944c9243087abe3ff} 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+get\+Reference\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_ae168237b306de55fe4d6dfda75c7cd13}{metaheuristics.\+generators.\+Generator}}.
+
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlocal__search_1_1_multi_case_simulated_annealing_a7a9278860841aa0944c9243087abe3ff_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_a6db51cbb863a45252bcf2a3f7925b4b3}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!getSonList@{getSonList}}
+\index{getSonList@{getSonList}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{getSonList()}{getSonList()}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_a6db51cbb863a45252bcf2a3f7925b4b3} 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+get\+Son\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_aee09d724c1b3040e7a7ad0b64e341c96}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_a6fad5de4a3ce086bab213dacaf9cbb02}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!getTrace@{getTrace}}
+\index{getTrace@{getTrace}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{getTrace()}{getTrace()}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_a6fad5de4a3ce086bab213dacaf9cbb02} 
+float\mbox{[}$\,$\mbox{]} local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+get\+Trace (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a75d7f30dd2cb3f92475db8525ac7c6e7}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_affa08601368e2ce28bcb630a63ffe158}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!getType@{getType}}
+\index{getType@{getType}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_affa08601368e2ce28bcb630a63ffe158} 
+\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+get\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a5a123306b43c42d28cd1d6e17f8067a5}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_af5dc5a24ef82a07c0c94022351c9be8a}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!getTypeGenerator@{getTypeGenerator}}
+\index{getTypeGenerator@{getTypeGenerator}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{getTypeGenerator()}{getTypeGenerator()}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_af5dc5a24ef82a07c0c94022351c9be8a} 
+\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+get\+Type\+Generator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_aef0378863c1ee4e445bb2f48be4632a6}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!getWeight@{getWeight}}
+\index{getWeight@{getWeight}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{getWeight()}{getWeight()}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_aef0378863c1ee4e445bb2f48be4632a6} 
+float local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+get\+Weight (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a64f2b824081c7af593bf9aa8eabf2c9e}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_a743dae809c67d7b46b4abeacda49f4e9}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!setFactoryAcceptCandidate@{setFactoryAcceptCandidate}}
+\index{setFactoryAcceptCandidate@{setFactoryAcceptCandidate}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{setFactoryAcceptCandidate()}{setFactoryAcceptCandidate()}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_a743dae809c67d7b46b4abeacda49f4e9} 
+void local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+set\+Factory\+Accept\+Candidate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacefactory__interface_1_1_i_f_factory_accept_candidate}{IFFactory\+Accept\+Candidate}}}]{ifaccept\+Candidate}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_a3b4d1bd009460f9fba7ac70dbe996c14}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!setInitialReference@{setInitialReference}}
+\index{setInitialReference@{setInitialReference}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{setInitialReference()}{setInitialReference()}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_a3b4d1bd009460f9fba7ac70dbe996c14} 
+void local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+set\+Initial\+Reference (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+Initial\+Ref}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_aa9f7c4c983705f843b8fcc81e4aa8ba4}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_af40715494ad657d5fe9d8519f1a98b29}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!setStateRef@{setStateRef}}
+\index{setStateRef@{setStateRef}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{setStateRef()}{setStateRef()}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_af40715494ad657d5fe9d8519f1a98b29} 
+void local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+set\+State\+Ref (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+Ref}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_a1e7676e7bcc47d1a578aa32e7587adfd}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!setTypeGenerator@{setTypeGenerator}}
+\index{setTypeGenerator@{setTypeGenerator}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{setTypeGenerator()}{setTypeGenerator()}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_a1e7676e7bcc47d1a578aa32e7587adfd} 
+void local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+set\+Type\+Generator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}}}]{type\+Generator}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_a7355cd5fd3da15da411f55adc3c001cf}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!setWeight@{setWeight}}
+\index{setWeight@{setWeight}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{setWeight()}{setWeight()}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_a7355cd5fd3da15da411f55adc3c001cf} 
+void local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+set\+Weight (\begin{DoxyParamCaption}\item[{float}]{weight}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a8b3c66b57b4c739666989fbce667eb40}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_a0ec56267036dedff5cf5ad56e472d126}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!simpleTest@{simpleTest}}
+\index{simpleTest@{simpleTest}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{simpleTest()}{simpleTest()}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_a0ec56267036dedff5cf5ad56e472d126} 
+int local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+simple\+Test (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_a7b84e7aef7c17e16672ae06e28c74740}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!updateReference@{updateReference}}
+\index{updateReference@{updateReference}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{updateReference()}{updateReference()}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_a7b84e7aef7c17e16672ae06e28c74740} 
+void local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+update\+Reference (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+Candidate}{, }\item[{Integer}]{count\+Iterations\+Current}{}\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_aa1c5878953f2111221b21cb9b1e6cc9f}{metaheuristics.\+generators.\+Generator}}.
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlocal__search_1_1_multi_case_simulated_annealing_a7b84e7aef7c17e16672ae06e28c74740_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_doc-variable-members}
+\doxysubsection{Documentación de datos miembro}
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_a67d7646893657a509708bb65b04e70f8}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!alpha@{alpha}}
+\index{alpha@{alpha}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{alpha}{alpha}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_a67d7646893657a509708bb65b04e70f8} 
+Double local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+alpha\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_a176eed6ccbae56b75432d70f7ad83c36}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!candidatevalue@{candidatevalue}}
+\index{candidatevalue@{candidatevalue}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{candidatevalue}{candidatevalue}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_a176eed6ccbae56b75432d70f7ad83c36} 
+\mbox{\hyperlink{classlocal__search_1_1candidate__type_1_1_candidate_value}{Candidate\+Value}} local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+candidatevalue\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_a1431e101b839f55018ed444f0c701fa3}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!countIterationsT@{countIterationsT}}
+\index{countIterationsT@{countIterationsT}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{countIterationsT}{countIterationsT}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_a1431e101b839f55018ed444f0c701fa3} 
+int local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+count\+IterationsT\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_a37a04a66bdebbb418b06400e84c07fd4}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!countRept@{countRept}}
+\index{countRept@{countRept}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{countRept}{countRept}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_a37a04a66bdebbb418b06400e84c07fd4} 
+int local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+count\+Rept\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_aca6cc634e481d1aad63dbf3ca0d5661a}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!ifacceptCandidate@{ifacceptCandidate}}
+\index{ifacceptCandidate@{ifacceptCandidate}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{ifacceptCandidate}{ifacceptCandidate}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_aca6cc634e481d1aad63dbf3ca0d5661a} 
+\mbox{\hyperlink{interfacefactory__interface_1_1_i_f_factory_accept_candidate}{IFFactory\+Accept\+Candidate}} local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+ifaccept\+Candidate\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_a2757da2487415846f8e619e2b65d3ae0}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!listStateReference@{listStateReference}}
+\index{listStateReference@{listStateReference}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{listStateReference}{listStateReference}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_a2757da2487415846f8e619e2b65d3ae0} 
+List$<$\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}$>$ local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+list\+State\+Reference = new Array\+List$<$\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_a547988c6dc12a71667615b13d6606540}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!listTrace@{listTrace}}
+\index{listTrace@{listTrace}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{listTrace}{listTrace}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_a547988c6dc12a71667615b13d6606540} 
+List$<$Float$>$ local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+list\+Trace = new Array\+List$<$Float$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_a49286012443e8ba6fc453bb83f6d43bc}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!stateReferenceSA@{stateReferenceSA}}
+\index{stateReferenceSA@{stateReferenceSA}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{stateReferenceSA}{stateReferenceSA}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_a49286012443e8ba6fc453bb83f6d43bc} 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+state\+Reference\+SA\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_a5eada1538e0eefac7f884da6aac887cd}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!strategy@{strategy}}
+\index{strategy@{strategy}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{strategy}{strategy}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_a5eada1538e0eefac7f884da6aac887cd} 
+\mbox{\hyperlink{enumlocal__search_1_1complement_1_1_strategy_type}{Strategy\+Type}} local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+strategy\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_a74f5011115baec247df247fdb0f25cc3}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!tfinal@{tfinal}}
+\index{tfinal@{tfinal}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{tfinal}{tfinal}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_a74f5011115baec247df247fdb0f25cc3} 
+Double local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+tfinal\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_abbc5cf1a88ca71417f276e77dc35b567}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!tinitial@{tinitial}}
+\index{tinitial@{tinitial}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{tinitial}{tinitial}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_abbc5cf1a88ca71417f276e77dc35b567} 
+Double local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+tinitial\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_a37e0ef3f5f14e9745d28292da8075b7d}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!typeAcceptation@{typeAcceptation}}
+\index{typeAcceptation@{typeAcceptation}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{typeAcceptation}{typeAcceptation}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_a37e0ef3f5f14e9745d28292da8075b7d} 
+\mbox{\hyperlink{enumlocal__search_1_1acceptation__type_1_1_accept_type}{Accept\+Type}} local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+type\+Acceptation\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_a3cb5d5cf77399031276bb58d997c25c5}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!typeCandidate@{typeCandidate}}
+\index{typeCandidate@{typeCandidate}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{typeCandidate}{typeCandidate}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_a3cb5d5cf77399031276bb58d997c25c5} 
+\mbox{\hyperlink{enumlocal__search_1_1candidate__type_1_1_candidate_type}{Candidate\+Type}} local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+type\+Candidate\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_aa3399fc9d7008e42fc61d9dbbb5473db}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!typeGenerator@{typeGenerator}}
+\index{typeGenerator@{typeGenerator}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{typeGenerator}{typeGenerator}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_aa3399fc9d7008e42fc61d9dbbb5473db} 
+\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+type\+Generator\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classlocal__search_1_1_multi_case_simulated_annealing_a91487e9a96213507959555092df9cadd}\index{local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}!weight@{weight}}
+\index{weight@{weight}!local\_search.MultiCaseSimulatedAnnealing@{local\_search.MultiCaseSimulatedAnnealing}}
+\doxysubsubsection{\texorpdfstring{weight}{weight}}
+{\footnotesize\ttfamily \label{classlocal__search_1_1_multi_case_simulated_annealing_a91487e9a96213507959555092df9cadd} 
+float local\+\_\+search.\+Multi\+Case\+Simulated\+Annealing.\+weight\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/local\+\_\+search/\mbox{\hyperlink{local__search_2_multi_case_simulated_annealing_8java}{Multi\+Case\+Simulated\+Annealing.\+java}}\end{DoxyCompactItemize}

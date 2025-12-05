@@ -1,0 +1,11 @@
+<map id="metaheuristics.generators.LimitRoulette.setLimitHigh" name="metaheuristics.generators.LimitRoulette.setLimitHigh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="730,39,906,81"/>
+<area shape="rect" id="Node000002" href="$classmetaheuristics_1_1generators_1_1_multi_generator.html#a2c2b5c6dc19e52e87a1a0b2151fa9768" title=" " alt="" coords="476,5,651,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="714,49,652,41,652,36,715,44"/>
+<area shape="rect" id="Node000005" href="$classevolutionary__algorithms_1_1complement_1_1_roulette_selection.html#ace4f2faee78f128d104fedb0cf3963fd" title=" " alt="" coords="445,72,682,115"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="715,76,683,80,682,75,714,71"/>
+<area shape="rect" id="Node000003" href="$classmetaheuristics_1_1generators_1_1_multi_generator.html#a2309ca3d3de82961bbc61d3fb6c893fc" title=" " alt="" coords="222,5,397,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="460,29,398,29,398,24,460,24"/>
+<area shape="rect" id="Node000004" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,5,174,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="206,29,174,29,174,24,206,24"/>
+</map>

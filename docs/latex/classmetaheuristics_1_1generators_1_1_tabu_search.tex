@@ -1,0 +1,393 @@
+\doxysection{Referencia de la clase metaheuristics.\+generators.\+Tabu\+Search}
+\hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search}{}\label{classmetaheuristics_1_1generators_1_1_tabu_search}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+
+
+Diagrama de herencia de metaheuristics.\+generators.\+Tabu\+Search
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmetaheuristics_1_1generators_1_1_tabu_search__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboración de metaheuristics.\+generators.\+Tabu\+Search\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_tabu_search__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_a6f3c2a118b89b335ccdf87ed881a7fc4}{get\+Type\+Generator}} ()
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_ab9330d706d7d48afbdc6595ba717130f}{set\+Type\+Generator}} (\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_a976bc147b738e91a7b245424208ea510}{type\+Generator}})
+\item 
+\mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_ad0157e54c7cc9736d0cfc1785a3f65bf}{Tabu\+Search}} ()
+\item 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_a960394b27d55ada10842a94184aa39b4}{generate}} (Integer operatornumber)  throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception 
+\item 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_ada5be4a7b947390cc70ad6b9bf33d412}{get\+Reference}} ()
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_a934077931cd4880ed942a42af6ab195f}{set\+Initial\+Reference}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} state\+Initial\+Ref)
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_a989071f26389ac8286a7b9cf6b86d845}{set\+State\+Ref}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} state\+Ref)
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_a8e5310bc24ca49dccb985a122173936c}{update\+Reference}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} state\+Candidate, Integer count\+Iterations\+Current)  throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception 
+\item 
+\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_ad36e2583d8edb47cc2e8dae351ff3a1a}{get\+Type}} ()
+\item 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_aab7acb152f577f48ee9a0f29b01e3689}{get\+Reference\+List}} ()
+\item 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_acc567d162eb376a317f3d8eae95420a1}{get\+Son\+List}} ()
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_a9c28686a2db567c3c4484d6065dcd04a}{set\+Type\+Candidate}} (\mbox{\hyperlink{enumlocal__search_1_1candidate__type_1_1_candidate_type}{Candidate\+Type}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_ade3c6897851f8b12cc446cc7eeef4354}{type\+Candidate}})
+\item 
+boolean \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_adc6c6a8184388aafc9d143d63ca7ffde}{award\+Update\+REF}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} state\+Candidate)
+\item 
+float \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_a8a29d1741aaafb540e647ffda3d690e6}{get\+Weight}} ()
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_a87599bb3ca19dda7107a5ae796531f4d}{set\+Weight}} (float \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_a18c862379e9c0da8496b6e1dee6ea5f7}{weight}})
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_ac5abb641df2c61b9c1aa4911ae69fb75}{get\+List\+Count\+Better\+Gender}} ()
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_aa15df7ff1b01b2b9997ad2b8ca39d3aa}{get\+List\+Count\+Gender}} ()
+\item 
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_add5beec981c395092cd1101d8aa66850}{get\+Trace}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_a9e27d27d061ca3c6696f96fe62663f39}{count\+Gender}} = 0
+\item 
+static int \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_a17ee22467fbf2a967b261479f95435d6}{count\+Better\+Gender}} = 0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlocal__search_1_1candidate__type_1_1_candidate_value}{Candidate\+Value}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_a31d63307aa195061e188c7723c4a33f7}{candidatevalue}}
+\item 
+\mbox{\hyperlink{enumlocal__search_1_1acceptation__type_1_1_accept_type}{Accept\+Type}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_afff3deea8e2f9e0edca22f21f8ff5856}{type\+Acceptation}}
+\item 
+\mbox{\hyperlink{enumlocal__search_1_1complement_1_1_strategy_type}{Strategy\+Type}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_ae47364d69ae1f46aacca49de6dd7b3b9}{strategy}}
+\item 
+\mbox{\hyperlink{enumlocal__search_1_1candidate__type_1_1_candidate_type}{Candidate\+Type}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_ade3c6897851f8b12cc446cc7eeef4354}{type\+Candidate}}
+\item 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_a4c8bb4f31daa880c2a864f198bc58e4f}{state\+Reference\+TS}}
+\item 
+\mbox{\hyperlink{interfacefactory__interface_1_1_i_f_factory_accept_candidate}{IFFactory\+Accept\+Candidate}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_a9cce5e426fbdd081c7ecd1f1dbcbdf25}{ifaccept\+Candidate}}
+\item 
+\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_a976bc147b738e91a7b245424208ea510}{type\+Generator}}
+\item 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_a9dcb165b751d73d8d5b0817c5b4290cc}{list\+State\+Reference}} = new Array\+List$<$\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}$>$()
+\item 
+float \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_a18c862379e9c0da8496b6e1dee6ea5f7}{weight}}
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_a9d1d860d8496cc16392eb4e86f4db8dd}{list\+Count\+Better\+Gender}} = new int\mbox{[}10\mbox{]}
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_aadb7222432c87f8c7d3e49541af74e3e}{list\+Count\+Gender}} = new int\mbox{[}10\mbox{]}
+\item 
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_tabu_search_a8c9a0a34d4ea513261aff246068b490e}{list\+Trace}} = new float\mbox{[}1200000\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Otros miembros heredados}
+\doxysubsection*{Atributos públicos heredados de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{metaheuristics.\+generators.\+Generator}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a3c0145210385b6257c8fc20cac1f830a}{count\+Gender}}
+\item 
+int \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a43815f3944c514ba3156b0e68482befa}{count\+Better\+Gender}}
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a535a5753046bdda55fb6fee44c4b1f88}{list\+Count\+Better\+Gender}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_doc-constructors}
+\doxysubsection{Documentación de constructores y destructores}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_ad0157e54c7cc9736d0cfc1785a3f65bf}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!TabuSearch@{TabuSearch}}
+\index{TabuSearch@{TabuSearch}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{TabuSearch()}{TabuSearch()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_ad0157e54c7cc9736d0cfc1785a3f65bf} 
+metaheuristics.\+generators.\+Tabu\+Search.\+Tabu\+Search (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_tabu_search_ad0157e54c7cc9736d0cfc1785a3f65bf_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_doc-func-members}
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_adc6c6a8184388aafc9d143d63ca7ffde}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!awardUpdateREF@{awardUpdateREF}}
+\index{awardUpdateREF@{awardUpdateREF}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{awardUpdateREF()}{awardUpdateREF()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_adc6c6a8184388aafc9d143d63ca7ffde} 
+boolean metaheuristics.\+generators.\+Tabu\+Search.\+award\+Update\+REF (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+Candidate}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a3513d3953ecc97683f38bcb662b74b9b}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_a960394b27d55ada10842a94184aa39b4}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!generate@{generate}}
+\index{generate@{generate}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_a960394b27d55ada10842a94184aa39b4} 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} metaheuristics.\+generators.\+Tabu\+Search.\+generate (\begin{DoxyParamCaption}\item[{Integer}]{operatornumber}{}\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a06f6f7622b9ce32590eadbdf6bf962b5}{metaheuristics.\+generators.\+Generator}}.
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_tabu_search_a960394b27d55ada10842a94184aa39b4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_ac5abb641df2c61b9c1aa4911ae69fb75}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!getListCountBetterGender@{getListCountBetterGender}}
+\index{getListCountBetterGender@{getListCountBetterGender}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{getListCountBetterGender()}{getListCountBetterGender()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_ac5abb641df2c61b9c1aa4911ae69fb75} 
+int\mbox{[}$\,$\mbox{]} metaheuristics.\+generators.\+Tabu\+Search.\+get\+List\+Count\+Better\+Gender (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_ac5bace71f51c16b611ede3ed53263473}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_aa15df7ff1b01b2b9997ad2b8ca39d3aa}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!getListCountGender@{getListCountGender}}
+\index{getListCountGender@{getListCountGender}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{getListCountGender()}{getListCountGender()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_aa15df7ff1b01b2b9997ad2b8ca39d3aa} 
+int\mbox{[}$\,$\mbox{]} metaheuristics.\+generators.\+Tabu\+Search.\+get\+List\+Count\+Gender (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_ac5d6d45ee8017fb87d80aa952edfc34e}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_ada5be4a7b947390cc70ad6b9bf33d412}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!getReference@{getReference}}
+\index{getReference@{getReference}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{getReference()}{getReference()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_ada5be4a7b947390cc70ad6b9bf33d412} 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} metaheuristics.\+generators.\+Tabu\+Search.\+get\+Reference (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_aa56dd45a45776f6023b9f74179cc6384}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_aab7acb152f577f48ee9a0f29b01e3689}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!getReferenceList@{getReferenceList}}
+\index{getReferenceList@{getReferenceList}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{getReferenceList()}{getReferenceList()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_aab7acb152f577f48ee9a0f29b01e3689} 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ metaheuristics.\+generators.\+Tabu\+Search.\+get\+Reference\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_ae168237b306de55fe4d6dfda75c7cd13}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_acc567d162eb376a317f3d8eae95420a1}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!getSonList@{getSonList}}
+\index{getSonList@{getSonList}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{getSonList()}{getSonList()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_acc567d162eb376a317f3d8eae95420a1} 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ metaheuristics.\+generators.\+Tabu\+Search.\+get\+Son\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_aee09d724c1b3040e7a7ad0b64e341c96}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_add5beec981c395092cd1101d8aa66850}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!getTrace@{getTrace}}
+\index{getTrace@{getTrace}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{getTrace()}{getTrace()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_add5beec981c395092cd1101d8aa66850} 
+float\mbox{[}$\,$\mbox{]} metaheuristics.\+generators.\+Tabu\+Search.\+get\+Trace (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a75d7f30dd2cb3f92475db8525ac7c6e7}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_ad36e2583d8edb47cc2e8dae351ff3a1a}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!getType@{getType}}
+\index{getType@{getType}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_ad36e2583d8edb47cc2e8dae351ff3a1a} 
+\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} metaheuristics.\+generators.\+Tabu\+Search.\+get\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a5a123306b43c42d28cd1d6e17f8067a5}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_a6f3c2a118b89b335ccdf87ed881a7fc4}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!getTypeGenerator@{getTypeGenerator}}
+\index{getTypeGenerator@{getTypeGenerator}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{getTypeGenerator()}{getTypeGenerator()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_a6f3c2a118b89b335ccdf87ed881a7fc4} 
+\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} metaheuristics.\+generators.\+Tabu\+Search.\+get\+Type\+Generator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_a8a29d1741aaafb540e647ffda3d690e6}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!getWeight@{getWeight}}
+\index{getWeight@{getWeight}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{getWeight()}{getWeight()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_a8a29d1741aaafb540e647ffda3d690e6} 
+float metaheuristics.\+generators.\+Tabu\+Search.\+get\+Weight (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a64f2b824081c7af593bf9aa8eabf2c9e}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_a934077931cd4880ed942a42af6ab195f}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!setInitialReference@{setInitialReference}}
+\index{setInitialReference@{setInitialReference}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{setInitialReference()}{setInitialReference()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_a934077931cd4880ed942a42af6ab195f} 
+void metaheuristics.\+generators.\+Tabu\+Search.\+set\+Initial\+Reference (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+Initial\+Ref}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_aa9f7c4c983705f843b8fcc81e4aa8ba4}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_a989071f26389ac8286a7b9cf6b86d845}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!setStateRef@{setStateRef}}
+\index{setStateRef@{setStateRef}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{setStateRef()}{setStateRef()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_a989071f26389ac8286a7b9cf6b86d845} 
+void metaheuristics.\+generators.\+Tabu\+Search.\+set\+State\+Ref (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+Ref}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_a9c28686a2db567c3c4484d6065dcd04a}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!setTypeCandidate@{setTypeCandidate}}
+\index{setTypeCandidate@{setTypeCandidate}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{setTypeCandidate()}{setTypeCandidate()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_a9c28686a2db567c3c4484d6065dcd04a} 
+void metaheuristics.\+generators.\+Tabu\+Search.\+set\+Type\+Candidate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumlocal__search_1_1candidate__type_1_1_candidate_type}{Candidate\+Type}}}]{type\+Candidate}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_ab9330d706d7d48afbdc6595ba717130f}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!setTypeGenerator@{setTypeGenerator}}
+\index{setTypeGenerator@{setTypeGenerator}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{setTypeGenerator()}{setTypeGenerator()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_ab9330d706d7d48afbdc6595ba717130f} 
+void metaheuristics.\+generators.\+Tabu\+Search.\+set\+Type\+Generator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}}}]{type\+Generator}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_a87599bb3ca19dda7107a5ae796531f4d}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!setWeight@{setWeight}}
+\index{setWeight@{setWeight}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{setWeight()}{setWeight()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_a87599bb3ca19dda7107a5ae796531f4d} 
+void metaheuristics.\+generators.\+Tabu\+Search.\+set\+Weight (\begin{DoxyParamCaption}\item[{float}]{weight}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a8b3c66b57b4c739666989fbce667eb40}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_a8e5310bc24ca49dccb985a122173936c}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!updateReference@{updateReference}}
+\index{updateReference@{updateReference}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{updateReference()}{updateReference()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_a8e5310bc24ca49dccb985a122173936c} 
+void metaheuristics.\+generators.\+Tabu\+Search.\+update\+Reference (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+Candidate}{, }\item[{Integer}]{count\+Iterations\+Current}{}\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_aa1c5878953f2111221b21cb9b1e6cc9f}{metaheuristics.\+generators.\+Generator}}.
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_tabu_search_a8e5310bc24ca49dccb985a122173936c_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_doc-variable-members}
+\doxysubsection{Documentación de datos miembro}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_a31d63307aa195061e188c7723c4a33f7}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!candidatevalue@{candidatevalue}}
+\index{candidatevalue@{candidatevalue}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{candidatevalue}{candidatevalue}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_a31d63307aa195061e188c7723c4a33f7} 
+\mbox{\hyperlink{classlocal__search_1_1candidate__type_1_1_candidate_value}{Candidate\+Value}} metaheuristics.\+generators.\+Tabu\+Search.\+candidatevalue\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_a17ee22467fbf2a967b261479f95435d6}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!countBetterGender@{countBetterGender}}
+\index{countBetterGender@{countBetterGender}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{countBetterGender}{countBetterGender}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_a17ee22467fbf2a967b261479f95435d6} 
+int metaheuristics.\+generators.\+Tabu\+Search.\+count\+Better\+Gender = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_a9e27d27d061ca3c6696f96fe62663f39}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!countGender@{countGender}}
+\index{countGender@{countGender}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{countGender}{countGender}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_a9e27d27d061ca3c6696f96fe62663f39} 
+int metaheuristics.\+generators.\+Tabu\+Search.\+count\+Gender = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_a9cce5e426fbdd081c7ecd1f1dbcbdf25}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!ifacceptCandidate@{ifacceptCandidate}}
+\index{ifacceptCandidate@{ifacceptCandidate}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{ifacceptCandidate}{ifacceptCandidate}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_a9cce5e426fbdd081c7ecd1f1dbcbdf25} 
+\mbox{\hyperlink{interfacefactory__interface_1_1_i_f_factory_accept_candidate}{IFFactory\+Accept\+Candidate}} metaheuristics.\+generators.\+Tabu\+Search.\+ifaccept\+Candidate\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_a9d1d860d8496cc16392eb4e86f4db8dd}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!listCountBetterGender@{listCountBetterGender}}
+\index{listCountBetterGender@{listCountBetterGender}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{listCountBetterGender}{listCountBetterGender}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_a9d1d860d8496cc16392eb4e86f4db8dd} 
+int \mbox{[}$\,$\mbox{]} metaheuristics.\+generators.\+Tabu\+Search.\+list\+Count\+Better\+Gender = new int\mbox{[}10\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_aadb7222432c87f8c7d3e49541af74e3e}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!listCountGender@{listCountGender}}
+\index{listCountGender@{listCountGender}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{listCountGender}{listCountGender}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_aadb7222432c87f8c7d3e49541af74e3e} 
+int \mbox{[}$\,$\mbox{]} metaheuristics.\+generators.\+Tabu\+Search.\+list\+Count\+Gender = new int\mbox{[}10\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_a9dcb165b751d73d8d5b0817c5b4290cc}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!listStateReference@{listStateReference}}
+\index{listStateReference@{listStateReference}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{listStateReference}{listStateReference}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_a9dcb165b751d73d8d5b0817c5b4290cc} 
+List$<$\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}$>$ metaheuristics.\+generators.\+Tabu\+Search.\+list\+State\+Reference = new Array\+List$<$\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_a8c9a0a34d4ea513261aff246068b490e}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!listTrace@{listTrace}}
+\index{listTrace@{listTrace}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{listTrace}{listTrace}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_a8c9a0a34d4ea513261aff246068b490e} 
+float \mbox{[}$\,$\mbox{]} metaheuristics.\+generators.\+Tabu\+Search.\+list\+Trace = new float\mbox{[}1200000\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_a4c8bb4f31daa880c2a864f198bc58e4f}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!stateReferenceTS@{stateReferenceTS}}
+\index{stateReferenceTS@{stateReferenceTS}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{stateReferenceTS}{stateReferenceTS}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_a4c8bb4f31daa880c2a864f198bc58e4f} 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} metaheuristics.\+generators.\+Tabu\+Search.\+state\+Reference\+TS\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_ae47364d69ae1f46aacca49de6dd7b3b9}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!strategy@{strategy}}
+\index{strategy@{strategy}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{strategy}{strategy}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_ae47364d69ae1f46aacca49de6dd7b3b9} 
+\mbox{\hyperlink{enumlocal__search_1_1complement_1_1_strategy_type}{Strategy\+Type}} metaheuristics.\+generators.\+Tabu\+Search.\+strategy\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_afff3deea8e2f9e0edca22f21f8ff5856}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!typeAcceptation@{typeAcceptation}}
+\index{typeAcceptation@{typeAcceptation}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{typeAcceptation}{typeAcceptation}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_afff3deea8e2f9e0edca22f21f8ff5856} 
+\mbox{\hyperlink{enumlocal__search_1_1acceptation__type_1_1_accept_type}{Accept\+Type}} metaheuristics.\+generators.\+Tabu\+Search.\+type\+Acceptation\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_ade3c6897851f8b12cc446cc7eeef4354}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!typeCandidate@{typeCandidate}}
+\index{typeCandidate@{typeCandidate}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{typeCandidate}{typeCandidate}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_ade3c6897851f8b12cc446cc7eeef4354} 
+\mbox{\hyperlink{enumlocal__search_1_1candidate__type_1_1_candidate_type}{Candidate\+Type}} metaheuristics.\+generators.\+Tabu\+Search.\+type\+Candidate\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_a976bc147b738e91a7b245424208ea510}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!typeGenerator@{typeGenerator}}
+\index{typeGenerator@{typeGenerator}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{typeGenerator}{typeGenerator}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_a976bc147b738e91a7b245424208ea510} 
+\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} metaheuristics.\+generators.\+Tabu\+Search.\+type\+Generator\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_tabu_search_a18c862379e9c0da8496b6e1dee6ea5f7}\index{metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}!weight@{weight}}
+\index{weight@{weight}!metaheuristics.generators.TabuSearch@{metaheuristics.generators.TabuSearch}}
+\doxysubsubsection{\texorpdfstring{weight}{weight}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_tabu_search_a18c862379e9c0da8496b6e1dee6ea5f7} 
+float metaheuristics.\+generators.\+Tabu\+Search.\+weight\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/metaheuristics/generators/\mbox{\hyperlink{_tabu_search_8java}{Tabu\+Search.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+<map id="factory_method.FactoryAcceptCandidate" name="factory_method.FactoryAcceptCandidate">
+<area shape="rect" id="Node000001" title=" " alt="" coords="90,163,280,248"/>
+<area shape="rect" id="Node000002" href="$interfacefactory__interface_1_1_i_f_factory_accept_candidate.html" title=" " alt="" coords="5,5,173,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,101,162,161,157,164,120,104"/>
+<area shape="rect" id="Node000003" href="$classlocal__search_1_1acceptation__type_1_1_acceptable_candidate.html" title=" " alt="" coords="197,5,368,91"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="259,92,222,150,218,147,255,89"/>
+</map>

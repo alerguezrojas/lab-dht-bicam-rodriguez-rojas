@@ -1,0 +1,11 @@
+<map id="metaheuristics.generators.HillClimbingRestart.HillClimbingRestart" name="metaheuristics.generators.HillClimbingRestart.HillClimbingRestart">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,64,214,123"/>
+<area shape="rect" id="Node000002" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a67b5a933a8ccd493360fa06e0a448bb4" title=" " alt="" coords="280,5,440,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,63,264,49,266,54,215,68"/>
+<area shape="rect" id="Node000003" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#aeb1c308c04db42c2977e51ffc779862d" title=" " alt="" coords="280,72,440,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="214,91,265,91,265,96,214,96"/>
+<area shape="rect" id="Node000005" href="$classproblem_1_1definition_1_1_problem.html#ad6f38df755179e22ffe487ba4a5c8021" title=" " alt="" coords="262,139,459,181"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="215,119,264,132,262,137,214,124"/>
+<area shape="rect" id="Node000004" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a4f635be1df3d594c3e8f2d111cc5c995" title=" " alt="" coords="507,72,667,115"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="441,91,491,91,491,96,441,96"/>
+</map>

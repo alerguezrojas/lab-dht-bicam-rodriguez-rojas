@@ -1,0 +1,15 @@
+<map id="metaheuristics.generators.MultiGenerator.searchState" name="metaheuristics.generators.MultiGenerator.searchState">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,139,186,181"/>
+<area shape="rect" id="Node000002" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a128158b2cc956351bbc2c285b1e577b8" title=" " alt="" coords="252,5,412,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,136,170,97,232,58,244,52,246,57,235,62,173,101,123,140"/>
+<area shape="rect" id="Node000003" href="$classproblem_1_1definition_1_1_state.html#a226ea6fab8e7060cf131edfdb245a6fa" title=" " alt="" coords="242,72,422,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,136,239,117,240,122,174,141"/>
+<area shape="rect" id="Node000004" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a67b5a933a8ccd493360fa06e0a448bb4" title=" " alt="" coords="252,139,412,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="186,157,237,157,237,163,186,163"/>
+<area shape="rect" id="Node000005" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#aeb1c308c04db42c2977e51ffc779862d" title=" " alt="" coords="252,205,412,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="174,179,240,198,239,203,173,184"/>
+<area shape="rect" id="Node000007" href="$classproblem_1_1definition_1_1_problem.html#ad6f38df755179e22ffe487ba4a5c8021" title=" " alt="" coords="234,272,431,315"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="123,180,173,219,235,258,246,263,244,268,232,262,170,223,120,184"/>
+<area shape="rect" id="Node000006" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a4f635be1df3d594c3e8f2d111cc5c995" title=" " alt="" coords="479,205,639,248"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="413,224,463,224,463,229,413,229"/>
+</map>

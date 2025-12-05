@@ -1,0 +1,9 @@
+<map id="metaheuristics.generators.TabuSearch.TabuSearch" name="metaheuristics.generators.TabuSearch.TabuSearch">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,181,81"/>
+<area shape="rect" id="Node000002" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a67b5a933a8ccd493360fa06e0a448bb4" title=" " alt="" coords="229,5,389,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,44,213,39,214,44,181,49"/>
+<area shape="rect" id="Node000003" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#aeb1c308c04db42c2977e51ffc779862d" title=" " alt="" coords="229,72,389,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="181,71,214,76,213,81,181,76"/>
+<area shape="rect" id="Node000004" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a4f635be1df3d594c3e8f2d111cc5c995" title=" " alt="" coords="437,72,597,115"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="389,91,421,91,421,96,389,96"/>
+</map>

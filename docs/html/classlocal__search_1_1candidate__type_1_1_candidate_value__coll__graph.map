@@ -1,0 +1,13 @@
+<map id="local_search.candidate_type.CandidateValue" name="local_search.candidate_type.CandidateValue">
+<area shape="rect" id="Node000001" title=" " alt="" coords="390,227,546,419"/>
+<area shape="rect" id="Node000002" href="$enumlocal__search_1_1complement_1_1_strategy_type.html" title=" " alt="" coords="5,27,168,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,131,181,152,281,215,377,270,374,274,278,220,179,157,148,135"/>
+<area shape="rect" id="Node000003" href="$interfacefactory__interface_1_1_i_f_factory_candidate.html" title=" " alt="" coords="192,37,360,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="311,121,384,212,380,215,307,124"/>
+<area shape="rect" id="Node000004" href="$enumlocal__search_1_1candidate__type_1_1_candidate_type.html" title=" " alt="" coords="384,5,552,155"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="471,155,471,210,465,210,465,155"/>
+<area shape="rect" id="Node000005" href="$classlocal__search_1_1complement_1_1_tabu_solutions.html" title=" " alt="" coords="576,27,739,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="619,134,555,215,551,212,615,131"/>
+<area shape="rect" id="Node000006" href="$classlocal__search_1_1candidate__type_1_1_search_candidate.html" title=" " alt="" coords="763,37,909,123"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="793,125,752,157,656,220,562,274,560,270,653,216,749,153,789,120"/>
+</map>

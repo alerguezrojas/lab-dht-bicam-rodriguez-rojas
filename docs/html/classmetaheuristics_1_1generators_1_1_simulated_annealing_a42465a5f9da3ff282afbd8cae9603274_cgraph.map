@@ -1,0 +1,13 @@
+<map id="metaheuristics.generators.SimulatedAnnealing.generate" name="metaheuristics.generators.SimulatedAnnealing.generate">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,105,196,148"/>
+<area shape="rect" id="Node000002" href="$classproblem_1_1definition_1_1_operator.html#a5b6625843e73d938f9235985bf966b34" title=" " alt="" coords="244,5,482,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,102,243,58,263,50,265,55,245,62,145,107"/>
+<area shape="rect" id="Node000003" href="$classproblem_1_1definition_1_1_problem.html#a4cd649edb8862f21af171491cb9b9386" title=" " alt="" coords="264,72,462,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,112,248,105,249,110,197,117"/>
+<area shape="rect" id="Node000004" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a67b5a933a8ccd493360fa06e0a448bb4" title=" " alt="" coords="283,139,443,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="197,136,267,145,267,151,196,141"/>
+<area shape="rect" id="Node000005" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#aeb1c308c04db42c2977e51ffc779862d" title=" " alt="" coords="283,205,443,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="145,146,245,191,269,199,267,204,243,196,143,151"/>
+<area shape="rect" id="Node000006" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a4f635be1df3d594c3e8f2d111cc5c995" title=" " alt="" coords="530,205,690,248"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="444,224,514,224,514,229,444,229"/>
+</map>

@@ -1,0 +1,471 @@
+\doxysection{Referencia de la clase metaheuristics.\+generators.\+Particle}
+\hypertarget{classmetaheuristics_1_1generators_1_1_particle}{}\label{classmetaheuristics_1_1generators_1_1_particle}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+
+
+Representa una partícula en el algoritmo de Optimización por Enjambre de Partículas (PSO).  
+
+
+
+
+Diagrama de herencia de metaheuristics.\+generators.\+Particle
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmetaheuristics_1_1generators_1_1_particle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboración de metaheuristics.\+generators.\+Particle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmetaheuristics_1_1generators_1_1_particle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_a24355b57fa206820a3b519e8f65ebc4a}{Particle}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_a2bcad653ae834df9f3242b75972a4e43}{Particle}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_ac3ace0a70b52edbf96d5925e46fcd420}{state\+PBest}}, \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_a4d222dd12e7086c625de03c7d35bf909}{state\+Actual}}, Array\+List$<$ Object $>$ \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_a8ed4bebd5b92729b240f105705c31b19}{velocity}})
+\begin{DoxyCompactList}\small\item\em Constructor parametrizado. \end{DoxyCompactList}\item 
+Array\+List$<$ Object $>$ \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_a4d39d153e84e0c8f558fe4c9d2e1a62b}{get\+Velocity}} ()
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_afd5da2cbdadc6839a6bc0fa889905b13}{set\+Velocity}} (Array\+List$<$ Object $>$ \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_a8ed4bebd5b92729b240f105705c31b19}{velocity}})
+\item 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_ae73e3ec5cb0c62c033a28c502b05c243}{get\+State\+PBest}} ()
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_ab6280c7ef3a2d4898f25517ffcba8d53}{set\+State\+PBest}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_ac3ace0a70b52edbf96d5925e46fcd420}{state\+PBest}})
+\item 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_a2208c6b0ed77df08e2b80bdc75095359}{get\+State\+Actual}} ()
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_abdb874dd079ba7e259cd8702370baa48}{set\+State\+Actual}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_a4d222dd12e7086c625de03c7d35bf909}{state\+Actual}})
+\item 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_a0c716340cbccf5c27c6b587b96d0b596}{generate}} (Integer operatornumber)  throws Illegal\+Argument\+Exception, Security\+Exception,    Class\+Not\+Found\+Exception, Instantiation\+Exception,    Illegal\+Access\+Exception, Invocation\+Target\+Exception,    No\+Such\+Method\+Exception 
+\begin{DoxyCompactList}\small\item\em Genera un nuevo estado para la partícula. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_a8a8a33dd0ab1d3352d36b239d5c11beb}{update\+Reference}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} state\+Candidate, Integer count\+Iterations\+Current)  throws Illegal\+Argument\+Exception,    Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception,    Illegal\+Access\+Exception, Invocation\+Target\+Exception,    No\+Such\+Method\+Exception 
+\item 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_a53ebefe17cac18b12d48d4f8ccd51eba}{get\+Reference}} ()
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_a88c49fdd37fef41c38d7ac4aec35d15c}{set\+Initial\+Reference}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} state\+Initial\+Ref)
+\item 
+\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_aa9ac8fb8fb1c8794ff598461b7473c5c}{get\+Type}} ()
+\item 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_a7d37225aa866b6ac5ea18bcf4031cc18}{get\+Reference\+List}} ()
+\item 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_a3d68da3423ad9fcf1cedc905dfcba1f9}{get\+Son\+List}} ()
+\item 
+boolean \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_a72847262dd09c89d6445eef9410d0517}{award\+Update\+REF}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} state\+Candidate)
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_a10fc7e67d22c152246a0de74b4f0c5e3}{set\+Weight}} (float weight)
+\item 
+float \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_acd575095868ddd1c81452bdd09fb7a54}{get\+Weight}} ()
+\item 
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_a9c934efbd2a96bafa16a04e149e759aa}{get\+Trace}} ()
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_a905df3e3e8bc835c68e02fc9cf20ea93}{get\+List\+Count\+Better\+Gender}} ()
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_abe7d91e6ddbe9f54e11fee6333d03700}{get\+List\+Count\+Gender}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List$<$ Object $>$ \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_acfc132343407756e7b016506963b7984}{Update\+Velocity}} ()
+\begin{DoxyCompactList}\small\item\em Actualiza el vector de velocidad de la partícula. \end{DoxyCompactList}\item 
+Array\+List$<$ Object $>$ \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_a2b55cd9e4995053b3c90009e8f9bfc5d}{Update\+Code}} (Array\+List$<$ Object $>$ actual\+Velocity)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_ac3ace0a70b52edbf96d5925e46fcd420}{state\+PBest}}
+\begin{DoxyCompactList}\small\item\em Mejor estado alcanzado por esta partícula (p\+Best). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_a4d222dd12e7086c625de03c7d35bf909}{state\+Actual}}
+\begin{DoxyCompactList}\small\item\em Estado actual de la partícula. \end{DoxyCompactList}\item 
+Array\+List$<$ Object $>$ \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_a8ed4bebd5b92729b240f105705c31b19}{velocity}}
+\begin{DoxyCompactList}\small\item\em Vector de velocidad actual de la partícula. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos estáticos privados}
+\begin{DoxyCompactItemize}
+\item 
+static final Secure\+Random \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_particle_a05b81d214dbac9b499c9490593dd663e}{secure\+Random}} = new Secure\+Random()
+\begin{DoxyCompactList}\small\item\em Generador de números aleatorios seguro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Otros miembros heredados}
+\doxysubsection*{Atributos públicos heredados de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{metaheuristics.\+generators.\+Generator}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a3c0145210385b6257c8fc20cac1f830a}{count\+Gender}}
+\item 
+int \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a43815f3944c514ba3156b0e68482befa}{count\+Better\+Gender}}
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a535a5753046bdda55fb6fee44c4b1f88}{list\+Count\+Better\+Gender}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Representa una partícula en el algoritmo de Optimización por Enjambre de Partículas (PSO). 
+
+Cada partícula mantiene su estado actual, su mejor estado histórico (p\+Best) y su velocidad actual. Extiende de la clase \doxylink{classmetaheuristics_1_1generators_1_1_generator}{Generator} para integrarse en el framework de metaheurísticas. 
+
+\label{doc-constructors}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_doc-constructors}
+\doxysubsection{Documentación de constructores y destructores}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_a24355b57fa206820a3b519e8f65ebc4a}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}!Particle@{Particle}}
+\index{Particle@{Particle}!metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+\doxysubsubsection{\texorpdfstring{Particle()}{Particle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_particle_a24355b57fa206820a3b519e8f65ebc4a} 
+metaheuristics.\+generators.\+Particle.\+Particle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto. 
+
+Inicializa el estado actual, p\+Best y velocidad vacíos. \Hypertarget{classmetaheuristics_1_1generators_1_1_particle_a2bcad653ae834df9f3242b75972a4e43}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}!Particle@{Particle}}
+\index{Particle@{Particle}!metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+\doxysubsubsection{\texorpdfstring{Particle()}{Particle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_particle_a2bcad653ae834df9f3242b75972a4e43} 
+metaheuristics.\+generators.\+Particle.\+Particle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+PBest}{, }\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+Actual}{, }\item[{Array\+List$<$ Object $>$}]{velocity}{}\end{DoxyParamCaption})}
+
+
+
+Constructor parametrizado. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em state\+PBest} & Mejor estado histórico inicial. \\
+\hline
+{\em state\+Actual} & Estado actual inicial. \\
+\hline
+{\em velocity} & Velocidad inicial. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_doc-func-members}
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_a72847262dd09c89d6445eef9410d0517}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}!awardUpdateREF@{awardUpdateREF}}
+\index{awardUpdateREF@{awardUpdateREF}!metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+\doxysubsubsection{\texorpdfstring{awardUpdateREF()}{awardUpdateREF()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_particle_a72847262dd09c89d6445eef9410d0517} 
+boolean metaheuristics.\+generators.\+Particle.\+award\+Update\+REF (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+Candidate}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a3513d3953ecc97683f38bcb662b74b9b}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_a0c716340cbccf5c27c6b587b96d0b596}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}!generate@{generate}}
+\index{generate@{generate}!metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_particle_a0c716340cbccf5c27c6b587b96d0b596} 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} metaheuristics.\+generators.\+Particle.\+generate (\begin{DoxyParamCaption}\item[{Integer}]{operatornumber}{}\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception, Security\+Exception,    Class\+Not\+Found\+Exception, Instantiation\+Exception,    Illegal\+Access\+Exception, Invocation\+Target\+Exception,    No\+Such\+Method\+Exception}
+
+
+
+Genera un nuevo estado para la partícula. 
+
+Actualiza la velocidad y la posición (código) de la partícula basándose en las ecuaciones de PSO.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em operatornumber} & Identificador del operador (no utilizado en esta implementación específica). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+null (El estado se actualiza internamente en state\+Actual). 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepciones}
+{\em Illegal\+Argument\+Exception} & Si ocurre un error en la generación. \\
+\hline
+{\em Security\+Exception} & Si hay restricciones de seguridad. \\
+\hline
+{\em Class\+Not\+Found\+Exception} & Si no se encuentra una clase necesaria. \\
+\hline
+{\em Instantiation\+Exception} & Si falla la instanciación. \\
+\hline
+{\em Illegal\+Access\+Exception} & Si hay acceso ilegal. \\
+\hline
+{\em Invocation\+Target\+Exception} & Si falla la invocación de un método. \\
+\hline
+{\em No\+Such\+Method\+Exception} & Si no se encuentra un método. \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a06f6f7622b9ce32590eadbdf6bf962b5}{metaheuristics.\+generators.\+Generator}}.
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_particle_a0c716340cbccf5c27c6b587b96d0b596_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_a905df3e3e8bc835c68e02fc9cf20ea93}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}!getListCountBetterGender@{getListCountBetterGender}}
+\index{getListCountBetterGender@{getListCountBetterGender}!metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+\doxysubsubsection{\texorpdfstring{getListCountBetterGender()}{getListCountBetterGender()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_particle_a905df3e3e8bc835c68e02fc9cf20ea93} 
+int\mbox{[}$\,$\mbox{]} metaheuristics.\+generators.\+Particle.\+get\+List\+Count\+Better\+Gender (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_ac5bace71f51c16b611ede3ed53263473}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_abe7d91e6ddbe9f54e11fee6333d03700}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}!getListCountGender@{getListCountGender}}
+\index{getListCountGender@{getListCountGender}!metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+\doxysubsubsection{\texorpdfstring{getListCountGender()}{getListCountGender()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_particle_abe7d91e6ddbe9f54e11fee6333d03700} 
+int\mbox{[}$\,$\mbox{]} metaheuristics.\+generators.\+Particle.\+get\+List\+Count\+Gender (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_ac5d6d45ee8017fb87d80aa952edfc34e}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_a53ebefe17cac18b12d48d4f8ccd51eba}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}!getReference@{getReference}}
+\index{getReference@{getReference}!metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+\doxysubsubsection{\texorpdfstring{getReference()}{getReference()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_particle_a53ebefe17cac18b12d48d4f8ccd51eba} 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} metaheuristics.\+generators.\+Particle.\+get\+Reference (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_aa56dd45a45776f6023b9f74179cc6384}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_a7d37225aa866b6ac5ea18bcf4031cc18}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}!getReferenceList@{getReferenceList}}
+\index{getReferenceList@{getReferenceList}!metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+\doxysubsubsection{\texorpdfstring{getReferenceList()}{getReferenceList()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_particle_a7d37225aa866b6ac5ea18bcf4031cc18} 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ metaheuristics.\+generators.\+Particle.\+get\+Reference\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_ae168237b306de55fe4d6dfda75c7cd13}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_a3d68da3423ad9fcf1cedc905dfcba1f9}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}!getSonList@{getSonList}}
+\index{getSonList@{getSonList}!metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+\doxysubsubsection{\texorpdfstring{getSonList()}{getSonList()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_particle_a3d68da3423ad9fcf1cedc905dfcba1f9} 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ metaheuristics.\+generators.\+Particle.\+get\+Son\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_aee09d724c1b3040e7a7ad0b64e341c96}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_a2208c6b0ed77df08e2b80bdc75095359}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}!getStateActual@{getStateActual}}
+\index{getStateActual@{getStateActual}!metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+\doxysubsubsection{\texorpdfstring{getStateActual()}{getStateActual()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_particle_a2208c6b0ed77df08e2b80bdc75095359} 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} metaheuristics.\+generators.\+Particle.\+get\+State\+Actual (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_ae73e3ec5cb0c62c033a28c502b05c243}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}!getStatePBest@{getStatePBest}}
+\index{getStatePBest@{getStatePBest}!metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+\doxysubsubsection{\texorpdfstring{getStatePBest()}{getStatePBest()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_particle_ae73e3ec5cb0c62c033a28c502b05c243} 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} metaheuristics.\+generators.\+Particle.\+get\+State\+PBest (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_particle_ae73e3ec5cb0c62c033a28c502b05c243_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_a9c934efbd2a96bafa16a04e149e759aa}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}!getTrace@{getTrace}}
+\index{getTrace@{getTrace}!metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+\doxysubsubsection{\texorpdfstring{getTrace()}{getTrace()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_particle_a9c934efbd2a96bafa16a04e149e759aa} 
+float\mbox{[}$\,$\mbox{]} metaheuristics.\+generators.\+Particle.\+get\+Trace (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a75d7f30dd2cb3f92475db8525ac7c6e7}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_aa9ac8fb8fb1c8794ff598461b7473c5c}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}!getType@{getType}}
+\index{getType@{getType}!metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_particle_aa9ac8fb8fb1c8794ff598461b7473c5c} 
+\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} metaheuristics.\+generators.\+Particle.\+get\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a5a123306b43c42d28cd1d6e17f8067a5}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_a4d39d153e84e0c8f558fe4c9d2e1a62b}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}!getVelocity@{getVelocity}}
+\index{getVelocity@{getVelocity}!metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+\doxysubsubsection{\texorpdfstring{getVelocity()}{getVelocity()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_particle_a4d39d153e84e0c8f558fe4c9d2e1a62b} 
+Array\+List$<$ Object $>$ metaheuristics.\+generators.\+Particle.\+get\+Velocity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_acd575095868ddd1c81452bdd09fb7a54}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}!getWeight@{getWeight}}
+\index{getWeight@{getWeight}!metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+\doxysubsubsection{\texorpdfstring{getWeight()}{getWeight()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_particle_acd575095868ddd1c81452bdd09fb7a54} 
+float metaheuristics.\+generators.\+Particle.\+get\+Weight (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a64f2b824081c7af593bf9aa8eabf2c9e}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_a88c49fdd37fef41c38d7ac4aec35d15c}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}!setInitialReference@{setInitialReference}}
+\index{setInitialReference@{setInitialReference}!metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+\doxysubsubsection{\texorpdfstring{setInitialReference()}{setInitialReference()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_particle_a88c49fdd37fef41c38d7ac4aec35d15c} 
+void metaheuristics.\+generators.\+Particle.\+set\+Initial\+Reference (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+Initial\+Ref}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_aa9f7c4c983705f843b8fcc81e4aa8ba4}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_abdb874dd079ba7e259cd8702370baa48}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}!setStateActual@{setStateActual}}
+\index{setStateActual@{setStateActual}!metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+\doxysubsubsection{\texorpdfstring{setStateActual()}{setStateActual()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_particle_abdb874dd079ba7e259cd8702370baa48} 
+void metaheuristics.\+generators.\+Particle.\+set\+State\+Actual (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+Actual}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_ab6280c7ef3a2d4898f25517ffcba8d53}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}!setStatePBest@{setStatePBest}}
+\index{setStatePBest@{setStatePBest}!metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+\doxysubsubsection{\texorpdfstring{setStatePBest()}{setStatePBest()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_particle_ab6280c7ef3a2d4898f25517ffcba8d53} 
+void metaheuristics.\+generators.\+Particle.\+set\+State\+PBest (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+PBest}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_afd5da2cbdadc6839a6bc0fa889905b13}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}!setVelocity@{setVelocity}}
+\index{setVelocity@{setVelocity}!metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+\doxysubsubsection{\texorpdfstring{setVelocity()}{setVelocity()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_particle_afd5da2cbdadc6839a6bc0fa889905b13} 
+void metaheuristics.\+generators.\+Particle.\+set\+Velocity (\begin{DoxyParamCaption}\item[{Array\+List$<$ Object $>$}]{velocity}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_a10fc7e67d22c152246a0de74b4f0c5e3}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}!setWeight@{setWeight}}
+\index{setWeight@{setWeight}!metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+\doxysubsubsection{\texorpdfstring{setWeight()}{setWeight()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_particle_a10fc7e67d22c152246a0de74b4f0c5e3} 
+void metaheuristics.\+generators.\+Particle.\+set\+Weight (\begin{DoxyParamCaption}\item[{float}]{weight}{}\end{DoxyParamCaption})}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_a8b3c66b57b4c739666989fbce667eb40}{metaheuristics.\+generators.\+Generator}}.
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_a2b55cd9e4995053b3c90009e8f9bfc5d}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}!UpdateCode@{UpdateCode}}
+\index{UpdateCode@{UpdateCode}!metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+\doxysubsubsection{\texorpdfstring{UpdateCode()}{UpdateCode()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_particle_a2b55cd9e4995053b3c90009e8f9bfc5d} 
+Array\+List$<$ Object $>$ metaheuristics.\+generators.\+Particle.\+Update\+Code (\begin{DoxyParamCaption}\item[{Array\+List$<$ Object $>$}]{actual\+Velocity}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_particle_a2b55cd9e4995053b3c90009e8f9bfc5d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_a8a8a33dd0ab1d3352d36b239d5c11beb}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}!updateReference@{updateReference}}
+\index{updateReference@{updateReference}!metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+\doxysubsubsection{\texorpdfstring{updateReference()}{updateReference()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_particle_a8a8a33dd0ab1d3352d36b239d5c11beb} 
+void metaheuristics.\+generators.\+Particle.\+update\+Reference (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{state\+Candidate}{, }\item[{Integer}]{count\+Iterations\+Current}{}\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception,    Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception,    Illegal\+Access\+Exception, Invocation\+Target\+Exception,    No\+Such\+Method\+Exception}
+
+
+
+Reimplementado de \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator_aa1c5878953f2111221b21cb9b1e6cc9f}{metaheuristics.\+generators.\+Generator}}.
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_particle_a8a8a33dd0ab1d3352d36b239d5c11beb_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_particle_a8a8a33dd0ab1d3352d36b239d5c11beb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_acfc132343407756e7b016506963b7984}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}!UpdateVelocity@{UpdateVelocity}}
+\index{UpdateVelocity@{UpdateVelocity}!metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+\doxysubsubsection{\texorpdfstring{UpdateVelocity()}{UpdateVelocity()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_particle_acfc132343407756e7b016506963b7984} 
+Array\+List$<$ Object $>$ metaheuristics.\+generators.\+Particle.\+Update\+Velocity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Actualiza el vector de velocidad de la partícula. 
+
+Calcula la nueva velocidad basándose en la inercia, el componente cognitivo (p\+Best) y el componente social (l\+Best). Aplica un factor de constricción para controlar la convergencia.
+
+\begin{DoxyReturn}{Devuelve}
+Array\+List$<$\+Object$>$ Nueva velocidad calculada. 
+\end{DoxyReturn}
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_particle_acfc132343407756e7b016506963b7984_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1generators_1_1_particle_acfc132343407756e7b016506963b7984_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_doc-variable-members}
+\doxysubsection{Documentación de datos miembro}
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_a05b81d214dbac9b499c9490593dd663e}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}!secureRandom@{secureRandom}}
+\index{secureRandom@{secureRandom}!metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+\doxysubsubsection{\texorpdfstring{secureRandom}{secureRandom}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_particle_a05b81d214dbac9b499c9490593dd663e} 
+final Secure\+Random metaheuristics.\+generators.\+Particle.\+secure\+Random = new Secure\+Random()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Generador de números aleatorios seguro. 
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_a4d222dd12e7086c625de03c7d35bf909}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}!stateActual@{stateActual}}
+\index{stateActual@{stateActual}!metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+\doxysubsubsection{\texorpdfstring{stateActual}{stateActual}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_particle_a4d222dd12e7086c625de03c7d35bf909} 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} metaheuristics.\+generators.\+Particle.\+state\+Actual\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Estado actual de la partícula. 
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_ac3ace0a70b52edbf96d5925e46fcd420}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}!statePBest@{statePBest}}
+\index{statePBest@{statePBest}!metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+\doxysubsubsection{\texorpdfstring{statePBest}{statePBest}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_particle_ac3ace0a70b52edbf96d5925e46fcd420} 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} metaheuristics.\+generators.\+Particle.\+state\+PBest\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Mejor estado alcanzado por esta partícula (p\+Best). 
+
+\Hypertarget{classmetaheuristics_1_1generators_1_1_particle_a8ed4bebd5b92729b240f105705c31b19}\index{metaheuristics.generators.Particle@{metaheuristics.generators.Particle}!velocity@{velocity}}
+\index{velocity@{velocity}!metaheuristics.generators.Particle@{metaheuristics.generators.Particle}}
+\doxysubsubsection{\texorpdfstring{velocity}{velocity}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1generators_1_1_particle_a8ed4bebd5b92729b240f105705c31b19} 
+Array\+List$<$Object$>$ metaheuristics.\+generators.\+Particle.\+velocity\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Vector de velocidad actual de la partícula. 
+
+
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/metaheuristics/generators/\mbox{\hyperlink{_particle_8java}{Particle.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,11 @@
+<map id="src/main/java/problem/extension/FactoresPonderados.java" name="src/main/java/problem/extension/FactoresPonderados.java">
+<area shape="rect" id="Node000001" title=" " alt="" coords="207,5,440,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,104,128,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="264,51,118,101,117,96,263,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="152,96,312,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="304,50,266,87,262,84,301,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="337,104,495,131"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="347,46,394,91,390,95,343,50"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="520,96,699,139"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="392,46,529,88,527,93,390,51"/>
+</map>

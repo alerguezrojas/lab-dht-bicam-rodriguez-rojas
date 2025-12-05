@@ -1,0 +1,29 @@
+<map id="local_search.acceptation_type.AcceptableCandidate.acceptCandidate" name="local_search.acceptation_type.AcceptableCandidate.acceptCandidate">
+<area shape="rect" id="Node000001" title=" " alt="" coords="330,437,554,496"/>
+<area shape="rect" id="Node000002" href="$classlocal__search_1_1complement_1_1_multi_case_simulated_annealing.html#a69f7713ccb679245d173b637c3b4a9ed" title=" " alt="" coords="24,5,263,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="432,422,418,348,390,255,370,207,345,160,315,116,280,78,261,64,265,60,283,74,319,113,350,157,375,204,395,253,423,346,438,421"/>
+<area shape="rect" id="Node000003" href="$classlocal__search_1_1_multi_case_simulated_annealing.html#a7b84e7aef7c17e16672ae06e28c74740" title=" " alt="" coords="36,88,251,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="429,423,411,360,382,284,362,246,339,208,311,174,280,145,250,128,253,123,283,141,315,171,343,205,367,243,386,282,416,358,434,421"/>
+<area shape="rect" id="Node000004" href="$classmetaheuristics_1_1generators_1_1_hill_climbing.html#afc5f08a9d50796fdf3bbc8dd3e4d8b87" title=" " alt="" coords="46,155,241,197"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="423,424,402,374,371,316,330,259,307,234,280,212,240,192,242,187,283,207,310,230,335,256,376,313,407,371,428,422"/>
+<area shape="rect" id="Node000005" href="$classmetaheuristics_1_1generators_1_1_hill_climbing_restart.html#a7dceb2a864772b9f3b83befa4fe39be8" title=" " alt="" coords="25,221,262,264"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="414,425,390,389,359,349,322,311,280,278,258,267,261,262,283,274,326,307,363,346,394,386,418,422"/>
+<area shape="rect" id="Node000006" href="$classmetaheuristics_1_1generators_1_1_limit_threshold.html#a74c3d66b7aba895e95facbced3cac70f" title=" " alt="" coords="39,288,248,331"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="398,429,345,385,280,345,248,332,249,327,283,340,348,380,402,425"/>
+<area shape="rect" id="Node000007" href="$classmetaheuristics_1_1generators_1_1_multi_case_simulated_annealing.html#a7410b42658c2aacb75082a509d1059fc" title=" " alt="" coords="24,355,263,413"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="318,435,251,417,253,411,320,430"/>
+<area shape="rect" id="Node000008" href="$classmetaheuristics_1_1generators_1_1_multiobjective_hill_climbing_distance.html#a35ed16f3af3c7fdcbff8165d9674cc9a" title=" " alt="" coords="10,437,277,496"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="314,469,277,469,277,464,314,464"/>
+<area shape="rect" id="Node000009" href="$classmetaheuristics_1_1generators_1_1_multiobjective_hill_climbing_restart.html#ab3716a950049b1d77c4374efd355aa14" title=" " alt="" coords="15,520,272,579"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="320,503,253,522,251,517,318,498"/>
+<area shape="rect" id="Node000010" href="$classmetaheuristics_1_1generators_1_1_multiobjective_stochastic_hill_climbing.html#a326b491494f5c4aca1b49cb397d8bcd2" title=" " alt="" coords="5,603,282,661"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="400,509,346,552,283,593,257,605,255,600,280,588,343,548,397,504"/>
+<area shape="rect" id="Node000011" href="$classmetaheuristics_1_1generators_1_1_multiobjective_tabu_search.html#a5e7f4e1f1fb436f2fb9c1770b90ee253" title=" " alt="" coords="37,685,250,744"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="421,511,397,550,365,595,327,638,283,676,252,692,249,688,280,671,324,634,361,591,392,547,416,508"/>
+<area shape="rect" id="Node000012" href="$classmetaheuristics_1_1generators_1_1_random_search.html#a0ec26b03ce5dd592af4568fa0b4b915e" title=" " alt="" coords="36,768,251,811"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="431,512,411,568,381,635,339,702,313,732,283,758,253,775,250,771,280,754,309,728,334,699,376,633,406,566,426,510"/>
+<area shape="rect" id="Node000013" href="$classmetaheuristics_1_1generators_1_1_simulated_annealing.html#af6e00b21dc4f621cbee1a9ed85b9770e" title=" " alt="" coords="24,835,263,877"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="436,512,420,581,391,666,371,710,347,752,318,791,283,825,265,837,262,833,280,821,314,787,342,749,367,707,386,664,415,580,431,511"/>
+<area shape="rect" id="Node000014" href="$classmetaheuristics_1_1generators_1_1_tabu_search.html#a8e5310bc24ca49dccb985a122173936c" title=" " alt="" coords="47,901,240,944"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="440,512,428,593,401,696,381,749,355,801,323,849,283,891,264,905,242,915,239,910,261,900,280,887,319,846,350,799,376,747,396,694,422,592,434,511"/>
+</map>

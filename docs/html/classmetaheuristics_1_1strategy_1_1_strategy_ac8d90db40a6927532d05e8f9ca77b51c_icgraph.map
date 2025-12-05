@@ -1,0 +1,10 @@
+<map id="metaheuristics.strategy.Strategy.updateRefGenerator" name="metaheuristics.strategy.Strategy.updateRefGenerator">
+<area shape="rect" id="Node000001" title=" " alt="" coords="649,5,840,48"/>
+<area shape="rect" id="Node000002" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a0d23d307adedc20a3d9cb6c1bf65bb7f" title=" " alt="" coords="222,5,382,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="634,26,601,25,430,25,383,26,383,21,430,20,601,20,634,21"/>
+<area shape="rect" id="Node000004" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#af3a9d3d541f13137a2a97719b0045cb3" title=" " alt="" coords="430,35,601,77"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="634,43,602,48,602,42,634,38"/>
+<area shape="rect" id="Node000003" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,5,174,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="206,29,174,29,174,24,206,24"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="414,45,382,40,383,35,415,39"/>
+</map>

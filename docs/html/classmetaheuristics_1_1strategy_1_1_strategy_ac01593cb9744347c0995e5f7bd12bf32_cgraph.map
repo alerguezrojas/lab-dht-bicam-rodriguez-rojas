@@ -1,0 +1,9 @@
+<map id="metaheuristics.strategy.Strategy.updateWeight" name="metaheuristics.strategy.Strategy.updateWeight">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,72,166,115"/>
+<area shape="rect" id="Node000002" href="$classmetaheuristics_1_1generators_1_1_multi_generator.html#ab331905baebb433340e05d19e174340b" title=" " alt="" coords="214,5,427,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,69,227,50,228,55,164,74"/>
+<area shape="rect" id="Node000003" href="$classmetaheuristics_1_1generators_1_1_generator.html#a5a123306b43c42d28cd1d6e17f8067a5" title=" " alt="" coords="233,72,408,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,91,217,91,217,96,166,96"/>
+<area shape="rect" id="Node000004" href="$classmetaheuristics_1_1generators_1_1_generator.html#a8b3c66b57b4c739666989fbce667eb40" title=" " alt="" coords="233,139,408,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="164,113,228,131,227,136,162,118"/>
+</map>

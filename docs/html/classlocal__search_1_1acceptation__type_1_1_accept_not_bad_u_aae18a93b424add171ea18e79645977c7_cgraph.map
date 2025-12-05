@@ -1,0 +1,11 @@
+<map id="local_search.acceptation_type.AcceptNotBadU.acceptCandidate" name="local_search.acceptation_type.AcceptNotBadU.acceptCandidate">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,72,260,115"/>
+<area shape="rect" id="Node000002" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a67b5a933a8ccd493360fa06e0a448bb4" title=" " alt="" coords="308,5,468,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,69,292,49,293,54,218,74"/>
+<area shape="rect" id="Node000003" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#aeb1c308c04db42c2977e51ffc779862d" title=" " alt="" coords="308,72,468,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="260,91,292,91,292,96,260,96"/>
+<area shape="rect" id="Node000005" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a2d76028dfca55c872a6536ab986fc6ab" title=" " alt="" coords="308,139,468,181"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="218,113,293,133,292,138,216,118"/>
+<area shape="rect" id="Node000004" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a4f635be1df3d594c3e8f2d111cc5c995" title=" " alt="" coords="516,72,676,115"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="468,91,500,91,500,96,468,96"/>
+</map>

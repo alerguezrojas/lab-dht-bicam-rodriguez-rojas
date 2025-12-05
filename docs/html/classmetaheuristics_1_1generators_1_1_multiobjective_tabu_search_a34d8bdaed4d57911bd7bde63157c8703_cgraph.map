@@ -1,0 +1,9 @@
+<map id="metaheuristics.generators.MultiobjectiveTabuSearch.MultiobjectiveTabuSearch" name="metaheuristics.generators.MultiobjectiveTabuSearch.MultiobjectiveTabuSearch">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,260,89"/>
+<area shape="rect" id="Node000002" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a67b5a933a8ccd493360fa06e0a448bb4" title=" " alt="" coords="308,5,468,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="260,41,292,36,293,42,261,46"/>
+<area shape="rect" id="Node000003" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#aeb1c308c04db42c2977e51ffc779862d" title=" " alt="" coords="308,72,468,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="261,74,293,78,292,84,260,79"/>
+<area shape="rect" id="Node000004" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a4f635be1df3d594c3e8f2d111cc5c995" title=" " alt="" coords="516,72,676,115"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="468,91,500,91,500,96,468,96"/>
+</map>

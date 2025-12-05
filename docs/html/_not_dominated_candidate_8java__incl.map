@@ -1,0 +1,13 @@
+<map id="src/main/java/local_search/candidate_type/NotDominatedCandidate.java" name="src/main/java/local_search/candidate_type/NotDominatedCandidate.java">
+<area shape="rect" id="Node000001" title=" " alt="" coords="306,5,503,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,112,183,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="313,67,176,109,175,104,312,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="207,120,298,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="361,67,286,114,284,109,358,62"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="322,112,487,155"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="407,64,407,97,402,97,402,64"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="511,112,672,155"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="461,62,539,102,537,107,459,67"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="696,120,854,147"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="504,59,712,113,711,118,502,64"/>
+</map>

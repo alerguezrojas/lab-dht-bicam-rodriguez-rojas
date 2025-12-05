@@ -1,0 +1,11 @@
+<map id="problem.definition.Operator.generateRandomState" name="problem.definition.Operator.generateRandomState">
+<area shape="rect" id="Node000001" title=" " alt="" coords="320,109,551,152"/>
+<area shape="rect" id="Node000002" href="$classmetaheuristics_1_1generators_1_1_hill_climbing_restart.html#a03effb92915e2642b7d87763987a43ae" title=" " alt="" coords="44,5,233,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="374,105,271,63,233,51,234,46,273,57,376,100"/>
+<area shape="rect" id="Node000003" href="$classmetaheuristics_1_1generators_1_1_random_search.html#ad7023836b94dd23bffd78ab7b9915551" title=" " alt="" coords="51,72,226,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="304,117,226,107,227,102,304,112"/>
+<area shape="rect" id="Node000004" href="$classmetaheuristics_1_1generators_1_1_multiobjective_hill_climbing_distance.html#a35ed16f3af3c7fdcbff8165d9674cc9a" title=" " alt="" coords="5,139,272,197"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="304,150,273,154,272,149,303,145"/>
+<area shape="rect" id="Node000005" href="$classmetaheuristics_1_1generators_1_1_multiobjective_hill_climbing_restart.html#ab3716a950049b1d77c4374efd355aa14" title=" " alt="" coords="10,221,267,280"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="381,162,273,212,242,223,240,218,271,207,378,157"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="local_search.acceptation_type.Dominance.dominance" name="local_search.acceptation_type.Dominance.dominance">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,105,196,148"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="55,105,53,95,61,86,77,81,101,79,126,81,142,87,140,92,125,86,100,84,78,86,64,91,58,97,60,104"/>
+<area shape="rect" id="Node000002" href="$classproblem_1_1definition_1_1_state.html#a226ea6fab8e7060cf131edfdb245a6fa" title=" " alt="" coords="252,5,432,48"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="144,102,243,58,258,51,260,56,245,62,146,107"/>
+<area shape="rect" id="Node000003" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a67b5a933a8ccd493360fa06e0a448bb4" title=" " alt="" coords="262,72,422,115"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="196,111,246,104,247,109,196,116"/>
+<area shape="rect" id="Node000004" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#aeb1c308c04db42c2977e51ffc779862d" title=" " alt="" coords="262,139,422,181"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="196,137,247,144,246,149,196,142"/>
+<area shape="rect" id="Node000006" href="$classproblem_1_1definition_1_1_problem.html#ad6f38df755179e22ffe487ba4a5c8021" title=" " alt="" coords="244,205,441,248"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="146,146,245,191,260,197,258,202,243,196,144,151"/>
+<area shape="rect" id="Node000005" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a4f635be1df3d594c3e8f2d111cc5c995" title=" " alt="" coords="489,139,649,181"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="423,157,473,157,473,163,423,163"/>
+</map>

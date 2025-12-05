@@ -1,0 +1,11 @@
+<map id="metaheuristics.generators.Particle" name="metaheuristics.generators.Particle">
+<area shape="rect" id="Node000001" title="Representa una partícula en el algoritmo de Optimización por Enjambre de Partículas (PSO)." alt="" coords="72,880,236,1243"/>
+<area shape="rect" id="Node000002" href="$classmetaheuristics_1_1generators_1_1_generator.html" title=" " alt="" coords="5,389,188,773"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,788,135,880,130,881,119,788"/>
+<area shape="rect" id="Node000003" href="$classproblem_1_1definition_1_1_state.html" title=" " alt="" coords="212,376,360,787"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="232,787,211,864,206,863,227,786"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="170,120,239,189"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="217,203,250,376,244,377,211,204"/>
+<area shape="rect" id="Node000005" href="$enummetaheuristics_1_1generators_1_1_generator_type.html" title=" " alt="" coords="263,5,470,304"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="341,304,330,360,325,359,336,303"/>
+</map>

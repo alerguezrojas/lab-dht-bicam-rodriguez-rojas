@@ -1,0 +1,1455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BiCIAM: Referencia de la clase metaheuristics.generators.MultiGenerator</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">BiCIAM<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Biblioteca de Algoritmos Metaheurísticos</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classmetaheuristics_1_1generators_1_1_multi_generator.html','','classmetaheuristics_1_1generators_1_1_multi_generator-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referencia de la clase metaheuristics.generators.MultiGenerator</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Diagrama de herencia de metaheuristics.generators.MultiGenerator</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator__inherit__graph.png" border="0" usemap="#ametaheuristics_8generators_8_multi_generator_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="ametaheuristics_8generators_8_multi_generator_inherit__map" id="ametaheuristics_8generators_8_multi_generator_inherit__map">
+<area shape="rect" title=" " alt="" coords="10,437,184,1051"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_generator.html" title=" " alt="" coords="5,5,188,389"/>
+<area shape="poly" title=" " alt="" coords="100,405,100,438,94,438,94,405"/>
+</map>
+</div>
+<div class="dynheader">
+Diagrama de colaboración de metaheuristics.generators.MultiGenerator:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator__coll__graph.png" border="0" usemap="#ametaheuristics_8generators_8_multi_generator_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="ametaheuristics_8generators_8_multi_generator_coll__map" id="ametaheuristics_8generators_8_multi_generator_coll__map">
+<area shape="rect" title=" " alt="" coords="54,483,228,1032"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_generator.html" title=" " alt="" coords="5,5,188,389"/>
+<area shape="poly" title=" " alt="" coords="114,404,118,458,120,483,115,483,113,459,109,404"/>
+<area shape="poly" title=" " alt="" coords="115,389,121,466,115,466,109,390"/>
+<area shape="rect" href="enummetaheuristics_1_1generators_1_1_generator_type.html" title=" " alt="" coords="212,48,419,347"/>
+<area shape="poly" title=" " alt="" coords="272,347,234,467,229,466,267,346"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:ab6c56d1cbb08a212d5adfd2d5e5664f9" id="r_ab6c56d1cbb08a212d5adfd2d5e5664f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6c56d1cbb08a212d5adfd2d5e5664f9">setGeneratortype</a> (<a class="el" href="enummetaheuristics_1_1generators_1_1_generator_type.html">GeneratorType</a> generatortype)</td></tr>
+<tr class="memitem:afce4bffeb9ed07ce3da9aef9af2f3c00" id="r_afce4bffeb9ed07ce3da9aef9af2f3c00"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afce4bffeb9ed07ce3da9aef9af2f3c00">MultiGenerator</a> ()</td></tr>
+<tr class="memitem:a2309ca3d3de82961bbc61d3fb6c893fc" id="r_a2309ca3d3de82961bbc61d3fb6c893fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classproblem_1_1definition_1_1_state.html">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2309ca3d3de82961bbc61d3fb6c893fc">generate</a> (Integer operatornumber)  throws IllegalArgumentException, SecurityException, 			ClassNotFoundException, InstantiationException, 			IllegalAccessException, InvocationTargetException, 			NoSuchMethodException </td></tr>
+<tr class="memitem:a7364417b4356561cfb7656fb9818cc5d" id="r_a7364417b4356561cfb7656fb9818cc5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classproblem_1_1definition_1_1_state.html">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7364417b4356561cfb7656fb9818cc5d">getReference</a> ()</td></tr>
+<tr class="memitem:a7e6b4c2a4a6ef326d191a2da93f97d67" id="r_a7e6b4c2a4a6ef326d191a2da93f97d67"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classproblem_1_1definition_1_1_state.html">State</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e6b4c2a4a6ef326d191a2da93f97d67">getReferenceList</a> ()</td></tr>
+<tr class="memitem:aa68b7cbbd70430924ebf582279ceeb8a" id="r_aa68b7cbbd70430924ebf582279ceeb8a"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classproblem_1_1definition_1_1_state.html">State</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa68b7cbbd70430924ebf582279ceeb8a">getSonList</a> ()</td></tr>
+<tr class="memitem:a3c29946186ba7afb379169ed3636004f" id="r_a3c29946186ba7afb379169ed3636004f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enummetaheuristics_1_1generators_1_1_generator_type.html">GeneratorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c29946186ba7afb379169ed3636004f">getType</a> ()</td></tr>
+<tr class="memitem:abfbc81c6f1a46e6a23e1a7f3f550e9f6" id="r_abfbc81c6f1a46e6a23e1a7f3f550e9f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfbc81c6f1a46e6a23e1a7f3f550e9f6">setInitialReference</a> (<a class="el" href="classproblem_1_1definition_1_1_state.html">State</a> stateInitialRef)</td></tr>
+<tr class="memitem:a4064a096c203ec6b538929af5bd8d0d7" id="r_a4064a096c203ec6b538929af5bd8d0d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4064a096c203ec6b538929af5bd8d0d7">updateReference</a> (<a class="el" href="classproblem_1_1definition_1_1_state.html">State</a> stateCandidate, Integer countIterationsCurrent)  throws IllegalArgumentException, 			SecurityException, ClassNotFoundException, InstantiationException, 			IllegalAccessException, InvocationTargetException, 			NoSuchMethodException </td></tr>
+<tr class="memitem:a06c51732247b401b0369fe6133d35793" id="r_a06c51732247b401b0369fe6133d35793"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06c51732247b401b0369fe6133d35793">updateWeight</a> (<a class="el" href="classproblem_1_1definition_1_1_state.html">State</a> stateCandidate)</td></tr>
+<tr class="memitem:afef1d16b774c4e86135d2fc38d0dbed7" id="r_afef1d16b774c4e86135d2fc38d0dbed7"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afef1d16b774c4e86135d2fc38d0dbed7">searchState</a> (<a class="el" href="classproblem_1_1definition_1_1_state.html">State</a> stateCandidate)</td></tr>
+<tr class="memitem:a625ff0e6cad7bfefeaeb4ec8a28a71d3" id="r_a625ff0e6cad7bfefeaeb4ec8a28a71d3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a625ff0e6cad7bfefeaeb4ec8a28a71d3">getWeight</a> ()</td></tr>
+<tr class="memitem:a2c2b5c6dc19e52e87a1a0b2151fa9768" id="r_a2c2b5c6dc19e52e87a1a0b2151fa9768"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html">Generator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c2b5c6dc19e52e87a1a0b2151fa9768">roulette</a> ()</td></tr>
+<tr class="memitem:a71676324d28a05ab7745967c6edf2218" id="r_a71676324d28a05ab7745967c6edf2218"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71676324d28a05ab7745967c6edf2218">awardUpdateREF</a> (<a class="el" href="classproblem_1_1definition_1_1_state.html">State</a> stateCandidate)</td></tr>
+<tr class="memitem:ab3417c34a00f079f67eed485ceeb8f1f" id="r_ab3417c34a00f079f67eed485ceeb8f1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3417c34a00f079f67eed485ceeb8f1f">updateAwardSC</a> ()</td></tr>
+<tr class="memitem:a9bca4abee16ba939d1aca80ac395a130" id="r_a9bca4abee16ba939d1aca80ac395a130"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9bca4abee16ba939d1aca80ac395a130">updateAwardImp</a> ()</td></tr>
+<tr class="memitem:abb314d2dd0d9a0d283574add841ba6b8" id="r_abb314d2dd0d9a0d283574add841ba6b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb314d2dd0d9a0d283574add841ba6b8">setWeight</a> (float weight)</td></tr>
+<tr class="memitem:aa4acb9d61c196f56a0bde7d0a624f3fb" id="r_aa4acb9d61c196f56a0bde7d0a624f3fb"><td class="memItemLeft" align="right" valign="top">float[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4acb9d61c196f56a0bde7d0a624f3fb">getTrace</a> ()</td></tr>
+<tr class="memitem:a72bc1f2921d0ed9193933d964ba217b9" id="r_a72bc1f2921d0ed9193933d964ba217b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72bc1f2921d0ed9193933d964ba217b9">tournament</a> (<a class="el" href="classproblem_1_1definition_1_1_state.html">State</a> stateCandidate, Integer countIterationsCurrent)  throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException </td></tr>
+<tr class="memitem:a80edefbfc3233000dca1ad30cb95f8fc" id="r_a80edefbfc3233000dca1ad30cb95f8fc"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80edefbfc3233000dca1ad30cb95f8fc">clone</a> ()</td></tr>
+<tr class="memitem:ae534f33ba876de6d56d22f3889b8b666" id="r_ae534f33ba876de6d56d22f3889b8b666"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae534f33ba876de6d56d22f3889b8b666">getListCountBetterGender</a> ()</td></tr>
+<tr class="memitem:af7574c27e8798f241a9f683721a8a6b5" id="r_af7574c27e8798f241a9f683721a8a6b5"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7574c27e8798f241a9f683721a8a6b5">getListCountGender</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Métodos públicos estáticos</h2></td></tr>
+<tr class="memitem:adecd56fa947c1c392c1739d1bf18b6fd" id="r_adecd56fa947c1c392c1739d1bf18b6fd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adecd56fa947c1c392c1739d1bf18b6fd">destroyMultiGenerator</a> ()</td></tr>
+<tr class="memitem:a2a25df332708a340f5115fe7ea253053" id="r_a2a25df332708a340f5115fe7ea253053"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a25df332708a340f5115fe7ea253053">initializeListGenerator</a> ()  throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException </td></tr>
+<tr class="memitem:ada4833a51b39d1372e2c050448bbab6c" id="r_ada4833a51b39d1372e2c050448bbab6c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada4833a51b39d1372e2c050448bbab6c">initializeGenerators</a> ()  throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException </td></tr>
+<tr class="memitem:a21767d34c374a65dd29196459273ff34" id="r_a21767d34c374a65dd29196459273ff34"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21767d34c374a65dd29196459273ff34">createInstanceGeneratorsBPP</a> ()</td></tr>
+<tr class="memitem:ab331905baebb433340e05d19e174340b" id="r_ab331905baebb433340e05d19e174340b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html">Generator</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab331905baebb433340e05d19e174340b">getListGenerators</a> ()</td></tr>
+<tr class="memitem:ada47e6ed9cecafd1895b88ca0b2bd827" id="r_ada47e6ed9cecafd1895b88ca0b2bd827"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada47e6ed9cecafd1895b88ca0b2bd827">setListGenerators</a> (<a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html">Generator</a>[] <a class="el" href="#a818b282d2b179e572c762faa6fe0c988">listGenerators</a>)</td></tr>
+<tr class="memitem:abd14738b7100c980010e1385f622a038" id="r_abd14738b7100c980010e1385f622a038"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html">Generator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd14738b7100c980010e1385f622a038">getActiveGenerator</a> ()</td></tr>
+<tr class="memitem:ae3af87d1077fa62c7aea5f0c318afe5d" id="r_ae3af87d1077fa62c7aea5f0c318afe5d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3af87d1077fa62c7aea5f0c318afe5d">setActiveGenerator</a> (<a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html">Generator</a> <a class="el" href="#ae77321419a2cb94552858f37113ad351">activeGenerator</a>)</td></tr>
+<tr class="memitem:a9322b6d25b0f36d5e0f7acc5ff05b26f" id="r_a9322b6d25b0f36d5e0f7acc5ff05b26f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9322b6d25b0f36d5e0f7acc5ff05b26f">setListGeneratedPP</a> (List&lt; <a class="el" href="classproblem_1_1definition_1_1_state.html">State</a> &gt; <a class="el" href="#a65b99d327cd92bebf04d0dcea28c8a0f">listGeneratedPP</a>)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Atributos públicos estáticos</h2></td></tr>
+<tr class="memitem:a65b99d327cd92bebf04d0dcea28c8a0f" id="r_a65b99d327cd92bebf04d0dcea28c8a0f"><td class="memItemLeft" align="right" valign="top">static List&lt; <a class="el" href="classproblem_1_1definition_1_1_state.html">State</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65b99d327cd92bebf04d0dcea28c8a0f">listGeneratedPP</a> = new ArrayList&lt;<a class="el" href="classproblem_1_1definition_1_1_state.html">State</a>&gt; ()</td></tr>
+<tr class="memitem:ae77321419a2cb94552858f37113ad351" id="r_ae77321419a2cb94552858f37113ad351"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html">Generator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae77321419a2cb94552858f37113ad351">activeGenerator</a></td></tr>
+<tr class="memitem:a0dea22ee5bdd49b26c7e8350ca35d1b7" id="r_a0dea22ee5bdd49b26c7e8350ca35d1b7"><td class="memItemLeft" align="right" valign="top">static List&lt; <a class="el" href="classproblem_1_1definition_1_1_state.html">State</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0dea22ee5bdd49b26c7e8350ca35d1b7">listStateReference</a> = new ArrayList&lt;<a class="el" href="classproblem_1_1definition_1_1_state.html">State</a>&gt;()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Métodos privados estáticos</h2></td></tr>
+<tr class="memitem:a4beb2b351ab1dbc9c482118d79e48234" id="r_a4beb2b351ab1dbc9c482118d79e48234"><td class="memItemLeft" align="right" valign="top">static ArrayList&lt; <a class="el" href="classproblem_1_1definition_1_1_state.html">State</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4beb2b351ab1dbc9c482118d79e48234">getListGeneratedPP</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:a7a7a810680cce131f24cd40157a173f5" id="r_a7a7a810680cce131f24cd40157a173f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enummetaheuristics_1_1generators_1_1_generator_type.html">GeneratorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a7a810680cce131f24cd40157a173f5">Generatortype</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Atributos estáticos privados</h2></td></tr>
+<tr class="memitem:a818b282d2b179e572c762faa6fe0c988" id="r_a818b282d2b179e572c762faa6fe0c988"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html">Generator</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a818b282d2b179e572c762faa6fe0c988">listGenerators</a> = new <a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html">Generator</a>[GeneratorType.values().length]</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
+Otros miembros heredados</h2></td></tr>
+<tr class="inherit_header pub_attribs_classmetaheuristics_1_1generators_1_1_generator"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classmetaheuristics_1_1generators_1_1_generator')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Atributos públicos heredados de <a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html">metaheuristics.generators.Generator</a></td></tr>
+<tr class="memitem:a3c0145210385b6257c8fc20cac1f830a inherit pub_attribs_classmetaheuristics_1_1generators_1_1_generator" id="r_a3c0145210385b6257c8fc20cac1f830a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html#a3c0145210385b6257c8fc20cac1f830a">countGender</a></td></tr>
+<tr class="memitem:a43815f3944c514ba3156b0e68482befa inherit pub_attribs_classmetaheuristics_1_1generators_1_1_generator" id="r_a43815f3944c514ba3156b0e68482befa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html#a43815f3944c514ba3156b0e68482befa">countBetterGender</a></td></tr>
+<tr class="memitem:a535a5753046bdda55fb6fee44c4b1f88 inherit pub_attribs_classmetaheuristics_1_1generators_1_1_generator" id="r_a535a5753046bdda55fb6fee44c4b1f88"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html#a535a5753046bdda55fb6fee44c4b1f88">listCountBetterGender</a></td></tr>
+</table>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Documentación de constructores y destructores</h2>
+<a id="afce4bffeb9ed07ce3da9aef9af2f3c00" name="afce4bffeb9ed07ce3da9aef9af2f3c00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afce4bffeb9ed07ce3da9aef9af2f3c00">&#9670;&#160;</a></span>MultiGenerator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">metaheuristics.generators.MultiGenerator.MultiGenerator </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator_afce4bffeb9ed07ce3da9aef9af2f3c00_icgraph.png" border="0" usemap="#aclassmetaheuristics_1_1generators_1_1_multi_generator_afce4bffeb9ed07ce3da9aef9af2f3c00_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassmetaheuristics_1_1generators_1_1_multi_generator_afce4bffeb9ed07ce3da9aef9af2f3c00_icgraph" id="aclassmetaheuristics_1_1generators_1_1_multi_generator_afce4bffeb9ed07ce3da9aef9af2f3c00_icgraph">
+<area shape="rect" title=" " alt="" coords="714,43,910,85"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#ada4833a51b39d1372e2c050448bbab6c" title=" " alt="" coords="222,5,443,48"/>
+<area shape="poly" title=" " alt="" coords="699,54,666,51,443,35,444,30,667,45,699,48"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a72bc1f2921d0ed9193933d964ba217b9" title=" " alt="" coords="491,84,666,127"/>
+<area shape="poly" title=" " alt="" coords="700,87,667,92,666,87,699,81"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,43,174,85"/>
+<area shape="poly" title=" " alt="" coords="207,49,174,54,174,48,206,43"/>
+<area shape="poly" title=" " alt="" coords="617,71,602,65,579,63,557,65,543,69,538,75,540,83,534,84,533,74,540,65,555,59,579,57,604,60,619,66"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a4064a096c203ec6b538929af5bd8d0d7" title=" " alt="" coords="228,76,437,119"/>
+<area shape="poly" title=" " alt="" coords="475,105,438,103,438,98,475,99"/>
+<area shape="poly" title=" " alt="" coords="212,83,174,78,175,73,212,78"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentación de funciones miembro</h2>
+<a id="a71676324d28a05ab7745967c6edf2218" name="a71676324d28a05ab7745967c6edf2218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71676324d28a05ab7745967c6edf2218">&#9670;&#160;</a></span>awardUpdateREF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean metaheuristics.generators.MultiGenerator.awardUpdateREF </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classproblem_1_1definition_1_1_state.html">State</a></td>          <td class="paramname"><span class="paramname"><em>stateCandidate</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reimplementado de <a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html#a3513d3953ecc97683f38bcb662b74b9b">metaheuristics.generators.Generator</a>.</p>
+
+</div>
+</div>
+<a id="a80edefbfc3233000dca1ad30cb95f8fc" name="a80edefbfc3233000dca1ad30cb95f8fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80edefbfc3233000dca1ad30cb95f8fc">&#9670;&#160;</a></span>clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Object metaheuristics.generators.MultiGenerator.clone </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator_a80edefbfc3233000dca1ad30cb95f8fc_icgraph.png" border="0" usemap="#aclassmetaheuristics_1_1generators_1_1_multi_generator_a80edefbfc3233000dca1ad30cb95f8fc_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassmetaheuristics_1_1generators_1_1_multi_generator_a80edefbfc3233000dca1ad30cb95f8fc_icgraph" id="aclassmetaheuristics_1_1generators_1_1_multi_generator_a80edefbfc3233000dca1ad30cb95f8fc_icgraph">
+<area shape="rect" title=" " alt="" coords="222,5,397,48"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,5,174,48"/>
+<area shape="poly" title=" " alt="" coords="206,29,174,29,174,24,206,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a21767d34c374a65dd29196459273ff34" name="a21767d34c374a65dd29196459273ff34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21767d34c374a65dd29196459273ff34">&#9670;&#160;</a></span>createInstanceGeneratorsBPP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void metaheuristics.generators.MultiGenerator.createInstanceGeneratorsBPP </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator_a21767d34c374a65dd29196459273ff34_cgraph.png" border="0" usemap="#aclassmetaheuristics_1_1generators_1_1_multi_generator_a21767d34c374a65dd29196459273ff34_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassmetaheuristics_1_1generators_1_1_multi_generator_a21767d34c374a65dd29196459273ff34_cgraph" id="aclassmetaheuristics_1_1generators_1_1_multi_generator_a21767d34c374a65dd29196459273ff34_cgraph">
+<area shape="rect" title=" " alt="" coords="5,239,293,281"/>
+<area shape="rect" href="classproblem_1_1definition_1_1_problem.html#a74d56127a8524b4a20f6ab831744f164" title=" " alt="" coords="341,39,520,81"/>
+<area shape="poly" title=" " alt="" coords="168,236,240,166,288,127,339,91,348,86,351,91,342,96,291,131,243,170,172,240"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_generator.html#a06f6f7622b9ce32590eadbdf6bf962b5" title=" " alt="" coords="343,105,518,148"/>
+<area shape="poly" title=" " alt="" coords="187,236,257,198,340,158,353,152,355,157,342,162,260,202,190,240"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a67b5a933a8ccd493360fa06e0a448bb4" title=" " alt="" coords="351,172,511,215"/>
+<area shape="poly" title=" " alt="" coords="242,235,335,213,336,218,243,241"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#aeb1c308c04db42c2977e51ffc779862d" title=" " alt="" coords="351,239,511,281"/>
+<area shape="poly" title=" " alt="" coords="293,257,335,257,335,263,293,263"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_generator.html#a5a123306b43c42d28cd1d6e17f8067a5" title=" " alt="" coords="343,305,518,348"/>
+<area shape="poly" title=" " alt="" coords="243,279,329,300,327,305,242,285"/>
+<area shape="rect" href="classproblem_1_1definition_1_1_state.html#ab802f63ab88415158f9c6cf468b6c8b3" title=" " alt="" coords="341,372,521,415"/>
+<area shape="poly" title=" " alt="" coords="190,280,260,318,342,358,355,363,353,368,340,362,257,322,187,284"/>
+<area shape="rect" href="classproblem_1_1definition_1_1_state.html#afccaeac3af66cb772e2b3e70758b8fe6" title=" " alt="" coords="341,439,521,481"/>
+<area shape="poly" title=" " alt="" coords="172,280,243,350,291,389,342,424,351,429,348,434,339,429,288,393,240,354,168,284"/>
+<area shape="rect" href="classproblem_1_1extension_1_1_solution_method.html#ae31d6d6000b9043bdee5e2d79fd2a628" title=" " alt="" coords="582,5,760,48"/>
+<area shape="poly" title=" " alt="" coords="521,45,566,39,567,44,522,50"/>
+<area shape="rect" href="classproblem_1_1definition_1_1_problem.html#a443db14206d399250f49e78175ca829e" title=" " alt="" coords="569,72,772,115"/>
+<area shape="poly" title=" " alt="" coords="522,70,554,74,553,80,521,75"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a4f635be1df3d594c3e8f2d111cc5c995" title=" " alt="" coords="590,239,751,281"/>
+<area shape="poly" title=" " alt="" coords="511,257,575,257,575,263,511,263"/>
+</map>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator_a21767d34c374a65dd29196459273ff34_icgraph.png" border="0" usemap="#aclassmetaheuristics_1_1generators_1_1_multi_generator_a21767d34c374a65dd29196459273ff34_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassmetaheuristics_1_1generators_1_1_multi_generator_a21767d34c374a65dd29196459273ff34_icgraph" id="aclassmetaheuristics_1_1generators_1_1_multi_generator_a21767d34c374a65dd29196459273ff34_icgraph">
+<area shape="rect" title=" " alt="" coords="491,5,778,48"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#ada4833a51b39d1372e2c050448bbab6c" title=" " alt="" coords="222,5,443,48"/>
+<area shape="poly" title=" " alt="" coords="475,29,443,29,443,24,475,24"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,5,174,48"/>
+<area shape="poly" title=" " alt="" coords="206,29,174,29,174,24,206,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adecd56fa947c1c392c1739d1bf18b6fd" name="adecd56fa947c1c392c1739d1bf18b6fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adecd56fa947c1c392c1739d1bf18b6fd">&#9670;&#160;</a></span>destroyMultiGenerator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void metaheuristics.generators.MultiGenerator.destroyMultiGenerator </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2309ca3d3de82961bbc61d3fb6c893fc" name="a2309ca3d3de82961bbc61d3fb6c893fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2309ca3d3de82961bbc61d3fb6c893fc">&#9670;&#160;</a></span>generate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classproblem_1_1definition_1_1_state.html">State</a> metaheuristics.generators.MultiGenerator.generate </td>
+          <td>(</td>
+          <td class="paramtype">Integer</td>          <td class="paramname"><span class="paramname"><em>operatornumber</em></span></td><td>)</td>
+          <td> throws IllegalArgumentException, SecurityException, 			ClassNotFoundException, InstantiationException, 			IllegalAccessException, InvocationTargetException, 			NoSuchMethodException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reimplementado de <a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html#a06f6f7622b9ce32590eadbdf6bf962b5">metaheuristics.generators.Generator</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator_a2309ca3d3de82961bbc61d3fb6c893fc_cgraph.png" border="0" usemap="#aclassmetaheuristics_1_1generators_1_1_multi_generator_a2309ca3d3de82961bbc61d3fb6c893fc_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassmetaheuristics_1_1generators_1_1_multi_generator_a2309ca3d3de82961bbc61d3fb6c893fc_cgraph" id="aclassmetaheuristics_1_1generators_1_1_multi_generator_a2309ca3d3de82961bbc61d3fb6c893fc_cgraph">
+<area shape="rect" title=" " alt="" coords="5,72,181,115"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_generator.html#a06f6f7622b9ce32590eadbdf6bf962b5" title=" " alt="" coords="229,5,404,48"/>
+<area shape="poly" title=" " alt="" coords="166,69,227,50,228,56,167,74"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#aeb1c308c04db42c2977e51ffc779862d" title=" " alt="" coords="236,72,396,115"/>
+<area shape="poly" title=" " alt="" coords="181,91,220,91,220,96,181,96"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a2c2b5c6dc19e52e87a1a0b2151fa9768" title=" " alt="" coords="229,155,404,197"/>
+<area shape="poly" title=" " alt="" coords="154,113,243,146,241,151,152,118"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a4f635be1df3d594c3e8f2d111cc5c995" title=" " alt="" coords="460,55,621,97"/>
+<area shape="poly" title=" " alt="" coords="397,84,445,81,445,86,397,90"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_limit_roulette.html#aec0f5b7cf5635953e5a7aab29da7e484" title=" " alt="" coords="452,121,629,164"/>
+<area shape="poly" title=" " alt="" coords="404,160,436,155,437,161,405,166"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_limit_roulette.html#a0822acf2c718ff18695f40042659844d" title=" " alt="" coords="453,188,628,231"/>
+<area shape="poly" title=" " alt="" coords="405,186,438,191,437,197,404,192"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_limit_roulette.html#a6e2cc0e2c945ab59920d9eb2253271fe" title=" " alt="" coords="453,255,628,297"/>
+<area shape="poly" title=" " alt="" coords="360,195,453,240,467,246,465,251,451,245,358,200"/>
+</map>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator_a2309ca3d3de82961bbc61d3fb6c893fc_icgraph.png" border="0" usemap="#aclassmetaheuristics_1_1generators_1_1_multi_generator_a2309ca3d3de82961bbc61d3fb6c893fc_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassmetaheuristics_1_1generators_1_1_multi_generator_a2309ca3d3de82961bbc61d3fb6c893fc_icgraph" id="aclassmetaheuristics_1_1generators_1_1_multi_generator_a2309ca3d3de82961bbc61d3fb6c893fc_icgraph">
+<area shape="rect" title=" " alt="" coords="222,5,397,48"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,5,174,48"/>
+<area shape="poly" title=" " alt="" coords="206,29,174,29,174,24,206,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abd14738b7100c980010e1385f622a038" name="abd14738b7100c980010e1385f622a038"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd14738b7100c980010e1385f622a038">&#9670;&#160;</a></span>getActiveGenerator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html">Generator</a> metaheuristics.generators.MultiGenerator.getActiveGenerator </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae534f33ba876de6d56d22f3889b8b666" name="ae534f33ba876de6d56d22f3889b8b666"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae534f33ba876de6d56d22f3889b8b666">&#9670;&#160;</a></span>getListCountBetterGender()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int[] metaheuristics.generators.MultiGenerator.getListCountBetterGender </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reimplementado de <a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html#ac5bace71f51c16b611ede3ed53263473">metaheuristics.generators.Generator</a>.</p>
+
+</div>
+</div>
+<a id="af7574c27e8798f241a9f683721a8a6b5" name="af7574c27e8798f241a9f683721a8a6b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7574c27e8798f241a9f683721a8a6b5">&#9670;&#160;</a></span>getListCountGender()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int[] metaheuristics.generators.MultiGenerator.getListCountGender </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reimplementado de <a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html#ac5d6d45ee8017fb87d80aa952edfc34e">metaheuristics.generators.Generator</a>.</p>
+
+</div>
+</div>
+<a id="a4beb2b351ab1dbc9c482118d79e48234" name="a4beb2b351ab1dbc9c482118d79e48234"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4beb2b351ab1dbc9c482118d79e48234">&#9670;&#160;</a></span>getListGeneratedPP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ArrayList&lt; <a class="el" href="classproblem_1_1definition_1_1_state.html">State</a> &gt; metaheuristics.generators.MultiGenerator.getListGeneratedPP </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab331905baebb433340e05d19e174340b" name="ab331905baebb433340e05d19e174340b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab331905baebb433340e05d19e174340b">&#9670;&#160;</a></span>getListGenerators()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html">Generator</a>[] metaheuristics.generators.MultiGenerator.getListGenerators </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator_ab331905baebb433340e05d19e174340b_icgraph.png" border="0" usemap="#aclassmetaheuristics_1_1generators_1_1_multi_generator_ab331905baebb433340e05d19e174340b_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassmetaheuristics_1_1generators_1_1_multi_generator_ab331905baebb433340e05d19e174340b_icgraph" id="aclassmetaheuristics_1_1generators_1_1_multi_generator_ab331905baebb433340e05d19e174340b_icgraph">
+<area shape="rect" title=" " alt="" coords="682,168,896,211"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_instance_d_e.html#a670666f9e178336ab435f4c3f9f8b60e" title=" " alt="" coords="459,5,634,48"/>
+<area shape="poly" title=" " alt="" coords="754,159,700,110,633,62,611,51,613,46,636,58,703,106,758,155"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_instance_e_e.html#a0b7588c73c2a82f79b2282c83bf4b9c8" title=" " alt="" coords="459,72,634,115"/>
+<area shape="poly" title=" " alt="" coords="720,164,633,129,604,118,606,113,635,124,722,159"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_instance_g_a.html#aefa3b4de3be77d579e499fbd6a6f5761" title=" " alt="" coords="459,139,634,181"/>
+<area shape="poly" title=" " alt="" coords="666,177,635,173,635,168,667,172"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a02b38cbd8e394aa83947dfbed1dd0b62" title=" " alt="" coords="222,189,411,232"/>
+<area shape="poly" title=" " alt="" coords="667,197,412,209,412,204,667,192"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#af3a9d3d541f13137a2a97719b0045cb3" title=" " alt="" coords="461,256,632,299"/>
+<area shape="poly" title=" " alt="" coords="715,219,608,258,607,253,713,214"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#ac01593cb9744347c0995e5f7bd12bf32" title=" " alt="" coords="236,323,396,365"/>
+<area shape="poly" title=" " alt="" coords="760,224,705,272,672,295,635,313,575,332,512,344,451,349,397,350,397,345,451,344,511,338,574,327,633,308,669,290,702,267,756,220"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,256,174,299"/>
+<area shape="poly" title=" " alt="" coords="228,239,166,258,164,253,227,234"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a0d23d307adedc20a3d9cb6c1bf65bb7f" title=" " alt="" coords="236,256,396,299"/>
+<area shape="poly" title=" " alt="" coords="446,280,397,280,397,275,446,275"/>
+<area shape="poly" title=" " alt="" coords="221,280,174,280,174,275,221,275"/>
+<area shape="poly" title=" " alt="" coords="227,321,164,302,166,297,228,315"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7364417b4356561cfb7656fb9818cc5d" name="a7364417b4356561cfb7656fb9818cc5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7364417b4356561cfb7656fb9818cc5d">&#9670;&#160;</a></span>getReference()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classproblem_1_1definition_1_1_state.html">State</a> metaheuristics.generators.MultiGenerator.getReference </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reimplementado de <a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html#aa56dd45a45776f6023b9f74179cc6384">metaheuristics.generators.Generator</a>.</p>
+
+</div>
+</div>
+<a id="a7e6b4c2a4a6ef326d191a2da93f97d67" name="a7e6b4c2a4a6ef326d191a2da93f97d67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e6b4c2a4a6ef326d191a2da93f97d67">&#9670;&#160;</a></span>getReferenceList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="classproblem_1_1definition_1_1_state.html">State</a> &gt; metaheuristics.generators.MultiGenerator.getReferenceList </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reimplementado de <a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html#ae168237b306de55fe4d6dfda75c7cd13">metaheuristics.generators.Generator</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator_a7e6b4c2a4a6ef326d191a2da93f97d67_icgraph.png" border="0" usemap="#aclassmetaheuristics_1_1generators_1_1_multi_generator_a7e6b4c2a4a6ef326d191a2da93f97d67_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassmetaheuristics_1_1generators_1_1_multi_generator_a7e6b4c2a4a6ef326d191a2da93f97d67_icgraph" id="aclassmetaheuristics_1_1generators_1_1_multi_generator_a7e6b4c2a4a6ef326d191a2da93f97d67_icgraph">
+<area shape="rect" title=" " alt="" coords="222,5,431,48"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,5,174,48"/>
+<area shape="poly" title=" " alt="" coords="206,29,174,29,174,24,206,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa68b7cbbd70430924ebf582279ceeb8a" name="aa68b7cbbd70430924ebf582279ceeb8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa68b7cbbd70430924ebf582279ceeb8a">&#9670;&#160;</a></span>getSonList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="classproblem_1_1definition_1_1_state.html">State</a> &gt; metaheuristics.generators.MultiGenerator.getSonList </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reimplementado de <a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html#aee09d724c1b3040e7a7ad0b64e341c96">metaheuristics.generators.Generator</a>.</p>
+
+</div>
+</div>
+<a id="aa4acb9d61c196f56a0bde7d0a624f3fb" name="aa4acb9d61c196f56a0bde7d0a624f3fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4acb9d61c196f56a0bde7d0a624f3fb">&#9670;&#160;</a></span>getTrace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float[] metaheuristics.generators.MultiGenerator.getTrace </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reimplementado de <a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html#a75d7f30dd2cb3f92475db8525ac7c6e7">metaheuristics.generators.Generator</a>.</p>
+
+</div>
+</div>
+<a id="a3c29946186ba7afb379169ed3636004f" name="a3c29946186ba7afb379169ed3636004f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c29946186ba7afb379169ed3636004f">&#9670;&#160;</a></span>getType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enummetaheuristics_1_1generators_1_1_generator_type.html">GeneratorType</a> metaheuristics.generators.MultiGenerator.getType </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reimplementado de <a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html#a5a123306b43c42d28cd1d6e17f8067a5">metaheuristics.generators.Generator</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator_a3c29946186ba7afb379169ed3636004f_icgraph.png" border="0" usemap="#aclassmetaheuristics_1_1generators_1_1_multi_generator_a3c29946186ba7afb379169ed3636004f_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassmetaheuristics_1_1generators_1_1_multi_generator_a3c29946186ba7afb379169ed3636004f_icgraph" id="aclassmetaheuristics_1_1generators_1_1_multi_generator_a3c29946186ba7afb379169ed3636004f_icgraph">
+<area shape="rect" title=" " alt="" coords="985,97,1160,140"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#ada4833a51b39d1372e2c050448bbab6c" title=" " alt="" coords="222,5,443,48"/>
+<area shape="poly" title=" " alt="" coords="983,95,936,84,809,61,680,47,558,37,443,32,444,27,558,32,681,41,810,55,937,79,984,90"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a72bc1f2921d0ed9193933d964ba217b9" title=" " alt="" coords="498,80,673,123"/>
+<area shape="poly" title=" " alt="" coords="969,108,937,105,798,101,674,102,674,96,798,96,937,100,969,103"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a9bca4abee16ba939d1aca80ac395a130" title=" " alt="" coords="728,139,937,181"/>
+<area shape="poly" title=" " alt="" coords="970,139,938,145,937,139,969,134"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#ab3417c34a00f079f67eed485ceeb8f1f" title=" " alt="" coords="730,229,935,272"/>
+<area shape="poly" title=" " alt="" coords="1020,150,874,231,872,227,1018,145"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,47,174,89"/>
+<area shape="poly" title=" " alt="" coords="207,51,175,56,174,51,206,46"/>
+<area shape="poly" title=" " alt="" coords="626,67,611,61,586,59,562,61,548,65,542,71,544,79,539,80,537,70,545,61,561,55,586,53,612,56,628,62"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a4064a096c203ec6b538929af5bd8d0d7" title=" " alt="" coords="228,80,437,123"/>
+<area shape="poly" title=" " alt="" coords="482,104,437,104,437,99,482,99"/>
+<area shape="poly" title=" " alt="" coords="212,87,174,82,175,77,212,82"/>
+<area shape="poly" title=" " alt="" coords="871,126,857,120,832,117,810,119,796,124,790,130,792,138,787,139,785,129,793,120,809,114,833,112,858,114,873,121"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a06c51732247b401b0369fe6133d35793" title=" " alt="" coords="491,147,680,189"/>
+<area shape="poly" title=" " alt="" coords="713,167,681,168,681,162,713,161"/>
+<area shape="poly" title=" " alt="" coords="486,145,415,126,417,121,488,140"/>
+<area shape="poly" title=" " alt="" coords="751,226,651,192,653,187,753,221"/>
+<area shape="poly" title=" " alt="" coords="871,216,857,210,832,208,810,210,796,215,790,221,792,228,787,229,785,219,793,210,809,205,833,203,858,205,873,211"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a625ff0e6cad7bfefeaeb4ec8a28a71d3" name="a625ff0e6cad7bfefeaeb4ec8a28a71d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a625ff0e6cad7bfefeaeb4ec8a28a71d3">&#9670;&#160;</a></span>getWeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float metaheuristics.generators.MultiGenerator.getWeight </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reimplementado de <a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html#a64f2b824081c7af593bf9aa8eabf2c9e">metaheuristics.generators.Generator</a>.</p>
+
+</div>
+</div>
+<a id="ada4833a51b39d1372e2c050448bbab6c" name="ada4833a51b39d1372e2c050448bbab6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada4833a51b39d1372e2c050448bbab6c">&#9670;&#160;</a></span>initializeGenerators()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void metaheuristics.generators.MultiGenerator.initializeGenerators </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator_ada4833a51b39d1372e2c050448bbab6c_cgraph.png" border="0" usemap="#aclassmetaheuristics_1_1generators_1_1_multi_generator_ada4833a51b39d1372e2c050448bbab6c_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassmetaheuristics_1_1generators_1_1_multi_generator_ada4833a51b39d1372e2c050448bbab6c_cgraph" id="aclassmetaheuristics_1_1generators_1_1_multi_generator_ada4833a51b39d1372e2c050448bbab6c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,327,227,369"/>
+<area shape="rect" href="classfactory__method_1_1_factory_generator.html#a76c269b114cbf643e92a7467b7cf21f7" title=" " alt="" coords="290,37,546,80"/>
+<area shape="poly" title=" " alt="" coords="126,325,149,284,182,232,224,177,273,127,307,103,343,84,345,89,309,108,276,131,228,181,186,235,153,287,131,327"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a21767d34c374a65dd29196459273ff34" title=" " alt="" coords="275,239,562,281"/>
+<area shape="poly" title=" " alt="" coords="187,323,274,297,322,283,324,289,275,303,189,329"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a67b5a933a8ccd493360fa06e0a448bb4" title=" " alt="" coords="640,72,800,115"/>
+<area shape="poly" title=" " alt="" coords="138,324,197,274,234,248,273,224,363,184,457,152,546,127,624,109,625,114,548,132,458,157,365,189,276,229,237,252,200,279,142,328"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#aeb1c308c04db42c2977e51ffc779862d" title=" " alt="" coords="640,472,800,515"/>
+<area shape="poly" title=" " alt="" coords="183,323,265,304,314,297,365,294,417,295,468,303,518,318,564,342,578,355,586,369,591,399,594,430,600,444,612,458,627,469,624,474,608,462,596,447,589,431,585,400,581,371,574,358,560,346,516,323,467,308,416,300,365,299,314,303,266,310,184,329"/>
+<area shape="rect" href="classproblem_1_1definition_1_1_problem.html#ad685c1f6c1edba96aa5082d1fdf8bb35" title=" " alt="" coords="320,356,517,399"/>
+<area shape="poly" title=" " alt="" coords="227,356,304,364,304,369,227,361"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a3c29946186ba7afb379169ed3636004f" title=" " alt="" coords="331,423,506,465"/>
+<area shape="poly" title=" " alt="" coords="168,367,276,408,316,420,315,425,274,413,166,372"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a2a25df332708a340f5115fe7ea253053" title=" " alt="" coords="301,489,536,532"/>
+<area shape="poly" title=" " alt="" coords="139,368,197,422,235,451,276,475,289,481,287,486,273,480,232,455,194,426,136,372"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#afce4bffeb9ed07ce3da9aef9af2f3c00" title=" " alt="" coords="321,556,516,599"/>
+<area shape="poly" title=" " alt="" coords="131,368,153,406,185,454,227,502,276,542,307,557,304,561,273,546,223,505,181,457,148,409,126,371"/>
+<area shape="rect" href="classfactory__method_1_1_factory_loader.html#a4e61ffc7038a082277d67e3e59cdb859" title=" " alt="" coords="610,5,830,48"/>
+<area shape="poly" title=" " alt="" coords="547,42,594,37,595,43,547,48"/>
+<area shape="rect" href="classproblem_1_1definition_1_1_problem.html#a74d56127a8524b4a20f6ab831744f164" title=" " alt="" coords="630,139,810,181"/>
+<area shape="poly" title=" " alt="" coords="479,236,609,191,631,184,633,189,611,196,481,241"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_generator.html#a06f6f7622b9ce32590eadbdf6bf962b5" title=" " alt="" coords="632,205,808,248"/>
+<area shape="poly" title=" " alt="" coords="562,241,616,235,617,241,563,247"/>
+<area shape="poly" title=" " alt="" coords="454,236,560,165,584,143,609,124,624,117,626,122,611,129,587,147,564,169,457,240"/>
+<area shape="poly" title=" " alt="" coords="538,280,564,298,579,318,587,339,589,380,590,420,597,439,612,458,628,470,625,475,608,462,593,441,585,421,584,380,582,340,575,321,560,302,535,284"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_generator.html#a5a123306b43c42d28cd1d6e17f8067a5" title=" " alt="" coords="632,272,808,315"/>
+<area shape="poly" title=" " alt="" coords="563,273,617,279,616,285,562,279"/>
+<area shape="rect" href="classproblem_1_1definition_1_1_state.html#ab802f63ab88415158f9c6cf468b6c8b3" title=" " alt="" coords="630,339,810,381"/>
+<area shape="poly" title=" " alt="" coords="511,279,563,298,587,311,611,324,627,330,625,335,609,329,585,316,561,302,509,284"/>
+<area shape="rect" href="classproblem_1_1definition_1_1_state.html#afccaeac3af66cb772e2b3e70758b8fe6" title=" " alt="" coords="630,405,810,448"/>
+<area shape="poly" title=" " alt="" coords="534,280,564,298,582,322,589,346,595,369,612,391,619,396,615,401,608,395,590,371,584,347,577,324,560,302,531,284"/>
+<area shape="rect" href="classproblem_1_1extension_1_1_solution_method.html#ae31d6d6000b9043bdee5e2d79fd2a628" title=" " alt="" coords="891,105,1069,148"/>
+<area shape="poly" title=" " alt="" coords="810,146,875,137,876,143,811,151"/>
+<area shape="rect" href="classproblem_1_1definition_1_1_problem.html#a443db14206d399250f49e78175ca829e" title=" " alt="" coords="878,172,1082,215"/>
+<area shape="poly" title=" " alt="" coords="811,169,863,176,863,181,810,174"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a4f635be1df3d594c3e8f2d111cc5c995" title=" " alt="" coords="900,472,1060,515"/>
+<area shape="poly" title=" " alt="" coords="801,491,884,491,884,496,801,496"/>
+</map>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator_ada4833a51b39d1372e2c050448bbab6c_icgraph.png" border="0" usemap="#aclassmetaheuristics_1_1generators_1_1_multi_generator_ada4833a51b39d1372e2c050448bbab6c_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassmetaheuristics_1_1generators_1_1_multi_generator_ada4833a51b39d1372e2c050448bbab6c_icgraph" id="aclassmetaheuristics_1_1generators_1_1_multi_generator_ada4833a51b39d1372e2c050448bbab6c_icgraph">
+<area shape="rect" title=" " alt="" coords="222,5,443,48"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,5,174,48"/>
+<area shape="poly" title=" " alt="" coords="206,29,174,29,174,24,206,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2a25df332708a340f5115fe7ea253053" name="a2a25df332708a340f5115fe7ea253053"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a25df332708a340f5115fe7ea253053">&#9670;&#160;</a></span>initializeListGenerator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void metaheuristics.generators.MultiGenerator.initializeListGenerator </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator_a2a25df332708a340f5115fe7ea253053_icgraph.png" border="0" usemap="#aclassmetaheuristics_1_1generators_1_1_multi_generator_a2a25df332708a340f5115fe7ea253053_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassmetaheuristics_1_1generators_1_1_multi_generator_a2a25df332708a340f5115fe7ea253053_icgraph" id="aclassmetaheuristics_1_1generators_1_1_multi_generator_a2a25df332708a340f5115fe7ea253053_icgraph">
+<area shape="rect" title=" " alt="" coords="491,5,726,48"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#ada4833a51b39d1372e2c050448bbab6c" title=" " alt="" coords="222,5,443,48"/>
+<area shape="poly" title=" " alt="" coords="475,29,444,29,444,24,475,24"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,5,174,48"/>
+<area shape="poly" title=" " alt="" coords="206,29,174,29,174,24,206,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2c2b5c6dc19e52e87a1a0b2151fa9768" name="a2c2b5c6dc19e52e87a1a0b2151fa9768"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c2b5c6dc19e52e87a1a0b2151fa9768">&#9670;&#160;</a></span>roulette()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html">Generator</a> metaheuristics.generators.MultiGenerator.roulette </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator_a2c2b5c6dc19e52e87a1a0b2151fa9768_cgraph.png" border="0" usemap="#aclassmetaheuristics_1_1generators_1_1_multi_generator_a2c2b5c6dc19e52e87a1a0b2151fa9768_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassmetaheuristics_1_1generators_1_1_multi_generator_a2c2b5c6dc19e52e87a1a0b2151fa9768_cgraph" id="aclassmetaheuristics_1_1generators_1_1_multi_generator_a2c2b5c6dc19e52e87a1a0b2151fa9768_cgraph">
+<area shape="rect" title=" " alt="" coords="5,72,181,115"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_limit_roulette.html#aec0f5b7cf5635953e5a7aab29da7e484" title=" " alt="" coords="229,5,406,48"/>
+<area shape="poly" title=" " alt="" coords="166,69,228,50,229,56,168,74"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_limit_roulette.html#a0822acf2c718ff18695f40042659844d" title=" " alt="" coords="230,72,405,115"/>
+<area shape="poly" title=" " alt="" coords="181,91,214,91,214,96,181,96"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_limit_roulette.html#a6e2cc0e2c945ab59920d9eb2253271fe" title=" " alt="" coords="230,139,405,181"/>
+<area shape="poly" title=" " alt="" coords="168,113,229,131,228,136,166,118"/>
+</map>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator_a2c2b5c6dc19e52e87a1a0b2151fa9768_icgraph.png" border="0" usemap="#aclassmetaheuristics_1_1generators_1_1_multi_generator_a2c2b5c6dc19e52e87a1a0b2151fa9768_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassmetaheuristics_1_1generators_1_1_multi_generator_a2c2b5c6dc19e52e87a1a0b2151fa9768_icgraph" id="aclassmetaheuristics_1_1generators_1_1_multi_generator_a2c2b5c6dc19e52e87a1a0b2151fa9768_icgraph">
+<area shape="rect" title=" " alt="" coords="445,5,620,48"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a2309ca3d3de82961bbc61d3fb6c893fc" title=" " alt="" coords="222,5,397,48"/>
+<area shape="poly" title=" " alt="" coords="430,29,397,29,397,24,430,24"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,5,174,48"/>
+<area shape="poly" title=" " alt="" coords="206,29,174,29,174,24,206,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afef1d16b774c4e86135d2fc38d0dbed7" name="afef1d16b774c4e86135d2fc38d0dbed7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afef1d16b774c4e86135d2fc38d0dbed7">&#9670;&#160;</a></span>searchState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean metaheuristics.generators.MultiGenerator.searchState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classproblem_1_1definition_1_1_state.html">State</a></td>          <td class="paramname"><span class="paramname"><em>stateCandidate</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator_afef1d16b774c4e86135d2fc38d0dbed7_cgraph.png" border="0" usemap="#aclassmetaheuristics_1_1generators_1_1_multi_generator_afef1d16b774c4e86135d2fc38d0dbed7_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassmetaheuristics_1_1generators_1_1_multi_generator_afef1d16b774c4e86135d2fc38d0dbed7_cgraph" id="aclassmetaheuristics_1_1generators_1_1_multi_generator_afef1d16b774c4e86135d2fc38d0dbed7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,139,186,181"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a128158b2cc956351bbc2c285b1e577b8" title=" " alt="" coords="252,5,412,48"/>
+<area shape="poly" title=" " alt="" coords="120,136,170,97,232,58,244,52,246,57,235,62,173,101,123,140"/>
+<area shape="rect" href="classproblem_1_1definition_1_1_state.html#a226ea6fab8e7060cf131edfdb245a6fa" title=" " alt="" coords="242,72,422,115"/>
+<area shape="poly" title=" " alt="" coords="173,136,239,117,240,122,174,141"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a67b5a933a8ccd493360fa06e0a448bb4" title=" " alt="" coords="252,139,412,181"/>
+<area shape="poly" title=" " alt="" coords="186,157,237,157,237,163,186,163"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#aeb1c308c04db42c2977e51ffc779862d" title=" " alt="" coords="252,205,412,248"/>
+<area shape="poly" title=" " alt="" coords="174,179,240,198,239,203,173,184"/>
+<area shape="rect" href="classproblem_1_1definition_1_1_problem.html#ad6f38df755179e22ffe487ba4a5c8021" title=" " alt="" coords="234,272,431,315"/>
+<area shape="poly" title=" " alt="" coords="123,180,173,219,235,258,246,263,244,268,232,262,170,223,120,184"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a4f635be1df3d594c3e8f2d111cc5c995" title=" " alt="" coords="479,205,639,248"/>
+<area shape="poly" title=" " alt="" coords="413,224,463,224,463,229,413,229"/>
+</map>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator_afef1d16b774c4e86135d2fc38d0dbed7_icgraph.png" border="0" usemap="#aclassmetaheuristics_1_1generators_1_1_multi_generator_afef1d16b774c4e86135d2fc38d0dbed7_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassmetaheuristics_1_1generators_1_1_multi_generator_afef1d16b774c4e86135d2fc38d0dbed7_icgraph" id="aclassmetaheuristics_1_1generators_1_1_multi_generator_afef1d16b774c4e86135d2fc38d0dbed7_icgraph">
+<area shape="rect" title=" " alt="" coords="716,5,897,48"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a06c51732247b401b0369fe6133d35793" title=" " alt="" coords="479,5,668,48"/>
+<area shape="poly" title=" " alt="" coords="701,29,669,29,669,24,701,24"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a4064a096c203ec6b538929af5bd8d0d7" title=" " alt="" coords="222,5,431,48"/>
+<area shape="poly" title=" " alt="" coords="463,29,431,29,431,24,463,24"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,5,174,48"/>
+<area shape="poly" title=" " alt="" coords="206,29,174,29,174,24,206,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae3af87d1077fa62c7aea5f0c318afe5d" name="ae3af87d1077fa62c7aea5f0c318afe5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3af87d1077fa62c7aea5f0c318afe5d">&#9670;&#160;</a></span>setActiveGenerator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void metaheuristics.generators.MultiGenerator.setActiveGenerator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html">Generator</a></td>          <td class="paramname"><span class="paramname"><em>activeGenerator</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6c56d1cbb08a212d5adfd2d5e5664f9" name="ab6c56d1cbb08a212d5adfd2d5e5664f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6c56d1cbb08a212d5adfd2d5e5664f9">&#9670;&#160;</a></span>setGeneratortype()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void metaheuristics.generators.MultiGenerator.setGeneratortype </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enummetaheuristics_1_1generators_1_1_generator_type.html">GeneratorType</a></td>          <td class="paramname"><span class="paramname"><em>generatortype</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abfbc81c6f1a46e6a23e1a7f3f550e9f6" name="abfbc81c6f1a46e6a23e1a7f3f550e9f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfbc81c6f1a46e6a23e1a7f3f550e9f6">&#9670;&#160;</a></span>setInitialReference()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void metaheuristics.generators.MultiGenerator.setInitialReference </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classproblem_1_1definition_1_1_state.html">State</a></td>          <td class="paramname"><span class="paramname"><em>stateInitialRef</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reimplementado de <a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html#aa9f7c4c983705f843b8fcc81e4aa8ba4">metaheuristics.generators.Generator</a>.</p>
+
+</div>
+</div>
+<a id="a9322b6d25b0f36d5e0f7acc5ff05b26f" name="a9322b6d25b0f36d5e0f7acc5ff05b26f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9322b6d25b0f36d5e0f7acc5ff05b26f">&#9670;&#160;</a></span>setListGeneratedPP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void metaheuristics.generators.MultiGenerator.setListGeneratedPP </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="classproblem_1_1definition_1_1_state.html">State</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>listGeneratedPP</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada47e6ed9cecafd1895b88ca0b2bd827" name="ada47e6ed9cecafd1895b88ca0b2bd827"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada47e6ed9cecafd1895b88ca0b2bd827">&#9670;&#160;</a></span>setListGenerators()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void metaheuristics.generators.MultiGenerator.setListGenerators </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html">Generator</a>[]</td>          <td class="paramname"><span class="paramname"><em>listGenerators</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb314d2dd0d9a0d283574add841ba6b8" name="abb314d2dd0d9a0d283574add841ba6b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb314d2dd0d9a0d283574add841ba6b8">&#9670;&#160;</a></span>setWeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void metaheuristics.generators.MultiGenerator.setWeight </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>weight</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reimplementado de <a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html#a8b3c66b57b4c739666989fbce667eb40">metaheuristics.generators.Generator</a>.</p>
+
+</div>
+</div>
+<a id="a72bc1f2921d0ed9193933d964ba217b9" name="a72bc1f2921d0ed9193933d964ba217b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72bc1f2921d0ed9193933d964ba217b9">&#9670;&#160;</a></span>tournament()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void metaheuristics.generators.MultiGenerator.tournament </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classproblem_1_1definition_1_1_state.html">State</a></td>          <td class="paramname"><span class="paramname"><em>stateCandidate</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Integer</td>          <td class="paramname"><span class="paramname"><em>countIterationsCurrent</em></span>&#160;) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator_a72bc1f2921d0ed9193933d964ba217b9_cgraph.png" border="0" usemap="#aclassmetaheuristics_1_1generators_1_1_multi_generator_a72bc1f2921d0ed9193933d964ba217b9_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassmetaheuristics_1_1generators_1_1_multi_generator_a72bc1f2921d0ed9193933d964ba217b9_cgraph" id="aclassmetaheuristics_1_1generators_1_1_multi_generator_a72bc1f2921d0ed9193933d964ba217b9_cgraph">
+<area shape="rect" title=" " alt="" coords="5,39,181,81"/>
+<area shape="poly" title=" " alt="" coords="49,39,47,29,54,20,70,14,93,12,118,14,133,21,131,26,117,20,93,17,71,19,57,24,52,30,54,38"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a3c29946186ba7afb379169ed3636004f" title=" " alt="" coords="239,5,414,48"/>
+<area shape="poly" title=" " alt="" coords="180,45,223,39,224,44,181,50"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#afce4bffeb9ed07ce3da9aef9af2f3c00" title=" " alt="" coords="229,72,424,115"/>
+<area shape="poly" title=" " alt="" coords="181,70,214,75,213,80,180,75"/>
+</map>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator_a72bc1f2921d0ed9193933d964ba217b9_icgraph.png" border="0" usemap="#aclassmetaheuristics_1_1generators_1_1_multi_generator_a72bc1f2921d0ed9193933d964ba217b9_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassmetaheuristics_1_1generators_1_1_multi_generator_a72bc1f2921d0ed9193933d964ba217b9_icgraph" id="aclassmetaheuristics_1_1generators_1_1_multi_generator_a72bc1f2921d0ed9193933d964ba217b9_icgraph">
+<area shape="rect" title=" " alt="" coords="479,29,654,72"/>
+<area shape="poly" title=" " alt="" coords="606,16,591,10,567,8,544,10,530,15,525,21,526,28,521,29,519,19,527,10,543,5,567,3,592,5,608,11"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a4064a096c203ec6b538929af5bd8d0d7" title=" " alt="" coords="222,29,431,72"/>
+<area shape="poly" title=" " alt="" coords="463,53,432,53,432,48,463,48"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,29,174,72"/>
+<area shape="poly" title=" " alt="" coords="206,53,174,53,174,48,206,48"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9bca4abee16ba939d1aca80ac395a130" name="a9bca4abee16ba939d1aca80ac395a130"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bca4abee16ba939d1aca80ac395a130">&#9670;&#160;</a></span>updateAwardImp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void metaheuristics.generators.MultiGenerator.updateAwardImp </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator_a9bca4abee16ba939d1aca80ac395a130_cgraph.png" border="0" usemap="#aclassmetaheuristics_1_1generators_1_1_multi_generator_a9bca4abee16ba939d1aca80ac395a130_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassmetaheuristics_1_1generators_1_1_multi_generator_a9bca4abee16ba939d1aca80ac395a130_cgraph" id="aclassmetaheuristics_1_1generators_1_1_multi_generator_a9bca4abee16ba939d1aca80ac395a130_cgraph">
+<area shape="rect" title=" " alt="" coords="5,72,214,115"/>
+<area shape="poly" title=" " alt="" coords="64,72,62,62,70,53,86,47,110,45,135,48,150,54,148,59,134,53,109,51,87,53,73,57,67,63,69,71"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a21309a5be90f9f68f1259fae1f70a610" title=" " alt="" coords="265,5,434,48"/>
+<area shape="poly" title=" " alt="" coords="188,69,255,50,256,55,189,74"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#aeb1c308c04db42c2977e51ffc779862d" title=" " alt="" coords="269,72,430,115"/>
+<area shape="poly" title=" " alt="" coords="214,91,254,91,254,96,214,96"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a3c29946186ba7afb379169ed3636004f" title=" " alt="" coords="262,139,437,181"/>
+<area shape="poly" title=" " alt="" coords="189,113,256,131,255,137,188,118"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a4f635be1df3d594c3e8f2d111cc5c995" title=" " alt="" coords="485,72,645,115"/>
+<area shape="poly" title=" " alt="" coords="430,91,469,91,469,96,430,96"/>
+</map>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator_a9bca4abee16ba939d1aca80ac395a130_icgraph.png" border="0" usemap="#aclassmetaheuristics_1_1generators_1_1_multi_generator_a9bca4abee16ba939d1aca80ac395a130_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassmetaheuristics_1_1generators_1_1_multi_generator_a9bca4abee16ba939d1aca80ac395a130_icgraph" id="aclassmetaheuristics_1_1generators_1_1_multi_generator_a9bca4abee16ba939d1aca80ac395a130_icgraph">
+<area shape="rect" title=" " alt="" coords="716,29,925,72"/>
+<area shape="poly" title=" " alt="" coords="861,16,846,10,820,8,797,10,783,15,777,21,779,28,774,29,772,19,780,10,796,5,821,3,847,5,863,11"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a06c51732247b401b0369fe6133d35793" title=" " alt="" coords="479,29,668,72"/>
+<area shape="poly" title=" " alt="" coords="701,53,669,53,669,48,701,48"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a4064a096c203ec6b538929af5bd8d0d7" title=" " alt="" coords="222,29,431,72"/>
+<area shape="poly" title=" " alt="" coords="463,53,431,53,431,48,463,48"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,29,174,72"/>
+<area shape="poly" title=" " alt="" coords="206,53,174,53,174,48,206,48"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab3417c34a00f079f67eed485ceeb8f1f" name="ab3417c34a00f079f67eed485ceeb8f1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3417c34a00f079f67eed485ceeb8f1f">&#9670;&#160;</a></span>updateAwardSC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void metaheuristics.generators.MultiGenerator.updateAwardSC </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator_ab3417c34a00f079f67eed485ceeb8f1f_cgraph.png" border="0" usemap="#aclassmetaheuristics_1_1generators_1_1_multi_generator_ab3417c34a00f079f67eed485ceeb8f1f_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassmetaheuristics_1_1generators_1_1_multi_generator_ab3417c34a00f079f67eed485ceeb8f1f_cgraph" id="aclassmetaheuristics_1_1generators_1_1_multi_generator_ab3417c34a00f079f67eed485ceeb8f1f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,72,211,115"/>
+<area shape="poly" title=" " alt="" coords="63,72,61,62,69,53,84,47,108,45,133,48,149,54,147,59,132,53,108,51,85,53,72,57,66,63,68,71"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a21309a5be90f9f68f1259fae1f70a610" title=" " alt="" coords="262,5,431,48"/>
+<area shape="poly" title=" " alt="" coords="186,69,252,50,254,55,187,74"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#aeb1c308c04db42c2977e51ffc779862d" title=" " alt="" coords="266,72,426,115"/>
+<area shape="poly" title=" " alt="" coords="211,91,251,91,251,96,211,96"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a3c29946186ba7afb379169ed3636004f" title=" " alt="" coords="259,139,434,181"/>
+<area shape="poly" title=" " alt="" coords="187,113,254,131,252,137,186,118"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a4f635be1df3d594c3e8f2d111cc5c995" title=" " alt="" coords="482,72,642,115"/>
+<area shape="poly" title=" " alt="" coords="427,91,466,91,466,96,427,96"/>
+</map>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator_ab3417c34a00f079f67eed485ceeb8f1f_icgraph.png" border="0" usemap="#aclassmetaheuristics_1_1generators_1_1_multi_generator_ab3417c34a00f079f67eed485ceeb8f1f_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassmetaheuristics_1_1generators_1_1_multi_generator_ab3417c34a00f079f67eed485ceeb8f1f_icgraph" id="aclassmetaheuristics_1_1generators_1_1_multi_generator_ab3417c34a00f079f67eed485ceeb8f1f_icgraph">
+<area shape="rect" title=" " alt="" coords="716,29,922,72"/>
+<area shape="poly" title=" " alt="" coords="859,16,844,10,819,8,796,10,781,15,776,21,778,28,773,29,771,19,779,10,795,5,819,3,845,5,861,11"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a06c51732247b401b0369fe6133d35793" title=" " alt="" coords="479,29,668,72"/>
+<area shape="poly" title=" " alt="" coords="701,53,669,53,669,48,701,48"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a4064a096c203ec6b538929af5bd8d0d7" title=" " alt="" coords="222,29,431,72"/>
+<area shape="poly" title=" " alt="" coords="463,53,431,53,431,48,463,48"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,29,174,72"/>
+<area shape="poly" title=" " alt="" coords="206,53,174,53,174,48,206,48"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4064a096c203ec6b538929af5bd8d0d7" name="a4064a096c203ec6b538929af5bd8d0d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4064a096c203ec6b538929af5bd8d0d7">&#9670;&#160;</a></span>updateReference()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void metaheuristics.generators.MultiGenerator.updateReference </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classproblem_1_1definition_1_1_state.html">State</a></td>          <td class="paramname"><span class="paramname"><em>stateCandidate</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Integer</td>          <td class="paramname"><span class="paramname"><em>countIterationsCurrent</em></span>&#160;) throws IllegalArgumentException, 			SecurityException, ClassNotFoundException, InstantiationException, 			IllegalAccessException, InvocationTargetException, 			NoSuchMethodException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reimplementado de <a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html#aa1c5878953f2111221b21cb9b1e6cc9f">metaheuristics.generators.Generator</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator_a4064a096c203ec6b538929af5bd8d0d7_cgraph.png" border="0" usemap="#aclassmetaheuristics_1_1generators_1_1_multi_generator_a4064a096c203ec6b538929af5bd8d0d7_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassmetaheuristics_1_1generators_1_1_multi_generator_a4064a096c203ec6b538929af5bd8d0d7_cgraph" id="aclassmetaheuristics_1_1generators_1_1_multi_generator_a4064a096c203ec6b538929af5bd8d0d7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,151,215,193"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a72bc1f2921d0ed9193933d964ba217b9" title=" " alt="" coords="270,64,445,107"/>
+<area shape="poly" title=" " alt="" coords="172,148,279,110,281,115,174,153"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a06c51732247b401b0369fe6133d35793" title=" " alt="" coords="263,192,452,235"/>
+<area shape="poly" title=" " alt="" coords="216,187,248,192,247,198,215,192"/>
+<area shape="poly" title=" " alt="" coords="311,64,309,54,317,45,333,39,357,37,384,40,399,46,397,51,382,45,357,43,334,45,320,49,314,55,316,63"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a3c29946186ba7afb379169ed3636004f" title=" " alt="" coords="767,92,943,135"/>
+<area shape="poly" title=" " alt="" coords="446,88,752,105,752,110,445,93"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#afce4bffeb9ed07ce3da9aef9af2f3c00" title=" " alt="" coords="506,5,702,48"/>
+<area shape="poly" title=" " alt="" coords="445,62,496,50,497,55,446,67"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#afef1d16b774c4e86135d2fc38d0dbed7" title=" " alt="" coords="514,325,694,368"/>
+<area shape="poly" title=" " alt="" coords="399,233,501,290,549,315,547,320,499,294,396,238"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a9bca4abee16ba939d1aca80ac395a130" title=" " alt="" coords="500,147,708,189"/>
+<area shape="poly" title=" " alt="" coords="452,193,484,187,485,193,453,199"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#ab3417c34a00f079f67eed485ceeb8f1f" title=" " alt="" coords="502,237,707,280"/>
+<area shape="poly" title=" " alt="" coords="453,228,487,234,486,240,452,233"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a128158b2cc956351bbc2c285b1e577b8" title=" " alt="" coords="775,492,935,535"/>
+<area shape="poly" title=" " alt="" coords="627,367,683,422,719,451,758,478,767,483,765,487,755,482,716,456,679,426,623,370"/>
+<area shape="rect" href="classproblem_1_1definition_1_1_state.html#a226ea6fab8e7060cf131edfdb245a6fa" title=" " alt="" coords="765,292,945,335"/>
+<area shape="poly" title=" " alt="" coords="694,332,749,325,750,330,695,337"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a67b5a933a8ccd493360fa06e0a448bb4" title=" " alt="" coords="775,359,935,401"/>
+<area shape="poly" title=" " alt="" coords="695,356,759,365,759,370,694,361"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#aeb1c308c04db42c2977e51ffc779862d" title=" " alt="" coords="775,225,935,268"/>
+<area shape="poly" title=" " alt="" coords="651,322,755,278,772,271,774,276,757,282,653,327"/>
+<area shape="rect" href="classproblem_1_1definition_1_1_problem.html#ad6f38df755179e22ffe487ba4a5c8021" title=" " alt="" coords="756,425,954,468"/>
+<area shape="poly" title=" " alt="" coords="653,366,757,411,774,417,772,422,755,416,651,371"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a4f635be1df3d594c3e8f2d111cc5c995" title=" " alt="" coords="1002,225,1162,268"/>
+<area shape="poly" title=" " alt="" coords="935,244,986,244,986,249,935,249"/>
+<area shape="poly" title=" " alt="" coords="705,143,752,133,753,138,706,149"/>
+<area shape="poly" title=" " alt="" coords="675,187,771,218,769,223,674,192"/>
+<area shape="poly" title=" " alt="" coords="557,147,556,137,563,128,580,122,604,120,630,122,646,129,644,134,629,128,604,125,581,127,566,132,561,138,563,146"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a21309a5be90f9f68f1259fae1f70a610" title=" " alt="" coords="770,159,940,201"/>
+<area shape="poly" title=" " alt="" coords="709,170,755,173,755,178,709,176"/>
+<area shape="poly" title=" " alt="" coords="651,234,707,199,721,185,729,172,739,158,755,145,762,140,765,144,758,149,743,162,734,175,725,188,710,203,654,239"/>
+<area shape="poly" title=" " alt="" coords="707,251,759,249,759,254,707,256"/>
+<area shape="poly" title=" " alt="" coords="674,234,769,204,771,209,675,239"/>
+<area shape="poly" title=" " alt="" coords="557,237,556,227,563,218,580,213,604,211,630,213,646,219,644,224,629,218,604,216,581,218,566,223,561,229,563,236"/>
+</map>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator_a4064a096c203ec6b538929af5bd8d0d7_icgraph.png" border="0" usemap="#aclassmetaheuristics_1_1generators_1_1_multi_generator_a4064a096c203ec6b538929af5bd8d0d7_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassmetaheuristics_1_1generators_1_1_multi_generator_a4064a096c203ec6b538929af5bd8d0d7_icgraph" id="aclassmetaheuristics_1_1generators_1_1_multi_generator_a4064a096c203ec6b538929af5bd8d0d7_icgraph">
+<area shape="rect" title=" " alt="" coords="222,5,431,48"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,5,174,48"/>
+<area shape="poly" title=" " alt="" coords="206,29,174,29,174,24,206,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a06c51732247b401b0369fe6133d35793" name="a06c51732247b401b0369fe6133d35793"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06c51732247b401b0369fe6133d35793">&#9670;&#160;</a></span>updateWeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void metaheuristics.generators.MultiGenerator.updateWeight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classproblem_1_1definition_1_1_state.html">State</a></td>          <td class="paramname"><span class="paramname"><em>stateCandidate</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator_a06c51732247b401b0369fe6133d35793_cgraph.png" border="0" usemap="#aclassmetaheuristics_1_1generators_1_1_multi_generator_a06c51732247b401b0369fe6133d35793_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassmetaheuristics_1_1generators_1_1_multi_generator_a06c51732247b401b0369fe6133d35793_cgraph" id="aclassmetaheuristics_1_1generators_1_1_multi_generator_a06c51732247b401b0369fe6133d35793_cgraph">
+<area shape="rect" title=" " alt="" coords="5,272,195,315"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#afef1d16b774c4e86135d2fc38d0dbed7" title=" " alt="" coords="257,160,437,203"/>
+<area shape="poly" title=" " alt="" coords="148,269,283,207,285,212,150,274"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a9bca4abee16ba939d1aca80ac395a130" title=" " alt="" coords="243,363,451,405"/>
+<area shape="poly" title=" " alt="" coords="161,313,273,354,271,359,160,318"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#ab3417c34a00f079f67eed485ceeb8f1f" title=" " alt="" coords="244,272,450,315"/>
+<area shape="poly" title=" " alt="" coords="195,291,228,291,228,296,195,296"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a128158b2cc956351bbc2c285b1e577b8" title=" " alt="" coords="518,72,678,115"/>
+<area shape="poly" title=" " alt="" coords="407,157,498,124,516,118,518,123,500,129,409,162"/>
+<area shape="rect" href="classproblem_1_1definition_1_1_state.html#a226ea6fab8e7060cf131edfdb245a6fa" title=" " alt="" coords="508,139,688,181"/>
+<area shape="poly" title=" " alt="" coords="437,171,492,166,492,172,438,176"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a67b5a933a8ccd493360fa06e0a448bb4" title=" " alt="" coords="518,205,678,248"/>
+<area shape="poly" title=" " alt="" coords="438,195,503,207,502,212,437,200"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#aeb1c308c04db42c2977e51ffc779862d" title=" " alt="" coords="518,272,678,315"/>
+<area shape="poly" title=" " alt="" coords="391,201,500,258,515,264,513,269,498,262,388,206"/>
+<area shape="rect" href="classproblem_1_1definition_1_1_problem.html#ad6f38df755179e22ffe487ba4a5c8021" title=" " alt="" coords="499,5,696,48"/>
+<area shape="poly" title=" " alt="" coords="368,158,424,108,460,81,498,58,508,52,511,57,500,62,463,86,428,112,372,162"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a4f635be1df3d594c3e8f2d111cc5c995" title=" " alt="" coords="744,272,905,315"/>
+<area shape="poly" title=" " alt="" coords="678,291,728,291,728,296,678,296"/>
+<area shape="poly" title=" " alt="" coords="404,360,498,324,516,318,518,323,500,329,406,365"/>
+<area shape="poly" title=" " alt="" coords="300,363,298,353,306,344,322,338,347,336,373,338,389,345,387,350,372,344,347,341,323,343,309,348,303,354,305,362"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a21309a5be90f9f68f1259fae1f70a610" title=" " alt="" coords="513,405,682,448"/>
+<area shape="poly" title=" " alt="" coords="452,399,498,407,497,412,451,404"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a3c29946186ba7afb379169ed3636004f" title=" " alt="" coords="510,339,685,381"/>
+<area shape="poly" title=" " alt="" coords="451,371,494,367,495,373,452,377"/>
+<area shape="poly" title=" " alt="" coords="450,291,502,291,502,296,450,296"/>
+<area shape="poly" title=" " alt="" coords="433,313,453,325,469,342,477,359,485,375,501,391,507,395,504,400,497,395,481,378,473,361,465,345,449,329,430,318"/>
+<area shape="poly" title=" " alt="" coords="430,313,501,332,500,337,429,318"/>
+<area shape="poly" title=" " alt="" coords="300,272,298,262,306,253,322,247,347,245,373,248,389,254,387,259,372,253,347,251,323,253,309,257,303,263,305,271"/>
+</map>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmetaheuristics_1_1generators_1_1_multi_generator_a06c51732247b401b0369fe6133d35793_icgraph.png" border="0" usemap="#aclassmetaheuristics_1_1generators_1_1_multi_generator_a06c51732247b401b0369fe6133d35793_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassmetaheuristics_1_1generators_1_1_multi_generator_a06c51732247b401b0369fe6133d35793_icgraph" id="aclassmetaheuristics_1_1generators_1_1_multi_generator_a06c51732247b401b0369fe6133d35793_icgraph">
+<area shape="rect" title=" " alt="" coords="479,5,668,48"/>
+<area shape="rect" href="classmetaheuristics_1_1generators_1_1_multi_generator.html#a4064a096c203ec6b538929af5bd8d0d7" title=" " alt="" coords="222,5,431,48"/>
+<area shape="poly" title=" " alt="" coords="463,29,431,29,431,24,463,24"/>
+<area shape="rect" href="classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,5,174,48"/>
+<area shape="poly" title=" " alt="" coords="206,29,174,29,174,24,206,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Documentación de datos miembro</h2>
+<a id="ae77321419a2cb94552858f37113ad351" name="ae77321419a2cb94552858f37113ad351"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae77321419a2cb94552858f37113ad351">&#9670;&#160;</a></span>activeGenerator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html">Generator</a> metaheuristics.generators.MultiGenerator.activeGenerator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a7a810680cce131f24cd40157a173f5" name="a7a7a810680cce131f24cd40157a173f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a7a810680cce131f24cd40157a173f5">&#9670;&#160;</a></span>Generatortype</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enummetaheuristics_1_1generators_1_1_generator_type.html">GeneratorType</a> metaheuristics.generators.MultiGenerator.Generatortype</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a65b99d327cd92bebf04d0dcea28c8a0f" name="a65b99d327cd92bebf04d0dcea28c8a0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65b99d327cd92bebf04d0dcea28c8a0f">&#9670;&#160;</a></span>listGeneratedPP</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="classproblem_1_1definition_1_1_state.html">State</a>&gt; metaheuristics.generators.MultiGenerator.listGeneratedPP = new ArrayList&lt;<a class="el" href="classproblem_1_1definition_1_1_state.html">State</a>&gt; ()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a818b282d2b179e572c762faa6fe0c988" name="a818b282d2b179e572c762faa6fe0c988"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a818b282d2b179e572c762faa6fe0c988">&#9670;&#160;</a></span>listGenerators</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html">Generator</a> [] metaheuristics.generators.MultiGenerator.listGenerators = new <a class="el" href="classmetaheuristics_1_1generators_1_1_generator.html">Generator</a>[GeneratorType.values().length]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0dea22ee5bdd49b26c7e8350ca35d1b7" name="a0dea22ee5bdd49b26c7e8350ca35d1b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dea22ee5bdd49b26c7e8350ca35d1b7">&#9670;&#160;</a></span>listStateReference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="classproblem_1_1definition_1_1_state.html">State</a>&gt; metaheuristics.generators.MultiGenerator.listStateReference = new ArrayList&lt;<a class="el" href="classproblem_1_1definition_1_1_state.html">State</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>La documentación de esta clase está generada del siguiente archivo:<ul>
+<li>src/main/java/metaheuristics/generators/<a class="el" href="_multi_generator_8java.html">MultiGenerator.java</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>metaheuristics</b></li><li class="navelem"><a href="namespacemetaheuristics_1_1generators.html">generators</a></li><li class="navelem"><a href="classmetaheuristics_1_1generators_1_1_multi_generator.html">MultiGenerator</a></li>
+    <li class="footer">Generado el <span class="timestamp"></span> para BiCIAM por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

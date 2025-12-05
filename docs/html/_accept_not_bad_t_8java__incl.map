@@ -1,0 +1,15 @@
+<map id="src/main/java/local_search/acceptation_type/AcceptNotBadT.java" name="src/main/java/local_search/acceptation_type/AcceptNotBadT.java">
+<area shape="rect" id="Node000001" title=" " alt="" coords="491,5,668,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,112,183,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="491,56,199,114,197,109,490,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="207,112,368,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="493,67,365,109,363,104,492,62"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="392,112,567,155"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="552,66,513,103,509,100,548,62"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="592,120,767,147"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="611,62,658,107,654,111,607,66"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="791,120,949,147"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="667,62,819,112,817,117,665,67"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="974,112,1153,155"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="669,51,959,109,958,114,668,56"/>
+</map>

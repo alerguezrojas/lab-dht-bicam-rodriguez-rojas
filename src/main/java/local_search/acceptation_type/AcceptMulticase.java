@@ -9,10 +9,31 @@ import java.util.Random;
 
 import problem.definition.State;
 
+/**
+ * @class AcceptMulticase
+ * @brief Implementa la lógica de aceptación de candidatos para el algoritmo de Recocido Simulado Multicaso.
+ * 
+ * Esta clase extiende de AcceptableCandidate y define las reglas para aceptar o rechazar
+ * una solución candidata basándose en criterios de dominancia y probabilidad.
+ */
 public class AcceptMulticase extends AcceptableCandidate {
 
+	/**
+	 * @brief Generador de números aleatorios compartido.
+	 * Se utiliza una instancia estática para mejorar la eficiencia y la calidad de la aleatoriedad.
+	 */
 	private static final Random rdm = new Random();
 
+	/**
+	 * @brief Determina si se acepta una solución candidata.
+	 * 
+	 * Evalúa la solución candidata frente a la solución actual utilizando criterios de dominancia
+	 * y una función de probabilidad basada en la temperatura actual del recocido simulado.
+	 * 
+	 * @param stateCurrent Estado actual de la solución.
+	 * @param stateCandidate Estado candidato a ser evaluado.
+	 * @return true si el candidato es aceptado, false en caso contrario.
+	 */
 	@Override
 	public Boolean acceptCandidate(State stateCurrent, State stateCandidate) {
 		// TODO Auto-generated method stub
@@ -82,7 +103,14 @@ public class AcceptMulticase extends AcceptableCandidate {
 	}
 
 
-	private int DominanceCounter(State stateCandidate, List<State> list) { //chequea el n�mero de soluciones de Pareto que son dominados por la nueva soluci�n
+	/**
+	 * @brief Cuenta cuántas soluciones en la lista son dominadas por el candidato.
+	 * 
+	 * @param stateCandidate Estado candidato a evaluar.
+	 * @param list Lista de soluciones de referencia (ej. frente de Pareto actual).
+	 * @return Número de soluciones en la lista que son dominadas por el candidato.
+	 */
+	private int DominanceCounter(State stateCandidate, List<State> list) { //chequea el nmero de soluciones de Pareto que son dominados por la nueva solucin
 		int counter = 0;
 		for (int i = 0; i < list.size(); i++) {
 			State solution = list.get(i);
@@ -93,7 +121,16 @@ public class AcceptMulticase extends AcceptableCandidate {
 		return counter;
 	}
 
-	private int DominanceRank(State stateCandidate, List<State> list) { //calculando el n�mero de soluciones en el conjunto de Pareto que dominan a la soluci�n
+	/**
+	 * @brief Calcula el rango de dominancia del candidato.
+	 * 
+	 * Cuenta cuántas soluciones en la lista dominan al candidato.
+	 * 
+	 * @param stateCandidate Estado candidato a evaluar.
+	 * @param list Lista de soluciones de referencia.
+	 * @return Número de soluciones en la lista que dominan al candidato.
+	 */
+	private int DominanceRank(State stateCandidate, List<State> list) { //calculando el nmero de soluciones en el conjunto de Pareto que dominan a la solucin
 		int rank = 0;
 		for (int i = 0; i < list.size(); i++) {
 			State solution = list.get(i);

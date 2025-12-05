@@ -1,0 +1,15 @@
+<map id="problem.definition.State.Comparator" name="problem.definition.State.Comparator">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,168,81"/>
+<area shape="rect" id="Node000002" href="$classproblem_1_1definition_1_1_state.html#a2e75b6f2bedb2107478ecd1e8e681418" title=" " alt="" coords="426,5,637,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,47,215,41,410,24,411,30,216,47,169,52"/>
+<area shape="rect" id="Node000003" href="$classproblem_1_1definition_1_1_state.html#a1a5212628b1f4ec0f1091211615cda9c" title=" " alt="" coords="216,80,378,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="169,73,201,80,200,85,168,79"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="341,77,425,41,449,34,451,39,427,47,343,82"/>
+<area shape="poly" id="edge7_Node000003_Node000003" title=" " alt="" coords="257,80,255,70,262,61,276,55,297,53,319,56,333,62,331,67,318,61,297,59,277,61,265,65,260,71,262,79"/>
+<area shape="rect" id="Node000004" href="$classproblem_1_1definition_1_1_state.html#a226ea6fab8e7060cf131edfdb245a6fa" title=" " alt="" coords="442,56,622,99"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="378,90,426,85,426,91,378,96"/>
+<area shape="rect" id="Node000005" href="$classproblem_1_1definition_1_1_state.html#af8aecb9c06562fcda193b6a1da0b9ca3" title=" " alt="" coords="442,123,622,165"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="379,113,427,122,426,128,378,119"/>
+<area shape="rect" id="Node000006" href="$classproblem_1_1definition_1_1_state.html#a59d2cd4e1c7f90ac887e46adffb6c944" title=" " alt="" coords="442,189,622,232"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="332,121,376,148,427,175,442,181,440,186,425,180,373,153,329,125"/>
+</map>

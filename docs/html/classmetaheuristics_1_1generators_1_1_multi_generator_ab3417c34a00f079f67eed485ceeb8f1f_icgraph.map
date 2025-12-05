@@ -1,0 +1,10 @@
+<map id="metaheuristics.generators.MultiGenerator.updateAwardSC" name="metaheuristics.generators.MultiGenerator.updateAwardSC">
+<area shape="rect" id="Node000001" title=" " alt="" coords="716,29,922,72"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="859,16,844,10,819,8,796,10,781,15,776,21,778,28,773,29,771,19,779,10,795,5,819,3,845,5,861,11"/>
+<area shape="rect" id="Node000002" href="$classmetaheuristics_1_1generators_1_1_multi_generator.html#a06c51732247b401b0369fe6133d35793" title=" " alt="" coords="479,29,668,72"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="701,53,669,53,669,48,701,48"/>
+<area shape="rect" id="Node000003" href="$classmetaheuristics_1_1generators_1_1_multi_generator.html#a4064a096c203ec6b538929af5bd8d0d7" title=" " alt="" coords="222,29,431,72"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="463,53,431,53,431,48,463,48"/>
+<area shape="rect" id="Node000004" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,29,174,72"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="206,53,174,53,174,48,206,48"/>
+</map>

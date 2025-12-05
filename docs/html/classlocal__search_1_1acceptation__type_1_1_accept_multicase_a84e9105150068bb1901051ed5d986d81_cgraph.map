@@ -1,0 +1,16 @@
+<map id="local_search.acceptation_type.AcceptMulticase.DominanceCounter" name="local_search.acceptation_type.AcceptMulticase.DominanceCounter">
+<area shape="rect" id="Node000001" title="Cuenta cuántas soluciones en la lista son dominadas por el candidato." alt="" coords="5,97,230,156"/>
+<area shape="rect" id="Node000002" href="$classlocal__search_1_1acceptation__type_1_1_dominance.html#a0dafd58be8365a22956f59417841a2d8" title=" " alt="" coords="278,105,468,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,124,262,124,262,129,230,129"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="327,105,325,95,333,86,349,81,373,79,399,81,414,87,412,92,397,86,373,84,350,86,336,91,330,97,332,104"/>
+<area shape="rect" id="Node000003" href="$classproblem_1_1definition_1_1_state.html#a226ea6fab8e7060cf131edfdb245a6fa" title=" " alt="" coords="524,5,705,48"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="417,102,515,58,531,51,533,56,517,62,419,107"/>
+<area shape="rect" id="Node000004" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a67b5a933a8ccd493360fa06e0a448bb4" title=" " alt="" coords="534,72,695,115"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="468,111,519,104,519,109,469,116"/>
+<area shape="rect" id="Node000005" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#aeb1c308c04db42c2977e51ffc779862d" title=" " alt="" coords="534,139,695,181"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="469,137,519,144,519,149,468,142"/>
+<area shape="rect" id="Node000007" href="$classproblem_1_1definition_1_1_problem.html#ad6f38df755179e22ffe487ba4a5c8021" title=" " alt="" coords="516,205,713,248"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="419,146,517,191,533,197,531,202,515,196,417,151"/>
+<area shape="rect" id="Node000006" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a4f635be1df3d594c3e8f2d111cc5c995" title=" " alt="" coords="761,139,922,181"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="695,157,745,157,745,163,695,163"/>
+</map>

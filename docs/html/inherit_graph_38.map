@@ -1,0 +1,41 @@
+<map id="Gráfico de jerarquía de clases" name="Gráfico de jerarquía de clases">
+<area shape="rect" id="Node000000" href="$classmetaheuristics_1_1generators_1_1_generator.html" title=" " alt="" coords="5,605,181,648"/>
+<area shape="rect" id="Node000001" href="$classlocal__search_1_1_multi_case_simulated_annealing.html" title=" " alt="" coords="238,5,453,48"/>
+<area shape="poly" id="edge35_Node000000_Node000001" title=" " alt="" coords="96,590,111,470,138,311,156,231,176,159,200,99,227,58,241,46,244,51,231,62,205,102,181,161,161,233,143,312,116,471,101,590"/>
+<area shape="rect" id="Node000002" href="$classlocal__search_1_1complement_1_1_multi_case_simulated_annealing.html" title=" " alt="" coords="248,72,443,115"/>
+<area shape="poly" id="edge36_Node000000_Node000002" title=" " alt="" coords="97,590,114,483,142,344,160,275,180,212,202,160,227,125,245,111,249,115,231,129,207,163,185,214,165,276,148,345,119,484,102,591"/>
+<area shape="rect" id="Node000003" href="$classmetaheuristics_1_1generators_1_1_distribution_estimation_algorithm.html" title=" " alt="" coords="243,139,448,181"/>
+<area shape="poly" id="edge37_Node000000_Node000003" title=" " alt="" coords="92,590,98,508,118,402,135,345,158,289,188,237,227,191,242,180,245,184,231,195,193,240,163,292,140,347,123,403,104,509,97,590"/>
+<area shape="rect" id="Node000004" href="$classmetaheuristics_1_1generators_1_1_evolution_strategies.html" title=" " alt="" coords="258,205,433,248"/>
+<area shape="poly" id="edge38_Node000000_Node000004" title=" " alt="" coords="94,589,105,519,127,430,144,384,166,338,193,295,227,258,256,240,259,244,230,262,198,299,171,341,149,386,132,432,110,520,100,590"/>
+<area shape="rect" id="Node000005" href="$classmetaheuristics_1_1generators_1_1_genetic_algorithm.html" title=" " alt="" coords="258,272,433,315"/>
+<area shape="poly" id="edge39_Node000000_Node000005" title=" " alt="" coords="98,589,112,531,136,460,174,387,198,354,227,325,256,307,259,312,230,329,202,357,178,390,141,462,117,533,103,591"/>
+<area shape="rect" id="Node000006" href="$classmetaheuristics_1_1generators_1_1_hill_climbing.html" title=" " alt="" coords="258,339,433,381"/>
+<area shape="poly" id="edge40_Node000000_Node000006" title=" " alt="" coords="103,589,120,544,147,491,182,437,203,413,227,391,256,375,259,379,230,395,207,416,186,440,151,493,125,546,108,591"/>
+<area shape="rect" id="Node000007" href="$classmetaheuristics_1_1generators_1_1_hill_climbing_restart.html" title=" " alt="" coords="258,405,433,448"/>
+<area shape="poly" id="edge41_Node000000_Node000007" title=" " alt="" coords="111,590,158,523,190,488,227,458,256,443,258,448,230,462,194,492,162,526,116,593"/>
+<area shape="rect" id="Node000008" href="$classmetaheuristics_1_1generators_1_1_limit_threshold.html" title=" " alt="" coords="258,472,433,515"/>
+<area shape="poly" id="edge42_Node000000_Node000008" title=" " alt="" coords="128,593,173,557,227,524,256,512,258,517,230,529,176,562,131,597"/>
+<area shape="rect" id="Node000009" href="$classmetaheuristics_1_1generators_1_1_multi_case_simulated_annealing.html" title=" " alt="" coords="248,539,443,581"/>
+<area shape="poly" id="edge43_Node000000_Node000009" title=" " alt="" coords="190,598,261,579,263,585,192,603"/>
+<area shape="rect" id="Node000010" href="$classmetaheuristics_1_1generators_1_1_multi_generator.html" title=" " alt="" coords="258,605,433,648"/>
+<area shape="poly" id="edge44_Node000000_Node000010" title=" " alt="" coords="197,624,257,624,257,629,197,629"/>
+<area shape="rect" id="Node000011" href="$classmetaheuristics_1_1generators_1_1_multiobjective_hill_climbing_distance.html" title=" " alt="" coords="234,672,457,715"/>
+<area shape="poly" id="edge45_Node000000_Node000011" title=" " alt="" coords="192,650,263,669,261,674,190,655"/>
+<area shape="rect" id="Node000012" href="$classmetaheuristics_1_1generators_1_1_multiobjective_hill_climbing_restart.html" title=" " alt="" coords="238,739,452,781"/>
+<area shape="poly" id="edge46_Node000000_Node000012" title=" " alt="" coords="131,656,176,692,230,724,257,736,255,741,227,729,173,696,128,660"/>
+<area shape="rect" id="Node000013" href="$classmetaheuristics_1_1generators_1_1_multiobjective_stochastic_hill_climbing.html" title=" " alt="" coords="229,805,462,848"/>
+<area shape="poly" id="edge47_Node000000_Node000013" title=" " alt="" coords="116,660,162,727,194,762,230,791,251,803,249,807,227,796,190,766,158,731,111,663"/>
+<area shape="rect" id="Node000014" href="$classmetaheuristics_1_1generators_1_1_multiobjective_tabu_search.html" title=" " alt="" coords="258,872,433,915"/>
+<area shape="poly" id="edge48_Node000000_Node000014" title=" " alt="" coords="108,662,125,707,151,760,186,813,207,837,230,858,259,874,256,879,227,862,203,841,182,816,147,763,120,709,103,664"/>
+<area shape="rect" id="Node000015" href="$classmetaheuristics_1_1generators_1_1_particle.html" title="Representa una partícula en el algoritmo de Optimización por Enjambre de Partículas (PSO)." alt="" coords="258,939,433,981"/>
+<area shape="poly" id="edge49_Node000000_Node000015" title=" " alt="" coords="103,663,117,721,141,791,178,863,202,896,230,925,259,942,256,946,227,929,198,899,174,866,136,793,112,722,98,664"/>
+<area shape="rect" id="Node000016" href="$classmetaheuristics_1_1generators_1_1_particle_swarm_optimization.html" title="Implementación del algoritmo de Optimización por Enjambre de Partículas (PSO)." alt="" coords="256,1005,435,1048"/>
+<area shape="poly" id="edge50_Node000000_Node000016" title=" " alt="" coords="100,663,110,733,132,821,149,868,171,913,198,955,230,991,257,1008,254,1013,227,995,193,958,166,915,144,870,127,823,105,734,94,664"/>
+<area shape="rect" id="Node000017" href="$classmetaheuristics_1_1generators_1_1_random_search.html" title=" " alt="" coords="258,1072,433,1115"/>
+<area shape="poly" id="edge51_Node000000_Node000017" title=" " alt="" coords="97,663,104,744,123,851,140,907,163,962,193,1013,230,1058,259,1077,256,1081,227,1062,188,1016,158,964,135,909,118,852,98,745,92,663"/>
+<area shape="rect" id="Node000018" href="$classmetaheuristics_1_1generators_1_1_simulated_annealing.html" title=" " alt="" coords="258,1139,433,1181"/>
+<area shape="poly" id="edge52_Node000000_Node000018" title=" " alt="" coords="102,663,119,769,148,908,165,977,185,1039,207,1090,231,1125,259,1144,256,1148,227,1129,202,1093,180,1041,160,978,142,909,114,770,97,664"/>
+<area shape="rect" id="Node000019" href="$classmetaheuristics_1_1generators_1_1_tabu_search.html" title=" " alt="" coords="258,1205,433,1248"/>
+<area shape="poly" id="edge53_Node000000_Node000019" title=" " alt="" coords="101,663,116,782,143,941,161,1021,181,1093,205,1152,231,1191,259,1211,256,1215,227,1195,200,1154,176,1094,156,1022,138,942,111,783,96,664"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="metaheuristics.generators.MultiGenerator.tournament" name="metaheuristics.generators.MultiGenerator.tournament">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,181,81"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="49,39,47,29,54,20,70,14,93,12,118,14,133,21,131,26,117,20,93,17,71,19,57,24,52,30,54,38"/>
+<area shape="rect" id="Node000002" href="$classmetaheuristics_1_1generators_1_1_multi_generator.html#a3c29946186ba7afb379169ed3636004f" title=" " alt="" coords="239,5,414,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,45,223,39,224,44,181,50"/>
+<area shape="rect" id="Node000003" href="$classmetaheuristics_1_1generators_1_1_multi_generator.html#afce4bffeb9ed07ce3da9aef9af2f3c00" title=" " alt="" coords="229,72,424,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="181,70,214,75,213,80,180,75"/>
+</map>

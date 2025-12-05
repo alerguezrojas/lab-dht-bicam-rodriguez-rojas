@@ -1,0 +1,16 @@
+<map id="problem.definition.State.clone" name="problem.definition.State.clone">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,59,199,85"/>
+<area shape="rect" id="Node000002" href="$classproblem_1_1definition_1_1_state.html#aac57a8314601200a442cbd429b718e8c" title=" " alt="" coords="247,5,409,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,55,231,43,232,49,173,61"/>
+<area shape="rect" id="Node000003" href="$classproblem_1_1definition_1_1_state.html#a1a5212628b1f4ec0f1091211615cda9c" title=" " alt="" coords="247,96,409,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,83,232,95,231,101,172,89"/>
+<area shape="poly" id="edge7_Node000003_Node000003" title=" " alt="" coords="285,96,283,86,290,77,305,71,328,69,352,72,367,78,364,83,351,77,328,75,307,77,293,81,288,87,290,95"/>
+<area shape="rect" id="Node000004" href="$classproblem_1_1definition_1_1_state.html#a2e75b6f2bedb2107478ecd1e8e681418" title=" " alt="" coords="457,12,668,39"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="364,93,407,70,456,48,478,41,480,46,458,53,409,75,366,98"/>
+<area shape="rect" id="Node000005" href="$classproblem_1_1definition_1_1_state.html#a226ea6fab8e7060cf131edfdb245a6fa" title=" " alt="" coords="472,63,653,105"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="409,103,457,96,458,102,409,109"/>
+<area shape="rect" id="Node000006" href="$classproblem_1_1definition_1_1_state.html#af8aecb9c06562fcda193b6a1da0b9ca3" title=" " alt="" coords="472,129,653,172"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="409,126,458,133,457,138,409,131"/>
+<area shape="rect" id="Node000007" href="$classproblem_1_1definition_1_1_state.html#a59d2cd4e1c7f90ac887e46adffb6c944" title=" " alt="" coords="472,196,653,239"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="368,137,458,182,474,188,472,193,456,186,366,142"/>
+</map>

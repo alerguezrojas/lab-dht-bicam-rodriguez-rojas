@@ -1,0 +1,9 @@
+<map id="metaheuristics.generators.LimitRoulette.setGenerator" name="metaheuristics.generators.LimitRoulette.setGenerator">
+<area shape="rect" id="Node000001" title=" " alt="" coords="668,5,846,48"/>
+<area shape="rect" id="Node000002" href="$classmetaheuristics_1_1generators_1_1_multi_generator.html#a2c2b5c6dc19e52e87a1a0b2151fa9768" title=" " alt="" coords="445,5,620,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="653,29,621,29,621,24,653,24"/>
+<area shape="rect" id="Node000003" href="$classmetaheuristics_1_1generators_1_1_multi_generator.html#a2309ca3d3de82961bbc61d3fb6c893fc" title=" " alt="" coords="222,5,397,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="430,29,397,29,397,24,430,24"/>
+<area shape="rect" id="Node000004" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a47df03f9de408c385762149620df3755" title=" " alt="" coords="5,5,174,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="206,29,174,29,174,24,206,24"/>
+</map>

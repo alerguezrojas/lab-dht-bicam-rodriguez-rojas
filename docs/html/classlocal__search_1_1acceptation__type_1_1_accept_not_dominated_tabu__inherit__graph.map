@@ -1,0 +1,5 @@
+<map id="local_search.acceptation_type.AcceptNotDominatedTabu" name="local_search.acceptation_type.AcceptNotDominatedTabu">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,139,205,224"/>
+<area shape="rect" id="Node000002" href="$classlocal__search_1_1acceptation__type_1_1_acceptable_candidate.html" title=" " alt="" coords="20,5,190,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,106,108,139,102,139,102,106"/>
+</map>

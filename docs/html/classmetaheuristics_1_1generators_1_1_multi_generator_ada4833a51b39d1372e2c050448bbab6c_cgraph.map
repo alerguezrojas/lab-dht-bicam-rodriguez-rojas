@@ -1,0 +1,39 @@
+<map id="metaheuristics.generators.MultiGenerator.initializeGenerators" name="metaheuristics.generators.MultiGenerator.initializeGenerators">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,327,227,369"/>
+<area shape="rect" id="Node000002" href="$classfactory__method_1_1_factory_generator.html#a76c269b114cbf643e92a7467b7cf21f7" title=" " alt="" coords="290,37,546,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,325,149,284,182,232,224,177,273,127,307,103,343,84,345,89,309,108,276,131,228,181,186,235,153,287,131,327"/>
+<area shape="rect" id="Node000004" href="$classmetaheuristics_1_1generators_1_1_multi_generator.html#a21767d34c374a65dd29196459273ff34" title=" " alt="" coords="275,239,562,281"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="187,323,274,297,322,283,324,289,275,303,189,329"/>
+<area shape="rect" id="Node000009" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a67b5a933a8ccd493360fa06e0a448bb4" title=" " alt="" coords="640,72,800,115"/>
+<area shape="poly" id="edge14_Node000001_Node000009" title=" " alt="" coords="138,324,197,274,234,248,273,224,363,184,457,152,546,127,624,109,625,114,548,132,458,157,365,189,276,229,237,252,200,279,142,328"/>
+<area shape="rect" id="Node000010" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#aeb1c308c04db42c2977e51ffc779862d" title=" " alt="" coords="640,472,800,515"/>
+<area shape="poly" id="edge16_Node000001_Node000010" title=" " alt="" coords="183,323,265,304,314,297,365,294,417,295,468,303,518,318,564,342,578,355,586,369,591,399,594,430,600,444,612,458,627,469,624,474,608,462,596,447,589,431,585,400,581,371,574,358,560,346,516,323,467,308,416,300,365,299,314,303,266,310,184,329"/>
+<area shape="rect" id="Node000015" href="$classproblem_1_1definition_1_1_problem.html#ad685c1f6c1edba96aa5082d1fdf8bb35" title=" " alt="" coords="320,356,517,399"/>
+<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="227,356,304,364,304,369,227,361"/>
+<area shape="rect" id="Node000016" href="$classmetaheuristics_1_1generators_1_1_multi_generator.html#a3c29946186ba7afb379169ed3636004f" title=" " alt="" coords="331,423,506,465"/>
+<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="168,367,276,408,316,420,315,425,274,413,166,372"/>
+<area shape="rect" id="Node000017" href="$classmetaheuristics_1_1generators_1_1_multi_generator.html#a2a25df332708a340f5115fe7ea253053" title=" " alt="" coords="301,489,536,532"/>
+<area shape="poly" id="edge18_Node000001_Node000017" title=" " alt="" coords="139,368,197,422,235,451,276,475,289,481,287,486,273,480,232,455,194,426,136,372"/>
+<area shape="rect" id="Node000018" href="$classmetaheuristics_1_1generators_1_1_multi_generator.html#afce4bffeb9ed07ce3da9aef9af2f3c00" title=" " alt="" coords="321,556,516,599"/>
+<area shape="poly" id="edge19_Node000001_Node000018" title=" " alt="" coords="131,368,153,406,185,454,227,502,276,542,307,557,304,561,273,546,223,505,181,457,148,409,126,371"/>
+<area shape="rect" id="Node000003" href="$classfactory__method_1_1_factory_loader.html#a4e61ffc7038a082277d67e3e59cdb859" title=" " alt="" coords="610,5,830,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="547,42,594,37,595,43,547,48"/>
+<area shape="rect" id="Node000005" href="$classproblem_1_1definition_1_1_problem.html#a74d56127a8524b4a20f6ab831744f164" title=" " alt="" coords="630,139,810,181"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="479,236,609,191,631,184,633,189,611,196,481,241"/>
+<area shape="rect" id="Node000008" href="$classmetaheuristics_1_1generators_1_1_generator.html#a06f6f7622b9ce32590eadbdf6bf962b5" title=" " alt="" coords="632,205,808,248"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="562,241,616,235,617,241,563,247"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="454,236,560,165,584,143,609,124,624,117,626,122,611,129,587,147,564,169,457,240"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="538,280,564,298,579,318,587,339,589,380,590,420,597,439,612,458,628,470,625,475,608,462,593,441,585,421,584,380,582,340,575,321,560,302,535,284"/>
+<area shape="rect" id="Node000012" href="$classmetaheuristics_1_1generators_1_1_generator.html#a5a123306b43c42d28cd1d6e17f8067a5" title=" " alt="" coords="632,272,808,315"/>
+<area shape="poly" id="edge11_Node000004_Node000012" title=" " alt="" coords="563,273,617,279,616,285,562,279"/>
+<area shape="rect" id="Node000013" href="$classproblem_1_1definition_1_1_state.html#ab802f63ab88415158f9c6cf468b6c8b3" title=" " alt="" coords="630,339,810,381"/>
+<area shape="poly" id="edge12_Node000004_Node000013" title=" " alt="" coords="511,279,563,298,587,311,611,324,627,330,625,335,609,329,585,316,561,302,509,284"/>
+<area shape="rect" id="Node000014" href="$classproblem_1_1definition_1_1_state.html#afccaeac3af66cb772e2b3e70758b8fe6" title=" " alt="" coords="630,405,810,448"/>
+<area shape="poly" id="edge13_Node000004_Node000014" title=" " alt="" coords="534,280,564,298,582,322,589,346,595,369,612,391,619,396,615,401,608,395,590,371,584,347,577,324,560,302,531,284"/>
+<area shape="rect" id="Node000006" href="$classproblem_1_1extension_1_1_solution_method.html#ae31d6d6000b9043bdee5e2d79fd2a628" title=" " alt="" coords="891,105,1069,148"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="810,146,875,137,876,143,811,151"/>
+<area shape="rect" id="Node000007" href="$classproblem_1_1definition_1_1_problem.html#a443db14206d399250f49e78175ca829e" title=" " alt="" coords="878,172,1082,215"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="811,169,863,176,863,181,810,174"/>
+<area shape="rect" id="Node000011" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a4f635be1df3d594c3e8f2d111cc5c995" title=" " alt="" coords="900,472,1060,515"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="801,491,884,491,884,496,801,496"/>
+</map>

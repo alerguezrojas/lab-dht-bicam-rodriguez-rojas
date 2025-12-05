@@ -1,0 +1,11 @@
+<map id="src/main/java/factory_method/FactoryGenerator.java" name="src/main/java/factory_method/FactoryGenerator.java">
+<area shape="rect" id="Node000001" title=" " alt="" coords="293,5,498,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,96,183,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="325,51,180,94,179,89,324,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="206,96,384,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="374,50,332,88,328,84,370,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="409,96,584,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="421,46,463,84,460,88,417,50"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="609,96,784,139"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="467,46,612,89,611,94,465,51"/>
+</map>

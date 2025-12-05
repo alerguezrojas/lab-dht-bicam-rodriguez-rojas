@@ -1,0 +1,693 @@
+\doxysection{Referencia de la clase metaheuristics.\+strategy.\+Strategy}
+\hypertarget{classmetaheuristics_1_1strategy_1_1_strategy}{}\label{classmetaheuristics_1_1strategy_1_1_strategy}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+
+
+Diagrama de colaboración de metaheuristics.\+strategy.\+Strategy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1strategy_1_1_strategy__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a47df03f9de408c385762149620df3755}{execute\+Strategy}} (int countmax\+Iterations, int count\+Iterations\+Change, int operatornumber, \mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} generator\+Type)  throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a02b38cbd8e394aa83947dfbed1dd0b62}{update\+Count\+Gender}} ()
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_ac01593cb9744347c0995e5f7bd12bf32}{update\+Weight}} ()
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a2d3af54b1c152fb16bfe7825a8e18155}{update}} (Integer count\+Iterations\+Current)  throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception 
+\item 
+\mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{Generator}} \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_acc3a90e14450222f4dd84bb8fa6bad12}{new\+Generator}} (\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} Generatortype)  throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception 
+\item 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a128158b2cc956351bbc2c285b1e577b8}{get\+Best\+State}} ()
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_ad3684a4d7b5f1555bb4d5a0a8a7792ef}{set\+Best\+State}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} bes\+State)
+\item 
+\mbox{\hyperlink{classlocal__search_1_1complement_1_1_stop_execute}{Stop\+Execute}} \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a61d8ebb2373b9b473652d4d61c9b66da}{get\+Stopexecute}} ()
+\item 
+int \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a1a04776610641548cfddfee54cc24382}{get\+Count\+Max}} ()
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_ab1364388552766c720dae2acd6f80292}{set\+Count\+Max}} (int \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a51a47ea6e89164c08de1a3192fa4bb1e}{count\+Max}})
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a3bf3d2c4becc5d6cd547415c5182159a}{set\+Stopexecute}} (\mbox{\hyperlink{classlocal__search_1_1complement_1_1_stop_execute}{Stop\+Execute}} \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_ae2978b3e4405b37e8c4061498a718e51}{stopexecute}})
+\item 
+\mbox{\hyperlink{classlocal__search_1_1complement_1_1_update_parameter}{Update\+Parameter}} \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a3dde108d5571229bdd2eb217909bacaa}{get\+Updateparameter}} ()
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_aba94bac6168ae282a4041c995577b3ff}{set\+Updateparameter}} (\mbox{\hyperlink{classlocal__search_1_1complement_1_1_update_parameter}{Update\+Parameter}} \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a60196a0cbedbde3999828ad29a221bed}{updateparameter}})
+\item 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_problem}{Problem}} \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a67b5a933a8ccd493360fa06e0a448bb4}{get\+Problem}} ()
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a032eb053a97a02b3a44c505f3ad225ef}{set\+Problem}} (\mbox{\hyperlink{classproblem_1_1definition_1_1_problem}{Problem}} \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_af43db8bca357590c157d4000824dee46}{problem}})
+\item 
+Array\+List$<$ String $>$ \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a445cf4712e677a858bb99f2b2e18d28e}{get\+List\+Key}} ()
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a8e46fbcfa93e1fbd108837d0bcf1d86e}{initialize\+Generators}} ()  throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception 
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_aa74cfe1356a5d933835f197105674eaf}{initialize}} ()  throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception 
+\item 
+int \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a21309a5be90f9f68f1259fae1f70a610}{get\+Count\+Current}} ()
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_aaafb44d229b53aabb5531c4a9bf91e7f}{set\+Count\+Current}} (int \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_abeedd3f82704481d7d2f4a7e1bbd4874}{count\+Current}})
+\item 
+double \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a2d76028dfca55c872a6536ab986fc6ab}{get\+Threshold}} ()
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_aaa4e4f66197b8826c9e7fc1d6c566860}{set\+Threshold}} (double \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a790d820c6ece662c3564b276bb00a025}{threshold}})
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_ab7f9bd7457390fa89c40f080444ac8bf}{calculate\+Off\+Line\+Performance}} (float sum\+Max, int count\+Off)
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a0d23d307adedc20a3d9cb6c1bf65bb7f}{update\+Ref}} (\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}} generator\+Type)
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_af3a9d3d541f13137a2a97719b0045cb3}{update\+Ref\+MultiG}} ()
+\item 
+void \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_ac8d90db40a6927532d05e8f9ca77b51c}{update\+Ref\+Generator}} (\mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{Generator}} \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_aa5589e99a6f3282f7aad0f1e28c6cf04}{generator}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Métodos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy}{Strategy}} \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_aeb1c308c04db42c2977e51ffc779862d}{get\+Strategy}} ()
+\item 
+static void \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a0710c340da38b79e43acf8ced5c93f89}{destroy\+Execute}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+Sorted\+Map$<$ \mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}}, \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{Generator}} $>$ \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a5cc35e3aa1cecc62b791e73eb7d7ef8c}{map\+Generators}}
+\item 
+\mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{Generator}} \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_aa5589e99a6f3282f7aad0f1e28c6cf04}{generator}}
+\item 
+double \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a790d820c6ece662c3564b276bb00a025}{threshold}}
+\item 
+Array\+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a08ab6826a94899303e24e45485841c21}{list\+States}}
+\item 
+Array\+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a7d1f519bd003b5f1db36ecb1a57bcd68}{list\+Best}}
+\item 
+List$<$ \mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} $>$ \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a1cb1cb93e5474c13728ee2f29dc0b522}{list\+Ref\+Poblac\+Final}} = new Array\+List$<$\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}$>$ ()
+\item 
+\mbox{\hyperlink{classlocal__search_1_1acceptation__type_1_1_dominance}{Dominance}} \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a246f45019a67db3f288ccaf21b80866f}{not\+Dominated}}
+\item 
+boolean \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a9cec0a81ea15a8b102d61cfa0c6fcbfe}{save\+List\+States}}
+\item 
+boolean \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a904829db5ad65fc32f536f0e0ff6dc71}{save\+List\+Best\+States}}
+\item 
+boolean \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_ad6a5bf258c121c8cc260e445b043ccdf}{save\+Frene\+Pareto\+Mono\+Objetivo}}
+\item 
+boolean \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_af871102a934bcc5d8fe0abfc00d88890}{calculate\+Time}}
+\item 
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_ad1f00da1b71b4a615737508ed0681253}{list\+Offline\+Error}} = new float\mbox{[}100\mbox{]}
+\item 
+int \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_acd9112ed24b2a75501097b3cc06022e5}{count\+Period\+Change}} = 0
+\item 
+int \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a847cee00b275dab0e4d634d7510e19ec}{count\+Change}} = 0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static long \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_ade615f12225524c934ba0cbec9daff2c}{time\+Execute}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a4f635be1df3d594c3e8f2d111cc5c995}{Strategy}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a8c51e0c2615c021b5e66d06337c04662}{best\+State}}
+\item 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_problem}{Problem}} \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_af43db8bca357590c157d4000824dee46}{problem}}
+\item 
+\mbox{\hyperlink{classlocal__search_1_1complement_1_1_stop_execute}{Stop\+Execute}} \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_ae2978b3e4405b37e8c4061498a718e51}{stopexecute}}
+\item 
+\mbox{\hyperlink{classlocal__search_1_1complement_1_1_update_parameter}{Update\+Parameter}} \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a60196a0cbedbde3999828ad29a221bed}{updateparameter}}
+\item 
+\mbox{\hyperlink{interfacefactory__interface_1_1_i_f_factory_generator}{IFFactory\+Generator}} \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_abc7dc6e0422f3f3ca0cde4d89bb935ce}{if\+Factory\+Generator}}
+\item 
+int \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_abeedd3f82704481d7d2f4a7e1bbd4874}{count\+Current}}
+\item 
+int \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a51a47ea6e89164c08de1a3192fa4bb1e}{count\+Max}}
+\item 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_a14b5a1e7dcda3fce22d81260468a8b83}{initial\+State}}
+\item 
+int \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_ad95e8073ea1e8dca24e4ad8974b35242}{count\+Periodo}}
+\item 
+int \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_ad1a67b1cb43be34576c8e973c5963786}{periodo}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos estáticos privados}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy}{Strategy}} \mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy_ae9ce7f42f79c56151e0740aecb06c288}{strategy}} = null
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_doc-constructors}
+\doxysubsection{Documentación de constructores y destructores}
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a4f635be1df3d594c3e8f2d111cc5c995}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!Strategy@{Strategy}}
+\index{Strategy@{Strategy}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{Strategy()}{Strategy()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a4f635be1df3d594c3e8f2d111cc5c995} 
+metaheuristics.\+strategy.\+Strategy.\+Strategy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmetaheuristics_1_1strategy_1_1_strategy_a4f635be1df3d594c3e8f2d111cc5c995_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_doc-func-members}
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_ab7f9bd7457390fa89c40f080444ac8bf}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!calculateOffLinePerformance@{calculateOffLinePerformance}}
+\index{calculateOffLinePerformance@{calculateOffLinePerformance}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{calculateOffLinePerformance()}{calculateOffLinePerformance()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_ab7f9bd7457390fa89c40f080444ac8bf} 
+void metaheuristics.\+strategy.\+Strategy.\+calculate\+Off\+Line\+Performance (\begin{DoxyParamCaption}\item[{float}]{sum\+Max}{, }\item[{int}]{count\+Off}{}\end{DoxyParamCaption})}
+
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1strategy_1_1_strategy_ab7f9bd7457390fa89c40f080444ac8bf_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a0710c340da38b79e43acf8ced5c93f89}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!destroyExecute@{destroyExecute}}
+\index{destroyExecute@{destroyExecute}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{destroyExecute()}{destroyExecute()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a0710c340da38b79e43acf8ced5c93f89} 
+void metaheuristics.\+strategy.\+Strategy.\+destroy\+Execute (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a47df03f9de408c385762149620df3755}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!executeStrategy@{executeStrategy}}
+\index{executeStrategy@{executeStrategy}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{executeStrategy()}{executeStrategy()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a47df03f9de408c385762149620df3755} 
+void metaheuristics.\+strategy.\+Strategy.\+execute\+Strategy (\begin{DoxyParamCaption}\item[{int}]{countmax\+Iterations}{, }\item[{int}]{count\+Iterations\+Change}{, }\item[{int}]{operatornumber}{, }\item[{\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}}}]{generator\+Type}{}\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception}
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1strategy_1_1_strategy_a47df03f9de408c385762149620df3755_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a128158b2cc956351bbc2c285b1e577b8}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!getBestState@{getBestState}}
+\index{getBestState@{getBestState}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{getBestState()}{getBestState()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a128158b2cc956351bbc2c285b1e577b8} 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} metaheuristics.\+strategy.\+Strategy.\+get\+Best\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1strategy_1_1_strategy_a128158b2cc956351bbc2c285b1e577b8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a21309a5be90f9f68f1259fae1f70a610}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!getCountCurrent@{getCountCurrent}}
+\index{getCountCurrent@{getCountCurrent}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{getCountCurrent()}{getCountCurrent()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a21309a5be90f9f68f1259fae1f70a610} 
+int metaheuristics.\+strategy.\+Strategy.\+get\+Count\+Current (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1strategy_1_1_strategy_a21309a5be90f9f68f1259fae1f70a610_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a1a04776610641548cfddfee54cc24382}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!getCountMax@{getCountMax}}
+\index{getCountMax@{getCountMax}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{getCountMax()}{getCountMax()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a1a04776610641548cfddfee54cc24382} 
+int metaheuristics.\+strategy.\+Strategy.\+get\+Count\+Max (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a445cf4712e677a858bb99f2b2e18d28e}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!getListKey@{getListKey}}
+\index{getListKey@{getListKey}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{getListKey()}{getListKey()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a445cf4712e677a858bb99f2b2e18d28e} 
+Array\+List$<$ String $>$ metaheuristics.\+strategy.\+Strategy.\+get\+List\+Key (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1strategy_1_1_strategy_a445cf4712e677a858bb99f2b2e18d28e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a67b5a933a8ccd493360fa06e0a448bb4}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!getProblem@{getProblem}}
+\index{getProblem@{getProblem}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{getProblem()}{getProblem()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a67b5a933a8ccd493360fa06e0a448bb4} 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_problem}{Problem}} metaheuristics.\+strategy.\+Strategy.\+get\+Problem (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a61d8ebb2373b9b473652d4d61c9b66da}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!getStopexecute@{getStopexecute}}
+\index{getStopexecute@{getStopexecute}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{getStopexecute()}{getStopexecute()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a61d8ebb2373b9b473652d4d61c9b66da} 
+\mbox{\hyperlink{classlocal__search_1_1complement_1_1_stop_execute}{Stop\+Execute}} metaheuristics.\+strategy.\+Strategy.\+get\+Stopexecute (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_aeb1c308c04db42c2977e51ffc779862d}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!getStrategy@{getStrategy}}
+\index{getStrategy@{getStrategy}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{getStrategy()}{getStrategy()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_aeb1c308c04db42c2977e51ffc779862d} 
+\mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy}{Strategy}} metaheuristics.\+strategy.\+Strategy.\+get\+Strategy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1strategy_1_1_strategy_aeb1c308c04db42c2977e51ffc779862d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a2d76028dfca55c872a6536ab986fc6ab}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!getThreshold@{getThreshold}}
+\index{getThreshold@{getThreshold}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{getThreshold()}{getThreshold()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a2d76028dfca55c872a6536ab986fc6ab} 
+double metaheuristics.\+strategy.\+Strategy.\+get\+Threshold (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1strategy_1_1_strategy_a2d76028dfca55c872a6536ab986fc6ab_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a3dde108d5571229bdd2eb217909bacaa}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!getUpdateparameter@{getUpdateparameter}}
+\index{getUpdateparameter@{getUpdateparameter}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{getUpdateparameter()}{getUpdateparameter()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a3dde108d5571229bdd2eb217909bacaa} 
+\mbox{\hyperlink{classlocal__search_1_1complement_1_1_update_parameter}{Update\+Parameter}} metaheuristics.\+strategy.\+Strategy.\+get\+Updateparameter (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_aa74cfe1356a5d933835f197105674eaf}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!initialize@{initialize}}
+\index{initialize@{initialize}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_aa74cfe1356a5d933835f197105674eaf} 
+void metaheuristics.\+strategy.\+Strategy.\+initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception}
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1strategy_1_1_strategy_aa74cfe1356a5d933835f197105674eaf_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1strategy_1_1_strategy_aa74cfe1356a5d933835f197105674eaf_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a8e46fbcfa93e1fbd108837d0bcf1d86e}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!initializeGenerators@{initializeGenerators}}
+\index{initializeGenerators@{initializeGenerators}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{initializeGenerators()}{initializeGenerators()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a8e46fbcfa93e1fbd108837d0bcf1d86e} 
+void metaheuristics.\+strategy.\+Strategy.\+initialize\+Generators (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception}
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1strategy_1_1_strategy_a8e46fbcfa93e1fbd108837d0bcf1d86e_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1strategy_1_1_strategy_a8e46fbcfa93e1fbd108837d0bcf1d86e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_acc3a90e14450222f4dd84bb8fa6bad12}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!newGenerator@{newGenerator}}
+\index{newGenerator@{newGenerator}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{newGenerator()}{newGenerator()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_acc3a90e14450222f4dd84bb8fa6bad12} 
+\mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{Generator}} metaheuristics.\+strategy.\+Strategy.\+new\+Generator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}}}]{Generatortype}{}\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception}
+
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1strategy_1_1_strategy_acc3a90e14450222f4dd84bb8fa6bad12_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_ad3684a4d7b5f1555bb4d5a0a8a7792ef}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!setBestState@{setBestState}}
+\index{setBestState@{setBestState}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{setBestState()}{setBestState()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_ad3684a4d7b5f1555bb4d5a0a8a7792ef} 
+void metaheuristics.\+strategy.\+Strategy.\+set\+Best\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}}]{bes\+State}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_aaafb44d229b53aabb5531c4a9bf91e7f}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!setCountCurrent@{setCountCurrent}}
+\index{setCountCurrent@{setCountCurrent}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{setCountCurrent()}{setCountCurrent()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_aaafb44d229b53aabb5531c4a9bf91e7f} 
+void metaheuristics.\+strategy.\+Strategy.\+set\+Count\+Current (\begin{DoxyParamCaption}\item[{int}]{count\+Current}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_ab1364388552766c720dae2acd6f80292}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!setCountMax@{setCountMax}}
+\index{setCountMax@{setCountMax}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{setCountMax()}{setCountMax()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_ab1364388552766c720dae2acd6f80292} 
+void metaheuristics.\+strategy.\+Strategy.\+set\+Count\+Max (\begin{DoxyParamCaption}\item[{int}]{count\+Max}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a032eb053a97a02b3a44c505f3ad225ef}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!setProblem@{setProblem}}
+\index{setProblem@{setProblem}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{setProblem()}{setProblem()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a032eb053a97a02b3a44c505f3ad225ef} 
+void metaheuristics.\+strategy.\+Strategy.\+set\+Problem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproblem_1_1definition_1_1_problem}{Problem}}}]{problem}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a3bf3d2c4becc5d6cd547415c5182159a}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!setStopexecute@{setStopexecute}}
+\index{setStopexecute@{setStopexecute}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{setStopexecute()}{setStopexecute()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a3bf3d2c4becc5d6cd547415c5182159a} 
+void metaheuristics.\+strategy.\+Strategy.\+set\+Stopexecute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlocal__search_1_1complement_1_1_stop_execute}{Stop\+Execute}}}]{stopexecute}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_aaa4e4f66197b8826c9e7fc1d6c566860}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!setThreshold@{setThreshold}}
+\index{setThreshold@{setThreshold}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{setThreshold()}{setThreshold()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_aaa4e4f66197b8826c9e7fc1d6c566860} 
+void metaheuristics.\+strategy.\+Strategy.\+set\+Threshold (\begin{DoxyParamCaption}\item[{double}]{threshold}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_aba94bac6168ae282a4041c995577b3ff}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!setUpdateparameter@{setUpdateparameter}}
+\index{setUpdateparameter@{setUpdateparameter}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{setUpdateparameter()}{setUpdateparameter()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_aba94bac6168ae282a4041c995577b3ff} 
+void metaheuristics.\+strategy.\+Strategy.\+set\+Updateparameter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlocal__search_1_1complement_1_1_update_parameter}{Update\+Parameter}}}]{updateparameter}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a2d3af54b1c152fb16bfe7825a8e18155}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!update@{update}}
+\index{update@{update}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a2d3af54b1c152fb16bfe7825a8e18155} 
+void metaheuristics.\+strategy.\+Strategy.\+update (\begin{DoxyParamCaption}\item[{Integer}]{count\+Iterations\+Current}{}\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception, Security\+Exception, Class\+Not\+Found\+Exception, Instantiation\+Exception, Illegal\+Access\+Exception, Invocation\+Target\+Exception, No\+Such\+Method\+Exception}
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1strategy_1_1_strategy_a2d3af54b1c152fb16bfe7825a8e18155_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1strategy_1_1_strategy_a2d3af54b1c152fb16bfe7825a8e18155_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a02b38cbd8e394aa83947dfbed1dd0b62}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!updateCountGender@{updateCountGender}}
+\index{updateCountGender@{updateCountGender}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{updateCountGender()}{updateCountGender()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a02b38cbd8e394aa83947dfbed1dd0b62} 
+void metaheuristics.\+strategy.\+Strategy.\+update\+Count\+Gender (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1strategy_1_1_strategy_a02b38cbd8e394aa83947dfbed1dd0b62_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1strategy_1_1_strategy_a02b38cbd8e394aa83947dfbed1dd0b62_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a0d23d307adedc20a3d9cb6c1bf65bb7f}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!updateRef@{updateRef}}
+\index{updateRef@{updateRef}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{updateRef()}{updateRef()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a0d23d307adedc20a3d9cb6c1bf65bb7f} 
+void metaheuristics.\+strategy.\+Strategy.\+update\+Ref (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}}}]{generator\+Type}{}\end{DoxyParamCaption})}
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1strategy_1_1_strategy_a0d23d307adedc20a3d9cb6c1bf65bb7f_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1strategy_1_1_strategy_a0d23d307adedc20a3d9cb6c1bf65bb7f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_ac8d90db40a6927532d05e8f9ca77b51c}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!updateRefGenerator@{updateRefGenerator}}
+\index{updateRefGenerator@{updateRefGenerator}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{updateRefGenerator()}{updateRefGenerator()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_ac8d90db40a6927532d05e8f9ca77b51c} 
+void metaheuristics.\+strategy.\+Strategy.\+update\+Ref\+Generator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{Generator}}}]{generator}{}\end{DoxyParamCaption})}
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1strategy_1_1_strategy_ac8d90db40a6927532d05e8f9ca77b51c_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1strategy_1_1_strategy_ac8d90db40a6927532d05e8f9ca77b51c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_af3a9d3d541f13137a2a97719b0045cb3}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!updateRefMultiG@{updateRefMultiG}}
+\index{updateRefMultiG@{updateRefMultiG}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{updateRefMultiG()}{updateRefMultiG()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_af3a9d3d541f13137a2a97719b0045cb3} 
+void metaheuristics.\+strategy.\+Strategy.\+update\+Ref\+MultiG (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1strategy_1_1_strategy_af3a9d3d541f13137a2a97719b0045cb3_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1strategy_1_1_strategy_af3a9d3d541f13137a2a97719b0045cb3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_ac01593cb9744347c0995e5f7bd12bf32}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!updateWeight@{updateWeight}}
+\index{updateWeight@{updateWeight}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{updateWeight()}{updateWeight()}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_ac01593cb9744347c0995e5f7bd12bf32} 
+void metaheuristics.\+strategy.\+Strategy.\+update\+Weight (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1strategy_1_1_strategy_ac01593cb9744347c0995e5f7bd12bf32_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmetaheuristics_1_1strategy_1_1_strategy_ac01593cb9744347c0995e5f7bd12bf32_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_doc-variable-members}
+\doxysubsection{Documentación de datos miembro}
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a8c51e0c2615c021b5e66d06337c04662}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!bestState@{bestState}}
+\index{bestState@{bestState}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{bestState}{bestState}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a8c51e0c2615c021b5e66d06337c04662} 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} metaheuristics.\+strategy.\+Strategy.\+best\+State\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_af871102a934bcc5d8fe0abfc00d88890}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!calculateTime@{calculateTime}}
+\index{calculateTime@{calculateTime}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{calculateTime}{calculateTime}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_af871102a934bcc5d8fe0abfc00d88890} 
+boolean metaheuristics.\+strategy.\+Strategy.\+calculate\+Time}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a847cee00b275dab0e4d634d7510e19ec}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!countChange@{countChange}}
+\index{countChange@{countChange}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{countChange}{countChange}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a847cee00b275dab0e4d634d7510e19ec} 
+int metaheuristics.\+strategy.\+Strategy.\+count\+Change = 0}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_abeedd3f82704481d7d2f4a7e1bbd4874}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!countCurrent@{countCurrent}}
+\index{countCurrent@{countCurrent}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{countCurrent}{countCurrent}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_abeedd3f82704481d7d2f4a7e1bbd4874} 
+int metaheuristics.\+strategy.\+Strategy.\+count\+Current\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a51a47ea6e89164c08de1a3192fa4bb1e}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!countMax@{countMax}}
+\index{countMax@{countMax}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{countMax}{countMax}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a51a47ea6e89164c08de1a3192fa4bb1e} 
+int metaheuristics.\+strategy.\+Strategy.\+count\+Max\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_acd9112ed24b2a75501097b3cc06022e5}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!countPeriodChange@{countPeriodChange}}
+\index{countPeriodChange@{countPeriodChange}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{countPeriodChange}{countPeriodChange}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_acd9112ed24b2a75501097b3cc06022e5} 
+int metaheuristics.\+strategy.\+Strategy.\+count\+Period\+Change = 0}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_ad95e8073ea1e8dca24e4ad8974b35242}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!countPeriodo@{countPeriodo}}
+\index{countPeriodo@{countPeriodo}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{countPeriodo}{countPeriodo}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_ad95e8073ea1e8dca24e4ad8974b35242} 
+int metaheuristics.\+strategy.\+Strategy.\+count\+Periodo\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_aa5589e99a6f3282f7aad0f1e28c6cf04}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!generator@{generator}}
+\index{generator@{generator}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{generator}{generator}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_aa5589e99a6f3282f7aad0f1e28c6cf04} 
+\mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{Generator}} metaheuristics.\+strategy.\+Strategy.\+generator}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_abc7dc6e0422f3f3ca0cde4d89bb935ce}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!ifFactoryGenerator@{ifFactoryGenerator}}
+\index{ifFactoryGenerator@{ifFactoryGenerator}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{ifFactoryGenerator}{ifFactoryGenerator}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_abc7dc6e0422f3f3ca0cde4d89bb935ce} 
+\mbox{\hyperlink{interfacefactory__interface_1_1_i_f_factory_generator}{IFFactory\+Generator}} metaheuristics.\+strategy.\+Strategy.\+if\+Factory\+Generator\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a14b5a1e7dcda3fce22d81260468a8b83}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!initialState@{initialState}}
+\index{initialState@{initialState}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{initialState}{initialState}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a14b5a1e7dcda3fce22d81260468a8b83} 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}} metaheuristics.\+strategy.\+Strategy.\+initial\+State\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a7d1f519bd003b5f1db36ecb1a57bcd68}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!listBest@{listBest}}
+\index{listBest@{listBest}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{listBest}{listBest}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a7d1f519bd003b5f1db36ecb1a57bcd68} 
+Array\+List$<$\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}$>$ metaheuristics.\+strategy.\+Strategy.\+list\+Best}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_ad1f00da1b71b4a615737508ed0681253}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!listOfflineError@{listOfflineError}}
+\index{listOfflineError@{listOfflineError}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{listOfflineError}{listOfflineError}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_ad1f00da1b71b4a615737508ed0681253} 
+float \mbox{[}$\,$\mbox{]} metaheuristics.\+strategy.\+Strategy.\+list\+Offline\+Error = new float\mbox{[}100\mbox{]}}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a1cb1cb93e5474c13728ee2f29dc0b522}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!listRefPoblacFinal@{listRefPoblacFinal}}
+\index{listRefPoblacFinal@{listRefPoblacFinal}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{listRefPoblacFinal}{listRefPoblacFinal}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a1cb1cb93e5474c13728ee2f29dc0b522} 
+List$<$\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}$>$ metaheuristics.\+strategy.\+Strategy.\+list\+Ref\+Poblac\+Final = new Array\+List$<$\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}$>$ ()}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a08ab6826a94899303e24e45485841c21}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!listStates@{listStates}}
+\index{listStates@{listStates}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{listStates}{listStates}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a08ab6826a94899303e24e45485841c21} 
+Array\+List$<$\mbox{\hyperlink{classproblem_1_1definition_1_1_state}{State}}$>$ metaheuristics.\+strategy.\+Strategy.\+list\+States}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a5cc35e3aa1cecc62b791e73eb7d7ef8c}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!mapGenerators@{mapGenerators}}
+\index{mapGenerators@{mapGenerators}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{mapGenerators}{mapGenerators}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a5cc35e3aa1cecc62b791e73eb7d7ef8c} 
+Sorted\+Map$<$\mbox{\hyperlink{enummetaheuristics_1_1generators_1_1_generator_type}{Generator\+Type}}, \mbox{\hyperlink{classmetaheuristics_1_1generators_1_1_generator}{Generator}}$>$ metaheuristics.\+strategy.\+Strategy.\+map\+Generators}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a246f45019a67db3f288ccaf21b80866f}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!notDominated@{notDominated}}
+\index{notDominated@{notDominated}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{notDominated}{notDominated}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a246f45019a67db3f288ccaf21b80866f} 
+\mbox{\hyperlink{classlocal__search_1_1acceptation__type_1_1_dominance}{Dominance}} metaheuristics.\+strategy.\+Strategy.\+not\+Dominated}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_ad1a67b1cb43be34576c8e973c5963786}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!periodo@{periodo}}
+\index{periodo@{periodo}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{periodo}{periodo}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_ad1a67b1cb43be34576c8e973c5963786} 
+int metaheuristics.\+strategy.\+Strategy.\+periodo\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_af43db8bca357590c157d4000824dee46}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!problem@{problem}}
+\index{problem@{problem}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{problem}{problem}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_af43db8bca357590c157d4000824dee46} 
+\mbox{\hyperlink{classproblem_1_1definition_1_1_problem}{Problem}} metaheuristics.\+strategy.\+Strategy.\+problem\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_ad6a5bf258c121c8cc260e445b043ccdf}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!saveFreneParetoMonoObjetivo@{saveFreneParetoMonoObjetivo}}
+\index{saveFreneParetoMonoObjetivo@{saveFreneParetoMonoObjetivo}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{saveFreneParetoMonoObjetivo}{saveFreneParetoMonoObjetivo}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_ad6a5bf258c121c8cc260e445b043ccdf} 
+boolean metaheuristics.\+strategy.\+Strategy.\+save\+Frene\+Pareto\+Mono\+Objetivo}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a904829db5ad65fc32f536f0e0ff6dc71}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!saveListBestStates@{saveListBestStates}}
+\index{saveListBestStates@{saveListBestStates}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{saveListBestStates}{saveListBestStates}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a904829db5ad65fc32f536f0e0ff6dc71} 
+boolean metaheuristics.\+strategy.\+Strategy.\+save\+List\+Best\+States}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a9cec0a81ea15a8b102d61cfa0c6fcbfe}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!saveListStates@{saveListStates}}
+\index{saveListStates@{saveListStates}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{saveListStates}{saveListStates}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a9cec0a81ea15a8b102d61cfa0c6fcbfe} 
+boolean metaheuristics.\+strategy.\+Strategy.\+save\+List\+States}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_ae2978b3e4405b37e8c4061498a718e51}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!stopexecute@{stopexecute}}
+\index{stopexecute@{stopexecute}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{stopexecute}{stopexecute}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_ae2978b3e4405b37e8c4061498a718e51} 
+\mbox{\hyperlink{classlocal__search_1_1complement_1_1_stop_execute}{Stop\+Execute}} metaheuristics.\+strategy.\+Strategy.\+stopexecute\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_ae9ce7f42f79c56151e0740aecb06c288}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!strategy@{strategy}}
+\index{strategy@{strategy}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{strategy}{strategy}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_ae9ce7f42f79c56151e0740aecb06c288} 
+\mbox{\hyperlink{classmetaheuristics_1_1strategy_1_1_strategy}{Strategy}} metaheuristics.\+strategy.\+Strategy.\+strategy = null\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a790d820c6ece662c3564b276bb00a025}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!threshold@{threshold}}
+\index{threshold@{threshold}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{threshold}{threshold}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a790d820c6ece662c3564b276bb00a025} 
+double metaheuristics.\+strategy.\+Strategy.\+threshold}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_ade615f12225524c934ba0cbec9daff2c}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!timeExecute@{timeExecute}}
+\index{timeExecute@{timeExecute}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{timeExecute}{timeExecute}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_ade615f12225524c934ba0cbec9daff2c} 
+long metaheuristics.\+strategy.\+Strategy.\+time\+Execute\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmetaheuristics_1_1strategy_1_1_strategy_a60196a0cbedbde3999828ad29a221bed}\index{metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}!updateparameter@{updateparameter}}
+\index{updateparameter@{updateparameter}!metaheuristics.strategy.Strategy@{metaheuristics.strategy.Strategy}}
+\doxysubsubsection{\texorpdfstring{updateparameter}{updateparameter}}
+{\footnotesize\ttfamily \label{classmetaheuristics_1_1strategy_1_1_strategy_a60196a0cbedbde3999828ad29a221bed} 
+\mbox{\hyperlink{classlocal__search_1_1complement_1_1_update_parameter}{Update\+Parameter}} metaheuristics.\+strategy.\+Strategy.\+updateparameter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/metaheuristics/strategy/\mbox{\hyperlink{_strategy_8java}{Strategy.\+java}}\end{DoxyCompactItemize}

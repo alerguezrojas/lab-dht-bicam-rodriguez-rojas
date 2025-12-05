@@ -11,25 +11,58 @@ import metaheuristics.strategy.Strategy;
 import problem.definition.Problem.ProblemType;
 import problem.definition.State;
 
+/**
+ * @class ParticleSwarmOptimization
+ * @brief Implementación del algoritmo de Optimización por Enjambre de Partículas (PSO).
+ * 
+ * Esta clase gestiona el enjambre de partículas, sus movimientos, y la actualización de
+ * los mejores estados locales (lBest) y globales (gBest).
+ */
 public class ParticleSwarmOptimization extends Generator {
 	
 	private State stateReferencePSO;
 	private List<State> listStateReference = new ArrayList<State>(); 
 	private List<Particle> listParticle =  new ArrayList<Particle> ();
 	private GeneratorType generatorType;
-	public static int countRef = 0;            // CANTIDAD DE PARTICULAS TOTAL = coutSwarm * countParticleSwarm
-	public static int countParticle = 0;       // CANTIDAD DE PARTICULAS QUE SE HAN MOVIDO EN CADA CUMULO
-	public static int coutSwarm = 0;           //CANTIDAD DE CUMULOS
-	public static int countParticleBySwarm = 0; //CANTIDAD DE PARTICULAS POR CUMULO
+	
+	/** @brief Cantidad total de partículas (coutSwarm * countParticleSwarm). */
+	public static int countRef = 0;
+	
+	/** @brief Cantidad de partículas que se han movido en el cúmulo actual. */
+	public static int countParticle = 0;
+	
+	/** @brief Cantidad de cúmulos (swarms). */
+	public static int coutSwarm = 0;
+	
+	/** @brief Cantidad de partículas por cúmulo. */
+	public static int countParticleBySwarm = 0;
+	
 	private float weight = 50;
+	
+	/** @brief Peso de inercia máximo. */
 	public static double wmax = 0.9;
+	
+	/** @brief Peso de inercia mínimo. */
 	public static double wmin = 0.2;
+	
+	/** @brief Factores de aprendizaje cognitivo y social. */
 	public static int learning1 = 2, learning2 = 2;
+	
+	/** @brief Factor de constricción calculado dinámicamente. */
 	public static double constriction;
+	
+	/** @brief Indica si el problema es binario. */
 	public static boolean binary = false;
+	
+	/** @brief Array de mejores estados locales por cúmulo. */
 	public static State[] lBest; 
+	
+	/** @brief Mejor estado global encontrado. */
 	public static State gBest;
+	
+	/** @brief Contador de iteraciones actual del PSO. */
 	public static int countCurrentIterPSO;
+	
 	//problemas dinamicos
     public static int countGender = 0;
     public static int countBetterGender = 0;
@@ -37,6 +70,10 @@ public class ParticleSwarmOptimization extends Generator {
     private int[] listCountGender = new int[10];
     private float[] listTrace = new float[1200000];
 			
+	/**
+	 * @brief Constructor por defecto.
+	 * Inicializa el enjambre y configura los parámetros iniciales.
+	 */
 	public ParticleSwarmOptimization(){
 		super();
 		countRef = coutSwarm * countParticleBySwarm;

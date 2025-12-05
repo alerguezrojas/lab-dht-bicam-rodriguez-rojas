@@ -1,0 +1,57 @@
+# Doxyfile 1.9.x
+
+# Project related configuration
+PROJECT_NAME           = "BiCIAM"
+PROJECT_NUMBER         = "1.0"
+PROJECT_BRIEF          = "Biblioteca de Algoritmos Metaheurísticos"
+OUTPUT_DIRECTORY       = "docs"
+CREATE_SUBDIRS         = NO
+OUTPUT_LANGUAGE        = Spanish
+
+# Build related configuration
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+RECURSIVE              = YES
+INPUT                  = src/main/java
+FILE_PATTERNS          = *.java
+EXAMPLE_PATH           =
+IMAGE_PATH             =
+
+# Graphviz / Dot configuration
+HAVE_DOT               = YES
+UML_LOOK               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+GRAPHICAL_HIERARCHY    = YES
+DIRECTORY_GRAPH        = YES
+DOT_IMAGE_FORMAT       = png
+INTERACTIVE_SVG        = YES
+
+# LaTeX / PDF configuration
+GENERATE_LATEX         = YES
+LATEX_OUTPUT           = latex
+LATEX_CMD_NAME         = latex
+MAKEINDEX_CMD_NAME     = makeindex
+COMPACT_LATEX          = NO
+PAPER_TYPE             = a4
+EXTRA_PACKAGES         =
+LATEX_HEADER           =
+LATEX_FOOTER           =
+PDF_HYPERLINKS         = YES
+USE_PDFLATEX           = YES
+LATEX_BATCHMODE        = NO
+LATEX_HIDE_INDICES     = NO
+
+# HTML configuration (optional but useful)
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+HTML_COLORSTYLE_HUE    = 220
+HTML_COLORSTYLE_SAT    = 100
+HTML_COLORSTYLE_GAMMA  = 80
+HTML_TIMESTAMP         = YES
+
+# Java specific
+OPTIMIZE_OUTPUT_JAVA   = YES
+JAVADOC_AUTOBRIEF      = YES

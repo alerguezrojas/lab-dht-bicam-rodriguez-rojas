@@ -1,0 +1,17 @@
+<map id="metaheuristics.generators.MultiobjectiveHillClimbingDistance.Contain" name="metaheuristics.generators.MultiobjectiveHillClimbingDistance.Contain">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,233,89"/>
+<area shape="rect" id="Node000002" href="$classproblem_1_1definition_1_1_state.html#aea3cb9557745c174837425d06135f980" title=" " alt="" coords="281,39,443,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,57,265,57,265,63,233,63"/>
+<area shape="rect" id="Node000003" href="$classproblem_1_1definition_1_1_state.html#a2e75b6f2bedb2107478ecd1e8e681418" title=" " alt="" coords="701,5,913,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="443,47,491,41,685,24,686,30,491,47,444,52"/>
+<area shape="rect" id="Node000004" href="$classproblem_1_1definition_1_1_state.html#a1a5212628b1f4ec0f1091211615cda9c" title=" " alt="" coords="491,80,653,123"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="444,73,476,80,475,85,443,79"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="616,77,700,41,725,34,726,39,702,47,618,82"/>
+<area shape="poly" id="edge8_Node000004_Node000004" title=" " alt="" coords="532,80,530,70,537,61,551,55,572,53,595,56,608,62,606,67,593,61,572,59,552,61,540,65,536,71,537,79"/>
+<area shape="rect" id="Node000005" href="$classproblem_1_1definition_1_1_state.html#a226ea6fab8e7060cf131edfdb245a6fa" title=" " alt="" coords="717,56,897,99"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="653,90,701,85,701,91,654,96"/>
+<area shape="rect" id="Node000006" href="$classproblem_1_1definition_1_1_state.html#af8aecb9c06562fcda193b6a1da0b9ca3" title=" " alt="" coords="717,123,897,165"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="654,113,702,122,701,128,653,119"/>
+<area shape="rect" id="Node000007" href="$classproblem_1_1definition_1_1_state.html#a59d2cd4e1c7f90ac887e46adffb6c944" title=" " alt="" coords="717,189,897,232"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="607,121,651,148,702,175,717,181,715,186,700,180,649,153,604,125"/>
+</map>

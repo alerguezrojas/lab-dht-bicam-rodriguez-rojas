@@ -1,0 +1,13 @@
+<map id="metaheuristics.generators.MultiobjectiveTabuSearch.generate" name="metaheuristics.generators.MultiobjectiveTabuSearch.generate">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,105,230,148"/>
+<area shape="rect" id="Node000002" href="$classproblem_1_1definition_1_1_operator.html#a5b6625843e73d938f9235985bf966b34" title=" " alt="" coords="278,5,516,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,102,277,57,298,50,300,55,279,63,168,107"/>
+<area shape="rect" id="Node000003" href="$classproblem_1_1definition_1_1_problem.html#a4cd649edb8862f21af171491cb9b9386" title=" " alt="" coords="298,72,496,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="230,111,282,104,283,110,230,116"/>
+<area shape="rect" id="Node000004" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a67b5a933a8ccd493360fa06e0a448bb4" title=" " alt="" coords="317,139,477,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="230,137,302,146,301,151,230,143"/>
+<area shape="rect" id="Node000005" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#aeb1c308c04db42c2977e51ffc779862d" title=" " alt="" coords="317,205,477,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="168,146,279,191,303,199,302,204,277,196,166,151"/>
+<area shape="rect" id="Node000006" href="$classmetaheuristics_1_1strategy_1_1_strategy.html#a4f635be1df3d594c3e8f2d111cc5c995" title=" " alt="" coords="564,205,724,248"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="478,224,548,224,548,229,478,229"/>
+</map>

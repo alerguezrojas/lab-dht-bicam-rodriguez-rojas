@@ -1,0 +1,19 @@
+<map id="problem.definition.State.Comparator" name="problem.definition.State.Comparator">
+<area shape="rect" id="Node000001" title=" " alt="" coords="595,96,757,139"/>
+<area shape="rect" id="Node000002" href="$classmetaheuristics_1_1generators_1_1_multiobjective_hill_climbing_distance.html#a93dbf4a830ea206aa9b041ae9894c902" title=" " alt="" coords="320,5,547,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="596,93,521,67,523,62,598,88"/>
+<area shape="rect" id="Node000004" href="$classmetaheuristics_1_1generators_1_1_multiobjective_hill_climbing_restart.html#a9f224de15a9e6a8b24e64c6b4da2a2a3" title=" " alt="" coords="324,88,542,147"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="580,120,543,120,543,115,580,115"/>
+<area shape="rect" id="Node000006" href="$classlocal__search_1_1acceptation__type_1_1_dominance.html#aff9166b5654b3ed44eed2cee4de7d2b2" title=" " alt="" coords="326,208,540,251"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="616,148,483,210,481,205,613,143"/>
+<area shape="rect" id="Node000003" href="$classmetaheuristics_1_1generators_1_1_multiobjective_hill_climbing_distance.html#a35ed16f3af3c7fdcbff8165d9674cc9a" title=" " alt="" coords="5,5,272,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="304,37,272,37,272,32,304,32"/>
+<area shape="rect" id="Node000005" href="$classmetaheuristics_1_1generators_1_1_multiobjective_hill_climbing_restart.html#ab3716a950049b1d77c4374efd355aa14" title=" " alt="" coords="10,88,267,147"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="309,120,268,120,268,115,309,115"/>
+<area shape="rect" id="Node000007" href="$classlocal__search_1_1acceptation__type_1_1_accept_multicase.html#a526e452510b7eebe59af4dde0c59b337" title="Determina si se acepta una solución candidata." alt="" coords="10,171,267,213"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="310,216,267,211,267,206,311,211"/>
+<area shape="rect" id="Node000008" href="$classlocal__search_1_1acceptation__type_1_1_accept_not_dominated.html#a05fe7b0385dfafe7701f6a4e9b2b80d2" title=" " alt="" coords="26,237,251,296"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="311,247,252,255,251,250,310,242"/>
+<area shape="rect" id="Node000009" href="$classlocal__search_1_1acceptation__type_1_1_accept_not_dominated_tabu.html#a3182ac113bddb89bb3ea7af704b38835" title=" " alt="" coords="12,320,265,379"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="380,261,273,310,242,322,240,317,271,306,377,256"/>
+</map>
