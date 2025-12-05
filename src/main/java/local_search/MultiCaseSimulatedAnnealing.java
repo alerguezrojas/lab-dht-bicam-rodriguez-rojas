@@ -61,6 +61,10 @@ public class MultiCaseSimulatedAnnealing extends Generator {
 		listTrace.add(weight);
     }
 
+	public void setFactoryAcceptCandidate(IFFactoryAcceptCandidate ifacceptCandidate) {
+		this.ifacceptCandidate = ifacceptCandidate;
+	}
+
 	@Override
 	public State generate(Integer operatornumber) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
 		List<State> neighborhood = new ArrayList<State>();
@@ -87,7 +91,9 @@ public class MultiCaseSimulatedAnnealing extends Generator {
 	@Override
 	public void updateReference(State stateCandidate, Integer countIterationsCurrent)throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
 		countRept = countIterationsT;
-		ifacceptCandidate = new FactoryAcceptCandidate();
+		if (ifacceptCandidate == null) {
+			ifacceptCandidate = new FactoryAcceptCandidate();
+		}
 		AcceptableCandidate candidate = ifacceptCandidate.createAcceptCandidate(typeAcceptation);
 		Boolean accept = candidate.acceptCandidate(stateReferenceSA, stateCandidate);
 		if(accept.equals(true))

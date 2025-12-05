@@ -1,15 +1,155 @@
 
-Mmetaheuristics.generators.TabuSearch#getReference()Lproblem/definition/State;k
-aC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/TabuSearch.javaW W("1*Õ
-1X	 X(è
+\metaheuristics.generators.TabuSearch#generate(Ljava/lang/Integer;)Lproblem/definition/State;k
+aC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/TabuSearch.javaM M("startingBlock*û
+startingBlockM M(.ó
+î
+L L(
+
+%12"
+__annotate*2
+
+__unknown_file (
+java.lang.Override*A
+
+__unknown_file (%
+#
+operatornumberjava.lang.Integerd
+b
+M M(-#
+operatornumberjava.lang.Integer"__annotation*#
+
+__unknown_file (
+
+%12*
+1*£
+1O O(3<:
+O! O(1
+%0java.util.ArrayList"java.util.ArrayListj
+h
+O O(3
+%1"java.util.ArrayList#<init>()V*7
+
+__unknown_file (
+
+%0java.util.ArrayListk
+i
+O O(4
+neighborhoodjava.util.List"__id*7
+
+__unknown_file (
+
+%0java.util.ArrayList…
+∆
+P P('&
+%2 metaheuristics.strategy.Strategy"Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;*@
+
+__unknown_file ($""
+ metaheuristics.strategy.StrategyŒÀ
+P P(4 
+%3problem.definition.Problem"Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;*D
+
+__unknown_file ((
+&
+%2 metaheuristics.strategy.Strategy2getProblem()∆√
+P P(B!
+%4problem.definition.Operator"Eproblem.definition.Problem#getOperator()Lproblem/definition/Operator;*>
+
+__unknown_file ("
+ 
+%3problem.definition.Problem2getOperator()è
 å
-X	 X(
-%0problem.definition.State"__id*Z
+PU P(e
+%5problem.definition.State"__id*Z
 
 __unknown_file (>*<&
 $metaheuristics.generators.TabuSearch"
-stateReferenceTS",
-X X( 
+stateReferenceTSïí
+P P(v
+%6java.util.List"lproblem.definition.Operator#generatedNewState(Lproblem/definition/State;Ljava/lang/Integer;)Ljava/util/List;*?
+
+__unknown_file (#
+!
+%4problem.definition.Operator*<
+
+__unknown_file ( 
 
-%0problem.definition.StateB(&
+%5problem.definition.State*A
+
+__unknown_file (%
+#
+operatornumberjava.lang.Integer2@generatedNewState(Lproblem/definition/State;Ljava/lang/Integer;)f
+d
+P P(v
+neighborhoodjava.util.List"__id*2
+
+__unknown_file (
+
+%6java.util.Listü
+ú
+Q Q(*0
+%7*local_search.candidate_type.CandidateValue"__id*X
+
+__unknown_file (<*:&
+$metaheuristics.generators.TabuSearch"
+candidatevalueè
+å
+Q: Q(J
+%8problem.definition.State"__id*Z
+
+__unknown_file (>*<&
+$metaheuristics.generators.TabuSearch"
+stateReferenceTSù
+ö
+QL Q(Y/
+%9)local_search.candidate_type.CandidateType"__id*W
+
+__unknown_file (;*9&
+$metaheuristics.generators.TabuSearch"
+typeCandidateî
+ë
+Q[ Q(c+
+%10$local_search.complement.StrategyType"__id*R
+
+__unknown_file (6*4&
+$metaheuristics.generators.TabuSearch"
+
+strategyﬂ‹
+	Q Q(Ç
+%11problem.definition.State"„local_search.candidate_type.CandidateValue#stateCandidate(Lproblem/definition/State;Llocal_search/candidate_type/CandidateType;Llocal_search/complement/StrategyType;Ljava/lang/Integer;Ljava/util/List;)Lproblem/definition/State;*N
+
+__unknown_file (2
+0
+%7*local_search.candidate_type.CandidateValue*<
+
+__unknown_file ( 
+
+%8problem.definition.State*M
+
+__unknown_file (1
+/
+%9)local_search.candidate_type.CandidateType*I
+
+__unknown_file (-
++
+%10$local_search.complement.StrategyType*A
+
+__unknown_file (%
+#
+operatornumberjava.lang.Integer*<
+
+__unknown_file ( 
+
+neighborhoodjava.util.List2ûstateCandidate(Lproblem/definition/State;Llocal_search/candidate_type/CandidateType;Llocal_search/complement/StrategyType;Ljava/lang/Integer;Ljava/util/List;)~
+|
+	Q Q(É*
+statecandidateproblem.definition.State"__id*=
+
+__unknown_file (!
+
+%11problem.definition.State"8
+S S(,
+*
+statecandidateproblem.definition.State:/
+M M(-#
+operatornumberjava.lang.IntegerB(&
 $metaheuristics.generators.TabuSearchH

@@ -74,3 +74,4 @@ problem\extension\FactoresPonderadosTest.class
 metaheuristics\generators\GeneticAlgorithmTest.class
 metaheuristics\generators\HillClimbingTest.class
 evolutionary_algorithms\complement\RouletteSelectionTest.class
+problem\definition\ProblemTest.class

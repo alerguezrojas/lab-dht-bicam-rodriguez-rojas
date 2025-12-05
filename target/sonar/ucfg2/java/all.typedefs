@@ -1795,7 +1795,7 @@ EacceptCandidate(Lproblem/definition/State;Lproblem/definition/State;)çlocal_s
 /evolutionary_algorithms.complement.SamplingTypejava.lang.Enumk
 <init>(Ljava/lang/String;I)Levolutionary_algorithms.complement.SamplingType#<init>(Ljava/lang/String;I)Võ
 valueOf(Ljava/lang/String;)|evolutionary_algorithms.complement.SamplingType#valueOf(Ljava/lang/String;)Levolutionary_algorithms/complement/SamplingType;v
-values()jevolutionary_algorithms.complement.SamplingType#values()[Levolutionary_algorithms/complement/SamplingType;◊
+values()jevolutionary_algorithms.complement.SamplingType#values()[Levolutionary_algorithms/complement/SamplingType;ñ
 (local_search.MultiCaseSimulatedAnnealing#metaheuristics.generators.Generator>
 <init>()2local_search.MultiCaseSimulatedAnnealing#<init>()VÇ
 *awardUpdateREF(Lproblem/definition/State;)Tlocal_search.MultiCaseSimulatedAnnealing#awardUpdateREF(Lproblem/definition/State;)ZÅ
@@ -1809,7 +1809,8 @@ EacceptCandidate(Lproblem/definition/State;Lproblem/definition/State;)çlocal_s
 getTrace()5local_search.MultiCaseSimulatedAnnealing#getTrace()[Fh
 	getType()[local_search.MultiCaseSimulatedAnnealing#getType()Lmetaheuristics/generators/GeneratorType;z
 getTypeGenerator()dlocal_search.MultiCaseSimulatedAnnealing#getTypeGenerator()Lmetaheuristics/generators/GeneratorType;D
-getWeight()5local_search.MultiCaseSimulatedAnnealing#getWeight()Få
+getWeight()5local_search.MultiCaseSimulatedAnnealing#getWeight()Fº
+GsetFactoryAcceptCandidate(Lfactory_interface/IFFactoryAcceptCandidate;)qlocal_search.MultiCaseSimulatedAnnealing#setFactoryAcceptCandidate(Lfactory_interface/IFFactoryAcceptCandidate;)Vå
 /setInitialReference(Lproblem/definition/State;)Ylocal_search.MultiCaseSimulatedAnnealing#setInitialReference(Lproblem/definition/State;)V|
 'setStateRef(Lproblem/definition/State;)Qlocal_search.MultiCaseSimulatedAnnealing#setStateRef(Lproblem/definition/State;)V§
 ;setTypeGenerator(Lmetaheuristics/generators/GeneratorType;)elocal_search.MultiCaseSimulatedAnnealing#setTypeGenerator(Lmetaheuristics/generators/GeneratorType;)VF

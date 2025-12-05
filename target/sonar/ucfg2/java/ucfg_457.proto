@@ -1,29 +1,15 @@
 
-;metaheuristics.generators.LimitThreshold#%field_initializer
-__unknown_file ("1*ã
-1 (’
-“
-o
-eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/LimitThreshold.java' '(3E*
-(metaheuristics.generators.LimitThreshold"
-listCountBetterGender"__id*
- (
-""œ
-Ã
-o
-eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/LimitThreshold.java( ((-?*
-(metaheuristics.generators.LimitThreshold"
-listCountGender"__id*
- (
-""…
-∆
-o
-eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/LimitThreshold.java) )(09*
-(metaheuristics.generators.LimitThreshold"
-	listTrace"__id*
- (
-"""Ö
-n
-eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/LimitThreshold.java •(
-implicit returnB,*
-(metaheuristics.generators.LimitThreshold
+;local_search.candidate_type.NotDominatedCandidate#<init>()V
+__unknown_file ("startingBlock*ï
+startingBlockv
+nC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/candidate_type/NotDominatedCandidate.java (˚
+¯
+v
+nC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/candidate_type/NotDominatedCandidate.java (
+%0"5local_search.candidate_type.SearchCandidate#<init>()V*A
+ (53
+1local_search.candidate_type.NotDominatedCandidate"ç
+v
+nC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/candidate_type/NotDominatedCandidate.java (
+implicit returnB53
+1local_search.candidate_type.NotDominatedCandidate

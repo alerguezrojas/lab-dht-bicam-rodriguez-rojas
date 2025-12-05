@@ -1,39 +1,83 @@
 
-@evolutionary_algorithms.complement.UniformCrossover#mascara(I)[Iz
-pC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/evolutionary_algorithms/complement/UniformCrossover.java ("4*“
-3 (X
-V
- ( 
-%1java.security.SecureRandom"__id*"
+5local_search.MultiCaseSimulatedAnnealing#getTrace()[Fq
+eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/MultiCaseSimulatedAnnealing.java¨ ¨("5*¨
+3
+« «(„
+
+
+« «(
+%5java.util.List"__id*W
+
+__unknown_file (;*9*
+(local_search.MultiCaseSimulatedAnnealing"
+	listTraceŠ
+‡
+
+« «(
+%6java.lang.Float"
+__arrayGet*2
+
+__unknown_file (
+
+%5java.util.List*"
 
 __unknown_file (
-""¤¡
- (&	
-%2int"java.util.Random#nextInt(I)I*>
+""*
+4*ı
+4
+ª ª(„
+
+
+ª ª(
+%2java.util.List"__id*W
 
-__unknown_file ("
- 
-%1java.security.SecureRandom* 
+__unknown_file (;*9*
+(local_search.MultiCaseSimulatedAnnealing"
+	listTracemk
+
+ª ª(&	
+%3int"java.util.List#size()I*2
 
-__unknown_file (22
-nextInt(I)*
-4*x
-4 (a
-_
- ($
-%0boolean"	__compare*
- (
-<*
- (
-""*
- ($
-""*
+__unknown_file (
+
+%2java.util.List2size()n
+l
+
+ª ª(&
+%4boolean"	__compare*
+
+ª ª(
+<*
+
+ª ª(
+""*
+
+ª ª(&
+	
+%3int*
 3
-1*!
-1	 ("
- (
-"": 
+1*Š
+5
+© ©(%„
+
+
+© ©(%
+%0java.util.List"__id*W
 
-__unknown_file (
-""B75
-3evolutionary_algorithms.complement.UniformCrossoverH
+__unknown_file (;*9*
+(local_search.MultiCaseSimulatedAnnealing"
+	listTracemk
+
+© ©(,	
+%1int"java.util.List#size()I*2
+
+__unknown_file (
+
+%0java.util.List2size()*
+4*%
+1
+­	 ­("
+
+­ ­(
+""B,*
+(local_search.MultiCaseSimulatedAnnealingH

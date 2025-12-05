@@ -1,36 +1,9 @@
 
-Ymetaheuristics.generators.EvolutionStrategies#awardUpdateREF(Lproblem/definition/State;)Zv
-jC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/EvolutionStrategies.java¿ ¿("startingBlock*°
-startingBlock
-¿ ¿(4Ÿ
-œ
-
-¾ ¾(
-
-%0"
-__annotate*2
-
-__unknown_file (
-java.lang.Override*H
-
-__unknown_file (,
-*
-stateCandidateproblem.definition.Statel
-j
-
-¿% ¿(3*
-stateCandidateproblem.definition.State"__annotation*"
-
-__unknown_file (
-
-%0*
-1*%
+Jmetaheuristics.generators.EvolutionStrategies#getSonList()Ljava/util/List;v
+jC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/EvolutionStrategies.java¹ ¹("1*%
 1
-Á	 Á("
+»	 »("
 
-Á Á(
-"":8
-
-¿ ¿(3*
-stateCandidateproblem.definition.StateB1/
--metaheuristics.generators.EvolutionStrategiesHX
+» »(
+""B1/
+-metaheuristics.generators.EvolutionStrategiesH

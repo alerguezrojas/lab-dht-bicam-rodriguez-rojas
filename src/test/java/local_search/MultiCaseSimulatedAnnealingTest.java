@@ -1,8 +1,11 @@
 package local_search;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import java.util.ArrayList;
@@ -11,6 +14,9 @@ import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import factory_interface.IFFactoryAcceptCandidate;
+import local_search.acceptation_type.AcceptType;
+import local_search.acceptation_type.AcceptableCandidate;
 import metaheuristics.generators.GeneratorType;
 import metaheuristics.strategy.Strategy;
 import problem.definition.Operator;
@@ -77,5 +83,72 @@ public class MultiCaseSimulatedAnnealingTest {
         
         State result = mcsa.generate(1);
         assertNotNull(result);
+    }
+
+    @Test
+    public void testUpdateReference() throws Exception {
+        State stateCandidate = mock(State.class);
+        State stateRef = mock(State.class);
+        when(stateCandidate.clone()).thenReturn(stateCandidate);
+        
+        mcsa.setInitialReference(stateRef);
+        
+        IFFactoryAcceptCandidate factory = mock(IFFactoryAcceptCandidate.class);
+        AcceptableCandidate acceptableCandidate = mock(AcceptableCandidate.class);
+        
+        when(factory.createAcceptCandidate(any(AcceptType.class))).thenReturn(acceptableCandidate);
+        when(acceptableCandidate.acceptCandidate(any(State.class), any(State.class))).thenReturn(true);
+        
+        mcsa.setFactoryAcceptCandidate(factory);
+        
+        MultiCaseSimulatedAnnealing.tinitial = 100.0;
+        MultiCaseSimulatedAnnealing.alpha = 0.9;
+        MultiCaseSimulatedAnnealing.countIterationsT = 10;
+        
+        mcsa.updateReference(stateCandidate, 10);
+        
+        verify(factory).createAcceptCandidate(any(AcceptType.class));
+        verify(acceptableCandidate).acceptCandidate(any(State.class), any(State.class));
+        assertEquals(stateCandidate, mcsa.getReference());
+    }
+
+    @Test
+    public void testGetReferenceList() {
+        State stateRef = mock(State.class);
+        when(stateRef.clone()).thenReturn(stateRef);
+        mcsa.setInitialReference(stateRef);
+        
+        List<State> list = mcsa.getReferenceList();
+        assertNotNull(list);
+        assertEquals(1, list.size());
+        assertEquals(stateRef, list.get(0));
+    }
+
+    @Test
+    public void testGetWeight() {
+        mcsa.setWeight(10.5f);
+        assertEquals(10.5f, mcsa.getWeight());
+    }
+
+    @Test
+    public void testGetTrace() {
+        float[] trace = mcsa.getTrace();
+        assertNotNull(trace);
+        assertEquals(1, trace.length);
+        assertEquals(50.0f, trace[0]);
+    }
+
+    @Test
+    public void testGetListCountBetterGender() {
+        int[] list = mcsa.getListCountBetterGender();
+        assertNotNull(list);
+        assertEquals(0, list.length);
+    }
+
+    @Test
+    public void testGetListCountGender() {
+        int[] list = mcsa.getListCountGender();
+        assertNotNull(list);
+        assertEquals(0, list.length);
     }
 }

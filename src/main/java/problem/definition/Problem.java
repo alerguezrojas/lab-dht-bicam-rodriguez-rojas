@@ -102,7 +102,9 @@ public class Problem {
 	}
 	
 	public SolutionMethod newSolutionMethod(TypeSolutionMethod typeSolutionMethod) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
-		factorySolutionMethod = new FactorySolutionMethod();
+		if (factorySolutionMethod == null) {
+			factorySolutionMethod = new FactorySolutionMethod();
+		}
 		SolutionMethod solutionMethod = factorySolutionMethod.createdSolutionMethod(typeSolutionMethod);
 		return solutionMethod;
 	}

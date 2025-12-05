@@ -1,49 +1,71 @@
 
 vproblem.definition.Problem#newSolutionMethod(Lproblem/extension/TypeSolutionMethod;)Lproblem/extension/SolutionMethod;a
-WC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/problem/definition/Problem.javah h(("1*≤	
-1i i(5^\
-i i(3*
-%0$factory_method.FactorySolutionMethod"$factory_method.FactorySolutionMethodç
+WC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/problem/definition/Problem.javah h(("3*õ
+2j j(6^\
+j j(4*
+%2$factory_method.FactorySolutionMethod"$factory_method.FactorySolutionMethodç
 ä
-i i(5
-%1".factory_method.FactorySolutionMethod#<init>()V*H
+j j(6
+%3".factory_method.FactorySolutionMethod#<init>()V*H
 
 __unknown_file (,
 *
-%0$factory_method.FactorySolutionMethodñ
+%2$factory_method.FactorySolutionMethodñ
 ì
-i i(57
+j j(67
 problem.definition.Problem"
 factorySolutionMethod"__id*H
 
 __unknown_file (,
 *
-%0$factory_method.FactorySolutionMethodõ
+%2$factory_method.FactorySolutionMethod*
+1*ƒ
+3i i(õ
 ò
-j" j(7/
-%2)factory_interface.IFFactorySolutionMethod"__id*U
+i i(/
+%0)factory_interface.IFFactorySolutionMethod"__id*U
+
+__unknown_file (9*7
+problem.definition.Problem"
+factorySolutionMethodé
+ã
+i i(#
+%1boolean"	__compare*
+i i(
+==*=
+i i(1
+/
+%0)factory_interface.IFFactorySolutionMethod*
+i i(#
+""*
+2
+1*©
+1l" l(7õ
+ò
+l" l(7/
+%4)factory_interface.IFFactorySolutionMethod"__id*U
 
 __unknown_file (9*7
 problem.definition.Problem"
 factorySolutionMethod©¶
-j" j(a&
-%3 problem.extension.SolutionMethod"âfactory_interface.IFFactorySolutionMethod#createdSolutionMethod(Lproblem/extension/TypeSolutionMethod;)Lproblem/extension/SolutionMethod;*M
+l" l(a&
+%5 problem.extension.SolutionMethod"âfactory_interface.IFFactorySolutionMethod#createdSolutionMethod(Lproblem/extension/TypeSolutionMethod;)Lproblem/extension/SolutionMethod;*M
 
 __unknown_file (1
 /
-%2)factory_interface.IFFactorySolutionMethod*X
+%4)factory_interface.IFFactorySolutionMethod*X
 
 __unknown_file (<
 :
 typeSolutionMethod$problem.extension.TypeSolutionMethod2=createdSolutionMethod(Lproblem/extension/TypeSolutionMethod;)ç
 ä
-j j(b2
+l l(b2
 solutionMethod problem.extension.SolutionMethod"__id*D
 
 __unknown_file ((
 &
-%3 problem.extension.SolutionMethod"@
-k k(4
+%5 problem.extension.SolutionMethod"@
+m m(4
 2
 solutionMethod problem.extension.SolutionMethod:F
 h) h(N:

@@ -1,9 +1,18 @@
 
-Xmetaheuristics.generators.MultiobjectiveHillClimbingRestart#getSonList()Ljava/util/List;Ñ
-xC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiobjectiveHillClimbingRestart.javaï ï("1*%
+nmetaheuristics.generators.MultiobjectiveHillClimbingRestart#getType()Lmetaheuristics/generators/GeneratorType;Ñ
+xC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiobjectiveHillClimbingRestart.javaê ê("1*Ö
 1
-ó	 ó("
+ë	 ë(¥
+±
 
-ó ó(
-""B?=
+ë	 ë(-
+%0'metaheuristics.generators.GeneratorType"__id*n
+
+__unknown_file (R*P=
+;metaheuristics.generators.MultiobjectiveHillClimbingRestart"
+Generatortype"=
+
+ë ë(/
+-
+%0'metaheuristics.generators.GeneratorTypeB?=
 ;metaheuristics.generators.MultiobjectiveHillClimbingRestartH

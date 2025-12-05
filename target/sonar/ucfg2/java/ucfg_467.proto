@@ -1,7 +1,15 @@
 
-Kmetaheuristics.generators.LimitThreshold#getReferenceList()Ljava/util/List;o
-eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/LimitThreshold.javas s($"1*!
-1t	 t("
-t t(
-""B,*
+[metaheuristics.generators.LimitThreshold#getType()Lmetaheuristics/generators/GeneratorType;o
+eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/LimitThreshold.javan n("1*ì
+1o	 o(Ÿ
+œ
+o	 o(-
+%0'metaheuristics.generators.GeneratorType"__id*[
+
+__unknown_file (?*=*
+(metaheuristics.generators.LimitThreshold"
+typeGenerator";
+o o(/
+-
+%0'metaheuristics.generators.GeneratorTypeB,*
 (metaheuristics.generators.LimitThresholdH

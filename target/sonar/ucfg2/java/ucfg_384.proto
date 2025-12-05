@@ -1,57 +1,83 @@
 
-ùfactory_method.FactoryDistribution#createDistribution(Levolutionary_algorithms/complement/DistributionType;)Levolutionary_algorithms/complement/Distribution;i
-_C:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/factory_method/FactoryDistribution.java ('"1*©
-1 (:≈¬
-= (X
-%0java.lang.String"+java.lang.Enum#toString()Ljava/lang/String;*e
+@local_search.complement.MultiCaseSimulatedAnnealing#getTrace()[F|
+pC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/complement/MultiCaseSimulatedAnnealing.java° °("5*≥
+3
+§ §(è
+å
+
+§ §(
+%5java.util.List"__id*b
 
-__unknown_file (I
-G
-distributiontype3evolutionary_algorithms.complement.DistributionType2
-toString()ä
+__unknown_file (F*D5
+3local_search.complement.MultiCaseSimulatedAnnealing"
+	listTraceä
 á
- (X
-%1java.lang.String"__concat*3
- (:'%
-#evolutionary_algorithms.complement.*$
-= (X
-
-%0java.lang.Stringg
-e
- (Y
-	classNamejava.lang.String"__id*4
+
+§ §(
+%6java.lang.Float"
+__arrayGet*2
 
-__unknown_file (
-
-%1java.lang.String
-Ì
-  (D
-%2java.lang.Object"Nfactory_method.FactoryLoader#getInstance(Ljava/lang/String;)Ljava/lang/Object;*<
+__unknown_file (
+
+%5java.util.List*"
 
-__unknown_file ( "
-factory_method.FactoryLoader*;
+__unknown_file (
+""*
+4*à
+4
+£ £(è
+å
+
+£ £(
+%2java.util.List"__id*b
 
-__unknown_file (
-
-	classNamejava.lang.StringÄ
-~
- (D6$
-"factory_method.FactoryDistribution"
-distribution"__id*4
+__unknown_file (F*D5
+3local_search.complement.MultiCaseSimulatedAnnealing"
+	listTracemk
+
+£ £(&	
+%3int"java.util.List#size()I*2
 
-__unknown_file (
-
-%2java.lang.Object†
-ù
-	 (5
-%3/evolutionary_algorithms.complement.Distribution"__id*T
+__unknown_file (
+
+%2java.util.List2size()n
+l
+
+£ £(&
+%4boolean"	__compare*
+
+£ £(
+<*
+
+£ £(
+""*
+
+£ £(&
+	
+%3int*
+3
+1*ï
+5
+¢ ¢(%è
+å
+
+¢ ¢(%
+%0java.util.List"__id*b
 
-__unknown_file (8*6$
-"factory_method.FactoryDistribution"
-distribution"C
- (7
-5
-%3/evolutionary_algorithms.complement.Distribution:S
-( (IG
-distributiontype3evolutionary_algorithms.complement.DistributionTypeB&$
-"factory_method.FactoryDistributionH
+__unknown_file (F*D5
+3local_search.complement.MultiCaseSimulatedAnnealing"
+	listTracemk
+
+¢ ¢(,	
+%1int"java.util.List#size()I*2
+
+__unknown_file (
+
+%0java.util.List2size()*
+4*%
+1
+¶	 ¶("
+
+¶ ¶(
+""B75
+3local_search.complement.MultiCaseSimulatedAnnealingH

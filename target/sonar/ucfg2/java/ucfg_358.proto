@@ -1,7 +1,15 @@
 
-[metaheuristics.generators.MultiobjectiveStochasticHillClimbing#getSonList()Ljava/util/List;…
-{C:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiobjectiveStochasticHillClimbing.java^ ^("1*!
-1`	 `("
-` `(
-""BB@
+qmetaheuristics.generators.MultiobjectiveStochasticHillClimbing#getType()Lmetaheuristics/generators/GeneratorType;…
+{C:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiobjectiveStochasticHillClimbing.javaY Y("1*‚
+1Z	 Z(µ
+²
+Z	 Z(-
+%0'metaheuristics.generators.GeneratorType"__id*q
+
+__unknown_file (U*S@
+>metaheuristics.generators.MultiobjectiveStochasticHillClimbing"
+Generatortype";
+Z Z(/
+-
+%0'metaheuristics.generators.GeneratorTypeBB@
 >metaheuristics.generators.MultiobjectiveStochasticHillClimbingH
