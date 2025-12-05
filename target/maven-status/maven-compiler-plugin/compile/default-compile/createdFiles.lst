@@ -6,6 +6,7 @@ metaheuristics\generators\MyTestClass.class
 factory_method\FactoryAcceptCandidate.class
 metaheuristics\generators\MultiCaseSimulatedAnnealing.class
 problem\definition\Codification.class
+BiCIAMApp.class
 local_search\acceptation_type\AcceptNotDominatedTabu.class
 metaheuristics\generators\MultiobjectiveHillClimbingDistance.class
 factory_method\FactoryCrossover.class
