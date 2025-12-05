@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: metaheuristics.generators.MultiCaseSimulatedAnnealingTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s -- in metaheuristics.generators.MultiCaseSimulatedAnnealingTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s -- in metaheuristics.generators.MultiCaseSimulatedAnnealingTest

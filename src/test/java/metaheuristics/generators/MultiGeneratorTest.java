@@ -14,13 +14,16 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
+import org.mockito.MockedConstruction;
 import org.mockito.MockedStatic;
 import org.mockito.MockitoAnnotations;
 
+import factory_method.FactoryGenerator;
 import metaheuristics.generators.HillClimbing;
 import metaheuristics.generators.EvolutionStrategies;
 import metaheuristics.generators.LimitThreshold;
 import metaheuristics.generators.GeneticAlgorithm;
+import metaheuristics.generators.RandomSearch;
 import metaheuristics.strategy.Strategy;
 import problem.definition.Problem;
 import problem.definition.State;
@@ -206,10 +209,93 @@ public class MultiGeneratorTest {
         when(problemMock.getTypeProblem()).thenReturn(Problem.ProblemType.Minimizar);
         
         mg.updateReference(candidate, 1);
+        
+        // Should call updateAwardSC because it's better
+        verify(generatorMock1).setWeight(anyFloat());
     }
     
     @Test
     public void testGetType() {
         assertEquals(GeneratorType.MultiGenerator, mg.getType());
+    }
+
+    @Test
+    public void testRoulette() {
+        // Setup generators with weights
+        when(generatorMock1.getWeight()).thenReturn(10.0f);
+        when(generatorMock2.getWeight()).thenReturn(90.0f);
+        
+        Generator result = mg.roulette();
+        assertNotNull(result);
+        assertTrue(result == generatorMock1 || result == generatorMock2);
+    }
+
+    @Test
+    public void testUpdateAwardSC() {
+        MultiGenerator.activeGenerator = generatorMock1;
+        when(generatorMock1.getWeight()).thenReturn(50.0f);
+        when(strategyMock.getCountCurrent()).thenReturn(0);
+        
+        mg.updateAwardSC();
+        
+        // New weight = 50 * 0.9 + 10 = 45 + 10 = 55
+        verify(generatorMock1).setWeight(55.0f);
+    }
+
+    @Test
+    public void testUpdateAwardImp() {
+        MultiGenerator.activeGenerator = generatorMock1;
+        when(generatorMock1.getWeight()).thenReturn(50.0f);
+        when(strategyMock.getCountCurrent()).thenReturn(0);
+        
+        mg.updateAwardImp();
+        
+        // New weight = 50 * 0.9 = 45
+        verify(generatorMock1).setWeight(45.0f);
+    }
+
+    @Test
+    public void testTournament() throws Exception {
+        State candidate = mock(State.class);
+        when(candidate.getEvaluation()).thenReturn(new ArrayList<>());
+        when(candidate.getCode()).thenReturn(new ArrayList<>());
+        
+        mg.tournament(candidate, 1);
+        
+        verify(generatorMock1).updateReference(any(State.class), eq(1));
+        verify(generatorMock2).updateReference(any(State.class), eq(1));
+    }
+
+    @Test
+    public void testInitializeGenerators() throws Exception {
+        // Setup static vars
+        EvolutionStrategies.countRef = 2;
+        
+        // Mock FactoryGenerator construction
+        try (MockedConstruction<FactoryGenerator> mockedFactory = mockConstruction(FactoryGenerator.class,
+                (mock, context) -> {
+                    when(mock.createGenerator(any())).thenReturn(generatorMock1);
+                });
+             MockedConstruction<RandomSearch> mockedRandomSearch = mockConstruction(RandomSearch.class,
+                (mock, context) -> {
+                    when(mock.generate(anyInt())).thenReturn(stateMock);
+                    when(mock.getType()).thenReturn(GeneratorType.RandomSearch);
+                })) {
+            
+            // Setup Strategy state
+            when(strategyMock.getProblem()).thenReturn(problemMock);
+            when(problemMock.getState()).thenReturn(stateMock);
+            when(stateMock.clone()).thenReturn(stateMock); 
+            
+            when(stateMock.getEvaluation()).thenReturn(new ArrayList<>());
+            when(stateMock.getCode()).thenReturn(new ArrayList<>());
+            
+            MultiGenerator.initializeGenerators();
+            
+            assertNotNull(MultiGenerator.getListGenerators());
+            assertEquals(4, MultiGenerator.getListGenerators().length);
+            assertFalse(MultiGenerator.listGeneratedPP.isEmpty());
+            assertEquals(2, MultiGenerator.listGeneratedPP.size());
+        }
     }
 }
