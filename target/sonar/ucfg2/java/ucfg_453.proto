@@ -1,0 +1,32 @@
+
+@problem.definition.State#Comparator(Lproblem/definition/State;)Z_
+UC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/problem/definition/State.javaH H("3*É
+3J J(­ª
+K K(
+%0java.util.ArrayList"7problem.definition.State#getCode()Ljava/util/ArrayList;*?
+
+__unknown_file (#
+!
+stateproblem.definition.State2	getCode()¦£
+K K(%
+%1java.util.ArrayList"7problem.definition.State#getCode()Ljava/util/ArrayList;*8
+
+__unknown_file (
+problem.definition.State2	getCode()ÛØ
+K K(&
+%2boolean"/java.util.ArrayList#equals(Ljava/lang/Object;)Z*7
+
+__unknown_file (
+
+%0java.util.ArrayList*7
+
+__unknown_file (
+
+%1java.util.ArrayList2equals(Ljava/lang/Object;)*
+1*!
+1N	 N("
+N N(
+"":-
+H H(&!
+stateproblem.definition.StateB
+problem.definition.StateHX

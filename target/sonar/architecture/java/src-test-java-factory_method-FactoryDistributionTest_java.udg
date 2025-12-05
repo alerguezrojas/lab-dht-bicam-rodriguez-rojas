@@ -1,0 +1,197 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764933879930*java2.BÞ	
+>
+9src/test/java/factory_method/FactoryDistributionTest.java2
+	
+type3
+	
+TEST4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+?
+:alerguezrojas_lab-dht-bicam-rodriguez-rojas:factory_method9
+,
+&factory_method.FactoryDistributionTest11
+
+class12
+
+access13
+
+	protected14
+
+simple-name15
+
+FactoryDistributionTest16
+F
+@factory_method.FactoryDistributionTest#testCreateDistribution()V18
+
+method19
+
+testCreateDistribution20
+ 
+org.junit.jupiter.api.Test22
+
+unknown23
+
+annotated by24
+
+
+uses25
+(
+"factory_method.FactoryDistribution27
+
+is type28
+
+calls29
+5
+/evolutionary_algorithms.complement.Distribution31
+
+returns32
+
+
+references33
+¤
+factory_method.FactoryDistribution#createDistribution(Levolutionary_algorithms/complement/DistributionType;)Levolutionary_algorithms/complement/Distribution;35
+9
+3evolutionary_algorithms.complement.DistributionType37
+D
+>evolutionary_algorithms.complement.DistributionType.Univariate39
+&
+ org.junit.jupiter.api.Assertions41
+I
+Corg.junit.jupiter.api.Assertions#assertNotNull(Ljava/lang/Object;)V43
+5
+/org.junit.jupiter.api.Assertions#assertTrue(Z)V45
+3
+-evolutionary_algorithms.complement.Univariate47J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6jÌ
+
+21
+212223
+
+44
+444523
+
+30
+303123
+
+34
+343523
+B
+17<
+171819 *
+1 (210:7B
+
+
+13
+14
+
+
+15
+20
+
+36
+363723
+>
+108
+101112 *
+1 (:7B
+
+
+13
+14
+
+
+15
+16
+
+42
+424323
+
+40
+404123
+
+46
+464723
+
+26
+262723
+
+38
+383923ræ
+
+172124*
+1 (
+
+
+172125*
+1 (
+
+
+172628*
+1 ($
+
+172625*
+1	 (
+
+172629*
+1+ (>
+
+173028*
+1 (
+
+173025*
+1	 (
+
+173032*
+1 ("
+
+172633*
+1 ("
+
+173429*
+1# (5
+
+173625*
+16 (F
+
+173625*
+1G (Q
+
+173833*
+1G (Q
+
+174033*
+1	 (
+
+174229*
+1	 (
+
+174033*
+1	 (
+
+174429*
+1	 (
+
+174625*
+1" (,

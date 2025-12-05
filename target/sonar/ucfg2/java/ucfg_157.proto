@@ -1,0 +1,29 @@
+
+Emetaheuristics.generators.Particle#getVelocity()Ljava/util/ArrayList;i
+_C:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/Particle.java# #(%"1*²
+1$ $('
+}
+$ $('
+%0java.util.ArrayList"__id*P
+
+__unknown_file (4*2$
+"metaheuristics.generators.Particle"
+
+velocity<:
+$ $(
+%1java.util.ArrayList"java.util.ArrayListº
+·
+$	 $((
+%2"3java.util.ArrayList#<init>(Ljava/util/Collection;)V*7
+
+__unknown_file (
+
+%1java.util.ArrayList*7
+
+__unknown_file (
+
+%0java.util.ArrayList"'
+$ $()
+
+%1java.util.ArrayListB&$
+"metaheuristics.generators.ParticleH

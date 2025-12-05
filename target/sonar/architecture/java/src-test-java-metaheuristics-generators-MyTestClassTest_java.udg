@@ -1,0 +1,135 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764933879830*java2.B†
+A
+<src/test/java/metaheuristics/generators/MyTestClassTest.java2
+	
+type3
+	
+TEST4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+J
+Ealerguezrojas_lab-dht-bicam-rodriguez-rojas:metaheuristics.generators9
+/
+)metaheuristics.generators.MyTestClassTest11
+
+class12
+
+access13
+
+public14
+
+simple-name15
+
+MyTestClassTest16
+:
+4metaheuristics.generators.MyTestClassTest#testFoo()V18
+
+method19
+
+testFoo20
+ 
+org.junit.jupiter.api.Test22
+
+unknown23
+
+annotated by24
+
+
+uses25
+&
+ org.junit.jupiter.api.Assertions27
+
+
+references28
+8
+2org.junit.jupiter.api.Assertions#assertEquals(II)V30
+
+calls31
++
+%metaheuristics.generators.MyTestClass33
+2
+,metaheuristics.generators.MyTestClass#foo()I35J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6jè
+>
+108
+101112 *
+1 (:7B
+
+
+13
+14
+
+
+15
+16
+
+21
+212223
+B
+17<
+171819 *
+1 (210:7B
+
+
+13
+14
+
+
+15
+20
+
+29
+293023
+
+34
+343523
+
+26
+262723
+
+32
+323323r½
+
+172124*
+1 (
+
+
+172125*
+1 (
+
+
+172628*
+1		 	(
+
+172931*
+1		 	(
+
+173228*
+1	 	(
+
+173431*
+1	+ 	(.
+
+173231*
+1	 	((

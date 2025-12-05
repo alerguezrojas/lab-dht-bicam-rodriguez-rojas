@@ -1,0 +1,60 @@
+
+—local_search.candidate_type.CandidateValue#newSearchCandidate(Llocal_search/candidate_type/CandidateType;)Llocal_search/candidate_type/SearchCandidate;q
+gC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/candidate_type/CandidateValue.java/ /(*"1*õ
+
+10 0($TR
+0 0("%
+%0factory_method.FactoryCandidate"factory_method.FactoryCandidateƒ
+€
+0 0($
+%1")factory_method.FactoryCandidate#<init>()V*C
+
+__unknown_file ('
+%
+%0factory_method.FactoryCandidate•
+’
+0 0($;,
+*local_search.candidate_type.CandidateValue"
+	ifFactory"__id*C
+
+__unknown_file ('
+%
+%0factory_method.FactoryCandidateš
+—
+1 1(*
+%2$factory_interface.IFFactoryCandidate"__id*Y
+
+__unknown_file (=*;,
+*local_search.candidate_type.CandidateValue"
+	ifFactory¿¼
+1 1(B1
+%3+local_search.candidate_type.SearchCandidate"”factory_interface.IFFactoryCandidate#createSearchCandidate(Llocal_search/candidate_type/CandidateType;)Llocal_search/candidate_type/SearchCandidate;*H
+
+__unknown_file (,
+*
+%2$factory_interface.IFFactoryCandidate*X
+
+__unknown_file (<
+:
+typecandidate)local_search.candidate_type.CandidateType2BcreateSearchCandidate(Llocal_search/candidate_type/CandidateType;)§
+¤
+1 1(BA,
+*local_search.candidate_type.CandidateValue"
+searchcandidate"__id*O
+
+__unknown_file (3
+1
+%3+local_search.candidate_type.SearchCandidate§
+¤
+2	 2(1
+%4+local_search.candidate_type.SearchCandidate"__id*_
+
+__unknown_file (C*A,
+*local_search.candidate_type.CandidateValue"
+searchcandidate"?
+2 2(3
+1
+%4+local_search.candidate_type.SearchCandidate:F
+/+ /(F:
+typecandidate)local_search.candidate_type.CandidateTypeB.,
+*local_search.candidate_type.CandidateValueH

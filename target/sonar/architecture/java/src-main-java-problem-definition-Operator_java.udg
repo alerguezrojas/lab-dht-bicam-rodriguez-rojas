@@ -1,0 +1,120 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764933877724*java2.BΩ
+3
+.src/main/java/problem/definition/Operator.java2
+	
+type3
+	
+MAIN4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+C
+>alerguezrojas_lab-dht-bicam-rodriguez-rojas:problem.definition9
+!
+problem.definition.Operator11
+
+class12
+
+access13
+
+public14
+
+simple-name15
+
+Operator16
+r
+lproblem.definition.Operator#generatedNewState(Lproblem/definition/State;Ljava/lang/Integer;)Ljava/util/List;18
+
+method19
+
+generatedNewState20
+
+problem.definition.State22
+
+unknown23
+
+	has param24
+
+
+uses25
+
+is type26
+Z
+Tproblem.definition.Operator#generateRandomState(Ljava/lang/Integer;)Ljava/util/List;28
+
+generateRandomState29J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6j‹
+B
+17<
+171819 *
+1 (	210:7B
+
+
+13
+14
+
+
+15
+20
+B
+27<
+272819 *
+1 (	210:7B
+
+
+13
+14
+
+
+15
+29
+>
+108
+101112 *
+1 (:7B
+
+
+13
+14
+
+
+15
+16
+
+21
+212223rá
+
+172124*
+11 (6
+
+172125*
+1 (
+
+172126*
+17 (C
+
+172125*
+11 (6
+
+272125*
+1 (

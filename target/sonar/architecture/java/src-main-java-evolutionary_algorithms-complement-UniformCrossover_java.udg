@@ -1,0 +1,236 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764933875999*java2.BÂ
+K
+Fsrc/main/java/evolutionary_algorithms/complement/UniformCrossover.java2
+	
+type3
+	
+MAIN4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+S
+Nalerguezrojas_lab-dht-bicam-rodriguez-rojas:evolutionary_algorithms.complement9
+9
+3evolutionary_algorithms.complement.UniformCrossover11
+
+class12
+
+access13
+
+public14
+
+simple-name15
+
+UniformCrossover16
+2
+,evolutionary_algorithms.complement.Crossover18
+
+unknown19
+
+extends20
+
+
+uses21
+F
+@evolutionary_algorithms.complement.UniformCrossover.secureRandom23
+
+field24
+
+private25
+
+secureRandom26
+F
+@evolutionary_algorithms.complement.UniformCrossover#mascara(I)[I28
+
+method29
+
+mascara30
+
+
+references31
+ï
+éevolutionary_algorithms.complement.UniformCrossover#crossover(Lproblem/definition/State;Lproblem/definition/State;D)Lproblem/definition/State;33
+
+	crossover34
+
+problem.definition.State36
+
+returns37
+
+	has param38
+
+is type39
+:
+4problem.definition.State#getCopy()Ljava/lang/Object;41
+
+calls42
+=
+7problem.definition.State#getCode()Ljava/util/ArrayList;44J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6j‹
+B
+27<
+272829 *
+1 (210:7B
+
+
+13
+14
+
+
+15
+30
+B
+32<
+323329 *
+1 (210:7B
+
+
+13
+14
+
+
+15
+34
+
+43
+434419
+
+40
+404119
+>
+108
+101112 *
+1 (:7B
+
+
+13
+14
+
+
+15
+16
+B
+22<
+222324 *
+1	 	(	210:7B
+
+
+13
+25
+
+
+15
+26
+
+17
+171819
+
+35
+353619rè
+
+101720*
+1' (0
+
+101721*
+1' (0
+
+272231*
+1 (
+
+272231*
+1 (
+
+323537*
+1	 (
+
+323538*
+1 (
+
+323538*
+1( (-
+
+323521*
+1	 (
+
+323539*
+1 (&
+
+323521*
+1 (
+
+323539*
+1. (5
+
+323521*
+1( (-
+
+323539*
+1	 (
+
+323521*
+1 (
+
+323521*
+1 (
+
+323531*
+1 ( 
+
+324042*
+1! ((
+
+321031*
+1 (
+
+322742*
+1 (
+
+323531*
+1 ("
+
+324342*
+1# (*
+
+323531*
+1 (
+
+324342*
+1 (
+
+323531*
+1 (
+
+324342*
+1 (
+
+323531*
+1   (
+
+324342*
+1   ( 
+
+323531*
+1! !(
+
+324342*
+1! !(
