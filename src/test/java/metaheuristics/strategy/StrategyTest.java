@@ -21,8 +21,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.MockedStatic;
 
-import factory_interface.IFFactoryGenerator;
+import metaheuristics.generators.MultiGenerator;
+import org.mockito.MockedStatic;
+import factory_method.FactoryGenerator;
 import factory_method.FactoryLoader;
+import org.mockito.MockedConstruction;
 import local_search.candidate_type.SearchCandidate;
 import local_search.complement.StopExecute;
 import local_search.complement.UpdateParameter;
@@ -105,7 +108,7 @@ class StrategyTest {
         when(problemMock.getTypeProblem()).thenReturn(Problem.ProblemType.Minimizar);
         when(problemMock.getState()).thenReturn(stateMock);
         
-        // Setup Operator to return a list of states for RandomSearch
+        // Setup Operator
         List<State> randomStates = new ArrayList<>();
         randomStates.add(stateMock);
         when(operatorMock.generateRandomState(anyInt())).thenReturn(randomStates);
@@ -121,43 +124,136 @@ class StrategyTest {
         when(generatorMock.getReferenceList()).thenReturn(new ArrayList<>());
         when(generatorMock.getType()).thenReturn(GeneratorType.GeneticAlgorithm);
         
+        // Setup State
+        // ArrayList<Double> evaluation = new ArrayList<>(); // Already declared above? No, I see it in previous read_file.
+        // Let's check previous read_file.
+        // Yes, it was there.
+        
+        // I will just remove the duplicate lines.
+        
+        when(stateMock.getCopy()).thenReturn(stateMock);
+        when(stateMock.clone()).thenReturn(stateMock);
+        when(stateMock.Comparator(any(State.class))).thenReturn(false);
+
         // Inject dependencies via reflection
         setField(s, "problem", problemMock);
         setField(s, "stopexecute", stopExecuteMock);
         setField(s, "updateparameter", updateParameterMock);
         
-        // Initialize mapGenerators to avoid NPE in legacy code if mock fails
+        // Initialize mapGenerators
         s.mapGenerators = new TreeMap<>();
 
-        // Setup StopExecute to run once then stop
+        // Setup StopExecute
         when(stopExecuteMock.stopIterations(anyInt(), anyInt())).thenReturn(false).thenReturn(true);
         
-        // Execute
-        s.calculateTime = false;
-        s.saveListStates = true;
-        s.saveListBestStates = true;
-        s.saveFreneParetoMonoObjetivo = true;
-        
-        // Mock FactoryLoader
-        SearchCandidate searchCandidateMock = mock(SearchCandidate.class);
-        when(searchCandidateMock.stateSearch(anyList())).thenReturn(stateMock);
-        
-        try (MockedStatic<FactoryLoader> factoryLoaderMockedStatic = mockStatic(FactoryLoader.class)) {
-             factoryLoaderMockedStatic.when(() -> FactoryLoader.getInstance(anyString())).thenAnswer(invocation -> {
-                 String className = invocation.getArgument(0);
-                 if (className.startsWith("local_search.candidate_type")) {
-                     return searchCandidateMock;
-                 }
-                 return generatorMock;
-             });
-
-             s.executeStrategy(10, 5, 1, GeneratorType.GeneticAlgorithm);
+        // Mock FactoryGenerator construction
+        try (MockedConstruction<FactoryGenerator> mockedFactory = org.mockito.Mockito.mockConstruction(FactoryGenerator.class,
+                (mock, context) -> {
+                    when(mock.createGenerator(any())).thenReturn(generatorMock);
+                })) {
+            
+            // Execute
+            s.calculateTime = false;
+            s.saveListStates = true;
+            s.saveListBestStates = true;
+            s.saveFreneParetoMonoObjetivo = true;
+            
+            s.executeStrategy(10, 5, 1, GeneratorType.GeneticAlgorithm);
+            
+            // Verify
+            verify(stopExecuteMock, atLeastOnce()).stopIterations(anyInt(), anyInt());
+            verify(generatorMock, atLeastOnce()).setInitialReference(any());
+            verify(generatorMock, atLeastOnce()).generate(anyInt());
         }
+    }
+
+    @Test
+    void testExecuteStrategyMultiGenerator() throws Exception {
+        Strategy s = Strategy.getStrategy();
         
-        // Verify
-        verify(stopExecuteMock, atLeastOnce()).stopIterations(anyInt(), anyInt());
-        verify(generatorMock, atLeastOnce()).setInitialReference(any());
-        verify(generatorMock, atLeastOnce()).generate(anyInt());
+        // Mock dependencies
+        Problem problemMock = mock(Problem.class);
+        Operator operatorMock = mock(Operator.class);
+        StopExecute stopExecuteMock = mock(StopExecute.class);
+        UpdateParameter updateParameterMock = mock(UpdateParameter.class);
+        State stateMock = mock(State.class);
+        MultiGenerator multiGeneratorMock = mock(MultiGenerator.class);
+        
+        // Setup Problem
+        when(problemMock.getOperator()).thenReturn(operatorMock);
+        when(problemMock.getTypeProblem()).thenReturn(Problem.ProblemType.Minimizar);
+        when(problemMock.getState()).thenReturn(stateMock);
+        
+        // Setup Operator
+        List<State> randomStates = new ArrayList<>();
+        randomStates.add(stateMock);
+        when(operatorMock.generateRandomState(anyInt())).thenReturn(randomStates);
+        
+        // Setup State
+        ArrayList<Double> evaluation = new ArrayList<>();
+        evaluation.add(10.0);
+        when(stateMock.getEvaluation()).thenReturn(evaluation);
+        when(stateMock.getCopy()).thenReturn(stateMock);
+        when(stateMock.clone()).thenReturn(stateMock);
+        when(stateMock.Comparator(any(State.class))).thenReturn(false);
+        
+        // Setup MultiGenerator
+        when(multiGeneratorMock.generate(anyInt())).thenReturn(stateMock);
+        when(multiGeneratorMock.getReferenceList()).thenReturn(new ArrayList<>());
+        when(multiGeneratorMock.getType()).thenReturn(GeneratorType.MultiGenerator);
+        when(multiGeneratorMock.clone()).thenReturn(multiGeneratorMock);
+        
+        // Setup SubGenerator for MultiGenerator list
+        Generator subGeneratorMock = mock(Generator.class);
+        when(subGeneratorMock.getType()).thenReturn(GeneratorType.GeneticAlgorithm);
+        when(subGeneratorMock.getListCountGender()).thenReturn(new int[10]);
+        when(subGeneratorMock.getListCountBetterGender()).thenReturn(new int[10]);
+
+        // Inject dependencies via reflection
+        setField(s, "problem", problemMock);
+        setField(s, "stopexecute", stopExecuteMock);
+        setField(s, "updateparameter", updateParameterMock);
+        
+        // Initialize mapGenerators
+        s.mapGenerators = new TreeMap<>();
+
+        // Setup StopExecute
+        // Run loop twice to trigger "change detected" logic if we set countIterationsChange small enough
+        when(stopExecuteMock.stopIterations(anyInt(), anyInt())).thenReturn(false, false, true);
+        
+        // Mock FactoryGenerator construction
+        try (MockedConstruction<FactoryGenerator> mockedFactory = org.mockito.Mockito.mockConstruction(FactoryGenerator.class,
+                (mock, context) -> {
+                    when(mock.createGenerator(any())).thenReturn(multiGeneratorMock);
+                });
+             MockedStatic<MultiGenerator> mockedStaticMultiGenerator = mockStatic(MultiGenerator.class)) {
+            
+            // Setup static mocks
+            mockedStaticMultiGenerator.when(MultiGenerator::initializeGenerators).thenAnswer(invocation -> null);
+            mockedStaticMultiGenerator.when(MultiGenerator::getListGenerators).thenReturn(new Generator[] { subGeneratorMock });
+            
+            // Set activeGenerator
+            MultiGenerator.activeGenerator = subGeneratorMock;
+            
+            // Set listStateReference
+            MultiGenerator.listStateReference = new ArrayList<>();
+            MultiGenerator.listStateReference.add(stateMock);
+
+            // Execute
+            s.calculateTime = true;
+            s.saveListStates = true;
+            s.saveListBestStates = true;
+            s.saveFreneParetoMonoObjetivo = false;
+            
+            // countIterationsChange = 1 to trigger change logic immediately
+            s.executeStrategy(10, 1, 1, GeneratorType.MultiGenerator);
+            
+            // Verify
+            verify(stopExecuteMock, atLeastOnce()).stopIterations(anyInt(), anyInt());
+            verify(multiGeneratorMock, atLeastOnce()).setInitialReference(any());
+            verify(multiGeneratorMock, atLeastOnce()).generate(anyInt());
+            mockedStaticMultiGenerator.verify(MultiGenerator::initializeGenerators);
+        }
     }
 
     private void setField(Object target, String fieldName, Object value) throws Exception {

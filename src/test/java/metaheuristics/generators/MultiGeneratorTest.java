@@ -17,6 +17,10 @@ import org.mockito.Mock;
 import org.mockito.MockedStatic;
 import org.mockito.MockitoAnnotations;
 
+import metaheuristics.generators.HillClimbing;
+import metaheuristics.generators.EvolutionStrategies;
+import metaheuristics.generators.LimitThreshold;
+import metaheuristics.generators.GeneticAlgorithm;
 import metaheuristics.strategy.Strategy;
 import problem.definition.Problem;
 import problem.definition.State;
@@ -124,6 +128,62 @@ public class MultiGeneratorTest {
         assertTrue(g1Called || g2Called);
         assertNotNull(MultiGenerator.activeGenerator);
     }
+
+    @Test
+    void testInitializeListGenerator() throws Exception {
+        MultiGenerator.initializeListGenerator();
+        Generator[] generators = MultiGenerator.getListGenerators();
+        assertNotNull(generators);
+        assertEquals(4, generators.length);
+        assertTrue(generators[0] instanceof HillClimbing);
+        assertTrue(generators[1] instanceof EvolutionStrategies);
+        assertTrue(generators[2] instanceof LimitThreshold);
+        assertTrue(generators[3] instanceof GeneticAlgorithm);
+    }
+    
+    @Test
+    void testUpdateWeightSearchStateTrue() throws Exception {
+        Generator activeGen = generatorMock1;
+        when(activeGen.getType()).thenReturn(GeneratorType.GeneticAlgorithm);
+        
+        MultiGenerator.setActiveGenerator(activeGen);
+        
+        when(strategyMock.getCountCurrent()).thenReturn(0);
+        when(strategyMock.getBestState()).thenReturn(stateMock);
+        when(stateMock.getEvaluation()).thenReturn(new ArrayList<>(List.of(10.0)));
+        
+        State candidate = mock(State.class);
+        when(candidate.getEvaluation()).thenReturn(new ArrayList<>(List.of(5.0))); // Better than 10.0
+        
+        mg.updateWeight(candidate);
+        
+        verify(activeGen).setWeight(anyFloat());
+        // Verify weight increased (rewarded)
+        // 50 * (1 - 0.1) + 10 = 45 + 10 = 55
+        verify(activeGen).setWeight(55.0f);
+    }
+
+    @Test
+    void testUpdateWeightSearchStateFalse() throws Exception {
+        Generator activeGen = generatorMock1;
+        when(activeGen.getType()).thenReturn(GeneratorType.GeneticAlgorithm);
+        
+        MultiGenerator.setActiveGenerator(activeGen);
+        
+        when(strategyMock.getCountCurrent()).thenReturn(0);
+        when(strategyMock.getBestState()).thenReturn(stateMock);
+        when(stateMock.getEvaluation()).thenReturn(new ArrayList<>(List.of(10.0)));
+        
+        State candidate = mock(State.class);
+        when(candidate.getEvaluation()).thenReturn(new ArrayList<>(List.of(15.0))); // Worse than 10.0
+        
+        mg.updateWeight(candidate);
+        
+        verify(activeGen).setWeight(anyFloat());
+        // Verify weight decreased (penalized)
+        // 50 * (1 - 0.1) = 45
+        verify(activeGen).setWeight(45.0f);
+    }
     
     @Test
     public void testUpdateReference() throws Exception {
@@ -145,28 +205,7 @@ public class MultiGeneratorTest {
         // Minimization: 5.0 < 10.0 -> Better
         when(problemMock.getTypeProblem()).thenReturn(Problem.ProblemType.Minimizar);
         
-        // We need to mock updateAwardSC and updateAwardImp or let them run.
-        // They modify weights.
-        // Let's just run updateReference and verify no exception.
-        // Note: updateReference calls tournament which might need more setup.
-        
-        // Mock tournament dependencies if any.
-        // tournament calls getListGenerators() and modifies weights.
-        
         mg.updateReference(candidate, 1);
-        
-        // Verify countBetterGender increased
-        // activeGenerator.countBetterGender is a field, not a method call on mock.
-        // But generatorMock1 is a mock, so accessing fields might be 0 or null.
-        // Wait, fields on mocks are usually 0/null.
-        // MultiGenerator accesses activeGenerator.countBetterGender directly.
-        // Since it's a mock, the field read will be 0. The increment will happen on the value read (0) -> 1.
-        // But writing back to a mock's field?
-        // Mockito mocks are proxies. Fields are not usually proxied in the same way.
-        // However, if the code does activeGenerator.countBetterGender++, it reads, increments, writes.
-        // This might not persist on the mock object as expected or might be fine for the test execution scope.
-        
-        // Let's verify getWeight was called during roulette or update.
     }
     
     @Test

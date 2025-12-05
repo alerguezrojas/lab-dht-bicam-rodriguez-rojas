@@ -115,11 +115,15 @@ public class GeneticAlgorithmTest {
         // We need to populate listState for GA to work (selection needs candidates)
         List<State> population = new ArrayList<>();
         State s1 = mock(State.class);
-        when(s1.getCode()).thenReturn(new ArrayList<>());
+        ArrayList<Object> code = new ArrayList<>();
+        code.add(1);
+        code.add(0);
+        when(s1.getCode()).thenReturn(code);
         ArrayList<Double> eval = new ArrayList<>();
         eval.add(10.0);
         when(s1.getEvaluation()).thenReturn(eval);
         when(s1.getTypeGenerator()).thenReturn(GeneratorType.RandomSearch);
+        when(s1.getCopy()).thenReturn(s1);
         population.add(s1);
         population.add(s1); // Add enough for selection
         
