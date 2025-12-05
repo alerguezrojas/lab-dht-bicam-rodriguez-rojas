@@ -1,0 +1,862 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764960551478*java2.B’
+D
+?src/test/java/local_search/MultiCaseSimulatedAnnealingTest.java2
+	
+type3
+	
+TEST4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+=
+8alerguezrojas_lab-dht-bicam-rodriguez-rojas:local_search9
+2
+,local_search.MultiCaseSimulatedAnnealingTest11
+
+class12
+
+access13
+
+public14
+
+simple-name15
+%
+MultiCaseSimulatedAnnealingTest16
+7
+1local_search.MultiCaseSimulatedAnnealingTest.mcsa18
+
+field19
+
+private20
+
+
+mcsa21
+.
+(local_search.MultiCaseSimulatedAnnealing23
+
+unknown24
+
+is type25
+
+
+uses26
+;
+5local_search.MultiCaseSimulatedAnnealingTest#setUp()V28
+
+method29
+
+setUp30
+&
+ org.junit.jupiter.api.BeforeEach32
+
+annotated by33
+
+
+references34
+
+calls35
+E
+?local_search.MultiCaseSimulatedAnnealingTest#testConstructor()V37
+
+testConstructor38
+ 
+org.junit.jupiter.api.Test40
+&
+ org.junit.jupiter.api.Assertions42
+I
+Corg.junit.jupiter.api.Assertions#assertNotNull(Ljava/lang/Object;)V44
+Z
+Torg.junit.jupiter.api.Assertions#assertEquals(Ljava/lang/Object;Ljava/lang/Object;)V46
+-
+'metaheuristics.generators.GeneratorType48
+I
+Cmetaheuristics.generators.GeneratorType.MultiCaseSimulatedAnnealing50
+
+returns51
+j
+dlocal_search.MultiCaseSimulatedAnnealing#getTypeGenerator()Lmetaheuristics/generators/GeneratorType;53
+D
+>local_search.MultiCaseSimulatedAnnealingTest#testSimpleTest()V55
+
+testSimpleTest56
+8
+2org.junit.jupiter.api.Assertions#assertEquals(II)V58
+<
+6local_search.MultiCaseSimulatedAnnealing#simpleTest()I60
+J
+Dlocal_search.MultiCaseSimulatedAnnealingTest#testSetTypeGenerator()V62
+
+testSetTypeGenerator63
+k
+elocal_search.MultiCaseSimulatedAnnealing#setTypeGenerator(Lmetaheuristics/generators/GeneratorType;)V65
+>
+8metaheuristics.generators.GeneratorType.GeneticAlgorithm67
+M
+Glocal_search.MultiCaseSimulatedAnnealingTest#testSetInitialReference()V69
+
+testSetInitialReference70
+
+problem.definition.State72
+
+org.mockito.Mockito74
+C
+=org.mockito.Mockito#mock(Ljava/lang/Class;)Ljava/lang/Object;76
+_
+Ylocal_search.MultiCaseSimulatedAnnealing#setInitialReference(Lproblem/definition/State;)V78
+W
+Qlocal_search.MultiCaseSimulatedAnnealing#getReference()Lproblem/definition/State;80
+E
+?local_search.MultiCaseSimulatedAnnealingTest#testSetStateRef()V82
+
+testSetStateRef83
+W
+Qlocal_search.MultiCaseSimulatedAnnealing#setStateRef(Lproblem/definition/State;)V85
+B
+<local_search.MultiCaseSimulatedAnnealingTest#testGenerate()V87
+
+testGenerate88
+&
+ metaheuristics.strategy.Strategy90
+V
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;92
+ 
+problem.definition.Problem94
+P
+Jmetaheuristics.strategy.Strategy#setProblem(Lproblem/definition/Problem;)V96
+!
+problem.definition.Operator98
++
+$org.mockito.stubbing.OngoingStubbing100
+p
+iorg.mockito.stubbing.OngoingStubbing#thenReturn(Ljava/lang/Object;)Lorg/mockito/stubbing/OngoingStubbing;102
+Y
+Rorg.mockito.Mockito#when(Ljava/lang/Object;)Lorg/mockito/stubbing/OngoingStubbing;104
+L
+Eproblem.definition.Problem#getOperator()Lproblem/definition/Operator;106
+s
+lproblem.definition.Operator#generatedNewState(Lproblem/definition/State;Ljava/lang/Integer;)Ljava/util/List;108
+g
+`local_search.MultiCaseSimulatedAnnealing#generate(Ljava/lang/Integer;)Lproblem/definition/State;110J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6jÈ	
+
+31
+313224
+
+109
+10911024
+B
+68<
+686929 *
+1. .(210:7B
+
+
+13
+14
+
+
+15
+70
+B
+36<
+363729 *
+1 (210:7B
+
+
+13
+14
+
+
+15
+38
+
+43
+434424
+
+91
+919224
+
+75
+757624
+
+49
+495024
+B
+27<
+272829 *
+1 (210:7B
+
+
+13
+14
+
+
+15
+30
+
+57
+575824
+
+77
+777824
+B
+17<
+171819 *
+1 (210:7B
+
+
+13
+20
+
+
+15
+21
+B
+81<
+818229 *
+15 5(210:7B
+
+
+13
+14
+
+
+15
+83
+
+59
+596024
+
+99
+9910024
+
+22
+222324
+
+89
+899024
+
+93
+939424
+
+47
+474824
+B
+54<
+545529 *
+1# #(210:7B
+
+
+13
+14
+
+
+15
+56
+
+101
+10110224
+
+52
+525324
+
+71
+717224
+
+39
+394024
+
+64
+646524
+
+73
+737424
+>
+108
+101112 *
+1 (-:7B
+
+
+13
+14
+
+
+15
+16
+
+45
+454624
+B
+61<
+616229 *
+1( ((210:7B
+
+
+13
+14
+
+
+15
+63
+
+105
+10510624
+
+84
+848524
+
+79
+798024
+
+41
+414224
+
+107
+10710824
+B
+86<
+868729 *
+1< <(210:7B
+
+
+13
+14
+
+
+15
+88
+
+103
+10310424
+
+66
+666724
+
+95
+959624
+
+97
+979824rÓ"
+
+172225*
+1 ((
+
+172226*
+1 ((
+
+172226*
+1) (-
+
+273133*
+1 (
+
+273126*
+1 (
+
+272226*
+1	 (
+
+271734*
+1	 (
+
+272235*
+1 (/
+
+363933*
+1 (
+
+
+363926*
+1 (
+
+
+364134*
+1	 (
+
+364335*
+1	 (
+
+362226*
+1 (
+
+361734*
+1 (
+
+364134*
+1 	  (
+
+364535*
+1 	  (
+
+364726*
+1   (#
+
+364726*
+1 $  (?
+
+364934*
+1 $  (?
+
+364751*
+1 A  (E
+
+362234*
+1 A  (E
+
+365235*
+1 F  (V
+
+361734*
+1 A  (E
+
+362226*
+1 A  (E
+
+361734*
+1 A  (E
+
+543933*
+1# #(
+
+
+543926*
+1# #(
+
+
+544134*
+1%	 %(
+
+545735*
+1%	 %(
+
+542234*
+1% %(
+
+545935*
+1% %((
+
+541734*
+1% %(
+
+542226*
+1% %(
+
+541734*
+1% %(
+
+613933*
+1( ((
+
+
+613926*
+1( ((
+
+
+612234*
+1*	 *(
+
+616435*
+1* *(
+
+611734*
+1*	 *(
+
+612226*
+1*	 *(
+
+611734*
+1*	 *(
+
+614726*
+1* *(,
+
+614726*
+1*- *(=
+
+616634*
+1*- *(=
+
+614134*
+1+	 +(
+
+614535*
+1+	 +(
+
+614726*
+1+ +(#
+
+614726*
+1+$ +(4
+
+616634*
+1+$ +(4
+
+614751*
+1+6 +(:
+
+612234*
+1+6 +(:
+
+615235*
+1+; +(K
+
+611734*
+1+6 +(:
+
+612226*
+1+6 +(:
+
+611734*
+1+6 +(:
+
+683933*
+1. .(
+
+
+683926*
+1. .(
+
+
+687125*
+10 0(
+
+687126*
+10	 0(
+
+687151*
+10 0(
+
+687334*
+10 0(
+
+687535*
+10 0(
+
+687126*
+10 0(!
+
+682234*
+11	 1(
+
+687735*
+11 1(!
+
+681734*
+11	 1(
+
+682226*
+11	 1(
+
+681734*
+11	 1(
+
+684134*
+12	 2(
+
+684535*
+12	 2(
+
+687151*
+12 2(!
+
+682234*
+12 2(!
+
+687935*
+12" 2(.
+
+681734*
+12 2(!
+
+682226*
+12 2(!
+
+681734*
+12 2(!
+
+813933*
+15 5(
+
+
+813926*
+15 5(
+
+
+817125*
+17 7(
+
+817126*
+17	 7(
+
+817151*
+17 7(
+
+817334*
+17 7(
+
+817535*
+17 7(
+
+817126*
+17 7(!
+
+812234*
+18	 8(
+
+818435*
+18 8(
+
+811734*
+18	 8(
+
+812226*
+18	 8(
+
+811734*
+18	 8(
+
+814134*
+19	 9(
+
+814535*
+19	 9(
+
+817151*
+19 9(!
+
+812234*
+19 9(!
+
+817935*
+19" 9(.
+
+811734*
+19 9(!
+
+812226*
+19 9(!
+
+811734*
+19 9(!
+
+863933*
+1< <(
+
+
+863926*
+1< <(
+
+
+868925*
+1> >(
+
+868926*
+1>	 >(
+
+868951*
+1> >(%
+
+868934*
+1> >(%
+
+869135*
+1>& >(1
+
+868926*
+1> >(%
+
+869325*
+1? ?(
+
+869326*
+1?	 ?(
+
+869351*
+1? ?(
+
+867334*
+1? ?(
+
+867535*
+1? ?(
+
+869326*
+1?  ?('
+
+868934*
+1@	 @(
+
+869535*
+1@ @(
+
+869725*
+1B B(
+
+869726*
+1B	 B(
+
+869751*
+1B B(!
+
+867334*
+1B B(!
+
+867535*
+1B B(!
+
+869726*
+1B" B(*
+
+869951*
+1C	 C(
+
+869934*
+1C	 C(
+
+8610135*
+1C% C(/
+
+869951*
+1C	 C(
+
+867334*
+1C	 C(
+
+8610335*
+1C	 C(
+
+869751*
+1C C(
+
+869334*
+1C C(
+
+8610535*
+1C C(!
+
+867125*
+1E E(
+
+867126*
+1E	 E(
+
+867151*
+1E E(
+
+867334*
+1E E(
+
+867535*
+1E E(
+
+867126*
+1E E($
+
+862234*
+1F	 F(
+
+867735*
+1F F(!
+
+861734*
+1F	 F(
+
+862226*
+1F	 F(
+
+861734*
+1F	 F(
+
+867126*
+1H H(
+
+867125*
+1I I(
+
+867126*
+1I	 I(
+
+867151*
+1I I(
+
+867334*
+1I I(
+
+867535*
+1I I(
+
+867126*
+1I I($
+
+869951*
+1L	 L(
+
+869934*
+1L	 L(
+
+8610135*
+1L7 L(A
+
+869951*
+1L	 L(
+
+867334*
+1L	 L(
+
+8610335*
+1L	 L(
+
+869734*
+1L L(
+
+8610735*
+1L L((
+
+867125*
+1N N(
+
+867126*
+1N	 N(
+
+867151*
+1N N(
+
+862234*
+1N N(
+
+8610935*
+1N N(%
+
+861734*
+1N N(
+
+862226*
+1N N(
+
+861734*
+1N N(
+
+864134*
+1O	 O(
+
+864335*
+1O	 O(

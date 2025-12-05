@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764933880766*java2.BÎ=
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1764960551988*java2.Bô=
 Q
 Lsrc/test/java/metaheuristics/generators/MultiCaseSimulatedAnnealingTest.java2
 	
@@ -36,8 +36,8 @@ D
 
 
 mcsa21
-9
-3local_search.complement.MultiCaseSimulatedAnnealing23
+;
+5metaheuristics.generators.MultiCaseSimulatedAnnealing23
 
 unknown24
 
@@ -144,14 +144,14 @@ Sproblem.definition.Problem#getTypeProblem()Lproblem/definition/Problem$ProblemT
 .metaheuristics.strategy.Strategy.mapGenerators108
 I
 Bmetaheuristics.strategy.Strategy#getListKey()Ljava/util/ArrayList;110
-@
-9local_search.complement.MultiCaseSimulatedAnnealing.alpha112
+B
+;metaheuristics.generators.MultiCaseSimulatedAnnealing.alpha112
+E
+>metaheuristics.generators.MultiCaseSimulatedAnnealing.tinitial114
 C
-<local_search.complement.MultiCaseSimulatedAnnealing.tinitial114
-A
-:local_search.complement.MultiCaseSimulatedAnnealing.tfinal116
-K
-Dlocal_search.complement.MultiCaseSimulatedAnnealing.countIterationsT118
+<metaheuristics.generators.MultiCaseSimulatedAnnealing.tfinal116
+M
+Fmetaheuristics.generators.MultiCaseSimulatedAnnealing.countIterationsT118
 L
 Emetaheuristics.generators.MultiCaseSimulatedAnnealingTest#tearDown()V120
 
@@ -172,8 +172,8 @@ Imetaheuristics.generators.MultiCaseSimulatedAnnealingTest#testGenerate()V130
 org.junit.jupiter.api.Test133
 D
 =org.mockito.Mockito#mock(Ljava/lang/Class;)Ljava/lang/Object;135
-k
-dlocal_search.complement.MultiCaseSimulatedAnnealing#setInitialReference(Lproblem/definition/State;)V137
+m
+fmetaheuristics.generators.MultiCaseSimulatedAnnealing#setInitialReference(Lproblem/definition/State;)V137
 s
 lproblem.definition.Operator#generatedNewState(Lproblem/definition/State;Ljava/lang/Integer;)Ljava/util/List;139
 #
@@ -192,8 +192,8 @@ Eorg.mockito.ArgumentMatchers#any(Ljava/lang/Class;)Ljava/lang/Object;143
 $local_search.complement.StrategyType153
 =
 6org.mockito.ArgumentMatchers#anyList()Ljava/util/List;155
-r
-klocal_search.complement.MultiCaseSimulatedAnnealing#generate(Ljava/lang/Integer;)Lproblem/definition/State;157
+t
+mmetaheuristics.generators.MultiCaseSimulatedAnnealing#generate(Ljava/lang/Integer;)Lproblem/definition/State;157
 '
  org.junit.jupiter.api.Assertions159
 [
@@ -224,10 +224,10 @@ A
 (local_search.acceptation_type.AcceptType184
 ’
 Šlocal_search.acceptation_type.AcceptableCandidate#acceptCandidate(Lproblem/definition/State;Lproblem/definition/State;)Ljava/lang/Boolean;186
-z
-slocal_search.complement.MultiCaseSimulatedAnnealing#updateReference(Lproblem/definition/State;Ljava/lang/Integer;)V188
-c
-\local_search.complement.MultiCaseSimulatedAnnealing#getReference()Lproblem/definition/State;190
+|
+umetaheuristics.generators.MultiCaseSimulatedAnnealing#updateReference(Lproblem/definition/State;Ljava/lang/Integer;)V188
+e
+^metaheuristics.generators.MultiCaseSimulatedAnnealing#getReference()Lproblem/definition/State;190
 :
 3org.junit.jupiter.api.Assertions#assertEquals(DDD)V192
 9
@@ -240,38 +240,38 @@ Hmetaheuristics.generators.MultiCaseSimulatedAnnealingTest#testGetType()V196
 'metaheuristics.generators.GeneratorType199
 J
 Cmetaheuristics.generators.GeneratorType.MultiCaseSimulatedAnnealing201
-m
-flocal_search.complement.MultiCaseSimulatedAnnealing#getType()Lmetaheuristics/generators/GeneratorType;203
+o
+hmetaheuristics.generators.MultiCaseSimulatedAnnealing#getType()Lmetaheuristics/generators/GeneratorType;203
 T
 Mmetaheuristics.generators.MultiCaseSimulatedAnnealingTest#testGetSetSimple()V205
 
 testGetSetSimple206
-H
-Alocal_search.complement.MultiCaseSimulatedAnnealing#setWeight(F)V208
+J
+Cmetaheuristics.generators.MultiCaseSimulatedAnnealing#setWeight(F)V208
 9
 2org.junit.jupiter.api.Assertions#assertEquals(FF)V210
-G
-@local_search.complement.MultiCaseSimulatedAnnealing#getWeight()F212
-w
-plocal_search.complement.MultiCaseSimulatedAnnealing#setTypeGenerator(Lmetaheuristics/generators/GeneratorType;)V214
-v
-olocal_search.complement.MultiCaseSimulatedAnnealing#getTypeGenerator()Lmetaheuristics/generators/GeneratorType;216
+I
+Bmetaheuristics.generators.MultiCaseSimulatedAnnealing#getWeight()F212
+y
+rmetaheuristics.generators.MultiCaseSimulatedAnnealing#setTypeGenerator(Lmetaheuristics/generators/GeneratorType;)V214
+x
+qmetaheuristics.generators.MultiCaseSimulatedAnnealing#getTypeGenerator()Lmetaheuristics/generators/GeneratorType;216
 J
 Corg.junit.jupiter.api.Assertions#assertNotNull(Ljava/lang/Object;)V218
-W
-Plocal_search.complement.MultiCaseSimulatedAnnealing#getListCountBetterGender()[I220
-Q
-Jlocal_search.complement.MultiCaseSimulatedAnnealing#getListCountGender()[I222
-G
-@local_search.complement.MultiCaseSimulatedAnnealing#getTrace()[F224
+Y
+Rmetaheuristics.generators.MultiCaseSimulatedAnnealing#getListCountBetterGender()[I220
+S
+Lmetaheuristics.generators.MultiCaseSimulatedAnnealing#getListCountGender()[I222
+I
+Bmetaheuristics.generators.MultiCaseSimulatedAnnealing#getTrace()[F224
 G
 @org.junit.jupiter.api.Assertions#assertNull(Ljava/lang/Object;)V226
-W
-Plocal_search.complement.MultiCaseSimulatedAnnealing#getSonList()Ljava/util/List;228
+Y
+Rmetaheuristics.generators.MultiCaseSimulatedAnnealing#getSonList()Ljava/util/List;228
 7
 0org.junit.jupiter.api.Assertions#assertFalse(Z)V230
-f
-_local_search.complement.MultiCaseSimulatedAnnealing#awardUpdateREF(Lproblem/definition/State;)Z232J#
+h
+ametaheuristics.generators.MultiCaseSimulatedAnnealing#awardUpdateREF(Lproblem/definition/State;)Z232J#
 !
 1
 12
@@ -291,9 +291,6 @@ _local_search.complement.MultiCaseSimulatedAnnealing#awardUpdateREF(Lproblem/def
 
 72
 727324
-
-22
-222324
 B
 50<
 505119 *
@@ -321,11 +318,14 @@ H
 15
 197
 
+227
+22722824
+
 148
 14814924
 
-202
-20220324
+213
+21321424
 
 217
 21721824
@@ -344,6 +344,12 @@ H
 
 85
 858624
+
+215
+21521624
+
+22
+222324
 B
 60<
 606119 *
@@ -359,12 +365,21 @@ B
 
 179
 17918024
+
+187
+18718824
+
+207
+20720824
 
 75
 757624
 
 200
 20020124
+
+223
+22322424
 
 162
 16216324
@@ -395,14 +410,11 @@ B
 15
 21
 
-189
-18919024
+211
+21121224
 
 173
 17317424
-
-207
-20720824
 >
 108
 101112 *
@@ -428,14 +440,11 @@ B
 15
 67
 
-136
-13613724
-
 229
 22923024
 
-211
-21121224
+111
+11111224
 B
 40<
 404119 *
@@ -474,6 +483,9 @@ C
 
 101
 10110224
+
+113
+11311424
 H
 204A
 20420570 *
@@ -495,26 +507,23 @@ H
 154
 15415524
 
-231
-23123224
+221
+22122224
 
 99
 9910024
 
 191
 19119224
+
+202
+20220324
 
 77
 777824
 
-187
-18718824
-
-221
-22122224
-
-227
-22722824
+156
+15615724
 
 95
 959624
@@ -524,6 +533,9 @@ H
 
 109
 10911024
+
+219
+21922024
 
 32
 323324
@@ -551,9 +563,6 @@ B
 
 177
 17717824
-
-213
-21321424
 F
 168?
 16816970 *
@@ -565,6 +574,9 @@ F
 
 15
 170
+
+231
+23123224
 
 183
 18318424
@@ -587,8 +599,8 @@ B
 15
 57
 
-219
-21922024
+136
+13613724
 
 144
 14414524
@@ -627,18 +639,12 @@ B
 
 105
 10510624
-
-215
-21521624
 
 87
 878824
 
 164
 16416524
-
-156
-15615724
 
 175
 17517624
@@ -651,6 +657,9 @@ B
 
 38
 383924
+
+189
+18919024
 B
 68<
 686970 *
@@ -663,9 +672,6 @@ B
 
 15
 71
-
-113
-11311424
 
 48
 484924
@@ -679,9 +685,6 @@ B
 122
 12212324
 
-115
-11511624
-
 146
 14614724
 
@@ -691,11 +694,14 @@ B
 209
 20921024
 
+117
+11711824
+
+115
+11511624
+
 124
 12412524
-
-223
-22322424
 B
 45<
 454619 *
@@ -714,12 +720,6 @@ B
 
 158
 15815924
-
-111
-11111224
-
-117
-11711824
 
 43
 434424rÂf

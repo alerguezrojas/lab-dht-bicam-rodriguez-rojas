@@ -1,6 +1,6 @@
 package metaheuristics.generators;
 
-import local_search.complement.MultiCaseSimulatedAnnealing;
+
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyInt;

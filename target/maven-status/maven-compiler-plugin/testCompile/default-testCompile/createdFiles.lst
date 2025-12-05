@@ -43,6 +43,7 @@ factory_method\FactoryMutationTest.class
 local_search\acceptation_type\AcceptNotBadTTest.class
 metaheuristics\generators\LimitThresholdTest.class
 local_search\complement\StrategyTypeTest.class
+local_search\MultiCaseSimulatedAnnealingTest.class
 evolutionary_algorithms\complement\UnivariateTest.class
 local_search\candidate_type\NotDominatedCandidateTest.class
 metaheuristics\generators\MultiobjectiveHillClimbingDistanceTest.class
@@ -69,6 +70,7 @@ metaheuristics\generators\TestDummyTest.class
 problem\definition\StateTest.class
 evolutionary_algorithms\complement\RangeTest.class
 metaheuristics\generators\ParticleTest.class
+problem\extension\FactoresPonderadosTest.class
 metaheuristics\generators\GeneticAlgorithmTest.class
 metaheuristics\generators\HillClimbingTest.class
 evolutionary_algorithms\complement\RouletteSelectionTest.class
