@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ProbabilisticSampling.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">biciam</a> &gt; <a href="index.source.html" class="el_package">evolutionary_algorithms.complement</a> &gt; <span class="el_source">ProbabilisticSampling.java</span></div><h1>ProbabilisticSampling.java</h1><pre class="source lang-java linenums">package evolutionary_algorithms.complement;
+
+
+import java.util.ArrayList;
+import java.util.List;
+import java.security.SecureRandom;
+
+import metaheuristics.strategy.Strategy;
+import metaheuristics.generators.GeneratorType;
+
+import problem.definition.State;
+
+
+<span class="fc" id="L14">public class ProbabilisticSampling extends Sampling {</span>
+
+<span class="fc" id="L16">	private static final SecureRandom secureRandom = new SecureRandom();</span>
+
+	@Override
+	public List&lt;State&gt; sampling(List&lt;State&gt; fathers, int countInd) {
+		// TODO Auto-generated method stub
+<span class="fc" id="L21">		int cantV = fathers.get(0).getCode().size();</span>
+<span class="fc" id="L22">		List&lt;State&gt; staList = listState(countInd);</span>
+<span class="fc bfc" id="L23" title="All 2 branches covered.">		for (int i = 0; i &lt; cantV; i++) {</span>
+<span class="fc" id="L24">			Object[] values = new Object[fathers.size()]; // arreglo de valores de una variable</span>
+<span class="fc" id="L25">			Object[] arrtemp = new Object[Strategy.getStrategy().getProblem().getPossibleValue()];</span>
+			//llenar el arreglo con todos los valores posibles
+<span class="fc bfc" id="L27" title="All 2 branches covered.">			for (int j = 0; j &lt; arrtemp.length; j++) {</span>
+<span class="fc" id="L28">				arrtemp[j] = j;</span>
+			}
+<span class="fc bfc" id="L30" title="All 2 branches covered.">			for (int j = 0; j &lt; values.length; j++) {</span>
+<span class="fc" id="L31">				values[j] = fathers.get(j).getCode().get(i);</span>
+			}
+<span class="fc" id="L33">			int k = 0;</span>
+<span class="fc" id="L34">			int sum = 0; // suma acumulativa por cada valor posible</span>
+<span class="fc" id="L35">			int arrOcc[] = new int[arrtemp.length]; // arreglo paralelo para contar la cantidad de ocurrencias de un valor posible</span>
+			//llenar el arreglo con la cantidad de ocurrencias de cada valor posible, para cada variable
+			//recorrer el arreglo de valores de una variable
+<span class="fc bfc" id="L38" title="All 2 branches covered.">			while (k &lt; arrtemp.length) {</span>
+<span class="fc" id="L39">				int count = 0;</span>
+<span class="fc bfc" id="L40" title="All 2 branches covered.">				for (int j = 0; j &lt; values.length; j++) {</span>
+<span class="fc bfc" id="L41" title="All 4 branches covered.">					if((Integer)values[j] != -1 &amp;&amp; values[j] == arrtemp[k]){ //</span>
+<span class="fc" id="L42">						count++;</span>
+<span class="fc" id="L43">						values[j] = -1;</span>
+					}
+				}
+<span class="fc" id="L46">				arrOcc[k] = count;</span>
+<span class="fc" id="L47">				sum = sum + count;</span>
+<span class="fc" id="L48">				k++;</span>
+<span class="fc" id="L49">			}</span>
+<span class="fc bfc" id="L50" title="All 2 branches covered.">			for (int l = 0; l &lt; countInd; l++) {</span>
+<span class="fc" id="L51">				boolean find = false;</span>
+<span class="fc" id="L52">				int p = 0;</span>
+<span class="fc" id="L53">				int random = secureRandom.nextInt(sum) + 1;</span>
+<span class="pc bpc" id="L54" title="1 of 4 branches missed.">				while (p &lt; arrOcc.length &amp;&amp; find == false) {</span>
+<span class="fc" id="L55">					random = random - arrOcc[p];</span>
+<span class="fc bfc" id="L56" title="All 2 branches covered.">					if(random &lt;= 0){</span>
+<span class="fc" id="L57">						staList.get(l).getCode().add(arrtemp[p]);</span>
+<span class="fc" id="L58">						find = true;</span>
+					}
+<span class="fc" id="L60">					else p++;</span>
+				}
+<span class="pc bpc" id="L62" title="1 of 2 branches missed.">				if(find == false){</span>
+<span class="nc" id="L63">					int value = secureRandom.nextInt(Strategy.getStrategy().getProblem().getCodification().getVariableCount() * 10);</span>
+<span class="nc" id="L64">					staList.get(l).getCode().add(value);</span>
+				}
+				
+			}
+		}
+<span class="fc" id="L69">		return staList;</span>
+	}
+	
+	// inicializa la lista de individuos
+		public List&lt;State&gt; listState(int countInd) {
+<span class="fc" id="L74">			List&lt;State&gt; staList = new ArrayList&lt;State&gt;(countInd);</span>
+<span class="fc bfc" id="L75" title="All 2 branches covered.">			for (int i = 0; i &lt; countInd; i++) {</span>
+<span class="fc" id="L76">				State state = new State();</span>
+<span class="fc" id="L77">				state.setCode(new ArrayList&lt;Object&gt;());</span>
+<span class="fc" id="L78">				state.setNumber(Strategy.getStrategy().getCountCurrent());</span>
+<span class="fc" id="L79">				state.setTypeGenerator(GeneratorType.DistributionEstimationAlgorithm);</span>
+<span class="fc" id="L80">				staList.add(state);</span>
+			}
+<span class="fc" id="L82">			return staList;</span>
+		}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

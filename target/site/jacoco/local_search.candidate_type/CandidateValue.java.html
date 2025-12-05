@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CandidateValue.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">biciam</a> &gt; <a href="index.source.html" class="el_package">local_search.candidate_type</a> &gt; <span class="el_source">CandidateValue.java</span></div><h1>CandidateValue.java</h1><pre class="source lang-java linenums">/**
+ * @(#) CandidateValue.java
+ */
+
+package local_search.candidate_type;
+
+import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
+import java.util.List;
+
+import problem.definition.State;
+
+import local_search.complement.StrategyType;
+import local_search.complement.TabuSolutions;
+import metaheuristics.strategy.Strategy;
+
+//import ceis.grial.problem.Problem;
+import factory_interface.IFFactoryCandidate;
+import factory_method.FactoryCandidate;
+
+public class CandidateValue {
+
+	@SuppressWarnings(&quot;unused&quot;)
+	private StrategyType strategy;
+
+	private IFFactoryCandidate ifFactory;
+
+	@SuppressWarnings(&quot;unused&quot;)
+	private CandidateType typecand;
+
+	private TabuSolutions tabusolution;
+
+	private SearchCandidate searchcandidate;
+
+<span class="fc" id="L35">	public CandidateValue(){}</span>
+
+	public CandidateValue(StrategyType strategy, IFFactoryCandidate ifFactory, CandidateType typecand, 
+			TabuSolutions tabusolution, SearchCandidate searchcandidate) { //, Strategy executegenerator
+<span class="nc" id="L39">		super();</span>
+<span class="nc" id="L40">		this.strategy = strategy;</span>
+<span class="nc" id="L41">		this.ifFactory = ifFactory;</span>
+<span class="nc" id="L42">		this.typecand = typecand;</span>
+<span class="nc" id="L43">		this.tabusolution = tabusolution;</span>
+<span class="nc" id="L44">		this.searchcandidate = searchcandidate;</span>
+<span class="nc" id="L45">	}</span>
+
+	public SearchCandidate newSearchCandidate(CandidateType typecandidate) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
+<span class="fc" id="L48">		ifFactory = new FactoryCandidate();</span>
+<span class="fc" id="L49">		searchcandidate = ifFactory.createSearchCandidate(typecandidate);</span>
+<span class="fc" id="L50">		return searchcandidate;</span>
+	}
+
+	public State stateCandidate(State stateCurrent, CandidateType typeCandidate, StrategyType strategy, Integer operatornumber, List&lt;State&gt; neighborhood) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException{
+		//Problem problem = ExecuteGenerator.getExecuteGenerator().getProblem();
+		State stateCandidate;
+<span class="fc" id="L56">		List&lt;State&gt; auxList = new ArrayList&lt;State&gt;();</span>
+<span class="fc bfc" id="L57" title="All 2 branches covered.">		for (int i = 0; i &lt; neighborhood.size(); i++) {</span>
+<span class="fc" id="L58">			auxList.add(neighborhood.get(i));</span>
+		}
+<span class="fc" id="L60">		this.tabusolution = new TabuSolutions();</span>
+<span class="fc bfc" id="L61" title="All 2 branches covered.">		if (strategy.equals(StrategyType.TABU)) {</span>
+			try {
+<span class="fc" id="L63">				auxList = this.tabusolution.filterNeighborhood(auxList);</span>
+			}
+<span class="nc" id="L65">			catch (Exception e) {</span>
+<span class="nc" id="L66">				Strategy strategys = Strategy.getStrategy();</span>
+<span class="nc bnc" id="L67" title="All 2 branches missed.">				if(strategys.getProblem()!=null){</span>
+<span class="nc" id="L68">					neighborhood = strategys.getProblem().getOperator().generatedNewState(neighborhood.get(0), operatornumber);</span>
+				}
+<span class="nc" id="L70">				return stateCandidate(stateCurrent, typeCandidate, strategy, operatornumber, neighborhood);</span>
+<span class="fc" id="L71">			}</span>
+		}
+<span class="fc" id="L73">		SearchCandidate searchCand = newSearchCandidate(typeCandidate);</span>
+<span class="fc" id="L74">		stateCandidate = searchCand.stateSearch(auxList);</span>
+<span class="fc" id="L75">		return stateCandidate;</span>
+	}
+
+	public TabuSolutions getTabusolution() {
+<span class="nc" id="L79">		return tabusolution;</span>
+	}
+
+	public void setTabusolution(TabuSolutions tabusolution) {
+<span class="nc" id="L83">		this.tabusolution = tabusolution;</span>
+<span class="nc" id="L84">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

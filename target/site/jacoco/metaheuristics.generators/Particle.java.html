@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Particle.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">biciam</a> &gt; <a href="index.source.html" class="el_package">metaheuristics.generators</a> &gt; <span class="el_source">Particle.java</span></div><h1>Particle.java</h1><pre class="source lang-java linenums">package metaheuristics.generators;
+
+import java.lang.reflect.InvocationTargetException;
+import java.security.SecureRandom;
+import java.util.ArrayList;
+import java.util.List;
+
+import metaheuristics.strategy.Strategy;
+
+import problem.definition.Problem.ProblemType;
+import problem.definition.State;
+
+/**
+ * @class Particle
+ * @brief Representa una partÃ­cula en el algoritmo de OptimizaciÃ³n por Enjambre de PartÃ­culas (PSO).
+ * 
+ * Cada partÃ­cula mantiene su estado actual, su mejor estado histÃ³rico (pBest) y su velocidad actual.
+ * Extiende de la clase Generator para integrarse en el framework de metaheurÃ­sticas.
+ */
+public class Particle extends Generator {
+
+	/**
+	 * @brief Generador de nÃºmeros aleatorios seguro.
+	 */
+<span class="fc" id="L25">	private static final SecureRandom secureRandom = new SecureRandom();</span>
+	
+	/**
+	 * @brief Mejor estado alcanzado por esta partÃ­cula (pBest).
+	 */
+	private State statePBest;
+	
+	/**
+	 * @brief Estado actual de la partÃ­cula.
+	 */
+	private State stateActual;
+	
+	/**
+	 * @brief Vector de velocidad actual de la partÃ­cula.
+	 */
+	private ArrayList&lt;Object&gt; velocity;
+	
+	/**
+	 * @brief Constructor por defecto.
+	 * Inicializa el estado actual, pBest y velocidad vacÃ­os.
+	 */
+	public Particle() {
+<span class="fc" id="L47">		super();</span>
+<span class="fc" id="L48">		this.stateActual = new State();</span>
+<span class="fc" id="L49">		this.statePBest = new State();</span>
+<span class="fc" id="L50">		this.velocity = new ArrayList&lt;Object&gt;();</span>
+<span class="fc" id="L51">	}</span>
+	
+	/**
+	 * @brief Constructor parametrizado.
+	 * 
+	 * @param statePBest Mejor estado histÃ³rico inicial.
+	 * @param stateActual Estado actual inicial.
+	 * @param velocity Velocidad inicial.
+	 */
+	public Particle(State statePBest, State stateActual, ArrayList&lt;Object&gt; velocity) {
+<span class="fc" id="L61">		super();</span>
+<span class="fc" id="L62">		this.statePBest = new State(statePBest);</span>
+<span class="fc" id="L63">		this.stateActual = new State(stateActual);</span>
+<span class="fc" id="L64">		this.velocity = new ArrayList&lt;Object&gt;(velocity);</span>
+<span class="fc" id="L65">	}</span>
+
+	public ArrayList&lt;Object&gt; getVelocity() {
+<span class="fc" id="L68">		return new ArrayList&lt;Object&gt;(velocity);</span>
+	}
+
+	public void setVelocity(ArrayList&lt;Object&gt; velocity) {
+<span class="fc" id="L72">		this.velocity = new ArrayList&lt;Object&gt;(velocity);</span>
+<span class="fc" id="L73">	}</span>
+
+	public State getStatePBest() {
+<span class="fc" id="L76">		return new State(statePBest);</span>
+	}
+
+	public void setStatePBest(State statePBest) {
+<span class="fc" id="L80">		this.statePBest = new State(statePBest);</span>
+<span class="fc" id="L81">	}</span>
+
+	public State getStateActual() {
+<span class="fc" id="L84">		return new State(stateActual);</span>
+	}
+
+	public void setStateActual(State stateActual) {
+<span class="fc" id="L88">		this.stateActual = new State(stateActual);</span>
+<span class="fc" id="L89">	}</span>
+
+	/**
+	 * @brief Genera un nuevo estado para la partÃ­cula.
+	 * 
+	 * Actualiza la velocidad y la posiciÃ³n (cÃ³digo) de la partÃ­cula basÃ¡ndose en las ecuaciones de PSO.
+	 * 
+	 * @param operatornumber Identificador del operador (no utilizado en esta implementaciÃ³n especÃ­fica).
+	 * @return null (El estado se actualiza internamente en stateActual).
+	 * @throws IllegalArgumentException Si ocurre un error en la generaciÃ³n.
+	 * @throws SecurityException Si hay restricciones de seguridad.
+	 * @throws ClassNotFoundException Si no se encuentra una clase necesaria.
+	 * @throws InstantiationException Si falla la instanciaciÃ³n.
+	 * @throws IllegalAccessException Si hay acceso ilegal.
+	 * @throws InvocationTargetException Si falla la invocaciÃ³n de un mÃ©todo.
+	 * @throws NoSuchMethodException Si no se encuentra un mÃ©todo.
+	 */
+	@Override
+	public State generate(Integer operatornumber)
+			throws IllegalArgumentException, SecurityException,
+			ClassNotFoundException, InstantiationException,
+			IllegalAccessException, InvocationTargetException,
+			NoSuchMethodException {
+		// TODO Auto-generated method stub
+		
+<span class="fc" id="L114">		ArrayList&lt;Object&gt; actualVelocity = UpdateVelocity();</span>
+<span class="fc" id="L115">		ArrayList&lt;Object&gt; newCode = UpdateCode(actualVelocity);</span>
+<span class="fc" id="L116">		this.velocity = actualVelocity;</span>
+<span class="fc" id="L117">		this.stateActual.setCode(newCode);</span>
+<span class="fc" id="L118">		return null;</span>
+	}
+	
+	/**
+	 * @brief Actualiza el vector de velocidad de la partÃ­cula.
+	 * 
+	 * Calcula la nueva velocidad basÃ¡ndose en la inercia, el componente cognitivo (pBest)
+	 * y el componente social (lBest). Aplica un factor de constricciÃ³n para controlar la convergencia.
+	 * 
+	 * @return ArrayList&lt;Object&gt; Nueva velocidad calculada.
+	 */
+	private ArrayList&lt;Object&gt; UpdateVelocity(){ // actualizar velocidad
+<span class="fc" id="L130">    	double w = ParticleSwarmOptimization.wmax - ((ParticleSwarmOptimization.wmax - ParticleSwarmOptimization.wmin) / Strategy.getStrategy().getCountMax()) * ParticleSwarmOptimization.countCurrentIterPSO;  //CALCULO DE LA INERCIA</span>
+<span class="fc" id="L131">    	double rand1 = secureRandom.nextDouble();</span>
+<span class="fc" id="L132">    	double rand2 = secureRandom.nextDouble();</span>
+    	double inertia, cognitive, social;
+<span class="fc" id="L134">    	int learning = ParticleSwarmOptimization.learning1 + ParticleSwarmOptimization.learning2; // ratios de aprendizaje cognitivo y social</span>
+<span class="fc" id="L135">    	ParticleSwarmOptimization.constriction = 2 / Math.abs(2 - learning - Math.sqrt((double)learning * learning - 4 * learning));   // Factor de costriccion</span>
+<span class="fc" id="L136">    	ArrayList&lt;Object&gt; actualVelocity = new ArrayList&lt;Object&gt;();</span>
+<span class="fc bfc" id="L137" title="All 2 branches covered.">    	if(velocity.isEmpty()){</span>
+<span class="fc bfc" id="L138" title="All 2 branches covered.">    		for (int i = 0; i &lt; Strategy.getStrategy().getProblem().getState().getCode().size(); i++){</span>
+<span class="fc" id="L139">    			velocity.add(0.0);</span>
+    		}
+    	}
+    	// recorre el vector velocidad y lo actualiza
+<span class="fc bfc" id="L143" title="All 2 branches covered.">    	for (int i = 0; i &lt; Strategy.getStrategy().getProblem().getState().getCode().size(); i++) {  </span>
+    		// cumulo donde se encuentra la particula
+<span class="fc" id="L145">    		int swarm = ParticleSwarmOptimization.countParticle / ParticleSwarmOptimization.countParticleBySwarm; </span>
+<span class="fc" id="L146">           	inertia = w * (Double)velocity.get(i);  </span>
+<span class="pc bpc" id="L147" title="1 of 2 branches missed.">           	if(ParticleSwarmOptimization.binary){</span>
+<span class="nc" id="L148">           		cognitive = (Double)(ParticleSwarmOptimization.learning1 * rand1 * ((double)(Integer)this.statePBest.getCode().get(i) - (Integer)stateActual.getCode().get(i)));</span>
+<span class="nc" id="L149">           		social = (Double)(ParticleSwarmOptimization.learning2 * rand2 * (((double)(Integer)((State) ParticleSwarmOptimization.lBest[swarm]).getCode().get(i)) - (Integer)stateActual.getCode().get(i)));</span>
+           	}
+           	else{
+<span class="fc" id="L152">           		cognitive = (Double)(ParticleSwarmOptimization.learning1 * rand1 * ((Double)this.statePBest.getCode().get(i) - (Double)stateActual.getCode().get(i)));</span>
+<span class="fc" id="L153">           		social = (Double)(ParticleSwarmOptimization.learning2 * rand2 * (((Double)((State) ParticleSwarmOptimization.lBest[swarm]).getCode().get(i)) - (Double)stateActual.getCode().get(i)));</span>
+           	}
+<span class="fc" id="L155">        	actualVelocity.add(ParticleSwarmOptimization.constriction*(inertia + cognitive + social));</span>
+        }
+    /*    if (ParticleSwarmOptimization.binary == true){
+    		for (int i = 0; i &lt; actualVelocity.size(); i++) {
+				binaryVelocity.add((3 + (Integer)actualVelocity.get(i))%3 - 1);     //FORMULA DE LA VELOCIDAD PARA CODIFICACION BINARIA  
+			}
+    		return binaryVelocity;
+    	}*/
+<span class="fc" id="L163">        return actualVelocity;</span>
+    }
+	
+	private ArrayList&lt;Object&gt; UpdateCode(ArrayList&lt;Object&gt; actualVelocity) {  // CALCULO DE LA NUEA POSICION DE LA PARTICULA
+<span class="fc" id="L167">		ArrayList&lt;Object&gt; newCode = new ArrayList&lt;Object&gt;();</span>
+<span class="fc" id="L168">		ArrayList&lt;Object&gt; binaryCode = new ArrayList&lt;Object&gt;();</span>
+		//poner la condicion de si se esta trabajando con valores continuos o binarios
+<span class="pc bpc" id="L170" title="1 of 2 branches missed.">		if(ParticleSwarmOptimization.binary == false){	</span>
+<span class="fc bfc" id="L171" title="All 2 branches covered.">			for (int i = 0; i &lt; stateActual.getCode().size(); i++) {</span>
+<span class="fc" id="L172">					newCode.add( (Double)(stateActual.getCode().get(i)) + (Double)(actualVelocity.get(i)) );</span>
+		    }
+<span class="fc" id="L174">			return newCode;</span>
+	    }
+		 else{                                                  //clculo de la posicion para codificacion binaria
+<span class="nc bnc" id="L177" title="All 2 branches missed.">			  for (int i = 0; i &lt; stateActual.getCode().size(); i++){</span>
+<span class="nc" id="L178">				  double rand = secureRandom.nextDouble();</span>
+<span class="nc" id="L179">				  double s = 1/(1 + 1.72 * (Double)(actualVelocity.get(i))); // </span>
+<span class="nc bnc" id="L180" title="All 2 branches missed.">				  if (rand &lt; s){</span>
+<span class="nc" id="L181">				     binaryCode.add(1);</span>
+				  }
+				   else{
+<span class="nc" id="L184">				    	binaryCode.add(0);</span>
+				    	}
+			  }
+<span class="nc" id="L187">	          return binaryCode;</span>
+    }
+			/*	if(ParticleSwarmOptimization.binary == true){//wendy
+					for (int i = 0; i &lt; newCode.size(); i++) {
+						binaryCode.add(4 + ((Integer)newCode.get(i))%2);     //FORMULA DE LA POSICION PARA CODIFICACION BINARIA  
+					}
+					return binaryCode;
+				}*/
+		
+	}
+	
+
+	@Override
+	public void updateReference(State stateCandidate,
+			Integer countIterationsCurrent) throws IllegalArgumentException,
+			SecurityException, ClassNotFoundException, InstantiationException,
+			IllegalAccessException, InvocationTargetException,
+			NoSuchMethodException {
+		// TODO Auto-generated method stub
+<span class="pc bpc" id="L206" title="1 of 2 branches missed.">		if(Strategy.getStrategy().getProblem().getTypeProblem().equals(ProblemType.Maximizar)){</span>
+<span class="nc bnc" id="L207" title="All 2 branches missed.">			if(stateActual.getEvaluation().get(0) &gt; statePBest.getEvaluation().get(0)){</span>
+<span class="nc" id="L208">				statePBest.setCode(new ArrayList&lt;Object&gt;(stateActual.getCode()));</span>
+<span class="nc" id="L209">				statePBest.setEvaluation(stateActual.getEvaluation());</span>
+			}
+		}
+		else{
+<span class="pc bpc" id="L213" title="1 of 2 branches missed.">			if(stateCandidate.getEvaluation().get(0) &lt; statePBest.getEvaluation().get(0)){</span>
+<span class="fc" id="L214">				statePBest.setCode(new ArrayList&lt;Object&gt;(stateCandidate.getCode()));</span>
+<span class="fc" id="L215">				statePBest.setEvaluation(stateCandidate.getEvaluation());</span>
+			}
+		}
+		
+<span class="fc" id="L219">	}</span>
+
+	@Override
+	public State getReference() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L224">		return null;</span>
+	}
+
+	@Override
+	public void setInitialReference(State stateInitialRef) {
+		// TODO Auto-generated method stub
+
+<span class="nc" id="L231">	}</span>
+
+	@Override
+	public GeneratorType getType() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L236">		return null;</span>
+	}
+
+	@Override
+	public List&lt;State&gt; getReferenceList() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L242">		return null;</span>
+	}
+
+	@Override
+	public List&lt;State&gt; getSonList() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L248">		return null;</span>
+	}
+
+	@Override
+	public boolean awardUpdateREF(State stateCandidate) {
+		// TODO Auto-generated method stub
+<span class="nc" id="L254">		return false;</span>
+	}
+
+	@Override
+	public void setWeight(float weight) {
+		// TODO Auto-generated method stub
+
+<span class="nc" id="L261">	}</span>
+
+	@Override
+	public float getWeight() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L266">		return 0;</span>
+	}
+
+	@Override
+	public float[] getTrace() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L272">		return null;</span>
+	}
+
+	@Override
+	public int[] getListCountBetterGender() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L278">		return null;</span>
+	}
+
+	@Override
+	public int[] getListCountGender() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L284">		return null;</span>
+	}
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

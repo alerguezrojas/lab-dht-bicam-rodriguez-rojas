@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MultiobjectiveHillClimbingRestart.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">biciam</a> &gt; <a href="index.source.html" class="el_package">metaheuristics.generators</a> &gt; <span class="el_source">MultiobjectiveHillClimbingRestart.java</span></div><h1>MultiobjectiveHillClimbingRestart.java</h1><pre class="source lang-java linenums">package metaheuristics.generators;
+
+import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import factory_interface.IFFactoryAcceptCandidate;
+import factory_method.FactoryAcceptCandidate;
+
+import problem.definition.State;
+
+import local_search.acceptation_type.AcceptType;
+import local_search.acceptation_type.AcceptableCandidate;
+import local_search.candidate_type.CandidateType;
+import local_search.candidate_type.CandidateValue;
+import local_search.complement.StrategyType;
+import metaheuristics.strategy.Strategy;
+
+
+
+
+public class MultiobjectiveHillClimbingRestart extends Generator{
+
+	protected CandidateValue candidatevalue;
+	protected AcceptType typeAcceptation;
+	protected StrategyType strategy;
+	protected CandidateType typeCandidate;
+	protected State stateReferenceHC;
+	protected IFFactoryAcceptCandidate ifacceptCandidate;
+	protected GeneratorType Generatortype;
+<span class="fc" id="L32">	protected List&lt;State&gt; listStateReference = new ArrayList&lt;State&gt;(); </span>
+	protected float weight;
+<span class="fc" id="L34">	protected List&lt;Float&gt; listTrace = new ArrayList&lt;Float&gt;();</span>
+<span class="fc" id="L35">	private List&lt;State&gt; visitedState = new ArrayList&lt;State&gt;();</span>
+	public static int sizeNeighbors;
+
+
+	public MultiobjectiveHillClimbingRestart() {
+<span class="fc" id="L40">		super();</span>
+<span class="fc" id="L41">		this.typeAcceptation = AcceptType.AcceptNotDominated;</span>
+<span class="fc" id="L42">		this.strategy = StrategyType.NORMAL;</span>
+		//Problem problem = Strategy.getStrategy().getProblem();
+<span class="fc" id="L44">		this.typeCandidate = CandidateType.NotDominatedCandidate;</span>
+<span class="fc" id="L45">		this.candidatevalue = new CandidateValue();</span>
+<span class="fc" id="L46">		this.Generatortype = GeneratorType.MultiobjectiveHillClimbingRestart;</span>
+<span class="fc" id="L47">		this.weight = 50;</span>
+<span class="fc" id="L48">		listTrace.add(weight);</span>
+<span class="fc" id="L49">	}</span>
+
+	@Override
+	public State generate(Integer operatornumber) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
+<span class="fc" id="L53">		List&lt;State&gt; neighborhood = new ArrayList&lt;State&gt;();</span>
+<span class="fc" id="L54">		neighborhood = Strategy.getStrategy().getProblem().getOperator().generatedNewState(stateReferenceHC, operatornumber);</span>
+<span class="fc" id="L55">		State statecandidate = candidatevalue.stateCandidate(stateReferenceHC, typeCandidate, strategy, operatornumber, neighborhood);</span>
+<span class="fc" id="L56">		return statecandidate;</span>
+	}
+
+	@Override
+	public void updateReference(State stateCandidate, Integer countIterationsCurrent) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
+		//Agregando la primera soluciï¿½n a la lista de soluciones no dominadas
+
+<span class="fc bfc" id="L63" title="All 2 branches covered.">		if(Strategy.getStrategy().listRefPoblacFinal.size() == 0){</span>
+<span class="fc" id="L64">			Strategy.getStrategy().listRefPoblacFinal.add(stateReferenceHC.clone());</span>
+		}
+
+<span class="fc" id="L67">		ifacceptCandidate = new FactoryAcceptCandidate();</span>
+<span class="fc" id="L68">		AcceptableCandidate candidate = ifacceptCandidate.createAcceptCandidate(typeAcceptation);</span>
+<span class="fc" id="L69">		State lastState = Strategy.getStrategy().listRefPoblacFinal.get(Strategy.getStrategy().listRefPoblacFinal.size()-1);</span>
+<span class="fc" id="L70">		List&lt;State&gt; neighborhood = new ArrayList&lt;State&gt;();</span>
+<span class="fc" id="L71">		neighborhood = Strategy.getStrategy().getProblem().getOperator().generatedNewState(stateReferenceHC, sizeNeighbors);</span>
+<span class="fc" id="L72">		int i= 0;</span>
+
+<span class="fc" id="L74">		Boolean accept = candidate.acceptCandidate(lastState, stateCandidate.clone());</span>
+
+<span class="pc bpc" id="L76" title="1 of 2 branches missed.">		if(accept.equals(true)){</span>
+<span class="fc" id="L77">			stateReferenceHC = stateCandidate.clone();</span>
+<span class="fc" id="L78">			visitedState = new ArrayList&lt;State&gt;();</span>
+<span class="fc" id="L79">			lastState = stateCandidate.clone();</span>
+			//tomar xc q pertenesca a la vecindad de xa
+		}
+		else{
+<span class="nc" id="L83">			boolean stop = false;</span>
+<span class="nc bnc" id="L84" title="All 4 branches missed.">			while (i &lt; neighborhood.size()&amp;&amp; stop==false) {</span>
+<span class="nc bnc" id="L85" title="All 2 branches missed.">				if (Contain(neighborhood.get(i))==false) {</span>
+<span class="nc" id="L86">					stateCandidate = neighborhood.get(i);</span>
+<span class="nc" id="L87">					Strategy.getStrategy().getProblem().Evaluate(stateCandidate);  </span>
+<span class="nc" id="L88">					visitedState.add(stateCandidate);</span>
+<span class="nc" id="L89">					accept = candidate.acceptCandidate(lastState, stateCandidate.clone());</span>
+<span class="nc" id="L90">					stop=true;</span>
+				}
+<span class="nc" id="L92">				i++;</span>
+			}
+<span class="nc bnc" id="L94" title="All 2 branches missed.">			while (stop == false) {</span>
+<span class="nc" id="L95">				stateCandidate = Strategy.getStrategy().getProblem().getOperator().generateRandomState(1).get(0);</span>
+<span class="nc bnc" id="L96" title="All 2 branches missed.">				if (Contain(stateCandidate)==false) {</span>
+<span class="nc" id="L97">					Strategy.getStrategy().getProblem().Evaluate(stateCandidate);  </span>
+<span class="nc" id="L98">					stop=true;</span>
+<span class="nc" id="L99">					accept = candidate.acceptCandidate(lastState, stateCandidate.clone());</span>
+
+				}
+			}
+<span class="nc bnc" id="L103" title="All 2 branches missed.">			if(accept.equals(true)){</span>
+<span class="nc" id="L104">				stateReferenceHC = stateCandidate.clone();</span>
+<span class="nc" id="L105">				visitedState = new ArrayList&lt;State&gt;();</span>
+<span class="nc" id="L106">				lastState = stateCandidate.clone();</span>
+				//tomar xc q pertenesca a la vecindad de xa
+			}
+		}
+
+
+<span class="fc" id="L112">		getReferenceList();</span>
+<span class="fc" id="L113">	}</span>
+
+	@Override
+	public List&lt;State&gt; getReferenceList() {
+<span class="fc" id="L117">		listStateReference.add(stateReferenceHC.clone());</span>
+<span class="fc" id="L118">		return listStateReference;</span>
+	}
+
+	@Override
+	public State getReference() {
+<span class="nc" id="L123">		return stateReferenceHC;</span>
+	}
+
+	public void setStateRef(State stateRef) {
+<span class="nc" id="L127">		this.stateReferenceHC = stateRef;</span>
+<span class="nc" id="L128">	}</span>
+
+	@Override
+	public void setInitialReference(State stateInitialRef) {
+<span class="nc" id="L132">		this.stateReferenceHC = stateInitialRef;</span>
+<span class="nc" id="L133">	}</span>
+
+	public GeneratorType getGeneratorType() {
+<span class="nc" id="L136">		return Generatortype;</span>
+	}
+
+	public void setGeneratorType(GeneratorType Generatortype) {
+<span class="nc" id="L140">		this.Generatortype = Generatortype;</span>
+<span class="nc" id="L141">	}</span>
+
+	@Override
+	public GeneratorType getType() {
+<span class="fc" id="L145">		return this.Generatortype;</span>
+	}
+
+	@Override
+	public List&lt;State&gt; getSonList() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L151">		return null;</span>
+	}
+
+	private boolean Contain(State state){
+<span class="nc" id="L155">		boolean found = false;</span>
+<span class="nc bnc" id="L156" title="All 2 branches missed.">		for (Iterator&lt;State&gt; iter = visitedState.iterator(); iter.hasNext();) {</span>
+<span class="nc" id="L157">			State element = (State) iter.next();</span>
+<span class="nc bnc" id="L158" title="All 2 branches missed.">			if(element.Comparator(state)==true){</span>
+<span class="nc" id="L159">				found = true;</span>
+			}
+<span class="nc" id="L161">		}</span>
+<span class="nc" id="L162">		return found;</span>
+	}
+
+	@Override
+	public boolean awardUpdateREF(State stateCandidate) {
+		// TODO Auto-generated method stub
+<span class="nc" id="L168">		return false;</span>
+	}
+
+
+	@Override
+	public float getWeight() {
+<span class="fc" id="L174">		return weight;</span>
+	}
+
+	@Override
+	public void setWeight(float weight) {
+<span class="nc" id="L179">		this.weight = weight;</span>
+<span class="nc" id="L180">	}</span>
+
+	@Override
+	public float[] getTrace() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L185">		return null;</span>
+	}
+
+	@Override
+	public int[] getListCountBetterGender() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L191">		return null;</span>
+	}
+
+	@Override
+	public int[] getListCountGender() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L197">		return null;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

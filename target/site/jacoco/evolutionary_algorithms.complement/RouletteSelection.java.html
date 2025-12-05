@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>RouletteSelection.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">biciam</a> &gt; <a href="index.source.html" class="el_package">evolutionary_algorithms.complement</a> &gt; <span class="el_source">RouletteSelection.java</span></div><h1>RouletteSelection.java</h1><pre class="source lang-java linenums">package evolutionary_algorithms.complement;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.security.SecureRandom;
+
+import metaheuristics.generators.LimitRoulette;
+
+import problem.definition.State;
+
+<span class="fc" id="L11">public class RouletteSelection extends FatherSelection {</span>
+
+<span class="fc" id="L13">	private static final SecureRandom secureRandom = new SecureRandom();</span>
+
+	@Override
+	public List&lt;State&gt; selection(List&lt;State&gt; listState, int truncation) {/*
+		List&lt;State&gt; fatherList = new ArrayList&lt;State&gt;();
+		double total = 0;
+		double sum = 0;
+		for (int i = 0; i &lt; listState.size(); i++) {
+			total  = total + listState.get(i).getEvaluation().get(0);
+		}
+		double number = secureRandom.nextDouble() * total;
+
+		for (int i = 0; i &lt; listState.size(); i++) {
+		  sum = sum + listState.get(i).getEvaluation().get(0);
+		  if(sum &gt;= number)
+			  fatherList.add(listState.get(i));			  
+		}
+		return fatherList;
+	 */
+<span class="fc" id="L32">		float totalWeight = 0;</span>
+<span class="fc bfc" id="L33" title="All 2 branches covered.">		for (int i = 0; i &lt; listState.size(); i++) {</span>
+<span class="fc" id="L34">			totalWeight = (float) (listState.get(i).getEvaluation().get(0) + totalWeight);</span>
+		}
+<span class="fc" id="L36">		List&lt;Float&gt; listProb = new ArrayList&lt;Float&gt;();</span>
+<span class="fc bfc" id="L37" title="All 2 branches covered.">		for (int i = 0; i &lt; listState.size(); i++) {</span>
+<span class="fc" id="L38">			float probF = (float) (listState.get(i).getEvaluation().get(0) / totalWeight);</span>
+<span class="fc" id="L39">			listProb.add(probF);</span>
+		}
+<span class="fc" id="L41">		List&lt;LimitRoulette&gt; listLimit = new ArrayList&lt;LimitRoulette&gt;();</span>
+<span class="fc" id="L42">		float limitHigh = 0;</span>
+<span class="fc" id="L43">		float limitLow = 0;</span>
+<span class="fc bfc" id="L44" title="All 2 branches covered.">		for (int i = 0; i &lt; listProb.size(); i++) {</span>
+<span class="fc" id="L45">			LimitRoulette limitRoulette = new LimitRoulette();</span>
+<span class="fc" id="L46">			limitHigh = listProb.get(i) + limitHigh;</span>
+<span class="fc" id="L47">			limitRoulette.setLimitHigh(limitHigh);</span>
+<span class="fc" id="L48">			limitRoulette.setLimitLow(limitLow);</span>
+<span class="fc" id="L49">			limitLow = limitHigh;</span>
+			//			limitRoulette.setGenerator(listGenerators.get(i));
+<span class="fc" id="L51">			listLimit.add(limitRoulette);</span>
+		}
+<span class="fc" id="L53">		List&lt;State&gt; fatherList = new ArrayList&lt;State&gt;();</span>
+<span class="fc bfc" id="L54" title="All 2 branches covered.">		for (int j = 0; j &lt; listState.size(); j++) {</span>
+<span class="fc" id="L55">			float numbAleatory = secureRandom.nextFloat();</span>
+<span class="fc" id="L56">			boolean find = false;</span>
+<span class="fc" id="L57">			int i = 0;</span>
+<span class="pc bpc" id="L58" title="1 of 4 branches missed.">			while (!find &amp;&amp; i &lt; listLimit.size()){</span>
+<span class="pc bpc" id="L59" title="1 of 4 branches missed.">				if(listLimit.get(i).getLimitLow() &lt;= numbAleatory &amp;&amp; numbAleatory &lt;= listLimit.get(i).getLimitHigh()){</span>
+<span class="fc" id="L60">					find = true;</span>
+<span class="fc" id="L61">					fatherList.add(listState.get(i));</span>
+				}
+<span class="fc" id="L63">				else i++;</span>
+			}
+		}
+<span class="fc" id="L66">		return fatherList;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

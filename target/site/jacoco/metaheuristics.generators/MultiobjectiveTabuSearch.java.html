@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MultiobjectiveTabuSearch.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">biciam</a> &gt; <a href="index.source.html" class="el_package">metaheuristics.generators</a> &gt; <span class="el_source">MultiobjectiveTabuSearch.java</span></div><h1>MultiobjectiveTabuSearch.java</h1><pre class="source lang-java linenums">package metaheuristics.generators;
+
+import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
+import java.util.List;
+
+import factory_interface.IFFactoryAcceptCandidate;
+import factory_method.FactoryAcceptCandidate;
+import local_search.acceptation_type.AcceptType;
+import local_search.acceptation_type.AcceptableCandidate;
+import local_search.candidate_type.CandidateType;
+import local_search.candidate_type.CandidateValue;
+import local_search.complement.StrategyType;
+import local_search.complement.TabuSolutions;
+import metaheuristics.strategy.Strategy;
+import problem.definition.Problem;
+import problem.definition.State;
+
+
+
+
+public class MultiobjectiveTabuSearch extends Generator {
+
+	private CandidateValue candidatevalue;
+	private AcceptType typeAcceptation;
+	private StrategyType strategy;
+	private CandidateType typeCandidate;
+	private State stateReferenceTS;
+    private IFFactoryAcceptCandidate ifacceptCandidate;
+    private GeneratorType typeGenerator;
+<span class="fc" id="L31">    private List&lt;State&gt; listStateReference = new ArrayList&lt;State&gt;();</span>
+    private float weight;
+<span class="fc" id="L33">	private List&lt;Float&gt; listTrace = new ArrayList&lt;Float&gt;();</span>
+
+    public State getStateReferenceTS() {
+<span class="nc" id="L36">		return stateReferenceTS;</span>
+	}
+
+	public void setStateReferenceTS(State stateReferenceTS) {
+<span class="fc" id="L40">		this.stateReferenceTS = stateReferenceTS;</span>
+<span class="fc" id="L41">	}</span>
+
+	public GeneratorType getTypeGenerator() {
+<span class="nc" id="L44">		return typeGenerator;</span>
+	}
+
+	public void setTypeGenerator(GeneratorType typeGenerator) {
+<span class="nc" id="L48">		this.typeGenerator = typeGenerator;</span>
+<span class="nc" id="L49">	}</span>
+
+	public MultiobjectiveTabuSearch() {
+<span class="fc" id="L52">    	super();</span>
+<span class="fc" id="L53">		this.typeAcceptation = AcceptType.AcceptNotDominatedTabu;</span>
+<span class="fc" id="L54">		this.strategy = StrategyType.TABU;</span>
+		@SuppressWarnings(&quot;unused&quot;)
+<span class="fc" id="L56">		Problem problem = Strategy.getStrategy().getProblem();</span>
+<span class="fc" id="L57">		this.typeCandidate = CandidateType.RandomCandidate;</span>
+<span class="fc" id="L58">		this.candidatevalue = new CandidateValue();</span>
+<span class="fc" id="L59">		this.typeGenerator = GeneratorType.MultiobjectiveTabuSearch;</span>
+<span class="fc" id="L60">		this.weight = 50;</span>
+<span class="fc" id="L61">		listTrace.add(weight);</span>
+<span class="fc" id="L62">	}</span>
+
+	@Override
+	public State generate(Integer operatornumber) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
+<span class="fc" id="L66">		List&lt;State&gt; neighborhood = new ArrayList&lt;State&gt;();</span>
+<span class="fc" id="L67">		Problem problem = Strategy.getStrategy().getProblem();</span>
+		//List&lt;State&gt; list = new ArrayList&lt;State&gt;();
+		//Devuelve la lista de soluciones no dominadas de todos los vecinos posibles de stateReferenceTS que no se encuentran en la lista Tabu
+<span class="fc" id="L70">		neighborhood = problem.getOperator().generatedNewState(stateReferenceTS, operatornumber);</span>
+		//Se escoge uno aleatoriamente como vecino con RandomCandidate
+<span class="fc" id="L72">		State statecandidate = candidatevalue.stateCandidate(stateReferenceTS, typeCandidate, strategy, operatornumber, neighborhood);</span>
+<span class="fc" id="L73">	    return statecandidate;</span>
+	}
+
+	@Override
+	public void updateReference(State stateCandidate, Integer countIterationsCurrent)throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
+<span class="fc" id="L78">		ifacceptCandidate = new FactoryAcceptCandidate();</span>
+<span class="fc" id="L79">		AcceptableCandidate candidate = ifacceptCandidate.createAcceptCandidate(typeAcceptation);</span>
+<span class="fc" id="L80">		Boolean acept = candidate.acceptCandidate(stateReferenceTS, stateCandidate);</span>
+<span class="pc bpc" id="L81" title="1 of 2 branches missed.">		if(acept.equals(true))</span>
+<span class="fc" id="L82">		  stateReferenceTS = stateCandidate;</span>
+
+<span class="pc bpc" id="L84" title="2 of 4 branches missed.">		if (strategy.equals(StrategyType.TABU) &amp;&amp; acept.equals(true)) {</span>
+<span class="pc bpc" id="L85" title="1 of 2 branches missed.">			if (TabuSolutions.listTabu.size() &lt; TabuSolutions.maxelements) {</span>
+<span class="fc" id="L86">				Boolean find = false;</span>
+<span class="fc" id="L87">				int count = 0;</span>
+<span class="pc bpc" id="L88" title="3 of 4 branches missed.">				while (TabuSolutions.listTabu.size() &gt; count &amp;&amp; find.equals(false)) {</span>
+<span class="nc bnc" id="L89" title="All 2 branches missed.">					if (TabuSolutions.listTabu.get(count).equals(stateCandidate)) {</span>
+<span class="nc" id="L90">						find = true;</span>
+					}
+<span class="nc" id="L92">					count++;</span>
+				}
+<span class="pc bpc" id="L94" title="1 of 2 branches missed.">				if (find.equals(false)) {</span>
+<span class="fc" id="L95">					TabuSolutions.listTabu.add(stateCandidate);</span>
+				}
+<span class="fc" id="L97">			} else {</span>
+<span class="nc" id="L98">				TabuSolutions.listTabu.remove(0);</span>
+<span class="nc" id="L99">				Boolean find = false;</span>
+<span class="nc" id="L100">				int count = 0;</span>
+<span class="nc bnc" id="L101" title="All 4 branches missed.">				while (TabuSolutions.listTabu.size() &gt; count &amp;&amp; find.equals(false)) {</span>
+<span class="nc bnc" id="L102" title="All 2 branches missed.">					if (TabuSolutions.listTabu.get(count).equals(stateCandidate)) {</span>
+<span class="nc" id="L103">						find = true;</span>
+					}
+<span class="nc" id="L105">					count++;</span>
+				}
+<span class="nc bnc" id="L107" title="All 2 branches missed.">				if (find.equals(false)) {</span>
+<span class="nc" id="L108">					TabuSolutions.listTabu.add(stateCandidate);</span>
+				}
+			}
+	}
+<span class="fc" id="L112">		getReferenceList();</span>
+<span class="fc" id="L113">  }</span>
+	
+	@Override
+	public GeneratorType getType() {
+<span class="nc" id="L117">		return this.typeGenerator;</span>
+	}
+
+	@Override
+	public List&lt;State&gt; getReferenceList() {
+<span class="fc" id="L122">		listStateReference.add(stateReferenceTS);</span>
+<span class="fc" id="L123">		return listStateReference;</span>
+	}
+
+	@Override
+	public State getReference() {
+<span class="nc" id="L128">		return stateReferenceTS;</span>
+	}
+
+	@Override
+	public void setInitialReference(State stateInitialRef) {
+<span class="nc" id="L133">		this.stateReferenceTS = stateInitialRef;</span>
+<span class="nc" id="L134">	}</span>
+
+	public void setStateRef(State stateRef) {
+<span class="nc" id="L137">		this.stateReferenceTS = stateRef;</span>
+<span class="nc" id="L138">	}</span>
+	
+	@Override
+	public List&lt;State&gt; getSonList() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L143">		return null;</span>
+	}
+
+	public void setTypeCandidate(CandidateType typeCandidate){
+<span class="nc" id="L147">		this.typeCandidate = typeCandidate;</span>
+<span class="nc" id="L148">	}</span>
+
+	@Override
+	public boolean awardUpdateREF(State stateCandidate) {
+		// TODO Auto-generated method stub
+<span class="nc" id="L153">		return false;</span>
+	}
+
+
+	public float getWeight() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L159">		return this.weight;</span>
+	}
+
+	@Override
+	public void setWeight(float weight) {
+		// TODO Auto-generated method stub
+<span class="nc" id="L165">		this.weight = weight;</span>
+<span class="nc" id="L166">	}</span>
+
+	@Override
+	public int[] getListCountBetterGender() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L171">		return null;</span>
+	}
+
+	@Override
+	public int[] getListCountGender() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L177">		return null;</span>
+	}
+
+	@Override
+	public float[] getTrace() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L183">		return null;</span>
+	}
+
+}
+
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

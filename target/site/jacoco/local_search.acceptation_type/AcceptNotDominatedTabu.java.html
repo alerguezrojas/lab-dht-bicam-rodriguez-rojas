@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AcceptNotDominatedTabu.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">biciam</a> &gt; <a href="index.source.html" class="el_package">local_search.acceptation_type</a> &gt; <span class="el_source">AcceptNotDominatedTabu.java</span></div><h1>AcceptNotDominatedTabu.java</h1><pre class="source lang-java linenums">package local_search.acceptation_type;
+
+import java.util.List;
+
+import metaheuristics.strategy.Strategy;
+
+import problem.definition.State;
+
+<span class="fc" id="L9">public class AcceptNotDominatedTabu extends AcceptableCandidate {</span>
+
+	@Override
+	public Boolean acceptCandidate(State stateCurrent, State stateCandidate) {
+<span class="fc" id="L13">		List&lt;State&gt; list = Strategy.getStrategy().listRefPoblacFinal;</span>
+		
+<span class="fc" id="L15">		Dominance dominance = new Dominance();</span>
+<span class="pc bpc" id="L16" title="1 of 2 branches missed.">		if(list.size() == 0){</span>
+<span class="fc" id="L17">			list.add(stateCurrent.clone());</span>
+		}
+		//Verificando si la solución candidata domina a alguna de las soluciones de la lista de soluciones no dominadas
+		//De ser así se eliminan de la lista y se adiciona la nueva solución en la lista
+		//De lo contrario no se adiciona la solución candidata a la lista
+		//Si fue insertada en la lista entonces la solucion candidata se convierte en solucion actual
+<span class="fc" id="L23">		dominance.ListDominance(stateCandidate, list);</span>
+<span class="fc" id="L24">		return true;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

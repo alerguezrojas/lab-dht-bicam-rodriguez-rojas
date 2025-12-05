@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>OnePointCrossover.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">biciam</a> &gt; <a href="index.source.html" class="el_package">evolutionary_algorithms.complement</a> &gt; <span class="el_source">OnePointCrossover.java</span></div><h1>OnePointCrossover.java</h1><pre class="source lang-java linenums">package evolutionary_algorithms.complement;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.security.SecureRandom;
+
+import metaheuristics.strategy.Strategy;
+
+import problem.definition.State;
+
+
+<span class="fc" id="L12">public class OnePointCrossover extends Crossover {</span>
+
+<span class="fc" id="L14">	private static final SecureRandom secureRandom = new SecureRandom();</span>
+
+	@Override
+	public State crossover(State father1, State father2, double PC) {
+				
+<span class="fc" id="L19">		State newInd = (State) father1.getCopy();</span>
+		
+<span class="fc" id="L21">	    List&lt;Object&gt; ind1 = new ArrayList&lt;Object&gt;();</span>
+<span class="fc" id="L22">	    List&lt;Object&gt; ind2 = new ArrayList&lt;Object&gt;();</span>
+	    
+<span class="fc" id="L24">	    double number = secureRandom.nextDouble();	</span>
+<span class="pc bpc" id="L25" title="1 of 2 branches missed.">		if(number &lt;= PC){</span>
+			//llenar los valores de cada hijo
+<span class="fc" id="L27">			int variableCount = Strategy.getStrategy().getProblem().getCodification().getVariableCount();</span>
+<span class="pc bpc" id="L28" title="1 of 2 branches missed.">			int pos = secureRandom.nextInt(variableCount &gt; 1 ? variableCount - 1 : 1); </span>
+<span class="fc bfc" id="L29" title="All 2 branches covered.">			for (int i = 0; i &lt; father1.getCode().size(); i++) {</span>
+<span class="fc bfc" id="L30" title="All 2 branches covered.">				if(i &lt;= pos){</span>
+<span class="fc" id="L31">					ind1.add(father1.getCode().get(i));</span>
+<span class="fc" id="L32">					ind2.add(father2.getCode().get(i));</span>
+				}
+				else{
+<span class="fc" id="L35">					ind1.add(father2.getCode().get(i));</span>
+<span class="fc" id="L36">					ind2.add(father1.getCode().get(i));</span>
+				}
+			}
+			/*
+			for (int j = pos; j &lt; ind1.size(); j++) {
+		       for (int k = pos; k &lt; ind2.size(); k++) {
+				  Integer value1 = (Integer) ind1.get(j);
+		    	  ind1.set(j, ind2.get(k));
+				  ind2.set(k,value1);
+			   }				  
+		    }*/
+			//generar un numero aleatorio 0 o 1, si es 0 me quedo con ind1 si es 1 con ind2.
+<span class="fc" id="L48">			int random = secureRandom.nextInt(2);</span>
+<span class="pc bpc" id="L49" title="1 of 2 branches missed.">			if(random == 0)</span>
+<span class="nc" id="L50">				newInd.setCode((ArrayList&lt;Object&gt;) ind1);</span>
+<span class="fc" id="L51">			else newInd.setCode((ArrayList&lt;Object&gt;) ind2); </span>
+		}
+<span class="fc" id="L53">		return newInd;			</span>
+	}
+	
+	
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

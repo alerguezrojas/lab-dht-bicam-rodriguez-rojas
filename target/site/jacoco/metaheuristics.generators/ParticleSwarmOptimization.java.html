@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ParticleSwarmOptimization.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">biciam</a> &gt; <a href="index.source.html" class="el_package">metaheuristics.generators</a> &gt; <span class="el_source">ParticleSwarmOptimization.java</span></div><h1>ParticleSwarmOptimization.java</h1><pre class="source lang-java linenums">package metaheuristics.generators;
+
+import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
+import java.util.List;
+
+
+import metaheuristics.strategy.Strategy;
+
+
+import problem.definition.Problem.ProblemType;
+import problem.definition.State;
+
+/**
+ * @class ParticleSwarmOptimization
+ * @brief ImplementaciÃ³n del algoritmo de OptimizaciÃ³n por Enjambre de PartÃ­culas (PSO).
+ * 
+ * Esta clase gestiona el enjambre de partÃ­culas, sus movimientos, y la actualizaciÃ³n de
+ * los mejores estados locales (lBest) y globales (gBest).
+ */
+public class ParticleSwarmOptimization extends Generator {
+	
+	private State stateReferencePSO;
+<span class="fc" id="L24">	private List&lt;State&gt; listStateReference = new ArrayList&lt;State&gt;(); </span>
+<span class="fc" id="L25">	private List&lt;Particle&gt; listParticle =  new ArrayList&lt;Particle&gt; ();</span>
+	private GeneratorType generatorType;
+	
+	/** @brief Cantidad total de partÃ­culas (coutSwarm * countParticleSwarm). */
+<span class="fc" id="L29">	public static int countRef = 0;</span>
+	
+	/** @brief Cantidad de partÃ­culas que se han movido en el cÃºmulo actual. */
+<span class="fc" id="L32">	public static int countParticle = 0;</span>
+	
+	/** @brief Cantidad de cÃºmulos (swarms). */
+<span class="fc" id="L35">	public static int coutSwarm = 0;</span>
+	
+	/** @brief Cantidad de partÃ­culas por cÃºmulo. */
+<span class="fc" id="L38">	public static int countParticleBySwarm = 0;</span>
+	
+<span class="fc" id="L40">	private float weight = 50;</span>
+	
+	/** @brief Peso de inercia mÃ¡ximo. */
+<span class="fc" id="L43">	public static double wmax = 0.9;</span>
+	
+	/** @brief Peso de inercia mÃ­nimo. */
+<span class="fc" id="L46">	public static double wmin = 0.2;</span>
+	
+	/** @brief Factores de aprendizaje cognitivo y social. */
+<span class="fc" id="L49">	public static int learning1 = 2, learning2 = 2;</span>
+	
+	/** @brief Factor de constricciÃ³n calculado dinÃ¡micamente. */
+	public static double constriction;
+	
+	/** @brief Indica si el problema es binario. */
+<span class="fc" id="L55">	public static boolean binary = false;</span>
+	
+	/** @brief Array de mejores estados locales por cÃºmulo. */
+	public static State[] lBest; 
+	
+	/** @brief Mejor estado global encontrado. */
+	public static State gBest;
+	
+	/** @brief Contador de iteraciones actual del PSO. */
+	public static int countCurrentIterPSO;
+	
+	//problemas dinamicos
+<span class="fc" id="L67">    public static int countGender = 0;</span>
+<span class="fc" id="L68">    public static int countBetterGender = 0;</span>
+<span class="fc" id="L69">    private int[] listCountBetterGender = new int[10];</span>
+<span class="fc" id="L70">    private int[] listCountGender = new int[10];</span>
+<span class="fc" id="L71">    private float[] listTrace = new float[1200000];</span>
+			
+	/**
+	 * @brief Constructor por defecto.
+	 * Inicializa el enjambre y configura los parÃ¡metros iniciales.
+	 */
+	public ParticleSwarmOptimization(){
+<span class="fc" id="L78">		super();</span>
+<span class="fc" id="L79">		countRef = coutSwarm * countParticleBySwarm;</span>
+<span class="fc" id="L80">		this.setListParticle(getListStateRef()); </span>
+//		listStateReference = new ArrayList&lt;State&gt;(Strategy.getStrategy().listBest);
+<span class="fc" id="L82">		this.generatorType = GeneratorType.ParticleSwarmOptimization;</span>
+<span class="fc" id="L83">		this.weight = 50;</span>
+<span class="fc" id="L84">		lBest = new State[coutSwarm];</span>
+<span class="fc bfc" id="L85" title="All 2 branches covered.">		if(!listParticle.isEmpty()){</span>
+<span class="fc" id="L86">			countCurrentIterPSO = 1;</span>
+<span class="fc" id="L87">			inicialiceLBest();</span>
+<span class="fc" id="L88">			gBest = gBestInicial();	</span>
+		}
+<span class="fc" id="L90">		countParticle = 0;</span>
+<span class="fc" id="L91">		listTrace[0] = this.weight;</span>
+<span class="fc" id="L92">		listCountBetterGender[0] = 0;</span>
+<span class="fc" id="L93">		listCountGender[0] = 0;</span>
+<span class="fc" id="L94">	}</span>
+
+	@Override
+	public State generate(Integer operatornumber) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException{ //PSO
+<span class="pc bpc" id="L98" title="1 of 2 branches missed.">		if (countParticle &gt;= countRef)</span>
+<span class="nc" id="L99">			countParticle = 0;</span>
+//		System.out.println(&quot;Contador de particulas: &quot; + countParticle + &quot; Contador de iteraciones &quot; + Strategy.getStrategy().getCountCurrent());
+<span class="fc" id="L101">		listParticle.get(countParticle).generate(1);</span>
+<span class="fc" id="L102">	    return listParticle.get(countParticle).getStateActual();</span>
+	}
+   	
+	public void inicialiceLBest (){
+<span class="fc bfc" id="L106" title="All 2 branches covered.">		for (int j = 0; j &lt; coutSwarm; j++) {</span>
+<span class="fc" id="L107">			State reference = new State();</span>
+<span class="fc" id="L108">			reference = listParticle.get(countParticle).getStatePBest();</span>
+<span class="fc" id="L109">			int iterator = countParticleBySwarm + countParticle;</span>
+<span class="fc bfc" id="L110" title="All 2 branches covered.">			if(Strategy.getStrategy().getProblem().getTypeProblem().equals(ProblemType.Maximizar)){</span>
+<span class="fc bfc" id="L111" title="All 2 branches covered.">				for (int i = countParticle; i &lt; iterator; i++) {</span>
+<span class="fc bfc" id="L112" title="All 2 branches covered.">					if (listParticle.get(i).getStatePBest().getEvaluation().get(0) &gt; reference.getEvaluation().get(0))</span>
+<span class="fc" id="L113">						reference = listParticle.get(i).getStatePBest();</span>
+<span class="fc" id="L114">					countParticle++;</span>
+				}
+			}
+			else{
+<span class="fc bfc" id="L118" title="All 2 branches covered.">				for (int i = countParticle; i &lt; iterator; i++) {</span>
+<span class="pc bpc" id="L119" title="1 of 2 branches missed.">					if (listParticle.get(i).getStatePBest().getEvaluation().get(0) &lt; reference.getEvaluation().get(0))</span>
+<span class="nc" id="L120">						reference = listParticle.get(i).getStatePBest();</span>
+<span class="fc" id="L121">					countParticle++;</span>
+				}
+			}
+			
+<span class="fc" id="L125">			lBest[j] = reference;</span>
+		}
+<span class="fc" id="L127">	}</span>
+	
+	
+	@Override
+	public State getReference() {
+<span class="nc" id="L132">		return null;</span>
+	}
+	
+	private List&lt;Particle&gt; getListStateRef() {
+<span class="fc" id="L136">		Boolean found = false;</span>
+<span class="fc" id="L137">		List&lt;String&gt; key = Strategy.getStrategy().getListKey();</span>
+<span class="fc" id="L138">		int count = 0;</span>
+<span class="fc bfc" id="L139" title="All 2 branches covered.">		if(RandomSearch.listStateReference.size() == 0){</span>
+<span class="fc" id="L140">			return this.setListParticle(new ArrayList&lt;Particle&gt;());</span>
+		}
+<span class="pc bpc" id="L142" title="1 of 4 branches missed.">		while(!found &amp;&amp; Strategy.getStrategy().mapGenerators.size() &gt; count){</span>
+			//recorrer la lista de generadores, hasta que encuentre el PSO
+<span class="pc bpc" id="L144" title="1 of 2 branches missed.">			if(key.get(count).equals(GeneratorType.ParticleSwarmOptimization.toString())){</span>
+				//creo el generador PSO, y si su lista de particulas esta vacia entonces es la primera vez que lo estoy creando, y cada estado lo convierto en particulas
+<span class="fc" id="L146">				GeneratorType keyGenerator = GeneratorType.valueOf(String.valueOf(key.get(count)));</span>
+<span class="fc" id="L147">				ParticleSwarmOptimization generator = (ParticleSwarmOptimization) Strategy.getStrategy().mapGenerators.get(keyGenerator);</span>
+<span class="pc bpc" id="L148" title="1 of 2 branches missed.">				if(generator.getListParticle().isEmpty()){</span>
+					//convertir los estados en particulas
+<span class="fc bfc" id="L150" title="All 2 branches covered.">					for (int j = 0; j &lt; RandomSearch.listStateReference.size(); j++) {</span>
+						//si el estado es creado con el generator RandomSearch entonces la convierto en particula
+<span class="pc bpc" id="L152" title="1 of 2 branches missed.">						if(getListParticle().size() != countRef){</span>
+<span class="fc" id="L153">							ArrayList&lt;Object&gt; velocity = new ArrayList&lt;Object&gt;();</span>
+<span class="fc" id="L154">							State stateAct = (State) RandomSearch.listStateReference.get(j).getCopy();</span>
+<span class="fc" id="L155">							stateAct.setCode(new ArrayList&lt;Object&gt;(RandomSearch.listStateReference.get(j).getCode()));</span>
+<span class="fc" id="L156">							stateAct.setEvaluation(RandomSearch.listStateReference.get(j).getEvaluation());</span>
+							
+<span class="fc" id="L158">							State statePBest = (State) RandomSearch.listStateReference.get(j).getCopy();</span>
+<span class="fc" id="L159">							statePBest.setCode(new ArrayList&lt;Object&gt;(RandomSearch.listStateReference.get(j).getCode()));</span>
+<span class="fc" id="L160">							statePBest.setEvaluation(RandomSearch.listStateReference.get(j).getEvaluation());</span>
+							
+<span class="fc" id="L162">							Particle particle = new Particle(stateAct, statePBest, velocity);</span>
+<span class="fc" id="L163">							getListParticle().add(particle);</span>
+						}
+					}  
+				}
+				else{
+<span class="nc" id="L168">					setListParticle(generator.getListStateReference());</span>
+				}
+<span class="fc" id="L170">			        found = true;</span>
+			}
+<span class="fc" id="L172">			count++;</span>
+		}
+<span class="fc" id="L174">		return getListParticle();</span>
+	}
+
+
+	public State getStateReferencePSO() {
+<span class="nc" id="L179">		return stateReferencePSO;</span>
+	}
+
+	public void setStateReferencePSO(State stateReferencePSO) {
+<span class="nc" id="L183">		this.stateReferencePSO = stateReferencePSO;</span>
+<span class="nc" id="L184">	}</span>
+
+	public List&lt;Particle&gt; getListStateReference() {
+<span class="nc" id="L187">		return this.getListParticle();</span>
+	}
+
+	public void setListStateReference(List&lt;State&gt; listStateReference) {
+<span class="fc" id="L191">		this.listStateReference = listStateReference;</span>
+<span class="fc" id="L192">	}</span>
+
+	public List&lt;Particle&gt; getListParticle() {
+<span class="fc" id="L195">		return listParticle;</span>
+	}
+
+	public List&lt;Particle&gt; setListParticle(List&lt;Particle&gt; listParticle) {
+<span class="fc" id="L199">		this.listParticle = listParticle;</span>
+<span class="fc" id="L200">		return listParticle;</span>
+	}
+
+	public GeneratorType getGeneratorType() {
+<span class="nc" id="L204">		return generatorType;</span>
+	}
+
+	public void setGeneratorType(GeneratorType generatorType) {
+<span class="nc" id="L208">		this.generatorType = generatorType;</span>
+<span class="nc" id="L209">	}</span>
+
+	public static int getCountRef() {
+<span class="nc" id="L212">		return countRef;</span>
+	}
+
+	public static void setCountRef(int countRef) {
+<span class="nc" id="L216">		ParticleSwarmOptimization.countRef = countRef;</span>
+<span class="nc" id="L217">	}</span>
+
+
+	//*****************************************
+	@Override
+	public void updateReference(State stateCandidate,Integer countIterationsCurrent) throws IllegalArgumentException,SecurityException, ClassNotFoundException, InstantiationException,IllegalAccessException, InvocationTargetException,NoSuchMethodException {
+<span class="fc" id="L223">		Particle particle = new Particle();</span>
+<span class="fc" id="L224">		particle = listParticle.get(countParticle);</span>
+<span class="fc" id="L225">		int swarm = countParticle/countParticleBySwarm;</span>
+<span class="fc bfc" id="L226" title="All 2 branches covered.">		if(Strategy.getStrategy().getProblem().getTypeProblem().equals(ProblemType.Maximizar)){</span>
+<span class="pc bpc" id="L227" title="1 of 2 branches missed.">			if ((lBest[swarm]).getEvaluation().get(0) &lt; particle.getStatePBest().getEvaluation().get(0)){</span>
+<span class="fc" id="L228">				lBest[swarm] = particle.getStatePBest();</span>
+<span class="pc bpc" id="L229" title="1 of 2 branches missed.">				if(lBest[swarm].getEvaluation().get(0) &gt; getReferenceList().get(getReferenceList().size() - 1).getEvaluation().get(0)){</span>
+<span class="fc" id="L230">					gBest = new State();</span>
+<span class="fc" id="L231">					gBest.setCode(new ArrayList&lt;Object&gt;(lBest[swarm].getCode()));</span>
+<span class="fc" id="L232">					gBest.setEvaluation(lBest[swarm].getEvaluation());</span>
+<span class="fc" id="L233">					gBest.setTypeGenerator(lBest[swarm].getTypeGenerator());</span>
+				}
+			}
+		}
+		else {
+<span class="fc" id="L238">			particle.updateReference(stateCandidate, countIterationsCurrent);</span>
+<span class="pc bpc" id="L239" title="1 of 2 branches missed.">			if ((lBest[swarm]).getEvaluation().get(0) &gt; particle.getStatePBest().getEvaluation().get(0)){</span>
+<span class="fc" id="L240">				lBest[swarm] = particle.getStatePBest();</span>
+<span class="pc bpc" id="L241" title="1 of 2 branches missed.">				if(lBest[swarm].getEvaluation().get(0) &lt; getReferenceList().get(getReferenceList().size() - 1).getEvaluation().get(0)){</span>
+<span class="fc" id="L242">					gBest = new State();</span>
+<span class="fc" id="L243">					gBest.setCode(new ArrayList&lt;Object&gt;(lBest[swarm].getCode()));</span>
+<span class="fc" id="L244">					gBest.setEvaluation(lBest[swarm].getEvaluation());</span>
+<span class="fc" id="L245">					gBest.setTypeGenerator(lBest[swarm].getTypeGenerator());</span>
+				}
+			}
+		}
+<span class="fc" id="L249">		listStateReference.add(gBest);</span>
+<span class="fc" id="L250">		countParticle++;</span>
+<span class="fc" id="L251">		countCurrentIterPSO++;</span>
+<span class="fc" id="L252">	}</span>
+	
+	public State gBestInicial (){
+<span class="fc" id="L255">		State stateBest = lBest[0];</span>
+<span class="fc bfc" id="L256" title="All 2 branches covered.">		for (int i = 1; i &lt; lBest.length; i++) {</span>
+<span class="fc bfc" id="L257" title="All 2 branches covered.">			if(Strategy.getStrategy().getProblem().getTypeProblem().equals(ProblemType.Maximizar)){</span>
+<span class="pc bpc" id="L258" title="1 of 2 branches missed.">				if (lBest[i].getEvaluation().get(0) &gt; stateBest.getEvaluation().get(0)){</span>
+<span class="fc" id="L259">					stateBest = lBest[i];</span>
+				}
+			}
+			else{
+<span class="pc bpc" id="L263" title="1 of 2 branches missed.">				if (lBest[i].getEvaluation().get(0) &lt; stateBest.getEvaluation().get(0)){</span>
+<span class="nc" id="L264">					stateBest = lBest[i];</span>
+				}
+			}
+		}
+<span class="fc" id="L268">		return stateBest;</span>
+	}
+
+	@Override
+	public void setInitialReference(State stateInitialRef) {
+		// TODO Auto-generated method stub
+
+<span class="nc" id="L275">	}</span>
+
+	@Override
+	public GeneratorType getType() {
+		// TODO Auto-generated method stub
+<span class="fc" id="L280">		return this.generatorType;</span>
+	}
+
+	@Override
+	public List&lt;State&gt; getReferenceList() {
+		// TODO Auto-generated method stub
+<span class="fc" id="L286">		return this.listStateReference;</span>
+	}
+
+	@Override
+	public List&lt;State&gt; getSonList() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L292">		return null;</span>
+	}
+
+	@Override
+	public boolean awardUpdateREF(State stateCandidate) {
+		// TODO Auto-generated method stub
+<span class="nc" id="L298">		return false;</span>
+	}
+
+	@Override
+	public void setWeight(float weight) {
+		// TODO Auto-generated method stub
+
+<span class="nc" id="L305">	}</span>
+
+	@Override
+	public float getWeight() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L310">		return 0;</span>
+	}
+
+	@Override
+	public int[] getListCountBetterGender() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L316">		return this.listCountBetterGender;</span>
+	}
+
+	@Override
+	public int[] getListCountGender() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L322">		return this.listCountGender;</span>
+	}
+
+	@Override
+	public float[] getTrace() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L328">		return this.listTrace;</span>
+	}
+
+
+	
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

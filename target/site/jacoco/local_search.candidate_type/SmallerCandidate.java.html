@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SmallerCandidate.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">biciam</a> &gt; <a href="index.source.html" class="el_package">local_search.candidate_type</a> &gt; <span class="el_source">SmallerCandidate.java</span></div><h1>SmallerCandidate.java</h1><pre class="source lang-java linenums">/**
+ * @(#) SmallerCandidate.java
+ */
+
+package local_search.candidate_type;
+
+
+import java.lang.reflect.InvocationTargetException;
+import java.util.List;
+
+import problem.definition.State;
+
+<span class="fc" id="L13">public class SmallerCandidate extends SearchCandidate {</span>
+
+	@Override
+	public State stateSearch(List&lt;State&gt; listNeighborhood) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
+<span class="fc" id="L17">		State stateSmaller = null;</span>
+<span class="fc bfc" id="L18" title="All 2 branches covered.">		if(listNeighborhood.size() &gt; 1){</span>
+<span class="fc" id="L19">			double counter = 0;</span>
+<span class="fc" id="L20">			double currentCount = listNeighborhood.get(0).getEvaluation().get(0);</span>
+<span class="fc bfc" id="L21" title="All 2 branches covered.">			for (int i = 1; i &lt; listNeighborhood.size(); i++) {</span>
+<span class="fc" id="L22">				counter = listNeighborhood.get(i).getEvaluation().get(0);</span>
+<span class="fc bfc" id="L23" title="All 2 branches covered.">				if (counter &lt; currentCount) {</span>
+<span class="fc" id="L24">					currentCount = counter;</span>
+<span class="fc" id="L25">					stateSmaller = listNeighborhood.get(i);</span>
+				}
+<span class="fc" id="L27">				counter = 0;</span>
+			}
+<span class="fc" id="L29">		}</span>
+<span class="fc" id="L30">		else stateSmaller = listNeighborhood.get(0);</span>
+<span class="fc" id="L31">		return stateSmaller;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

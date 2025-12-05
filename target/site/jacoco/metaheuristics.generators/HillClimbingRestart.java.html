@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>HillClimbingRestart.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">biciam</a> &gt; <a href="index.source.html" class="el_package">metaheuristics.generators</a> &gt; <span class="el_source">HillClimbingRestart.java</span></div><h1>HillClimbingRestart.java</h1><pre class="source lang-java linenums">package metaheuristics.generators;
+
+import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
+import java.util.List;
+
+import factory_interface.IFFactoryAcceptCandidate;
+import factory_method.FactoryAcceptCandidate;
+
+import local_search.acceptation_type.AcceptType;
+import local_search.acceptation_type.AcceptableCandidate;
+import local_search.candidate_type.CandidateType;
+import local_search.candidate_type.CandidateValue;
+import local_search.complement.StrategyType;
+import metaheuristics.strategy.Strategy;
+
+import problem.definition.State;
+import problem.definition.Problem.ProblemType;
+
+public class HillClimbingRestart extends Generator{
+
+	public static int count;
+	public static int countCurrent;
+<span class="fc" id="L24">	private List&lt;State&gt; listRef = new ArrayList&lt;State&gt;();</span>
+	protected CandidateValue candidatevalue;
+	protected AcceptType typeAcceptation;
+	protected StrategyType strategy;
+	protected CandidateType typeCandidate;
+	protected State stateReferenceHC;
+	protected IFFactoryAcceptCandidate ifacceptCandidate;
+	protected GeneratorType Generatortype;
+<span class="fc" id="L32">	protected List&lt;State&gt; listStateReference = new ArrayList&lt;State&gt;(); </span>
+	protected float weight;
+	
+	//problemas dinamicos
+<span class="fc" id="L36">	public static int countGender = 0;</span>
+<span class="fc" id="L37">	public static int countBetterGender = 0;</span>
+<span class="fc" id="L38">	private int[] listCountBetterGender = new int[10];</span>
+<span class="fc" id="L39">	private int[] listCountGender = new int[10];</span>
+<span class="fc" id="L40">	private float[] listTrace = new float[1200000];</span>
+
+	public HillClimbingRestart() {
+<span class="fc" id="L43">		super();</span>
+//		countIterations = Strategy.getStrategy().getCountCurrent();
+//		countSame = 1;
+<span class="fc" id="L46">		countCurrent = count;</span>
+<span class="fc" id="L47">		this.typeAcceptation = AcceptType.AcceptBest;</span>
+<span class="fc" id="L48">		this.strategy = StrategyType.NORMAL;</span>
+<span class="pc bpc" id="L49" title="1 of 2 branches missed.">		if(Strategy.getStrategy().getProblem().getTypeProblem().equals(ProblemType.Maximizar)) {</span>
+<span class="nc" id="L50">			this.typeCandidate = CandidateType.GreaterCandidate;</span>
+		}
+		else{
+<span class="fc" id="L53">			this.typeCandidate = CandidateType.SmallerCandidate;</span>
+		}
+<span class="fc" id="L55">		this.candidatevalue = new CandidateValue();</span>
+<span class="fc" id="L56">		this.Generatortype = GeneratorType.HillClimbing;</span>
+<span class="fc" id="L57">		this.weight = 50;</span>
+<span class="fc" id="L58">		listTrace[0] = this.weight;</span>
+<span class="fc" id="L59">		listCountBetterGender[0] = 0;</span>
+<span class="fc" id="L60">		listCountGender[0] = 0;</span>
+<span class="fc" id="L61">	}</span>
+
+
+
+	public State generate (Integer operatornumber) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
+		//ArrayList&lt;State&gt;list=new ArrayList&lt;State&gt;();
+<span class="fc" id="L67">		State statecandidate = new State();</span>
+<span class="fc bfc" id="L68" title="All 2 branches covered.">		if(count == Strategy.getStrategy().getCountCurrent()){</span>
+<span class="fc" id="L69">			State stateR = new State(stateReferenceHC);</span>
+<span class="fc" id="L70">			listRef.add(stateR);</span>
+<span class="fc" id="L71">			stateReferenceHC = Strategy.getStrategy().getProblem().getOperator().generateRandomState(1).get(0);</span>
+<span class="fc" id="L72">			Strategy.getStrategy().getProblem().Evaluate(stateReferenceHC);</span>
+<span class="fc" id="L73">			count = count + countCurrent;</span>
+		}
+<span class="fc" id="L75">		List&lt;State&gt; neighborhood = Strategy.getStrategy().getProblem().getOperator().generatedNewState(stateReferenceHC, operatornumber);</span>
+<span class="fc" id="L76">		statecandidate = candidatevalue.stateCandidate(stateReferenceHC, typeCandidate, strategy, operatornumber, neighborhood);</span>
+		//list.add(statecandidate);
+<span class="fc" id="L78">		return statecandidate;</span>
+	}
+
+	@Override
+	public void updateReference(State stateCandidate,
+			Integer countIterationsCurrent) throws IllegalArgumentException,
+			SecurityException, ClassNotFoundException, InstantiationException,
+			IllegalAccessException, InvocationTargetException,
+			NoSuchMethodException {
+		// TODO Auto-generated method stub
+<span class="fc" id="L88">		ifacceptCandidate = new FactoryAcceptCandidate();</span>
+<span class="fc" id="L89">		AcceptableCandidate candidate = ifacceptCandidate.createAcceptCandidate(typeAcceptation);</span>
+<span class="fc" id="L90">		Boolean accept = candidate.acceptCandidate(stateReferenceHC, stateCandidate);</span>
+<span class="fc bfc" id="L91" title="All 2 branches covered.">		if(accept.equals(true))</span>
+<span class="fc" id="L92">		  stateReferenceHC = stateCandidate;</span>
+//		getReferenceList();
+<span class="fc" id="L94">	}</span>
+
+
+
+	@Override
+	public List&lt;State&gt; getReferenceList() {
+<span class="fc" id="L100">		listStateReference.add(stateReferenceHC);</span>
+<span class="fc" id="L101">		return listStateReference;</span>
+	}
+
+	@Override
+	public State getReference() {
+<span class="fc" id="L106">		return stateReferenceHC;</span>
+	}
+
+	public void setStateRef(State stateRef) {
+<span class="fc" id="L110">		this.stateReferenceHC = stateRef;</span>
+<span class="fc" id="L111">	}</span>
+
+	@Override
+	public void setInitialReference(State stateInitialRef) {
+<span class="fc" id="L115">		this.stateReferenceHC = stateInitialRef;</span>
+<span class="fc" id="L116">	}</span>
+
+	public GeneratorType getGeneratorType() {
+<span class="fc" id="L119">		return Generatortype;</span>
+	}
+
+	public void setGeneratorType(GeneratorType Generatortype) {
+<span class="fc" id="L123">		this.Generatortype = Generatortype;</span>
+<span class="fc" id="L124">	}</span>
+
+	@Override
+	public GeneratorType getType() {
+<span class="fc" id="L128">		return this.Generatortype;</span>
+	}
+
+	@Override
+	public List&lt;State&gt; getSonList() {
+		// TODO Auto-generated method stub
+<span class="fc" id="L134">		return null;</span>
+	}
+
+	public void setTypeCandidate(CandidateType typeCandidate){
+<span class="fc" id="L138">		this.typeCandidate = typeCandidate;</span>
+<span class="fc" id="L139">	}</span>
+
+	@Override
+	public boolean awardUpdateREF(State stateCandidate) {
+		// TODO Auto-generated method stub
+<span class="fc" id="L144">		return false;</span>
+	}
+
+
+	@Override
+	public float getWeight() {
+<span class="fc" id="L150">		return this.weight;</span>
+	}
+
+	@Override
+	public void setWeight(float weight) {
+<span class="fc" id="L155">		this.weight = weight;</span>
+<span class="fc" id="L156">	}</span>
+
+	
+	/*public State generate2(Integer operatornumber) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
+		State statecandidate = new State();
+		countIterations = Strategy.getStrategy().getCountCurrent();
+		if (countIterations&gt;0){
+			if(Strategy.getStrategy().Statistics.getbestListStates().get(countIterations)==Strategy.getStrategy().Statistics.getbestListStates().get(countIterations-1)){
+				countSame++;
+				if(countSame == count-1){
+					State stateR = new State(stateReferenceHC);
+					listRef.add(stateR);
+					stateReferenceHC = Strategy.getStrategy().getProblem().getOperator().generateRandomState(1).get(0);
+				}
+			}
+			else
+				countSame = 1;
+		}
+		List&lt;State&gt; neighborhood = Strategy.getStrategy().getProblem().getOperator().generatedNewState(stateReferenceHC, operatornumber);
+		statecandidate = candidatevalue.stateCandidate(stateReferenceHC, typeCandidate, strategy, operatornumber, neighborhood);
+		return statecandidate;
+	}
+*/
+	
+	@Override
+	public int[] getListCountBetterGender() {
+		// TODO Auto-generated method stub
+<span class="fc" id="L183">		return this.listCountBetterGender;</span>
+	}
+
+	@Override
+	public int[] getListCountGender() {
+		// TODO Auto-generated method stub
+<span class="fc" id="L189">		return this.listCountGender;</span>
+	}
+
+	@Override
+	public float[] getTrace() {
+		// TODO Auto-generated method stub
+<span class="fc" id="L195">		return this.listTrace;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

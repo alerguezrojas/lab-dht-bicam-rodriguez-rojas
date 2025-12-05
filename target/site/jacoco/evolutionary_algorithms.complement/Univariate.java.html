@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Univariate.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">biciam</a> &gt; <a href="index.source.html" class="el_package">evolutionary_algorithms.complement</a> &gt; <span class="el_source">Univariate.java</span></div><h1>Univariate.java</h1><pre class="source lang-java linenums">package evolutionary_algorithms.complement;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.SortedMap;
+
+import problem.definition.State;
+
+
+
+<span class="fc" id="L11">public class Univariate extends Distribution {</span>
+
+	@Override
+	public List&lt;Probability&gt; distribution(List&lt;State&gt; fathers) {
+
+<span class="fc" id="L16">		List&lt;Probability&gt; ListProbability = new ArrayList&lt;Probability&gt;();</span>
+<span class="fc" id="L17">		int cantV = fathers.get(0).getCode().size();</span>
+<span class="fc bfc" id="L18" title="All 2 branches covered.">		for (int i = 0; i &lt; cantV; i++) {</span>
+<span class="fc" id="L19">			int[] values = new int[fathers.size()];</span>
+			//llenar los valores de cada variable
+<span class="fc bfc" id="L21" title="All 2 branches covered.">			for (int j = 0; j &lt; fathers.size(); j++){</span>
+<span class="fc" id="L22">				values[j] = (Integer) fathers.get(j).getCode().get(i);</span>
+			}
+			//para cada valor contar la cantidad de veces que se repite
+<span class="fc" id="L25">			int k = 0;</span>
+<span class="fc bfc" id="L26" title="All 2 branches covered.">			while (k &lt; values.length) {</span>
+<span class="fc" id="L27">				float count = 0;</span>
+<span class="fc bfc" id="L28" title="All 2 branches covered.">				if(values[k] != -1){</span>
+<span class="fc" id="L29">					int l = k;</span>
+<span class="fc" id="L30">					int temp = values[k];</span>
+<span class="fc bfc" id="L31" title="All 2 branches covered.">					while (l &lt; values.length) {</span>
+<span class="fc bfc" id="L32" title="All 2 branches covered.">						if(temp == values[l]){</span>
+<span class="fc" id="L33">							count++;</span>
+<span class="fc" id="L34">							values[l] = -1;</span>
+						}
+<span class="fc" id="L36">						l++;	</span>
+					}
+<span class="fc" id="L38">					Probability probability = new Probability();</span>
+<span class="fc" id="L39">					float prob = count / values.length;</span>
+<span class="fc" id="L40">					probability.setKey(i);</span>
+<span class="fc" id="L41">					probability.setValue(temp);</span>
+<span class="fc" id="L42">					probability.setProbability(prob);</span>
+<span class="fc" id="L43">					ListProbability.add(probability);</span>
+				}
+<span class="fc" id="L45">				k++;</span>
+<span class="fc" id="L46">			}</span>
+		}
+<span class="fc" id="L48">		return ListProbability;</span>
+	}
+
+	public List&lt;String&gt; getListKey(SortedMap&lt;String, Object&gt; map){
+<span class="fc" id="L52">		List&lt;String&gt; listKey = new ArrayList&lt;String&gt;();</span>
+<span class="fc" id="L53">		String key = map.keySet().toString();</span>
+<span class="fc" id="L54">		String returnString = key.substring(1, key.length() - 1);</span>
+<span class="fc" id="L55">		returnString = returnString + &quot;, &quot;;</span>
+<span class="fc" id="L56">		int countKey = map.size();</span>
+<span class="fc bfc" id="L57" title="All 2 branches covered.">		for (int j = 0; j &lt; countKey; j++) {</span>
+<span class="fc" id="L58">			String r = returnString.substring(0, returnString.indexOf(','));</span>
+<span class="fc" id="L59">			returnString = returnString.substring(returnString.indexOf(',')+2);</span>
+<span class="fc" id="L60">			listKey.add(r);</span>
+	   }
+<span class="fc" id="L62">	   return listKey;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

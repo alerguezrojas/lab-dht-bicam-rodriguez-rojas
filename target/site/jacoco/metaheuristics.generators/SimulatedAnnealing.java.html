@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SimulatedAnnealing.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">biciam</a> &gt; <a href="index.source.html" class="el_package">metaheuristics.generators</a> &gt; <span class="el_source">SimulatedAnnealing.java</span></div><h1>SimulatedAnnealing.java</h1><pre class="source lang-java linenums">package metaheuristics.generators;
+
+import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
+import java.util.List;
+
+import local_search.acceptation_type.AcceptType;
+import local_search.acceptation_type.AcceptableCandidate;
+import local_search.candidate_type.CandidateType;
+import local_search.candidate_type.CandidateValue;
+import local_search.complement.StrategyType;
+import metaheuristics.strategy.Strategy;
+
+import problem.definition.State;
+
+import factory_interface.IFFactoryAcceptCandidate;
+import factory_method.FactoryAcceptCandidate;
+
+public class SimulatedAnnealing extends Generator {
+
+	private CandidateValue candidatevalue;
+	private AcceptType typeAcceptation;
+	private StrategyType strategy;
+	private CandidateType typeCandidate;
+	private State stateReferenceSA;
+    private IFFactoryAcceptCandidate ifacceptCandidate;
+    public static Double alpha;
+    public static Double tinitial;
+    public static Double tfinal;
+    public static int countIterationsT;
+    private int countRept;
+    private GeneratorType typeGenerator;
+<span class="fc" id="L33">    private List&lt;State&gt; listStateReference = new ArrayList&lt;State&gt;();</span>
+    private float weight;
+
+	//problemas dinamicos
+<span class="fc" id="L37">    public static int countGender = 0;</span>
+<span class="fc" id="L38">    public static int countBetterGender = 0;</span>
+<span class="fc" id="L39">    private int[] listCountBetterGender = new int[10];</span>
+<span class="fc" id="L40">    private int[] listCountGender = new int[10];</span>
+<span class="fc" id="L41">    private float[] listTrace = new float[1200000];</span>
+
+
+    public GeneratorType getTypeGenerator() {
+<span class="fc" id="L45">		return typeGenerator;</span>
+	}
+
+	public void setTypeGenerator(GeneratorType typeGenerator) {
+<span class="fc" id="L49">		this.typeGenerator = typeGenerator;</span>
+<span class="fc" id="L50">	}</span>
+
+	public SimulatedAnnealing(){
+
+<span class="fc" id="L54">    	super();</span>
+    	/*SimulatedAnnealing.alpha = 0.93;
+    	SimulatedAnnealing.tinitial = 250.0;
+    	SimulatedAnnealing.tfinal = 41.66;
+    	SimulatedAnnealing.countIterationsT = 50;*/
+
+<span class="fc" id="L60">    	this.typeAcceptation = AcceptType.AcceptNotBadT;</span>
+<span class="fc" id="L61">		this.strategy = StrategyType.NORMAL;</span>
+<span class="fc" id="L62">		this.typeCandidate = CandidateType.RandomCandidate;</span>
+<span class="fc" id="L63">		this.candidatevalue = new CandidateValue();</span>
+<span class="fc" id="L64">		this.typeGenerator = GeneratorType.SimulatedAnnealing;</span>
+<span class="fc" id="L65">		this.weight = 50;</span>
+<span class="fc" id="L66">		listTrace[0] = this.weight;</span>
+<span class="fc" id="L67">		listCountBetterGender[0] = 0;</span>
+<span class="fc" id="L68">		listCountGender[0] = 0;</span>
+<span class="fc" id="L69">    }</span>
+
+	@Override
+	public State generate(Integer operatornumber) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
+		//&lt;State&gt;list=new ArrayList&lt;State&gt;();
+<span class="fc" id="L74">		List&lt;State&gt; neighborhood = new ArrayList&lt;State&gt;();</span>
+<span class="fc" id="L75">		neighborhood = Strategy.getStrategy().getProblem().getOperator().generatedNewState(stateReferenceSA, operatornumber);</span>
+<span class="fc" id="L76">	    State statecandidate = candidatevalue.stateCandidate(stateReferenceSA, typeCandidate, strategy, operatornumber, neighborhood);</span>
+	   // list.add(statecandidate);
+<span class="fc" id="L78">	    return statecandidate;</span>
+	}
+
+	@Override
+	public State getReference() {
+<span class="fc" id="L83">		return stateReferenceSA;</span>
+	}
+
+	public void setStateRef(State stateRef) {
+<span class="fc" id="L87">		this.stateReferenceSA = stateRef;</span>
+<span class="fc" id="L88">	}</span>
+
+	@Override
+	public void setInitialReference(State stateInitialRef) {
+<span class="fc" id="L92">		this.stateReferenceSA = stateInitialRef;</span>
+<span class="fc" id="L93">	}</span>
+
+	@Override
+	public void updateReference(State stateCandidate, Integer countIterationsCurrent)throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
+<span class="fc" id="L97">		countRept = countIterationsT;</span>
+<span class="fc" id="L98">		ifacceptCandidate = new FactoryAcceptCandidate();</span>
+<span class="fc" id="L99">		AcceptableCandidate candidate = ifacceptCandidate.createAcceptCandidate(typeAcceptation);</span>
+<span class="fc" id="L100">		Boolean accept = candidate.acceptCandidate(stateReferenceSA, stateCandidate);</span>
+<span class="pc bpc" id="L101" title="1 of 2 branches missed.">		if(accept.equals(true))</span>
+<span class="fc" id="L102">		  stateReferenceSA = stateCandidate;</span>
+<span class="fc bfc" id="L103" title="All 2 branches covered.">		if(countIterationsCurrent.equals(countIterationsT)){</span>
+<span class="fc" id="L104">			tinitial = tinitial * alpha;</span>
+<span class="fc" id="L105">			countIterationsT = countIterationsT + countRept;</span>
+		}
+//		getReferenceList();
+<span class="fc" id="L108">	}</span>
+
+	@Override
+	public GeneratorType getType() {
+<span class="fc" id="L112">		return this.typeGenerator;</span>
+	}
+
+	@Override
+	public List&lt;State&gt; getReferenceList() {
+<span class="fc" id="L117">		listStateReference.add(stateReferenceSA);</span>
+<span class="fc" id="L118">		return listStateReference;</span>
+	}
+
+	@Override
+	public List&lt;State&gt; getSonList() {
+		// TODO Auto-generated method stub
+<span class="fc" id="L124">		return null;</span>
+	}
+
+	@Override
+	public boolean awardUpdateREF(State stateCandidate) {
+		// TODO Auto-generated method stub
+<span class="fc" id="L130">		return false;</span>
+	}
+
+
+	@Override
+	public float getWeight() {
+		// TODO Auto-generated method stub
+<span class="fc" id="L137">		return this.weight;</span>
+	}
+
+	@Override
+	public void setWeight(float weight) {
+		// TODO Auto-generated method stub
+<span class="fc" id="L143">		this.weight = weight;</span>
+<span class="fc" id="L144">	}</span>
+
+	@Override
+	public int[] getListCountBetterGender() {
+		// TODO Auto-generated method stub
+<span class="fc" id="L149">		return this.listCountBetterGender;</span>
+	}
+
+	@Override
+	public int[] getListCountGender() {
+		// TODO Auto-generated method stub
+<span class="fc" id="L155">		return this.listCountGender;</span>
+	}
+
+	@Override
+	public float[] getTrace() {
+		// TODO Auto-generated method stub
+<span class="fc" id="L161">		return this.listTrace;</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

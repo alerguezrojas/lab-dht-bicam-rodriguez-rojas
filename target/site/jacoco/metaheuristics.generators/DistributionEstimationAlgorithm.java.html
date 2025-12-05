@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DistributionEstimationAlgorithm.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">biciam</a> &gt; <a href="index.source.html" class="el_package">metaheuristics.generators</a> &gt; <span class="el_source">DistributionEstimationAlgorithm.java</span></div><h1>DistributionEstimationAlgorithm.java</h1><pre class="source lang-java linenums">package metaheuristics.generators;
+
+import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
+import java.util.List;
+
+import metaheuristics.strategy.Strategy;
+
+import problem.definition.State;
+import problem.definition.Problem.ProblemType;
+
+import evolutionary_algorithms.complement.DistributionType;
+import evolutionary_algorithms.complement.FatherSelection;
+import evolutionary_algorithms.complement.Replace;
+import evolutionary_algorithms.complement.ReplaceType;
+import evolutionary_algorithms.complement.Sampling;
+import evolutionary_algorithms.complement.SamplingType;
+import evolutionary_algorithms.complement.SelectionType;
+import factory_interface.IFFSampling;
+import factory_interface.IFFactoryFatherSelection;
+import factory_interface.IFFactoryReplace;
+import factory_method.FactoryFatherSelection;
+import factory_method.FactoryReplace;
+import factory_method.FactorySampling;
+
+public class DistributionEstimationAlgorithm extends Generator {
+
+	private State stateReferenceDA;
+<span class="fc" id="L29">	private List&lt;State&gt; referenceList = new ArrayList&lt;State&gt;(); </span>
+<span class="fc" id="L30">	public static List&lt;State&gt; sonList = new ArrayList&lt;State&gt;(); </span>
+	private IFFactoryFatherSelection iffatherselection;
+	private IFFSampling iffsampling;
+	private IFFactoryReplace iffreplace;
+	private DistributionType distributionType;
+	private SamplingType Samplingtype;
+	
+//	private ReplaceType replaceType;
+	public static ReplaceType replaceType;
+	public static SelectionType selectionType;
+	
+	private GeneratorType generatorType;
+	//private ProblemState candidate;
+	public static int truncation;
+<span class="fc" id="L44">	public static int countRef = 0;</span>
+	private float weight;
+	
+	//problemas dinamicos
+<span class="fc" id="L48">	public static int countGender = 0;</span>
+<span class="fc" id="L49">	public static int countBetterGender = 0;</span>
+<span class="fc" id="L50">	private int[] listCountBetterGender = new int[10];</span>
+<span class="fc" id="L51">	private int[] listCountGender = new int[10];</span>
+<span class="fc" id="L52">	private float[] listTrace = new float[1200000];</span>
+	
+	
+	public DistributionEstimationAlgorithm() {
+<span class="fc" id="L56">		super();</span>
+<span class="fc" id="L57">		this.referenceList = getListStateRef(); // llamada al mï¿½todo que devuelve la lista. </span>
+//		this.selectionType = SelectionType.Truncation;
+		//this.replaceType = ReplaceType.Generational;
+//		this.replaceType = ReplaceType.Smallest;
+<span class="fc" id="L61">		this.generatorType = GeneratorType.DistributionEstimationAlgorithm;</span>
+<span class="fc" id="L62">		this.distributionType = DistributionType.Univariate;</span>
+<span class="fc" id="L63">		this.Samplingtype = SamplingType.ProbabilisticSampling;</span>
+<span class="fc" id="L64">		this.weight = 50;</span>
+<span class="fc" id="L65">		listTrace[0] = weight;</span>
+<span class="fc" id="L66">		listCountBetterGender[0] = 0;</span>
+<span class="fc" id="L67">		listCountGender[0] = 0;</span>
+<span class="fc" id="L68">	}</span>
+	
+	public State MaxValue (List&lt;State&gt; listInd){
+<span class="fc" id="L71">		State state = new State(listInd.get(0));</span>
+<span class="fc" id="L72">		double max = state.getEvaluation().get(0);</span>
+<span class="fc bfc" id="L73" title="All 2 branches covered.">		for (int i = 1; i &lt; listInd.size(); i++) {</span>
+<span class="fc bfc" id="L74" title="All 2 branches covered.">			if(listInd.get(i).getEvaluation().get(0) &gt; max){</span>
+<span class="fc" id="L75">				max = listInd.get(i).getEvaluation().get(0);</span>
+<span class="fc" id="L76">				state = new State(listInd.get(i));</span>
+			}
+		}
+<span class="fc" id="L79">		return state;</span>
+	}
+	
+	@Override
+	public State generate(Integer operatornumber) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException,	NoSuchMethodException {
+		//********************selection*****************************
+		//ProblemState candidate = new ProblemState();
+		/*State candidate = new State();//(State) Strategy.getStrategy().getProblem().getState().clone()
+		List&lt;State&gt; fathers = new ArrayList&lt;State&gt;();
+		fathers = getfathersList();
+		//**************************distribution***********************************
+		iffdistribution = new FactoryDistribution();
+    	Distribution distribution = iffdistribution.createDistribution(distributionType);
+    	List&lt;Probability&gt; probability = distribution.distribution(fathers);
+		
+    	//***************************muestreo*****************************************
+    	iffsampling = new FactorySampling();
+    	Sampling samplingG = iffsampling.createSampling(Samplingtype);
+    	List&lt;State&gt; ind = samplingG.sampling(probability, referenceList.size());
+    	sonList = ind;
+    	candidate = MaxValue(ind);
+       // this.candidate = candidate;
+    	return candidate;*/	
+    	
+    	//***************************version 1.0
+    	//ArrayList&lt;State&gt; listcandidate = new ArrayList&lt;State&gt;();//(State) Strategy.getStrategy().getProblem().getState().clone()
+		
+<span class="fc" id="L106">    	List&lt;State&gt; fathers = new ArrayList&lt;State&gt;();</span>
+<span class="fc" id="L107">		fathers = getfathersList();</span>
+<span class="fc" id="L108">		iffsampling = new FactorySampling();</span>
+<span class="fc" id="L109">    	Sampling samplingG = iffsampling.createSampling(Samplingtype);</span>
+<span class="fc" id="L110">    	List&lt;State&gt; ind = samplingG.sampling(fathers, operatornumber);</span>
+<span class="fc" id="L111">    	State candidate = null;</span>
+<span class="pc bpc" id="L112" title="1 of 2 branches missed.">    	if(ind.size() &gt; 1){</span>
+<span class="nc bnc" id="L113" title="All 2 branches missed.">    		for (int i = 0; i &lt; ind.size(); i++) {</span>
+<span class="nc" id="L114">    			double evaluation = Strategy.getStrategy().getProblem().getFunction().get(0).Evaluation(ind.get(i));</span>
+<span class="nc" id="L115">    			ArrayList&lt;Double&gt; listEval = new ArrayList&lt;Double&gt;();</span>
+<span class="nc" id="L116">    			listEval.add(evaluation);</span>
+<span class="nc" id="L117">    			ind.get(0).setEvaluation(listEval);</span>
+    		}
+<span class="nc" id="L119">    		candidate = MaxValue(ind);</span>
+    	}
+    	else{
+<span class="fc" id="L122">    		candidate = ind.get(0);</span>
+    	}
+//    	sonList = ind;
+    	//listcandidate.add(candidate);
+       // this.candidate = candidate;
+<span class="fc" id="L127">    	return candidate;</span>
+    	
+    }
+    		
+	@Override
+	public State getReference() {
+<span class="fc" id="L133">		stateReferenceDA = referenceList.get(0);</span>
+<span class="fc bfc" id="L134" title="All 2 branches covered.">		if(Strategy.getStrategy().getProblem().getTypeProblem().equals(ProblemType.Maximizar)){</span>
+<span class="fc bfc" id="L135" title="All 2 branches covered.">			for (int i = 1; i &lt; referenceList.size(); i++) {</span>
+<span class="pc bpc" id="L136" title="1 of 2 branches missed.">				if(stateReferenceDA.getEvaluation().get(0) &lt; referenceList.get(i).getEvaluation().get(0))</span>
+<span class="nc" id="L137">					stateReferenceDA = referenceList.get(i);</span>
+			}
+		}
+		else{
+<span class="fc bfc" id="L141" title="All 2 branches covered.">			for (int i = 1; i &lt; referenceList.size(); i++) {</span>
+<span class="pc bpc" id="L142" title="1 of 2 branches missed.">				if(stateReferenceDA.getEvaluation().get(0) &gt; referenceList.get(i).getEvaluation().get(0))</span>
+<span class="fc" id="L143">					stateReferenceDA = referenceList.get(i);</span>
+			}
+		}
+<span class="fc" id="L146">		return stateReferenceDA;</span>
+	}
+
+	@Override
+	public List&lt;State&gt; getReferenceList() {
+<span class="fc" id="L151">		List&lt;State&gt; ReferenceList = new ArrayList&lt;State&gt;();</span>
+<span class="fc bfc" id="L152" title="All 2 branches covered.">		for (int i = 0; i &lt; referenceList.size(); i++) {</span>
+<span class="fc" id="L153">			State value = referenceList.get(i);</span>
+<span class="fc" id="L154">			ReferenceList.add( value);</span>
+		}
+<span class="fc" id="L156">		return ReferenceList;</span>
+	}
+
+	@Override
+	public GeneratorType getType() {
+<span class="fc" id="L161">		return this.generatorType;</span>
+	}
+
+	@Override
+	public void setInitialReference(State stateInitialRef) {
+<span class="fc" id="L166">		this.stateReferenceDA = stateInitialRef;</span>
+<span class="fc" id="L167">	}</span>
+
+	@Override
+	public void updateReference(State stateCandidate, Integer countIterationsCurrent) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException,	NoSuchMethodException {
+<span class="fc" id="L171">		iffreplace = new FactoryReplace();</span>
+<span class="fc" id="L172">		Replace replace = iffreplace.createReplace(replaceType);</span>
+<span class="fc" id="L173">		referenceList = replace.replace(stateCandidate, referenceList);</span>
+<span class="fc" id="L174">	}</span>
+	
+	public List&lt;State&gt; getListStateRef(){
+<span class="fc" id="L177">		Boolean found = false;</span>
+<span class="fc" id="L178">		List&lt;String&gt; key = Strategy.getStrategy().getListKey();</span>
+<span class="fc" id="L179">		int count = 0;</span>
+		//if(Strategy.getStrategy().Statistics.getAllStates().size() == 0){
+		/*if(RandomSearch.listStateReference.size() == 0){
+			return this.referenceList = new ArrayList&lt;State&gt;();
+		}*/
+<span class="pc bpc" id="L184" title="2 of 4 branches missed.">		while(!found &amp;&amp; Strategy.getStrategy().mapGenerators.size() &gt; count){</span>
+<span class="nc bnc" id="L185" title="All 2 branches missed.">			if(key.get(count).equals(GeneratorType.DistributionEstimationAlgorithm.toString())){</span>
+<span class="nc" id="L186">				GeneratorType keyGenerator = GeneratorType.valueOf(String.valueOf(key.get(count)));</span>
+<span class="nc" id="L187">				DistributionEstimationAlgorithm generator = (DistributionEstimationAlgorithm)Strategy.getStrategy().mapGenerators.get(keyGenerator);</span>
+<span class="nc bnc" id="L188" title="All 2 branches missed.">				if(generator.getListReference().isEmpty()){</span>
+<span class="nc" id="L189">					referenceList.addAll(RandomSearch.listStateReference);</span>
+					//for (int j = 1; j &lt; Strategy.getStrategy().Statistics.getAllStates().size(); j++) {
+//					for (int j = 1; j &lt; RandomSearch.listStateReference.size(); j++) {
+//						//if((Strategy.getStrategy().Statistics.getAllStates().get(j).getTypeGenerator().equals(GeneratorType.RandomSearch)) &amp;&amp; (referenceList.size()!= countRef)){
+//						if(referenceList.size() != countRef){
+//							//State problemState = Strategy.getStrategy().Statistics.getAllStates().get(j);
+//							referenceList.add(RandomSearch.listStateReference.get(j));
+//						}
+//					}  
+				}
+				else{
+<span class="nc" id="L200">					referenceList = generator.getListReference();</span>
+				}
+<span class="nc" id="L202">			    found = true;</span>
+			}
+<span class="nc" id="L204">			count++;</span>
+		}
+<span class="fc" id="L206">		return referenceList;</span>
+	}
+
+	public List&lt;State&gt; getListReference() {
+<span class="fc" id="L210">		return referenceList;</span>
+	}
+
+	public void setListReference(List&lt;State&gt; listReference) {
+<span class="fc" id="L214">		referenceList = listReference;</span>
+<span class="fc" id="L215">	}</span>
+
+	public GeneratorType getGeneratorType() {
+<span class="fc" id="L218">		return generatorType;</span>
+	}
+
+	public void setGeneratorType(GeneratorType generatorType) {
+<span class="fc" id="L222">		this.generatorType = generatorType;</span>
+<span class="fc" id="L223">	}</span>
+
+	public List&lt;State&gt; getfathersList() throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
+<span class="fc" id="L226">		List&lt;State&gt; refList = new ArrayList&lt;State&gt;(this.referenceList); </span>
+<span class="fc" id="L227">    	iffatherselection = new FactoryFatherSelection();</span>
+<span class="fc" id="L228">    	FatherSelection selection = iffatherselection.createSelectFather(selectionType);</span>
+<span class="fc" id="L229">    	List&lt;State&gt; fathers = selection.selection(refList, truncation);</span>
+<span class="fc" id="L230">    	return fathers;</span>
+	}
+
+	@Override
+	public List&lt;State&gt; getSonList() {
+<span class="fc" id="L235">		return sonList;</span>
+	}
+
+	public boolean awardUpdateREF(State stateCandidate) {
+<span class="fc" id="L239">		boolean find = false;</span>
+<span class="fc" id="L240">		int i = 0;</span>
+<span class="fc bfc" id="L241" title="All 4 branches covered.">		while (find == false &amp;&amp; i &lt; this.referenceList.size()) {</span>
+<span class="fc bfc" id="L242" title="All 2 branches covered.">			if(stateCandidate.equals(this.referenceList.get(i)))</span>
+<span class="fc" id="L243">				find = true;</span>
+<span class="fc" id="L244">			else i++;</span>
+		}
+<span class="fc" id="L246">		return find;</span>
+	}
+
+	@Override
+	public float getWeight() {
+<span class="fc" id="L251">		return this.weight;</span>
+	}
+
+	@Override
+	public void setWeight(float weight) {
+<span class="fc" id="L256">		this.weight = weight;</span>
+<span class="fc" id="L257">	}</span>
+
+	public DistributionType getDistributionType() {
+<span class="fc" id="L260">		return distributionType;</span>
+	}
+
+	public void setDistributionType(DistributionType distributionType) {
+<span class="fc" id="L264">		this.distributionType = distributionType;</span>
+<span class="fc" id="L265">	}</span>
+
+	@Override
+	public int[] getListCountBetterGender() {
+		// TODO Auto-generated method stub
+<span class="fc" id="L270">		return this.listCountBetterGender;</span>
+	}
+
+	@Override
+	public int[] getListCountGender() {
+		// TODO Auto-generated method stub
+<span class="fc" id="L276">		return this.listCountGender;</span>
+	}
+
+	@Override
+	public float[] getTrace() {
+		// TODO Auto-generated method stub
+<span class="fc" id="L282">		return this.listTrace;</span>
+	}
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

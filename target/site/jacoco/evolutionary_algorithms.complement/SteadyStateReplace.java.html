@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SteadyStateReplace.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">biciam</a> &gt; <a href="index.source.html" class="el_package">evolutionary_algorithms.complement</a> &gt; <span class="el_source">SteadyStateReplace.java</span></div><h1>SteadyStateReplace.java</h1><pre class="source lang-java linenums">package evolutionary_algorithms.complement;
+
+
+import java.util.List;
+import metaheuristics.strategy.Strategy;
+import problem.definition.State;
+import problem.definition.Problem.ProblemType;
+
+
+<span class="fc" id="L10">public class SteadyStateReplace extends Replace {</span>
+
+	@Override
+	public List&lt;State&gt; replace(State stateCandidate, List&lt;State&gt; listState) {
+<span class="fc" id="L14">		State stateREP = null;</span>
+<span class="fc bfc" id="L15" title="All 2 branches covered.">		if (Strategy.getStrategy().getProblem().getTypeProblem().equals(ProblemType.Maximizar)) {</span>
+<span class="fc" id="L16">			stateREP = MinValue(listState);</span>
+<span class="fc bfc" id="L17" title="All 2 branches covered.">			if(stateCandidate.getEvaluation().get(0) &gt;= stateREP.getEvaluation().get(0)){</span>
+<span class="fc" id="L18">				boolean find = false;</span>
+<span class="fc" id="L19">		        int count = 0;</span>
+<span class="pc bpc" id="L20" title="1 of 4 branches missed.">		        while (!find &amp;&amp; listState.size() &gt; count){</span>
+<span class="fc bfc" id="L21" title="All 2 branches covered.">		        	if(listState.get(count).equals(stateREP)){</span>
+<span class="fc" id="L22">		        		listState.remove(count);</span>
+<span class="fc" id="L23">						listState.add(count, stateCandidate);</span>
+<span class="fc" id="L24">						find = true;</span>
+					}
+<span class="fc" id="L26">		        	else count ++;</span>
+				}
+<span class="fc" id="L28">			}</span>
+		}
+		else {
+<span class="pc bpc" id="L31" title="1 of 2 branches missed.">			if(Strategy.getStrategy().getProblem().getTypeProblem().equals(ProblemType.Minimizar)){</span>
+<span class="fc" id="L32">				stateREP = MaxValue(listState);</span>
+<span class="pc bpc" id="L33" title="1 of 2 branches missed.">				if(stateCandidate.getEvaluation().get(0) &lt;= stateREP.getEvaluation().get(0)){</span>
+<span class="fc" id="L34">					boolean find = false;</span>
+<span class="fc" id="L35">			        int count = 0;</span>
+<span class="pc bpc" id="L36" title="1 of 4 branches missed.">			        while (!find &amp;&amp; listState.size() &gt; count){</span>
+<span class="fc bfc" id="L37" title="All 2 branches covered.">			        	if(listState.get(count).equals(stateREP)){</span>
+<span class="fc" id="L38">			        		listState.remove(count);</span>
+<span class="fc" id="L39">							listState.add(count, stateCandidate);</span>
+<span class="fc" id="L40">							find = true;</span>
+						}
+<span class="fc" id="L42">			        	else count ++;</span>
+					}
+				}
+			}
+		}
+<span class="fc" id="L47">		return listState;</span>
+	}
+	
+	public State MinValue (List&lt;State&gt; listState){
+<span class="fc" id="L51">		State value = listState.get(0);</span>
+<span class="fc" id="L52">		double min = listState.get(0).getEvaluation().get(0);</span>
+<span class="fc bfc" id="L53" title="All 2 branches covered.">		for (int i = 1; i &lt; listState.size(); i++) {</span>
+<span class="fc bfc" id="L54" title="All 2 branches covered.">			if(listState.get(i).getEvaluation().get(0) &lt; min){</span>
+<span class="fc" id="L55">				min = listState.get(i).getEvaluation().get(0);</span>
+<span class="fc" id="L56">				value = listState.get(i);</span>
+			}
+		}
+<span class="fc" id="L59">		return value;</span>
+	}
+	
+	public State MaxValue (List&lt;State&gt; listState){
+<span class="fc" id="L63">		State value = listState.get(0);</span>
+<span class="fc" id="L64">		double max = listState.get(0).getEvaluation().get(0);</span>
+<span class="fc bfc" id="L65" title="All 2 branches covered.">		for (int i = 1; i &lt; listState.size(); i++) {</span>
+<span class="fc bfc" id="L66" title="All 2 branches covered.">			if(listState.get(i).getEvaluation().get(0) &gt; max){</span>
+<span class="fc" id="L67">				max = listState.get(i).getEvaluation().get(0);</span>
+<span class="fc" id="L68">				value = listState.get(i);</span>
+			}
+		}
+<span class="fc" id="L71">		return value;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

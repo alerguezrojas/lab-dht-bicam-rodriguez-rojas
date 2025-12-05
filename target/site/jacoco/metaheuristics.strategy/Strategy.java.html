@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Strategy.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">biciam</a> &gt; <a href="index.source.html" class="el_package">metaheuristics.strategy</a> &gt; <span class="el_source">Strategy.java</span></div><h1>Strategy.java</h1><pre class="source lang-java linenums">package metaheuristics.strategy;
+
+import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.SortedMap;
+import java.util.TreeMap;
+
+import factory_interface.IFFactoryGenerator;
+import factory_method.FactoryGenerator;
+
+import problem.definition.Problem;
+import problem.definition.State;
+import problem.definition.Problem.ProblemType;
+
+import local_search.acceptation_type.Dominance;
+import local_search.complement.StopExecute;
+import local_search.complement.UpdateParameter;
+import metaheuristics.generators.DistributionEstimationAlgorithm;
+import metaheuristics.generators.EvolutionStrategies;
+import metaheuristics.generators.Generator;
+import metaheuristics.generators.GeneratorType;
+import metaheuristics.generators.GeneticAlgorithm;
+import metaheuristics.generators.MultiGenerator;
+import metaheuristics.generators.ParticleSwarmOptimization;
+import metaheuristics.generators.RandomSearch;
+
+public class Strategy {
+
+<span class="fc" id="L30">	private static Strategy strategy = null;</span>
+	private State bestState;
+	private Problem problem;
+	public SortedMap&lt;GeneratorType, Generator&gt; mapGenerators;
+	private StopExecute stopexecute;
+	private UpdateParameter updateparameter;
+	private IFFactoryGenerator ifFactoryGenerator;
+	private int countCurrent;
+	private int countMax;
+	public Generator generator;
+	public double threshold;
+	private State initialState;
+
+	public ArrayList&lt;State&gt; listStates; //lista de todos los estados generados en cada iteracion
+	public ArrayList&lt;State&gt; listBest; //lista de la mejor solucion en cada iteracion
+<span class="fc" id="L45">	public List&lt;State&gt; listRefPoblacFinal = new ArrayList&lt;State&gt; (); //lista de soluciones no dominadas</span>
+	public Dominance notDominated; 
+
+	
+	public boolean saveListStates; //guardar lista de estados generados
+	public boolean saveListBestStates; // guardar lista con los mejores estados encontrados en cada iteracion
+	public boolean saveFreneParetoMonoObjetivo; //guardar lista de soluciones no dominadas de una ejecuciï¿½n
+	public boolean calculateTime; // calcular tiempo de ejecuciï¿½n de un algoritmo
+	
+	//calculo del Tiempo inicial y final
+	long initialTime;
+	long finalTime;
+	public static long timeExecute;
+	
+<span class="fc" id="L59">	public float[] listOfflineError = new float[100]; // para almacenar la metrica offlinePerformance</span>
+<span class="fc" id="L60">	public int countPeriodChange = 0; // cantidad de iteeraciones antes de un cambio</span>
+<span class="fc" id="L61">	public int countChange = 0;</span>
+	private int countPeriodo; // contador para saber cada cuantas iteraciones tiene que guardar en la lista listCountBetterGender de cada generador
+	private int periodo; //contador para controlar el periodo que esta guardando
+
+
+	private Strategy(){
+<span class="fc" id="L67">		super();</span>
+<span class="fc" id="L68">	}</span>
+
+	public static Strategy getStrategy() {
+<span class="fc bfc" id="L71" title="All 2 branches covered.">		if (strategy == null) {</span>
+<span class="fc" id="L72">			strategy = new Strategy();</span>
+		}
+<span class="fc" id="L74">		return strategy;</span>
+	}
+
+	public void executeStrategy (int countmaxIterations, int countIterationsChange, int operatornumber, GeneratorType generatorType) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException{
+		// si se quiere calcular el tiempo de ejecucion del un algoritmo
+<span class="pc bpc" id="L79" title="1 of 2 branches missed.">		if(calculateTime == true){</span>
+<span class="fc" id="L80">			initialTime = System.currentTimeMillis();</span>
+		}
+<span class="fc" id="L82">		this.countMax = countmaxIterations; // max cantidad de iteraciones</span>
+		//generar estado inicial de la estrategia
+<span class="fc" id="L84">		Generator randomInitial = new RandomSearch();</span>
+<span class="fc" id="L85">		initialState = randomInitial.generate(operatornumber);</span>
+<span class="fc" id="L86">		problem.Evaluate(initialState); //evaluar ese estado</span>
+<span class="fc" id="L87">		initialState.setTypeGenerator(generatorType);</span>
+<span class="fc" id="L88">		getProblem().setState(initialState);</span>
+		//si se va a salvar la lista de estados generados, adicionar el estado
+<span class="pc bpc" id="L90" title="1 of 2 branches missed.">		if(saveListStates ==  true){</span>
+<span class="fc" id="L91">			listStates = new ArrayList&lt;State&gt;(); //list de estados generados</span>
+<span class="fc" id="L92">			listStates.add(initialState);</span>
+		}
+		//si se va a salvar la lista de mejores soluciones encontradas en cada iteracion
+<span class="pc bpc" id="L95" title="1 of 2 branches missed.">		if(saveListBestStates == true){</span>
+<span class="fc" id="L96">			listBest = new ArrayList&lt;State&gt;(); // list de mejores estados encontrados</span>
+<span class="fc" id="L97">			listBest.add(initialState);</span>
+		}
+<span class="fc bfc" id="L99" title="All 2 branches covered.">		if(saveFreneParetoMonoObjetivo == true){</span>
+<span class="fc" id="L100">			notDominated = new Dominance();</span>
+		}
+		// crear el generador a ejecutar
+<span class="fc" id="L103">		generator = newGenerator(generatorType);</span>
+<span class="fc" id="L104">		generator.setInitialReference(initialState);</span>
+<span class="fc" id="L105">		bestState = initialState;</span>
+<span class="fc" id="L106">		countCurrent = 0;</span>
+<span class="fc" id="L107">		listRefPoblacFinal = new ArrayList&lt;State&gt;();</span>
+<span class="fc" id="L108">		MultiGenerator multiGenerator = null;</span>
+<span class="fc" id="L109">		countPeriodChange = countIterationsChange;</span>
+<span class="fc" id="L110">		countChange = countIterationsChange;</span>
+<span class="fc" id="L111">		countPeriodo = countIterationsChange / 10; //cantidad de iteraciones de un periodo </span>
+		//verificar que es portafolio e inicializar los generadores del portafolio
+<span class="fc bfc" id="L113" title="All 2 branches covered.">		if(generatorType.equals(GeneratorType.MultiGenerator)){</span>
+<span class="fc" id="L114">			initializeGenerators();</span>
+<span class="fc" id="L115">			MultiGenerator.initializeGenerators();</span>
+<span class="fc" id="L116">			MultiGenerator.listGeneratedPP.clear();</span>
+<span class="fc" id="L117">			multiGenerator = (MultiGenerator)((MultiGenerator)generator).clone();</span>
+		}
+<span class="fc" id="L119">		else initialize(); //crea el mapa de generadores</span>
+<span class="fc" id="L120">		update(countCurrent);</span>
+		
+<span class="fc" id="L122">		float sumMax = 0; // suma acumulativa para almacenar la evaluacion de la mejor solucion encotrada y calcular el OfflinePerformance</span>
+<span class="fc" id="L123">		int countOff = 0; // variable par contar los OfflinePerformance que se van salvando en el arreglo</span>
+		//ciclio de ejecuciï¿½n del algoritmo
+<span class="fc bfc" id="L125" title="All 2 branches covered.">		while (!stopexecute.stopIterations(countCurrent, countmaxIterations)){</span>
+			//si se detecta un cambio
+<span class="fc bfc" id="L127" title="All 2 branches covered.">			if(countCurrent == countChange){</span>
+				//calcular offlinePerformance
+<span class="fc" id="L129">				calculateOffLinePerformance(sumMax, countOff);</span>
+<span class="fc" id="L130">				countOff++;</span>
+<span class="fc" id="L131">				sumMax = 0;</span>
+//				countIterationsChange = countIterationsChange + countPeriodChange; // actualizar la cantidad de iteraciones
+				//actualizar la referencia luego de un cambio
+<span class="fc" id="L134">				updateRef(generatorType);</span>
+<span class="fc" id="L135">				countChange = countChange + countPeriodChange;</span>
+				//generar un nuevo candidato en la iteracion, dependiendo del generador
+<span class="fc" id="L137">				State stateCandidate = null;</span>
+<span class="fc bfc" id="L138" title="All 2 branches covered.">				if(generatorType.equals(GeneratorType.MultiGenerator)){</span>
+<span class="pc bpc" id="L139" title="1 of 2 branches missed.">					if(countPeriodo == countCurrent){</span>
+<span class="nc" id="L140">						updateCountGender();</span>
+<span class="nc" id="L141">						countPeriodo = countPeriodo + countPeriodChange / 10;</span>
+<span class="nc" id="L142">						periodo = 0;</span>
+<span class="nc" id="L143">						MultiGenerator.activeGenerator.countBetterGender = 0;</span>
+					}
+<span class="fc" id="L145">					updateWeight();//actualizar el peso de los generadores si se reinician cuando ocurre un cambio</span>
+					//generar el estado candidato de la iteraciï¿½n
+<span class="fc" id="L147">					stateCandidate = multiGenerator.generate(operatornumber);</span>
+<span class="fc" id="L148">					problem.Evaluate(stateCandidate);</span>
+<span class="fc" id="L149">					stateCandidate.setEvaluation(stateCandidate.getEvaluation());</span>
+<span class="fc" id="L150">					stateCandidate.setNumber(countCurrent);</span>
+<span class="fc" id="L151">					stateCandidate.setTypeGenerator(generatorType);</span>
+<span class="fc" id="L152">					multiGenerator.updateReference(stateCandidate, countCurrent);</span>
+				}
+				else {
+<span class="fc" id="L155">					stateCandidate = generator.generate(operatornumber);</span>
+<span class="fc" id="L156">					problem.Evaluate(stateCandidate);</span>
+<span class="fc" id="L157">					stateCandidate.setEvaluation(stateCandidate.getEvaluation());</span>
+<span class="fc" id="L158">					stateCandidate.setNumber(countCurrent);</span>
+<span class="fc" id="L159">					stateCandidate.setTypeGenerator(generatorType);</span>
+<span class="fc" id="L160">					generator.updateReference(stateCandidate, countCurrent);</span>
+<span class="pc bpc" id="L161" title="1 of 2 branches missed.">					if(saveListStates ==  true){</span>
+<span class="fc" id="L162">						listStates.add(stateCandidate);</span>
+					}
+//					listStates.add(stateCandidate);
+				}
+				//actualizar el mejor estado encontrado solo tiene sentido para algoritmos monoobjetivos
+				
+				//actualizar el mejor estado encontrado solo tiene sentido para algoritmos monoobjetivos
+<span class="pc bpc" id="L169" title="3 of 4 branches missed.">				if (getProblem().getTypeProblem().equals(ProblemType.Maximizar) &amp;&amp; bestState.getEvaluation().get(bestState.getEvaluation().size() - 1) &lt; stateCandidate.getEvaluation().get(bestState.getEvaluation().size() - 1)) {</span>
+<span class="nc" id="L170">					bestState = stateCandidate;</span>
+				}
+<span class="pc bpc" id="L172" title="2 of 4 branches missed.">				if (problem.getTypeProblem().equals(ProblemType.Minimizar) &amp;&amp; bestState.getEvaluation().get(bestState.getEvaluation().size() - 1) &gt; stateCandidate.getEvaluation().get(bestState.getEvaluation().size() - 1)) {</span>
+<span class="nc" id="L173">					bestState = stateCandidate;</span>
+				}
+				//					System.out.println(&quot;Evaluacion: &quot;+ bestState.getEvaluation());
+<span class="pc bpc" id="L176" title="1 of 2 branches missed.">				if(saveListBestStates == true){</span>
+<span class="fc" id="L177">					listBest.add(bestState);</span>
+				}
+<span class="fc" id="L179">				sumMax = (float) (sumMax + bestState.getEvaluation().get(0));</span>
+
+<span class="fc" id="L181">			}</span>
+			// no ha ocurrido un cambio
+			else {
+<span class="fc" id="L184">				State stateCandidate = null;</span>
+<span class="fc bfc" id="L185" title="All 2 branches covered.">				if(generatorType.equals(GeneratorType.MultiGenerator)){</span>
+<span class="pc bpc" id="L186" title="1 of 2 branches missed.">					if(countPeriodo == countCurrent){</span>
+<span class="fc" id="L187">						updateCountGender();</span>
+<span class="fc" id="L188">						countPeriodo = countPeriodo + countPeriodChange / 10;</span>
+<span class="fc" id="L189">						periodo++;</span>
+<span class="fc" id="L190">						MultiGenerator.activeGenerator.countBetterGender = 0;</span>
+					}
+<span class="fc" id="L192">					stateCandidate = multiGenerator.generate(operatornumber);</span>
+<span class="fc" id="L193">					problem.Evaluate(stateCandidate);</span>
+<span class="fc" id="L194">					stateCandidate.setEvaluation(stateCandidate.getEvaluation());</span>
+<span class="fc" id="L195">					stateCandidate.setNumber(countCurrent);</span>
+<span class="fc" id="L196">					stateCandidate.setTypeGenerator(generatorType);</span>
+<span class="fc" id="L197">					multiGenerator.updateReference(stateCandidate, countCurrent);</span>
+				}
+				else {
+					//generar estado candidato y evaluar si es aceptado o no 
+<span class="fc" id="L201">					stateCandidate = generator.generate(operatornumber);</span>
+<span class="fc" id="L202">					problem.Evaluate(stateCandidate);</span>
+<span class="fc" id="L203">					stateCandidate.setEvaluation(stateCandidate.getEvaluation());</span>
+<span class="fc" id="L204">					stateCandidate.setNumber(countCurrent);</span>
+<span class="fc" id="L205">					stateCandidate.setTypeGenerator(generatorType);</span>
+<span class="fc" id="L206">					generator.updateReference(stateCandidate, countCurrent); // actualizar la referencia del estado</span>
+<span class="pc bpc" id="L207" title="1 of 2 branches missed.">					if(saveListStates ==  true){</span>
+<span class="fc" id="L208">						listStates.add(stateCandidate);</span>
+					}
+<span class="pc bpc" id="L210" title="1 of 2 branches missed.">					if(saveFreneParetoMonoObjetivo == true){</span>
+<span class="fc" id="L211">						notDominated.ListDominance(stateCandidate, listRefPoblacFinal);</span>
+					}
+				}
+<span class="fc" id="L214">				countCurrent = UpdateParameter.updateParameter(countCurrent);</span>
+				//actualizar el mejor estado encontrado solo tiene sentido para algoritmos monoobjetivos
+<span class="pc bpc" id="L216" title="3 of 4 branches missed.">				if (getProblem().getTypeProblem().equals(ProblemType.Maximizar) &amp;&amp; bestState.getEvaluation().get(bestState.getEvaluation().size() - 1) &lt; stateCandidate.getEvaluation().get(bestState.getEvaluation().size() - 1)) {</span>
+<span class="nc" id="L217">					bestState = stateCandidate;</span>
+				}
+<span class="pc bpc" id="L219" title="2 of 4 branches missed.">				if (problem.getTypeProblem().equals(ProblemType.Minimizar) &amp;&amp; bestState.getEvaluation().get(bestState.getEvaluation().size() - 1) &gt; stateCandidate.getEvaluation().get(bestState.getEvaluation().size() - 1)) {</span>
+<span class="nc" id="L220">					bestState = stateCandidate;</span>
+				}
+				//					System.out.println(&quot;Evaluacion: &quot;+ bestState.getEvaluation());
+<span class="pc bpc" id="L223" title="1 of 2 branches missed.">				if(saveListBestStates == true){</span>
+<span class="fc" id="L224">					listBest.add(bestState);</span>
+				}
+<span class="fc" id="L226">				sumMax = (float) (sumMax + bestState.getEvaluation().get(0));</span>
+<span class="fc" id="L227">			}</span>
+//			System.out.println(&quot;Iteracion: &quot; + countCurrent);
+		}
+		//calcular tiempo final
+<span class="pc bpc" id="L231" title="1 of 2 branches missed.">		if(calculateTime == true){</span>
+<span class="fc" id="L232">			finalTime = System.currentTimeMillis();</span>
+<span class="fc" id="L233">			timeExecute = finalTime - initialTime;</span>
+<span class="fc" id="L234">			System.out.println(&quot;El tiempo de ejecucion: &quot; + timeExecute);</span>
+		}
+<span class="fc bfc" id="L236" title="All 2 branches covered.">		if(generatorType.equals(GeneratorType.MultiGenerator)){</span>
+<span class="fc" id="L237">			listBest = (ArrayList&lt;State&gt;) multiGenerator.getReferenceList();</span>
+			//calcular offlinePerformance
+<span class="fc" id="L239">			calculateOffLinePerformance(sumMax, countOff);</span>
+<span class="pc bpc" id="L240" title="1 of 2 branches missed.">			if(countPeriodo == countCurrent){</span>
+<span class="nc" id="L241">				updateCountGender();</span>
+			}
+		}
+		else{
+<span class="fc" id="L245">			listBest = (ArrayList&lt;State&gt;) generator.getReferenceList();</span>
+<span class="fc" id="L246">			calculateOffLinePerformance(sumMax, countOff);</span>
+		} 
+<span class="fc" id="L248">	}</span>
+	
+	public void updateCountGender(){ // actualizar la cantidad de mejoras y cantidad de veces que se uso un generador en un periodo dado
+<span class="fc bfc" id="L251" title="All 2 branches covered.">		for (int i = 0; i &lt; MultiGenerator.getListGenerators().length; i++) {</span>
+<span class="pc bpc" id="L252" title="1 of 2 branches missed.">			if(!MultiGenerator.getListGenerators()[i].getType().equals(GeneratorType.MultiGenerator) ){/*&amp;&amp; !MultiGenerator.getListGenerators()[i].getType().equals(GeneratorType.MultiCaseSimulatedAnnealing) &amp;&amp;</span>
+				!MultiGenerator.getListGenerators()[i].getType().equals(GeneratorType.MultiobjectiveHillClimbingDistance) &amp;&amp; !MultiGenerator.getListGenerators()[i].getType().equals(GeneratorType.MultiobjectiveHillClimbingRestart) &amp;&amp;
+				!MultiGenerator.getListGenerators()[i].getType().equals(GeneratorType.MultiobjectiveStochasticHillClimbing) &amp;&amp; !MultiGenerator.getListGenerators()[i].getType().equals(GeneratorType.MultiobjectiveTabuSearch) &amp;&amp; 
+				!MultiGenerator.getListGenerators()[i].getType().equals(GeneratorType.ParticleSwarmOptimization)*/
+<span class="fc" id="L256">				MultiGenerator.getListGenerators()[i].getListCountGender()[periodo] = MultiGenerator.getListGenerators()[i].countGender + MultiGenerator.getListGenerators()[i].getListCountGender()[periodo];</span>
+<span class="fc" id="L257">				MultiGenerator.getListGenerators()[i].getListCountBetterGender()[periodo] = MultiGenerator.getListGenerators()[i].countBetterGender + MultiGenerator.getListGenerators()[i].getListCountBetterGender()[periodo];</span>
+<span class="fc" id="L258">				MultiGenerator.getListGenerators()[i].countGender = 0;</span>
+<span class="fc" id="L259">				MultiGenerator.getListGenerators()[i].countBetterGender = 0;</span>
+			}
+		}
+<span class="fc" id="L262">	}</span>
+	
+	public void updateWeight(){
+<span class="fc bfc" id="L265" title="All 2 branches covered.">		for (int i = 0; i &lt; MultiGenerator.getListGenerators().length; i++) {</span>
+<span class="pc bpc" id="L266" title="1 of 2 branches missed.">			if(!MultiGenerator.getListGenerators()[i].getType().equals(GeneratorType.MultiGenerator)){</span>
+<span class="fc" id="L267">				MultiGenerator.getListGenerators()[i].setWeight((float) 50.0);</span>
+			}
+		}
+<span class="fc" id="L270">	}</span>
+	
+	
+	public void update(Integer countIterationsCurrent) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {//HashMap&lt;String, Object&gt; map, 
+		//		Here update parameter for update and change generator.
+<span class="fc bfc" id="L275" title="All 2 branches covered.">		if(countIterationsCurrent.equals(GeneticAlgorithm.countRef - 1)){</span>
+<span class="fc" id="L276">			ifFactoryGenerator = new FactoryGenerator();</span>
+<span class="fc" id="L277">			Strategy.getStrategy().generator = ifFactoryGenerator.createGenerator(GeneratorType.GeneticAlgorithm);</span>
+		}
+<span class="fc bfc" id="L279" title="All 2 branches covered.">		if(countIterationsCurrent.equals(EvolutionStrategies.countRef - 1)){</span>
+<span class="fc" id="L280">			ifFactoryGenerator = new FactoryGenerator();</span>
+<span class="fc" id="L281">			Strategy.getStrategy().generator = ifFactoryGenerator.createGenerator(GeneratorType.EvolutionStrategies);</span>
+		}			
+<span class="fc bfc" id="L283" title="All 2 branches covered.">		if(countIterationsCurrent.equals(DistributionEstimationAlgorithm.countRef - 1)){</span>
+<span class="fc" id="L284">			ifFactoryGenerator = new FactoryGenerator();</span>
+<span class="fc" id="L285">			Strategy.getStrategy().generator = ifFactoryGenerator.createGenerator(GeneratorType.DistributionEstimationAlgorithm);</span>
+		}
+<span class="fc bfc" id="L287" title="All 2 branches covered.">		if(countIterationsCurrent.equals(ParticleSwarmOptimization.countRef - 1)){</span>
+<span class="fc" id="L288">			ifFactoryGenerator = new FactoryGenerator();</span>
+<span class="fc" id="L289">			Strategy.getStrategy().generator = ifFactoryGenerator.createGenerator(GeneratorType.ParticleSwarmOptimization);</span>
+		}
+<span class="fc" id="L291">	}</span>
+
+	public Generator newGenerator(GeneratorType Generatortype) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
+<span class="fc" id="L294">		ifFactoryGenerator = new FactoryGenerator();</span>
+<span class="fc" id="L295">		Generator generator = ifFactoryGenerator.createGenerator(Generatortype);</span>
+<span class="fc" id="L296">		return generator;</span>
+	}
+
+	public State getBestState() {
+<span class="nc" id="L300">		return bestState;</span>
+	}
+
+	public void setBestState(State besState) {
+<span class="nc" id="L304">		this.bestState = besState;</span>
+<span class="nc" id="L305">	}</span>
+	public StopExecute getStopexecute() {
+<span class="nc" id="L307">		return stopexecute;</span>
+	}
+
+	public int getCountMax() {
+<span class="fc" id="L311">		return countMax;</span>
+	}
+
+	public void setCountMax(int countMax) {
+<span class="fc" id="L315">		this.countMax = countMax;</span>
+<span class="fc" id="L316">	}</span>
+
+	public void setStopexecute(StopExecute stopexecute) {
+<span class="nc" id="L319">		this.stopexecute = stopexecute;</span>
+<span class="nc" id="L320">	}</span>
+
+	public UpdateParameter getUpdateparameter() {
+<span class="nc" id="L323">		return updateparameter;</span>
+	}
+
+	public void setUpdateparameter(UpdateParameter updateparameter) {
+<span class="nc" id="L327">		this.updateparameter = updateparameter;</span>
+<span class="nc" id="L328">	}</span>
+
+	public Problem getProblem() {
+<span class="fc" id="L331">		return problem;</span>
+	}
+
+	public void setProblem(Problem problem) {
+<span class="fc" id="L335">		this.problem = problem;</span>
+<span class="fc" id="L336">	}</span>
+
+	public ArrayList&lt;String&gt; getListKey(){
+<span class="nc" id="L339">		ArrayList&lt;String&gt; listKeys = new ArrayList&lt;String&gt;();</span>
+<span class="nc" id="L340">		String key = mapGenerators.keySet().toString();</span>
+<span class="nc" id="L341">		String returnString = key.substring(1, key.length() - 1);</span>
+<span class="nc" id="L342">		returnString = returnString + &quot;, &quot;;</span>
+<span class="nc" id="L343">		int countKey = mapGenerators.size();</span>
+<span class="nc bnc" id="L344" title="All 2 branches missed.">		for (int i = 0; i &lt; countKey; i++) {</span>
+<span class="nc" id="L345">			String r = returnString.substring(0, returnString.indexOf(','));</span>
+<span class="nc" id="L346">			returnString = returnString.substring(returnString.indexOf(',') + 2);</span>
+<span class="nc" id="L347">			listKeys.add(r);</span>
+		}
+<span class="nc" id="L349">		return listKeys;</span>
+	}
+
+	public void initializeGenerators()throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
+<span class="fc" id="L353">		List&lt;GeneratorType&gt;	listType = new ArrayList&lt;GeneratorType&gt;();</span>
+<span class="fc" id="L354">		this.mapGenerators = new TreeMap&lt;GeneratorType, Generator&gt;();</span>
+<span class="fc" id="L355">		GeneratorType type[]= GeneratorType.values();</span>
+<span class="fc bfc" id="L356" title="All 2 branches covered.">		for (GeneratorType generator : type) {</span>
+<span class="fc" id="L357">			listType.add(generator);</span>
+		}
+<span class="fc bfc" id="L359" title="All 2 branches covered.">		for (int i = 0; i &lt; listType.size(); i++) {</span>
+<span class="fc" id="L360">			Generator generator = newGenerator(listType.get(i));</span>
+<span class="fc" id="L361">			mapGenerators.put(listType.get(i), generator);</span>
+			//ExecuteGeneratorParall.getExecuteGeneratorParall().listGenerators.add(generator);
+//			MultiGenerator.getListGenerators()[i] = generator;
+		}
+<span class="fc" id="L365">	}</span>
+
+	public void initialize()throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
+<span class="fc" id="L368">		List&lt;GeneratorType&gt;	listType = new ArrayList&lt;GeneratorType&gt;();</span>
+<span class="fc" id="L369">		this.mapGenerators = new TreeMap&lt;GeneratorType, Generator&gt;();</span>
+<span class="fc" id="L370">		GeneratorType type[]= GeneratorType.values();</span>
+<span class="fc bfc" id="L371" title="All 2 branches covered.">		for (GeneratorType generator : type) {</span>
+<span class="fc" id="L372">			listType.add(generator);</span>
+		}
+<span class="fc bfc" id="L374" title="All 2 branches covered.">		for (int i = 0; i &lt; listType.size(); i++) {</span>
+<span class="fc" id="L375">			Generator generator = newGenerator(listType.get(i));</span>
+<span class="fc" id="L376">			mapGenerators.put(listType.get(i), generator);</span>
+		}
+<span class="fc" id="L378">	}</span>
+
+	public int getCountCurrent() {
+<span class="fc" id="L381">		return countCurrent;</span>
+	}
+
+	public void setCountCurrent(int countCurrent) {
+<span class="fc" id="L385">		this.countCurrent = countCurrent;</span>
+<span class="fc" id="L386">	}</span>
+
+	public static void destroyExecute() {
+<span class="nc" id="L389">		strategy = null;</span>
+<span class="nc" id="L390">		RandomSearch.listStateReference = null;</span>
+<span class="nc" id="L391">	}</span>
+	
+	public double getThreshold() {
+<span class="nc" id="L394">		return threshold;</span>
+	}
+
+	public void setThreshold(double threshold) {
+<span class="nc" id="L398">		this.threshold = threshold;</span>
+<span class="nc" id="L399">	}</span>
+	
+	public void calculateOffLinePerformance(float sumMax, int countOff){
+<span class="fc" id="L402">		float off = sumMax / countPeriodChange;</span>
+<span class="fc" id="L403">		listOfflineError[countOff] = off;</span>
+<span class="fc" id="L404">	}</span>
+	
+	public void updateRef(GeneratorType generatorType){
+//		State ref = problem.getOperator().newRef(problem.getRef());
+//		problem.setRef(ref);
+<span class="fc bfc" id="L409" title="All 2 branches covered.">		if(generatorType.equals(GeneratorType.MultiGenerator)){</span>
+<span class="fc" id="L410">			updateRefMultiG();</span>
+<span class="fc" id="L411">			bestState = MultiGenerator.listStateReference.get( MultiGenerator.listStateReference.size() - 1);</span>
+		}
+		else{
+<span class="fc" id="L414">			updateRefGenerator(generator);</span>
+<span class="fc" id="L415">			bestState = generator.getReference();</span>
+		}
+<span class="fc" id="L417">	}</span>
+	public void updateRefMultiG() {
+<span class="fc bfc" id="L419" title="All 2 branches covered.">		for (int i = 0; i &lt; MultiGenerator.getListGenerators().length; i++) {</span>
+<span class="fc" id="L420">			updateRefGenerator(MultiGenerator.getListGenerators()[i]);</span>
+		}
+<span class="fc" id="L422">	}</span>
+	public void updateRefGenerator(Generator generator) {
+<span class="pc bpc" id="L424" title="4 of 8 branches missed.">		if(generator.getType().equals(GeneratorType.HillClimbing) || generator.getType().equals(GeneratorType.TabuSearch) || generator.getType().equals(GeneratorType.RandomSearch) || generator.getType().equals(GeneratorType.SimulatedAnnealing)){</span>
+<span class="nc" id="L425">			double evaluation = getProblem().getFunction().get(0).Evaluation(generator.getReference());</span>
+<span class="nc" id="L426">			generator.getReference().getEvaluation().set(0, evaluation);</span>
+//			State state = new State();
+//			state.setEvaluation(evaluation);
+//			state.setCode(new ArrayList&lt;Object&gt;(generator.getReference().getCode()));
+//			state.setTypeGenerator(generator.getType());
+//			generator.setInitialReference(state);
+			/*generator.getReferenceList().remove(generator.getReferenceList().size() - 1);
+			generator.setInitialReference(state);
+			generator.getReferenceList().add(state);*/
+		}
+<span class="pc bpc" id="L436" title="5 of 6 branches missed.">		if(generator.getType().equals(GeneratorType.GeneticAlgorithm) || generator.getType().equals(GeneratorType.DistributionEstimationAlgorithm) || generator.getType().equals(GeneratorType.EvolutionStrategies)){</span>
+<span class="pc bpc" id="L437" title="1 of 2 branches missed.">			for (int j = 0; j &lt; generator.getReferenceList().size(); j++) {</span>
+<span class="nc" id="L438">				double evaluation = getProblem().getFunction().get(0).Evaluation(generator.getReferenceList().get(j));</span>
+<span class="nc" id="L439">				generator.getReferenceList().get(j).getEvaluation().set(0, evaluation);</span>
+			}
+		}
+<span class="fc" id="L442">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

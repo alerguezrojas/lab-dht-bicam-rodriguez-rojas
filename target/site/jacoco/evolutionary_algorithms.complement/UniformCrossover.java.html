@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>UniformCrossover.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">biciam</a> &gt; <a href="index.source.html" class="el_package">evolutionary_algorithms.complement</a> &gt; <span class="el_source">UniformCrossover.java</span></div><h1>UniformCrossover.java</h1><pre class="source lang-java linenums">package evolutionary_algorithms.complement;
+
+import java.security.SecureRandom;
+
+import problem.definition.State;
+
+<span class="fc" id="L7">public class UniformCrossover extends Crossover {</span>
+	
+<span class="fc" id="L9">	private static final SecureRandom secureRandom = new SecureRandom();</span>
+	
+	public int[] mascara(int length){
+<span class="fc" id="L12">		int[] mascara = new int[length];</span>
+<span class="fc bfc" id="L13" title="All 2 branches covered.">		for (int i = 0; i &lt; mascara.length; i++) {</span>
+<span class="fc" id="L14">			int value = secureRandom.nextInt(2);</span>
+<span class="fc" id="L15">			mascara[i] = value;</span>
+		}
+<span class="fc" id="L17">		return mascara;</span>
+	}	
+    
+	@Override
+	public State crossover(State father1, State father2, double PC) {
+<span class="fc" id="L22">		Object value = new Object();</span>
+<span class="fc" id="L23">		State state = (State) father1.getCopy();</span>
+<span class="fc" id="L24">		int[] mascara = mascara(father1.getCode().size());</span>
+<span class="fc bfc" id="L25" title="All 2 branches covered.">   		for (int k = 0; k &lt; mascara.length; k++) {</span>
+<span class="fc bfc" id="L26" title="All 2 branches covered.">   			if(mascara[k] == 1){</span>
+<span class="fc" id="L27">   				value = father1.getCode().get(k);</span>
+<span class="fc" id="L28">   				state.getCode().set(k, value);</span>
+   			}
+   			else{
+<span class="pc bpc" id="L31" title="1 of 2 branches missed.">   				if(mascara[k] == 0){</span>
+<span class="fc" id="L32">   					value = father2.getCode().get(k);</span>
+<span class="fc" id="L33">   	   				state.getCode().set(k, value);</span>
+   				}
+   			}
+		}
+<span class="fc" id="L37">		return state;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>
