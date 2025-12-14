@@ -135,7 +135,7 @@ public class TabuSearchTest {
         // AcceptAnyone always accepts
         
         // Mock Comparator
-        when(newStateMock.Comparator(any(State.class))).thenReturn(false);
+        when(newStateMock.comparator(any(State.class))).thenReturn(false);
         
         tabuSearch.updateReference(newStateMock, 1);
         
@@ -150,7 +150,7 @@ public class TabuSearchTest {
         TabuSolutions.listTabu.add(stateMock);
         
         // Mock Comparator
-        when(newStateMock.Comparator(any(State.class))).thenReturn(false);
+        when(newStateMock.comparator(any(State.class))).thenReturn(false);
         
         tabuSearch.updateReference(newStateMock, 1);
         
@@ -202,7 +202,7 @@ public class TabuSearchTest {
         TabuSolutions.listTabu.add(stateMock);
         
         // Mock Comparator to return true (duplicate found)
-        when(stateMock.Comparator(any(State.class))).thenReturn(true);
+        when(stateMock.comparator(any(State.class))).thenReturn(true);
         
         tabuSearch.updateReference(newStateMock, 1);
         
@@ -268,7 +268,7 @@ public class TabuSearchTest {
         // Code: TabuSolutions.listTabu.remove(0); -> s1 removed. s2 becomes index 0.
         // Loop checks index 0 (s2).
         
-        when(s2.Comparator(any(State.class))).thenReturn(true);
+        when(s2.comparator(any(State.class))).thenReturn(true);
         
         tabuSearch.updateReference(newStateMock, 1);
         

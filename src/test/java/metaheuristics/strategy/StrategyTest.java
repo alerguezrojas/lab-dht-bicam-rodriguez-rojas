@@ -148,7 +148,7 @@ class StrategyTest {
         when(stateMock.getEvaluation()).thenReturn(evaluation);
         when(stateMock.getCopy()).thenReturn(stateMock);
         when(stateMock.clone()).thenReturn(stateMock);
-        when(stateMock.Comparator(any(State.class))).thenReturn(false);
+        when(stateMock.comparator(any(State.class))).thenReturn(false);
         
         // Setup Generator
         when(generatorMock.generate(anyInt())).thenReturn(stateMock);
@@ -226,7 +226,7 @@ class StrategyTest {
         when(stateMock.getEvaluation()).thenReturn(evaluation);
         when(stateMock.getCopy()).thenReturn(stateMock);
         when(stateMock.clone()).thenReturn(stateMock);
-        when(stateMock.Comparator(any(State.class))).thenReturn(false);
+        when(stateMock.comparator(any(State.class))).thenReturn(false);
         
         // Setup MultiGenerator
         when(multiGeneratorMock.generate(anyInt())).thenReturn(stateMock);

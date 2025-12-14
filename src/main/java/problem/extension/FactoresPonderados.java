@@ -21,21 +21,21 @@ public class FactoresPonderados extends SolutionMethod {
 			tempWeight = 0;
 			if(Strategy.getStrategy().getProblem().getTypeProblem().equals(ProblemType.Maximizar)){
 				if(Strategy.getStrategy().getProblem().getFunction().get(i).getTypeProblem().equals(ProblemType.Maximizar)){
-					tempWeight = Strategy.getStrategy().getProblem().getFunction().get(i).Evaluation(state);
+					tempWeight = Strategy.getStrategy().getProblem().getFunction().get(i).evaluation(state);
 					tempWeight = tempWeight * Strategy.getStrategy().getProblem().getFunction().get(i).getWeight();
 				}
 				else{
-					tempWeight = 1 - Strategy.getStrategy().getProblem().getFunction().get(i).Evaluation(state);
+					tempWeight = 1 - Strategy.getStrategy().getProblem().getFunction().get(i).evaluation(state);
 					tempWeight = tempWeight * Strategy.getStrategy().getProblem().getFunction().get(i).getWeight();
 				}
 			}
 			else{
 				if(Strategy.getStrategy().getProblem().getFunction().get(i).getTypeProblem().equals(ProblemType.Maximizar)){
-					tempWeight = 1 - Strategy.getStrategy().getProblem().getFunction().get(i).Evaluation(state);
+					tempWeight = 1 - Strategy.getStrategy().getProblem().getFunction().get(i).evaluation(state);
 					tempWeight = tempWeight * Strategy.getStrategy().getProblem().getFunction().get(i).getWeight();
 				}
 				else{
-					tempWeight = Strategy.getStrategy().getProblem().getFunction().get(i).Evaluation(state);
+					tempWeight = Strategy.getStrategy().getProblem().getFunction().get(i).evaluation(state);
 					tempWeight = tempWeight * Strategy.getStrategy().getProblem().getFunction().get(i).getWeight();
 				}
 			}

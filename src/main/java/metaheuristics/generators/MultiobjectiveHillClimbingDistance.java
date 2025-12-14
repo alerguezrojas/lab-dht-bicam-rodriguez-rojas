@@ -95,7 +95,7 @@ public class MultiobjectiveHillClimbingDistance extends Generator{
 				while (stop == false && coutrestart < sizeNeighbors && accept==false) {
 					stateCandidate = Strategy.getStrategy().getProblem().getOperator().generateRandomState(1).get(0);
 					if (Contain(stateCandidate)==false) {
-						Strategy.getStrategy().getProblem().Evaluate(stateCandidate);  
+						Strategy.getStrategy().getProblem().evaluate(stateCandidate);  
 						visitedState.add(stateCandidate);
 						stop=true;
 						coutrestart++;
@@ -178,7 +178,7 @@ public class MultiobjectiveHillClimbingDistance extends Generator{
 		//Actualizando las distancias de todos los elmentos excepto el nuevo insertando
 		for (int k = 0; k < solutions.length-1; k++) {
 			State solA = solutions[k];
-			distance = solA.Distance(lastSolution);
+			distance = solA.distance(lastSolution);
 			listDist.add(distanceSolution.get(k)+distance);
 //			distanceSolution.set(k, distanceSolution.get(k) + distance);
 		}
@@ -191,7 +191,7 @@ public class MultiobjectiveHillClimbingDistance extends Generator{
 		
 			for (int l = 0; l < solutions.length-1; l++) {
 				State solB = solutions[l];
-				distance += lastSolution.Distance(solB);
+				distance += lastSolution.distance(solB);
 			}
 			listDist.add(distance);
 //			distanceSolution.add(distance);
@@ -207,7 +207,7 @@ public class MultiobjectiveHillClimbingDistance extends Generator{
 		boolean found = false;
 		for (Iterator<State> iter = visitedState.iterator(); iter.hasNext();) {
 			State element = (State) iter.next();
-			if(element.Comparator(state)){
+			if(element.comparator(state)){
 				found = true;
 			}
 		}

@@ -79,11 +79,11 @@ class ProblemTest {
         problem.setFunction(functions);
         problem.setTypeSolutionMethod(null);
         
-        when(objetiveFunction.Evaluation(state)).thenReturn(10.0);
+        when(objetiveFunction.evaluation(state)).thenReturn(10.0);
 
-        problem.Evaluate(state);
+        problem.evaluate(state);
 
-        verify(objetiveFunction).Evaluation(state);
+        verify(objetiveFunction).evaluation(state);
         verify(state).setEvaluation(any(ArrayList.class));
     }
 
@@ -97,7 +97,7 @@ class ProblemTest {
         
         when(factorySolutionMethod.createdSolutionMethod(TypeSolutionMethod.FactoresPonderados)).thenReturn(solutionMethod);
 
-        problem.Evaluate(state);
+        problem.evaluate(state);
 
         verify(factorySolutionMethod).createdSolutionMethod(TypeSolutionMethod.FactoresPonderados);
         verify(solutionMethod).evaluationState(state);

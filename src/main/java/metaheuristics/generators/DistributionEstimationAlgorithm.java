@@ -111,7 +111,7 @@ public class DistributionEstimationAlgorithm extends Generator {
     	State candidate = null;
     	if(ind.size() > 1){
     		for (int i = 0; i < ind.size(); i++) {
-    			double evaluation = Strategy.getStrategy().getProblem().getFunction().get(0).Evaluation(ind.get(i));
+    			double evaluation = Strategy.getStrategy().getProblem().getFunction().get(0).evaluation(ind.get(i));
     			ArrayList<Double> listEval = new ArrayList<Double>();
     			listEval.add(evaluation);
     			ind.get(0).setEvaluation(listEval);

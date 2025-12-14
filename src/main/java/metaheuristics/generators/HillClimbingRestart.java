@@ -69,7 +69,7 @@ public class HillClimbingRestart extends Generator{
 			State stateR = new State(stateReferenceHC);
 			listRef.add(stateR);
 			stateReferenceHC = Strategy.getStrategy().getProblem().getOperator().generateRandomState(1).get(0);
-			Strategy.getStrategy().getProblem().Evaluate(stateReferenceHC);
+			Strategy.getStrategy().getProblem().evaluate(stateReferenceHC);
 			count = count + countCurrent;
 		}
 		List<State> neighborhood = Strategy.getStrategy().getProblem().getOperator().generatedNewState(stateReferenceHC, operatornumber);

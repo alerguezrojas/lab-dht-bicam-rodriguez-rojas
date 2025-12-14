@@ -39,7 +39,7 @@ public class FactoresPonderadosTest {
         
         ObjetiveFunction objFunc = mock(ObjetiveFunction.class);
         when(objFunc.getTypeProblem()).thenReturn(ProblemType.Maximizar);
-        when(objFunc.Evaluation(state)).thenReturn(0.5);
+        when(objFunc.evaluation(state)).thenReturn(0.5);
         when(objFunc.getWeight()).thenReturn(0.5f);
         
         ArrayList<ObjetiveFunction> functions = new ArrayList<>();
@@ -63,7 +63,7 @@ public class FactoresPonderadosTest {
         
         ObjetiveFunction objFunc = mock(ObjetiveFunction.class);
         when(objFunc.getTypeProblem()).thenReturn(ProblemType.Minimizar);
-        when(objFunc.Evaluation(state)).thenReturn(0.2);
+        when(objFunc.evaluation(state)).thenReturn(0.2);
         when(objFunc.getWeight()).thenReturn(0.5f);
         
         ArrayList<ObjetiveFunction> functions = new ArrayList<>();
@@ -84,7 +84,7 @@ public class FactoresPonderadosTest {
         
         ObjetiveFunction objFunc = mock(ObjetiveFunction.class);
         when(objFunc.getTypeProblem()).thenReturn(ProblemType.Maximizar);
-        when(objFunc.Evaluation(state)).thenReturn(0.8);
+        when(objFunc.evaluation(state)).thenReturn(0.8);
         when(objFunc.getWeight()).thenReturn(0.5f);
         
         ArrayList<ObjetiveFunction> functions = new ArrayList<>();
@@ -105,7 +105,7 @@ public class FactoresPonderadosTest {
         
         ObjetiveFunction objFunc = mock(ObjetiveFunction.class);
         when(objFunc.getTypeProblem()).thenReturn(ProblemType.Minimizar);
-        when(objFunc.Evaluation(state)).thenReturn(0.4);
+        when(objFunc.evaluation(state)).thenReturn(0.4);
         when(objFunc.getWeight()).thenReturn(0.5f);
         
         ArrayList<ObjetiveFunction> functions = new ArrayList<>();

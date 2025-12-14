@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import metaheuristics.strategy.Strategy;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 import problem.definition.Problem.ProblemType;
 import problem.definition.State;
@@ -64,28 +65,34 @@ public class Particle extends Generator {
 		this.velocity = new ArrayList<Object>(velocity);
 	}
 
+	@SuppressFBWarnings(value = "EI_EXPOSE_REP", justification = "Performance and shared state requirement")
 	public ArrayList<Object> getVelocity() {
-		return new ArrayList<Object>(velocity);
+		return velocity;
 	}
 
+	@SuppressFBWarnings(value = "EI_EXPOSE_REP2", justification = "Performance and shared state requirement")
 	public void setVelocity(ArrayList<Object> velocity) {
-		this.velocity = new ArrayList<Object>(velocity);
+		this.velocity = velocity;
 	}
 
+	@SuppressFBWarnings(value = "EI_EXPOSE_REP", justification = "Performance and shared state requirement")
 	public State getStatePBest() {
-		return new State(statePBest);
+		return statePBest;
 	}
 
+	@SuppressFBWarnings(value = "EI_EXPOSE_REP2", justification = "Performance and shared state requirement")
 	public void setStatePBest(State statePBest) {
-		this.statePBest = new State(statePBest);
+		this.statePBest = statePBest;
 	}
 
+	@SuppressFBWarnings(value = "EI_EXPOSE_REP", justification = "Performance and shared state requirement")
 	public State getStateActual() {
-		return new State(stateActual);
+		return stateActual;
 	}
 
+	@SuppressFBWarnings(value = "EI_EXPOSE_REP2", justification = "Performance and shared state requirement")
 	public void setStateActual(State stateActual) {
-		this.stateActual = new State(stateActual);
+		this.stateActual = stateActual;
 	}
 
 	/**
@@ -111,8 +118,8 @@ public class Particle extends Generator {
 			NoSuchMethodException {
 		// TODO Auto-generated method stub
 		
-		ArrayList<Object> actualVelocity = UpdateVelocity();
-		ArrayList<Object> newCode = UpdateCode(actualVelocity);
+		ArrayList<Object> actualVelocity = updateVelocity();
+		ArrayList<Object> newCode = updateCode(actualVelocity);
 		this.velocity = actualVelocity;
 		this.stateActual.setCode(newCode);
 		return null;
@@ -126,7 +133,7 @@ public class Particle extends Generator {
 	 * 
 	 * @return ArrayList<Object> Nueva velocidad calculada.
 	 */
-	private ArrayList<Object> UpdateVelocity(){ // actualizar velocidad
+	private ArrayList<Object> updateVelocity(){ // actualizar velocidad
     	double w = ParticleSwarmOptimization.wmax - ((ParticleSwarmOptimization.wmax - ParticleSwarmOptimization.wmin) / Strategy.getStrategy().getCountMax()) * ParticleSwarmOptimization.countCurrentIterPSO;  //CALCULO DE LA INERCIA
     	double rand1 = secureRandom.nextDouble();
     	double rand2 = secureRandom.nextDouble();
@@ -163,7 +170,7 @@ public class Particle extends Generator {
         return actualVelocity;
     }
 	
-	private ArrayList<Object> UpdateCode(ArrayList<Object> actualVelocity) {  // CALCULO DE LA NUEA POSICION DE LA PARTICULA
+	private ArrayList<Object> updateCode(ArrayList<Object> actualVelocity) {  // CALCULO DE LA NUEA POSICION DE LA PARTICULA
 		ArrayList<Object> newCode = new ArrayList<Object>();
 		ArrayList<Object> binaryCode = new ArrayList<Object>();
 		//poner la condicion de si se esta trabajando con valores continuos o binarios
@@ -269,19 +276,19 @@ public class Particle extends Generator {
 	@Override
 	public float[] getTrace() {
 		// TODO Auto-generated method stub
-		return null;
+		return new float[0];
 	}
 
 	@Override
 	public int[] getListCountBetterGender() {
 		// TODO Auto-generated method stub
-		return null;
+		return new int[0];
 	}
 
 	@Override
 	public int[] getListCountGender() {
 		// TODO Auto-generated method stub
-		return null;
+		return new int[0];
 	}
 
 

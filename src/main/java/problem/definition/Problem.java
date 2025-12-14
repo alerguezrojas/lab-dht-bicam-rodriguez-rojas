@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import problem.extension.SolutionMethod;
 import problem.extension.TypeSolutionMethod;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 
 import factory_interface.IFFactorySolutionMethod;
@@ -27,18 +28,22 @@ public class Problem {
 		super();
 	}
 
+	@SuppressFBWarnings(value = "EI_EXPOSE_REP", justification = "Performance and shared state requirement")
 	public ArrayList<ObjetiveFunction> getFunction() {
 		return function;
 	}
 
+	@SuppressFBWarnings(value = "EI_EXPOSE_REP2", justification = "Performance and shared state requirement")
 	public void setFunction(ArrayList<ObjetiveFunction> function) {
 		this.function = function;
 	}
 
+	@SuppressFBWarnings(value = "EI_EXPOSE_REP", justification = "Performance and shared state requirement")
 	public State getState() {
 		return state;
 	}
 
+	@SuppressFBWarnings(value = "EI_EXPOSE_REP2", justification = "Performance and shared state requirement")
 	public void setState(State state) {
 		this.state = state;
 	}
@@ -73,11 +78,11 @@ public class Problem {
 		this.possibleValue = possibleValue;
 	}
 
-	public void Evaluate(State state) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
+	public void evaluate(State state) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
 		double eval = 0;       
 		ArrayList<Double> evaluation = new ArrayList<Double>(this.function.size());
 		if (typeSolutionMethod == null) {
-			eval= function.get(0).Evaluation(state);
+			eval= function.get(0).evaluation(state);
 			evaluation.add(evaluation.size(), eval);
 			state.setEvaluation(evaluation);
 		}

@@ -12,7 +12,6 @@ import local_search.acceptation_type.AcceptType;
 import local_search.acceptation_type.AcceptableCandidate;
 import local_search.candidate_type.CandidateType;
 import local_search.candidate_type.CandidateValue;
-import local_search.complement.StrategyType;
 import metaheuristics.strategy.Strategy;
 import problem.definition.Problem;
 import problem.definition.State;
@@ -37,7 +36,6 @@ public class MultiCaseSimulatedAnnealing extends Generator {
 	private List<Float> listTrace = new ArrayList<Float>();
 
     public int simpleTest() {
-        AcceptType a = AcceptType.AcceptBest;
         return 1;
     }
 

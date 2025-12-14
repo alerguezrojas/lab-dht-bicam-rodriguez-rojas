@@ -143,7 +143,7 @@ public class HillClimbingRestartTest {
         
         assertEquals(candidate, result);
         verify(operatorMock).generateRandomState(1);
-        verify(problemMock).Evaluate(newState);
+        verify(problemMock).evaluate(newState);
         assertEquals(20, HillClimbingRestart.count); // 10 + 10
     }
     

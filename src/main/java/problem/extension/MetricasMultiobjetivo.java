@@ -12,11 +12,11 @@ import problem.definition.State;
 public class MetricasMultiobjetivo {
 
 // % de soluciones q no son miembros del frente de pareto verdadero
-	public double TasaError(List<State> solutionsFPcurrent, List<State> solutionsFPtrue) throws BiffException, IOException{
+	public double tasaError(List<State> solutionsFPcurrent, List<State> solutionsFPtrue) throws BiffException, IOException{
 		float tasaError = 0;
 		for (int i = 0; i < solutionsFPcurrent.size() ; i++) { // frente de pareto actual
 			State solutionVO = solutionsFPcurrent.get(i);
-			if(!Contains(solutionVO, solutionsFPtrue)){ // no esta en el frente de pareto verdadero 
+			if(!contains(solutionVO, solutionsFPtrue)){ // no esta en el frente de pareto verdadero 
 				tasaError++;
 			}
 		}
@@ -26,7 +26,7 @@ public class MetricasMultiobjetivo {
 	}
 	
 // % Indica  qu�  tan  lejos  est�n  los  elementos  del frente  de  Pareto  actual  respecto  al  frente  de  Pareto  verdadero	
-	public double DistanciaGeneracional(List<State> solutionsFPcurrent, List<State> solutionsFPtrue) throws BiffException, IOException{
+	public double distanciaGeneracional(List<State> solutionsFPcurrent, List<State> solutionsFPtrue) throws BiffException, IOException{
 		float min = 1000;
 		float distancia = 0;
 		float distanciaGeneracional = 0;
@@ -52,7 +52,7 @@ public class MetricasMultiobjetivo {
 		return total;
 	}
 
-	public double Dispersion(ArrayList<State> solutions) throws BiffException, IOException{
+	public double dispersion(ArrayList<State> solutions) throws BiffException, IOException{
 		//Soluciones obtenidas con la ejecuci�n del algoritmo X
 		LinkedList<Float> distancias = new LinkedList<Float>();
 		float distancia = 0;
@@ -92,7 +92,7 @@ public class MetricasMultiobjetivo {
 		//System.out.println(dispersion);
 		return dispersion;
 	}
-	private boolean Contains(State solA, List<State> solutions){
+	private boolean contains(State solA, List<State> solutions){
 		int i = 0;
 		boolean result = false;
 		while(i<solutions.size()&& result==false){
@@ -103,7 +103,7 @@ public class MetricasMultiobjetivo {
 		}
 		return result;
 	}
-	public double CalcularMin(ArrayList<Double> allMetrics){
+	public double calcularMin(ArrayList<Double> allMetrics){
 		double min = 1000;
 		for (Iterator<Double> iter = allMetrics.iterator(); iter.hasNext();) {
 			double element = (Double) iter.next();
@@ -114,7 +114,7 @@ public class MetricasMultiobjetivo {
 		return min;
 	}
 
-	public double CalcularMax(ArrayList<Double> allMetrics){
+	public double calcularMax(ArrayList<Double> allMetrics){
 		double max = 0;
 		for (Iterator<Double> iter = allMetrics.iterator(); iter.hasNext();) {
 			double element = (Double) iter.next();
@@ -124,7 +124,7 @@ public class MetricasMultiobjetivo {
 		}
 		return max;
 	}
-	public double CalcularMedia(ArrayList<Double> allMetrics){
+	public double calcularMedia(ArrayList<Double> allMetrics){
 		double sum = 0;
 		for (Iterator<Double> iter = allMetrics.iterator(); iter.hasNext();) {
 			double element = (Double) iter.next();

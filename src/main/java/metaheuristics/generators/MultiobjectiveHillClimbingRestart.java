@@ -84,7 +84,7 @@ public class MultiobjectiveHillClimbingRestart extends Generator{
 			while (i < neighborhood.size()&& stop==false) {
 				if (Contain(neighborhood.get(i))==false) {
 					stateCandidate = neighborhood.get(i);
-					Strategy.getStrategy().getProblem().Evaluate(stateCandidate);  
+					Strategy.getStrategy().getProblem().evaluate(stateCandidate);  
 					visitedState.add(stateCandidate);
 					accept = candidate.acceptCandidate(lastState, stateCandidate.clone());
 					stop=true;
@@ -94,7 +94,7 @@ public class MultiobjectiveHillClimbingRestart extends Generator{
 			while (stop == false) {
 				stateCandidate = Strategy.getStrategy().getProblem().getOperator().generateRandomState(1).get(0);
 				if (Contain(stateCandidate)==false) {
-					Strategy.getStrategy().getProblem().Evaluate(stateCandidate);  
+					Strategy.getStrategy().getProblem().evaluate(stateCandidate);  
 					stop=true;
 					accept = candidate.acceptCandidate(lastState, stateCandidate.clone());
 
@@ -155,7 +155,7 @@ public class MultiobjectiveHillClimbingRestart extends Generator{
 		boolean found = false;
 		for (Iterator<State> iter = visitedState.iterator(); iter.hasNext();) {
 			State element = (State) iter.next();
-			if(element.Comparator(state)==true){
+			if(element.comparator(state)==true){
 				found = true;
 			}
 		}

@@ -120,7 +120,7 @@ public class MultiGenerator extends Generator {
 			State stateCandidate;
 			try {
 				stateCandidate = generator.generate(1);
-				Strategy.getStrategy().getProblem().Evaluate(stateCandidate);
+				Strategy.getStrategy().getProblem().evaluate(stateCandidate);
 				//stateCandidate.setEvaluation(stateCandidate.getEvaluation());
 				
 				//stateCandidate = generator.generate(1);

@@ -21,19 +21,19 @@ public class MultiObjetivoPuro extends SolutionMethod {
 			if(Strategy.getStrategy().getProblem().getTypeProblem().equals(ProblemType.Maximizar)){
 				if(objfunction.getTypeProblem().equals(ProblemType.Maximizar))
 				{
-					tempEval = objfunction.Evaluation(state);
+					tempEval = objfunction.evaluation(state);
 				}
 				else{
-					tempEval = 1-objfunction.Evaluation(state);
+					tempEval = 1-objfunction.evaluation(state);
 				}
 			}
 			else{
 				if(objfunction.getTypeProblem().equals(ProblemType.Maximizar))
 				{
-					tempEval = 1-objfunction.Evaluation(state);
+					tempEval = 1-objfunction.evaluation(state);
 				}
 				else{
-					tempEval = objfunction.Evaluation(state);
+					tempEval = objfunction.evaluation(state);
 				}
 			}
 			evaluation.add(tempEval);

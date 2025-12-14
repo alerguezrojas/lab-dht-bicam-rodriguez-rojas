@@ -226,13 +226,13 @@ public class MultiobjectiveHillClimbingDistanceTest {
         
         // Mock distances
         // s1 <-> s3
-        when(s1.Distance(s3)).thenReturn(5.0);
+        when(s1.distance(s3)).thenReturn(5.0);
         // s2 <-> s3
-        when(s2.Distance(s3)).thenReturn(5.0);
+        when(s2.distance(s3)).thenReturn(5.0);
         // s3 <-> s1
-        when(s3.Distance(s1)).thenReturn(5.0);
+        when(s3.distance(s1)).thenReturn(5.0);
         // s3 <-> s2
-        when(s3.Distance(s2)).thenReturn(5.0);
+        when(s3.distance(s2)).thenReturn(5.0);
         
         List<Double> result = MultiobjectiveHillClimbingDistance.DistanceCalculateAdd(solutions);
         

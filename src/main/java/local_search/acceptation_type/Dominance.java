@@ -38,7 +38,7 @@ public class Dominance {
 			boolean found = false;
 			for (int k = 0; k < list.size() && found == false; k++) {
 				State element = list.get(k);
-				found = solutionX.Comparator(element);
+				found = solutionX.comparator(element);
 			}
 			//Si la soluci�n no existe
 			if(found == false){

@@ -35,7 +35,6 @@ public class MultiCaseSimulatedAnnealing extends Generator {
 	private List<Float> listTrace = new ArrayList<Float>();
 
     public int simpleTest() {
-        AcceptType a = AcceptType.AcceptBest;
         return 1;
     }
 

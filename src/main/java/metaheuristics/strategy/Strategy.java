@@ -83,7 +83,7 @@ public class Strategy {
 		//generar estado inicial de la estrategia
 		Generator randomInitial = new RandomSearch();
 		initialState = randomInitial.generate(operatornumber);
-		problem.Evaluate(initialState); //evaluar ese estado
+		problem.evaluate(initialState); //evaluar ese estado
 		initialState.setTypeGenerator(generatorType);
 		getProblem().setState(initialState);
 		//si se va a salvar la lista de estados generados, adicionar el estado
@@ -145,7 +145,7 @@ public class Strategy {
 					updateWeight();//actualizar el peso de los generadores si se reinician cuando ocurre un cambio
 					//generar el estado candidato de la iteraci�n
 					stateCandidate = multiGenerator.generate(operatornumber);
-					problem.Evaluate(stateCandidate);
+					problem.evaluate(stateCandidate);
 					stateCandidate.setEvaluation(stateCandidate.getEvaluation());
 					stateCandidate.setNumber(countCurrent);
 					stateCandidate.setTypeGenerator(generatorType);
@@ -153,7 +153,7 @@ public class Strategy {
 				}
 				else {
 					stateCandidate = generator.generate(operatornumber);
-					problem.Evaluate(stateCandidate);
+					problem.evaluate(stateCandidate);
 					stateCandidate.setEvaluation(stateCandidate.getEvaluation());
 					stateCandidate.setNumber(countCurrent);
 					stateCandidate.setTypeGenerator(generatorType);
@@ -190,7 +190,7 @@ public class Strategy {
 						MultiGenerator.activeGenerator.countBetterGender = 0;
 					}
 					stateCandidate = multiGenerator.generate(operatornumber);
-					problem.Evaluate(stateCandidate);
+					problem.evaluate(stateCandidate);
 					stateCandidate.setEvaluation(stateCandidate.getEvaluation());
 					stateCandidate.setNumber(countCurrent);
 					stateCandidate.setTypeGenerator(generatorType);
@@ -199,7 +199,7 @@ public class Strategy {
 				else {
 					//generar estado candidato y evaluar si es aceptado o no 
 					stateCandidate = generator.generate(operatornumber);
-					problem.Evaluate(stateCandidate);
+					problem.evaluate(stateCandidate);
 					stateCandidate.setEvaluation(stateCandidate.getEvaluation());
 					stateCandidate.setNumber(countCurrent);
 					stateCandidate.setTypeGenerator(generatorType);
@@ -422,7 +422,7 @@ public class Strategy {
 	}
 	public void updateRefGenerator(Generator generator) {
 		if(generator.getType().equals(GeneratorType.HillClimbing) || generator.getType().equals(GeneratorType.TabuSearch) || generator.getType().equals(GeneratorType.RandomSearch) || generator.getType().equals(GeneratorType.SimulatedAnnealing)){
-			double evaluation = getProblem().getFunction().get(0).Evaluation(generator.getReference());
+			double evaluation = getProblem().getFunction().get(0).evaluation(generator.getReference());
 			generator.getReference().getEvaluation().set(0, evaluation);
 //			State state = new State();
 //			state.setEvaluation(evaluation);
@@ -435,7 +435,7 @@ public class Strategy {
 		}
 		if(generator.getType().equals(GeneratorType.GeneticAlgorithm) || generator.getType().equals(GeneratorType.DistributionEstimationAlgorithm) || generator.getType().equals(GeneratorType.EvolutionStrategies)){
 			for (int j = 0; j < generator.getReferenceList().size(); j++) {
-				double evaluation = getProblem().getFunction().get(0).Evaluation(generator.getReferenceList().get(j));
+				double evaluation = getProblem().getFunction().get(0).evaluation(generator.getReferenceList().get(j));
 				generator.getReferenceList().get(j).getEvaluation().set(0, evaluation);
 			}
 		}

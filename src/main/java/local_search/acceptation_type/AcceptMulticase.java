@@ -1,7 +1,6 @@
 package local_search.acceptation_type;
 
 import local_search.complement.MultiCaseSimulatedAnnealing;
-import metaheuristics.generators.*;
 import metaheuristics.strategy.*;
 
 import java.util.List;

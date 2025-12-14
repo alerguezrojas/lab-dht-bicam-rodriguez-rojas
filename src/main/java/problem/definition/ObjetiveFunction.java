@@ -23,5 +23,5 @@ public abstract class ObjetiveFunction {
 		this.typeProblem = typeProblem;
 	}
 
-	public abstract Double Evaluation(State state);
+	public abstract Double evaluation(State state);
 }

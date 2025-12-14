@@ -64,11 +64,14 @@ public class GeneticAlgorithmTest {
         // Setup chain
         when(strategyMock.getProblem()).thenReturn(problemMock);
         when(problemMock.getOperator()).thenReturn(operatorMock);
-        when(problemMock.getState()).thenReturn(stateMock);
-        when(stateMock.getCopy()).thenReturn(newStateMock);
-        when(newStateMock.getCode()).thenReturn(new ArrayList<>());
-        when(newStateMock.getEvaluation()).thenReturn(new ArrayList<>());
-        when(newStateMock.getCopy()).thenReturn(newStateMock); // Stub getCopy for crossover
+        
+        // Use real State objects instead of mocks for data holders to avoid side-effect issues
+        State realState = new State();
+        realState.setCode(new ArrayList<>());
+        realState.setEvaluation(new ArrayList<>());
+        
+        when(problemMock.getState()).thenReturn(realState);
+        // when(stateMock.getCopy()).thenReturn(newStateMock); // No longer needed if we use real objects
         
         when(problemMock.getTypeProblem()).thenReturn(Problem.ProblemType.Minimizar);
         when(problemMock.getCodification()).thenReturn(codificationMock);

@@ -149,7 +149,7 @@ public class ParticleSwarmOptimization extends Generator {
 					//convertir los estados en particulas
 					for (int j = 0; j < RandomSearch.listStateReference.size(); j++) {
 						//si el estado es creado con el generator RandomSearch entonces la convierto en particula
-						if(getListParticle().size() != countRef){
+						if(listParticle.size() != countRef){
 							ArrayList<Object> velocity = new ArrayList<Object>();
 							State stateAct = (State) RandomSearch.listStateReference.get(j).getCopy();
 							stateAct.setCode(new ArrayList<Object>(RandomSearch.listStateReference.get(j).getCode()));
@@ -160,7 +160,7 @@ public class ParticleSwarmOptimization extends Generator {
 							statePBest.setEvaluation(RandomSearch.listStateReference.get(j).getEvaluation());
 							
 							Particle particle = new Particle(stateAct, statePBest, velocity);
-							getListParticle().add(particle);
+							listParticle.add(particle);
 						}
 					}  
 				}
@@ -176,11 +176,11 @@ public class ParticleSwarmOptimization extends Generator {
 
 
 	public State getStateReferencePSO() {
-		return stateReferencePSO;
+		return stateReferencePSO != null ? new State(stateReferencePSO) : null;
 	}
 
 	public void setStateReferencePSO(State stateReferencePSO) {
-		this.stateReferencePSO = stateReferencePSO;
+		this.stateReferencePSO = stateReferencePSO != null ? new State(stateReferencePSO) : null;
 	}
 
 	public List<Particle> getListStateReference() {
@@ -188,16 +188,16 @@ public class ParticleSwarmOptimization extends Generator {
 	}
 
 	public void setListStateReference(List<State> listStateReference) {
-		this.listStateReference = listStateReference;
+		this.listStateReference = new ArrayList<>(listStateReference);
 	}
 
 	public List<Particle> getListParticle() {
-		return listParticle;
+		return new ArrayList<>(listParticle);
 	}
 
 	public List<Particle> setListParticle(List<Particle> listParticle) {
-		this.listParticle = listParticle;
-		return listParticle;
+		this.listParticle = new ArrayList<>(listParticle);
+		return this.listParticle;
 	}
 
 	public GeneratorType getGeneratorType() {
@@ -283,7 +283,7 @@ public class ParticleSwarmOptimization extends Generator {
 	@Override
 	public List<State> getReferenceList() {
 		// TODO Auto-generated method stub
-		return this.listStateReference;
+		return new ArrayList<>(this.listStateReference);
 	}
 
 	@Override
@@ -313,19 +313,19 @@ public class ParticleSwarmOptimization extends Generator {
 	@Override
 	public int[] getListCountBetterGender() {
 		// TODO Auto-generated method stub
-		return this.listCountBetterGender;
+		return this.listCountBetterGender.clone();
 	}
 
 	@Override
 	public int[] getListCountGender() {
 		// TODO Auto-generated method stub
-		return this.listCountGender;
+		return this.listCountGender.clone();
 	}
 
 	@Override
 	public float[] getTrace() {
 		// TODO Auto-generated method stub
-		return this.listTrace;
+		return this.listTrace.clone();
 	}
 
 

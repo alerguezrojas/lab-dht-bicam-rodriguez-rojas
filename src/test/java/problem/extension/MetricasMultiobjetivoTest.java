@@ -32,7 +32,7 @@ class MetricasMultiobjetivoTest {
         // s2 is not in true pareto
         // Error rate should be 1/2 = 0.5
         
-        double error = metricas.TasaError(current, truePareto);
+        double error = metricas.tasaError(current, truePareto);
         assertEquals(0.5, error, 0.001);
     }
     
@@ -50,7 +50,7 @@ class MetricasMultiobjetivoTest {
         solutions.add(s1);
         solutions.add(s2);
         
-        double dispersion = metricas.Dispersion(solutions);
+        double dispersion = metricas.dispersion(solutions);
         // Just check it doesn't crash and returns something reasonable
         assertTrue(dispersion >= 0);
     }
