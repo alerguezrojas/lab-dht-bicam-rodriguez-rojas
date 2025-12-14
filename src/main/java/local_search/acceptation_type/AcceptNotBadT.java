@@ -6,6 +6,8 @@ package local_search.acceptation_type;
 
 import java.lang.reflect.InvocationTargetException;
 
+import java.security.SecureRandom;
+
 import metaheuristics.strategy.Strategy;
 import metaheuristics.generators.SimulatedAnnealing;
 import problem.definition.Problem;
@@ -14,13 +16,15 @@ import problem.definition.Problem.ProblemType;
 
 public class AcceptNotBadT extends AcceptableCandidate{
 
+	private static final SecureRandom secureRandom = new SecureRandom();
+
 	@Override
 	public Boolean acceptCandidate(State stateCurrent, State stateCandidate) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
 		Boolean accept = null;
 		Problem problem = Strategy.getStrategy().getProblem();
 		if (problem.getTypeProblem().equals(ProblemType.Maximizar)) {
 			double result = (stateCandidate.getEvaluation().get(0) - stateCurrent.getEvaluation().get(0)) / SimulatedAnnealing.tinitial;
-			double probaleatory = Math.random();
+			double probaleatory = secureRandom.nextDouble();
 			double exp = Math.exp(result);
 			if (stateCandidate.getEvaluation().get(0) >= stateCurrent.getEvaluation().get(0)
 					|| probaleatory < exp)
@@ -30,7 +34,7 @@ public class AcceptNotBadT extends AcceptableCandidate{
 		} else {
 			double result_min = (stateCandidate.getEvaluation().get(0) - stateCurrent.getEvaluation().get(0)) / SimulatedAnnealing.tinitial;
 			if (stateCandidate.getEvaluation().get(0) <= stateCurrent.getEvaluation().get(0)
-					|| Math.random() < Math.exp(result_min))
+					|| secureRandom.nextDouble() < Math.exp(result_min))
 				accept = true;
 			else
 				accept = false;

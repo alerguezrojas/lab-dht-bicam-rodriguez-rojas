@@ -20,34 +20,24 @@ import problem.definition.Problem;
 import problem.definition.Problem.ProblemType;
 import problem.definition.State;
 
-class AcceptMulticaseTest {
+class AcceptMulticaseTest extends BaseAcceptTest {
 
-    private MockedStatic<Strategy> strategyMockedStatic;
-    private Strategy strategyMock;
-    private Problem problemMock;
     private Generator generatorMock;
     private List<State> listRefPoblacFinal;
 
     @BeforeEach
-    void setUp() {
-        strategyMock = mock(Strategy.class);
-        problemMock = mock(Problem.class);
+    public void setUp() {
+        super.setUp();
         generatorMock = mock(Generator.class);
         listRefPoblacFinal = new ArrayList<>();
         
-        strategyMockedStatic = mockStatic(Strategy.class);
-        strategyMockedStatic.when(Strategy::getStrategy).thenReturn(strategyMock);
-        when(strategyMock.getProblem()).thenReturn(problemMock);
         strategyMock.generator = generatorMock;
         when(generatorMock.getType()).thenReturn(GeneratorType.GeneticAlgorithm); // Default type
         
         strategyMock.listRefPoblacFinal = listRefPoblacFinal;
     }
 
-    @AfterEach
-    void tearDown() {
-        strategyMockedStatic.close();
-    }
+    // tearDown is handled by BaseAcceptTest
 
     @Test
     void testAcceptCandidateDominance() {

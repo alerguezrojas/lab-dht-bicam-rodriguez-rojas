@@ -101,9 +101,9 @@ public class MultiCaseSimulatedAnnealing extends Generator {
 			else{
 				tinitial = tinitial/(1 + countIterationsCurrent);
 			}*/
-			System.out.println("La T:" + tinitial);
+			// System.out.println("La T:" + tinitial);
 			countIterationsT = countIterationsT + countRept;
-			System.out.println("La Cant es: " + countIterationsT);
+			// System.out.println("La Cant es: " + countIterationsT);
 		}
 		getReferenceList();
 	}

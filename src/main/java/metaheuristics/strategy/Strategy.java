@@ -231,7 +231,7 @@ public class Strategy {
 		if(calculateTime == true){
 			finalTime = System.currentTimeMillis();
 			timeExecute = finalTime - initialTime;
-			System.out.println("El tiempo de ejecucion: " + timeExecute);
+			// System.out.println("El tiempo de ejecucion: " + timeExecute);
 		}
 		if(generatorType.equals(GeneratorType.MultiGenerator)){
 			listBest = (ArrayList<State>) multiGenerator.getReferenceList();

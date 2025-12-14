@@ -23,6 +23,7 @@ C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\metaheuristics\generator
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\metaheuristics\generators\RandomSearchTest.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\metaheuristics\generators\TabuSearchTest.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\problem\definition\ProblemTest.java
+C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\problem_operators\MutationOperatorTest.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\local_search\acceptation_type\AcceptBestTest.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\evolutionary_algorithms\complement\OnePointMutationTest.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\metaheuristics\generators\InstanceDETest.java
@@ -30,6 +31,7 @@ C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\metaheuristics\generator
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\factory_method\FactoryAcceptCandidateTest.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\metaheuristics\generators\LimitRouletteTest.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\local_search\acceptation_type\AcceptMulticaseTest.java
+C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\problem\definition\ObjetiveFunctionTest.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\local_search\complement\MultiCaseSimulatedAnnealingCleanTest.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\local_search\acceptation_type\AcceptAnyoneTest.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\local_search\acceptation_type\AcceptNotBadUTest.java
@@ -47,6 +49,7 @@ C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\evolutionary_algorithms\
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\metaheuristics\generators\EvolutionStrategiesTest.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\factory_method\FactoryLoaderTest.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\local_search\candidate_type\SmallerCandidateTest.java
+C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\local_search\acceptation_type\BaseAcceptTest.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\metaheuristics\generators\InstanceEETest.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\metaheuristics\generators\ParticleTest.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\metaheuristics\generators\HillClimbingTest.java
@@ -72,4 +75,5 @@ C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\factory_method\FactorySo
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\local_search\acceptation_type\AcceptNotDominatedTabuTest.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\factory_method\FactoryMutationTest.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\evolutionary_algorithms\complement\OnePointCrossoverTest.java
+C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\problem\extension\MultiObjetivoPuroTest.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\java\metaheuristics\generators\MultiobjectiveHillClimbingRestartTest.java

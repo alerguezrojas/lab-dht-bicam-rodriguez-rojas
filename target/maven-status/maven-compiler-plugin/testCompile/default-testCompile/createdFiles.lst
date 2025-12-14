@@ -1,4 +1,6 @@
 evolutionary_algorithms\complement\OnePointMutationTest$1.class
+problem\definition\ObjetiveFunctionTest.class
+problem\extension\MultiObjetivoPuroTest.class
 factory_method\FactoryReplaceTest.class
 metaheuristics\generators\InstanceDETest.class
 metaheuristics\generators\MultiCaseSimulatedAnnealingSimpleTest.class
@@ -6,6 +8,7 @@ evolutionary_algorithms\complement\AIOMutationTest.class
 local_search\candidate_type\CandidateValueTest.class
 metaheuristics\generators\MyTestClassTest.class
 metaheuristics\generators\InstanceGATest.class
+local_search\acceptation_type\BaseAcceptTest.class
 local_search\candidate_type\SmallerCandidateTest.class
 factory_method\FactoryCrossoverTest.class
 evolutionary_algorithms\complement\UniformCrossoverTest.class
@@ -48,6 +51,7 @@ evolutionary_algorithms\complement\UnivariateTest.class
 local_search\candidate_type\NotDominatedCandidateTest.class
 metaheuristics\generators\MultiobjectiveHillClimbingDistanceTest.class
 metaheuristics\generators\RandomSearchTest.class
+problem_operators\MutationOperatorTest.class
 metaheuristics\generators\MultiobjectiveHillClimbingRestartTest.class
 metaheuristics\generators\LimitRouletteTest.class
 metaheuristics\generators\SimpleTestClassTest.class

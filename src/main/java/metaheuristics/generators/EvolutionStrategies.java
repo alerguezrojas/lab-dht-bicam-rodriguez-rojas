@@ -3,6 +3,7 @@ package metaheuristics.generators;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
+import java.security.SecureRandom;
 
 import metaheuristics.strategy.Strategy;
 
@@ -22,6 +23,8 @@ import factory_method.FactoryMutation;
 import factory_method.FactoryReplace;
 
 public class EvolutionStrategies extends Generator {
+	
+	private static final SecureRandom secureRandom = new SecureRandom();
 	
 	private State stateReferenceES;
 	private List<State> listStateReference = new ArrayList<State>(); 
@@ -68,7 +71,7 @@ public class EvolutionStrategies extends Generator {
     	iffatherselection = new FactoryFatherSelection();
     	FatherSelection selection = iffatherselection.createSelectFather(selectionType);
     	List<State> fathers = selection.selection(this.listStateReference, truncation);
-    	int pos1 = (int)(Math.random() * fathers.size());
+    	int pos1 = secureRandom.nextInt(fathers.size());
     	State candidate = (State) Strategy.getStrategy().getProblem().getState().getCopy();
     	candidate.setCode(new ArrayList<Object>(fathers.get(pos1).getCode()));
     	candidate.setEvaluation(fathers.get(pos1).getEvaluation());

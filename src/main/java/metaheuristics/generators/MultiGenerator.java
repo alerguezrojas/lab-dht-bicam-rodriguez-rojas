@@ -3,6 +3,7 @@ package metaheuristics.generators;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
+import java.security.SecureRandom;
 
 import factory_method.FactoryGenerator;
 
@@ -13,6 +14,7 @@ import problem.definition.State;
 
 public class MultiGenerator extends Generator {
 
+	private static final SecureRandom secureRandom = new SecureRandom();
 	private GeneratorType Generatortype;
 	private static Generator[] listGenerators = new Generator[GeneratorType.values().length];
 	public static List<State> listGeneratedPP = new ArrayList<State> ();
@@ -284,7 +286,7 @@ public class MultiGenerator extends Generator {
 			limitRoulette.setGenerator(listGenerators[i]);
 			listLimit.add(limitRoulette);
 		}
-		float numbAleatory = (float) (Math.random() * (double)(1));
+		float numbAleatory = secureRandom.nextFloat();
 		boolean find = false;
 		int i = 0;
 		while (!find && i < listLimit.size()){
