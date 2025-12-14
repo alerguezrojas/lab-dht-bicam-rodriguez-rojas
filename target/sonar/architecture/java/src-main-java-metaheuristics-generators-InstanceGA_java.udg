@@ -1,0 +1,308 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755616942*java2.BË
+<
+7src/main/java/metaheuristics/generators/InstanceGA.java2
+	
+type3
+	
+MAIN4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+J
+Ealerguezrojas_lab-dht-bicam-rodriguez-rojas:metaheuristics.generators9
+*
+$metaheuristics.generators.InstanceGA11
+
+class12
+
+access13
+
+public14
+
+
+full-range15
+
+(6:1)-(38:2)16
+
+simple-name17
+
+
+InstanceGA18
+4
+.metaheuristics.generators.InstanceGA.terminate20
+
+field21
+
+private22
+
+(8:2)-(8:36)23
+
+	terminate24
+1
++metaheuristics.generators.InstanceGA#run()V26
+
+method27
+
+(10:2)-(28:3)28
+	
+run29
+%
+factory_method.FactoryGenerator31
+
+unknown32
+
+is type33
+
+
+uses34
+
+calls35
+)
+#metaheuristics.generators.Generator37
+
+returns38
+
+
+references39
+…
+factory_method.FactoryGenerator#createGenerator(Lmetaheuristics/generators/GeneratorType;)Lmetaheuristics/generators/Generator;41
+-
+'metaheuristics.generators.GeneratorType43
+>
+8metaheuristics.generators.GeneratorType.GeneticAlgorithm45
+\
+Vmetaheuristics.generators.Generator#getType()Lmetaheuristics/generators/GeneratorType;47
+.
+(metaheuristics.generators.MultiGenerator49
+h
+bmetaheuristics.generators.MultiGenerator#getListGenerators()[Lmetaheuristics/generators/Generator;51
+9
+3metaheuristics.generators.InstanceGA#isTerminate()Z53
+
+(30:2)-(32:3)54
+
+isTerminate55
+;
+5metaheuristics.generators.InstanceGA#setTerminate(Z)V57
+
+(34:2)-(36:3)58
+
+setTerminate59J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6j¬
+N
+25H
+252627 *
+1
+ 
+(210:7B$
+
+
+13
+14
+
+
+15
+28
+
+
+17
+29
+
+48
+484932
+N
+19H
+192021 *
+1 (210:7B$
+
+
+13
+22
+
+
+15
+23
+
+
+17
+24
+
+40
+404132
+J
+10D
+101112 *
+1 (:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18
+
+42
+424332
+
+46
+464732
+N
+56H
+565727 *
+1" "(210:7B$
+
+
+13
+14
+
+
+15
+58
+
+
+17
+59
+
+50
+505132
+
+36
+363732
+N
+52H
+525327 *
+1 (210:7B$
+
+
+13
+14
+
+
+15
+54
+
+
+17
+55
+
+30
+303132
+
+44
+444532rª
+
+253033*
+1 (&
+
+253034*
+1 (
+
+253035*
+1- (=
+
+253633*
+1 (
+
+253634*
+1 (
+
+253638*
+1 (4
+
+253039*
+1 (4
+
+254035*
+1% (4
+
+254234*
+15 (B
+
+254234*
+1C (S
+
+254439*
+1C (S
+
+254238*
+1 (4
+
+253639*
+1 (4
+
+254635*
+1- (4
+
+253638*
+1 ('
+
+254839*
+1 ('
+
+255035*
+1 ('
+
+254834*
+1 (
+
+254234*
+1> (K
+
+254234*
+1L (\
+
+254439*
+1L (\
+
+253638*
+1 (%
+
+254839*
+1 (%
+
+255035*
+1 (%
+
+254834*
+1 (
+
+251939*
+1 (
+
+521939*
+1
+ (
+
+561034*
+1# #(
+
+561039*
+1# #(
+
+561939*
+1# #(

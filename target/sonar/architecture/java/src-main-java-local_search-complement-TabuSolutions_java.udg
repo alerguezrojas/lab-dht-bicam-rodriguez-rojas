@@ -1,0 +1,192 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755615640*java2.BÚ
+=
+8src/main/java/local_search/complement/TabuSolutions.java2
+	
+type3
+	
+MAIN4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+H
+Calerguezrojas_lab-dht-bicam-rodriguez-rojas:local_search.complement9
++
+%local_search.complement.TabuSolutions11
+
+class12
+
+access13
+
+public14
+
+
+full-range15
+
+(8:1)-(31:2)16
+
+simple-name17
+
+TabuSolutions18
+4
+.local_search.complement.TabuSolutions.listTabu20
+
+field21
+
+(10:2)-(10:57)22
+
+listTabu23
+
+problem.definition.State25
+
+unknown26
+
+
+uses27
+7
+1local_search.complement.TabuSolutions.maxelements29
+
+(12:2)-(12:32)30
+
+maxelements31
+`
+Zlocal_search.complement.TabuSolutions#filterNeighborhood(Ljava/util/List;)Ljava/util/List;33
+
+method34
+
+(14:2)-(30:3)35
+
+filterNeighborhood36
+
+
+references37
+
+returns38J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6jÐ
+N
+32H
+323334 *
+1 ('210:7B$
+
+
+13
+14
+
+
+15
+35
+
+
+17
+36
+J
+10D
+101112 *
+1 (:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18
+N
+28H
+282921 *
+1 (210:7B$
+
+
+13
+14
+
+
+15
+30
+
+
+17
+31
+N
+19H
+192021 *
+1
+ 
+($210:7B$
+
+
+13
+14
+
+
+15
+22
+
+
+17
+23
+
+24
+242526rÄ
+
+192427*
+1
+ 
+(
+
+322427*
+1 (
+
+322427*
+1- (2
+
+321937*
+1 (
+
+321937*
+1 (
+
+321937*
+1 (
+
+321937*
+1 (
+
+322438*
+1
+ (
+
+322438*
+1) (5
+
+321937*
+1) (1
+
+321937*
+1) (1
+
+322438*
+1 (

@@ -1,0 +1,497 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755617848*java2.B„
+E
+@src/main/java/local_search/acceptation_type/AcceptMulticase.java2
+	
+type3
+	
+MAIN4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+N
+Ialerguezrojas_lab-dht-bicam-rodriguez-rojas:local_search.acceptation_type9
+3
+-local_search.acceptation_type.AcceptMulticase11
+
+class12
+
+access13
+
+public14
+
+
+full-range15
+
+(18:1)-(145:2)16
+
+simple-name17
+
+AcceptMulticase18
+7
+1local_search.acceptation_type.AcceptableCandidate20
+
+unknown21
+
+extends22
+
+
+uses23
+7
+1local_search.acceptation_type.AcceptMulticase.rdm25
+
+field26
+
+private27
+
+(24:2)-(24:61)28
+	
+rdm29
+ç
+Ülocal_search.acceptation_type.AcceptMulticase#acceptCandidate(Lproblem/definition/State;Lproblem/definition/State;)Ljava/lang/Boolean;31
+
+method32
+
+(36:2)-(102:3)33
+
+acceptCandidate34
+
+problem.definition.State36
+
+	has param37
+
+is type38
+&
+ metaheuristics.strategy.Strategy40
+
+returns41
+
+
+references42
+V
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;44
+
+calls45
+9
+3metaheuristics.strategy.Strategy.listRefPoblacFinal47
+@
+:problem.definition.State#clone()Lproblem/definition/State;49
+;
+5metaheuristics.generators.MultiCaseSimulatedAnnealing51
+[
+Umetaheuristics.generators.MultiCaseSimulatedAnnealing#getTinitial()Ljava/lang/Double;53
+-
+'local_search.acceptation_type.Dominance55
+n
+hlocal_search.acceptation_type.Dominance#dominance(Lproblem/definition/State;Lproblem/definition/State;)Z57
+q
+klocal_search.acceptation_type.AcceptMulticase#dominanceCounter(Lproblem/definition/State;Ljava/util/List;)I59
+n
+hlocal_search.acceptation_type.AcceptMulticase#dominanceRank(Lproblem/definition/State;Ljava/util/List;)I61
+C
+=problem.definition.State#getEvaluation()Ljava/util/ArrayList;63
+h
+blocal_search.acceptation_type.Dominance#ListDominance(Lproblem/definition/State;Ljava/util/List;)Z65
+
+(112:2)-(121:3)66
+
+dominanceCounter67
+
+(132:2)-(143:3)68
+
+dominanceRank69J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6j˛
+J
+10D
+101112 *
+1 (:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18
+
+54
+545521
+
+39
+394021
+
+43
+434421
+P
+60J
+606132 *
+1Ñ Ñ(210:7B$
+
+
+13
+27
+
+
+15
+68
+
+
+17
+69
+
+62
+626321
+
+35
+353621
+
+50
+505121
+
+19
+192021
+
+48
+484921
+N
+30H
+303132 *
+1% %( 210:7B$
+
+
+13
+14
+
+
+15
+33
+
+
+17
+34
+
+56
+565721
+N
+58H
+585932 *
+1p p(210:7B$
+
+
+13
+27
+
+
+15
+66
+
+
+17
+67
+
+52
+525321
+
+64
+646521
+N
+24H
+242526 *
+1$ ('210:7B$
+
+
+13
+27
+
+
+15
+28
+
+
+17
+29
+
+46
+464721rè
+
+101922*
+1& (9
+
+101923*
+1& (9
+
+303537*
+1%! %(&
+
+303537*
+1%5 %(:
+
+303538*
+1%' %(3
+
+303523*
+1%! %(&
+
+303538*
+1%; %(I
+
+303523*
+1%5 %(:
+
+303523*
+1( ((
+
+303941*
+1( ((*
+
+303942*
+1( ((*
+
+304345*
+1( ((*
+
+303923*
+1( ((
+
+304642*
+1(- ((?
+
+303541*
+1+ +(
+
+303542*
+1+ +(
+
+304845*
+1+ +(
+
+305042*
+1- -(5
+
+305245*
+1-* -(5
+
+305023*
+1- -()
+
+305438*
+1/ /(
+
+305423*
+1/ /(
+
+305445*
+1/ /(%
+
+305442*
+12 2(
+
+305645*
+12 2(
+
+305442*
+16 6(
+
+305645*
+16 6(
+
+301042*
+17 7(
+
+305845*
+17 7(
+
+301042*
+1: :(
+
+306045*
+1: :(
+
+301042*
+1= =(
+
+306045*
+1= =(
+
+301042*
+1=2 =(?
+
+306045*
+1=2 =(?
+
+301042*
+1@ @(
+
+306045*
+1@ @(
+
+301042*
+1@3 @(@
+
+306045*
+1@3 @(@
+
+303542*
+1B  B(:
+
+306245*
+1B- B(:
+
+303542*
+1F F(1
+
+306245*
+1F$ F(1
+
+301042*
+1M M(
+
+306045*
+1M M(
+
+301042*
+1M3 M(@
+
+306045*
+1M3 M(@
+
+301042*
+1MX M(e
+
+306045*
+1MX M(e
+
+301042*
+1N N((
+
+306045*
+1N N((
+
+301042*
+1N? N(L
+
+306045*
+1N? N(L
+
+303542*
+1S  S(:
+
+306245*
+1S- S(:
+
+303542*
+1W W(1
+
+306245*
+1W$ W(1
+
+302442*
+1` `(
+
+
+302442*
+1` `(
+
+
+305442*
+1c c($
+
+306445*
+1c c($
+
+583537*
+1p p($
+
+583538*
+1p% p(3
+
+583523*
+1p p($
+
+583523*
+1p: p(?
+
+583538*
+1s
+ s(
+
+583523*
+1s s(	
+
+583541*
+1s s(
+
+585438*
+1t t(
+
+585423*
+1t t(
+
+585445*
+1t t('
+
+585442*
+1u u(
+
+585645*
+1u u(
+
+603537*
+1Ñ Ñ(!
+
+603538*
+1Ñ" Ñ(0
+
+603523*
+1Ñ Ñ(!
+
+603523*
+1Ñ7 Ñ(<
+
+603538*
+1á
+ á(
+
+603523*
+1á á(	
+
+603541*
+1á á(
+
+605438*
+1à à(
+
+605423*
+1à à(
+
+605445*
+1à à('
+
+605442*
+1â â(
+
+605645*
+1â â(

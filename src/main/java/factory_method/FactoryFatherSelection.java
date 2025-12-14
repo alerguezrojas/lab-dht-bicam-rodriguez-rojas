@@ -11,11 +11,10 @@ import factory_interface.IFFactoryFatherSelection;
 
 
 public class FactoryFatherSelection implements IFFactoryFatherSelection{
-    private FatherSelection selection;
 	
     public FatherSelection createSelectFather(SelectionType selectionType) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
     	String className = "evolutionary_algorithms.complement." + selectionType.toString();
-		selection = (FatherSelection) FactoryLoader.getInstance(className);
+		FatherSelection selection = (FatherSelection) FactoryLoader.getInstance(className);
 		return selection;
 	}
 }

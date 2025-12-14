@@ -1,0 +1,79 @@
+
+>problem.definition.State#distance(Lproblem/definition/State;)D_
+UC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/problem/definition/State.java^ ^("5*â
+4a	 a(­ª
+a	 a(
+%3java.util.ArrayList"7problem.definition.State#getCode()Ljava/util/ArrayList;*?
+
+__unknown_file (#
+!
+stateproblem.definition.State2	getCode()Ž
+‹
+a	 a(
+%4java.lang.Object"
+__arrayGet*7
+
+__unknown_file (
+
+%3java.util.ArrayList*"
+
+__unknown_file (
+""¦£
+a' a(5
+%5java.util.ArrayList"7problem.definition.State#getCode()Ljava/util/ArrayList;*8
+
+__unknown_file (
+problem.definition.State2	getCode()Ž
+‹
+a' a(<
+%6java.lang.Object"
+__arrayGet*7
+
+__unknown_file (
+
+%5java.util.ArrayList*"
+
+__unknown_file (
+""ÒÏ
+a	 a(=
+%7boolean",java.lang.Object#equals(Ljava/lang/Object;)Z*4
+
+__unknown_file (
+
+%4java.lang.Object*4
+
+__unknown_file (
+
+%6java.lang.Object2equals(Ljava/lang/Object;)*
+5*¤
+5` `(­ª
+` `(%
+%0java.util.ArrayList"7problem.definition.State#getCode()Ljava/util/ArrayList;*?
+
+__unknown_file (#
+!
+stateproblem.definition.State2	getCode()us
+` `(,	
+%1int"java.util.ArrayList#size()I*7
+
+__unknown_file (
+
+%0java.util.ArrayList2size()f
+d
+` `(,
+%2boolean"	__compare*
+` `(
+<*
+` `(
+""*
+` `(,
+	
+%1int*
+4
+1*!
+1e e("
+e e(
+"":-
+^ ^(#!
+stateproblem.definition.StateB
+problem.definition.StateHX

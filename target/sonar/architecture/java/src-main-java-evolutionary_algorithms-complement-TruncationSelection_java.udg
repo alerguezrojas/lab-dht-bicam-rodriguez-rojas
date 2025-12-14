@@ -1,0 +1,403 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755617474*java2.B‡
+N
+Isrc/main/java/evolutionary_algorithms/complement/TruncationSelection.java2
+	
+type3
+	
+MAIN4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+S
+Nalerguezrojas_lab-dht-bicam-rodriguez-rojas:evolutionary_algorithms.complement9
+<
+6evolutionary_algorithms.complement.TruncationSelection11
+
+class12
+
+access13
+
+public14
+
+
+full-range15
+
+(12:1)-(58:2)16
+
+simple-name17
+
+TruncationSelection18
+8
+2evolutionary_algorithms.complement.FatherSelection20
+
+unknown21
+
+extends22
+
+
+uses23
+j
+devolutionary_algorithms.complement.TruncationSelection#OrderBetter(Ljava/util/List;)Ljava/util/List;25
+
+method26
+
+(14:2)-(26:3)27
+
+OrderBetter28
+
+problem.definition.State30
+
+is type31
+
+
+references32
+C
+=problem.definition.State#getEvaluation()Ljava/util/ArrayList;34
+
+calls35
+
+returns36
+m
+gevolutionary_algorithms.complement.TruncationSelection#ascOrderBetter(Ljava/util/List;)Ljava/util/List;38
+
+(28:2)-(40:3)39
+
+ascOrderBetter40
+i
+cevolutionary_algorithms.complement.TruncationSelection#selection(Ljava/util/List;I)Ljava/util/List;42
+
+(42:2)-(57:3)43
+
+	selection44
+,
+&problem.definition.Problem$ProblemType46
+ 
+problem.definition.Problem48
+Y
+Sproblem.definition.Problem#getTypeProblem()Lproblem/definition/Problem$ProblemType;50
+&
+ metaheuristics.strategy.Strategy52
+O
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;54
+V
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;56
+6
+0problem.definition.Problem$ProblemType.Maximizar58
+6
+0problem.definition.Problem$ProblemType.Minimizar60J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6j˜
+N
+41H
+414226 *
+1+ +(210:7B$
+
+
+13
+14
+
+
+15
+43
+
+
+17
+44
+
+59
+596021
+J
+10D
+101112 *
+1 (!:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18
+N
+37H
+373826 *
+1 (#210:7B$
+
+
+13
+14
+
+
+15
+39
+
+
+17
+40
+
+47
+474821
+
+51
+515221
+
+55
+555621
+
+33
+333421
+
+53
+535421
+
+19
+192021
+
+29
+293021
+
+45
+454621
+
+57
+575821
+N
+24H
+242526 *
+1 ( 210:7B$
+
+
+13
+14
+
+
+15
+27
+
+
+17
+28
+
+49
+495021rö
+
+101922*
+1* (9
+
+101923*
+1* (9
+
+242923*
+1 (
+
+242923*
+1' (,
+
+242931*
+1	 (
+
+242923*
+1 (
+
+242932*
+1 (&
+
+243335*
+1 (&
+
+242936*
+1 (
+
+242932*
+12 (P
+
+243335*
+1C (P
+
+242936*
+12 (?
+
+242936*
+1 (
+
+242936*
+1 (
+
+242936*
+1 ($
+
+242936*
+1 (
+
+372923*
+1 (
+
+372923*
+1* (/
+
+372931*
+1	 (
+
+372923*
+1 (
+
+372932*
+1   (&
+
+373335*
+1   (&
+
+372936*
+1   (
+
+372932*
+1 2  (P
+
+373335*
+1 C  (P
+
+372936*
+1 2  (?
+
+372936*
+1! !(
+
+372936*
+1" "(
+
+372936*
+1" "($
+
+372936*
+1# #(
+
+412923*
+1+ +(
+
+412923*
+1+$ +()
+
+412923*
+1, ,(
+
+414536*
+1- -(9
+
+414732*
+1- -(9
+
+414935*
+1-+ -(9
+
+414736*
+1- -((
+
+415132*
+1- -((
+
+415335*
+1- -((
+
+415136*
+1- -(
+
+415132*
+1- -(
+
+415535*
+1- -(
+
+415123*
+1- -(
+
+414523*
+1-C -(N
+
+414532*
+1-C -(N
+
+414523*
+1-O -(X
+
+415732*
+1-O -(X
+
+411032*
+1. .(
+
+412435*
+1. .(
+
+414536*
+10 0(9
+
+414732*
+10 0(9
+
+414935*
+10+ 0(9
+
+414736*
+10 0((
+
+415132*
+10 0((
+
+415335*
+10 0((
+
+415136*
+10 0(
+
+415132*
+10 0(
+
+415535*
+10 0(
+
+415123*
+10 0(
+
+414523*
+10C 0(N
+
+414532*
+10C 0(N
+
+414523*
+10O 0(X
+
+415932*
+10O 0(X
+
+411032*
+11 1(
+
+413735*
+11 1(
+
+412936*
+15 5(

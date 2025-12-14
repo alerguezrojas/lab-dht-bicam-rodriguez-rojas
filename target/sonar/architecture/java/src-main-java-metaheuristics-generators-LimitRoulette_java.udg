@@ -1,0 +1,365 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755613071*java2.B™
+?
+:src/main/java/metaheuristics/generators/LimitRoulette.java2
+	
+type3
+	
+MAIN4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+J
+Ealerguezrojas_lab-dht-bicam-rodriguez-rojas:metaheuristics.generators9
+-
+'metaheuristics.generators.LimitRoulette11
+
+class12
+
+access13
+
+public14
+
+
+full-range15
+
+(3:1)-(29:2)16
+
+simple-name17
+
+LimitRoulette18
+6
+0metaheuristics.generators.LimitRoulette.limitLow20
+
+field21
+
+private22
+
+(5:2)-(5:25)23
+
+limitLow24
+7
+1metaheuristics.generators.LimitRoulette.limitHigh26
+
+(6:2)-(6:26)27
+
+	limitHigh28
+7
+1metaheuristics.generators.LimitRoulette.generator30
+
+(7:2)-(7:30)31
+
+	generator32
+)
+#metaheuristics.generators.Generator34
+
+unknown35
+
+is type36
+
+
+uses37
+a
+[metaheuristics.generators.LimitRoulette#getGenerator()Lmetaheuristics/generators/Generator;39
+
+method40
+
+(9:2)-(11:3)41
+
+getGenerator42
+
+returns43
+
+
+references44
+b
+\metaheuristics.generators.LimitRoulette#setGenerator(Lmetaheuristics/generators/Generator;)V46
+
+(12:2)-(14:3)47
+
+setGenerator48
+
+	has param49
+=
+7metaheuristics.generators.LimitRoulette#getLimitHigh()F51
+
+(15:2)-(17:3)52
+
+getLimitHigh53
+>
+8metaheuristics.generators.LimitRoulette#setLimitHigh(F)V55
+
+(18:2)-(20:3)56
+
+setLimitHigh57
+<
+6metaheuristics.generators.LimitRoulette#getLimitLow()F59
+
+(21:2)-(23:3)60
+
+getLimitLow61
+=
+7metaheuristics.generators.LimitRoulette#setLimitLow(F)V63
+
+(24:2)-(26:3)64
+
+setLimitLow65J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6j°
+J
+10D
+101112 *
+1 (:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18
+N
+54H
+545540 *
+1 (210:7B$
+
+
+13
+14
+
+
+15
+56
+
+
+17
+57
+
+33
+333435
+N
+19H
+192021 *
+1 (210:7B$
+
+
+13
+22
+
+
+15
+23
+
+
+17
+24
+N
+58H
+585940 *
+1 (210:7B$
+
+
+13
+14
+
+
+15
+60
+
+
+17
+61
+N
+25H
+252621 *
+1 (210:7B$
+
+
+13
+22
+
+
+15
+27
+
+
+17
+28
+N
+38H
+383940 *
+1	 	(210:7B$
+
+
+13
+14
+
+
+15
+41
+
+
+17
+42
+N
+29H
+293021 *
+1 (210:7B$
+
+
+13
+22
+
+
+15
+31
+
+
+17
+32
+N
+50H
+505140 *
+1 (210:7B$
+
+
+13
+14
+
+
+15
+52
+
+
+17
+53
+N
+45H
+454640 *
+1 (210:7B$
+
+
+13
+14
+
+
+15
+47
+
+
+17
+48
+N
+62H
+626340 *
+1 (210:7B$
+
+
+13
+14
+
+
+15
+64
+
+
+17
+65rÒ
+
+293336*
+1
+ (
+
+293337*
+1
+ (
+
+293337*
+1 (
+
+383343*
+1		 	(
+
+383337*
+1		 	(
+
+383337*
+1
+
+ 
+(
+
+382944*
+1
+
+ 
+(
+
+453349*
+1 ($
+
+453336*
+1% (.
+
+453337*
+1 ($
+
+451037*
+1 (
+
+451044*
+1 (
+
+453337*
+1 (
+
+452944*
+1 (
+
+502544*
+1
+ (
+
+541037*
+1 (
+
+541044*
+1 (
+
+542544*
+1 (
+
+581944*
+1
+ (
+
+621037*
+1 (
+
+621044*
+1 (
+
+621944*
+1 (

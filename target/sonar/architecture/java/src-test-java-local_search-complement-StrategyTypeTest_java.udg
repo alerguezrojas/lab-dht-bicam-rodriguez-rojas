@@ -1,0 +1,240 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755619754*java2.BÀ	
+@
+;src/test/java/local_search/complement/StrategyTypeTest.java2
+	
+type3
+	
+TEST4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+H
+Calerguezrojas_lab-dht-bicam-rodriguez-rojas:local_search.complement9
+.
+(local_search.complement.StrategyTypeTest11
+
+class12
+
+access13
+
+	protected14
+
+
+full-range15
+
+(7:1)-(16:2)16
+
+simple-name17
+
+StrategyTypeTest18
+@
+:local_search.complement.StrategyTypeTest#testEnumValues()V20
+
+method21
+
+(9:5)-(15:6)22
+
+testEnumValues23
+ 
+org.junit.jupiter.api.Test25
+
+unknown26
+
+annotated by27
+
+
+uses28
+*
+$local_search.complement.StrategyType30
+
+is type31
+
+returns32
+
+
+references33
+Z
+Tlocal_search.complement.StrategyType#values()[Llocal_search/complement/StrategyType;35
+
+calls36
+&
+ org.junit.jupiter.api.Assertions38
+8
+2org.junit.jupiter.api.Assertions#assertEquals(II)V40
+Z
+Torg.junit.jupiter.api.Assertions#assertEquals(Ljava/lang/Object;Ljava/lang/Object;)V42
+/
+)local_search.complement.StrategyType.TABU44
+l
+flocal_search.complement.StrategyType#valueOf(Ljava/lang/String;)Llocal_search/complement/StrategyType;46
+1
++local_search.complement.StrategyType.NORMAL48J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6jÐ
+
+24
+242526
+N
+19H
+192021 *
+1
+
+ 
+(210:7B$
+
+
+13
+14
+
+
+15
+22
+
+
+17
+23
+
+41
+414226
+
+39
+394026
+
+45
+454626
+
+34
+343526
+
+37
+373826
+J
+10D
+101112 *
+1 (:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18
+
+43
+434426
+
+29
+293026
+
+47
+474826rô
+
+192427*
+1	 	(
+
+
+192428*
+1	 	(
+
+
+192931*
+1 (
+
+192928*
+1	 (
+
+192932*
+1! (4
+
+192933*
+1! (4
+
+193436*
+1. (4
+
+192928*
+1! (-
+
+193733*
+1	 (
+
+193936*
+1	 (
+
+193733*
+1	 (
+
+194136*
+1	 (
+
+192928*
+1 ("
+
+192928*
+1# ('
+
+194333*
+1# ('
+
+192932*
+1) (=
+
+192933*
+1) (=
+
+194536*
+16 (=
+
+192928*
+1) (5
+
+193733*
+1	 (
+
+194136*
+1	 (
+
+192928*
+1 ("
+
+192928*
+1# ()
+
+194733*
+1# ()
+
+192932*
+1+ (?
+
+192933*
+1+ (?
+
+194536*
+18 (?
+
+192928*
+1+ (7

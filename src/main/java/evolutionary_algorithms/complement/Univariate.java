@@ -13,7 +13,7 @@ public class Univariate extends Distribution {
 	@Override
 	public List<Probability> distribution(List<State> fathers) {
 
-		List<Probability> ListProbability = new ArrayList<Probability>();
+		List<Probability> ListProbability = new ArrayList<>();
 		int cantV = fathers.get(0).getCode().size();
 		for (int i = 0; i < cantV; i++) {
 			int[] values = new int[fathers.size()];

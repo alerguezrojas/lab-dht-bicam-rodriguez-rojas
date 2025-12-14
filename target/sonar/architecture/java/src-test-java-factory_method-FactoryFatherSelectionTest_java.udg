@@ -1,0 +1,262 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755621387*java2.BÇ
+A
+<src/test/java/factory_method/FactoryFatherSelectionTest.java2
+	
+type3
+	
+TEST4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+?
+:alerguezrojas_lab-dht-bicam-rodriguez-rojas:factory_method9
+/
+)factory_method.FactoryFatherSelectionTest11
+
+class12
+
+access13
+
+	protected14
+
+
+full-range15
+
+(12:1)-(26:2)16
+
+simple-name17
+ 
+FactoryFatherSelectionTest18
+L
+Ffactory_method.FactoryFatherSelectionTest#testCreateFatherSelection()V20
+
+method21
+
+(14:5)-(25:6)22
+
+testCreateFatherSelection23
+ 
+org.junit.jupiter.api.Test25
+
+unknown26
+
+annotated by27
+
+
+uses28
++
+%factory_method.FactoryFatherSelection30
+
+is type31
+
+calls32
+8
+2evolutionary_algorithms.complement.FatherSelection34
+
+returns35
+
+
+references36
+§
+ factory_method.FactoryFatherSelection#createSelectFather(Levolutionary_algorithms/complement/SelectionType;)Levolutionary_algorithms/complement/FatherSelection;38
+6
+0evolutionary_algorithms.complement.SelectionType40
+H
+Bevolutionary_algorithms.complement.SelectionType.RouletteSelection42
+&
+ org.junit.jupiter.api.Assertions44
+I
+Corg.junit.jupiter.api.Assertions#assertNotNull(Ljava/lang/Object;)V46
+5
+/org.junit.jupiter.api.Assertions#assertTrue(Z)V48
+:
+4evolutionary_algorithms.complement.RouletteSelection50
+J
+Devolutionary_algorithms.complement.SelectionType.TruncationSelection52
+<
+6evolutionary_algorithms.complement.TruncationSelection54J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6jŒ
+N
+19H
+192021 *
+1
+ (#210:7B$
+
+
+13
+14
+
+
+15
+22
+
+
+17
+23
+
+41
+414226
+
+45
+454626
+
+53
+535426
+
+29
+293026
+
+37
+373826
+
+33
+333426
+
+24
+242526
+
+47
+474826
+J
+10D
+101112 *
+1 (!:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18
+
+51
+515226
+
+43
+434426
+
+49
+495026
+
+39
+394026rÅ
+
+192427*
+1 (
+
+
+192428*
+1 (
+
+
+192931*
+1  ('
+
+192928*
+1	 (
+
+192932*
+1. (D
+
+193331*
+1 (
+
+193328*
+1	 (
+
+193335*
+1 (8
+
+192936*
+1 (8
+
+193732*
+1& (8
+
+193928*
+19 (F
+
+193928*
+1G (X
+
+194136*
+1G (X
+
+194336*
+1	 (
+
+194532*
+1	 (
+
+194336*
+1	 (
+
+194732*
+1	 (
+
+194928*
+1" (3
+
+193331*
+1 (
+
+193328*
+1	 (
+
+193335*
+1 (8
+
+192936*
+1 (8
+
+193732*
+1& (8
+
+193928*
+19 (F
+
+193928*
+1G (Z
+
+195136*
+1G (Z
+
+194336*
+1	 (
+
+194532*
+1	 (
+
+194336*
+1	 (
+
+194732*
+1	 (
+
+195328*
+1" (5

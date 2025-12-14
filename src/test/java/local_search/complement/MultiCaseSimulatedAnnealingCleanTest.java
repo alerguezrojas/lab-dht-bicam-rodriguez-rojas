@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import local_search.complement.MultiCaseSimulatedAnnealing;
+import metaheuristics.generators.MultiCaseSimulatedAnnealing;
 import metaheuristics.generators.GeneratorType;
 import metaheuristics.strategy.Strategy;
 import problem.definition.Operator;
@@ -141,9 +141,9 @@ public class MultiCaseSimulatedAnnealingCleanTest {
     @Test
     public void testUpdateReference() throws Exception {
         msa.setStateRef(mockState);
-        MultiCaseSimulatedAnnealing.tinitial = 100.0;
-        MultiCaseSimulatedAnnealing.alpha = 0.9;
-        MultiCaseSimulatedAnnealing.countIterationsT = 10;
+        MultiCaseSimulatedAnnealing.setTinitial(100.0);
+        MultiCaseSimulatedAnnealing.setAlpha(0.9);
+        MultiCaseSimulatedAnnealing.setCountIterationsT(10);
         
         when(mockState.clone()).thenReturn(mockState);
         when(mockProblem.getTypeProblem()).thenReturn(Problem.ProblemType.Minimizar);
@@ -153,7 +153,7 @@ public class MultiCaseSimulatedAnnealingCleanTest {
         
         // Check if tinitial was updated (logic: if countIterationsCurrent == countIterationsT)
         // 100.0 * 0.9 = 90.0
-        assertEquals(90.0, MultiCaseSimulatedAnnealing.tinitial, 0.01);
+        assertEquals(90.0, MultiCaseSimulatedAnnealing.getTinitial(), 0.01);
     }
     
     @Test

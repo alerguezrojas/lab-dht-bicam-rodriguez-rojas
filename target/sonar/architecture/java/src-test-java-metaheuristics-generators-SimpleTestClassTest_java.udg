@@ -1,0 +1,166 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755621222*java2.Bù
+E
+@src/test/java/metaheuristics/generators/SimpleTestClassTest.java2
+	
+type3
+	
+TEST4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+J
+Ealerguezrojas_lab-dht-bicam-rodriguez-rojas:metaheuristics.generators9
+3
+-metaheuristics.generators.SimpleTestClassTest11
+
+class12
+
+access13
+
+public14
+
+
+full-range15
+
+(6:1)-(12:2)16
+
+simple-name17
+
+SimpleTestClassTest18
+D
+>metaheuristics.generators.SimpleTestClassTest#testReturnOne()V20
+
+method21
+
+(7:5)-(11:6)22
+
+testReturnOne23
+ 
+org.junit.jupiter.api.Test25
+
+unknown26
+
+annotated by27
+
+
+uses28
+/
+)metaheuristics.generators.SimpleTestClass30
+
+is type31
+
+calls32
+&
+ org.junit.jupiter.api.Assertions34
+
+
+references35
+8
+2org.junit.jupiter.api.Assertions#assertEquals(II)V37
+<
+6metaheuristics.generators.SimpleTestClass#returnOne()I39J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6j€
+N
+19H
+192021 *
+1 (210:7B$
+
+
+13
+14
+
+
+15
+22
+
+
+17
+23
+
+24
+242526
+
+38
+383926
+J
+10D
+101112 *
+1 (!:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18
+
+29
+293026
+
+36
+363726
+
+33
+333426ró
+
+192427*
+1 (
+
+
+192428*
+1 (
+
+
+192931*
+1	 	(
+
+192928*
+1		 	(
+
+192932*
+1	# 	(2
+
+193335*
+1
+	 
+(
+
+193632*
+1
+	 
+(
+
+192935*
+1
+ 
+(&
+
+193832*
+1
+ 
+(&

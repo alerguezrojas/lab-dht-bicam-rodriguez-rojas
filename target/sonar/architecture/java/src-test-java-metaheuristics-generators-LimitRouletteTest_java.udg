@@ -1,0 +1,429 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755620269*java2.B¥
+C
+>src/test/java/metaheuristics/generators/LimitRouletteTest.java2
+	
+type3
+	
+TEST4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+J
+Ealerguezrojas_lab-dht-bicam-rodriguez-rojas:metaheuristics.generators9
+1
++metaheuristics.generators.LimitRouletteTest11
+
+class12
+
+access13
+
+public14
+
+
+full-range15
+
+(9:1)-(42:2)16
+
+simple-name17
+
+LimitRouletteTest18
+G
+Ametaheuristics.generators.LimitRouletteTest#testGetSetLimitLow()V20
+
+method21
+
+(11:5)-(17:6)22
+
+testGetSetLimitLow23
+ 
+org.junit.jupiter.api.Test25
+
+unknown26
+
+annotated by27
+
+
+uses28
+-
+'metaheuristics.generators.LimitRoulette30
+
+is type31
+
+calls32
+
+
+references33
+=
+7metaheuristics.generators.LimitRoulette#setLimitLow(F)V35
+&
+ org.junit.jupiter.api.Assertions37
+8
+2org.junit.jupiter.api.Assertions#assertEquals(FF)V39
+<
+6metaheuristics.generators.LimitRoulette#getLimitLow()F41
+H
+Bmetaheuristics.generators.LimitRouletteTest#testGetSetLimitHigh()V43
+
+(19:5)-(25:6)44
+
+testGetSetLimitHigh45
+>
+8metaheuristics.generators.LimitRoulette#setLimitHigh(F)V47
+=
+7metaheuristics.generators.LimitRoulette#getLimitHigh()F49
+H
+Bmetaheuristics.generators.LimitRouletteTest#testGetSetGenerator()V51
+
+(27:5)-(33:6)52
+
+testGetSetGenerator53
+)
+#metaheuristics.generators.Generator55
+
+returns56
+
+org.mockito.Mockito58
+C
+=org.mockito.Mockito#mock(Ljava/lang/Class;)Ljava/lang/Object;60
+b
+\metaheuristics.generators.LimitRoulette#setGenerator(Lmetaheuristics/generators/Generator;)V62
+Z
+Torg.junit.jupiter.api.Assertions#assertEquals(Ljava/lang/Object;Ljava/lang/Object;)V64
+a
+[metaheuristics.generators.LimitRoulette#getGenerator()Lmetaheuristics/generators/Generator;66
+E
+?metaheuristics.generators.LimitRouletteTest#testInitialState()V68
+
+(35:5)-(41:6)69
+
+testInitialState70
+F
+@org.junit.jupiter.api.Assertions#assertNull(Ljava/lang/Object;)V72J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6j¸
+
+40
+404126
+
+65
+656626
+
+48
+484926
+
+61
+616226
+
+71
+717226
+N
+50H
+505121 *
+1 ($210:7B$
+
+
+13
+14
+
+
+15
+52
+
+
+17
+53
+N
+67H
+676821 *
+1$ $(!210:7B$
+
+
+13
+14
+
+
+15
+69
+
+
+17
+70
+
+59
+596026
+
+24
+242526
+
+57
+575826
+
+29
+293026
+
+46
+464726
+
+63
+636426
+
+38
+383926
+
+54
+545526
+
+36
+363726
+N
+19H
+192021 *
+1 (#210:7B$
+
+
+13
+14
+
+
+15
+22
+
+
+17
+23
+
+34
+343526
+N
+42H
+424321 *
+1 ($210:7B$
+
+
+13
+14
+
+
+15
+44
+
+
+17
+45
+J
+10D
+101112 *
+1	 	(:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18rž
+
+192427*
+1 (
+
+
+192428*
+1 (
+
+
+192931*
+1 ($
+
+192928*
+1	 (
+
+192932*
+1+ (8
+
+192933*
+1	 ("
+
+193432*
+1 ("
+
+193633*
+1	 (
+
+193832*
+1	 (
+
+192933*
+1  (9
+
+194032*
+1. (9
+
+422427*
+1 (
+
+
+422428*
+1 (
+
+
+422931*
+1 ($
+
+422928*
+1	 (
+
+422932*
+1+ (8
+
+422933*
+1	 (#
+
+424632*
+1 (#
+
+423633*
+1	 (
+
+423832*
+1	 (
+
+422933*
+1! (;
+
+424832*
+1/ (;
+
+502427*
+1 (
+
+
+502428*
+1 (
+
+
+502931*
+1 ($
+
+502928*
+1	 (
+
+502932*
+1+ (8
+
+505431*
+1 (
+
+505428*
+1	 (
+
+505456*
+1 (#
+
+505733*
+1 (#
+
+505932*
+1 (#
+
+505428*
+1$ (-
+
+502933*
+1	 (#
+
+506132*
+1 (#
+
+503633*
+1 	  (
+
+506332*
+1 	  (
+
+505456*
+1 !  (;
+
+502933*
+1 !  (;
+
+506532*
+1 /  (;
+
+672427*
+1# #(
+
+
+672428*
+1# #(
+
+
+672931*
+1% %($
+
+672928*
+1%	 %(
+
+672932*
+1%+ %(8
+
+673633*
+1&	 &(
+
+673832*
+1&	 &(
+
+672933*
+1& &(5
+
+674032*
+1&* &(5
+
+673633*
+1'	 '(
+
+673832*
+1'	 '(
+
+672933*
+1' '(6
+
+674832*
+1'* '(6
+
+673633*
+1(	 ((
+
+677132*
+1(	 ((
+
+675456*
+1( ((.
+
+672933*
+1( ((.
+
+676532*
+1(" ((.

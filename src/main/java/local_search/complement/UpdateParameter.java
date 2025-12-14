@@ -15,26 +15,25 @@ import metaheuristics.generators.ParticleSwarmOptimization;
 
 public class UpdateParameter {
 	
-	private static IFFactoryGenerator ifFactoryGenerator;
 	
-	public static Integer updateParameter(Integer countIterationsCurrent) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {//HashMap<String, Object> map, 
+	public static Integer updateParameter(Integer countIterationsCurrent) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException { 
 		countIterationsCurrent = countIterationsCurrent + 1;
 		//		Here update parameter for update and change generator.
 		if(countIterationsCurrent.equals(GeneticAlgorithm.countRef - 1)){
-			ifFactoryGenerator = new FactoryGenerator();
+			IFFactoryGenerator ifFactoryGenerator = new FactoryGenerator();
 			Strategy.getStrategy().generator = ifFactoryGenerator.createGenerator(GeneratorType.GeneticAlgorithm);
 		}
 		else{
 			if(countIterationsCurrent.equals(EvolutionStrategies.countRef - 1)){
-				ifFactoryGenerator = new FactoryGenerator();
+				IFFactoryGenerator ifFactoryGenerator = new FactoryGenerator();
 				Strategy.getStrategy().generator = ifFactoryGenerator.createGenerator(GeneratorType.EvolutionStrategies);
 			}			
 			if(countIterationsCurrent.equals(DistributionEstimationAlgorithm.countRef - 1)){
-				ifFactoryGenerator = new FactoryGenerator();
+				IFFactoryGenerator ifFactoryGenerator = new FactoryGenerator();
 				Strategy.getStrategy().generator = ifFactoryGenerator.createGenerator(GeneratorType.DistributionEstimationAlgorithm);
 			}
 			if(countIterationsCurrent.equals(ParticleSwarmOptimization.countRef - 1)){
-				ifFactoryGenerator = new FactoryGenerator();
+				IFFactoryGenerator ifFactoryGenerator = new FactoryGenerator();
 				Strategy.getStrategy().generator = ifFactoryGenerator.createGenerator(GeneratorType.ParticleSwarmOptimization);
 			}
 		}

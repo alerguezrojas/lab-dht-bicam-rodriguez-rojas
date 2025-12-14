@@ -1,6 +1,6 @@
 package metaheuristics.generators;
 
-import local_search.complement.MultiCaseSimulatedAnnealing;
+import metaheuristics.generators.MultiCaseSimulatedAnnealing;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 

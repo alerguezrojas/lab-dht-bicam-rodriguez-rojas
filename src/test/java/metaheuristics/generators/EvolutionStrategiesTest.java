@@ -12,6 +12,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
+import org.mockito.MockedConstruction;
 import org.mockito.MockedStatic;
 import org.mockito.MockitoAnnotations;
 
@@ -20,9 +21,15 @@ import problem.definition.Codification;
 import problem.definition.Operator;
 import problem.definition.Problem;
 import problem.definition.State;
+import evolutionary_algorithms.complement.FatherSelection;
+import evolutionary_algorithms.complement.Mutation;
 import evolutionary_algorithms.complement.MutationType;
+import evolutionary_algorithms.complement.Replace;
 import evolutionary_algorithms.complement.ReplaceType;
 import evolutionary_algorithms.complement.SelectionType;
+import factory_method.FactoryFatherSelection;
+import factory_method.FactoryMutation;
+import factory_method.FactoryReplace;
 
 public class EvolutionStrategiesTest {
 
@@ -45,6 +52,15 @@ public class EvolutionStrategiesTest {
 
     @Mock
     private Codification codificationMock;
+    
+    @Mock
+    private FatherSelection fatherSelectionMock;
+    
+    @Mock
+    private Mutation mutationMock;
+    
+    @Mock
+    private Replace replaceMock;
 
     private MockedStatic<Strategy> strategyStaticMock;
     private AutoCloseable mocks;
@@ -134,9 +150,25 @@ public class EvolutionStrategiesTest {
         listField.setAccessible(true);
         listField.set(evolutionStrategies, population);
         
-        State result = evolutionStrategies.generate(operatorNumber);
-        
-        assertNotNull(result);
+        try (MockedConstruction<FactoryFatherSelection> mockedFatherFactory = mockConstruction(FactoryFatherSelection.class,
+                (mock, context) -> {
+                    when(mock.createSelectFather(any())).thenReturn(fatherSelectionMock);
+                });
+             MockedConstruction<FactoryMutation> mockedMutationFactory = mockConstruction(FactoryMutation.class,
+                (mock, context) -> {
+                    when(mock.createMutation(any())).thenReturn(mutationMock);
+                })) {
+            
+            List<State> fathers = new ArrayList<>();
+            fathers.add(s1);
+            when(fatherSelectionMock.selection(anyList(), anyInt())).thenReturn(fathers);
+            
+            when(mutationMock.mutation(any(State.class), anyDouble())).thenReturn(s1);
+            
+            State result = evolutionStrategies.generate(operatorNumber);
+            
+            assertNotNull(result);
+        }
     }
     
     @Test
@@ -193,7 +225,19 @@ public class EvolutionStrategiesTest {
         evalCandidate.add(5.0);
         when(candidate.getEvaluation()).thenReturn(evalCandidate);
         
-        evolutionStrategies.updateReference(candidate, 1);
+        try (MockedConstruction<FactoryReplace> mockedReplaceFactory = mockConstruction(FactoryReplace.class,
+                (mock, context) -> {
+                    when(mock.createReplace(any())).thenReturn(replaceMock);
+                })) {
+            
+            List<State> updatedList = new ArrayList<>();
+            updatedList.add(candidate);
+            when(replaceMock.replace(any(State.class), anyList())).thenReturn(updatedList);
+            
+            evolutionStrategies.updateReference(candidate, 1);
+            
+            verify(replaceMock).replace(any(State.class), anyList());
+        }
     }
 
     @Test

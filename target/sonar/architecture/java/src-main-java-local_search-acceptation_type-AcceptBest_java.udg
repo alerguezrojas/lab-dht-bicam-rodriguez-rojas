@@ -1,0 +1,257 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755613034*java2.B­
+
+@
+;src/main/java/local_search/acceptation_type/AcceptBest.java2
+	
+type3
+	
+MAIN4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+N
+Ialerguezrojas_lab-dht-bicam-rodriguez-rojas:local_search.acceptation_type9
+.
+(local_search.acceptation_type.AcceptBest11
+
+class12
+
+access13
+
+public14
+
+
+full-range15
+
+(14:1)-(35:2)16
+
+simple-name17
+
+
+AcceptBest18
+7
+1local_search.acceptation_type.AcceptableCandidate20
+
+unknown21
+
+extends22
+
+
+uses23
+ˆ
+local_search.acceptation_type.AcceptBest#acceptCandidate(Lproblem/definition/State;Lproblem/definition/State;)Ljava/lang/Boolean;25
+
+method26
+
+(16:2)-(34:3)27
+
+acceptCandidate28
+
+problem.definition.State30
+
+	has param31
+
+is type32
+ 
+problem.definition.Problem34
+
+returns35
+&
+ metaheuristics.strategy.Strategy37
+
+
+references38
+O
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;40
+
+calls41
+V
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;43
+,
+&problem.definition.Problem$ProblemType45
+Y
+Sproblem.definition.Problem#getTypeProblem()Lproblem/definition/Problem$ProblemType;47
+6
+0problem.definition.Problem$ProblemType.Maximizar49
+C
+=problem.definition.State#getEvaluation()Ljava/util/ArrayList;51J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6jä
+J
+10D
+101112 *
+1 (:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18
+
+19
+192021
+N
+24H
+242526 *
+1 ( 210:7B$
+
+
+13
+14
+
+
+15
+27
+
+
+17
+28
+
+33
+333421
+
+36
+363721
+
+42
+424321
+
+39
+394021
+
+50
+505121
+
+46
+464721
+
+29
+293021
+
+44
+444521
+
+48
+484921rà
+
+101922*
+1! (4
+
+101923*
+1! (4
+
+242931*
+1! (&
+
+242931*
+15 (:
+
+242932*
+1' (3
+
+242923*
+1! (&
+
+242932*
+1; (I
+
+242923*
+15 (:
+
+243332*
+1 (
+
+243323*
+1 (
+
+
+243335*
+1 (6
+
+243638*
+1 (6
+
+243941*
+1, (6
+
+243635*
+1 ()
+
+243638*
+1 ()
+
+244241*
+1 ()
+
+243623*
+1 (
+
+244435*
+1 (
+
+243338*
+1 (
+
+244641*
+1 (
+
+244423*
+1& (1
+
+244438*
+1& (1
+
+244423*
+12 (;
+
+244838*
+12 (;
+
+242938*
+1 ($
+
+245041*
+1 ($
+
+242938*
+11 (K
+
+245041*
+1> (K
+
+242938*
+1 ($
+
+245041*
+1 ($
+
+242938*
+11 (K
+
+245041*
+1> (K

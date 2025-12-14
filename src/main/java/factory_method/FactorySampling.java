@@ -11,11 +11,10 @@ import factory_interface.IFFSampling;
 
 
 public class FactorySampling implements IFFSampling {
-    private Sampling sampling;
 	public Sampling createSampling(SamplingType typesampling) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
 		
 		String className = "evolutionary_algorithms.complement." + typesampling.toString();
-		sampling = (Sampling) FactoryLoader.getInstance(className);
+		Sampling sampling = (Sampling) FactoryLoader.getInstance(className);
 		return sampling;
 	}
 }

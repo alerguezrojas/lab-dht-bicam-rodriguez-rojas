@@ -18,6 +18,7 @@ import factory_interface.IFFactoryAcceptCandidate;
 import local_search.acceptation_type.AcceptType;
 import local_search.acceptation_type.AcceptableCandidate;
 import metaheuristics.generators.GeneratorType;
+import metaheuristics.generators.MultiCaseSimulatedAnnealing;
 import metaheuristics.strategy.Strategy;
 import problem.definition.Operator;
 import problem.definition.Problem;
@@ -101,9 +102,9 @@ public class MultiCaseSimulatedAnnealingTest {
         
         mcsa.setFactoryAcceptCandidate(factory);
         
-        MultiCaseSimulatedAnnealing.tinitial = 100.0;
-        MultiCaseSimulatedAnnealing.alpha = 0.9;
-        MultiCaseSimulatedAnnealing.countIterationsT = 10;
+        MultiCaseSimulatedAnnealing.setTinitial(100.0);
+        MultiCaseSimulatedAnnealing.setAlpha(0.9);
+        MultiCaseSimulatedAnnealing.setCountIterationsT(10);
         
         mcsa.updateReference(stateCandidate, 10);
         

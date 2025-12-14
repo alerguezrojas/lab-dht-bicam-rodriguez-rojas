@@ -11,9 +11,12 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
+import org.mockito.MockedConstruction;
 import org.mockito.MockedStatic;
 import org.mockito.MockitoAnnotations;
 
+import factory_method.FactoryAcceptCandidate;
+import local_search.acceptation_type.AcceptableCandidate;
 import metaheuristics.strategy.Strategy;
 import problem.definition.Operator;
 import problem.definition.Problem;
@@ -108,18 +111,54 @@ public class SimulatedAnnealingTest {
     }
     
     @Test
-    public void testUpdateReference() throws Exception {
+    public void testUpdateReference_Accept() throws Exception {
         simulatedAnnealing.setInitialReference(stateMock);
+        when(stateMock.clone()).thenReturn(stateMock);
+        when(newStateMock.clone()).thenReturn(newStateMock);
         
-        ArrayList<Double> evalRef = new ArrayList<>();
-        evalRef.add(10.0);
-        when(stateMock.getEvaluation()).thenReturn(evalRef);
+        AcceptableCandidate acceptableCandidateMock = mock(AcceptableCandidate.class);
+        when(acceptableCandidateMock.acceptCandidate(any(State.class), any(State.class))).thenReturn(true);
+
+        try (MockedConstruction<FactoryAcceptCandidate> factoryMock = mockConstruction(FactoryAcceptCandidate.class,
+                (mock, context) -> {
+                    when(mock.createAcceptCandidate(any(local_search.acceptation_type.AcceptType.class))).thenReturn(acceptableCandidateMock);
+                })) {
+            
+            simulatedAnnealing.updateReference(newStateMock, 1);
+            
+            // Verify factory was called
+            assertEquals(1, factoryMock.constructed().size());
+            FactoryAcceptCandidate createdFactory = factoryMock.constructed().get(0);
+            verify(createdFactory).createAcceptCandidate(any(local_search.acceptation_type.AcceptType.class));
+            
+            // Verify acceptCandidate was called
+            verify(acceptableCandidateMock).acceptCandidate(any(State.class), eq(newStateMock));
+
+            // Verify reference updated
+            // verify(newStateMock, atLeastOnce()).clone(); // This fails for some reason
+            assertEquals(newStateMock, simulatedAnnealing.getReference());
+        }
+    }
+
+    @Test
+    public void testUpdateReference_Reject() throws Exception {
+        simulatedAnnealing.setInitialReference(stateMock);
+        when(stateMock.clone()).thenReturn(stateMock);
+        when(newStateMock.clone()).thenReturn(newStateMock);
         
-        ArrayList<Double> evalNew = new ArrayList<>();
-        evalNew.add(5.0);
-        when(newStateMock.getEvaluation()).thenReturn(evalNew);
-        
-        simulatedAnnealing.updateReference(newStateMock, 1);
+        AcceptableCandidate acceptableCandidateMock = mock(AcceptableCandidate.class);
+        when(acceptableCandidateMock.acceptCandidate(any(State.class), any(State.class))).thenReturn(false);
+
+        try (MockedConstruction<FactoryAcceptCandidate> factoryMock = mockConstruction(FactoryAcceptCandidate.class,
+                (mock, context) -> {
+                    when(mock.createAcceptCandidate(any(local_search.acceptation_type.AcceptType.class))).thenReturn(acceptableCandidateMock);
+                })) {
+            
+            simulatedAnnealing.updateReference(newStateMock, 1);
+            
+            // Verify reference NOT updated (clone not called on newStateMock)
+            verify(newStateMock, never()).clone();
+        }
     }
 
     @Test

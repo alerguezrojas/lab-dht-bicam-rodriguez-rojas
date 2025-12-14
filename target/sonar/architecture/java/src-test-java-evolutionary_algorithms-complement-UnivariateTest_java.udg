@@ -1,0 +1,345 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755621305*java2.BÚ
+I
+Dsrc/test/java/evolutionary_algorithms/complement/UnivariateTest.java2
+	
+type3
+	
+TEST4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+S
+Nalerguezrojas_lab-dht-bicam-rodriguez-rojas:evolutionary_algorithms.complement9
+7
+1evolutionary_algorithms.complement.UnivariateTest11
+
+class12
+
+access13
+
+	protected14
+
+
+full-range15
+
+(14:1)-(67:2)16
+
+simple-name17
+
+UnivariateTest18
+K
+Eevolutionary_algorithms.complement.UnivariateTest#testDistribution()V20
+
+method21
+
+(16:5)-(53:6)22
+
+testDistribution23
+ 
+org.junit.jupiter.api.Test25
+
+unknown26
+
+annotated by27
+
+
+uses28
+3
+-evolutionary_algorithms.complement.Univariate30
+
+is type31
+
+calls32
+
+problem.definition.State34
+
+
+references35
+>
+8problem.definition.State#setCode(Ljava/util/ArrayList;)V37
+4
+.evolutionary_algorithms.complement.Probability39
+b
+\evolutionary_algorithms.complement.Univariate#distribution(Ljava/util/List;)Ljava/util/List;41
+&
+ org.junit.jupiter.api.Assertions43
+I
+Corg.junit.jupiter.api.Assertions#assertNotNull(Ljava/lang/Object;)V45
+O
+Ievolutionary_algorithms.complement.Probability#getKey()Ljava/lang/Object;47
+Q
+Kevolutionary_algorithms.complement.Probability#getValue()Ljava/lang/Object;49
+9
+3org.junit.jupiter.api.Assertions#assertEquals(DDD)V51
+F
+@evolutionary_algorithms.complement.Probability#getProbability()F53
+5
+/org.junit.jupiter.api.Assertions#assertTrue(Z)V55
+I
+Cevolutionary_algorithms.complement.UnivariateTest#testGetListKey()V57
+
+(55:5)-(66:6)58
+
+testGetListKey59
+e
+_evolutionary_algorithms.complement.Univariate#getListKey(Ljava/util/SortedMap;)Ljava/util/List;61
+8
+2org.junit.jupiter.api.Assertions#assertEquals(II)V63J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6j˜
+
+44
+444526
+N
+56H
+565721 *
+18
+ 8(210:7B$
+
+
+13
+14
+
+
+15
+58
+
+
+17
+59
+
+29
+293026
+
+46
+464726
+J
+10D
+101112 *
+1 (:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18
+N
+19H
+192021 *
+1
+ (210:7B$
+
+
+13
+14
+
+
+15
+22
+
+
+17
+23
+
+33
+333426
+
+24
+242526
+
+52
+525326
+
+54
+545526
+
+40
+404126
+
+38
+383926
+
+50
+505126
+
+60
+606126
+
+62
+626326
+
+42
+424326
+
+48
+484926
+
+36
+363726rÚ	
+
+192427*
+1 (
+
+
+192428*
+1 (
+
+
+192931*
+1 (
+
+192928*
+1	 (
+
+192932*
+1% (/
+
+193328*
+1 (
+
+193331*
+1 (
+
+193328*
+1	 (
+
+193332*
+1 (
+
+193335*
+1	 (
+
+193632*
+1 (
+
+193331*
+1 (
+
+193328*
+1	 (
+
+193332*
+1 (
+
+193335*
+1#	 #(
+
+193632*
+1# #(
+
+193828*
+1& &(
+
+192935*
+1&# &(:
+
+194032*
+1&. &(:
+
+194235*
+1(	 ((
+
+194432*
+1(	 ((
+
+193831*
+1. .(
+
+193828*
+1. .(
+
+193835*
+1/ /(!
+
+194632*
+1/ /(!
+
+193835*
+1/5 /(?
+
+194832*
+1/7 /(?
+
+194235*
+10 0(
+
+195032*
+10 0(
+
+193835*
+10$ 0(4
+
+195232*
+10& 0(4
+
+194235*
+14	 4(
+
+195432*
+14	 4(
+
+562427*
+17 7(
+
+
+562428*
+17 7(
+
+
+562931*
+19 9(
+
+562928*
+19	 9(
+
+562932*
+19% 9(/
+
+562935*
+1> >(2
+
+566032*
+1>( >(2
+
+564235*
+1?	 ?(
+
+566232*
+1?	 ?(
+
+564235*
+1@	 @(
+
+565432*
+1@	 @(
+
+564235*
+1A	 A(
+
+565432*
+1A	 A(

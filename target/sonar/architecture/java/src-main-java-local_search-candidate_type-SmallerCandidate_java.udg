@@ -1,0 +1,166 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755614189*java2.BÀ
+D
+?src/main/java/local_search/candidate_type/SmallerCandidate.java2
+	
+type3
+	
+MAIN4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+L
+Galerguezrojas_lab-dht-bicam-rodriguez-rojas:local_search.candidate_type9
+2
+,local_search.candidate_type.SmallerCandidate11
+
+class12
+
+access13
+
+public14
+
+
+full-range15
+
+(13:1)-(32:2)16
+
+simple-name17
+
+SmallerCandidate18
+1
++local_search.candidate_type.SearchCandidate20
+
+unknown21
+
+extends22
+
+
+uses23
+j
+dlocal_search.candidate_type.SmallerCandidate#stateSearch(Ljava/util/List;)Lproblem/definition/State;25
+
+method26
+
+(15:2)-(31:3)27
+
+stateSearch28
+
+problem.definition.State30
+
+returns31
+
+is type32
+
+
+references33
+C
+=problem.definition.State#getEvaluation()Ljava/util/ArrayList;35
+
+calls36J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6jÿ
+
+19
+192021
+N
+24H
+242526 *
+1 (210:7B$
+
+
+13
+14
+
+
+15
+27
+
+
+17
+28
+J
+10D
+101112 *
+1 (:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18
+
+34
+343521
+
+29
+293021rï
+
+101922*
+1' (6
+
+101923*
+1' (6
+
+242931*
+1	 (
+
+242923*
+1	 (
+
+242923*
+1  (%
+
+242932*
+1	 (
+
+242923*
+1 (
+
+242933*
+1 (?
+
+243436*
+12 (?
+
+242931*
+1 (.
+
+242933*
+1 (4
+
+243436*
+1' (4
+
+242931*
+1 (#
+
+242931*
+1 ()
+
+242931*
+1 (+

@@ -53,7 +53,7 @@ public class CandidateValue {
 	public State stateCandidate(State stateCurrent, CandidateType typeCandidate, StrategyType strategy, Integer operatornumber, List<State> neighborhood) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException{
 		//Problem problem = ExecuteGenerator.getExecuteGenerator().getProblem();
 		State stateCandidate;
-		List<State> auxList = new ArrayList<State>();
+		List<State> auxList = new ArrayList<>();
 		for (int i = 0; i < neighborhood.size(); i++) {
 			auxList.add(neighborhood.get(i));
 		}

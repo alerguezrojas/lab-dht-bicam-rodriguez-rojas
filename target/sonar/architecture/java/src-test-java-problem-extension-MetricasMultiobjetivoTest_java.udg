@@ -1,0 +1,300 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755620561*java2.BÚ	
+C
+>src/test/java/problem/extension/MetricasMultiobjetivoTest.java2
+	
+type3
+	
+TEST4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+B
+=alerguezrojas_lab-dht-bicam-rodriguez-rojas:problem.extension9
+1
++problem.extension.MetricasMultiobjetivoTest11
+
+class12
+
+access13
+
+	protected14
+
+
+full-range15
+
+(13:1)-(57:2)16
+
+simple-name17
+
+MetricasMultiobjetivoTest18
+B
+<problem.extension.MetricasMultiobjetivoTest#testTasaError()V20
+
+method21
+
+(15:5)-(37:6)22
+
+testTasaError23
+ 
+org.junit.jupiter.api.Test25
+
+unknown26
+
+annotated by27
+
+
+uses28
+-
+'problem.extension.MetricasMultiobjetivo30
+
+is type31
+
+calls32
+
+problem.definition.State34
+
+
+references35
+D
+>problem.definition.State#setEvaluation(Ljava/util/ArrayList;)V37
+Z
+Tproblem.extension.MetricasMultiobjetivo#tasaError(Ljava/util/List;Ljava/util/List;)D39
+&
+ org.junit.jupiter.api.Assertions41
+9
+3org.junit.jupiter.api.Assertions#assertEquals(DDD)V43
+C
+=problem.extension.MetricasMultiobjetivoTest#testDispersion()V45
+
+(39:5)-(56:6)46
+
+testDispersion47
+P
+Jproblem.extension.MetricasMultiobjetivo#dispersion(Ljava/util/ArrayList;)D49
+5
+/org.junit.jupiter.api.Assertions#assertTrue(Z)V51J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6j†
+
+24
+242526
+
+38
+383926
+
+29
+293026
+
+36
+363726
+
+50
+505126
+J
+10D
+101112 *
+1 ( :7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18
+N
+44H
+444521 *
+1(
+ ((210:7B$
+
+
+13
+14
+
+
+15
+46
+
+
+17
+47
+N
+19H
+192021 *
+1
+ (210:7B$
+
+
+13
+14
+
+
+15
+22
+
+
+17
+23
+
+42
+424326
+
+40
+404126
+
+48
+484926
+
+33
+333426r”
+
+192427*
+1 (
+
+
+192428*
+1 (
+
+
+192931*
+1 ('
+
+192928*
+1	 (
+
+192932*
+1. (C
+
+193331*
+1 (
+
+193328*
+1	 (
+
+193332*
+1 (
+
+193335*
+1	 (
+
+193632*
+1 (
+
+193331*
+1 (
+
+193328*
+1	 (
+
+193332*
+1 (
+
+193335*
+1	 (
+
+193632*
+1 (
+
+193328*
+1 (
+
+193328*
+1 (
+
+192935*
+1# #(*
+
+193832*
+1#! #(*
+
+194035*
+1$	 $(
+
+194232*
+1$	 $(
+
+442427*
+1' '(
+
+
+442428*
+1' '(
+
+
+442931*
+1) )('
+
+442928*
+1)	 )(
+
+442932*
+1). )(C
+
+443331*
+1+ +(
+
+443328*
+1+	 +(
+
+443332*
+1+ +(
+
+443335*
+1,	 ,(
+
+443632*
+1, ,(
+
+443331*
+1. .(
+
+443328*
+1.	 .(
+
+443332*
+1. .(
+
+443335*
+1/	 /(
+
+443632*
+1/ /(
+
+443328*
+11 1(
+
+442935*
+15 5(0
+
+444832*
+15& 5(0
+
+444035*
+17	 7(
+
+445032*
+17	 7(

@@ -1,0 +1,137 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755614546*java2.B§
+N
+Isrc/main/java/evolutionary_algorithms/complement/GenerationalReplace.java2
+	
+type3
+	
+MAIN4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+S
+Nalerguezrojas_lab-dht-bicam-rodriguez-rojas:evolutionary_algorithms.complement9
+<
+6evolutionary_algorithms.complement.GenerationalReplace11
+
+class12
+
+access13
+
+public14
+
+
+full-range15
+
+(9:1)-(21:2)16
+
+simple-name17
+
+GenerationalReplace18
+0
+*evolutionary_algorithms.complement.Replace20
+
+unknown21
+
+extends22
+
+
+uses23
+€
+zevolutionary_algorithms.complement.GenerationalReplace#replace(Lproblem/definition/State;Ljava/util/List;)Ljava/util/List;25
+
+method26
+
+(11:2)-(20:3)27
+
+replace28
+
+problem.definition.State30
+
+	has param31
+
+is type32
+
+returns33J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6jÄ
+J
+10D
+101112 *
+1	 	(!:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18
+
+19
+192021
+N
+24H
+242526 *
+1 (210:7B$
+
+
+13
+14
+
+
+15
+27
+
+
+17
+28
+
+29
+293021rØ
+
+101922*
+1	* 	(1
+
+101923*
+1	* 	(1
+
+242931*
+1 ("
+
+242923*
+1 (
+
+242932*
+1# (1
+
+242923*
+1 ("
+
+242923*
+18 (=
+
+242933*
+1 (

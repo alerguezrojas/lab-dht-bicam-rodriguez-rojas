@@ -11,12 +11,11 @@ import factory_interface.IFFactoryDistribution;
 
 
 public class FactoryDistribution implements IFFactoryDistribution {
-	private Distribution distribution;
 
 	public Distribution createDistribution(DistributionType distributiontype) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
 		
 		String className = "evolutionary_algorithms.complement." + distributiontype.toString();
-		distribution = (Distribution) FactoryLoader.getInstance(className);
+		Distribution distribution = (Distribution) FactoryLoader.getInstance(className);
 		return distribution;
 	}
 }

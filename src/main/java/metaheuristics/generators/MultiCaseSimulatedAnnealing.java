@@ -24,10 +24,10 @@ public class MultiCaseSimulatedAnnealing extends Generator {
 	private CandidateType typeCandidate;
 	private State stateReferenceSA;
     private IFFactoryAcceptCandidate ifacceptCandidate;
-    public static Double alpha;
-    public static Double tinitial;
-    public static Double tfinal;
-    public static int countIterationsT;
+    private static Double alpha;
+    private static Double tinitial;
+    private static Double tfinal;
+    private static int countIterationsT;
     private int countRept;
     private GeneratorType typeGenerator;
     private List<State> listStateReference = new ArrayList<State>();
@@ -36,6 +36,38 @@ public class MultiCaseSimulatedAnnealing extends Generator {
 
     public int simpleTest() {
         return 1;
+    }
+
+    public static Double getAlpha() {
+        return alpha;
+    }
+
+    public static void setAlpha(Double alpha) {
+        MultiCaseSimulatedAnnealing.alpha = alpha;
+    }
+
+    public static Double getTinitial() {
+        return tinitial;
+    }
+
+    public static void setTinitial(Double tinitial) {
+        MultiCaseSimulatedAnnealing.tinitial = tinitial;
+    }
+
+    public static Double getTfinal() {
+        return tfinal;
+    }
+
+    public static void setTfinal(Double tfinal) {
+        MultiCaseSimulatedAnnealing.tfinal = tfinal;
+    }
+
+    public static int getCountIterationsT() {
+        return countIterationsT;
+    }
+
+    public static void setCountIterationsT(int countIterationsT) {
+        MultiCaseSimulatedAnnealing.countIterationsT = countIterationsT;
     }
 
     public GeneratorType getTypeGenerator() {
@@ -56,6 +88,10 @@ public class MultiCaseSimulatedAnnealing extends Generator {
 		this.typeGenerator = GeneratorType.MultiCaseSimulatedAnnealing;
 		this.weight = 50;
 		listTrace.add(weight);
+    }
+
+    public void setFactoryAcceptCandidate(IFFactoryAcceptCandidate ifacceptCandidate) {
+        this.ifacceptCandidate = ifacceptCandidate;
     }
 
 	@Override
@@ -84,7 +120,9 @@ public class MultiCaseSimulatedAnnealing extends Generator {
 	@Override
 	public void updateReference(State stateCandidate, Integer countIterationsCurrent)throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
 		countRept = countIterationsT;
-		ifacceptCandidate = new FactoryAcceptCandidate();
+		if (ifacceptCandidate == null) {
+            ifacceptCandidate = new FactoryAcceptCandidate();
+        }
 		AcceptableCandidate candidate = ifacceptCandidate.createAcceptCandidate(typeAcceptation);
 		Boolean accept = candidate.acceptCandidate(stateReferenceSA, stateCandidate);
 		if(accept.equals(true))

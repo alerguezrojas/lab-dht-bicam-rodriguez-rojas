@@ -27,13 +27,10 @@ public class EvolutionStrategies extends Generator {
 	private static final SecureRandom secureRandom = new SecureRandom();
 	
 	private State stateReferenceES;
-	private List<State> listStateReference = new ArrayList<State>(); 
+	private List<State> listStateReference = new ArrayList<>(); 
 	private IFFactoryFatherSelection iffatherselection;
 	private IFFactoryMutation iffactorymutation;
 	private IFFactoryReplace iffreplace;
-//	private SelectionType selectionType;
-//	private MutationType mutationType;
-//	private ReplaceType replaceType;
 	private GeneratorType generatorType;
 	public static double PM;
 	public static MutationType mutationType;

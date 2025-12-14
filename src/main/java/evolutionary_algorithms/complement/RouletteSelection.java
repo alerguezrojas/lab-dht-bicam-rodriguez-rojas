@@ -33,12 +33,12 @@ public class RouletteSelection extends FatherSelection {
 		for (int i = 0; i < listState.size(); i++) {
 			totalWeight = (float) (listState.get(i).getEvaluation().get(0) + totalWeight);
 		}
-		List<Float> listProb = new ArrayList<Float>();
+		List<Float> listProb = new ArrayList<>();
 		for (int i = 0; i < listState.size(); i++) {
 			float probF = (float) (listState.get(i).getEvaluation().get(0) / totalWeight);
 			listProb.add(probF);
 		}
-		List<LimitRoulette> listLimit = new ArrayList<LimitRoulette>();
+		List<LimitRoulette> listLimit = new ArrayList<>();
 		float limitHigh = 0;
 		float limitLow = 0;
 		for (int i = 0; i < listProb.size(); i++) {

@@ -30,7 +30,6 @@ public class GreaterCandidate extends SearchCandidate {
 					currentCount = counter;
 					stateGreater = listNeighborhood.get(i);
 				}
-				counter = 0;
 			}
 			if(stateGreater == null){
 				int pos = secureRandom.nextInt(listNeighborhood.size() - 1);

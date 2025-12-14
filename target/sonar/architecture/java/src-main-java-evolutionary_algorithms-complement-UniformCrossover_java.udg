@@ -1,0 +1,263 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755615996*java2.B…	
+K
+Fsrc/main/java/evolutionary_algorithms/complement/UniformCrossover.java2
+	
+type3
+	
+MAIN4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+S
+Nalerguezrojas_lab-dht-bicam-rodriguez-rojas:evolutionary_algorithms.complement9
+9
+3evolutionary_algorithms.complement.UniformCrossover11
+
+class12
+
+access13
+
+public14
+
+
+full-range15
+
+(7:1)-(38:2)16
+
+simple-name17
+
+UniformCrossover18
+2
+,evolutionary_algorithms.complement.Crossover20
+
+unknown21
+
+extends22
+
+
+uses23
+F
+@evolutionary_algorithms.complement.UniformCrossover.secureRandom25
+
+field26
+
+private27
+
+(9:2)-(9:70)28
+
+secureRandom29
+F
+@evolutionary_algorithms.complement.UniformCrossover#mascara(I)[I31
+
+method32
+
+(11:2)-(18:3)33
+
+mascara34
+
+
+references35
+ï
+éevolutionary_algorithms.complement.UniformCrossover#crossover(Lproblem/definition/State;Lproblem/definition/State;D)Lproblem/definition/State;37
+
+(20:2)-(37:3)38
+
+	crossover39
+
+problem.definition.State41
+
+returns42
+
+	has param43
+
+is type44
+:
+4problem.definition.State#getCopy()Ljava/lang/Object;46
+
+calls47
+=
+7problem.definition.State#getCode()Ljava/util/ArrayList;49J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6jå
+N
+30H
+303132 *
+1 (210:7B$
+
+
+13
+14
+
+
+15
+33
+
+
+17
+34
+N
+36H
+363732 *
+1 (210:7B$
+
+
+13
+14
+
+
+15
+38
+
+
+17
+39
+
+48
+484921
+
+45
+454621
+J
+10D
+101112 *
+1 (:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18
+N
+24H
+242526 *
+1	$ 	(0210:7B$
+
+
+13
+27
+
+
+15
+28
+
+
+17
+29
+
+19
+192021
+
+40
+404121rè
+
+101922*
+1' (0
+
+101923*
+1' (0
+
+302435*
+1 (
+
+302435*
+1 (
+
+364042*
+1	 (
+
+364043*
+1 (
+
+364043*
+1( (-
+
+364023*
+1	 (
+
+364044*
+1 (&
+
+364023*
+1 (
+
+364044*
+1. (5
+
+364023*
+1( (-
+
+364044*
+1	 (
+
+364023*
+1 (
+
+364023*
+1 (
+
+364035*
+1 ((
+
+364547*
+1! ((
+
+361035*
+1 (
+
+363047*
+1 (
+
+364035*
+1 (*
+
+364847*
+1# (*
+
+364035*
+1 (&
+
+364847*
+1 (&
+
+364035*
+1 (
+
+364847*
+1 (
+
+364035*
+1 ('
+
+364847*
+1  ('
+
+364035*
+1   (
+
+364847*
+1   (

@@ -1,0 +1,212 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755621213*java2.B–
+)
+$src/test/java/app/BiCIAMAppTest.java2
+	
+type3
+	
+TEST4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+4
+/alerguezrojas_lab-dht-bicam-rodriguez-rojas:app9
+
+app.BiCIAMAppTest11
+
+class12
+
+access13
+
+	protected14
+
+
+full-range15
+
+(6:1)-(18:2)16
+
+simple-name17
+
+BiCIAMAppTest18
+#
+app.BiCIAMAppTest#testMain()V20
+
+method21
+
+(8:5)-(12:6)22
+
+testMain23
+ 
+org.junit.jupiter.api.Test25
+
+unknown26
+
+annotated by27
+
+
+uses28
+&
+ org.junit.jupiter.api.Assertions30
+
+
+references31
+g
+aorg.junit.jupiter.api.Assertions#assertDoesNotThrow(Lorg/junit/jupiter/api/function/Executable;)V33
+
+calls34
+
+app.BiCIAMApp36
+.
+(app.BiCIAMApp#main([Ljava/lang/String;)V38
+*
+$app.BiCIAMAppTest#testConstructor()V40
+
+(14:5)-(17:6)41
+
+testConstructor42
+
+returns43
+~
+xorg.junit.jupiter.api.Assertions#assertDoesNotThrow(Lorg/junit/jupiter/api/function/ThrowingSupplier;)Ljava/lang/Object;45
+5
+/org.junit.jupiter.api.function.ThrowingSupplier47J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6jø
+
+24
+242526
+N
+19H
+192021 *
+1	
+ 	(210:7B$
+
+
+13
+14
+
+
+15
+22
+
+
+17
+23
+
+35
+353626
+
+46
+464726
+
+37
+373826
+
+29
+293026
+J
+10D
+101112 *
+1 (:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18
+
+32
+323326
+
+44
+444526
+N
+39H
+394021 *
+1
+ (210:7B$
+
+
+13
+14
+
+
+15
+41
+
+
+17
+42r•
+
+192427*
+1 (
+
+
+192428*
+1 (
+
+
+192931*
+1	 (
+
+193234*
+1	 (
+
+193531*
+1" (0
+
+193734*
+1, (0
+
+193528*
+1" (+
+
+392427*
+1 (
+
+
+392428*
+1 (
+
+
+393543*
+1	 (
+
+392931*
+1	 (
+
+394434*
+1	 (
+
+394631*
+1' (*
+
+393528*
+1 (%
+
+393534*
+1' (*

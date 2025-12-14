@@ -1,0 +1,170 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755616302*java2.B˚
+C
+>src/main/java/local_search/candidate_type/RandomCandidate.java2
+	
+type3
+	
+MAIN4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+L
+Galerguezrojas_lab-dht-bicam-rodriguez-rojas:local_search.candidate_type9
+1
++local_search.candidate_type.RandomCandidate11
+
+class12
+
+access13
+
+public14
+
+
+full-range15
+
+(12:1)-(25:2)16
+
+simple-name17
+
+RandomCandidate18
+1
++local_search.candidate_type.SearchCandidate20
+
+unknown21
+
+extends22
+
+
+uses23
+>
+8local_search.candidate_type.RandomCandidate.secureRandom25
+
+field26
+
+private27
+
+(14:2)-(14:70)28
+
+secureRandom29
+i
+clocal_search.candidate_type.RandomCandidate#stateSearch(Ljava/util/List;)Lproblem/definition/State;31
+
+method32
+
+(16:2)-(24:3)33
+
+stateSearch34
+
+problem.definition.State36
+
+returns37
+
+
+references38
+
+is type39J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6jî
+N
+30H
+303132 *
+1 (210:7B$
+
+
+13
+14
+
+
+15
+33
+
+
+17
+34
+
+19
+192021
+J
+10D
+101112 *
+1 (:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18
+N
+24H
+242526 *
+1$ (0210:7B$
+
+
+13
+27
+
+
+15
+28
+
+
+17
+29
+
+35
+353621ré
+
+101922*
+1& (5
+
+101923*
+1& (5
+
+303537*
+1	 (
+
+303523*
+1	 (
+
+303523*
+1  (%
+
+302438*
+1 (
+
+302438*
+1 (
+
+303539*
+1	 (
+
+303523*
+1 (
+
+303537*
+1 (-

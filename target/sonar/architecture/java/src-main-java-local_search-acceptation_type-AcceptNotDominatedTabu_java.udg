@@ -1,0 +1,214 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755615953*java2.B˘	
+L
+Gsrc/main/java/local_search/acceptation_type/AcceptNotDominatedTabu.java2
+	
+type3
+	
+MAIN4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+N
+Ialerguezrojas_lab-dht-bicam-rodriguez-rojas:local_search.acceptation_type9
+:
+4local_search.acceptation_type.AcceptNotDominatedTabu11
+
+class12
+
+access13
+
+public14
+
+
+full-range15
+
+(9:1)-(26:2)16
+
+simple-name17
+
+AcceptNotDominatedTabu18
+7
+1local_search.acceptation_type.AcceptableCandidate20
+
+unknown21
+
+extends22
+
+
+uses23
+î
+çlocal_search.acceptation_type.AcceptNotDominatedTabu#acceptCandidate(Lproblem/definition/State;Lproblem/definition/State;)Ljava/lang/Boolean;25
+
+method26
+
+(11:2)-(25:3)27
+
+acceptCandidate28
+
+problem.definition.State30
+
+	has param31
+
+is type32
+&
+ metaheuristics.strategy.Strategy34
+
+returns35
+
+
+references36
+V
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;38
+
+calls39
+9
+3metaheuristics.strategy.Strategy.listRefPoblacFinal41
+-
+'local_search.acceptation_type.Dominance43
+@
+:problem.definition.State#clone()Lproblem/definition/State;45
+h
+blocal_search.acceptation_type.Dominance#ListDominance(Lproblem/definition/State;Ljava/util/List;)Z47J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6jº
+
+19
+192021
+
+44
+444521
+
+42
+424321
+J
+10D
+101112 *
+1	 	($:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18
+
+33
+333421
+
+37
+373821
+
+46
+464721
+N
+24H
+242526 *
+1 ( 210:7B$
+
+
+13
+14
+
+
+15
+27
+
+
+17
+28
+
+40
+404121
+
+29
+293021r“
+
+101922*
+1	- 	(@
+
+101923*
+1	- 	(@
+
+242931*
+1! (&
+
+242931*
+15 (:
+
+242932*
+1' (3
+
+242923*
+1! (&
+
+242932*
+1; (I
+
+242923*
+15 (:
+
+242923*
+1 (
+
+243335*
+1 (*
+
+243336*
+1 (*
+
+243739*
+1 (*
+
+243323*
+1 (
+
+244036*
+1- (?
+
+244232*
+1 (
+
+244223*
+1 (
+
+244239*
+1 (&
+
+242935*
+1 (
+
+242936*
+1 (
+
+244439*
+1 (
+
+244236*
+1 (
+
+244639*
+1 (

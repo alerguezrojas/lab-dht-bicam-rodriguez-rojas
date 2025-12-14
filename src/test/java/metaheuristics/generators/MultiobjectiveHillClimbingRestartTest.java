@@ -155,4 +155,91 @@ public class MultiobjectiveHillClimbingRestartTest {
             verify(candidateState, atLeastOnce()).clone();
         }
     }
+
+    @Test
+    void testUpdateReference_RejectThenAcceptNeighbor() throws Exception {
+        State candidateState = mock(State.class);
+        when(candidateState.clone()).thenReturn(candidateState);
+        when(stateMock.clone()).thenReturn(stateMock);
+        
+        // Pre-populate listRefPoblacFinal
+        listRefPoblacFinal.add(stateMock);
+        
+        // Mock Neighborhood
+        List<State> neighborhood = new ArrayList<>();
+        State neighbor = mock(State.class);
+        when(neighbor.clone()).thenReturn(neighbor);
+        neighborhood.add(neighbor);
+        
+        when(operatorMock.generatedNewState(any(State.class), anyInt())).thenReturn(neighborhood);
+        
+        // Mock FactoryAcceptCandidate
+        try (MockedConstruction<FactoryAcceptCandidate> factoryMock = mockConstruction(FactoryAcceptCandidate.class,
+                (mock, context) -> {
+                    AcceptableCandidate acceptableCandidateMock = mock(AcceptableCandidate.class);
+                    when(mock.createAcceptCandidate(any(AcceptType.class))).thenReturn(acceptableCandidateMock);
+                    
+                    // First call: reject original candidate
+                    // Second call: accept neighbor
+                    // Note: acceptCandidate takes (lastState, candidate)
+                    // We need to be careful with argument matching
+                    when(acceptableCandidateMock.acceptCandidate(any(State.class), any(State.class)))
+                        .thenAnswer(invocation -> {
+                            State arg1 = invocation.getArgument(1);
+                            if (arg1 == candidateState) return false;
+                            if (arg1 == neighbor) return true;
+                            return false;
+                        });
+                })) {
+            
+            generator.updateReference(candidateState, 1);
+            
+            // Verify neighbor became the reference
+            assertEquals(neighbor, generator.getReference());
+            verify(problemMock).evaluate(neighbor);
+        }
+    }
+
+    @Test
+    void testUpdateReference_RejectThenRandom() throws Exception {
+        State candidateState = mock(State.class);
+        when(candidateState.clone()).thenReturn(candidateState);
+        when(stateMock.clone()).thenReturn(stateMock);
+        
+        // Pre-populate listRefPoblacFinal
+        listRefPoblacFinal.add(stateMock);
+        
+        // Mock Neighborhood (empty)
+        List<State> neighborhood = new ArrayList<>();
+        when(operatorMock.generatedNewState(any(State.class), anyInt())).thenReturn(neighborhood);
+        
+        // Mock Random State
+        List<State> randomStates = new ArrayList<>();
+        State randomState = mock(State.class);
+        when(randomState.clone()).thenReturn(randomState);
+        randomStates.add(randomState);
+        when(operatorMock.generateRandomState(1)).thenReturn(randomStates);
+        
+        // Mock FactoryAcceptCandidate
+        try (MockedConstruction<FactoryAcceptCandidate> factoryMock = mockConstruction(FactoryAcceptCandidate.class,
+                (mock, context) -> {
+                    AcceptableCandidate acceptableCandidateMock = mock(AcceptableCandidate.class);
+                    when(mock.createAcceptCandidate(any(AcceptType.class))).thenReturn(acceptableCandidateMock);
+                    
+                    when(acceptableCandidateMock.acceptCandidate(any(State.class), any(State.class)))
+                        .thenAnswer(invocation -> {
+                            State arg1 = invocation.getArgument(1);
+                            if (arg1 == candidateState) return false;
+                            if (arg1 == randomState) return true;
+                            return false;
+                        });
+                })) {
+            
+            generator.updateReference(candidateState, 1);
+            
+            // Verify random state became the reference
+            assertEquals(randomState, generator.getReference());
+            verify(problemMock).evaluate(randomState);
+        }
+    }
 }

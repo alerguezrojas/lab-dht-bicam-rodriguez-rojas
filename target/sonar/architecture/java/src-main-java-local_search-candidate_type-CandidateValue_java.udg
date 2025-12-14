@@ -1,0 +1,844 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755614430*java2.Bä
+B
+=src/main/java/local_search/candidate_type/CandidateValue.java2
+	
+type3
+	
+MAIN4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+L
+Galerguezrojas_lab-dht-bicam-rodriguez-rojas:local_search.candidate_type9
+0
+*local_search.candidate_type.CandidateValue11
+
+class12
+
+access13
+
+public14
+
+
+full-range15
+
+(21:1)-(85:2)16
+
+simple-name17
+
+CandidateValue18
+9
+3local_search.candidate_type.CandidateValue.strategy20
+
+field21
+
+private22
+
+(23:2)-(24:32)23
+
+strategy24
+*
+$local_search.complement.StrategyType26
+
+unknown27
+
+is type28
+
+
+uses29
+:
+4local_search.candidate_type.CandidateValue.ifFactory31
+
+(26:2)-(26:39)32
+
+	ifFactory33
+*
+$factory_interface.IFFactoryCandidate35
+9
+3local_search.candidate_type.CandidateValue.typecand37
+
+(28:2)-(29:33)38
+
+typecand39
+/
+)local_search.candidate_type.CandidateType41
+=
+7local_search.candidate_type.CandidateValue.tabusolution43
+
+(31:2)-(31:37)44
+
+tabusolution45
++
+%local_search.complement.TabuSolutions47
+@
+:local_search.candidate_type.CandidateValue.searchcandidate49
+
+(33:2)-(33:42)50
+
+searchcandidate51
+1
++local_search.candidate_type.SearchCandidate53
+:
+4local_search.candidate_type.CandidateValue#<init>()V55
+
+method56
+
+(35:2)-(35:27)57
+
+calls58
+†
+ÿlocal_search.candidate_type.CandidateValue#<init>(Llocal_search/complement/StrategyType;Lfactory_interface/IFFactoryCandidate;Llocal_search/candidate_type/CandidateType;Llocal_search/complement/TabuSolutions;Llocal_search/candidate_type/SearchCandidate;)V60
+
+(37:2)-(45:3)61
+
+	has param62
+
+
+references63
+ž
+—local_search.candidate_type.CandidateValue#newSearchCandidate(Llocal_search/candidate_type/CandidateType;)Llocal_search/candidate_type/SearchCandidate;65
+
+(47:2)-(51:3)66
+
+newSearchCandidate67
+
+returns68
+%
+factory_method.FactoryCandidate70
+›
+”factory_interface.IFFactoryCandidate#createSearchCandidate(Llocal_search/candidate_type/CandidateType;)Llocal_search/candidate_type/SearchCandidate;72
+ê
+ãlocal_search.candidate_type.CandidateValue#stateCandidate(Lproblem/definition/State;Llocal_search/candidate_type/CandidateType;Llocal_search/complement/StrategyType;Ljava/lang/Integer;Ljava/util/List;)Lproblem/definition/State;74
+
+(53:2)-(76:3)75
+
+stateCandidate76
+
+problem.definition.State78
+/
+)local_search.complement.StrategyType.TABU80
+`
+Zlocal_search.complement.TabuSolutions#filterNeighborhood(Ljava/util/List;)Ljava/util/List;82
+&
+ metaheuristics.strategy.Strategy84
+V
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;86
+ 
+problem.definition.Problem88
+O
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;90
+!
+problem.definition.Operator92
+r
+lproblem.definition.Operator#generatedNewState(Lproblem/definition/State;Ljava/lang/Integer;)Ljava/util/List;94
+K
+Eproblem.definition.Problem#getOperator()Lproblem/definition/Operator;96
+i
+clocal_search.candidate_type.SearchCandidate#stateSearch(Ljava/util/List;)Lproblem/definition/State;98
+j
+clocal_search.candidate_type.CandidateValue#getTabusolution()Llocal_search/complement/TabuSolutions;100
+
+(78:2)-(80:3)101
+
+getTabusolution102
+k
+dlocal_search.candidate_type.CandidateValue#setTabusolution(Llocal_search/complement/TabuSolutions;)V104
+
+(82:2)-(84:3)105
+
+setTabusolution106J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6j¬
+
+N
+64H
+646556 *
+1/ /(+210:7B$
+
+
+13
+14
+
+
+15
+66
+
+
+17
+67
+
+69
+697027
+
+71
+717227
+
+46
+464727
+
+79
+798027
+
+25
+252627
+N
+30H
+303121 *
+1 (&210:7B$
+
+
+13
+22
+
+
+15
+32
+
+
+17
+33
+
+85
+858627
+J
+10D
+101112 *
+1 (:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18
+N
+54H
+545556 *
+1#	 #(210:7B$
+
+
+13
+14
+
+
+15
+57
+
+
+17
+18
+
+52
+525327
+N
+19H
+192021 *
+1 (210:7B$
+
+
+13
+22
+
+
+15
+23
+
+
+17
+24
+
+40
+404127
+
+34
+343527
+N
+59H
+596056 *
+1%	 %(210:7B$
+
+
+13
+14
+
+
+15
+61
+
+
+17
+18
+
+97
+979827
+N
+36H
+363721 *
+1 ( 210:7B$
+
+
+13
+22
+
+
+15
+38
+
+
+17
+39
+
+83
+838427
+
+87
+878827
+
+89
+899027
+N
+48H
+484921 *
+1! !()210:7B$
+
+
+13
+22
+
+
+15
+50
+
+
+17
+51
+
+77
+777827
+
+81
+818227
+S
+103L
+10310456 *
+1R R(210:7B&
+
+
+13
+14
+
+15
+105
+
+17
+106
+N
+73H
+737456 *
+15 5(210:7B$
+
+
+13
+14
+
+
+15
+75
+
+
+17
+76
+
+95
+959627
+
+93
+939427
+N
+42H
+424321 *
+1 ($210:7B$
+
+
+13
+22
+
+
+15
+44
+
+
+17
+45
+Q
+99K
+9910056 *
+1N N(&210:7B&
+
+
+13
+14
+
+15
+101
+
+17
+102
+
+91
+919227r²
+
+192528*
+1
+ (
+
+192529*
+1
+ (
+
+192529*
+1 (
+
+303428*
+1
+ (
+
+303429*
+1
+ (
+
+303429*
+1 (&
+
+364028*
+1
+ (
+
+364029*
+1
+ (
+
+364029*
+1 ( 
+
+424628*
+1
+ (
+
+424629*
+1
+ (
+
+424629*
+1 ($
+
+485228*
+1!
+ !(
+
+485229*
+1!
+ !(
+
+485229*
+1! !()
+
+541058*
+1#	 #(
+
+592562*
+1% %($
+
+593462*
+1%/ %(A
+
+594062*
+1%M %(Z
+
+594662*
+1& &(
+
+595262*
+1&  &(/
+
+591058*
+1%	 %(
+
+592528*
+1%% %(-
+
+592529*
+1% %($
+
+593428*
+1%B %(K
+
+593429*
+1%/ %(A
+
+594028*
+1%[ %(c
+
+594029*
+1%M %(Z
+
+594628*
+1& &(
+
+594629*
+1& &(
+
+595228*
+1&0 &(?
+
+595229*
+1&  &(/
+
+591029*
+1( ((
+
+591063*
+1( ((
+
+592529*
+1( ((
+
+591963*
+1( ((
+
+591029*
+1) )(
+
+591063*
+1) )(
+
+593429*
+1) )(
+
+593063*
+1) )(
+
+591029*
+1* *(
+
+591063*
+1* *(
+
+594029*
+1* *(
+
+593663*
+1* *(
+
+591029*
+1+ +(
+
+591063*
+1+ +(
+
+594629*
+1+ +(
+
+594263*
+1+ +(
+
+591029*
+1, ,(
+
+591063*
+1, ,(
+
+595229*
+1, ,(
+
+594863*
+1, ,(
+
+645268*
+1/	 /(
+
+644062*
+1/, /(9
+
+645229*
+1/	 /(
+
+644028*
+1/: /(G
+
+644029*
+1/, /(9
+
+643429*
+10 0(
+
+643063*
+10 0(
+
+646958*
+10 0(#
+
+645229*
+11 1(
+
+644863*
+11 1(
+
+645268*
+11 1(4
+
+643463*
+11 1(4
+
+647158*
+11 1(4
+
+643063*
+11 1(
+
+643429*
+11 1(
+
+643063*
+11 1(
+
+645229*
+12
+ 2(
+
+644863*
+12
+ 2(
+
+737768*
+15	 5(
+
+737762*
+15 5(#
+
+734062*
+152 5(?
+
+732562*
+15O 5([
+
+737729*
+15	 5(
+
+737728*
+15$ 5(0
+
+737729*
+15 5(#
+
+734028*
+15@ 5(M
+
+734029*
+152 5(?
+
+732528*
+15\ 5(d
+
+732529*
+15O 5([
+
+737729*
+15ƒ 5(ˆ
+
+737728*
+17	 7(
+
+737729*
+17 7(
+
+737729*
+18 8(
+
+737768*
+1: :( 
+
+731029*
+1< <(
+
+731063*
+1< <(
+
+734629*
+1< <(
+
+734263*
+1< <(
+
+734658*
+1< <((
+
+732529*
+1= =(#
+
+732529*
+1=$ =((
+
+737963*
+1=$ =((
+
+734663*
+1? ?(3
+
+738158*
+1?! ?(3
+
+731029*
+1? ?(
+
+731063*
+1? ?(
+
+734629*
+1? ?( 
+
+734263*
+1? ?( 
+
+738328*
+1B B(
+
+738329*
+1B B(
+
+738368*
+1B B(.
+
+738363*
+1B B(.
+
+738558*
+1B# B(.
+
+738329*
+1B B("
+
+738768*
+1C C(
+
+738363*
+1C C(
+
+738958*
+1C C(
+
+739163*
+1D D(K
+
+739358*
+1D: D(K
+
+739168*
+1D D(7
+
+738763*
+1D D(7
+
+739558*
+1D, D(7
+
+738768*
+1D D()
+
+738363*
+1D D()
+
+738958*
+1D D()
+
+737768*
+1DL D(\
+
+737768*
+1F F(
+
+731063*
+1F F(
+
+735228*
+1I I(
+
+735229*
+1I I(
+
+735268*
+1I  I(2
+
+731063*
+1I  I(2
+
+736458*
+1I  I(2
+
+737768*
+1J J(*
+
+735263*
+1J J(*
+
+739758*
+1J J(*
+
+994668*
+1N	 N(
+
+994629*
+1N	 N(
+
+994629*
+1O
+ O(
+
+994263*
+1O
+ O(
+
+1034662*
+1R R(+
+
+1034628*
+1R, R(8
+
+1034629*
+1R R(+
+
+1031029*
+1S S(
+
+1031063*
+1S S(
+
+1034629*
+1S S(
+
+1034263*
+1S S(

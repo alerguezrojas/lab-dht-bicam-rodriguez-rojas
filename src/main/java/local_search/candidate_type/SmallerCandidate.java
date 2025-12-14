@@ -24,7 +24,6 @@ public class SmallerCandidate extends SearchCandidate {
 					currentCount = counter;
 					stateSmaller = listNeighborhood.get(i);
 				}
-				counter = 0;
 			}
 		}
 		else stateSmaller = listNeighborhood.get(0);

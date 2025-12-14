@@ -35,6 +35,7 @@ import metaheuristics.generators.RandomSearch;
 import problem.definition.Operator;
 import problem.definition.Problem;
 import problem.definition.State;
+import problem.definition.ObjetiveFunction;
 
 class StrategyTest {
 
@@ -295,6 +296,192 @@ class StrategyTest {
         Field field = target.getClass().getDeclaredField(fieldName);
         field.setAccessible(true);
         field.set(target, value);
+    }
+
+    @Test
+    void testGetListKey() throws Exception {
+        Strategy s = Strategy.getStrategy();
+        s.mapGenerators = new TreeMap<>();
+        Generator g1 = mock(Generator.class);
+        Generator g2 = mock(Generator.class);
+        s.mapGenerators.put(GeneratorType.GeneticAlgorithm, g1);
+        s.mapGenerators.put(GeneratorType.TabuSearch, g2);
+        
+        ArrayList<String> keys = s.getListKey();
+        assertNotNull(keys);
+        assertTrue(keys.contains("GeneticAlgorithm"));
+        assertTrue(keys.contains("TabuSearch"));
+    }
+
+    @Test
+    void testInitialize() throws Exception {
+        Strategy s = Strategy.getStrategy();
+        // Mock FactoryGenerator to avoid actual creation
+        try (MockedConstruction<FactoryGenerator> mockedFactory = Mockito.mockConstruction(FactoryGenerator.class,
+                (mock, context) -> {
+                    when(mock.createGenerator(any())).thenReturn(mock(Generator.class));
+                })) {
+            s.initialize();
+            assertNotNull(s.mapGenerators);
+            assertFalse(s.mapGenerators.isEmpty());
+            assertTrue(s.mapGenerators.containsKey(GeneratorType.GeneticAlgorithm));
+        }
+    }
+
+    @Test
+    void testDestroyExecute() throws Exception {
+        Strategy s1 = Strategy.getStrategy();
+        Strategy.destroyExecute();
+        // Reset singleton via reflection to ensure clean state for other tests if needed, 
+        // but destroyExecute sets it to null, so next getStrategy creates new one.
+        // We need to verify s1 is not the same as the new one.
+        Strategy s2 = Strategy.getStrategy();
+        assertNotSame(s1, s2);
+    }
+
+    @Test
+    void testCalculateOffLinePerformance() throws Exception {
+        Strategy s = Strategy.getStrategy();
+        setField(s, "countPeriodChange", 10);
+        s.calculateOffLinePerformance(100.0f, 0);
+        assertEquals(10.0f, s.listOfflineError[0], 0.001);
+    }
+
+    @Test
+    void testUpdateRefGenerator_SinglePoint() throws Exception {
+        Strategy s = Strategy.getStrategy();
+        Problem problemMock = mock(Problem.class);
+        s.setProblem(problemMock);
+        
+        // Mock ObjetiveFunction
+        ObjetiveFunction functionMock = mock(ObjetiveFunction.class);
+        ArrayList<ObjetiveFunction> functions = new ArrayList<>();
+        functions.add(functionMock);
+        when(problemMock.getFunction()).thenReturn(functions);
+        when(functionMock.evaluation(any())).thenReturn(42.0);
+        
+        // Mock Generator
+        Generator generatorMock = mock(Generator.class);
+        when(generatorMock.getType()).thenReturn(GeneratorType.HillClimbing);
+        State stateMock = mock(State.class);
+        ArrayList<Double> evalList = new ArrayList<>();
+        evalList.add(0.0);
+        when(stateMock.getEvaluation()).thenReturn(evalList);
+        when(generatorMock.getReference()).thenReturn(stateMock);
+        
+        s.updateRefGenerator(generatorMock);
+        
+        assertEquals(42.0, stateMock.getEvaluation().get(0), 0.001);
+    }
+
+    @Test
+    void testUpdateRefGenerator_Population() throws Exception {
+        Strategy s = Strategy.getStrategy();
+        Problem problemMock = mock(Problem.class);
+        s.setProblem(problemMock);
+        
+        // Mock ObjetiveFunction
+        ObjetiveFunction functionMock = mock(ObjetiveFunction.class);
+        ArrayList<ObjetiveFunction> functions = new ArrayList<>();
+        functions.add(functionMock);
+        when(problemMock.getFunction()).thenReturn(functions);
+        when(functionMock.evaluation(any())).thenReturn(55.0);
+        
+        // Mock Generator
+        Generator generatorMock = mock(Generator.class);
+        when(generatorMock.getType()).thenReturn(GeneratorType.GeneticAlgorithm);
+        
+        State stateMock1 = mock(State.class);
+        ArrayList<Double> evalList1 = new ArrayList<>();
+        evalList1.add(0.0);
+        when(stateMock1.getEvaluation()).thenReturn(evalList1);
+        
+        State stateMock2 = mock(State.class);
+        ArrayList<Double> evalList2 = new ArrayList<>();
+        evalList2.add(0.0);
+        when(stateMock2.getEvaluation()).thenReturn(evalList2);
+        
+        List<State> population = new ArrayList<>();
+        population.add(stateMock1);
+        population.add(stateMock2);
+        when(generatorMock.getReferenceList()).thenReturn(population);
+        
+        s.updateRefGenerator(generatorMock);
+        
+        assertEquals(55.0, stateMock1.getEvaluation().get(0), 0.001);
+        assertEquals(55.0, stateMock2.getEvaluation().get(0), 0.001);
+    }
+
+    @Test
+    void testUpdateCountGender() throws Exception {
+        Strategy s = Strategy.getStrategy();
+        setField(s, "periodo", 0);
+        
+        Generator g1 = mock(Generator.class);
+        when(g1.getType()).thenReturn(GeneratorType.GeneticAlgorithm);
+        g1.countGender = 5;
+        g1.countBetterGender = 2;
+        
+        int[] countGender = new int[10];
+        int[] countBetterGender = new int[10];
+        when(g1.getListCountGender()).thenReturn(countGender);
+        when(g1.getListCountBetterGender()).thenReturn(countBetterGender);
+        
+        try (MockedStatic<MultiGenerator> mockedStaticMultiGenerator = mockStatic(MultiGenerator.class)) {
+            mockedStaticMultiGenerator.when(MultiGenerator::getListGenerators).thenReturn(new Generator[] { g1 });
+            
+            s.updateCountGender();
+            
+            assertEquals(0, g1.countGender);
+            assertEquals(0, g1.countBetterGender);
+            assertEquals(5, countGender[0]);
+            assertEquals(2, countBetterGender[0]);
+        }
+    }
+
+    @Test
+    void testUpdateWeight() throws Exception {
+        Strategy s = Strategy.getStrategy();
+        
+        Generator g1 = mock(Generator.class);
+        when(g1.getType()).thenReturn(GeneratorType.GeneticAlgorithm);
+        
+        try (MockedStatic<MultiGenerator> mockedStaticMultiGenerator = mockStatic(MultiGenerator.class)) {
+            mockedStaticMultiGenerator.when(MultiGenerator::getListGenerators).thenReturn(new Generator[] { g1 });
+            
+            s.updateWeight();
+            
+            verify(g1).setWeight(50.0f);
+        }
+    }
+
+    @Test
+    void testUpdateRefMultiG() throws Exception {
+        Strategy s = Strategy.getStrategy();
+        Problem problemMock = mock(Problem.class);
+        s.setProblem(problemMock);
+        
+        ObjetiveFunction functionMock = mock(ObjetiveFunction.class);
+        ArrayList<ObjetiveFunction> functions = new ArrayList<>();
+        functions.add(functionMock);
+        when(problemMock.getFunction()).thenReturn(functions);
+        when(functionMock.evaluation(any())).thenReturn(10.0);
+
+        Generator g1 = mock(Generator.class);
+        when(g1.getType()).thenReturn(GeneratorType.HillClimbing);
+        State stateMock = mock(State.class);
+        ArrayList<Double> evalList = new ArrayList<>();
+        evalList.add(0.0);
+        when(stateMock.getEvaluation()).thenReturn(evalList);
+        when(g1.getReference()).thenReturn(stateMock);
+
+        try (MockedStatic<MultiGenerator> mockedStaticMultiGenerator = mockStatic(MultiGenerator.class)) {
+            mockedStaticMultiGenerator.when(MultiGenerator::getListGenerators).thenReturn(new Generator[] { g1 });
+            
+            s.updateRefMultiG();
+            
+            assertEquals(10.0, stateMock.getEvaluation().get(0), 0.001);
+        }
     }
 
 }

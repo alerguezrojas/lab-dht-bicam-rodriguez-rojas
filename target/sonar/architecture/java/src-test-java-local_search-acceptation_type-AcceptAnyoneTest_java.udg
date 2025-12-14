@@ -1,0 +1,216 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755620238*java2.Bé
+F
+Asrc/test/java/local_search/acceptation_type/AcceptAnyoneTest.java2
+	
+type3
+	
+TEST4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+N
+Ialerguezrojas_lab-dht-bicam-rodriguez-rojas:local_search.acceptation_type9
+4
+.local_search.acceptation_type.AcceptAnyoneTest11
+
+class12
+
+access13
+
+	protected14
+
+
+full-range15
+
+(8:1)-(18:2)16
+
+simple-name17
+
+AcceptAnyoneTest18
+K
+Elocal_search.acceptation_type.AcceptAnyoneTest#testAcceptCandidate()V20
+
+method21
+
+(10:5)-(17:6)22
+
+testAcceptCandidate23
+ 
+org.junit.jupiter.api.Test25
+
+unknown26
+
+annotated by27
+
+
+uses28
+0
+*local_search.acceptation_type.AcceptAnyone30
+
+is type31
+
+calls32
+
+problem.definition.State34
+
+returns35
+
+org.mockito.Mockito37
+
+
+references38
+C
+=org.mockito.Mockito#mock(Ljava/lang/Class;)Ljava/lang/Object;40
+&
+ org.junit.jupiter.api.Assertions42
+5
+/org.junit.jupiter.api.Assertions#assertTrue(Z)V44
+Š
+ƒlocal_search.acceptation_type.AcceptAnyone#acceptCandidate(Lproblem/definition/State;Lproblem/definition/State;)Ljava/lang/Boolean;46J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6j¼
+
+24
+242526
+N
+19H
+192021 *
+1
+ (210:7B$
+
+
+13
+14
+
+
+15
+22
+
+
+17
+23
+
+36
+363726
+
+43
+434426
+
+45
+454626
+J
+10D
+101112 *
+1 (:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18
+
+41
+414226
+
+39
+394026
+
+29
+293026
+
+33
+333426r·
+
+192427*
+1
+ 
+(
+
+
+192428*
+1
+ 
+(
+
+
+192931*
+1 ("
+
+192928*
+1	 (
+
+192932*
+1) (5
+
+193331*
+1 (
+
+193328*
+1	 (
+
+193335*
+1 (
+
+193638*
+1 (
+
+193932*
+1 (
+
+193328*
+1 (#
+
+193331*
+1 (
+
+193328*
+1	 (
+
+193335*
+1 (
+
+193638*
+1 (
+
+193932*
+1 (
+
+193328*
+1  (%
+
+194138*
+1	 (
+
+194332*
+1	 (
+
+192938*
+1 (0
+
+194532*
+1! (0

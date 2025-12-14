@@ -1,0 +1,238 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755616962*java2.B†
+2
+-src/main/java/config/tspDynamic/TSPState.java2
+	
+type3
+	
+MAIN4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+B
+=alerguezrojas_lab-dht-bicam-rodriguez-rojas:config.tspDynamic9
+ 
+config.tspDynamic.TSPState11
+
+class12
+
+access13
+
+public14
+
+
+full-range15
+
+(3:1)-(28:2)16
+
+simple-name17
+
+TSPState18
+&
+ config.tspDynamic.TSPState.value20
+
+field21
+
+private22
+
+(5:2)-(5:20)23
+
+value24
+'
+!config.tspDynamic.TSPState.idCity26
+
+(6:2)-(6:21)27
+
+idCity28
+,
+&config.tspDynamic.TSPState#getValue()I30
+
+method31
+
+(9:2)-(11:3)32
+
+getValue33
+
+
+references34
+-
+'config.tspDynamic.TSPState#setValue(I)V36
+
+(12:2)-(14:3)37
+
+setValue38
+
+
+uses39
+-
+'config.tspDynamic.TSPState#getIdCity()I41
+
+(21:2)-(23:3)42
+
+	getIdCity43
+.
+(config.tspDynamic.TSPState#setIdCity(I)V45
+
+(24:2)-(26:3)46
+
+	setIdCity47J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6j¨
+N
+29H
+293031 *
+1	 	(210:7B$
+
+
+13
+14
+
+
+15
+32
+
+
+17
+33
+N
+35H
+353631 *
+1 (210:7B$
+
+
+13
+14
+
+
+15
+37
+
+
+17
+38
+N
+19H
+192021 *
+1 (210:7B$
+
+
+13
+22
+
+
+15
+23
+
+
+17
+24
+N
+40H
+404131 *
+1 (210:7B$
+
+
+13
+14
+
+
+15
+42
+
+
+17
+43
+N
+25H
+252621 *
+1 (210:7B$
+
+
+13
+22
+
+
+15
+27
+
+
+17
+28
+J
+10D
+101112 *
+1 (:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18
+N
+44H
+444531 *
+1 (210:7B$
+
+
+13
+14
+
+
+15
+46
+
+
+17
+47rÿ
+
+291934*
+1
+
+ 
+(
+
+351039*
+1 (
+
+351034*
+1 (
+
+351934*
+1 (
+
+402534*
+1
+ (
+
+441039*
+1 (
+
+441034*
+1 (
+
+442534*
+1 (

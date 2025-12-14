@@ -1,6 +1,6 @@
 package local_search.acceptation_type;
 
-import local_search.complement.MultiCaseSimulatedAnnealing;
+import metaheuristics.generators.MultiCaseSimulatedAnnealing;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
@@ -42,7 +42,7 @@ class AcceptMulticaseTest extends BaseAcceptTest {
     @Test
     void testAcceptCandidateDominance() {
         when(problemMock.getTypeProblem()).thenReturn(ProblemType.Maximizar);
-        MultiCaseSimulatedAnnealing.tinitial = 100.0;
+        MultiCaseSimulatedAnnealing.setTinitial(100.0);
         
         State current = mock(State.class);
         State candidate = mock(State.class);
@@ -68,7 +68,7 @@ class AcceptMulticaseTest extends BaseAcceptTest {
     @Test
     void testAcceptCandidateNoDominance() {
         when(problemMock.getTypeProblem()).thenReturn(ProblemType.Maximizar);
-        MultiCaseSimulatedAnnealing.tinitial = 100.0;
+        MultiCaseSimulatedAnnealing.setTinitial(100.0);
         
         State current = mock(State.class);
         State candidate = mock(State.class);

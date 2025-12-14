@@ -1,0 +1,178 @@
+
+:problem.definition.State#clone()Lproblem/definition/State;_
+UC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/problem/definition/State.javaE E("10*ª
+3K K(Lz
+x
+K K(L,
+"
+clonedproblem.definition.State"
+code"__id*8
+
+__unknown_file (
+
+%11java.util.ArrayList"0
+L L($
+"
+clonedproblem.definition.State*s
+4KH K(L_
+]
+KH K(L
+%11java.util.ArrayList"__id*/
+
+__unknown_file (
+
+%13
+<nulltype>*
+3*Ô
+5K; K(?r
+p
+K; K(D
+%14java.util.ArrayList"__id*B
+
+__unknown_file (&*$
+problem.definition.State"
+code=;
+K) K(:
+%12java.util.ArrayList"java.util.ArrayListΩ
+∫
+K% K(E
+%15"3java.util.ArrayList#<init>(Ljava/util/Collection;)V*8
+
+__unknown_file (
+
+%12java.util.ArrayList*8
+
+__unknown_file (
+
+%14java.util.ArrayListh
+f
+K% K(E
+%11java.util.ArrayList"__id*8
+
+__unknown_file (
+
+%12java.util.ArrayList*
+3*É
+6I I(^
+}
+I I(^2
+"
+clonedproblem.definition.State"
+
+evaluation"__id*7
+
+__unknown_file (
+
+%4java.util.ArrayListq
+o
+K K(
+%9java.util.ArrayList"__id*B
+
+__unknown_file (&*$
+problem.definition.State"
+codex
+v
+K K("
+%10boolean"	__compare*
+K K(
+!=*'
+K K(
+
+%9java.util.ArrayList*
+K K("
+""*
+4
+5*q
+7IZ I(^]
+[
+IZ I(^
+%4java.util.ArrayList"__id*.
+
+__unknown_file (
+
+%6
+<nulltype>*
+6*Ó
+8IG I(Kw
+u
+IG I(V
+%7java.util.ArrayList"__id*H
+
+__unknown_file (,**
+problem.definition.State"
+
+evaluation<:
+I5 I(F
+%5java.util.ArrayList"java.util.ArrayList∫
+∑
+I1 I(W
+%8"3java.util.ArrayList#<init>(Ljava/util/Collection;)V*7
+
+__unknown_file (
+
+%5java.util.ArrayList*7
+
+__unknown_file (
+
+%7java.util.ArrayListf
+d
+I1 I(W
+%4java.util.ArrayList"__id*7
+
+__unknown_file (
+
+%5java.util.ArrayList*
+6*°
+9G G('l
+j
+G G(("
+clonedproblem.definition.State"__id*4
+
+__unknown_file (
+
+%0java.lang.Objectè
+å
+H H(,-
+%1'metaheuristics.generators.GeneratorType"__id*K
+
+__unknown_file (/*-
+problem.definition.State"
+typeGeneratoró
+î
+H H(,5
+"
+clonedproblem.definition.State"
+typeGenerator"__id*K
+
+__unknown_file (/
+-
+%1'metaheuristics.generators.GeneratorTypew
+u
+I I(&
+%2java.util.ArrayList"__id*H
+
+__unknown_file (,**
+problem.definition.State"
+
+evaluationw
+u
+I I(.
+%3boolean"	__compare*
+I' I()
+!=*'
+I I(&
+
+%2java.util.ArrayList*
+I* I(.
+""*
+7
+8*â
+10G G(t
+r
+G G('
+%0java.lang.Object"*java.lang.Object#clone()Ljava/lang/Object;*"
+
+__unknown_file (
+""*
+9B
+problem.definition.StateHh

@@ -1,0 +1,299 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755618605*java2.B•
+@
+;src/main/java/local_search/acceptation_type/AcceptType.java2
+	
+type3
+	
+MAIN4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+N
+Ialerguezrojas_lab-dht-bicam-rodriguez-rojas:local_search.acceptation_type9
+.
+(local_search.acceptation_type.AcceptType11
+
+
+enum12
+
+access13
+
+public14
+
+
+full-range15
+
+(7:1)-(11:2)16
+
+simple-name17
+
+
+AcceptType18
+b
+\local_search.acceptation_type.AcceptType#values()[Llocal_search/acceptation_type/AcceptType;20
+
+method21
+
+values22
+t
+nlocal_search.acceptation_type.AcceptType#valueOf(Ljava/lang/String;)Llocal_search/acceptation_type/AcceptType;24
+
+valueOf25
+9
+3local_search.acceptation_type.AcceptType.AcceptBest27
+
+field28
+
+(9:2)-(9:13)29
+
+
+AcceptBest30
+
+calls31
+;
+5local_search.acceptation_type.AcceptType.AcceptAnyone33
+
+(9:14)-(9:27)34
+
+AcceptAnyone35
+<
+6local_search.acceptation_type.AcceptType.AcceptNotBadT37
+
+(9:28)-(9:42)38
+
+AcceptNotBadT39
+<
+6local_search.acceptation_type.AcceptType.AcceptNotBadU41
+
+(9:43)-(9:57)42
+
+AcceptNotBadU43
+A
+;local_search.acceptation_type.AcceptType.AcceptNotDominated45
+
+(9:58)-(9:77)46
+
+AcceptNotDominated47
+E
+?local_search.acceptation_type.AcceptType.AcceptNotDominatedTabu49
+
+(9:78)-(9:101)50
+
+AcceptNotDominatedTabu51
+;
+5local_search.acceptation_type.AcceptType.AcceptNotBad53
+
+(9:102)-(9:115)54
+
+AcceptNotBad55
+>
+8local_search.acceptation_type.AcceptType.AcceptMulticase57
+
+(9:115)-(9:131)58
+
+AcceptMulticase59J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6jõ
+J
+10D
+101112 *
+1 (:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18
+B
+26<
+262728 *
+1	 	(210:7B
+
+
+15
+29
+
+
+17
+30
+B
+52<
+525328 *
+1	f 	(r210:7B
+
+
+15
+54
+
+
+17
+55
+C
+56=
+565728 *
+1	s 	(‚210:7B
+
+
+15
+58
+
+
+17
+59
+B
+19<
+192021 *
+1 (210:7B
+
+
+15
+16
+
+
+17
+22
+B
+44<
+444528 *
+1	: 	(L210:7B
+
+
+15
+46
+
+
+17
+47
+B
+36<
+363728 *
+1	 	()210:7B
+
+
+15
+38
+
+
+17
+39
+B
+48<
+484928 *
+1	N 	(d210:7B
+
+
+15
+50
+
+
+17
+51
+B
+23<
+232421 *
+1 (210:7B
+
+
+15
+16
+
+
+17
+25
+B
+32<
+323328 *
+1	 	(210:7B
+
+
+15
+34
+
+
+17
+35
+B
+40<
+404128 *
+1	+ 	(8210:7B
+
+
+15
+42
+
+
+17
+43r²
+
+261031*
+1	 	(
+
+261031*
+1	 	(
+
+321031*
+1	 	(
+
+321031*
+1	 	(
+
+361031*
+1	 	()
+
+361031*
+1	 	()
+
+401031*
+1	+ 	(8
+
+401031*
+1	+ 	(8
+
+441031*
+1	: 	(L
+
+441031*
+1	: 	(L
+
+481031*
+1	N 	(d
+
+481031*
+1	N 	(d
+
+521031*
+1	f 	(r
+
+521031*
+1	f 	(r
+
+561031*
+1	s 	(‚
+
+561031*
+1	s 	(‚

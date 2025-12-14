@@ -1,0 +1,122 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755617363*java2.Bá
+I
+Dsrc/main/java/local_search/acceptation_type/AcceptableCandidate.java2
+	
+type3
+	
+MAIN4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+N
+Ialerguezrojas_lab-dht-bicam-rodriguez-rojas:local_search.acceptation_type9
+7
+1local_search.acceptation_type.AcceptableCandidate11
+
+class12
+
+access13
+
+public14
+
+
+full-range15
+
+(7:1)-(10:2)16
+
+simple-name17
+
+AcceptableCandidate18
+‘
+Šlocal_search.acceptation_type.AcceptableCandidate#acceptCandidate(Lproblem/definition/State;Lproblem/definition/State;)Ljava/lang/Boolean;20
+
+method21
+
+(9:2)-(9:258)22
+
+acceptCandidate23
+
+problem.definition.State25
+
+unknown26
+
+	has param27
+
+is type28
+
+
+uses29J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6j°
+J
+10D
+101112 *
+1 (*:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18
+N
+19H
+192021 *
+1	 	()210:7B$
+
+
+13
+14
+
+
+15
+22
+
+
+17
+23
+
+24
+242526r¢
+
+192427*
+1	* 	(/
+
+192427*
+1	> 	(C
+
+192428*
+1	0 	(<
+
+192429*
+1	* 	(/
+
+192428*
+1	D 	(R
+
+192429*
+1	> 	(C

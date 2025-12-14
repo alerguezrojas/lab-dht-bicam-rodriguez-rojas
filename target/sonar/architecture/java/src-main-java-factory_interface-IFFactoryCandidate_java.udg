@@ -1,0 +1,126 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755618619*java2.B¤
+<
+7src/main/java/factory_interface/IFFactoryCandidate.java2
+	
+type3
+	
+MAIN4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+B
+=alerguezrojas_lab-dht-bicam-rodriguez-rojas:factory_interface9
+*
+$factory_interface.IFFactoryCandidate11
+
+	interface12
+
+access13
+
+public14
+
+
+full-range15
+
+(15:1)-(18:2)16
+
+simple-name17
+
+IFFactoryCandidate18
+›
+”factory_interface.IFFactoryCandidate#createSearchCandidate(Llocal_search/candidate_type/CandidateType;)Llocal_search/candidate_type/SearchCandidate;20
+
+method21
+
+(17:2)-(17:242)22
+
+createSearchCandidate23
+1
++local_search.candidate_type.SearchCandidate25
+
+unknown26
+
+returns27
+/
+)local_search.candidate_type.CandidateType29
+
+	has param30
+
+
+uses31
+
+is type32J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6jÄ
+N
+19H
+192021 *
+1 ('210:7B$
+
+
+13
+14
+
+
+15
+22
+
+
+17
+23
+
+24
+242526
+
+28
+282926
+J
+10D
+101112 *
+1 ($:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18r‡
+
+192427*
+1 (
+
+192830*
+1( (5
+
+192431*
+1 (
+
+192832*
+16 (C
+
+192831*
+1( (5

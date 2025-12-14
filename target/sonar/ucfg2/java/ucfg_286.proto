@@ -1,0 +1,85 @@
+
+clocal_search.candidate_type.RandomCandidate#stateSearch(Ljava/util/List;)Lproblem/definition/State;r
+hC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/candidate_type/RandomCandidate.java ("startingBlock*!
+2
+ ("
+ (
+""*œ
+3 („
+ ( 
+%0boolean"java.util.List#isEmpty()Z*@
+
+__unknown_file ($
+"
+listNeighborhoodjava.util.List2	isEmpty()*
+2
+1*š
+startingBlock (7•
+’
+ (
+
+%5"
+__annotate*2
+
+__unknown_file (
+java.lang.Override*@
+
+__unknown_file ($
+"
+listNeighborhoodjava.util.Listb
+`
+& (6"
+listNeighborhoodjava.util.List"__annotation*"
+
+__unknown_file (
+
+%5*
+3*è
+1 (X
+V
+ ( 
+%1java.security.SecureRandom"__id*"
+
+__unknown_file (
+""yw
+! (8	
+%2int"java.util.List#size()I*@
+
+__unknown_file ($
+"
+listNeighborhoodjava.util.List2size()«¨
+ (9	
+%3int"java.util.Random#nextInt(I)I*>
+
+__unknown_file ("
+ 
+%1java.security.SecureRandom*'
+
+__unknown_file (
+	
+%2int2
+nextInt(I)Ÿ
+œ
+ (1
+%4problem.definition.State"
+__arrayGet*@
+
+__unknown_file ($
+"
+listNeighborhoodjava.util.List*"
+
+__unknown_file (
+""{
+y
+ (2)
+stateAleatoryproblem.definition.State"__id*<
+
+__unknown_file ( 
+
+%4problem.definition.State"7
+ (+
+)
+stateAleatoryproblem.definition.State:.
+ (6"
+listNeighborhoodjava.util.ListB/-
++local_search.candidate_type.RandomCandidateH

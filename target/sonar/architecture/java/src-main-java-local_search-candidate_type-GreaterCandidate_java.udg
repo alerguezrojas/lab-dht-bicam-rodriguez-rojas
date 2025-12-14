@@ -1,0 +1,201 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755615923*java2.BÒ
+D
+?src/main/java/local_search/candidate_type/GreaterCandidate.java2
+	
+type3
+	
+MAIN4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+L
+Galerguezrojas_lab-dht-bicam-rodriguez-rojas:local_search.candidate_type9
+2
+,local_search.candidate_type.GreaterCandidate11
+
+class12
+
+access13
+
+public14
+
+
+full-range15
+
+(17:1)-(42:2)16
+
+simple-name17
+
+GreaterCandidate18
+1
++local_search.candidate_type.SearchCandidate20
+
+unknown21
+
+extends22
+
+
+uses23
+?
+9local_search.candidate_type.GreaterCandidate.secureRandom25
+
+field26
+
+private27
+
+(19:2)-(19:70)28
+
+secureRandom29
+j
+dlocal_search.candidate_type.GreaterCandidate#stateSearch(Ljava/util/List;)Lproblem/definition/State;31
+
+method32
+
+(21:2)-(41:3)33
+
+stateSearch34
+
+problem.definition.State36
+
+returns37
+
+is type38
+
+
+references39
+C
+=problem.definition.State#getEvaluation()Ljava/util/ArrayList;41
+
+calls42J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6j¨
+
+19
+192021
+N
+30H
+303132 *
+1 (210:7B$
+
+
+13
+14
+
+
+15
+33
+
+
+17
+34
+J
+10D
+101112 *
+1 (:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18
+
+40
+404121
+N
+24H
+242526 *
+1$ (0210:7B$
+
+
+13
+27
+
+
+15
+28
+
+
+17
+29
+
+35
+353621ræ
+
+101922*
+1' (6
+
+101923*
+1' (6
+
+303537*
+1	 (
+
+303523*
+1	 (
+
+303523*
+1  (%
+
+303538*
+1	 (
+
+303523*
+1 (
+
+303539*
+1 (?
+
+304042*
+12 (?
+
+303537*
+1 (.
+
+303539*
+1 (4
+
+304042*
+1' (4
+
+303537*
+1 (#
+
+303537*
+1 ()
+
+302439*
+1# #(
+
+302439*
+1# #(
+
+303537*
+1$ $((
+
+303537*
+1' '(+

@@ -26,20 +26,15 @@ import factory_method.FactorySampling;
 public class DistributionEstimationAlgorithm extends Generator {
 
 	private State stateReferenceDA;
-	private List<State> referenceList = new ArrayList<State>(); 
-	public static List<State> sonList = new ArrayList<State>(); 
-	private IFFactoryFatherSelection iffatherselection;
-	private IFFSampling iffsampling;
-	private IFFactoryReplace iffreplace;
+	private List<State> referenceList = new ArrayList<>(); 
+	public static List<State> sonList = new ArrayList<>(); 
 	private DistributionType distributionType;
 	private SamplingType Samplingtype;
 	
-//	private ReplaceType replaceType;
 	public static ReplaceType replaceType;
 	public static SelectionType selectionType;
 	
 	private GeneratorType generatorType;
-	//private ProblemState candidate;
 	public static int truncation;
 	public static int countRef = 0;
 	private float weight;
@@ -103,9 +98,8 @@ public class DistributionEstimationAlgorithm extends Generator {
     	//***************************version 1.0
     	//ArrayList<State> listcandidate = new ArrayList<State>();//(State) Strategy.getStrategy().getProblem().getState().clone()
 		
-    	List<State> fathers = new ArrayList<State>();
-		fathers = getfathersList();
-		iffsampling = new FactorySampling();
+    	List<State> fathers = getfathersList();
+		IFFSampling iffsampling = new FactorySampling();
     	Sampling samplingG = iffsampling.createSampling(Samplingtype);
     	List<State> ind = samplingG.sampling(fathers, operatornumber);
     	State candidate = null;
@@ -168,13 +162,13 @@ public class DistributionEstimationAlgorithm extends Generator {
 
 	@Override
 	public void updateReference(State stateCandidate, Integer countIterationsCurrent) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException,	NoSuchMethodException {
-		iffreplace = new FactoryReplace();
+		IFFactoryReplace iffreplace = new FactoryReplace();
 		Replace replace = iffreplace.createReplace(replaceType);
 		referenceList = replace.replace(stateCandidate, referenceList);
 	}
 	
 	public List<State> getListStateRef(){
-		Boolean found = false;
+		boolean found = false;
 		List<String> key = Strategy.getStrategy().getListKey();
 		int count = 0;
 		//if(Strategy.getStrategy().Statistics.getAllStates().size() == 0){
@@ -223,8 +217,8 @@ public class DistributionEstimationAlgorithm extends Generator {
 	}
 
 	public List<State> getfathersList() throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
-		List<State> refList = new ArrayList<State>(this.referenceList); 
-    	iffatherselection = new FactoryFatherSelection();
+		List<State> refList = new ArrayList<>(this.referenceList); 
+    	IFFactoryFatherSelection iffatherselection = new FactoryFatherSelection();
     	FatherSelection selection = iffatherselection.createSelectFather(selectionType);
     	List<State> fathers = selection.selection(refList, truncation);
     	return fathers;

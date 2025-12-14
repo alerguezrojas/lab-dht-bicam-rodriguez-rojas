@@ -71,10 +71,10 @@ public class MultiCaseSimulatedAnnealingTest {
         when(strategyMock.getListKey()).thenReturn(new ArrayList<>());
         
         // Initialize statics
-        MultiCaseSimulatedAnnealing.alpha = 0.9;
-        MultiCaseSimulatedAnnealing.tinitial = 100.0;
-        MultiCaseSimulatedAnnealing.tfinal = 0.1;
-        MultiCaseSimulatedAnnealing.countIterationsT = 10;
+        MultiCaseSimulatedAnnealing.setAlpha(0.9);
+        MultiCaseSimulatedAnnealing.setTinitial(100.0);
+        MultiCaseSimulatedAnnealing.setTfinal(0.1);
+        MultiCaseSimulatedAnnealing.setCountIterationsT(10);
         
         mcsa = new MultiCaseSimulatedAnnealing();
         
@@ -150,15 +150,15 @@ public class MultiCaseSimulatedAnnealingTest {
             // Wait, updateReference says: countRept = countIterationsT;
             // Then if(countIterationsCurrent.equals(countIterationsT)) { update T; countIterationsT += countRept; }
             
-            double initialT = MultiCaseSimulatedAnnealing.tinitial;
-            int initialCountT = MultiCaseSimulatedAnnealing.countIterationsT;
+            double initialT = MultiCaseSimulatedAnnealing.getTinitial();
+            int initialCountT = MultiCaseSimulatedAnnealing.getCountIterationsT();
             
             mcsa.updateReference(candidate, initialCountT);
             
             // Verify T updated
-            assertEquals(initialT * MultiCaseSimulatedAnnealing.alpha, MultiCaseSimulatedAnnealing.tinitial, 0.001);
+            assertEquals(initialT * MultiCaseSimulatedAnnealing.getAlpha(), MultiCaseSimulatedAnnealing.getTinitial(), 0.001);
             // Verify countIterationsT updated
-            assertEquals(initialCountT + initialCountT, MultiCaseSimulatedAnnealing.countIterationsT);
+            assertEquals(initialCountT + initialCountT, MultiCaseSimulatedAnnealing.getCountIterationsT());
         }
     }
     

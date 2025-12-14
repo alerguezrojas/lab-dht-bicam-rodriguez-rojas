@@ -1,0 +1,111 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755618628*java2.B¿
+G
+Bsrc/main/java/evolutionary_algorithms/complement/Distribution.java2
+	
+type3
+	
+MAIN4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+S
+Nalerguezrojas_lab-dht-bicam-rodriguez-rojas:evolutionary_algorithms.complement9
+5
+/evolutionary_algorithms.complement.Distribution11
+
+class12
+
+access13
+
+public14
+
+
+full-range15
+
+(8:1)-(11:2)16
+
+simple-name17
+
+Distribution18
+d
+^evolutionary_algorithms.complement.Distribution#distribution(Ljava/util/List;)Ljava/util/List;20
+
+method21
+
+(9:2)-(9:70)22
+
+distribution23
+4
+.evolutionary_algorithms.complement.Probability25
+
+unknown26
+
+
+uses27
+
+problem.definition.State29J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6jÄ
+J
+10D
+101112 *
+1 (#:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18
+
+24
+242526
+N
+19H
+192021 *
+1	$ 	(0210:7B$
+
+
+13
+14
+
+
+15
+22
+
+
+17
+23
+
+28
+282926r6
+
+192427*
+1	 	("
+
+192827*
+1	6 	(;

@@ -1,0 +1,201 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755619186*java2.B…	
+A
+<src/main/java/local_search/candidate_type/CandidateType.java2
+	
+type3
+	
+MAIN4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+L
+Galerguezrojas_lab-dht-bicam-rodriguez-rojas:local_search.candidate_type9
+/
+)local_search.candidate_type.CandidateType11
+
+
+enum12
+
+access13
+
+public14
+
+
+full-range15
+
+(7:1)-(10:2)16
+
+simple-name17
+
+CandidateType18
+d
+^local_search.candidate_type.CandidateType#values()[Llocal_search/candidate_type/CandidateType;20
+
+method21
+
+values22
+v
+plocal_search.candidate_type.CandidateType#valueOf(Ljava/lang/String;)Llocal_search/candidate_type/CandidateType;24
+
+valueOf25
+@
+:local_search.candidate_type.CandidateType.SmallerCandidate27
+
+field28
+
+(9:2)-(9:19)29
+
+SmallerCandidate30
+
+calls31
+@
+:local_search.candidate_type.CandidateType.GreaterCandidate33
+
+(9:20)-(9:37)34
+
+GreaterCandidate35
+?
+9local_search.candidate_type.CandidateType.RandomCandidate37
+
+(9:38)-(9:54)38
+
+RandomCandidate39
+E
+?local_search.candidate_type.CandidateType.NotDominatedCandidate41
+
+(9:55)-(9:77)42
+
+NotDominatedCandidate43J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6jä
+B
+32<
+323328 *
+1	 	($210:7B
+
+
+15
+34
+
+
+17
+35
+B
+36<
+363728 *
+1	& 	(5210:7B
+
+
+15
+38
+
+
+17
+39
+J
+10D
+101112 *
+1 (:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18
+B
+23<
+232421 *
+1 (210:7B
+
+
+15
+16
+
+
+17
+25
+B
+19<
+192021 *
+1 (210:7B
+
+
+15
+16
+
+
+17
+22
+B
+26<
+262728 *
+1	 	(210:7B
+
+
+15
+29
+
+
+17
+30
+B
+40<
+404128 *
+1	7 	(L210:7B
+
+
+15
+42
+
+
+17
+43rØ
+
+261031*
+1	 	(
+
+261031*
+1	 	(
+
+321031*
+1	 	($
+
+321031*
+1	 	($
+
+361031*
+1	& 	(5
+
+361031*
+1	& 	(5
+
+401031*
+1	7 	(L
+
+401031*
+1	7 	(L

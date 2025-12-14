@@ -42,10 +42,6 @@ public class GeneticAlgorithm extends Generator {
 	public static ReplaceType replaceType;
 	public static SelectionType selectionType;
 	
-//	private SelectionType selectionType;
-//	private CrossoverType crossoverType;
-//	private MutationType mutationType;
-//	private ReplaceType replaceType;
 	private GeneratorType generatorType;
 	public static double PC;
 	public static double PM;

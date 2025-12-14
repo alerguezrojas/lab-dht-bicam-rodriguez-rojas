@@ -7,15 +7,11 @@ import problem.definition.State;
 
 public class TabuSolutions {
 	
-	public static List<State> listTabu = new ArrayList<State>();
+	public static List<State> listTabu = new ArrayList<>();
 
 	public static int maxelements; 
 
 	public List<State> filterNeighborhood(List<State> listNeighborhood) throws Exception {
-		List<State> listFiltrate = new ArrayList<State>();
-		//List<ProblemState> auxList = new ArrayList<ProblemState>();
-		//auxList = listNeighborhood;
-		//Problem problem = new Problem();
 		if (!listTabu.isEmpty()) {
 			for (int i = listNeighborhood.size() - 1; i >= 0 ; i--) {
 				int count_tabu = 0; 
@@ -26,13 +22,10 @@ public class TabuSolutions {
 					count_tabu++;
 				}
 			}
-			listFiltrate = listNeighborhood;
-			if (listFiltrate.isEmpty()) {
+			if (listNeighborhood.isEmpty()) {
 				throw new Exception();
 			}
-		} else {
-			listFiltrate = listNeighborhood;
 		}
-		return listFiltrate;
+		return listNeighborhood;
 	}
 }

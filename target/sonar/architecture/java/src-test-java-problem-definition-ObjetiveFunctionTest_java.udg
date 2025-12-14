@@ -1,0 +1,332 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755619667*java2.B˙
+?
+:src/test/java/problem/definition/ObjetiveFunctionTest.java2
+	
+type3
+	
+TEST4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+C
+>alerguezrojas_lab-dht-bicam-rodriguez-rojas:problem.definition9
+-
+'problem.definition.ObjetiveFunctionTest11
+
+class12
+
+access13
+
+	protected14
+
+
+full-range15
+
+(9:1)-(24:2)16
+
+simple-name17
+
+ObjetiveFunctionTest18
+A
+;problem.definition.ObjetiveFunctionTest#testGetSetWeight()V20
+
+method21
+
+(11:5)-(16:6)22
+
+testGetSetWeight23
+ 
+org.junit.jupiter.api.Test25
+
+unknown26
+
+annotated by27
+
+
+uses28
+)
+#problem.definition.ObjetiveFunction30
+
+is type31
+
+returns32
+
+org.mockito.Mockito34
+
+
+references35
+`
+Zorg.mockito.Mockito#mock(Ljava/lang/Class;Lorg/mockito/stubbing/Answer;)Ljava/lang/Object;37
+
+calls38
+!
+org.mockito.stubbing.Answer40
+,
+&org.mockito.Mockito.CALLS_REAL_METHODS42
+7
+1problem.definition.ObjetiveFunction#setWeight(F)V44
+&
+ org.junit.jupiter.api.Assertions46
+8
+2org.junit.jupiter.api.Assertions#assertEquals(FF)V48
+6
+0problem.definition.ObjetiveFunction#getWeight()F50
+F
+@problem.definition.ObjetiveFunctionTest#testGetSetTypeProblem()V52
+
+(18:5)-(23:6)53
+
+testGetSetTypeProblem54
+c
+]problem.definition.ObjetiveFunction#setTypeProblem(Lproblem/definition/Problem$ProblemType;)V56
+,
+&problem.definition.Problem$ProblemType58
+6
+0problem.definition.Problem$ProblemType.Maximizar60
+Z
+Torg.junit.jupiter.api.Assertions#assertEquals(Ljava/lang/Object;Ljava/lang/Object;)V62
+b
+\problem.definition.ObjetiveFunction#getTypeProblem()Lproblem/definition/Problem$ProblemType;64J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6jò
+
+29
+293026
+
+63
+636426
+N
+19H
+192021 *
+1
+ (210:7B$
+
+
+13
+14
+
+
+15
+22
+
+
+17
+23
+J
+10D
+101112 *
+1	 	(:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18
+N
+51H
+515221 *
+1
+ (210:7B$
+
+
+13
+14
+
+
+15
+53
+
+
+17
+54
+
+57
+575826
+
+59
+596026
+
+24
+242526
+
+33
+333426
+
+39
+394026
+
+41
+414226
+
+43
+434426
+
+61
+616226
+
+47
+474826
+
+45
+454626
+
+36
+363726
+
+49
+495026
+
+55
+555626r”
+
+192427*
+1 (
+
+
+192428*
+1 (
+
+
+192931*
+1 (!
+
+192928*
+1	 (
+
+192932*
+1$ ((
+
+193335*
+1$ ((
+
+193638*
+1$ ((
+
+192928*
+1) (9
+
+193928*
+1A (S
+
+194135*
+1A (S
+
+192935*
+1	 (
+
+194338*
+1 (
+
+194535*
+1	 (
+
+194738*
+1	 (
+
+192935*
+1 (-
+
+194938*
+1$ (-
+
+512427*
+1 (
+
+
+512428*
+1 (
+
+
+512931*
+1 (!
+
+512928*
+1	 (
+
+512932*
+1$ ((
+
+513335*
+1$ ((
+
+513638*
+1$ ((
+
+512928*
+1) (9
+
+513928*
+1A (S
+
+514135*
+1A (S
+
+512935*
+1	 (
+
+515538*
+1 (
+
+515728*
+1  (+
+
+515735*
+1  (+
+
+515728*
+1, (5
+
+515935*
+1, (5
+
+514535*
+1	 (
+
+516138*
+1	 (
+
+515728*
+1 (!
+
+515735*
+1 (!
+
+515728*
+1" (+
+
+515935*
+1" (+
+
+515732*
+1- (C
+
+512935*
+1- (C
+
+516338*
+15 (C

@@ -18,8 +18,8 @@ public class OnePointCrossover extends Crossover {
 				
 		State newInd = (State) father1.getCopy();
 		
-	    List<Object> ind1 = new ArrayList<Object>();
-	    List<Object> ind2 = new ArrayList<Object>();
+	    List<Object> ind1 = new ArrayList<>();
+	    List<Object> ind2 = new ArrayList<>();
 	    
 	    double number = secureRandom.nextDouble();	
 		if(number <= PC){

@@ -1,0 +1,316 @@
+
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755621001*java2.Bù
+O
+Jsrc/test/java/evolutionary_algorithms/complement/UniformCrossoverTest.java2
+	
+type3
+	
+TEST4
+
+
+module-key5
+0
++alerguezrojas_lab-dht-bicam-rodriguez-rojas6
+
+package8
+S
+Nalerguezrojas_lab-dht-bicam-rodriguez-rojas:evolutionary_algorithms.complement9
+=
+7evolutionary_algorithms.complement.UniformCrossoverTest11
+
+class12
+
+access13
+
+	protected14
+
+
+full-range15
+
+(8:1)-(46:2)16
+
+simple-name17
+
+UniformCrossoverTest18
+V
+Pevolutionary_algorithms.complement.UniformCrossoverTest#testMascaraGeneration()V20
+
+method21
+
+(10:5)-(20:6)22
+
+testMascaraGeneration23
+ 
+org.junit.jupiter.api.Test25
+
+unknown26
+
+annotated by27
+
+
+uses28
+9
+3evolutionary_algorithms.complement.UniformCrossover30
+
+is type31
+
+calls32
+
+
+references33
+F
+@evolutionary_algorithms.complement.UniformCrossover#mascara(I)[I35
+&
+ org.junit.jupiter.api.Assertions37
+8
+2org.junit.jupiter.api.Assertions#assertEquals(II)V39
+G
+Aorg.junit.jupiter.api.Assertions#assertTrue(ZLjava/lang/String;)V41
+N
+Hevolutionary_algorithms.complement.UniformCrossoverTest#testCrossover()V43
+
+(22:5)-(45:6)44
+
+testCrossover45
+
+problem.definition.State47
+>
+8problem.definition.State#setCode(Ljava/util/ArrayList;)V49
+
+returns50
+ï
+éevolutionary_algorithms.complement.UniformCrossover#crossover(Lproblem/definition/State;Lproblem/definition/State;D)Lproblem/definition/State;52
+I
+Corg.junit.jupiter.api.Assertions#assertNotNull(Ljava/lang/Object;)V54
+=
+7problem.definition.State#getCode()Ljava/util/ArrayList;56J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6j»
+N
+42H
+424321 *
+1
+ (210:7B$
+
+
+13
+14
+
+
+15
+44
+
+
+17
+45
+
+51
+515226
+
+55
+555626
+
+53
+535426
+J
+10D
+101112 *
+1 (:7B$
+
+
+13
+14
+
+
+15
+16
+
+
+17
+18
+
+40
+404126
+N
+19H
+192021 *
+1
+ (210:7B$
+
+
+13
+14
+
+
+15
+22
+
+
+17
+23
+
+46
+464726
+
+24
+242526
+
+34
+343526
+
+38
+383926
+
+29
+293026
+
+36
+363726
+
+48
+484926r”
+
+192427*
+1
+ 
+(
+
+
+192428*
+1
+ 
+(
+
+
+192931*
+1 (#
+
+192928*
+1	 (
+
+192932*
+1* (:
+
+192933*
+1 (*
+
+193432*
+1# (*
+
+193633*
+1	 (
+
+193832*
+1	 (
+
+193633*
+1 (
+
+194032*
+1 (
+
+422427*
+1 (
+
+
+422428*
+1 (
+
+
+422931*
+1 (#
+
+422928*
+1	 (
+
+422932*
+1* (:
+
+424631*
+1 (
+
+424628*
+1	 (
+
+424632*
+1 ("
+
+424633*
+1	 (
+
+424832*
+1 (
+
+424631*
+1 (
+
+424628*
+1	 (
+
+424632*
+1 ("
+
+424633*
+1"	 "(
+
+424832*
+1" "(
+
+424631*
+1% %(
+
+424628*
+1%	 %(
+
+424650*
+1% %(*
+
+422933*
+1% %(*
+
+425132*
+1%! %(*
+
+423633*
+1'	 '(
+
+425332*
+1'	 '(
+
+423633*
+1(	 ((
+
+423832*
+1(	 ((
+
+424633*
+1( ((&
+
+425532*
+1( ((&
+
+424633*
+1* *((
+
+425532*
+1*! *((
+
+423633*
+1+ +(
+
+424032*
+1+ +(

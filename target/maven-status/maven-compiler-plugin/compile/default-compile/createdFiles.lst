@@ -1,12 +1,10 @@
 problem\definition\Problem.class
-local_search\MultiCaseSimulatedAnnealing.class
 local_search\acceptation_type\AcceptType.class
 local_search\acceptation_type\AcceptMulticase.class
 metaheuristics\generators\MyTestClass.class
 factory_method\FactoryAcceptCandidate.class
 metaheuristics\generators\MultiCaseSimulatedAnnealing.class
 problem\definition\Codification.class
-BiCIAMApp.class
 local_search\acceptation_type\AcceptNotDominatedTabu.class
 metaheuristics\generators\MultiobjectiveHillClimbingDistance.class
 factory_method\FactoryCrossover.class
@@ -17,6 +15,7 @@ factory_method\FactoryCandidate.class
 problem\extension\TypeSolutionMethod.class
 metaheuristics\generators\MultiobjectiveTabuSearch.class
 factory_interface\IFFactoryAcceptCandidate.class
+app\BiCIAMApp.class
 evolutionary_algorithms\complement\Sampling.class
 metaheuristics\generators\DistributionEstimationAlgorithm.class
 evolutionary_algorithms\complement\Crossover.class
@@ -37,7 +36,6 @@ evolutionary_algorithms\complement\OnePointMutation.class
 factory_method\FactoryLoader.class
 metaheuristics\generators\MultiGenerator.class
 evolutionary_algorithms\complement\Probability.class
-local_search\complement\MultiCaseSimulatedAnnealing.class
 metaheuristics\generators\Particle.class
 metaheuristics\generators\LimitThreshold.class
 factory_method\FactoryMutation.class

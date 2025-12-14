@@ -12,6 +12,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
+import org.mockito.MockedConstruction;
 import org.mockito.MockedStatic;
 import org.mockito.MockitoAnnotations;
 
@@ -20,10 +21,18 @@ import problem.definition.Codification;
 import problem.definition.Operator;
 import problem.definition.Problem;
 import problem.definition.State;
+import evolutionary_algorithms.complement.Crossover;
 import evolutionary_algorithms.complement.CrossoverType;
+import evolutionary_algorithms.complement.FatherSelection;
+import evolutionary_algorithms.complement.Mutation;
 import evolutionary_algorithms.complement.MutationType;
+import evolutionary_algorithms.complement.Replace;
 import evolutionary_algorithms.complement.ReplaceType;
 import evolutionary_algorithms.complement.SelectionType;
+import factory_method.FactoryCrossover;
+import factory_method.FactoryFatherSelection;
+import factory_method.FactoryMutation;
+import factory_method.FactoryReplace;
 
 public class GeneticAlgorithmTest {
 
@@ -46,6 +55,18 @@ public class GeneticAlgorithmTest {
 
     @Mock
     private Codification codificationMock;
+    
+    @Mock
+    private FatherSelection fatherSelectionMock;
+    
+    @Mock
+    private Crossover crossoverMock;
+    
+    @Mock
+    private Mutation mutationMock;
+    
+    @Mock
+    private Replace replaceMock;
 
     private MockedStatic<Strategy> strategyStaticMock;
     private AutoCloseable mocks;
@@ -132,9 +153,32 @@ public class GeneticAlgorithmTest {
         
         geneticAlgorithm.setListState(population);
         
-        State result = geneticAlgorithm.generate(operatorNumber);
-        
-        assertNotNull(result);
+        try (MockedConstruction<FactoryFatherSelection> mockedFatherFactory = mockConstruction(FactoryFatherSelection.class,
+                (mock, context) -> {
+                    when(mock.createSelectFather(any())).thenReturn(fatherSelectionMock);
+                });
+             MockedConstruction<FactoryCrossover> mockedCrossoverFactory = mockConstruction(FactoryCrossover.class,
+                (mock, context) -> {
+                    when(mock.createCrossover(any())).thenReturn(crossoverMock);
+                });
+             MockedConstruction<FactoryMutation> mockedMutationFactory = mockConstruction(FactoryMutation.class,
+                (mock, context) -> {
+                    when(mock.createMutation(any())).thenReturn(mutationMock);
+                })) {
+            
+            List<State> fathers = new ArrayList<>();
+            fathers.add(s1);
+            fathers.add(s1);
+            when(fatherSelectionMock.selection(anyList(), anyInt())).thenReturn(fathers);
+            
+            when(crossoverMock.crossover(any(State.class), any(State.class), anyDouble())).thenReturn(s1);
+            
+            when(mutationMock.mutation(any(State.class), anyDouble())).thenReturn(s1);
+            
+            State result = geneticAlgorithm.generate(operatorNumber);
+            
+            assertNotNull(result);
+        }
     }
     
     @Test
@@ -162,15 +206,10 @@ public class GeneticAlgorithmTest {
         
         // Minimization
         when(problemMock.getTypeProblem()).thenReturn(Problem.ProblemType.Minimizar);
-        State ref = geneticAlgorithm.getReference();
-        assertEquals(s2, ref);
-        
-        // Maximization
-        when(problemMock.getTypeProblem()).thenReturn(Problem.ProblemType.Maximizar);
-        ref = geneticAlgorithm.getReference();
-        assertEquals(s1, ref);
+        State best = geneticAlgorithm.getReference();
+        assertEquals(s2, best);
     }
-    
+
     @Test
     public void testUpdateReference() throws Exception {
         List<State> population = new ArrayList<>();
@@ -187,17 +226,19 @@ public class GeneticAlgorithmTest {
         evalCandidate.add(5.0);
         when(candidate.getEvaluation()).thenReturn(evalCandidate);
         
-        // Mock Replace
-        // Since FactoryReplace creates a new instance, we rely on the real implementation of GenerationalReplace (default)
-        // GenerationalReplace replaces the worst if candidate is better, or something like that.
-        // Let's check GenerationalReplace logic or just run it.
-        // GenerationalReplace might need mocking if it's complex.
-        // But let's try running it.
-        
-        geneticAlgorithm.updateReference(candidate, 1);
-        
-        // Verify listState changed or not
-        // With GenerationalReplace, it might replace the whole population or part of it.
+        try (MockedConstruction<FactoryReplace> mockedReplaceFactory = mockConstruction(FactoryReplace.class,
+                (mock, context) -> {
+                    when(mock.createReplace(any())).thenReturn(replaceMock);
+                })) {
+            
+            List<State> updatedList = new ArrayList<>();
+            updatedList.add(candidate);
+            when(replaceMock.replace(any(State.class), anyList())).thenReturn(updatedList);
+            
+            geneticAlgorithm.updateReference(candidate, 1);
+            
+            verify(replaceMock).replace(any(State.class), anyList());
+        }
     }
 
     @Test

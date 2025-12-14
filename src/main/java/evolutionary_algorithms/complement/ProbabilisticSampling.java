@@ -71,10 +71,10 @@ public class ProbabilisticSampling extends Sampling {
 	
 	// inicializa la lista de individuos
 		public List<State> listState(int countInd) {
-			List<State> staList = new ArrayList<State>(countInd);
+			List<State> staList = new ArrayList<>(countInd);
 			for (int i = 0; i < countInd; i++) {
 				State state = new State();
-				state.setCode(new ArrayList<Object>());
+				state.setCode(new ArrayList<>());
 				state.setNumber(Strategy.getStrategy().getCountCurrent());
 				state.setTypeGenerator(GeneratorType.DistributionEstimationAlgorithm);
 				staList.add(state);

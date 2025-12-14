@@ -1,10 +1,10 @@
 package local_search.acceptation_type;
 
-import local_search.complement.MultiCaseSimulatedAnnealing;
+import metaheuristics.generators.MultiCaseSimulatedAnnealing;
 import metaheuristics.strategy.*;
 
+import java.security.SecureRandom;
 import java.util.List;
-import java.util.Random;
 
 import problem.definition.State;
 
@@ -21,7 +21,7 @@ public class AcceptMulticase extends AcceptableCandidate {
 	 * @brief Generador de números aleatorios compartido.
 	 * Se utiliza una instancia estática para mejorar la eficiencia y la calidad de la aleatoriedad.
 	 */
-	private static final Random rdm = new Random();
+	private static final SecureRandom rdm = new SecureRandom();
 
 	/**
 	 * @brief Determina si se acepta una solución candidata.
@@ -42,7 +42,7 @@ public class AcceptMulticase extends AcceptableCandidate {
 		if(list.size() == 0){
 			list.add(stateCurrent.clone());
 		}
-		Double T = MultiCaseSimulatedAnnealing.tinitial;
+		Double T = MultiCaseSimulatedAnnealing.getTinitial();
 		double pAccept = 0;
 		Dominance dominance= new Dominance();
 		//Verificando si la soluci�n candidata domina a la soluci�n actual
@@ -52,16 +52,16 @@ public class AcceptMulticase extends AcceptableCandidate {
 			pAccept = 1; 
 		}
 		else if(dominance.dominance(stateCandidate, stateCurrent)== false){	
-			if(DominanceCounter(stateCandidate, list) > 0){
+			if(dominanceCounter(stateCandidate, list) > 0){
 				pAccept = 1;
 			}
-			else if(DominanceRank(stateCandidate, list) == 0){
+			else if(dominanceRank(stateCandidate, list) == 0){
 				pAccept = 1;
 			}
-			else if(DominanceRank(stateCandidate, list) < DominanceRank(stateCurrent, list)){
+			else if(dominanceRank(stateCandidate, list) < dominanceRank(stateCurrent, list)){
 				pAccept = 1;
 			}
-			else if(DominanceRank(stateCandidate, list) == DominanceRank(stateCurrent, list)){
+			else if(dominanceRank(stateCandidate, list) == dominanceRank(stateCurrent, list)){
 				//Calculando la probabilidad de aceptaci�n
 				List<Double> evaluations = stateCurrent.getEvaluation();
 				double total = 0;
@@ -74,8 +74,8 @@ public class AcceptMulticase extends AcceptableCandidate {
 				}	
 				pAccept = Math.exp(-(1-total)/T);
 			}
-			else if (DominanceRank(stateCandidate, list) > DominanceRank(stateCurrent, list) && DominanceRank(stateCurrent, list)!= 0){
-				float value = (float) DominanceRank(stateCandidate, list)/DominanceRank(stateCurrent, list);
+			else if (dominanceRank(stateCandidate, list) > dominanceRank(stateCurrent, list) && dominanceRank(stateCurrent, list)!= 0){
+				float value = (float) dominanceRank(stateCandidate, list)/dominanceRank(stateCurrent, list);
 				pAccept = Math.exp(-(value+1)/T);
 			}
 			else{
@@ -94,7 +94,7 @@ public class AcceptMulticase extends AcceptableCandidate {
 		}
 		//Generar un n�mero aleatorio
 		if((rdm.nextFloat()) < pAccept){
-			stateCurrent = stateCandidate.clone();
+
 			//Verificando que la soluci�n candidata domina a alguna de las soluciones
 			accept = dominance.ListDominance(stateCandidate, list);
 		}
@@ -109,7 +109,7 @@ public class AcceptMulticase extends AcceptableCandidate {
 	 * @param list Lista de soluciones de referencia (ej. frente de Pareto actual).
 	 * @return Número de soluciones en la lista que son dominadas por el candidato.
 	 */
-	private int DominanceCounter(State stateCandidate, List<State> list) { //chequea el nmero de soluciones de Pareto que son dominados por la nueva solucin
+	private int dominanceCounter(State stateCandidate, List<State> list) { //chequea el nmero de soluciones de Pareto que son dominados por la nueva solucin
 		int counter = 0;
 		for (int i = 0; i < list.size(); i++) {
 			State solution = list.get(i);
@@ -129,7 +129,7 @@ public class AcceptMulticase extends AcceptableCandidate {
 	 * @param list Lista de soluciones de referencia.
 	 * @return Número de soluciones en la lista que dominan al candidato.
 	 */
-	private int DominanceRank(State stateCandidate, List<State> list) { //calculando el nmero de soluciones en el conjunto de Pareto que dominan a la solucin
+	private int dominanceRank(State stateCandidate, List<State> list) { //calculando el nmero de soluciones en el conjunto de Pareto que dominan a la solucin
 		int rank = 0;
 		for (int i = 0; i < list.size(); i++) {
 			State solution = list.get(i);
