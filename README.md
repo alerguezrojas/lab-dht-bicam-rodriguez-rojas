@@ -2,6 +2,7 @@
 
 **Alejandro Rodríguez Rojas** - alu0101317038@ull.edu.es
 
+[![CI Pipeline](https://github.com/alerguezrojas/lab-dht-bicam-rodriguez-rojas/actions/workflows/ci-pipeline.yml/badge.svg)](https://github.com/alerguezrojas/lab-dht-bicam-rodriguez-rojas/actions/workflows/ci-pipeline.yml)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=alerguezrojas_lab-dht-bicam-rodriguez-rojas&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=alerguezrojas_lab-dht-bicam-rodriguez-rojas)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=alerguezrojas_lab-dht-bicam-rodriguez-rojas&metric=bugs)](https://sonarcloud.io/summary/new_code?id=alerguezrojas_lab-dht-bicam-rodriguez-rojas)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=alerguezrojas_lab-dht-bicam-rodriguez-rojas&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=alerguezrojas_lab-dht-bicam-rodriguez-rojas)
