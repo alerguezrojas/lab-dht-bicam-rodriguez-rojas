@@ -1,7 +1,30 @@
 
-Cmetaheuristics.generators.HillClimbing#getSonList()Ljava/util/List;m
-cC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/HillClimbing.javar r("1*!
-1t	 t("
-t t(
-""B*(
-&metaheuristics.generators.HillClimbingH
+Xmetaheuristics.generators.AbstractTabuSearch#awardUpdateREF(Lproblem/definition/State;)Zs
+iC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/AbstractTabuSearch.javaR R("startingBlock*™
+startingBlockR R(4ù
+ö
+Q Q(
+
+%0"
+__annotate*2
+
+__unknown_file (
+java.lang.Override*H
+
+__unknown_file (,
+*
+stateCandidateproblem.definition.Statej
+h
+R% R(3*
+stateCandidateproblem.definition.State"__annotation*"
+
+__unknown_file (
+
+%0*
+1*!
+1S	 S("
+S S(
+"":6
+R R(3*
+stateCandidateproblem.definition.StateB0.
+,metaheuristics.generators.AbstractTabuSearchHX

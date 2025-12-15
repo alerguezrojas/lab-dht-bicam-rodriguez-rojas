@@ -1,18 +1,132 @@
 
-ometaheuristics.generators.ParticleSwarmOptimization#getGeneratorType()Lmetaheuristics/generators/GeneratorType;|
-pC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/ParticleSwarmOptimization.javaË Ë(&"1*ý
-1
-Ì	 Ì(¬
-©
-
-Ì	 Ì(-
-%0'metaheuristics.generators.GeneratorType"__id*f
+fmetaheuristics.generators.AbstractHillClimbing#generate(Ljava/lang/Integer;)Lproblem/definition/State;u
+kC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/AbstractHillClimbing.java" "("startingBlock*ž
+startingBlock" "(.—
+”
+! !(
+
+%10"
+__annotate*2
 
-__unknown_file (J*H5
-3metaheuristics.generators.ParticleSwarmOptimization"
-generatorType"=
+__unknown_file (
+java.lang.Override*A
+
+__unknown_file (%
+#
+operatornumberjava.lang.Integerd
+b
+" "(-#
+operatornumberjava.lang.Integer"__annotation*#
+
+__unknown_file (
+
+%10*
+1*°
+1# #(%É
+Æ
+# #(3&
+%0 metaheuristics.strategy.Strategy"Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;*@
+
+__unknown_file ($""
+ metaheuristics.strategy.StrategyÎË
+# #(@ 
+%1problem.definition.Problem"Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;*D
+
+__unknown_file ((
+&
+%0 metaheuristics.strategy.Strategy2getProblem()ÆÃ
+# #(N!
+%2problem.definition.Operator"Eproblem.definition.Problem#getOperator()Lproblem/definition/Operator;*>
+
+__unknown_file ("
+ 
+%1problem.definition.Problem2getOperator()™
+–
+#a #(q
+%3problem.definition.State"__id*d
+
+__unknown_file (H*F0
+.metaheuristics.generators.AbstractHillClimbing"
+stateReferenceHC–“
+	# #(‚
+%4java.util.List"lproblem.definition.Operator#generatedNewState(Lproblem/definition/State;Ljava/lang/Integer;)Ljava/util/List;*?
+
+__unknown_file (#
+!
+%2problem.definition.Operator*<
+
+__unknown_file ( 
+
+%3problem.definition.State*A
+
+__unknown_file (%
+#
+operatornumberjava.lang.Integer2@generatedNewState(Lproblem/definition/State;Ljava/lang/Integer;)g
+e
+	# #(ƒ
+neighborhoodjava.util.List"__id*2
+
+__unknown_file (
+
+%4java.util.List©
+¦
+$ $(0
+%5*local_search.candidate_type.CandidateValue"__id*b
+
+__unknown_file (F*D0
+.metaheuristics.generators.AbstractHillClimbing"
+candidatevalue™
+–
+$* $(:
+%6problem.definition.State"__id*d
+
+__unknown_file (H*F0
+.metaheuristics.generators.AbstractHillClimbing"
+stateReferenceHC§
+¤
+$< $(I/
+%7)local_search.candidate_type.CandidateType"__id*a
+
+__unknown_file (E*C0
+.metaheuristics.generators.AbstractHillClimbing"
+typeCandidate
+š
+$K $(S*
+%8$local_search.complement.StrategyType"__id*\
+
+__unknown_file (@*>0
+.metaheuristics.generators.AbstractHillClimbing"
 
-Ì Ì(/
--
-%0'metaheuristics.generators.GeneratorTypeB75
-3metaheuristics.generators.ParticleSwarmOptimizationH
+strategyÜÙ
+$ $(r
+%9problem.definition.State"ãlocal_search.candidate_type.CandidateValue#stateCandidate(Lproblem/definition/State;Llocal_search/candidate_type/CandidateType;Llocal_search/complement/StrategyType;Ljava/lang/Integer;Ljava/util/List;)Lproblem/definition/State;*N
+
+__unknown_file (2
+0
+%5*local_search.candidate_type.CandidateValue*<
+
+__unknown_file ( 
+
+%6problem.definition.State*M
+
+__unknown_file (1
+/
+%7)local_search.candidate_type.CandidateType*H
+
+__unknown_file (,
+*
+%8$local_search.complement.StrategyType*A
+
+__unknown_file (%
+#
+operatornumberjava.lang.Integer*<
+
+__unknown_file ( 
+
+neighborhoodjava.util.List2žstateCandidate(Lproblem/definition/State;Llocal_search/candidate_type/CandidateType;Llocal_search/complement/StrategyType;Ljava/lang/Integer;Ljava/util/List;)",
+$ $(s 
+
+%9problem.definition.State:/
+" "(-#
+operatornumberjava.lang.IntegerB20
+.metaheuristics.generators.AbstractHillClimbingH

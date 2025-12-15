@@ -1,38 +1,19 @@
 package metaheuristics.generators;
 
 import java.lang.reflect.InvocationTargetException;
-import java.util.ArrayList;
 import java.util.List;
 
-
+import factory_method.FactoryAcceptCandidate;
 import local_search.acceptation_type.AcceptType;
 import local_search.acceptation_type.AcceptableCandidate;
 import local_search.candidate_type.CandidateType;
-import local_search.candidate_type.CandidateValue;
 import local_search.complement.StrategyType;
 import metaheuristics.strategy.Strategy;
-
-import problem.definition.State;
 import problem.definition.Problem.ProblemType;
+import problem.definition.State;
 
+public class HillClimbing extends AbstractHillClimbing {
 
-
-import factory_interface.IFFactoryAcceptCandidate;
-import factory_method.FactoryAcceptCandidate;
-
-
-public class HillClimbing extends Generator{
-
-    protected CandidateValue candidatevalue;
-	protected AcceptType typeAcceptation;
-	protected StrategyType strategy;
-	protected CandidateType typeCandidate;
-	protected State stateReferenceHC;
-	protected IFFactoryAcceptCandidate ifacceptCandidate;
-	protected GeneratorType Generatortype;
-	protected List<State> listStateReference = new ArrayList<State>(); 
-	protected float weight;
-	
 	//problemas dinamicos
 	public static int countGender = 0;
 	public static int countBetterGender = 0;
@@ -50,21 +31,10 @@ public class HillClimbing extends Generator{
 		else{
 			this.typeCandidate = CandidateType.SmallerCandidate;
 		}
-		this.candidatevalue = new CandidateValue();
 		this.Generatortype = GeneratorType.HillClimbing;
-		this.weight = 50;
 		listTrace[0] = this.weight;
 		listCountBetterGender[0] = 0;
 		listCountGender[0] = 0;
-	}
-
-	@Override
-	public State generate(Integer operatornumber) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
-		List<State> neighborhood = new ArrayList<State>();
-		neighborhood = Strategy.getStrategy().getProblem().getOperator().generatedNewState(stateReferenceHC, operatornumber);
-	    State statecandidate = candidatevalue.stateCandidate(stateReferenceHC, typeCandidate, strategy, operatornumber, neighborhood);
-	  
-	    return statecandidate;
 	}
 
 	@Override
@@ -84,73 +54,17 @@ public class HillClimbing extends Generator{
 	}
 
 	@Override
-	public State getReference() {
-		return stateReferenceHC;
-	}
-
-	public void setStateRef(State stateRef) {
-		this.stateReferenceHC = stateRef;
-	}
-
-	@Override
-	public void setInitialReference(State stateInitialRef) {
-		this.stateReferenceHC = stateInitialRef;
-	}
-
-	public GeneratorType getGeneratorType() {
-		return Generatortype;
-	}
-
-	public void setGeneratorType(GeneratorType Generatortype) {
-		this.Generatortype = Generatortype;
-	}
-
-	@Override
-	public GeneratorType getType() {
-		return this.Generatortype;
-	}
-
-	@Override
-	public List<State> getSonList() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public void setTypeCandidate(CandidateType typeCandidate){
-		this.typeCandidate = typeCandidate;
-	}
-
-	@Override
-	public boolean awardUpdateREF(State stateCandidate) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public float getWeight() {
-		return this.weight;
-	}
-
-	@Override
-	public void setWeight(float weight) {
-		this.weight = weight;
-	}
-	
-	@Override
 	public int[] getListCountBetterGender() {
-		// TODO Auto-generated method stub
 		return this.listCountBetterGender;
 	}
 
 	@Override
 	public int[] getListCountGender() {
-		// TODO Auto-generated method stub
 		return this.listCountGender;
 	}
 
 	@Override
 	public float[] getTrace() {
-		// TODO Auto-generated method stub
 		return this.listTrace;
 	}
 }

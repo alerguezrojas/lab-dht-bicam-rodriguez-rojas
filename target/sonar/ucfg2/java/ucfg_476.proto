@@ -1,9 +1,7 @@
 
-Pmetaheuristics.generators.ParticleSwarmOptimization#getSonList()Ljava/util/List;|
-pC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/ParticleSwarmOptimization.java¢ ¢("1*%
-1
-¤	 ¤("
-
-¤ ¤(
-""B75
-3metaheuristics.generators.ParticleSwarmOptimizationH
+Kmetaheuristics.generators.AbstractHillClimbing#getSonList()Ljava/util/List;u
+kC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/AbstractHillClimbing.javaM M("1*!
+1N	 N("
+N N(
+""B20
+.metaheuristics.generators.AbstractHillClimbingH

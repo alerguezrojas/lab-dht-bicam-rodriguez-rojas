@@ -1,25 +1,9 @@
 
-Rmetaheuristics.generators.MultiCaseSimulatedAnnealing#getListCountBetterGender()[I~
-rC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiCaseSimulatedAnnealing.java¸ ¸(&"3*€
-3
-¹ ¹(j
-h
-
-¹ ¹(#
-%0boolean"	__compare*
-
-¹ ¹(
-==*
-
-¹ ¹(
-""*
-
-¹ ¹(#
-""*
-1*%
+7metaheuristics.generators.GeneticAlgorithm#getWeight()Fs
+gC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/GeneticAlgorithm.javaÞ Þ("1*%
 1
-¼	 ¼("
+à	 à("
 
-¼ ¼(
-""B97
-5metaheuristics.generators.MultiCaseSimulatedAnnealingH
+à à(
+""B.,
+*metaheuristics.generators.GeneticAlgorithmHX

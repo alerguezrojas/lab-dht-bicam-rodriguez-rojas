@@ -1,53 +1,15 @@
 
-Kproblem.extension.MetricasMultiobjetivo#calcularMin(Ljava/util/ArrayList;)Dn
-dC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/problem/extension/MetricasMultiobjetivo.javaj j("5*å
-3m m(!îë
-m m((
-%2java.lang.Double"+java.util.Iterator#next()Ljava/lang/Object;*8
+^metaheuristics.generators.MultiCaseSimulatedAnnealing#getReference()Lproblem/definition/State;|
+rC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiCaseSimulatedAnnealing.javak k("1*ﬁ
+1l	 l(†
+ù
+l	 l(
+%0problem.definition.State"__id*k
 
-__unknown_file (
-
-iterjava.util.Iterator2next()a
-_
-n n(
-%3boolean"	__compare*
-n n(
-<*
-n n(
-""*
-n n(
-""*
-4*ñ
-4l6 l(:}
-l6 l(D
-%1boolean"java.util.Iterator#hasNext()Z*8
-
-__unknown_file (
-
-iterjava.util.Iterator2	hasNext()*
-3
-1*•
-5k k(®•
-l l(4
-%0java.util.Iterator"2java.util.ArrayList#iterator()Ljava/util/Iterator;*?
-
-__unknown_file (#
-!
-
-allMetricsjava.util.ArrayList2
-iterator()f
-d
-l l(4
-iterjava.util.Iterator"__id*6
-
-__unknown_file (
-
-%0java.util.Iterator*
-4*!
-1r	 r("
-r r(
-"":-
-j j(7!
-
-allMetricsjava.util.ArrayListB+)
-'problem.extension.MetricasMultiobjetivoHX
+__unknown_file (O*M7
+5metaheuristics.generators.MultiCaseSimulatedAnnealing"
+stateReferenceSA",
+l l( 
+
+%0problem.definition.StateB97
+5metaheuristics.generators.MultiCaseSimulatedAnnealingH

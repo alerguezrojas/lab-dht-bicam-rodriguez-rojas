@@ -1,18 +1,16 @@
 
-Kmetaheuristics.generators.MultiGenerator#getReferenceList()Ljava/util/List;q
-eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiGenerator.java∫ ∫($"1*≈
-1
-º	 º(ç
-ä
-
-º	 º(
-%0java.util.List"__id*`
+Emetaheuristics.generators.Particle#getVelocity()Ljava/util/ArrayList;i
+_C:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/Particle.javaE E(%"1*∑
+1F	 F(
+}
+F	 F(
+%0java.util.ArrayList"__id*P
 
-__unknown_file (D*B*
-(metaheuristics.generators.MultiGenerator"
-listStateReference"$
+__unknown_file (4*2$
+"metaheuristics.generators.Particle"
 
-º º(
-
-%0java.util.ListB,*
-(metaheuristics.generators.MultiGeneratorH
+velocity"'
+F F(
+
+%0java.util.ArrayListB&$
+"metaheuristics.generators.ParticleH

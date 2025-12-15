@@ -1,15 +1,15 @@
 
-Ometaheuristics.generators.HillClimbing#getReference()Lproblem/definition/State;m
-cC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/HillClimbing.javaW W("1*Ï
-1X	 X(‘
-Ž
-X	 X(
-%0problem.definition.State"__id*\
+hmetaheuristics.generators.AbstractTabuSearch#getTypeGenerator()Lmetaheuristics/generators/GeneratorType;s
+iC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/AbstractTabuSearch.java5 5()"1*ð
+16	 6(£
+ 
+6	 6(-
+%0'metaheuristics.generators.GeneratorType"__id*_
 
-__unknown_file (@*>(
-&metaheuristics.generators.HillClimbing"
-stateReferenceHC",
-X X( 
-
-%0problem.definition.StateB*(
-&metaheuristics.generators.HillClimbingH
+__unknown_file (C*A.
+,metaheuristics.generators.AbstractTabuSearch"
+typeGenerator";
+6 6(/
+-
+%0'metaheuristics.generators.GeneratorTypeB0.
+,metaheuristics.generators.AbstractTabuSearchH

@@ -72,7 +72,7 @@ public class MultiobjectiveStochasticHillClimbingTest {
         generator = new MultiobjectiveStochasticHillClimbing();
         
         // Inject mocks into generator
-        Field candidateValueField = MultiobjectiveStochasticHillClimbing.class.getDeclaredField("candidatevalue");
+        Field candidateValueField = AbstractHillClimbing.class.getDeclaredField("candidatevalue");
         candidateValueField.setAccessible(true);
         candidateValueField.set(generator, candidateValueMock);
         

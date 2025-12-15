@@ -1,15 +1,26 @@
 
--problem.extension.MultiObjetivoPuro#<init>()V
-__unknown_file ("startingBlock*Ñ
-startingBlockh
-`C:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/problem/extension/MultiObjetivoPuro.java (Ô
-Ñ
-h
-`C:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/problem/extension/MultiObjetivoPuro.java (
-%0"*problem.extension.SolutionMethod#<init>()V*3
- ('%
-#problem.extension.MultiObjetivoPuro"
-h
-`C:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/problem/extension/MultiObjetivoPuro.java (
-implicit returnB'%
-#problem.extension.MultiObjetivoPuro
+?metaheuristics.generators.AbstractTabuSearch#%field_initializer
+__unknown_file ("1*þ
+1 (¨¥
+s
+iC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/AbstractTabuSearch.java3 (C
+%0java.util.ArrayList"java.util.ArrayListÆ
+Ã
+s
+iC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/AbstractTabuSearch.java/ (E
+%1"java.util.ArrayList#<init>()V*'
+ (
+
+%0java.util.ArrayListï
+ì
+s
+iC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/AbstractTabuSearch.java (FF.
+,metaheuristics.generators.AbstractTabuSearch"
+listStateReference"__id*'
+ (
+
+%0java.util.ArrayList"ˆ
+q
+iC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/AbstractTabuSearch.java U(
+implicit returnB0.
+,metaheuristics.generators.AbstractTabuSearch

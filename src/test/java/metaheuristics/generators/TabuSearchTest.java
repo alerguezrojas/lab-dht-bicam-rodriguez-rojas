@@ -216,7 +216,7 @@ public class TabuSearchTest {
         tabuSearch.setInitialReference(stateMock);
         
         // Use reflection to change strategy
-        Field strategyField = TabuSearch.class.getDeclaredField("strategy");
+        Field strategyField = AbstractTabuSearch.class.getDeclaredField("strategy");
         strategyField.setAccessible(true);
         strategyField.set(tabuSearch, local_search.complement.StrategyType.NORMAL);
         
@@ -231,7 +231,7 @@ public class TabuSearchTest {
         tabuSearch.setInitialReference(stateMock);
         
         // Use reflection to change typeAcceptation to AcceptBest (which checks evaluation)
-        Field typeAcceptationField = TabuSearch.class.getDeclaredField("typeAcceptation");
+        Field typeAcceptationField = AbstractTabuSearch.class.getDeclaredField("typeAcceptation");
         typeAcceptationField.setAccessible(true);
         typeAcceptationField.set(tabuSearch, local_search.acceptation_type.AcceptType.AcceptBest);
         

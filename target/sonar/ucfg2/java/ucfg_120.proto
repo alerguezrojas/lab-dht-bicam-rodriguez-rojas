@@ -1,73 +1,10 @@
 
-vproblem.definition.Problem#newSolutionMethod(Lproblem/extension/TypeSolutionMethod;)Lproblem/extension/SolutionMethod;a
-WC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/problem/definition/Problem.javam m(("3*õ
-2o o(6^\
-o o(4*
-%2$factory_method.FactorySolutionMethod"$factory_method.FactorySolutionMethodç
-ä
-o o(6
-%3".factory_method.FactorySolutionMethod#<init>()V*H
-
-__unknown_file (,
-*
-%2$factory_method.FactorySolutionMethodñ
-ì
-o o(67
-problem.definition.Problem"
-factorySolutionMethod"__id*H
-
-__unknown_file (,
-*
-%2$factory_method.FactorySolutionMethod*
-1*ƒ
-3n n(õ
-ò
-n n(/
-%0)factory_interface.IFFactorySolutionMethod"__id*U
-
-__unknown_file (9*7
-problem.definition.Problem"
-factorySolutionMethodé
-ã
-n n(#
-%1boolean"	__compare*
-n n(
-==*=
-n n(1
-/
-%0)factory_interface.IFFactorySolutionMethod*
-n n(#
-""*
-2
-1*©
-1q" q(7õ
-ò
-q" q(7/
-%4)factory_interface.IFFactorySolutionMethod"__id*U
-
-__unknown_file (9*7
-problem.definition.Problem"
-factorySolutionMethod©¶
-q" q(a&
-%5 problem.extension.SolutionMethod"âfactory_interface.IFFactorySolutionMethod#createdSolutionMethod(Lproblem/extension/TypeSolutionMethod;)Lproblem/extension/SolutionMethod;*M
-
-__unknown_file (1
-/
-%4)factory_interface.IFFactorySolutionMethod*X
-
-__unknown_file (<
-:
-typeSolutionMethod$problem.extension.TypeSolutionMethod2=createdSolutionMethod(Lproblem/extension/TypeSolutionMethod;)ç
-ä
-q q(b2
-solutionMethod problem.extension.SolutionMethod"__id*D
-
-__unknown_file ((
-&
-%5 problem.extension.SolutionMethod"@
-r r(4
-2
-solutionMethod problem.extension.SolutionMethod:F
-m) m(N:
-typeSolutionMethod$problem.extension.TypeSolutionMethodB
-problem.definition.ProblemH
+5metaheuristics.generators.MultiGenerator#getWeight()Fq
+eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiGenerator.javaÜ Ü("1*%
+1
+à	 à(
+"
+
+à à(
+""B,*
+(metaheuristics.generators.MultiGeneratorHX

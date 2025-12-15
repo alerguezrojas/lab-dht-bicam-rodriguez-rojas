@@ -1,18 +1,79 @@
 
-emetaheuristics.generators.MultiobjectiveHillClimbingDistance#getReference()Lproblem/definition/State;…
-yC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiobjectiveHillClimbingDistance.java ("1*ë
-1
-Ž	 Ž(©
-¦
+ametaheuristics.generators.MultiobjectiveHillClimbingDistance#Contain(Lproblem/definition/State;)Z…
+yC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiobjectiveHillClimbingDistance.java— —("5*½
+3
+š š(ž›
 
-Ž	 Ž(
-%0problem.definition.State"__id*r
+š š(&
+%3problem.definition.State"+java.util.Iterator#next()Ljava/lang/Object;*8
 
-__unknown_file (V*T>
-<metaheuristics.generators.MultiobjectiveHillClimbingDistance"
-stateReferenceHC".
+__unknown_file (
+
+iterjava.util.Iterator2next()w
+u
 
-Ž Ž( 
+š š('#
+elementproblem.definition.State"__id*<
+
+__unknown_file ( 
 
-%0problem.definition.StateB@>
-<metaheuristics.generators.MultiobjectiveHillClimbingDistanceH
+%3problem.definition.StateŒ‰
+
+› ›(
+%4boolean"@problem.definition.State#comparator(Lproblem/definition/State;)Z*A
+
+__unknown_file (%
+#
+elementproblem.definition.State*?
+
+__unknown_file (#
+!
+stateproblem.definition.State2&comparator(Lproblem/definition/State;)*
+4*›
+4
+™7 ™(;
+
+™7 ™(E
+%2boolean"java.util.Iterator#hasNext()Z*8
+
+__unknown_file (
+
+iterjava.util.Iterator2	hasNext()*
+3
+1*·
+5
+˜ ˜(›
+˜
+
+™ ™(*
+%0java.util.List"__id*n
+
+__unknown_file (R*P>
+<metaheuristics.generators.MultiobjectiveHillClimbingDistance"
+visitedState˜•
+
+™ ™(5
+%1java.util.Iterator"-java.util.List#iterator()Ljava/util/Iterator;*2
+
+__unknown_file (
+
+%0java.util.List2
+iterator()h
+f
+
+™ ™(5
+iterjava.util.Iterator"__id*6
+
+__unknown_file (
+
+%1java.util.Iterator*
+4*%
+1
+Ÿ	 Ÿ("
+
+Ÿ Ÿ(
+"":/
+
+— —($!
+stateproblem.definition.StateB@>
+<metaheuristics.generators.MultiobjectiveHillClimbingDistanceX

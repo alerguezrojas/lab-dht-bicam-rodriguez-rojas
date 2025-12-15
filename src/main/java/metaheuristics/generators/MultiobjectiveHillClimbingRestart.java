@@ -5,32 +5,16 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import factory_interface.IFFactoryAcceptCandidate;
 import factory_method.FactoryAcceptCandidate;
-
-import problem.definition.State;
-
 import local_search.acceptation_type.AcceptType;
 import local_search.acceptation_type.AcceptableCandidate;
 import local_search.candidate_type.CandidateType;
-import local_search.candidate_type.CandidateValue;
 import local_search.complement.StrategyType;
 import metaheuristics.strategy.Strategy;
+import problem.definition.State;
 
+public class MultiobjectiveHillClimbingRestart extends AbstractHillClimbing {
 
-
-
-public class MultiobjectiveHillClimbingRestart extends Generator{
-
-	protected CandidateValue candidatevalue;
-	protected AcceptType typeAcceptation;
-	protected StrategyType strategy;
-	protected CandidateType typeCandidate;
-	protected State stateReferenceHC;
-	protected IFFactoryAcceptCandidate ifacceptCandidate;
-	protected GeneratorType Generatortype;
-	protected List<State> listStateReference = new ArrayList<State>(); 
-	protected float weight;
 	protected List<Float> listTrace = new ArrayList<Float>();
 	private List<State> visitedState = new ArrayList<State>();
 	public static int sizeNeighbors;
@@ -40,25 +24,14 @@ public class MultiobjectiveHillClimbingRestart extends Generator{
 		super();
 		this.typeAcceptation = AcceptType.AcceptNotDominated;
 		this.strategy = StrategyType.NORMAL;
-		//Problem problem = Strategy.getStrategy().getProblem();
 		this.typeCandidate = CandidateType.NotDominatedCandidate;
-		this.candidatevalue = new CandidateValue();
 		this.Generatortype = GeneratorType.MultiobjectiveHillClimbingRestart;
-		this.weight = 50;
 		listTrace.add(weight);
 	}
 
 	@Override
-	public State generate(Integer operatornumber) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
-		List<State> neighborhood = new ArrayList<State>();
-		neighborhood = Strategy.getStrategy().getProblem().getOperator().generatedNewState(stateReferenceHC, operatornumber);
-		State statecandidate = candidatevalue.stateCandidate(stateReferenceHC, typeCandidate, strategy, operatornumber, neighborhood);
-		return statecandidate;
-	}
-
-	@Override
 	public void updateReference(State stateCandidate, Integer countIterationsCurrent) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
-		//Agregando la primera soluci�n a la lista de soluciones no dominadas
+		//Agregando la primera solucin a la lista de soluciones no dominadas
 
 		if(Strategy.getStrategy().listRefPoblacFinal.size() == 0){
 			Strategy.getStrategy().listRefPoblacFinal.add(stateReferenceHC.clone());
@@ -97,7 +70,6 @@ public class MultiobjectiveHillClimbingRestart extends Generator{
 					Strategy.getStrategy().getProblem().evaluate(stateCandidate);  
 					stop=true;
 					accept = candidate.acceptCandidate(lastState, stateCandidate.clone());
-
 				}
 			}
 			if(accept.equals(true)){
@@ -118,39 +90,6 @@ public class MultiobjectiveHillClimbingRestart extends Generator{
 		return listStateReference;
 	}
 
-	@Override
-	public State getReference() {
-		return stateReferenceHC;
-	}
-
-	public void setStateRef(State stateRef) {
-		this.stateReferenceHC = stateRef;
-	}
-
-	@Override
-	public void setInitialReference(State stateInitialRef) {
-		this.stateReferenceHC = stateInitialRef;
-	}
-
-	public GeneratorType getGeneratorType() {
-		return Generatortype;
-	}
-
-	public void setGeneratorType(GeneratorType Generatortype) {
-		this.Generatortype = Generatortype;
-	}
-
-	@Override
-	public GeneratorType getType() {
-		return this.Generatortype;
-	}
-
-	@Override
-	public List<State> getSonList() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 	private boolean Contain(State state){
 		boolean found = false;
 		for (Iterator<State> iter = visitedState.iterator(); iter.hasNext();) {
@@ -160,23 +99,6 @@ public class MultiobjectiveHillClimbingRestart extends Generator{
 			}
 		}
 		return found;
-	}
-
-	@Override
-	public boolean awardUpdateREF(State stateCandidate) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-
-	@Override
-	public float getWeight() {
-		return weight;
-	}
-
-	@Override
-	public void setWeight(float weight) {
-		this.weight = weight;
 	}
 
 	@Override

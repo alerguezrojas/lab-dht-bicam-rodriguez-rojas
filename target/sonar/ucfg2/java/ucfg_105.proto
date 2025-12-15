@@ -1,15 +1,18 @@
 
-?problem.definition.Problem#getState()Lproblem/definition/State;a
-WC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/problem/definition/Problem.java* *("1*∂
-1+	 +(y
-w
-+	 +(
-%0problem.definition.State"__id*E
+Rmetaheuristics.generators.MultiGenerator#getListGeneratedPP()Ljava/util/ArrayList;q
+eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiGenerator.javaç! ç(3"1*¬
+1
+é é(+ä
+á
+
+é é(+
+%0java.util.List"__id*]
 
-__unknown_file ()*'
-problem.definition.Problem"
-state",
-+ +( 
-
-%0problem.definition.StateB
-problem.definition.ProblemH
+__unknown_file (A*?*
+(metaheuristics.generators.MultiGenerator"
+listGeneratedPP"$
+
+é é(,
+
+%0java.util.ListB,"*
+(metaheuristics.generators.MultiGenerator

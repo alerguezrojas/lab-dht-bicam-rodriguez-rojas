@@ -1,15 +1,16 @@
 
-clocal_search.candidate_type.CandidateValue#getTabusolution()Llocal_search/complement/TabuSolutions;q
-gC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/candidate_type/CandidateValue.javaN N(%"1*é
-1O	 O(ž
-›
-O	 O(+
-%0%local_search.complement.TabuSolutions"__id*\
+Umetaheuristics.generators.MultiCaseSimulatedAnnealing#getTinitial()Ljava/lang/Double;|
+rC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiCaseSimulatedAnnealing.java1 1($"1*Æ
+12 2(
+
+2 2(
+%0java.lang.Double"__id*c
 
-__unknown_file (@*>,
-*local_search.candidate_type.CandidateValue"
-tabusolution"9
-O O(-
-+
-%0%local_search.complement.TabuSolutionsB.,
-*local_search.candidate_type.CandidateValueH
+__unknown_file (G*E7
+5metaheuristics.generators.MultiCaseSimulatedAnnealing"
+
+tinitial"$
+2 2(
+
+%0java.lang.DoubleB9"7
+5metaheuristics.generators.MultiCaseSimulatedAnnealingH

@@ -1,18 +1,15 @@
 
-Umetaheuristics.generators.EvolutionStrategies#getListStateReference()Ljava/util/List;v
-jC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/EvolutionStrategies.javaû û()"1* 
-1
-ü	 ü(í
-è
-
-ü	 ü(
-%0java.util.List"__id*e
-
-__unknown_file (I*G/
--metaheuristics.generators.EvolutionStrategies"
-listStateReference"$
-
-ü ü(
-
-%0java.util.ListB1/
--metaheuristics.generators.EvolutionStrategiesH
+@evolutionary_algorithms.complement.TruncationSelection#<init>()V
+__unknown_file ("startingBlock*∞
+startingBlock{
+sC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/evolutionary_algorithms/complement/TruncationSelection.java (å
+â
+{
+sC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/evolutionary_algorithms/complement/TruncationSelection.java (
+%0"<evolutionary_algorithms.complement.FatherSelection#<init>()V*F
+ (:8
+6evolutionary_algorithms.complement.TruncationSelection"í
+{
+sC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/evolutionary_algorithms/complement/TruncationSelection.java (
+implicit returnB:8
+6evolutionary_algorithms.complement.TruncationSelection

@@ -71,7 +71,7 @@ public class MultiobjectiveTabuSearchTest {
         generator = new MultiobjectiveTabuSearch();
         
         // Inject mocks into generator
-        Field candidateValueField = MultiobjectiveTabuSearch.class.getDeclaredField("candidatevalue");
+        Field candidateValueField = AbstractTabuSearch.class.getDeclaredField("candidatevalue");
         candidateValueField.setAccessible(true);
         candidateValueField.set(generator, candidateValueMock);
         

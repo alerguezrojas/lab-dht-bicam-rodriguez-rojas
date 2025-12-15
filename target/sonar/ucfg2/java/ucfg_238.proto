@@ -1,18 +1,7 @@
 
-Imetaheuristics.generators.GeneticAlgorithm#getListState()Ljava/util/List;s
-gC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/GeneticAlgorithm.javaê ê( "1*æ
-1
-ë	 ë(Ü
-É
-
-ë	 ë(
-%0java.util.List"__id*Y
-
-__unknown_file (=*;,
-*metaheuristics.generators.GeneticAlgorithm"
-	listState"$
-
-ë ë(
-
-%0java.util.ListB.,
-*metaheuristics.generators.GeneticAlgorithmH
+Cmetaheuristics.generators.HillClimbing#getListCountBetterGender()[Im
+cC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/HillClimbing.java9 9(&"1*!
+1:	 :("
+: :($
+""B*(
+&metaheuristics.generators.HillClimbingH

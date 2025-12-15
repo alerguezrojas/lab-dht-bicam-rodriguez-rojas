@@ -1,15 +1,20 @@
 
-\problem.definition.ObjetiveFunction#getTypeProblem()Lproblem/definition/Problem$ProblemType;j
-`C:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/problem/definition/ObjetiveFunction.java (""1*ã
-1	 (—
-”
-	 (,
-%0&problem.definition.Problem$ProblemType"__id*T
+4problem.definition.State#getCopy()Ljava/lang/Object;_
+UC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/problem/definition/State.javaR R("1*Ï
+1S S(FD
+S S(
+%0problem.definition.State"problem.definition.StateÉ
+Æ
+S	 S(
+%1"<problem.definition.State#<init>(Lproblem/definition/State;)V*<
 
-__unknown_file (8*6%
-#problem.definition.ObjetiveFunction"
-typeProblem":
- (.
-,
-%0&problem.definition.Problem$ProblemTypeB'%
-#problem.definition.ObjetiveFunctionH
+__unknown_file ( 
+
+%0problem.definition.State*8
+
+__unknown_file (
+problem.definition.State",
+S S( 
+
+%0problem.definition.StateB
+problem.definition.StateH

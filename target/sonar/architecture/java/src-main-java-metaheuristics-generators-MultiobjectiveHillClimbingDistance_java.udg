@@ -1,5 +1,5 @@
 
-1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765755612273*java2.B¶;
+1.0+alerguezrojas_lab-dht-bicam-rodriguez-rojasJavaFrontend"1765798333216*java2.Bä'
 T
 Osrc/main/java/metaheuristics/generators/MultiobjectiveHillClimbingDistance.java2
 	
@@ -27,13 +27,13 @@ B
 
 full-range15
 
-(19:1)-(251:2)16
+(16:1)-(179:2)16
 
 simple-name17
 (
 "MultiobjectiveHillClimbingDistance18
-)
-#metaheuristics.generators.Generator20
+4
+.metaheuristics.generators.AbstractHillClimbing20
 
 unknown21
 
@@ -41,280 +41,171 @@ full-range15
 
 
 uses23
-Q
-Kmetaheuristics.generators.MultiobjectiveHillClimbingDistance.candidatevalue25
+L
+Fmetaheuristics.generators.MultiobjectiveHillClimbingDistance.listTrace25
 
 field26
 
 	protected27
 
-(21:2)-(21:42)28
-
-candidatevalue29
-0
-*local_search.candidate_type.CandidateValue31
-
-is type32
-R
-Lmetaheuristics.generators.MultiobjectiveHillClimbingDistance.typeAcceptation34
-
-(22:2)-(22:39)35
-
-typeAcceptation36
-.
-(local_search.acceptation_type.AcceptType38
-K
-Emetaheuristics.generators.MultiobjectiveHillClimbingDistance.strategy40
-
-(23:2)-(23:34)41
-
-strategy42
-*
-$local_search.complement.StrategyType44
-P
-Jmetaheuristics.generators.MultiobjectiveHillClimbingDistance.typeCandidate46
-
-(24:2)-(24:40)47
-
-typeCandidate48
-/
-)local_search.candidate_type.CandidateType50
-S
-Mmetaheuristics.generators.MultiobjectiveHillClimbingDistance.stateReferenceHC52
-
-(25:2)-(25:35)53
-
-stateReferenceHC54
-
-problem.definition.State56
-T
-Nmetaheuristics.generators.MultiobjectiveHillClimbingDistance.ifacceptCandidate58
-
-(26:2)-(26:55)59
-
-ifacceptCandidate60
-0
-*factory_interface.IFFactoryAcceptCandidate62
-P
-Jmetaheuristics.generators.MultiobjectiveHillClimbingDistance.Generatortype64
-
-(27:2)-(27:40)65
-
-Generatortype66
--
-'metaheuristics.generators.GeneratorType68
-U
-Ometaheuristics.generators.MultiobjectiveHillClimbingDistance.listStateReference70
-
-(28:2)-(28:68)71
-
-listStateReference72
-I
-Cmetaheuristics.generators.MultiobjectiveHillClimbingDistance.weight74
-
-(29:2)-(29:25)75
-
-weight76
-L
-Fmetaheuristics.generators.MultiobjectiveHillClimbingDistance.listTrace78
-
-(30:2)-(30:59)79
+(18:2)-(18:59)28
 
-	listTrace80
+	listTrace29
 O
-Imetaheuristics.generators.MultiobjectiveHillClimbingDistance.visitedState82
+Imetaheuristics.generators.MultiobjectiveHillClimbingDistance.visitedState31
 
-private83
+private32
 
-(31:2)-(31:60)84
+(19:2)-(19:60)33
 
-visitedState85
+visitedState34
+
+problem.definition.State36
 P
-Jmetaheuristics.generators.MultiobjectiveHillClimbingDistance.sizeNeighbors87
+Jmetaheuristics.generators.MultiobjectiveHillClimbingDistance.sizeNeighbors38
 
-(32:2)-(32:34)88
+(20:2)-(20:34)39
 
-sizeNeighbors89
+sizeNeighbors40
 S
-Mmetaheuristics.generators.MultiobjectiveHillClimbingDistance.distanceSolution91
+Mmetaheuristics.generators.MultiobjectiveHillClimbingDistance.distanceSolution42
 
-(34:2)-(34:72)92
+(22:2)-(22:72)43
 
-distanceSolution93
+distanceSolution44
 L
-Fmetaheuristics.generators.MultiobjectiveHillClimbingDistance#<init>()V95
+Fmetaheuristics.generators.MultiobjectiveHillClimbingDistance#<init>()V46
 
-method96
+method47
 
-(37:2)-(46:3)97
+(25:2)-(32:3)48
 
-calls98
+calls49
 
 
-references99
-B
-;local_search.acceptation_type.AcceptType.AcceptNotDominated101
-2
-+local_search.complement.StrategyType.NORMAL103
-F
-?local_search.candidate_type.CandidateType.NotDominatedCandidate105
-Q
-Jmetaheuristics.generators.GeneratorType.MultiobjectiveHillClimbingDistance107
-{
-tmetaheuristics.generators.MultiobjectiveHillClimbingDistance#generate(Ljava/lang/Integer;)Lproblem/definition/State;109
-
-(48:2)-(54:3)110
-
-generate111
-
-returns112
-"
-problem.definition.Operator114
-s
-lproblem.definition.Operator#generatedNewState(Lproblem/definition/State;Ljava/lang/Integer;)Ljava/util/List;116
-!
-problem.definition.Problem118
-L
-Eproblem.definition.Problem#getOperator()Lproblem/definition/Operator;120
-'
- metaheuristics.strategy.Strategy122
-P
-Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;124
-W
-Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;126
-Î
-„local_search.candidate_type.CandidateValue#stateCandidate(Lproblem/definition/State;Llocal_search/candidate_type/CandidateType;Llocal_search/complement/StrategyType;Ljava/lang/Integer;Ljava/util/List;)Lproblem/definition/State;128
-É
-|metaheuristics.generators.MultiobjectiveHillClimbingDistance#updateReference(Lproblem/definition/State;Ljava/lang/Integer;)V130
-
-(56:2)-(114:3)131
-
-updateReference132
-
-	has param133
-:
-3metaheuristics.strategy.Strategy.listRefPoblacFinal135
+references50
+.
+(local_search.acceptation_type.AcceptType52
+D
+>metaheuristics.generators.AbstractHillClimbing.typeAcceptation54
 A
-:problem.definition.State#clone()Lproblem/definition/State;137
-,
-%factory_method.FactoryAcceptCandidate139
-8
-1local_search.acceptation_type.AcceptableCandidate141
-ß
-üfactory_interface.IFFactoryAcceptCandidate#createAcceptCandidate(Llocal_search/acceptation_type/AcceptType;)Llocal_search/acceptation_type/AcceptableCandidate;143
-í
-älocal_search.acceptation_type.AcceptableCandidate#acceptCandidate(Lproblem/definition/State;Lproblem/definition/State;)Ljava/lang/Boolean;145
-h
-ametaheuristics.generators.MultiobjectiveHillClimbingDistance#Contain(Lproblem/definition/State;)Z147
-ï
-çmetaheuristics.generators.MultiobjectiveHillClimbingDistance#SolutionMoreDistance(Ljava/util/List;Ljava/util/List;)Lproblem/definition/State;149
-[
-Tproblem.definition.Operator#generateRandomState(Ljava/lang/Integer;)Ljava/util/List;151
-G
-@problem.definition.Problem#evaluate(Lproblem/definition/State;)V153
-f
-_metaheuristics.generators.MultiobjectiveHillClimbingDistance#getReferenceList()Ljava/util/List;155
-
-(116:2)-(132:3)156
-
-SolutionMoreDistance157
-
-(134:2)-(138:3)158
-
-getReferenceList159
-l
-emetaheuristics.generators.MultiobjectiveHillClimbingDistance#getReference()Lproblem/definition/State;161
-
-(140:2)-(143:3)162
-
-getReference163
-l
-emetaheuristics.generators.MultiobjectiveHillClimbingDistance#setStateRef(Lproblem/definition/State;)V165
-
-(145:2)-(147:3)166
-
-setStateRef167
-t
-mmetaheuristics.generators.MultiobjectiveHillClimbingDistance#setInitialReference(Lproblem/definition/State;)V169
-
-(149:2)-(152:3)170
-
-setInitialReference171
-
-xmetaheuristics.generators.MultiobjectiveHillClimbingDistance#getGeneratorType()Lmetaheuristics/generators/GeneratorType;173
-
-(154:2)-(156:3)174
-
-getGeneratorType175
-Ä
-ymetaheuristics.generators.MultiobjectiveHillClimbingDistance#setGeneratorType(Lmetaheuristics/generators/GeneratorType;)V177
-
-(158:2)-(160:3)178
-
-setGeneratorType179
-v
-ometaheuristics.generators.MultiobjectiveHillClimbingDistance#getType()Lmetaheuristics/generators/GeneratorType;181
-
-(162:2)-(165:3)182
-
-getType183
-`
-Ymetaheuristics.generators.MultiobjectiveHillClimbingDistance#getSonList()Ljava/util/List;185
-
-(167:2)-(171:3)186
-
-
-getSonList187
-z
-smetaheuristics.generators.MultiobjectiveHillClimbingDistance#DistanceCalculateAdd(Ljava/util/List;)Ljava/util/List;189
-
-(173:2)-(203:3)190
-
-DistanceCalculateAdd191
+;local_search.acceptation_type.AcceptType.AcceptNotDominated56
+*
+$local_search.complement.StrategyType58
+=
+7metaheuristics.generators.AbstractHillClimbing.strategy60
+1
++local_search.complement.StrategyType.NORMAL62
+/
+)local_search.candidate_type.CandidateType64
+B
+<metaheuristics.generators.AbstractHillClimbing.typeCandidate66
 E
->problem.definition.State#distance(Lproblem/definition/State;)D193
-
-(206:2)-(215:3)194
-
-Contain195
-G
-@problem.definition.State#comparator(Lproblem/definition/State;)Z197
-o
-hmetaheuristics.generators.MultiobjectiveHillClimbingDistance#awardUpdateREF(Lproblem/definition/State;)Z199
-
-(217:2)-(221:3)200
+?local_search.candidate_type.CandidateType.NotDominatedCandidate68
+-
+'metaheuristics.generators.GeneratorType70
+B
+<metaheuristics.generators.AbstractHillClimbing.Generatortype72
+P
+Jmetaheuristics.generators.GeneratorType.MultiobjectiveHillClimbingDistance74
+;
+5metaheuristics.generators.AbstractHillClimbing.weight76
+Ç
+|metaheuristics.generators.MultiobjectiveHillClimbingDistance#updateReference(Lproblem/definition/State;Ljava/lang/Integer;)V78
+
+(34:2)-(92:3)79
 
-awardUpdateREF201
-P
-Imetaheuristics.generators.MultiobjectiveHillClimbingDistance#getWeight()F203
-
-(224:2)-(227:3)204
-
-	getWeight205
-Q
-Jmetaheuristics.generators.MultiobjectiveHillClimbingDistance#setWeight(F)V207
-
-(229:2)-(232:3)208
-
-	setWeight209
-`
-Ymetaheuristics.generators.MultiobjectiveHillClimbingDistance#getListCountBetterGender()[I211
-
-(234:2)-(238:3)212
-
-getListCountBetterGender213
-Z
-Smetaheuristics.generators.MultiobjectiveHillClimbingDistance#getListCountGender()[I215
-
-(240:2)-(244:3)216
-
-getListCountGender217
-P
-Imetaheuristics.generators.MultiobjectiveHillClimbingDistance#getTrace()[F219
-
-(246:2)-(250:3)220
+updateReference80
 
-getTrace221J#
+	has param81
+
+is type82
+&
+ metaheuristics.strategy.Strategy84
+
+returns85
+V
+Pmetaheuristics.strategy.Strategy#getStrategy()Lmetaheuristics/strategy/Strategy;87
+9
+3metaheuristics.strategy.Strategy.listRefPoblacFinal89
+@
+:problem.definition.State#clone()Lproblem/definition/State;91
+E
+?metaheuristics.generators.AbstractHillClimbing.stateReferenceHC93
+0
+*factory_interface.IFFactoryAcceptCandidate95
+F
+@metaheuristics.generators.AbstractHillClimbing.ifacceptCandidate97
++
+%factory_method.FactoryAcceptCandidate99
+8
+1local_search.acceptation_type.AcceptableCandidate101
+ß
+üfactory_interface.IFFactoryAcceptCandidate#createAcceptCandidate(Llocal_search/acceptation_type/AcceptType;)Llocal_search/acceptation_type/AcceptableCandidate;103
+"
+problem.definition.Operator105
+s
+lproblem.definition.Operator#generatedNewState(Lproblem/definition/State;Ljava/lang/Integer;)Ljava/util/List;107
+!
+problem.definition.Problem109
+L
+Eproblem.definition.Problem#getOperator()Lproblem/definition/Operator;111
+P
+Imetaheuristics.strategy.Strategy#getProblem()Lproblem/definition/Problem;113
+í
+älocal_search.acceptation_type.AcceptableCandidate#acceptCandidate(Lproblem/definition/State;Lproblem/definition/State;)Ljava/lang/Boolean;115
+h
+ametaheuristics.generators.MultiobjectiveHillClimbingDistance#Contain(Lproblem/definition/State;)Z117
+ï
+çmetaheuristics.generators.MultiobjectiveHillClimbingDistance#SolutionMoreDistance(Ljava/util/List;Ljava/util/List;)Lproblem/definition/State;119
+[
+Tproblem.definition.Operator#generateRandomState(Ljava/lang/Integer;)Ljava/util/List;121
+G
+@problem.definition.Problem#evaluate(Lproblem/definition/State;)V123
+f
+_metaheuristics.generators.MultiobjectiveHillClimbingDistance#getReferenceList()Ljava/util/List;125
+
+(94:2)-(110:3)126
+
+SolutionMoreDistance127
+
+(112:2)-(116:3)128
+
+getReferenceList129
+H
+Ametaheuristics.generators.AbstractHillClimbing.listStateReference131
+z
+smetaheuristics.generators.MultiobjectiveHillClimbingDistance#DistanceCalculateAdd(Ljava/util/List;)Ljava/util/List;133
+
+(118:2)-(148:3)134
+
+DistanceCalculateAdd135
+E
+>problem.definition.State#distance(Lproblem/definition/State;)D137
+
+(151:2)-(160:3)138
+
+Contain139
+G
+@problem.definition.State#comparator(Lproblem/definition/State;)Z141
+P
+Imetaheuristics.generators.MultiobjectiveHillClimbingDistance#getTrace()[F143
+
+(162:2)-(166:3)144
+
+getTrace145
+`
+Ymetaheuristics.generators.MultiobjectiveHillClimbingDistance#getListCountBetterGender()[I147
+
+(168:2)-(172:3)148
+
+getListCountBetterGender149
+Z
+Smetaheuristics.generators.MultiobjectiveHillClimbingDistance#getListCountGender()[I151
+
+(174:2)-(178:3)152
+
+getListCountGender153J#
 !
 1
 12
@@ -330,293 +221,146 @@ Imetaheuristics.generators.MultiobjectiveHillClimbingDistance#getTrace()[F219
 
 
 5
-6jµ
-N
-69H
-697026 *
-1 (*210:7B$
+6j˛
+U
+116N
+11611747 *
+1ó ó(210:7B&
 
 
 13
-27
+32
+
+15
+138
+
+17
+139
+
+57
+575821
+S
+118L
+11811947 *
+1^ ^($210:7B&
 
 
-15
-71
-
-
-17
-72
-U
-198N
-19819996 *
-1⁄ ⁄(210:7B&
+13
+32
+
+15
+126
+
+17
+127
+
+102
+10210321
+S
+124L
+12412547 *
+1q q(%210:7B&
 
 
 13
 14
 
 15
-200
+128
 
 17
-201
-N
-63H
-636426 *
-1 ('210:7B$
-
-
-13
-27
-
-
-15
-65
-
-
-17
-66
-U
-146N
-14614796 *
-1Œ Œ(210:7B&
-
-
-13
-83
-
-15
-194
-
-17
-195
-N
-73H
-737426 *
-1 (210:7B$
-
-
-13
-27
-
-
-15
-75
-
-
-17
-76
-U
-184N
-18418596 *
-1® ®(210:7B&
-
-
-13
-14
-
-15
-186
-
-17
-187
+129
 N
 45H
-454626 *
-1 ('210:7B$
+454647 *
+1	 (+210:7B$
 
 
 13
-27
+14
 
 
 15
-47
-
-
-17
 48
-U
-176N
-17617796 *
-1û û(210:7B&
-
-
-13
-14
-
-15
-178
-
-17
-179
-
-43
-434421
-S
-148L
-14814996 *
-1t t($210:7B&
-
-
-13
-83
-
-15
-156
-
-17
-157
-
-142
-14214321
-U
-154N
-15415596 *
-1á á(%210:7B&
-
-
-13
-14
-
-15
-158
-
-17
-159
-U
-160N
-16016196 *
-1ç ç(210:7B&
-
-
-13
-14
-
-15
-162
-
-17
-163
-
-19
-192021
-N
-94H
-949596 *
-1%	 %(+210:7B$
-
-
-13
-14
-
-
-15
-97
 
 
 17
 18
 U
-218N
-21821996 *
-1˜ ˜(210:7B&
+142N
+14214347 *
+1£ £(210:7B&
 
 
 13
 14
 
 15
-220
+144
 
 17
-221
-
-104
-10410521
-S
-108L
-10810996 *
-11 1(210:7B&
-
-
-13
-14
-
-15
-110
-
-17
-111
+145
 
 67
 676821
+
+75
+757621
+
+69
+697021
 
-123
-12312421
+112
+11211321
 
-152
-15215321
+122
+12212321
+
+61
+616221
+
+71
+717221
 
-102
-10210321
+110
+11011121
 
-119
-11912021
-
-196
-19619721
+140
+14014121
 N
-81H
-818226 *
-1 ("210:7B$
+30H
+303126 *
+1 ("210:7B$
 
 
 13
-83
+32
 
 
 15
-84
+33
 
 
 17
-85
+34
 U
-214N
-21421596 *
-1Ò Ò(!210:7B&
+150N
+15015147 *
+1Ø Ø(!210:7B&
 
 
 13
 14
 
 15
-216
+152
 
 17
-217
+153
 N
-24H
-242526 *
-1 ()210:7B$
-
-
-13
-27
-
-
-15
-28
-
-
-17
-29
-N
-86H
-868726 *
-1   (!210:7B$
+37H
+373826 *
+1 (!210:7B$
 
 
 13
@@ -624,18 +368,18 @@ N
 
 
 15
-88
+39
 
 
 17
-89
-
-106
-10610721
+40
+
+73
+737421
 J
 10D
 101112 *
-1 (0:7B$
+1 (0:7B$
 
 
 13
@@ -648,206 +392,114 @@ J
 
 17
 18
-N
-39H
-394026 *
-1 (!210:7B$
-
-
-13
-27
-
-
-15
-41
-
-
-17
-42
-U
-168N
-16816996 *
-1ñ ñ(!210:7B&
-
-
-13
-14
-
-15
-170
-
-17
-171
-U
-210N
-21021196 *
-1Î Î('210:7B&
-
-
-13
-14
-
-15
-212
-
-17
-213
 
-125
-12512621
+130
+13013121
 
-30
-303121
-N
-51H
-515226 *
-1 ("210:7B$
-
-
-13
-27
-
-
-15
-53
-
-
-17
-54
-
-140
-14014121
+65
+656621
+
+53
+535421
 U
-180N
-18018196 *
-1£ £(210:7B&
+146N
+14614747 *
+1© ©('210:7B&
 
 
 13
 14
 
 15
-182
+148
 
 17
-183
+149
 
-37
-373821
-U
-172N
-17217396 *
-1ö ö('210:7B&
-
-
-13
-14
-
-15
-174
-
-17
-175
-N
-33H
-333426 *
-1 (&210:7B$
-
-
-13
-27
-
-
-15
-35
-
-
-17
-36
-
-49
-495021
+86
+868721
 
 100
 10010121
-U
-188N
-18818996 *
-1≠ ≠(1210:7B&
-
-
-13
-14
-
-15
-190
-
-17
-191
-N
-90H
-909126 *
-1" "(-210:7B$
-
-
-13
-14
-
-
-15
-92
-
-
-17
-93
 
-61
-616221
-
-138
-13813921
-
-144
-14414521
-
-117
-11711821
-
-121
-12112221
-
-150
-15015121
-
-192
-19219321
-U
-202N
-20220396 *
-1· ·(210:7B&
-
-
-13
-14
-
-15
-204
-
-17
-205
+19
+192021
+
+51
+515221
+
+92
+929321
+
+63
+636421
 
 55
 555621
+S
+132L
+13213347 *
+1v v(1210:7B&
+
+
+13
+14
+
+15
+134
+
+17
+135
+N
+41H
+414226 *
+1 (-210:7B$
+
+
+13
+14
+
+
+15
+43
+
+
+17
+44
+
+94
+949521
+
+98
+989921
+
+114
+11411521
+
+83
+838421
+
+108
+10810921
+
+96
+969721
+
+120
+12012121
 
 136
 13613721
-
-127
-12712821
+
+35
+353621
+
+90
+909121
 N
-57H
-575826 *
-1% (6210:7B$
+24H
+242526 *
+1 (!210:7B$
 
 
 13
@@ -855,19 +507,22 @@ N
 
 
 15
-59
+28
 
 
 17
-60
+29
+
+59
+596021
 N
 77H
-777826 *
-1 (!210:7B$
+777847 *
+1# #(210:7B$
 
 
 13
-27
+14
 
 
 15
@@ -877,1114 +532,747 @@ N
 17
 80
 
-115
-11511621
-S
-129L
-12913096 *
-19 9(210:7B&
-
-
-13
-14
-
-15
-131
-
-17
-132
-U
-164N
-16416596 *
-1ë ë(210:7B&
-
-
-13
-14
-
-15
-166
-
-17
-167
-U
-206N
-20620796 *
-1Ê Ê(210:7B&
-
-
-13
-14
-
-15
-208
-
-17
-209
+106
+10610721
+
+88
+888921
 
-134
-13413521
-
-113
-11311421ràN
+104
+10410521rÇ4
 
 101922*
-19 (B
+19 (M
 
 101923*
-19 (B
+19 (M
 
-243032*
-1 (
+303523*
+1 (
 
-243023*
-1 (
+303523*
+13 (8
 
-243023*
-1 ()
+451049*
+1	 (+
 
-333732*
-1 (
+451950*
+1 (
 
-333723*
-1 (
+451949*
+1 (
 
-333723*
-1 (&
+451949*
+1 (
 
-394332*
-1 (
+451023*
+1 (
 
-394323*
-1 (
+451050*
+1 (
 
-394323*
-1 (!
+455123*
+1 (
 
-454932*
-1 (
+455350*
+1 (
 
-454923*
-1 (
+455123*
+1 ($
 
-454923*
-1 ('
+455123*
+1% (7
 
-515532*
-1 (
+455550*
+1% (7
 
-515523*
-1 (
+451023*
+1 (
 
-515523*
-1 ("
+451050*
+1 (
 
-576132*
-1 ($
+455723*
+1 (
 
-576123*
-1 ($
+455950*
+1 (
 
-576123*
-1% (6
+455723*
+1 (
 
-636732*
-1 (
+455723*
+1  (&
 
-636723*
-1 (
+456150*
+1  (&
 
-636723*
-1 ('
+451023*
+1 (
 
-695523*
-1 (
+451050*
+1 (
 
-695523*
-1; (@
+456323*
+1 (
 
-815523*
-1 (
+456550*
+1 (
 
-815523*
-13 (8
+456323*
+1 (%
 
-941098*
-1%	 %(+
+456323*
+1& (;
 
-941999*
-1& &(
+456750*
+1& (;
 
-941998*
-1& &(
+451023*
+1 (
 
-941998*
-1& &(
+451050*
+1 (
 
-941023*
-1' '(
+456923*
+1 (
 
-941099*
-1' '(
+457150*
+1 (
 
-943723*
-1' '(
+456923*
+1 (%
 
-943399*
-1' '(
+456923*
+1& (H
 
-943723*
-1' '($
+457350*
+1& (H
 
-943723*
-1'% '(7
-
-9410099*
-1'% '(7
-
-941023*
-1( ((
-
-941099*
-1( ((
-
-944323*
-1( ((
+452450*
+1 (
 
-943999*
-1( ((
+452450*
+1 (
 
-944323*
-1( ((
+457550*
+1 (
 
-944323*
-1(  ((&
-
-9410299*
-1(  ((&
+773581*
+1# #(#
 
-941023*
-1) )(
+773582*
+1#$ #(2
 
-941099*
-1) )(
+773523*
+1# #(#
 
-944923*
-1) )(
+778385*
+1& &(
 
-944599*
-1) )(
+778350*
+1& &(
 
-944923*
-1) )(%
+778649*
+1& &(
 
-944923*
-1)& )(;
-
-9410499*
-1)& )(;
+778323*
+1& &(
 
-941023*
-1* *(
+778850*
+1& &(/
 
-941099*
-1* *(
+778385*
+1' '(
 
-943023*
-1* *(
+778350*
+1' '(
 
-942499*
-1* *(
+778649*
+1' '(
 
-943098*
-1* *(+
+778323*
+1' '(
 
-941023*
-1+ +(
+778850*
+1' '(-
 
-941099*
-1+ +(
+773585*
+1'2 '(H
 
-946723*
-1+ +(
+773550*
+1'2 '(H
 
-946399*
-1+ +(
+779049*
+1'C '(H
 
-946723*
-1+ +(%
+779250*
+1'2 '(B
 
-946723*
-1+& +(H
-
-9410699*
-1+& +(H
+773523*
+1'2 '(B
 
-941023*
-1, ,(
+779250*
+1'2 '(B
 
-941099*
-1, ,(
+774150*
+1( ((
 
-947399*
-1, ,(
+774150*
+1( ((
 
-947799*
-1- -(
+779423*
+1* *(
 
-947799*
-1- -(
+779650*
+1* *(
 
-947399*
-1- -(
-
-10855112*
-11	 1(
-
-1085523*
-11	 1(
-
-1085523*
-12 2(
-
-1085523*
-12, 2(1
-
-10811399*
-13 3(U
-
-10811598*
-13D 3(U
-
-108113112*
-13 3(A
-
-10811799*
-13 3(A
-
-10811998*
-136 3(A
-
-108117112*
-13 3(3
-
-10812199*
-13 3(3
-
-10812398*
-13) 3(3
-
-108121112*
-13 3(&
-
-10812199*
-13 3(&
-
-10812598*
-13 3(&
-
-10812123*
-13 3(
-
-1085523*
-13V 3(f
-
-1085199*
-13V 3(f
+779849*
+1* *(1
 
-1085532*
-14	 4(
+7710082*
+1+ +( 
 
-1085523*
-14 4(
-
-10855112*
-14 4(7
-
-1083099*
-14 4(7
-
-10812798*
-14) 4(7
-
-1082499*
-14 4((
-
-1083023*
-14 4((
+7710023*
+1+ +(
 
-1082499*
-14 4((
+7710085*
+1+# +(J
+
+779450*
+1+# +(J
 
-1085523*
-148 4(H
+7710249*
+1+5 +(J
+
+779650*
+1+# +(4
+
+779423*
+1+# +(4
+
+779650*
+1+# +(4
+
+775123*
+1+K +(Z
+
+775350*
+1+K +(Z
+
+773582*
+1,	 ,(
+
+773523*
+1, ,(
+
+773585*
+1, ,(B
+
+778385*
+1, ,()
+
+778350*
+1, ,()
+
+778649*
+1, ,()
+
+778323*
+1, ,(
+
+778850*
+1,, ,(>
+
+778385*
+1,C ,(W
+
+778350*
+1,C ,(W
+
+778649*
+1,L ,(W
+
+778323*
+1,C ,(K
+
+778850*
+1,Z ,(l
+
+773523*
+1- -(
+
+773523*
+1-, -(1
 
-1085199*
-148 4(H
+7710450*
+1. .(U
 
-1084923*
-14J 4(W
+7710649*
+1.D .(U
 
-1084599*
-14J 4(W
+7710485*
+1. .(A
 
-1084323*
-14Y 4(a
+7710850*
+1. .(A
 
-1083999*
-14Y 4(a
-
-12955133*
-19 9(#
+7711049*
+1.6 .(A
 
-1295532*
-19$ 9(2
+7710885*
+1. .(3
+
+778350*
+1. .(3
 
-1295523*
-19 9(#
-
-129121112*
-1< <(
-
-12912199*
-1< <(
-
-12912598*
-1< <(
-
-12912123*
-1< <(
-
-12913499*
-1< <(/
-
-129121112*
-1= =(
-
-12912199*
-1= =(
-
-12912598*
-1= =(
-
-12912123*
-1= =(
-
-12913499*
-1= =(-
-
-12955112*
-1=2 =(H
-
-1295599*
-1=2 =(H
-
-12913698*
-1=C =(H
+7711249*
+1.) .(3
+
+778385*
+1. .(&
+
+778350*
+1. .(&
+
+778649*
+1. .(&
+
+778323*
+1. .(
+
+773523*
+1.V .(f
+
+779250*
+1.V .(f
+
+773750*
+1.h .(u
 
-1295199*
-1=2 =(B
+7710050*
+13 3(.
 
-1295523*
-1=2 =(B
+7711449*
+13 3(.
+
+773585*
+13: 3(N
+
+773550*
+13: 3(N
+
+779049*
+13I 3(N
+
+773523*
+15 5(
+
+779250*
+15 5(
+
+773585*
+15 5(,
+
+773550*
+15 5(,
+
+779049*
+15' 5(,
+
+773050*
+16 6(
+
+773523*
+16" 6('
+
+773585*
+17 7(%
+
+773550*
+17 7(%
+
+779049*
+17  7(%
+
+779250*
+17 7(
+
+773523*
+17 7(
+
+779250*
+17 7(
+
+771050*
+1?
+ ?(
 
-1295199*
-1=2 =(B
+7711649*
+1?
+ ?(
+
+773585*
+1? ?("
+
+773523*
+1@ @(
+
+779250*
+1@ @(
+
+773585*
+1@ @(.
+
+771050*
+1@ @(.
 
-1299099*
-1> >(
+7711849*
+1@ @(.
+
+778385*
+1@/ @(C
+
+778350*
+1@/ @(C
+
+778649*
+1@8 @(C
+
+778323*
+1@/ @(7
+
+778850*
+1@F @(X
+
+774150*
+1@Z @(j
+
+773050*
+1A A(
+
+773050*
+1A A(
+
+773523*
+1A A((
+
+779250*
+1A A((
+
+773585*
+1C C('
+
+773550*
+1C C('
+
+779049*
+1C" C('
+
+779250*
+1C C(!
+
+773523*
+1C C(!
+
+779250*
+1C C(!
+
+773750*
+1I+ I(8
+
+773585*
+1J J(c
 
-1299099*
-1> >(
+7710450*
+1J J(\
 
-1296123*
-1@ @(
+7712049*
+1JI J(\
 
-1295799*
-1@ @(
-
-12913898*
-1@ @(1
-
-12914032*
-1A A( 
-
-12914023*
-1A A(
-
-129140112*
-1A# A(J
-
-1296199*
-1A# A(J
-
-12914298*
-1A5 A(J
+7710485*
+1J J(F
 
-1295799*
-1A# A(4
+7710850*
+1J J(F
 
-1296123*
-1A# A(4
+7711049*
+1J; J(F
 
-1295799*
-1A# A(4
+7710885*
+1J J(8
+
+778350*
+1J J(8
 
-1293723*
-1AK A(Z
+7711249*
+1J. J(8
+
+778385*
+1J J(+
+
+778350*
+1J J(+
+
+778649*
+1J  J(+
+
+778323*
+1J J(
+
+771050*
+1K
+ K(
 
-1293399*
-1AK A(Z
+7711649*
+1K
+ K(
 
-1295532*
-1B	 B(
+7710850*
+1L L(3
 
-1295523*
-1B B(
-
-12955112*
-1B B(B
-
-129121112*
-1B B()
-
-12912199*
-1B B()
-
-12912598*
-1B B()
-
-12912123*
-1B B(
-
-12913499*
-1B, B(>
-
-129121112*
-1BC B(W
-
-12912199*
-1BC B(W
-
-12912598*
-1BL B(W
-
-12912123*
-1BC B(K
-
-12913499*
-1BZ B(l
+7712249*
+1L+ L(3
 
-1295523*
-1C C(
+7710885*
+1L L((
+
+778350*
+1L L((
 
-1295523*
-1C, C(1
-
-12911399*
-1D D(U
-
-12911598*
-1DD D(U
-
-129113112*
-1D D(A
-
-12911799*
-1D D(A
-
-12911998*
-1D6 D(A
-
-129117112*
-1D D(3
-
-12912199*
-1D D(3
-
-12912398*
-1D) D(3
-
-129121112*
-1D D(&
-
-12912199*
-1D D(&
-
-12912598*
-1D D(&
-
-12912123*
-1D D(
+7711249*
+1L L((
+
+778385*
+1L L(
+
+778350*
+1L L(
+
+778649*
+1L L(
+
+778323*
+1L L(
+
+773050*
+1M M(
+
+773050*
+1M M(
 
-1295523*
-1DV D(f
+7710050*
+1P P()
 
-1295199*
-1DV D(f
+7711449*
+1P P()
+
+773585*
+1P5 P(I
+
+773550*
+1P5 P(I
+
+779049*
+1PD P(I
+
+773523*
+1T T(
+
+779250*
+1T T(
+
+773585*
+1T T(-
+
+773550*
+1T T(-
+
+779049*
+1T( T(-
+
+773050*
+1U U(
+
+773523*
+1U# U((
+
+773585*
+1V V((
+
+773550*
+1V V((
+
+779049*
+1V# V((
+
+779250*
+1V V("
+
+773523*
+1V V("
+
+779250*
+1V V("
+
+771050*
+1[ [(
 
-1298699*
-1Dh D(u
-
-12914099*
-1I I(.
-
-12914498*
-1I I(.
-
-12955112*
-1I: I(N
-
-1295599*
-1I: I(N
-
-12913698*
-1II I(N
+7712449*
+1[ [(
 
-1295523*
-1K K(
+1183585*
+1^
+ ^(
 
-1295199*
-1K K(
-
-12955112*
-1K K(,
-
-1295599*
-1K K(,
-
-12913698*
-1K' K(,
+1183523*
+1^
+ ^(
 
-1298199*
-1L L(
+1183523*
+1^* ^(/
 
-1295523*
-1L" L('
-
-12955112*
-1M M(%
-
-1295599*
-1M M(%
-
-12913698*
-1M  M(%
+1183582*
+1b b(
 
-1295199*
-1M M(
+1183523*
+1b b(
 
-1295523*
-1M M(
+1183585*
+1b b($
 
-1295199*
-1M M(
+1183523*
+1b) b(.
 
-1291099*
-1U
- U(
+1243523*
+1q q(
 
-12914698*
-1U
- U(
+12413050*
+1r r(
 
-12955112*
-1U U("
-
-1295523*
-1V V(
+12413050*
+1r r(
 
-1295199*
-1V V(
-
-12955112*
-1V V(.
-
-1291099*
-1V V(.
-
-12914898*
-1V V(.
-
-129121112*
-1V/ V(C
-
-12912199*
-1V/ V(C
-
-12912598*
-1V8 V(C
-
-12912123*
-1V/ V(7
-
-12913499*
-1VF V(X
+1243585*
+1r r(0
 
-1299099*
-1VZ V(j
+1243550*
+1r r(0
 
-1298199*
-1W W(
+1249049*
+1r+ r(0
 
-1298199*
-1W W(
+1249250*
+1r r(*
 
-1295523*
-1W W((
+1243523*
+1r r(*
 
-1295199*
-1W W((
+1249250*
+1r r(*
 
-12955112*
-1Y Y('
-
-1295599*
-1Y Y('
-
-12913698*
-1Y" Y('
-
-1295199*
-1Y Y(!
+12413050*
+1s
+ s(
 
-1295523*
-1Y Y(!
-
-1295199*
-1Y Y(!
-
-1298699*
-1_+ _(8
-
-12955112*
-1` `(c
-
-12911399*
-1` `(\
-
-12915098*
-1`I `(\
-
-129113112*
-1` `(F
-
-12911799*
-1` `(F
-
-12911998*
-1`; `(F
-
-129117112*
-1` `(8
-
-12912199*
-1` `(8
-
-12912398*
-1`. `(8
-
-129121112*
-1` `(+
-
-12912199*
-1` `(+
-
-12912598*
-1`  `(+
-
-12912123*
-1` `(
-
-1291099*
-1a
- a(
-
-12914698*
-1a
- a(
-
-12911799*
-1b b(3
-
-12915298*
-1b+ b(3
-
-129117112*
-1b b((
-
-12912199*
-1b b((
-
-12912398*
-1b b((
-
-129121112*
-1b b(
-
-12912199*
-1b b(
-
-12912598*
-1b b(
-
-12912123*
-1b b(
+1323523*
+1v7 v(<
 
-1298199*
-1c c(
+1323582*
+1w w(
 
-1298199*
-1c c(
-
-12914099*
-1f f()
-
-12914498*
-1f f()
-
-12955112*
-1f5 f(I
-
-1295599*
-1f5 f(I
-
-12913698*
-1fD f(I
+1323523*
+1w w(
 
-1295523*
-1j j(
+1323585*
+1w w('
 
-1295199*
-1j j(
-
-12955112*
-1j j(-
-
-1295599*
-1j j(-
-
-12913698*
-1j( j(-
+1323523*
+1w, w(1
 
-1298199*
-1k k(
+1323582*
+1z	 z(
 
-1295523*
-1k# k((
-
-12955112*
-1l l((
-
-1295599*
-1l l((
-
-12913698*
-1l# l((
+1323523*
+1z z(
 
-1295199*
-1l l("
+1323585*
+1z z($
 
-1295523*
-1l l("
+1323582*
+1}
+ }(
 
-1295199*
-1l l("
+1323523*
+1} }(	
 
-1291099*
-1q q(
-
-12915498*
-1q q(
+1323550*
+1~ ~(
 
-14855112*
-1t
- t(
+13213649*
+1~ ~(
 
-1485523*
-1t
- t(
+1324150*
+1 (!
 
-1485523*
-1t* t(/
-
-1485532*
-1x x(
-
-1485523*
-1x x(
-
-14855112*
-1x x($
-
-1485523*
-1x) x(.
-
-1545523*
-1á á(
-
-1546999*
-1à à(
-
-1546999*
-1à à(
-
-15455112*
-1à à(0
-
-1545599*
-1à à(0
-
-15413698*
-1à+ à(0
-
-1545199*
-1à à(*
-
-1545523*
-1à à(*
-
-1545199*
-1à à(*
-
-1546999*
-1â
- â(
-
-16055112*
-1ç	 ç(
-
-1605523*
-1ç	 ç(
-
-1605523*
-1é
- é(
-
-1605199*
-1é
- é(
-
-16455133*
-1ë ë(
-
-1645532*
-1ë  ë((
-
-1645523*
-1ë ë(
-
-1641023*
-1í í(
-
-1641099*
-1í í(
-
-1645523*
-1í í(
-
-1645199*
-1í í(
-
-16855133*
-1ñ" ñ('
-
-1685532*
-1ñ( ñ(7
-
-1685523*
-1ñ" ñ('
-
-1681023*
-1ó ó(
-
-1681099*
-1ó ó(
-
-1685523*
-1ó ó(
-
-1685199*
-1ó ó(
-
-17267112*
-1ö	 ö(
-
-1726723*
-1ö	 ö(
-
-1726723*
-1õ
- õ(
-
-1726399*
-1õ
- õ(
-
-17667133*
-1û û(,
-
-1766732*
-1û- û(:
-
-1766723*
-1û û(,
-
-1761023*
-1ü ü(
-
-1761099*
-1ü ü(
-
-1766723*
-1ü ü(
-
-1766399*
-1ü ü(
-
-18067112*
-1£	 £(
-
-1806723*
-1£	 £(
-
-1801023*
-1§
- §(
-
-1801099*
-1§
- §(
-
-1806723*
-1§ §(
-
-1806399*
-1§ §(
-
-1845523*
-1® ®(
-
-1885523*
-1≠7 ≠(<
-
-1885532*
-1Æ Æ(
-
-1885523*
-1Æ Æ(
-
-18855112*
-1Æ Æ('
-
-1885523*
-1Æ, Æ(1
-
-1885532*
-1±	 ±(
-
-1885523*
-1± ±(
-
-18855112*
-1± ±($
-
-1885532*
-1¥
- ¥(
-
-1885523*
-1¥ ¥(	
-
-1885599*
-1µ µ(
-
-18819298*
-1µ µ(
-
-1889099*
-1∂ ∂(!
-
-1889099*
-1∂ ∂(!
+1324150*
+1 (!
 
-1889099*
-1º º(
+1324150*
+1Ö Ö(
 
-1885532*
-1¡ ¡(
+1323582*
+1ä ä(
 
-1885523*
-1¡ ¡(
+1323523*
+1ä ä(
 
 
-1885599*
-1¬ ¬(&
+1323550*
+1ã ã(&
 
-18819298*
-1¬ ¬(&
+13213649*
+1ã ã(&
 
-1889099*
-1∆ ∆(
+1324150*
+1è è(
 
-1889099*
-1» »(
+1324150*
+1ë ë(
+
+1163581*
+1ó ó(
+
+1163582*
+1ó  ó(%
+
+1163523*
+1ó ó(
+
+1163523*
+1ô ô(
+
+1163050*
+1ô ô(+
+
+1163050*
+1ô ô(+
+
+1163582*
+1ö
+ ö(
+
+1163523*
+1ö ö(	
+
+1163523*
+1ö ö(
+
+1163585*
+1ö ö(%
+
+1163550*
+1õ õ(
 
-14655133*
-1Œ Œ(
-
-1465532*
-1Œ  Œ(%
-
-1465523*
-1Œ Œ(
-
-1465523*
-1– –(
-
-1468199*
-1– –(+
-
-1468199*
-1– –(+
-
-1465532*
-1—
- —(
-
-1465523*
-1— —(	
-
-1465523*
-1— —(
-
-14655112*
-1— —(%
-
-1465599*
-1“ “(
-
-14619698*
-1“ “(
-
-19855133*
-1⁄  ⁄(%
-
-1985532*
-1⁄& ⁄(4
-
-1985523*
-1⁄  ⁄(%
-
-2027399*
-1‚
- ‚(
-
-2061023*
-1Á Á(
-
-2061099*
-1Á Á(
-
-2067399*
-1Á Á(
+11614049*
+1õ õ(

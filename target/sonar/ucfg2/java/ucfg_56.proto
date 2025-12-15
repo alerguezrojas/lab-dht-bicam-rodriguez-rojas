@@ -1,36 +1,21 @@
 
-Ymetaheuristics.generators.HillClimbingRestart#awardUpdateREF(Lproblem/definition/State;)Zv
-jC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/HillClimbingRestart.javaé é("startingBlock*∞
-startingBlock
-é é(4ü
-ú
-
-ç ç(
-
-%0"
-__annotate*2
+[metaheuristics.generators.LimitRoulette#getGenerator()Lmetaheuristics/generators/Generator;n
+dC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/LimitRoulette.java	 	("1*ﬂ
+1
+	 
+(ñ
+ì
+
+	 
+()
+%0#metaheuristics.generators.Generator"__id*V
 
-__unknown_file (
-java.lang.Override*H
-
-__unknown_file (,
-*
-stateCandidateproblem.definition.Statel
-j
-
-é% é(3*
-stateCandidateproblem.definition.State"__annotation*"
-
-__unknown_file (
-
-%0*
-1*%
-1
-ê	 ê("
-
-ê ê(
-"":8
-
-é é(3*
-stateCandidateproblem.definition.StateB1/
--metaheuristics.generators.HillClimbingRestartHX
+__unknown_file (:*8)
+'metaheuristics.generators.LimitRoulette"
+	generator"7
+
+ 
+(+
+)
+%0#metaheuristics.generators.GeneratorB+)
+'metaheuristics.generators.LimitRouletteH

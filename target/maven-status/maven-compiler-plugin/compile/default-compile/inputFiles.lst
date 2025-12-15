@@ -27,6 +27,7 @@ C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\evolutionary_algorithms\
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\problem\extension\TypeSolutionMethod.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\evolutionary_algorithms\complement\Mutation.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generators\Generator.java
+C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generators\AbstractTabuSearch.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generators\MultiGenerator.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\local_search\complement\StrategyType.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\problem\definition\Operator.java
@@ -88,6 +89,7 @@ C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generator
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\factory_method\FactoryFatherSelection.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generators\MultiobjectiveHillClimbingRestart.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\local_search\candidate_type\GreaterCandidate.java
+C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generators\AbstractHillClimbing.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\local_search\complement\UpdateParameter.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\evolutionary_algorithms\complement\Probability.java
 C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\main\java\metaheuristics\generators\EvolutionStrategies.java

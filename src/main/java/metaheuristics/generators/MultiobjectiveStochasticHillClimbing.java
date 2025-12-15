@@ -4,28 +4,15 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 
-import factory_interface.IFFactoryAcceptCandidate;
 import factory_method.FactoryAcceptCandidate;
 import local_search.acceptation_type.AcceptType;
 import local_search.acceptation_type.AcceptableCandidate;
 import local_search.candidate_type.CandidateType;
-import local_search.candidate_type.CandidateValue;
 import local_search.complement.StrategyType;
-import metaheuristics.strategy.Strategy;
 import problem.definition.State;
 
+public class MultiobjectiveStochasticHillClimbing extends AbstractHillClimbing {
 
-public class MultiobjectiveStochasticHillClimbing extends Generator{
-
-	protected CandidateValue candidatevalue;
-	protected AcceptType typeAcceptation;
-	protected StrategyType strategy;
-	protected CandidateType typeCandidate;
-	protected State stateReferenceHC;
-	protected IFFactoryAcceptCandidate ifacceptCandidate;
-	protected GeneratorType Generatortype;
-	protected List<State> listStateReference = new ArrayList<State>(); 
-	protected float weight;
 	protected List<Float> listTrace = new ArrayList<Float>();
 	
 	public MultiobjectiveStochasticHillClimbing() {
@@ -33,18 +20,8 @@ public class MultiobjectiveStochasticHillClimbing extends Generator{
 		this.typeAcceptation = AcceptType.AcceptNotDominated;
 		this.strategy = StrategyType.NORMAL;
 		this.typeCandidate = CandidateType.NotDominatedCandidate;
-		this.candidatevalue = new CandidateValue();
 		this.Generatortype = GeneratorType.MultiobjectiveStochasticHillClimbing;
-		this.weight = 50;
 		listTrace.add(weight);
-	}
-
-	@Override
-	public State generate(Integer operatornumber) throws IllegalArgumentException, SecurityException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
-		List<State> neighborhood = new ArrayList<State>();
-		neighborhood = Strategy.getStrategy().getProblem().getOperator().generatedNewState(stateReferenceHC, operatornumber);
-	    State statecandidate = candidatevalue.stateCandidate(stateReferenceHC, typeCandidate, strategy, operatornumber, neighborhood);
-	    return statecandidate;
 	}
 
 	@Override
@@ -61,55 +38,6 @@ public class MultiobjectiveStochasticHillClimbing extends Generator{
 	public List<State> getReferenceList() {
 		listStateReference.add( stateReferenceHC.clone());
 		return listStateReference;
-	}
-
-	@Override
-	public State getReference() {
-		return stateReferenceHC;
-	}
-
-	public void setStateRef(State stateRef) {
-		this.stateReferenceHC = stateRef;
-	}
-
-	@Override
-	public void setInitialReference(State stateInitialRef) {
-		this.stateReferenceHC = stateInitialRef;
-	}
-
-	public GeneratorType getGeneratorType() {
-		return Generatortype;
-	}
-
-	public void setGeneratorType(GeneratorType Generatortype) {
-		this.Generatortype = Generatortype;
-	}
-
-	@Override
-	public GeneratorType getType() {
-		return this.Generatortype;
-	}
-
-	@Override
-	public List<State> getSonList() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public boolean awardUpdateREF(State stateCandidate) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public float getWeight() {
-		return weight;
-	}
-
-	@Override
-	public void setWeight(float weight) {
-		this.weight = weight;
 	}
 
 	@Override

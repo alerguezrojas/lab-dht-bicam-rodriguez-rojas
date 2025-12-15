@@ -1,7 +1,15 @@
 
-,metaheuristics.generators.MyTestClass#foo()Il
-bC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MyTestClass.java ("1*!
-1 ("
- (
-""B)'
-%metaheuristics.generators.MyTestClassHX
+5local_search.candidate_type.RandomCandidate#<init>()V
+__unknown_file ("startingBlock*ý
+startingBlockp
+hC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/candidate_type/RandomCandidate.java (ï
+ì
+p
+hC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/candidate_type/RandomCandidate.java (
+%0"5local_search.candidate_type.SearchCandidate#<init>()V*;
+ (/-
++local_search.candidate_type.RandomCandidate"‡
+p
+hC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/candidate_type/RandomCandidate.java (
+implicit returnB/-
++local_search.candidate_type.RandomCandidate

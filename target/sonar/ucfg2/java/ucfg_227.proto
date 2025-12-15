@@ -1,83 +1,9 @@
 
-Bmetaheuristics.generators.MultiCaseSimulatedAnnealing#getTrace()[F~
-rC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiCaseSimulatedAnnealing.javaÅ Å("5*µ
-3
-È È(‘
-Ž
-
-È È(
-%5java.util.List"__id*d
-
-__unknown_file (H*F7
-5metaheuristics.generators.MultiCaseSimulatedAnnealing"
-	listTraceŠ
-‡
-
-È È(
-%6java.lang.Float"
-__arrayGet*2
-
-__unknown_file (
-
-%5java.util.List*"
-
-__unknown_file (
-""*
-4*Š
-4
-Ç Ç(‘
-Ž
-
-Ç Ç(
-%2java.util.List"__id*d
-
-__unknown_file (H*F7
-5metaheuristics.generators.MultiCaseSimulatedAnnealing"
-	listTracemk
-
-Ç Ç(&	
-%3int"java.util.List#size()I*2
-
-__unknown_file (
-
-%2java.util.List2size()n
-l
-
-Ç Ç(&
-%4boolean"	__compare*
-
-Ç Ç(
-<*
-
-Ç Ç(
-""*
-
-Ç Ç(&
-	
-%3int*
-3
-1*—
-5
-Æ Æ(%‘
-Ž
-
-Æ Æ(%
-%0java.util.List"__id*d
-
-__unknown_file (H*F7
-5metaheuristics.generators.MultiCaseSimulatedAnnealing"
-	listTracemk
-
-Æ Æ(,	
-%1int"java.util.List#size()I*2
-
-__unknown_file (
-
-%0java.util.List2size()*
-4*%
+Gmetaheuristics.generators.GeneticAlgorithm#getListCountBetterGender()[Is
+gC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/GeneticAlgorithm.javaé é(&"1*%
 1
-Ê	 Ê("
+ë	 ë("
 
-Ê Ê(
-""B97
-5metaheuristics.generators.MultiCaseSimulatedAnnealingH
+ë ë($
+""B.,
+*metaheuristics.generators.GeneticAlgorithmH

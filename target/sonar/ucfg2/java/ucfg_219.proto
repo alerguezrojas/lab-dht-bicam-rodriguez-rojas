@@ -1,18 +1,18 @@
 
-hmetaheuristics.generators.MultiCaseSimulatedAnnealing#getType()Lmetaheuristics/generators/GeneratorType;~
-rC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiCaseSimulatedAnnealing.java– –("1*ÿ
+fmetaheuristics.generators.GeneticAlgorithm#getGeneratorType()Lmetaheuristics/generators/GeneratorType;s
+gC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/GeneticAlgorithm.java¹ ¹(&"1*ô
 1
-—	 —(®
-«
+º	 º(£
+ 
 
-—	 —(-
-%0'metaheuristics.generators.GeneratorType"__id*h
+º	 º(-
+%0'metaheuristics.generators.GeneratorType"__id*]
 
-__unknown_file (L*J7
-5metaheuristics.generators.MultiCaseSimulatedAnnealing"
-typeGenerator"=
+__unknown_file (A*?,
+*metaheuristics.generators.GeneticAlgorithm"
+generatorType"=
 
-— —(/
+º º(/
 -
-%0'metaheuristics.generators.GeneratorTypeB97
-5metaheuristics.generators.MultiCaseSimulatedAnnealingH
+%0'metaheuristics.generators.GeneratorTypeB.,
+*metaheuristics.generators.GeneticAlgorithmH

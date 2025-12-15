@@ -1,15 +1,7 @@
 
-5local_search.acceptation_type.AcceptNotBadU#<init>()V
-__unknown_file ("startingBlock*ƒ
-startingBlockp
-hC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/acceptation_type/AcceptNotBadU.java (õ
-ò
-p
-hC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/acceptation_type/AcceptNotBadU.java (
-%0";local_search.acceptation_type.AcceptableCandidate#<init>()V*;
- (/-
-+local_search.acceptation_type.AcceptNotBadU"‡
-p
-hC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/local_search/acceptation_type/AcceptNotBadU.java (
-implicit returnB/-
-+local_search.acceptation_type.AcceptNotBadU
+Lmetaheuristics.generators.MultiCaseSimulatedAnnealing#getCountIterationsT()I|
+rC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiCaseSimulatedAnnealing.javaA A()"1*!
+1B B("
+B B( 
+""B9"7
+5metaheuristics.generators.MultiCaseSimulatedAnnealingHX

@@ -76,7 +76,7 @@ public class HillClimbingRestartTest {
         hcr = new HillClimbingRestart();
         
         // Inject mock CandidateValue
-        Field cvField = HillClimbingRestart.class.getDeclaredField("candidatevalue");
+        Field cvField = AbstractHillClimbing.class.getDeclaredField("candidatevalue");
         cvField.setAccessible(true);
         cvField.set(hcr, candidateValueMock);
     }

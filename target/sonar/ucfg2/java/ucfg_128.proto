@@ -1,18 +1,9 @@
 
-bmetaheuristics.generators.MultiGenerator#getListGenerators()[Lmetaheuristics/generators/Generator;q
-eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiGenerator.java‘ ‘(,"1*ï
+Bmetaheuristics.generators.MultiGenerator#clone()Ljava/lang/Object;q
+eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiGenerator.javaî î("1*K
 1
-’	 ’( 
-
+ï	 ï(":
 
-’	 ’(+
-%0%metaheuristics.generators.Generator[]"__id*\
-
-__unknown_file (@*>*
-(metaheuristics.generators.MultiGenerator"
-listGenerators";
-
-’ ’(-
-+
-%0%metaheuristics.generators.Generator[]B,"*
+ï ï(,*
+(metaheuristics.generators.MultiGeneratorB,*
 (metaheuristics.generators.MultiGeneratorH

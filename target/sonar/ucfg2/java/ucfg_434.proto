@@ -1,15 +1,36 @@
 
-Qmetaheuristics.generators.LimitThreshold#getReference()Lproblem/definition/State;o
-eC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/LimitThreshold.java_ _("1*—
-1`	 `(ì
-ê
-`	 `(
-%0problem.definition.State"__id*^
+_metaheuristics.generators.ParticleSwarmOptimization#awardUpdateREF(Lproblem/definition/State;)Z|
+pC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/ParticleSwarmOptimization.java® ®("startingBlock*∞
+startingBlock
+® ®(4ü
+ú
+
+ß ß(
+
+%0"
+__annotate*2
 
-__unknown_file (B*@*
-(metaheuristics.generators.LimitThreshold"
-stateReferenceLT",
-` `( 
-
-%0problem.definition.StateB,*
-(metaheuristics.generators.LimitThresholdH
+__unknown_file (
+java.lang.Override*H
+
+__unknown_file (,
+*
+stateCandidateproblem.definition.Statel
+j
+
+®% ®(3*
+stateCandidateproblem.definition.State"__annotation*"
+
+__unknown_file (
+
+%0*
+1*%
+1
+™	 ™("
+
+™ ™(
+"":8
+
+® ®(3*
+stateCandidateproblem.definition.StateB75
+3metaheuristics.generators.ParticleSwarmOptimizationHX

@@ -1,15 +1,9 @@
 
-bmetaheuristics.generators.MultiobjectiveTabuSearch#getStateReferenceTS()Lproblem/definition/State;y
-oC:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/generators/MultiobjectiveTabuSearch.java# #($"1*€
-1$	 $(ù
-ö
-$	 $(
-%0problem.definition.State"__id*h
-
-__unknown_file (L*J4
-2metaheuristics.generators.MultiobjectiveTabuSearch"
-stateReferenceTS",
-$ $( 
-
-%0problem.definition.StateB64
-2metaheuristics.generators.MultiobjectiveTabuSearchH
+0metaheuristics.strategy.Strategy#getThreshold()Di
+]C:/Users/alerg/Desktop/LABORATORIO/BiCIAM/src/main/java/metaheuristics/strategy/Strategy.javaâ â("1*%
+1
+ä	 ä("
+
+ä ä(
+""B$"
+ metaheuristics.strategy.StrategyHX

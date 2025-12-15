@@ -75,7 +75,7 @@ public class MultiobjectiveHillClimbingRestartTest {
         generator = new MultiobjectiveHillClimbingRestart();
         
         // Inject mocks into generator
-        Field candidateValueField = MultiobjectiveHillClimbingRestart.class.getDeclaredField("candidatevalue");
+        Field candidateValueField = AbstractHillClimbing.class.getDeclaredField("candidatevalue");
         candidateValueField.setAccessible(true);
         candidateValueField.set(generator, candidateValueMock);
         

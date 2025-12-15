@@ -35,6 +35,7 @@ metaheuristics\generators\MultiobjectiveHillClimbingRestart.class
 evolutionary_algorithms\complement\OnePointMutation.class
 factory_method\FactoryLoader.class
 metaheuristics\generators\MultiGenerator.class
+metaheuristics\generators\AbstractHillClimbing.class
 evolutionary_algorithms\complement\Probability.class
 metaheuristics\generators\Particle.class
 metaheuristics\generators\LimitThreshold.class
@@ -57,6 +58,7 @@ local_search\complement\StrategyType.class
 local_search\acceptation_type\AcceptAnyone.class
 local_search\candidate_type\NotDominatedCandidate.class
 factory_interface\IFFactoryReplace.class
+metaheuristics\generators\AbstractTabuSearch.class
 local_search\TestDummy.class
 metaheuristics\generators\Generator.class
 problem\definition\State.class

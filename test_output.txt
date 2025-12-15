@@ -1,0 +1,363 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< com.biciam:biciam >--------------------------
+[INFO] Building biciam 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.11:prepare-agent (default) @ biciam ---
+[INFO] argLine set to -javaagent:C:\\Users\\alerg\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.11\\org.jacoco.agent-0.8.11-runtime.jar=destfile=C:\\Users\\alerg\\Desktop\\LABORATORIO\\BiCIAM\\target\\jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ biciam ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ biciam ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ biciam ---
+[INFO] skip non existing resourceDirectory C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ biciam ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ biciam ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running metaheuristics.generators.HillClimbingRestartTest
+[ERROR] Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 3.705 s <<< FAILURE! -- in metaheuristics.generators.HillClimbingRestartTest
+[ERROR] metaheuristics.generators.HillClimbingRestartTest.testGettersAndSetters -- Time elapsed: 3.506 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.HillClimbingRestartTest.setUp(HillClimbingRestartTest.java:79)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] metaheuristics.generators.HillClimbingRestartTest.testGetReferenceList -- Time elapsed: 0.015 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.HillClimbingRestartTest.setUp(HillClimbingRestartTest.java:79)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] metaheuristics.generators.HillClimbingRestartTest.testGetType -- Time elapsed: 0.014 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.HillClimbingRestartTest.setUp(HillClimbingRestartTest.java:79)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] metaheuristics.generators.HillClimbingRestartTest.testUpdateReference -- Time elapsed: 0.013 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.HillClimbingRestartTest.setUp(HillClimbingRestartTest.java:79)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] metaheuristics.generators.HillClimbingRestartTest.testGenerateNormal -- Time elapsed: 0.011 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.HillClimbingRestartTest.setUp(HillClimbingRestartTest.java:79)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] metaheuristics.generators.HillClimbingRestartTest.testGenerateRestart -- Time elapsed: 0.012 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.HillClimbingRestartTest.setUp(HillClimbingRestartTest.java:79)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[INFO] Running metaheuristics.generators.HillClimbingTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.205 s -- in metaheuristics.generators.HillClimbingTest
+[INFO] Running metaheuristics.generators.MultiobjectiveHillClimbingDistanceTest
+[ERROR] Tests run: 8, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 0.057 s <<< FAILURE! -- in metaheuristics.generators.MultiobjectiveHillClimbingDistanceTest
+[ERROR] metaheuristics.generators.MultiobjectiveHillClimbingDistanceTest.testGettersSetters -- Time elapsed: 0.013 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.MultiobjectiveHillClimbingDistanceTest.setUp(MultiobjectiveHillClimbingDistanceTest.java:80)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] metaheuristics.generators.MultiobjectiveHillClimbingDistanceTest.testGenerate -- Time elapsed: 0.006 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.MultiobjectiveHillClimbingDistanceTest.setUp(MultiobjectiveHillClimbingDistanceTest.java:80)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] metaheuristics.generators.MultiobjectiveHillClimbingDistanceTest.testDistanceCalculateAdd -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.MultiobjectiveHillClimbingDistanceTest.setUp(MultiobjectiveHillClimbingDistanceTest.java:80)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] metaheuristics.generators.MultiobjectiveHillClimbingDistanceTest.testUpdateReference_RejectCandidate_RandomSearch -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.MultiobjectiveHillClimbingDistanceTest.setUp(MultiobjectiveHillClimbingDistanceTest.java:80)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] metaheuristics.generators.MultiobjectiveHillClimbingDistanceTest.testUpdateReference_RejectCandidate_FindInNeighborhood -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.MultiobjectiveHillClimbingDistanceTest.setUp(MultiobjectiveHillClimbingDistanceTest.java:80)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] metaheuristics.generators.MultiobjectiveHillClimbingDistanceTest.testUpdateReference_FirstSolution -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.MultiobjectiveHillClimbingDistanceTest.setUp(MultiobjectiveHillClimbingDistanceTest.java:80)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] metaheuristics.generators.MultiobjectiveHillClimbingDistanceTest.testUpdateReference_AcceptCandidate -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.MultiobjectiveHillClimbingDistanceTest.setUp(MultiobjectiveHillClimbingDistanceTest.java:80)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] metaheuristics.generators.MultiobjectiveHillClimbingDistanceTest.testConstructor -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.MultiobjectiveHillClimbingDistanceTest.setUp(MultiobjectiveHillClimbingDistanceTest.java:80)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[INFO] Running metaheuristics.generators.MultiobjectiveHillClimbingRestartTest
+[ERROR] Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.040 s <<< FAILURE! -- in metaheuristics.generators.MultiobjectiveHillClimbingRestartTest
+[ERROR] metaheuristics.generators.MultiobjectiveHillClimbingRestartTest.testGenerate -- Time elapsed: 0.009 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.MultiobjectiveHillClimbingRestartTest.setUp(MultiobjectiveHillClimbingRestartTest.java:78)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] metaheuristics.generators.MultiobjectiveHillClimbingRestartTest.testUpdateReference_RejectThenRandom -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.MultiobjectiveHillClimbingRestartTest.setUp(MultiobjectiveHillClimbingRestartTest.java:78)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] metaheuristics.generators.MultiobjectiveHillClimbingRestartTest.testUpdateReference_RejectThenAcceptNeighbor -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.MultiobjectiveHillClimbingRestartTest.setUp(MultiobjectiveHillClimbingRestartTest.java:78)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] metaheuristics.generators.MultiobjectiveHillClimbingRestartTest.testUpdateReference_FirstSolution -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.MultiobjectiveHillClimbingRestartTest.setUp(MultiobjectiveHillClimbingRestartTest.java:78)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] metaheuristics.generators.MultiobjectiveHillClimbingRestartTest.testUpdateReference_AcceptCandidate -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.MultiobjectiveHillClimbingRestartTest.setUp(MultiobjectiveHillClimbingRestartTest.java:78)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] metaheuristics.generators.MultiobjectiveHillClimbingRestartTest.testConstructor -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.MultiobjectiveHillClimbingRestartTest.setUp(MultiobjectiveHillClimbingRestartTest.java:78)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[INFO] Running metaheuristics.generators.MultiobjectiveStochasticHillClimbingTest
+[ERROR] Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.028 s <<< FAILURE! -- in metaheuristics.generators.MultiobjectiveStochasticHillClimbingTest
+[ERROR] metaheuristics.generators.MultiobjectiveStochasticHillClimbingTest.testGenerate -- Time elapsed: 0.009 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.MultiobjectiveStochasticHillClimbingTest.setUp(MultiobjectiveStochasticHillClimbingTest.java:75)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] metaheuristics.generators.MultiobjectiveStochasticHillClimbingTest.testUpdateReference_RejectCandidate -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.MultiobjectiveStochasticHillClimbingTest.setUp(MultiobjectiveStochasticHillClimbingTest.java:75)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] metaheuristics.generators.MultiobjectiveStochasticHillClimbingTest.testUpdateReference_AcceptCandidate -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.MultiobjectiveStochasticHillClimbingTest.setUp(MultiobjectiveStochasticHillClimbingTest.java:75)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] metaheuristics.generators.MultiobjectiveStochasticHillClimbingTest.testConstructor -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.MultiobjectiveStochasticHillClimbingTest.setUp(MultiobjectiveStochasticHillClimbingTest.java:75)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[INFO] Running metaheuristics.generators.MultiobjectiveTabuSearchTest
+[ERROR] Tests run: 7, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.046 s <<< FAILURE! -- in metaheuristics.generators.MultiobjectiveTabuSearchTest
+[ERROR] metaheuristics.generators.MultiobjectiveTabuSearchTest.testGettersSetters -- Time elapsed: 0.009 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.MultiobjectiveTabuSearchTest.setUp(MultiobjectiveTabuSearchTest.java:74)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] metaheuristics.generators.MultiobjectiveTabuSearchTest.testGenerate -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.MultiobjectiveTabuSearchTest.setUp(MultiobjectiveTabuSearchTest.java:74)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] metaheuristics.generators.MultiobjectiveTabuSearchTest.testUpdateReference_Accepted_TabuDuplicate -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.MultiobjectiveTabuSearchTest.setUp(MultiobjectiveTabuSearchTest.java:74)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] metaheuristics.generators.MultiobjectiveTabuSearchTest.testUpdateReference_Accepted_TabuFull -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.MultiobjectiveTabuSearchTest.setUp(MultiobjectiveTabuSearchTest.java:74)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] metaheuristics.generators.MultiobjectiveTabuSearchTest.testUpdateReference_Rejected -- Time elapsed: 0.006 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.MultiobjectiveTabuSearchTest.setUp(MultiobjectiveTabuSearchTest.java:74)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] metaheuristics.generators.MultiobjectiveTabuSearchTest.testUpdateReference_Accepted_AddToTabu -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.MultiobjectiveTabuSearchTest.setUp(MultiobjectiveTabuSearchTest.java:74)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] metaheuristics.generators.MultiobjectiveTabuSearchTest.testConstructor -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.NoSuchFieldException: candidatevalue
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.MultiobjectiveTabuSearchTest.setUp(MultiobjectiveTabuSearchTest.java:74)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[INFO] Running metaheuristics.generators.TabuSearchTest
+[ERROR] Tests run: 15, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.146 s <<< FAILURE! -- in metaheuristics.generators.TabuSearchTest
+[ERROR] metaheuristics.generators.TabuSearchTest.testUpdateReference_StrategyNotTabu -- Time elapsed: 0.009 s <<< ERROR!
+java.lang.NoSuchFieldException: strategy
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.TabuSearchTest.testUpdateReference_StrategyNotTabu(TabuSearchTest.java:219)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] metaheuristics.generators.TabuSearchTest.testUpdateReference_NotAccepted -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.NoSuchFieldException: typeAcceptation
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	at metaheuristics.generators.TabuSearchTest.testUpdateReference_NotAccepted(TabuSearchTest.java:234)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   HillClimbingRestartTest.setUp:79 ╗ NoSuchField candidatevalue
+[ERROR]   HillClimbingRestartTest.setUp:79 ╗ NoSuchField candidatevalue
+[ERROR]   HillClimbingRestartTest.setUp:79 ╗ NoSuchField candidatevalue
+[ERROR]   HillClimbingRestartTest.setUp:79 ╗ NoSuchField candidatevalue
+[ERROR]   HillClimbingRestartTest.setUp:79 ╗ NoSuchField candidatevalue
+[ERROR]   HillClimbingRestartTest.setUp:79 ╗ NoSuchField candidatevalue
+[ERROR]   MultiobjectiveHillClimbingDistanceTest.setUp:80 ╗ NoSuchField candidatevalue
+[ERROR]   MultiobjectiveHillClimbingDistanceTest.setUp:80 ╗ NoSuchField candidatevalue
+[ERROR]   MultiobjectiveHillClimbingDistanceTest.setUp:80 ╗ NoSuchField candidatevalue
+[ERROR]   MultiobjectiveHillClimbingDistanceTest.setUp:80 ╗ NoSuchField candidatevalue
+[ERROR]   MultiobjectiveHillClimbingDistanceTest.setUp:80 ╗ NoSuchField candidatevalue
+[ERROR]   MultiobjectiveHillClimbingDistanceTest.setUp:80 ╗ NoSuchField candidatevalue
+[ERROR]   MultiobjectiveHillClimbingDistanceTest.setUp:80 ╗ NoSuchField candidatevalue
+[ERROR]   MultiobjectiveHillClimbingDistanceTest.setUp:80 ╗ NoSuchField candidatevalue
+[ERROR]   MultiobjectiveHillClimbingRestartTest.setUp:78 ╗ NoSuchField candidatevalue
+[ERROR]   MultiobjectiveHillClimbingRestartTest.setUp:78 ╗ NoSuchField candidatevalue
+[ERROR]   MultiobjectiveHillClimbingRestartTest.setUp:78 ╗ NoSuchField candidatevalue
+[ERROR]   MultiobjectiveHillClimbingRestartTest.setUp:78 ╗ NoSuchField candidatevalue
+[ERROR]   MultiobjectiveHillClimbingRestartTest.setUp:78 ╗ NoSuchField candidatevalue
+[ERROR]   MultiobjectiveHillClimbingRestartTest.setUp:78 ╗ NoSuchField candidatevalue
+[ERROR]   MultiobjectiveStochasticHillClimbingTest.setUp:75 ╗ NoSuchField candidatevalue
+[ERROR]   MultiobjectiveStochasticHillClimbingTest.setUp:75 ╗ NoSuchField candidatevalue
+[ERROR]   MultiobjectiveStochasticHillClimbingTest.setUp:75 ╗ NoSuchField candidatevalue
+[ERROR]   MultiobjectiveStochasticHillClimbingTest.setUp:75 ╗ NoSuchField candidatevalue
+[ERROR]   MultiobjectiveTabuSearchTest.setUp:74 ╗ NoSuchField candidatevalue
+[ERROR]   MultiobjectiveTabuSearchTest.setUp:74 ╗ NoSuchField candidatevalue
+[ERROR]   MultiobjectiveTabuSearchTest.setUp:74 ╗ NoSuchField candidatevalue
+[ERROR]   MultiobjectiveTabuSearchTest.setUp:74 ╗ NoSuchField candidatevalue
+[ERROR]   MultiobjectiveTabuSearchTest.setUp:74 ╗ NoSuchField candidatevalue
+[ERROR]   MultiobjectiveTabuSearchTest.setUp:74 ╗ NoSuchField candidatevalue
+[ERROR]   MultiobjectiveTabuSearchTest.setUp:74 ╗ NoSuchField candidatevalue
+[ERROR]   TabuSearchTest.testUpdateReference_NotAccepted:234 ╗ NoSuchField typeAcceptation
+[ERROR]   TabuSearchTest.testUpdateReference_StrategyNotTabu:219 ╗ NoSuchField strategy
+[INFO] 
+[ERROR] Tests run: 56, Failures: 0, Errors: 33, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.986 s
+[INFO] Finished at: 2025-12-15T11:27:42Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.2.5:test (default-test) on project biciam: 
+[ERROR] 
+[ERROR] Please refer to C:\Users\alerg\Desktop\LABORATORIO\BiCIAM\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
