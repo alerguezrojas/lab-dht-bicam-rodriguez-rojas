@@ -1,4 +1,4 @@
-# LDH: Práctica 5. Gestión de Proyecto y Pruebas Unitarias. GitHub & JUnit
+# LDH: Práctica 5. Gestión de Proyecto y Pruebas Unitarias. GitHub & JUnit y Práctica 6: Integración Continua (CI) Profunda 
 
 **Alejandro Rodríguez Rojas** - alu0101317038@ull.edu.es
 
